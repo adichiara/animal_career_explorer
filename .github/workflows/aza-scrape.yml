@@ -1,0 +1,110 @@
+name: AZA jobs scrape and build
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Testing only: maximum listings to scrape (0 = complete board)"
+        required: false
+        default: "0"
+        type: string
+      refresh:
+        description: "Rescrape detail pages already present in the database"
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/aza-scrape.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aza-jobs-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install scraper
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Scrape AZA Jobs
+        shell: bash
+        run: |
+          args=(--db database/careers.sqlite --delay 30)
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.limit }}" != "0" ]]; then
+            args+=(--limit "${{ inputs.limit }}")
+          fi
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.refresh }}" == "true" ]]; then
+            args+=(--refresh)
+          fi
+          python scripts/scrape_aza_jobs.py "${args[@]}"
+
+      - name: Classify and export review queue
+        if: always()
+        run: |
+          python scripts/propose_aza_job_matches.py
+          python scripts/review_aza_job_matches.py
+          python scripts/export_aza_jobs.py
+
+      - name: Validate and rebuild deliverables
+        if: always()
+        run: |
+          python scripts/validate_database.py
+          python scripts/export_site_data.py
+          python scripts/build_market_audit.py
+          python scripts/build_artifacts.py
+
+      - name: Write run summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import os, sqlite3
+          con = sqlite3.connect("database/careers.sqlite")
+          row = con.execute("""SELECT status,listings_discovered,details_scraped,details_failed,pages_discovered
+                               FROM market_job_scrape_runs ORDER BY started_at DESC LIMIT 1""").fetchone()
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write("## AZA scrape\n\n")
+              if row:
+                  f.write(f"- Status: **{row[0]}**\n- Listings discovered: **{row[1]}**\n")
+                  f.write(f"- Details scraped: **{row[2]}**\n- Detail failures: **{row[3]}**\n")
+                  f.write(f"- Listing pages discovered: **{row[4]}**\n")
+              else:
+                  f.write("No scrape-run record was created. Inspect the job log.\n")
+          PY
+
+      - name: Upload updated project and review files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: animal-career-aza-snapshot-${{ github.run_number }}
+          retention-days: 30
+          if-no-files-found: warn
+          path: |
+            database/careers.sqlite
+            exports/aza_market_jobs.csv
+            exports/aza_job_match_review.csv
+            exports/Animal_Career_Data_Project_with_AZA_Scraper.zip
+            exports/Animal_Career_College_Explorer_Evidence_Expanded_Website.zip
+            reports/validation_report.md
+            reports/market_content_audit.md

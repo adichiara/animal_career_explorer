@@ -1,0 +1,49 @@
+edge_id,from_career_id,to_career_id,relationship_type,typicality,education_change,experience_change,evidence_status,source_id,notes
+edge_0001,cr_0014,cr_0017,specialization,common,none,2–5 years,supported,src_aza_types,Keeper experience can progress into specialized behavioral-husbandry responsibilities.
+edge_0002,cr_0014,cr_0078,lateral,possible,none,1–3 years,supported,src_aza_jobs,Shared animal-care and training skill base.
+edge_0003,cr_0014,cr_0079,lateral,common,none,1–3 years,verified,src_aza_jobs,Current ambassador-animal titles demonstrate this specialization.
+edge_0004,cr_0014,cr_0022,natural_growth,common,none,5+ years,supported,src_aza_types,Lead/supervisory collection-management progression.
+edge_0005,cr_0014,cr_0023,management,common,none_or_grad,5–10+ years,verified,src_aza_types,AZA lists curators as collection-management leadership; current curator postings verify the role.
+edge_0006,cr_0015,cr_0078,lateral,possible,none,1–3 years,verified,src_aza_jobs,Aquarium training roles share husbandry and behavior experience.
+edge_0007,cr_0015,cr_0022,natural_growth,common,none,5+ years,supported,src_aza_types,Senior/head aquarist progression can lead to management.
+edge_0008,cr_0008,cr_0007,natural_growth,common,none,2–5 years,supported,src_aza_curator_behavior,Behavioral husbandry and welfare leadership strongly overlap.
+edge_0009,cr_0008,cr_0006,research_progression,possible,M.S./Ph.D. commonly needed,variable,supported,src_abs_caab,Applied behavior/welfare expertise can progress into research-focused welfare science with graduate training.
+edge_0010,cr_0017,cr_0023,management,possible,none_or_grad,5+ years,verified,src_aza_curator_behavior,Curator of Behavioral Husbandry is a verified leadership pathway.
+edge_0011,cr_0010,cr_0080,specialization,possible,none,300+ behavior-consulting hours for CBCC-KA eligibility,verified,src_ccpdt_cbcc,Behavior consulting is a distinct advanced practice area.
+edge_0012,cr_0012,cr_0080,specialization,common,none,substantial behavior-case experience,supported,src_iaabc_shelter,Shelter behavior experience overlaps with behavior-consulting competencies.
+edge_0013,cr_0020,cr_0021,research_progression,common,M.S./Ph.D. often useful,2–5 years,supported,src_aza_pmc,Technical breeding experience can progress toward research/science roles.
+edge_0014,cr_0020,cr_0075,professional_assignment,possible,none,professional zoo experience,verified,src_aza_program_roles,AZA program-leader roles are assigned to experienced zoo professionals.
+edge_0015,cr_0074,cr_0024,lateral,possible,none,2–5 years,supported,src_aza_pmc,Population-management expertise connects to zoo conservation program work.
+edge_0016,cr_0075,cr_0074,research_progression,possible,M.S./Ph.D. may be needed,variable,supported,src_aza_pmc,Population planning and quantitative population science overlap but are not identical roles.
+edge_0017,cr_0076,cr_0022,natural_growth,possible,none,3–5+ years,verified,src_aza_registrar,Records/transactions work can broaden into collection operations.
+edge_0018,cr_0077,cr_0022,lateral,possible,none,3–5+ years,supported,src_aza_jobs,Nutrition managers work closely with collection operations and animal-care leadership.
+edge_0019,cr_0026,cr_0027,natural_growth,common,B.S. required for many professional roles,1–3+ years,verified,src_usajobs_wildtech,Technician experience is a common entry route into professional wildlife biology.
+edge_0020,cr_0026,cr_0081,natural_growth,common,B.S.; M.S. may help,1–3+ years,verified,src_tws_diversitytech,Current biodiversity technician work aligns with nongame/diversity biologist progression.
+edge_0021,cr_0026,cr_0090,lateral,possible,none,0–2 years,verified,src_tws_jobs,Current eDNA lab technician titles provide a molecular-monitoring lateral option.
+edge_0022,cr_0026,cr_0049,specialization,possible,none,1–3 years + GIS skills,supported,src_tws_diversitytech,Field technicians with GIS/data skills can specialize spatially.
+edge_0023,cr_0027,cr_0082,specialization,common,M.S. often useful,2–5+ years,supported,src_usajobs_fwbio,Agency wildlife biology commonly includes threatened/endangered species recovery work.
+edge_0024,cr_0027,cr_0039,lateral,common,none,2–5 years,supported,src_tws_jobs,Field and population biology can shift toward habitat-focused management.
+edge_0025,cr_0027,cr_0083,management,possible,specific 0485 coursework + experience,5+ years,verified,src_opm_0485,Refuge management is a distinct federal progression with specific coursework.
+edge_0026,cr_0027,cr_0085,management,common,none_or_grad,5–10+ years,verified,src_tws_wildlife_manager,Regional wildlife program manager is a verified leadership role.
+edge_0027,cr_0027,cr_0036,specialization,possible,M.S. often useful,2–5 years,supported,src_usgs_npwrc,Spatial and movement specialties build on wildlife ecology plus quantitative methods.
+edge_0028,cr_0027,cr_0087,research_progression,possible,Ph.D. common for independent federal research,variable,verified,src_usgs_eesc,USGS research ecologist/wildlife biologist titles demonstrate research specialization.
+edge_0029,cr_0028,cr_0029,natural_growth,common,none,2–5 years,supported,src_nwra_jobs,Rehabilitation experience can expand into release/logistics coordination.
+edge_0030,cr_0028,cr_0093,management,common,none,3–5+ years,verified,src_nwra_manager,Current wildlife care manager postings explicitly require progressive rehab/animal-care experience.
+edge_0031,cr_0029,cr_0030,lateral,possible,none,field monitoring skills helpful,supported,src_nwra_jobs,Release logistics can transition toward field-based reintroduction work.
+edge_0032,cr_0030,cr_0031,natural_growth,common,B.S.; M.S. may help,1–3 years,supported,src_tws_jobs,Field release experience leads naturally to monitoring/analysis roles.
+edge_0033,cr_0031,cr_0082,natural_growth,possible,M.S. often useful,2–5 years,supported,src_usajobs_fwbio,Monitoring data feed directly into species-recovery decisions.
+edge_0034,cr_0084,cr_0055,natural_growth,common,none_or_grad,5+ years,verified,src_tws_habitatdelivery,Habitat delivery coordination develops program-management responsibilities.
+edge_0035,cr_0039,cr_0084,lateral,common,none,2–5 years,verified,src_tws_habitatdelivery,Habitat biology and delivery coordination are adjacent applied conservation roles.
+edge_0036,cr_0049,cr_0091,specialization,common,M.S. useful for advanced ecology,2–5 years,verified,src_usgs_npwrc,GIS roles can deepen into geospatial/remote-sensing ecology.
+edge_0037,cr_0049,cr_0088,lateral,possible,none_or_grad,2–5 years,verified,src_usgs_eesc,Spatial analysts can broaden into ecological data science.
+edge_0038,cr_0050,cr_0089,research_progression,possible,M.S./Ph.D. commonly needed,variable,verified,src_usgs_eesc,USGS research-statistician titles demonstrate an advanced quantitative pathway.
+edge_0039,cr_0050,cr_0051,natural_growth,common,M.S. often useful,2–5 years,supported,src_usgs_eesc,Research-assistant quantitative work commonly precedes specialist ecology roles.
+edge_0040,cr_0088,cr_0051,specialization,possible,M.S. often useful,2–5 years,supported,src_usgs_eesc,Data-science skills can specialize into quantitative ecological inference.
+edge_0041,cr_0090,cr_0086,research_progression,common,M.S./Ph.D. commonly needed,2–5 years,verified,src_aza_genetics,Molecular technician experience is a natural foundation for conservation genetics research.
+edge_0042,cr_0087,cr_0066,research_progression,common,Ph.D. typical,5+ years,verified,src_usgs_eesc,Independent research scientists commonly advance through research-specialist roles.
+edge_0043,cr_0086,cr_0066,research_progression,common,Ph.D. typical,5+ years,verified,src_aza_genetics,Independent genetics research commonly progresses to PI/scientist leadership.
+edge_0044,cr_0059,cr_0060,natural_growth,common,none_or_grad,2–5 years,verified,src_tws_labmanager,Current lab-manager postings show a B.S.-accessible management step after research experience.
+edge_0045,cr_0059,cr_0061,graduate_transition,common,M.S.,0–3 years,supported,src_abs_caab,Research experience strengthens preparation for research-based graduate study.
+edge_0046,cr_0060,cr_0066,research_progression,possible,Ph.D. usually needed,variable,supported,src_usgs_eesc,Lab management can precede independent research after graduate training.
+edge_0047,cr_0068,cr_0071,natural_growth,common,none,2–5 years,supported,src_aza_types,Education roles can progress to program coordination and leadership.
+edge_0048,cr_0070,cr_0069,natural_growth,common,none,1–3 years,supported,src_tws_jobs,Interpretive work provides a foundation for broader environmental education.

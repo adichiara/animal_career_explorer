@@ -1,0 +1,94 @@
+career_id,name,evidence_status,role_kind,last_verified,observed_titles,current_recent_postings,salary_observations,explicit_evidence,credentials,qualification_profiles,progression_edges_out,progression_edges_in
+cr_0079,Ambassador animal specialist / animal programs keeper,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,1
+cr_0001,Animal behavior research assistant / technician,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,0
+cr_0002,Animal behaviorist / applied animal behavior scientist,verified_function_title_varies,career,2026-09-08,0,0,0,1,2,0,0,0
+cr_0022,Animal collection / management specialist,verified_function_title_varies,later_career,2026-09-08,0,0,0,0,0,0,0,4
+cr_0005,Animal communication researcher,verified_current_market,scientific_specialty,2026-09-08,1,1,1,0,0,0,0,0
+cr_0004,Animal learning researcher,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0046,Animal physiologist,established_scientific_specialty,scientific_specialty,2026-09-08,1,0,0,0,0,0,0,0
+cr_0007,Animal welfare / behavior coordinator,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,1
+cr_0006,Animal welfare scientist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,1
+cr_0015,Aquarist / aquarium animal-care specialist,verified_current_market,career,2026-09-08,2,2,1,0,0,0,2,0
+cr_0032,Behavioral ecologist,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0008,Behavioral husbandry specialist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,2,0
+cr_0080,Canine behavior consultant,verified_professional_role,career,2026-09-08,0,0,0,1,1,0,0,2
+cr_0013,Companion-animal behavior researcher,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0003,Comparative cognition researcher,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0057,Conservation NGO scientist / coordinator,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,0
+cr_0033,Conservation biologist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0084,Conservation delivery / habitat program coordinator,verified_current_market,career,2026-09-08,2,2,1,1,0,0,1,1
+cr_0086,Conservation geneticist / wildlife genomicist,verified_current_market,scientific_specialty,2026-09-08,3,1,1,1,0,1,1,1
+cr_0071,Conservation outreach / program coordinator,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,1
+cr_0021,Conservation-breeding scientist,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,1
+cr_0020,Conservation-breeding technician,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,2,0
+cr_0088,Ecological data scientist,verified_professional_role,scientific_specialty,2026-09-08,1,0,0,1,0,0,1,1
+cr_0045,Ecological research technician,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0034,Endangered-species biologist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0009,Enrichment coordinator / specialist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0052,Environmental consultant — wildlife/ecology,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0053,Environmental permitting / compliance biologist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0048,Evolutionary biologist studying animals,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0044,Field ecologist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0049,GIS / wildlife spatial analyst,verified_function_title_varies,career,2026-09-08,1,0,0,0,0,0,2,1
+cr_0039,Habitat / wildlife management biologist,verified_current_market,career,2026-09-08,1,1,0,0,1,0,1,1
+cr_0058,Habitat restoration / ecological-monitoring specialist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0043,Herpetologist,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0092,Human dimensions / conservation social scientist,verified_professional_role,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0038,Human-wildlife conflict specialist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0065,M.S. / Ph.D. in animal welfare science,verified_occupation_or_title,education_path,2026-09-08,0,0,0,0,0,0,0,0
+cr_0062,M.S. / Ph.D. in behavioral ecology,verified_occupation_or_title,education_path,2026-09-08,0,0,0,0,0,0,0,0
+cr_0063,M.S. / Ph.D. in wildlife ecology / conservation,verified_occupation_or_title,education_path,2026-09-08,0,0,0,0,0,0,0,0
+cr_0064,M.S. / Ph.D. in zoology / organismal biology,verified_occupation_or_title,education_path,2026-09-08,0,0,0,0,0,0,0,0
+cr_0061,M.S. in animal behavior / ethology,verified_occupation_or_title,education_path,2026-09-08,0,0,0,0,0,0,0,1
+cr_0041,Mammalogist,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0036,Movement / spatial ecologist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,1
+cr_0073,Museum / natural-history education or collections work,verified_function_title_varies,education_path,2026-09-08,0,0,0,0,0,0,0,0
+cr_0054,Natural-resource agency biologist,verified_current_market,career,2026-09-08,2,2,2,0,0,0,0,0
+cr_0055,Natural-resource manager,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,1
+cr_0070,Naturalist / interpretive educator,verified_current_market,career,2026-09-08,1,1,0,0,0,0,1,0
+cr_0047,Neuroethologist / neural-behavior researcher,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0042,Ornithologist,established_scientific_specialty,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,0
+cr_0056,Park / service biologist or resource specialist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0074,Population biologist / zoo population management scientist,verified_current_market,scientific_specialty,2026-09-08,1,1,0,1,0,0,1,1
+cr_0035,Population ecologist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0031,Post-release monitoring biologist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,1,1
+cr_0051,Quantitative ecologist / biometrician,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,2
+cr_0050,Quantitative ecology research assistant,verified_function_title_varies,career,2026-09-08,1,0,0,0,0,0,2,0
+cr_0030,Reintroduction / release field technician,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,1,1
+cr_0091,Remote sensing / geospatial ecologist,verified_professional_role,scientific_specialty,2026-09-08,0,0,0,0,0,0,0,1
+cr_0060,Research / laboratory manager — behavioral or biological science,verified_current_market,career,2026-09-08,2,1,1,0,0,0,1,1
+cr_0087,Research ecologist,verified_professional_role,scientific_specialty,2026-09-08,2,0,0,2,0,1,1,1
+cr_0066,Research scientist / principal investigator,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,3
+cr_0089,Research statistician — ecology/biology,verified_professional_role,scientific_specialty,2026-09-08,2,0,0,1,0,0,0,1
+cr_0075,SSP coordinator / studbook keeper,verified_professional_assignment,professional_assignment,2026-09-08,0,0,0,1,0,0,1,1
+cr_0016,Sanctuary animal caregiver,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,0
+cr_0072,Science writer / communicator — biology and animals,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0010,Science-based animal trainer,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,1,0
+cr_0011,Service-dog / assistance-animal trainer,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0012,Shelter behavior specialist / coordinator,verified_occupation_or_title,career,2026-09-08,0,0,0,0,1,0,1,0
+cr_0082,Species recovery biologist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,2
+cr_0059,University / laboratory research assistant,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,2,0
+cr_0067,University professor,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0069,Wildlife / environmental educator,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,1
+cr_0027,Wildlife biologist,verified_current_market,career,2026-09-08,2,1,0,1,2,1,6,1
+cr_0037,Wildlife disease / ecophysiology specialist,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0081,Wildlife diversity / nongame biologist,verified_current_market,career,2026-09-08,1,1,0,0,1,0,0,1
+cr_0085,Wildlife program manager,verified_current_market,later_career,2026-09-08,3,2,1,1,0,0,0,1
+cr_0083,Wildlife refuge manager,verified_current_market,later_career,2026-09-08,2,2,2,1,0,1,0,1
+cr_0029,Wildlife rehabilitation / release coordinator,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,1,1
+cr_0093,Wildlife rehabilitation program manager,verified_current_market,later_career,2026-09-08,2,2,2,1,1,0,0,1
+cr_0028,Wildlife rehabilitator,verified_current_market,career,2026-09-08,5,5,3,1,1,0,2,0
+cr_0026,Wildlife technician / biological science technician,verified_current_market,career,2026-09-08,7,6,2,0,0,0,4,0
+cr_0078,Zoo / aquarium animal trainer,verified_current_market,career,2026-09-08,4,4,1,1,0,0,0,2
+cr_0019,Zoo / aquarium behavioral researcher,verified_function_title_varies,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0068,Zoo / aquarium educator,verified_current_market,career,2026-09-08,1,1,0,0,0,0,1,0
+cr_0018,Zoo / aquarium welfare specialist,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,0
+cr_0023,Zoo animal curator,verified_current_market,career,2026-09-08,2,2,1,0,0,0,0,2
+cr_0077,Zoo animal nutritionist / nutrition coordinator,verified_current_market,career,2026-09-08,2,2,0,0,0,0,1,0
+cr_0017,Zoo behavioral-husbandry specialist,verified_current_market,career,2026-09-08,2,2,0,1,0,0,1,1
+cr_0024,Zoo conservation coordinator,verified_occupation_or_title,career,2026-09-08,0,0,0,0,0,0,0,1
+cr_0076,Zoo registrar / animal records & permits specialist,verified_current_market,career,2026-09-08,1,1,0,1,0,0,1,0
+cr_0025,Zoo research coordinator,verified_current_market,career,2026-09-08,1,1,0,0,0,0,0,0
+cr_0014,Zookeeper / animal-care specialist,verified_current_market,career,2026-09-08,6,2,1,0,0,0,5,0
+cr_0040,Zoologist,verified_occupation_or_title,career,2026-09-08,0,0,0,1,0,1,0,0
+cr_0090,eDNA / molecular ecology technician,verified_current_market,career,2026-09-08,1,1,0,0,0,0,1,1

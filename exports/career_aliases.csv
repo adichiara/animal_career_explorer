@@ -1,0 +1,539 @@
+alias_id,career_id,alias,alias_type,source_id,verification_status
+alias_0001,cr_0001,Research Assistant,searchable_title,,curated_search_term
+alias_0002,cr_0001,Research Technician,searchable_title,,curated_search_term
+alias_0003,cr_0001,Lab Technician,searchable_title,,curated_search_term
+alias_0004,cr_0001,Research Associate,searchable_title,,curated_search_term
+alias_0005,cr_0001,Behavioral Research Assistant,alternate_term,,curated_search_term
+alias_0006,cr_0001,Animal Behavior Technician,alternate_term,,curated_search_term
+alias_0007,cr_0002,Applied Animal Behaviorist,searchable_title,,curated_search_term
+alias_0008,cr_0002,Animal Behavior Scientist,searchable_title,,curated_search_term
+alias_0009,cr_0002,Behavior Scientist,searchable_title,,curated_search_term
+alias_0010,cr_0002,Research Scientist,searchable_title,,curated_search_term
+alias_0011,cr_0002,Behaviorist,alternate_term,,curated_search_term
+alias_0012,cr_0002,Applied Animal Behaviorist,alternate_term,,curated_search_term
+alias_0013,cr_0002,Ethologist,alternate_term,,curated_search_term
+alias_0014,cr_0003,Research Assistant,searchable_title,,curated_search_term
+alias_0015,cr_0003,Research Scientist,searchable_title,,curated_search_term
+alias_0016,cr_0003,Postdoctoral Fellow,searchable_title,,curated_search_term
+alias_0017,cr_0003,Professor,searchable_title,,curated_search_term
+alias_0018,cr_0003,Comparative Cognition Scientist,alternate_term,,curated_search_term
+alias_0019,cr_0003,Animal Cognition Researcher,alternate_term,,curated_search_term
+alias_0020,cr_0003,Comparative Psychologist,alternate_term,,curated_search_term
+alias_0021,cr_0004,Research Scientist,searchable_title,,curated_search_term
+alias_0022,cr_0004,Postdoctoral Fellow,searchable_title,,curated_search_term
+alias_0023,cr_0004,Professor,searchable_title,,curated_search_term
+alias_0024,cr_0004,Research Assistant,searchable_title,,curated_search_term
+alias_0025,cr_0004,Learning & Behavior Researcher,alternate_term,,curated_search_term
+alias_0026,cr_0004,Comparative Learning Researcher,alternate_term,,curated_search_term
+alias_0027,cr_0004,Experimental Psychologist,alternate_term,,curated_search_term
+alias_0028,cr_0005,Research Scientist,searchable_title,,curated_search_term
+alias_0029,cr_0005,Postdoctoral Fellow,searchable_title,,curated_search_term
+alias_0030,cr_0005,Professor,searchable_title,,curated_search_term
+alias_0031,cr_0005,Animal Communication Scientist,alternate_term,,curated_search_term
+alias_0032,cr_0005,Bioacoustics Researcher,alternate_term,,curated_search_term
+alias_0033,cr_0005,Behavioral Ecologist,alternate_term,,curated_search_term
+alias_0034,cr_0006,Animal Welfare Scientist,searchable_title,,curated_search_term
+alias_0035,cr_0006,Animal Welfare & Behaviour Scientist,searchable_title,,curated_search_term
+alias_0036,cr_0006,Research Scientist,searchable_title,,curated_search_term
+alias_0037,cr_0006,Applied Animal Welfare Scientist,alternate_term,,curated_search_term
+alias_0038,cr_0006,Welfare Research Scientist,alternate_term,,curated_search_term
+alias_0039,cr_0007,Animal Welfare Specialist,searchable_title,,curated_search_term
+alias_0040,cr_0007,Behavior Coordinator,searchable_title,,curated_search_term
+alias_0041,cr_0007,Clinical Animal Behavior Coordinator,searchable_title,,curated_search_term
+alias_0042,cr_0007,Behavior Manager,searchable_title,,curated_search_term
+alias_0043,cr_0007,Welfare Coordinator,alternate_term,,curated_search_term
+alias_0044,cr_0007,Animal Behavior Coordinator,alternate_term,,curated_search_term
+alias_0045,cr_0008,Behavioral Husbandry Manager,searchable_title,,curated_search_term
+alias_0046,cr_0008,Curator of Behavioral Husbandry,searchable_title,,curated_search_term
+alias_0047,cr_0008,Animal Behavior Manager,searchable_title,,curated_search_term
+alias_0048,cr_0008,Behavioral Husbandry Specialist,alternate_term,,curated_search_term
+alias_0049,cr_0008,Training & Enrichment Specialist,alternate_term,,curated_search_term
+alias_0050,cr_0009,Enrichment Manager,searchable_title,,curated_search_term
+alias_0051,cr_0009,Behavioral Husbandry & Enrichment Manager,searchable_title,,curated_search_term
+alias_0052,cr_0009,Animal Welfare Specialist,searchable_title,,curated_search_term
+alias_0053,cr_0009,Enrichment Coordinator,alternate_term,,curated_search_term
+alias_0054,cr_0009,Enrichment Specialist,alternate_term,,curated_search_term
+alias_0055,cr_0010,Animal Trainer,searchable_title,,curated_search_term
+alias_0056,cr_0010,Keeper/Trainer,searchable_title,,curated_search_term
+alias_0057,cr_0010,Marine Mammal Trainer,searchable_title,,curated_search_term
+alias_0058,cr_0010,Positive-Reinforcement Trainer,alternate_term,,curated_search_term
+alias_0059,cr_0010,Behavior Trainer,alternate_term,,curated_search_term
+alias_0060,cr_0011,Service Dog Trainer,searchable_title,,curated_search_term
+alias_0061,cr_0011,Guide Dog Trainer,searchable_title,,curated_search_term
+alias_0062,cr_0011,Guide Dog Instructor,searchable_title,,curated_search_term
+alias_0063,cr_0011,Guide Dog Mobility Instructor,searchable_title,,curated_search_term
+alias_0064,cr_0011,Assistance Dog Trainer,alternate_term,,curated_search_term
+alias_0065,cr_0011,Service Animal Trainer,alternate_term,,curated_search_term
+alias_0066,cr_0012,Behavior Manager,searchable_title,,curated_search_term
+alias_0067,cr_0012,Behavior Coordinator,searchable_title,,curated_search_term
+alias_0068,cr_0012,Animal Behavior Manager,searchable_title,,curated_search_term
+alias_0069,cr_0012,Shelter Behavior Specialist,alternate_term,,curated_search_term
+alias_0070,cr_0012,Canine/Feline Behavior Specialist,alternate_term,,curated_search_term
+alias_0071,cr_0013,Research Scientist,searchable_title,,curated_search_term
+alias_0072,cr_0013,Postdoctoral Fellow,searchable_title,,curated_search_term
+alias_0073,cr_0013,Professor,searchable_title,,curated_search_term
+alias_0074,cr_0013,Companion Animal Welfare Scientist,alternate_term,,curated_search_term
+alias_0075,cr_0013,Canine Cognition Researcher,alternate_term,,curated_search_term
+alias_0076,cr_0013,Feline Behavior Researcher,alternate_term,,curated_search_term
+alias_0077,cr_0014,Zookeeper,searchable_title,,curated_search_term
+alias_0078,cr_0014,Animal Keeper,searchable_title,,curated_search_term
+alias_0079,cr_0014,Animal Care Specialist,searchable_title,,curated_search_term
+alias_0080,cr_0014,Keeper,searchable_title,,curated_search_term
+alias_0081,cr_0014,Zoo Keeper,alternate_term,,curated_search_term
+alias_0082,cr_0014,Animal Care Keeper,alternate_term,,curated_search_term
+alias_0083,cr_0015,Aquarist,searchable_title,,curated_search_term
+alias_0084,cr_0015,Aquarium Biologist,searchable_title,,curated_search_term
+alias_0085,cr_0015,Aquarium Animal Care Specialist,searchable_title,,curated_search_term
+alias_0086,cr_0015,Aquarium Keeper,alternate_term,,curated_search_term
+alias_0087,cr_0015,Aquatic Animal Care Specialist,alternate_term,,curated_search_term
+alias_0088,cr_0016,Animal Caregiver,searchable_title,,curated_search_term
+alias_0089,cr_0016,Animal Care Specialist,searchable_title,,curated_search_term
+alias_0090,cr_0016,Care Technician,searchable_title,,curated_search_term
+alias_0091,cr_0016,Sanctuary Caregiver,alternate_term,,curated_search_term
+alias_0092,cr_0016,Animal Care Technician,alternate_term,,curated_search_term
+alias_0093,cr_0017,Behavioral Husbandry Manager,searchable_title,,curated_search_term
+alias_0094,cr_0017,Keeper/Trainer,searchable_title,,curated_search_term
+alias_0095,cr_0017,Animal Behavior Manager,searchable_title,,curated_search_term
+alias_0096,cr_0017,Zoo Behavioral Husbandry Specialist,alternate_term,,curated_search_term
+alias_0097,cr_0017,Training Coordinator,alternate_term,,curated_search_term
+alias_0098,cr_0018,Animal Welfare Specialist,searchable_title,,curated_search_term
+alias_0099,cr_0018,Animal Welfare Scientist,searchable_title,,curated_search_term
+alias_0100,cr_0018,Applied Animal Welfare Manager,searchable_title,,curated_search_term
+alias_0101,cr_0018,Zoo Welfare Specialist,alternate_term,,curated_search_term
+alias_0102,cr_0018,Welfare & Behavior Specialist,alternate_term,,curated_search_term
+alias_0103,cr_0019,Research Coordinator,searchable_title,,curated_search_term
+alias_0104,cr_0019,Research Scientist,searchable_title,,curated_search_term
+alias_0105,cr_0019,Animal Welfare Researcher,searchable_title,,curated_search_term
+alias_0106,cr_0019,Applied Research Coordinator,searchable_title,,curated_search_term
+alias_0107,cr_0019,Zoo Behavior Researcher,alternate_term,,curated_search_term
+alias_0108,cr_0019,Applied Animal Behavior Researcher,alternate_term,,curated_search_term
+alias_0109,cr_0020,Conservation Breeding Keeper,searchable_title,,curated_search_term
+alias_0110,cr_0020,Conservation Husbandry Technician,searchable_title,,curated_search_term
+alias_0111,cr_0020,Reintroduction Technician,searchable_title,,curated_search_term
+alias_0112,cr_0020,Breeding Program Technician,alternate_term,,curated_search_term
+alias_0113,cr_0020,Conservation Keeper,alternate_term,,curated_search_term
+alias_0114,cr_0021,Conservation Scientist,searchable_title,,curated_search_term
+alias_0115,cr_0021,Population Biologist,searchable_title,,curated_search_term
+alias_0116,cr_0021,Research Scientist,searchable_title,,curated_search_term
+alias_0117,cr_0021,Reintroduction Biologist,searchable_title,,curated_search_term
+alias_0118,cr_0021,Conservation Breeding Scientist,alternate_term,,curated_search_term
+alias_0119,cr_0021,Population Management Scientist,alternate_term,,curated_search_term
+alias_0120,cr_0022,Animal Collection Manager,searchable_title,,curated_search_term
+alias_0121,cr_0022,Animal Operations Manager,searchable_title,,curated_search_term
+alias_0122,cr_0022,Curator,searchable_title,,curated_search_term
+alias_0123,cr_0022,Registrar,searchable_title,,curated_search_term
+alias_0124,cr_0022,Live-Collection Manager,alternate_term,,curated_search_term
+alias_0125,cr_0022,Animal Management Specialist,alternate_term,,curated_search_term
+alias_0126,cr_0023,Animal Curator,searchable_title,,curated_search_term
+alias_0127,cr_0023,Curator of Animals,searchable_title,,curated_search_term
+alias_0128,cr_0023,Zoological Curator,searchable_title,,curated_search_term
+alias_0129,cr_0023,General Curator,searchable_title,,curated_search_term
+alias_0130,cr_0023,Zoo Curator,alternate_term,,curated_search_term
+alias_0131,cr_0023,Animal Collection Curator,alternate_term,,curated_search_term
+alias_0132,cr_0024,Conservation & Research Coordinator,searchable_title,,curated_search_term
+alias_0133,cr_0024,Conservation Program Coordinator,searchable_title,,curated_search_term
+alias_0134,cr_0024,Field Conservation Coordinator,searchable_title,,curated_search_term
+alias_0135,cr_0024,Zoo Conservation Coordinator,alternate_term,,curated_search_term
+alias_0136,cr_0024,Conservation Programs Manager,alternate_term,,curated_search_term
+alias_0137,cr_0025,Research Coordinator,searchable_title,,curated_search_term
+alias_0138,cr_0025,Assistant Research Coordinator,searchable_title,,curated_search_term
+alias_0139,cr_0025,Zoo Research Manager,searchable_title,,curated_search_term
+alias_0140,cr_0025,Applied Research Coordinator,alternate_term,,curated_search_term
+alias_0141,cr_0025,Conservation Research Coordinator,alternate_term,,curated_search_term
+alias_0142,cr_0026,Biological Science Technician,searchable_title,,curated_search_term
+alias_0143,cr_0026,Wildlife Technician,searchable_title,,curated_search_term
+alias_0144,cr_0026,Fisheries & Wildlife Technician,searchable_title,,curated_search_term
+alias_0145,cr_0026,Field Technician,searchable_title,,curated_search_term
+alias_0146,cr_0026,Wildlife Tech,alternate_term,,curated_search_term
+alias_0147,cr_0026,Biological Technician,alternate_term,,curated_search_term
+alias_0148,cr_0027,Wildlife Biologist,searchable_title,,curated_search_term
+alias_0149,cr_0027,Fish & Wildlife Biologist,searchable_title,,curated_search_term
+alias_0150,cr_0027,Fisheries and Wildlife Biological Scientist,searchable_title,,curated_search_term
+alias_0151,cr_0027,Habitat Biologist,searchable_title,,curated_search_term
+alias_0152,cr_0027,Wildlife Scientist,alternate_term,,curated_search_term
+alias_0153,cr_0027,Wildlife Research Biologist,alternate_term,,curated_search_term
+alias_0154,cr_0028,Wildlife Rehabilitator,searchable_title,,curated_search_term
+alias_0155,cr_0028,Rehabilitation Technician,searchable_title,,curated_search_term
+alias_0156,cr_0028,Wildlife Care Specialist,searchable_title,,curated_search_term
+alias_0157,cr_0028,Wildlife Rehabber,alternate_term,,curated_search_term
+alias_0158,cr_0028,Rehabilitation Specialist,alternate_term,,curated_search_term
+alias_0159,cr_0029,Rescue and Release Coordinator,searchable_title,,curated_search_term
+alias_0160,cr_0029,Rehabilitation Coordinator,searchable_title,,curated_search_term
+alias_0161,cr_0029,Release Coordinator,searchable_title,,curated_search_term
+alias_0162,cr_0029,Wildlife Release Coordinator,alternate_term,,curated_search_term
+alias_0163,cr_0029,Rehab/Release Manager,alternate_term,,curated_search_term
+alias_0164,cr_0030,Reintroduction Biologist,searchable_title,,curated_search_term
+alias_0165,cr_0030,Reintroduction Technician,searchable_title,,curated_search_term
+alias_0166,cr_0030,Field Technician,searchable_title,,curated_search_term
+alias_0167,cr_0030,Conservation Biologist,searchable_title,,curated_search_term
+alias_0168,cr_0030,Release Technician,alternate_term,,curated_search_term
+alias_0169,cr_0030,Species Reintroduction Technician,alternate_term,,curated_search_term
+alias_0170,cr_0031,Monitoring Biologist,searchable_title,,curated_search_term
+alias_0171,cr_0031,Reintroduction Biologist,searchable_title,,curated_search_term
+alias_0172,cr_0031,Field Biologist,searchable_title,,curated_search_term
+alias_0173,cr_0031,Telemetry Technician,searchable_title,,curated_search_term
+alias_0174,cr_0031,Post-Release Monitor,alternate_term,,curated_search_term
+alias_0175,cr_0031,Release Monitoring Biologist,alternate_term,,curated_search_term
+alias_0176,cr_0032,Research Scientist,searchable_title,,curated_search_term
+alias_0177,cr_0032,Postdoctoral Fellow,searchable_title,,curated_search_term
+alias_0178,cr_0032,Professor,searchable_title,,curated_search_term
+alias_0179,cr_0032,Behavioral Ecologist,alternate_term,,curated_search_term
+alias_0180,cr_0032,Animal Behavior Ecologist,alternate_term,,curated_search_term
+alias_0181,cr_0032,Behavioral Ecology Researcher,alternate_term,,curated_search_term
+alias_0182,cr_0033,Conservation Biologist,searchable_title,,curated_search_term
+alias_0183,cr_0033,Wildlife Biologist,searchable_title,,curated_search_term
+alias_0184,cr_0033,Research Biologist,searchable_title,,curated_search_term
+alias_0185,cr_0033,Conservation Scientist,alternate_term,,curated_search_term
+alias_0186,cr_0033,Biodiversity Biologist,alternate_term,,curated_search_term
+alias_0187,cr_0034,Species Recovery Biologist,searchable_title,,curated_search_term
+alias_0188,cr_0034,Threatened & Endangered Species Biologist,searchable_title,,curated_search_term
+alias_0189,cr_0034,Fish & Wildlife Biologist,searchable_title,,curated_search_term
+alias_0190,cr_0034,Endangered Species Biologist,alternate_term,,curated_search_term
+alias_0191,cr_0034,Species Recovery Specialist,alternate_term,,curated_search_term
+alias_0192,cr_0035,Population Ecologist,searchable_title,,curated_search_term
+alias_0193,cr_0035,Population Biologist,searchable_title,,curated_search_term
+alias_0194,cr_0035,Wildlife Population Biologist,searchable_title,,curated_search_term
+alias_0195,cr_0035,Quantitative Ecologist,searchable_title,,curated_search_term
+alias_0196,cr_0035,Population Dynamics Ecologist,alternate_term,,curated_search_term
+alias_0197,cr_0035,Population Scientist,alternate_term,,curated_search_term
+alias_0198,cr_0036,Movement Ecologist,searchable_title,,curated_search_term
+alias_0199,cr_0036,Spatial Ecologist,searchable_title,,curated_search_term
+alias_0200,cr_0036,Spatial Wildlife Ecologist,searchable_title,,curated_search_term
+alias_0201,cr_0036,Movement Biologist,searchable_title,,curated_search_term
+alias_0202,cr_0036,Movement Ecology Scientist,alternate_term,,curated_search_term
+alias_0203,cr_0036,Spatial Biologist,alternate_term,,curated_search_term
+alias_0204,cr_0037,Wildlife Disease Ecologist,searchable_title,,curated_search_term
+alias_0205,cr_0037,Disease Ecologist,searchable_title,,curated_search_term
+alias_0206,cr_0037,Ecophysiologist,searchable_title,,curated_search_term
+alias_0207,cr_0037,Physiological Ecologist,searchable_title,,curated_search_term
+alias_0208,cr_0037,Wildlife Disease Biologist,alternate_term,,curated_search_term
+alias_0209,cr_0037,Wildlife Physiologist,alternate_term,,curated_search_term
+alias_0210,cr_0038,Wildlife Conflict Specialist,searchable_title,,curated_search_term
+alias_0211,cr_0038,Human-Wildlife Conflict Biologist,searchable_title,,curated_search_term
+alias_0212,cr_0038,Wildlife Biologist,searchable_title,,curated_search_term
+alias_0213,cr_0038,Conflict Biologist,alternate_term,,curated_search_term
+alias_0214,cr_0038,Wildlife Coexistence Specialist,alternate_term,,curated_search_term
+alias_0215,cr_0039,Wildlife Habitat Biologist,searchable_title,,curated_search_term
+alias_0216,cr_0039,Habitat Biologist,searchable_title,,curated_search_term
+alias_0217,cr_0039,Wildlife Management Specialist,searchable_title,,curated_search_term
+alias_0218,cr_0039,Habitat Management Biologist,alternate_term,,curated_search_term
+alias_0219,cr_0039,Wildlife Manager,alternate_term,,curated_search_term
+alias_0220,cr_0040,Zoologist,searchable_title,,curated_search_term
+alias_0221,cr_0040,Research Zoologist,searchable_title,,curated_search_term
+alias_0222,cr_0040,Vertebrate Zoologist,searchable_title,,curated_search_term
+alias_0223,cr_0040,Animal Biologist,alternate_term,,curated_search_term
+alias_0224,cr_0040,Zoological Researcher,alternate_term,,curated_search_term
+alias_0225,cr_0041,Mammalogist,searchable_title,,curated_search_term
+alias_0226,cr_0041,Mammal Ecologist,searchable_title,,curated_search_term
+alias_0227,cr_0041,Mammal Biologist,searchable_title,,curated_search_term
+alias_0228,cr_0041,Mammalian Ecologist,alternate_term,,curated_search_term
+alias_0229,cr_0041,Mammal Researcher,alternate_term,,curated_search_term
+alias_0230,cr_0042,Ornithologist,searchable_title,,curated_search_term
+alias_0231,cr_0042,Avian Ecologist,searchable_title,,curated_search_term
+alias_0232,cr_0042,Avian Biologist,searchable_title,,curated_search_term
+alias_0233,cr_0042,Bird Ecologist,alternate_term,,curated_search_term
+alias_0234,cr_0042,Avian Researcher,alternate_term,,curated_search_term
+alias_0235,cr_0043,Herpetologist,searchable_title,,curated_search_term
+alias_0236,cr_0043,Curator of Herpetology,searchable_title,,curated_search_term
+alias_0237,cr_0043,Amphibian/Reptile Biologist,searchable_title,,curated_search_term
+alias_0238,cr_0043,Herpetofaunal Biologist,alternate_term,,curated_search_term
+alias_0239,cr_0043,Reptile/Amphibian Ecologist,alternate_term,,curated_search_term
+alias_0240,cr_0044,Field Ecologist,searchable_title,,curated_search_term
+alias_0241,cr_0044,Ecologist,searchable_title,,curated_search_term
+alias_0242,cr_0044,Field Biologist,searchable_title,,curated_search_term
+alias_0243,cr_0044,Field Ecology Scientist,alternate_term,,curated_search_term
+alias_0244,cr_0044,Ecological Field Biologist,alternate_term,,curated_search_term
+alias_0245,cr_0045,Ecological Technician,searchable_title,,curated_search_term
+alias_0246,cr_0045,Research Technician,searchable_title,,curated_search_term
+alias_0247,cr_0045,Field Technician,searchable_title,,curated_search_term
+alias_0248,cr_0045,Biological Science Technician,searchable_title,,curated_search_term
+alias_0249,cr_0045,Ecology Technician,alternate_term,,curated_search_term
+alias_0250,cr_0045,Field Research Technician,alternate_term,,curated_search_term
+alias_0251,cr_0046,Animal Physiologist,searchable_title,,curated_search_term
+alias_0252,cr_0046,Comparative Physiologist,searchable_title,,curated_search_term
+alias_0253,cr_0046,Physiological Ecologist,searchable_title,,curated_search_term
+alias_0254,cr_0046,Research Scientist,searchable_title,,curated_search_term
+alias_0255,cr_0046,Comparative Animal Physiologist,alternate_term,,curated_search_term
+alias_0256,cr_0046,Organismal Physiologist,alternate_term,,curated_search_term
+alias_0257,cr_0047,Neuroethologist,searchable_title,,curated_search_term
+alias_0258,cr_0047,Behavioral Neuroscientist,searchable_title,,curated_search_term
+alias_0259,cr_0047,Research Scientist,searchable_title,,curated_search_term
+alias_0260,cr_0047,Professor,searchable_title,,curated_search_term
+alias_0261,cr_0047,Neural Behavior Researcher,alternate_term,,curated_search_term
+alias_0262,cr_0047,Comparative Neuroscientist,alternate_term,,curated_search_term
+alias_0263,cr_0048,Evolutionary Biologist,searchable_title,,curated_search_term
+alias_0264,cr_0048,Evolutionary Ecologist,searchable_title,,curated_search_term
+alias_0265,cr_0048,Research Scientist,searchable_title,,curated_search_term
+alias_0266,cr_0048,Professor,searchable_title,,curated_search_term
+alias_0267,cr_0048,Animal Evolutionary Biologist,alternate_term,,curated_search_term
+alias_0268,cr_0048,Evolutionary Zoologist,alternate_term,,curated_search_term
+alias_0269,cr_0049,GIS Analyst,searchable_title,,curated_search_term
+alias_0270,cr_0049,Geospatial Analyst,searchable_title,,curated_search_term
+alias_0271,cr_0049,GIS Specialist,searchable_title,,curated_search_term
+alias_0272,cr_0049,Spatial Analyst,searchable_title,,curated_search_term
+alias_0273,cr_0049,Wildlife GIS Analyst,alternate_term,,curated_search_term
+alias_0274,cr_0049,Conservation GIS Analyst,alternate_term,,curated_search_term
+alias_0275,cr_0050,Research Assistant,searchable_title,,curated_search_term
+alias_0276,cr_0050,Quantitative Research Assistant,searchable_title,,curated_search_term
+alias_0277,cr_0050,Data/Research Technician,searchable_title,,curated_search_term
+alias_0278,cr_0050,Quantitative Ecology RA,alternate_term,,curated_search_term
+alias_0279,cr_0050,Ecological Data Technician,alternate_term,,curated_search_term
+alias_0280,cr_0051,Quantitative Ecologist,searchable_title,,curated_search_term
+alias_0281,cr_0051,Biometrician,searchable_title,,curated_search_term
+alias_0282,cr_0051,Biostatistician,searchable_title,,curated_search_term
+alias_0283,cr_0051,Ecological Statistician,searchable_title,,curated_search_term
+alias_0284,cr_0051,Quantitative Biologist,alternate_term,,curated_search_term
+alias_0285,cr_0051,Ecological Modeler,alternate_term,,curated_search_term
+alias_0286,cr_0052,Ecologist,searchable_title,,curated_search_term
+alias_0287,cr_0052,Environmental Scientist,searchable_title,,curated_search_term
+alias_0288,cr_0052,Wildlife Biologist,searchable_title,,curated_search_term
+alias_0289,cr_0052,Biological Consultant,searchable_title,,curated_search_term
+alias_0290,cr_0052,Environmental Consultant,alternate_term,,curated_search_term
+alias_0291,cr_0052,Ecological Consultant,alternate_term,,curated_search_term
+alias_0292,cr_0053,Regulatory Permitting Biologist,searchable_title,,curated_search_term
+alias_0293,cr_0053,Permitting Biologist,searchable_title,,curated_search_term
+alias_0294,cr_0053,Environmental Compliance Biologist,searchable_title,,curated_search_term
+alias_0295,cr_0053,Regulatory Biologist,alternate_term,,curated_search_term
+alias_0296,cr_0053,Environmental Permitting Specialist,alternate_term,,curated_search_term
+alias_0297,cr_0054,Wildlife Biologist,searchable_title,,curated_search_term
+alias_0298,cr_0054,Fish & Wildlife Biologist,searchable_title,,curated_search_term
+alias_0299,cr_0054,Biological Scientist,searchable_title,,curated_search_term
+alias_0300,cr_0054,Habitat Biologist,searchable_title,,curated_search_term
+alias_0301,cr_0054,Agency Biologist,alternate_term,,curated_search_term
+alias_0302,cr_0054,Natural Resources Biologist,alternate_term,,curated_search_term
+alias_0303,cr_0055,Natural Resource Specialist,searchable_title,,curated_search_term
+alias_0304,cr_0055,Resource Manager,searchable_title,,curated_search_term
+alias_0305,cr_0055,Conservation Scientist,searchable_title,,curated_search_term
+alias_0306,cr_0055,Refuge Manager,searchable_title,,curated_search_term
+alias_0307,cr_0055,Natural Resources Manager,alternate_term,,curated_search_term
+alias_0308,cr_0055,Resource Conservation Manager,alternate_term,,curated_search_term
+alias_0309,cr_0056,Natural Resource Specialist,searchable_title,,curated_search_term
+alias_0310,cr_0056,Park Biologist,searchable_title,,curated_search_term
+alias_0311,cr_0056,Resource Management Specialist,searchable_title,,curated_search_term
+alias_0312,cr_0056,Wildlife Biologist,searchable_title,,curated_search_term
+alias_0313,cr_0056,Park Resource Specialist,alternate_term,,curated_search_term
+alias_0314,cr_0056,Natural Resource Biologist,alternate_term,,curated_search_term
+alias_0315,cr_0057,Conservation Scientist,searchable_title,,curated_search_term
+alias_0316,cr_0057,Program Scientist,searchable_title,,curated_search_term
+alias_0317,cr_0057,Project Biologist,searchable_title,,curated_search_term
+alias_0318,cr_0057,Conservation Coordinator,searchable_title,,curated_search_term
+alias_0319,cr_0057,NGO Conservation Scientist,alternate_term,,curated_search_term
+alias_0320,cr_0057,Conservation Program Coordinator,alternate_term,,curated_search_term
+alias_0321,cr_0058,Habitat Restoration Specialist,searchable_title,,curated_search_term
+alias_0322,cr_0058,Restoration Ecologist,searchable_title,,curated_search_term
+alias_0323,cr_0058,Environmental Restoration Planner,searchable_title,,curated_search_term
+alias_0324,cr_0058,Watershed Coordinator,searchable_title,,curated_search_term
+alias_0325,cr_0058,Ecological Monitoring Specialist,alternate_term,,curated_search_term
+alias_0326,cr_0058,Restoration Specialist,alternate_term,,curated_search_term
+alias_0327,cr_0059,Research Assistant,searchable_title,,curated_search_term
+alias_0328,cr_0059,Research Associate,searchable_title,,curated_search_term
+alias_0329,cr_0059,Lab Technician,searchable_title,,curated_search_term
+alias_0330,cr_0059,Biological Technician,searchable_title,,curated_search_term
+alias_0331,cr_0059,University Research Assistant,alternate_term,,curated_search_term
+alias_0332,cr_0059,Laboratory Research Assistant,alternate_term,,curated_search_term
+alias_0333,cr_0060,Lab Manager,searchable_title,,curated_search_term
+alias_0334,cr_0060,Laboratory Manager,searchable_title,,curated_search_term
+alias_0335,cr_0060,Research Manager,searchable_title,,curated_search_term
+alias_0336,cr_0060,Research Administrator,searchable_title,,curated_search_term
+alias_0337,cr_0060,Research Lab Manager,alternate_term,,curated_search_term
+alias_0338,cr_0060,Laboratory Operations Manager,alternate_term,,curated_search_term
+alias_0339,cr_0061,N/A,searchable_title,,curated_search_term
+alias_0340,cr_0061,Graduate program in animal behavior,alternate_term,,curated_search_term
+alias_0341,cr_0061,ethology,alternate_term,,curated_search_term
+alias_0342,cr_0061,comparative behavior,alternate_term,,curated_search_term
+alias_0343,cr_0062,N/A,searchable_title,,curated_search_term
+alias_0344,cr_0062,Graduate program in behavioral ecology,alternate_term,,curated_search_term
+alias_0345,cr_0062,behavior & evolution,alternate_term,,curated_search_term
+alias_0346,cr_0063,N/A,searchable_title,,curated_search_term
+alias_0347,cr_0063,Graduate program in wildlife ecology,alternate_term,,curated_search_term
+alias_0348,cr_0063,conservation biology,alternate_term,,curated_search_term
+alias_0349,cr_0063,wildlife science,alternate_term,,curated_search_term
+alias_0350,cr_0064,N/A,searchable_title,,curated_search_term
+alias_0351,cr_0064,Graduate program in zoology,alternate_term,,curated_search_term
+alias_0352,cr_0064,organismal biology,alternate_term,,curated_search_term
+alias_0353,cr_0064,integrative biology,alternate_term,,curated_search_term
+alias_0354,cr_0065,N/A,searchable_title,,curated_search_term
+alias_0355,cr_0065,Graduate program in animal welfare science,alternate_term,,curated_search_term
+alias_0356,cr_0065,applied animal behavior,alternate_term,,curated_search_term
+alias_0357,cr_0066,Research Scientist,searchable_title,,curated_search_term
+alias_0358,cr_0066,Staff Scientist,searchable_title,,curated_search_term
+alias_0359,cr_0066,Research Biologist,searchable_title,,curated_search_term
+alias_0360,cr_0066,Principal Investigator,searchable_title,,curated_search_term
+alias_0361,cr_0066,PI,alternate_term,,curated_search_term
+alias_0362,cr_0066,Principal Scientist,alternate_term,,curated_search_term
+alias_0363,cr_0066,Lead Scientist,alternate_term,,curated_search_term
+alias_0364,cr_0067,Assistant Professor,searchable_title,,curated_search_term
+alias_0365,cr_0067,Associate Professor,searchable_title,,curated_search_term
+alias_0366,cr_0067,Biology Professor,searchable_title,,curated_search_term
+alias_0367,cr_0067,Lecturer,searchable_title,,curated_search_term
+alias_0368,cr_0067,Professor of Biology,alternate_term,,curated_search_term
+alias_0369,cr_0067,Faculty Researcher,alternate_term,,curated_search_term
+alias_0370,cr_0068,Zoo Educator,searchable_title,,curated_search_term
+alias_0371,cr_0068,Conservation Educator,searchable_title,,curated_search_term
+alias_0372,cr_0068,Education Specialist,searchable_title,,curated_search_term
+alias_0373,cr_0068,Interpreter,searchable_title,,curated_search_term
+alias_0374,cr_0068,Aquarium Educator,alternate_term,,curated_search_term
+alias_0375,cr_0068,Zoo Education Specialist,alternate_term,,curated_search_term
+alias_0376,cr_0069,Environmental Educator,searchable_title,,curated_search_term
+alias_0377,cr_0069,Wildlife Educator,searchable_title,,curated_search_term
+alias_0378,cr_0069,Natural Resource Educator,searchable_title,,curated_search_term
+alias_0379,cr_0069,Conservation Educator,alternate_term,,curated_search_term
+alias_0380,cr_0069,Outdoor Educator,alternate_term,,curated_search_term
+alias_0381,cr_0070,Interpretive Naturalist,searchable_title,,curated_search_term
+alias_0382,cr_0070,Naturalist,searchable_title,,curated_search_term
+alias_0383,cr_0070,Park Interpreter,searchable_title,,curated_search_term
+alias_0384,cr_0070,Interpretive Ranger,searchable_title,,curated_search_term
+alias_0385,cr_0070,Nature Interpreter,alternate_term,,curated_search_term
+alias_0386,cr_0070,Interpretive Specialist,alternate_term,,curated_search_term
+alias_0387,cr_0071,Outreach Coordinator,searchable_title,,curated_search_term
+alias_0388,cr_0071,Conservation Engagement Coordinator,searchable_title,,curated_search_term
+alias_0389,cr_0071,Education & Outreach Coordinator,searchable_title,,curated_search_term
+alias_0390,cr_0071,Program Coordinator,searchable_title,,curated_search_term
+alias_0391,cr_0071,Conservation Outreach Coordinator,alternate_term,,curated_search_term
+alias_0392,cr_0071,Community Engagement Coordinator,alternate_term,,curated_search_term
+alias_0393,cr_0072,Science Writer,searchable_title,,curated_search_term
+alias_0394,cr_0072,Technical Writer,searchable_title,,curated_search_term
+alias_0395,cr_0072,Scientific Communications Specialist,searchable_title,,curated_search_term
+alias_0396,cr_0072,Medical Writer,searchable_title,,curated_search_term
+alias_0397,cr_0072,Scientific Writer,alternate_term,,curated_search_term
+alias_0398,cr_0072,Science Communicator,alternate_term,,curated_search_term
+alias_0399,cr_0072,Biology Writer,alternate_term,,curated_search_term
+alias_0400,cr_0073,Collections Manager,searchable_title,,curated_search_term
+alias_0401,cr_0073,Museum Technician,searchable_title,,curated_search_term
+alias_0402,cr_0073,Collections Assistant,searchable_title,,curated_search_term
+alias_0403,cr_0073,Museum Educator,searchable_title,,curated_search_term
+alias_0404,cr_0073,Vertebrate Zoology Curator,searchable_title,,curated_search_term
+alias_0405,cr_0073,Natural History Collections Specialist,alternate_term,,curated_search_term
+alias_0406,cr_0073,Collections Technician,alternate_term,,curated_search_term
+alias_0407,cr_0074,Population Biologist,searchable_title,,curated_search_term
+alias_0408,cr_0074,Population Management Scientist,searchable_title,,curated_search_term
+alias_0409,cr_0074,Wildlife Planning Manager,searchable_title,,curated_search_term
+alias_0410,cr_0074,Population Management Researcher,searchable_title,,curated_search_term
+alias_0411,cr_0074,Population management,alternate_term,,curated_search_term
+alias_0412,cr_0074,demographic analysis,alternate_term,,curated_search_term
+alias_0413,cr_0074,managed population planning,alternate_term,,curated_search_term
+alias_0414,cr_0075,SSP Coordinator,searchable_title,,curated_search_term
+alias_0415,cr_0075,SSP Program Leader,searchable_title,,curated_search_term
+alias_0416,cr_0075,Studbook Keeper,searchable_title,,curated_search_term
+alias_0417,cr_0075,Animal Program Leader,searchable_title,,curated_search_term
+alias_0418,cr_0075,Species Survival Plan leadership,alternate_term,,curated_search_term
+alias_0419,cr_0075,regional studbook,alternate_term,,curated_search_term
+alias_0420,cr_0076,Registrar,searchable_title,,curated_search_term
+alias_0421,cr_0076,Animal Registrar,searchable_title,,curated_search_term
+alias_0422,cr_0076,Wildlife Records Specialist,searchable_title,,curated_search_term
+alias_0423,cr_0076,Animal Records Coordinator,searchable_title,,curated_search_term
+alias_0424,cr_0076,ZIMS registrar,alternate_term,,curated_search_term
+alias_0425,cr_0076,animal records,alternate_term,,curated_search_term
+alias_0426,cr_0076,permits and transactions,alternate_term,,curated_search_term
+alias_0427,cr_0077,Animal Nutrition Coordinator,searchable_title,,curated_search_term
+alias_0428,cr_0077,Zoo Nutritionist,searchable_title,,curated_search_term
+alias_0429,cr_0077,Animal Nutrition Manager,searchable_title,,curated_search_term
+alias_0430,cr_0077,Commissary Coordinator,searchable_title,,curated_search_term
+alias_0431,cr_0077,Zoological nutrition,alternate_term,,curated_search_term
+alias_0432,cr_0077,zoo commissary,alternate_term,,curated_search_term
+alias_0433,cr_0077,animal diet management,alternate_term,,curated_search_term
+alias_0434,cr_0078,Animal Trainer,searchable_title,,curated_search_term
+alias_0435,cr_0078,Senior Trainer,searchable_title,,curated_search_term
+alias_0436,cr_0078,Assistant Trainer,searchable_title,,curated_search_term
+alias_0437,cr_0078,Marine Mammal Trainer,searchable_title,,curated_search_term
+alias_0438,cr_0078,Behavior Trainer,searchable_title,,curated_search_term
+alias_0439,cr_0078,Oceanarium trainer,alternate_term,,curated_search_term
+alias_0440,cr_0078,pinniped trainer,alternate_term,,curated_search_term
+alias_0441,cr_0078,animal behavior trainer,alternate_term,,curated_search_term
+alias_0442,cr_0079,Animal Ambassador Lead,searchable_title,,curated_search_term
+alias_0443,cr_0079,Ambassador Animal Keeper,searchable_title,,curated_search_term
+alias_0444,cr_0079,Zoological Care Specialist - Ambassador Animals,searchable_title,,curated_search_term
+alias_0445,cr_0079,Animal Programs Keeper,searchable_title,,curated_search_term
+alias_0446,cr_0079,Animal ambassador team,alternate_term,,curated_search_term
+alias_0447,cr_0079,education keeper,alternate_term,,curated_search_term
+alias_0448,cr_0079,presentation animals,alternate_term,,curated_search_term
+alias_0449,cr_0080,Canine Behavior Consultant,searchable_title,,curated_search_term
+alias_0450,cr_0080,Dog Behavior Consultant,searchable_title,,curated_search_term
+alias_0451,cr_0080,Behavior Specialist,searchable_title,,curated_search_term
+alias_0452,cr_0080,Behavior Modification Consultant,searchable_title,,curated_search_term
+alias_0453,cr_0080,CBCC-KA,alternate_term,,curated_search_term
+alias_0454,cr_0080,behavior consultant,alternate_term,,curated_search_term
+alias_0455,cr_0080,canine behavior specialist,alternate_term,,curated_search_term
+alias_0456,cr_0081,Wildlife Diversity Biologist,searchable_title,,curated_search_term
+alias_0457,cr_0081,Nongame Biologist,searchable_title,,curated_search_term
+alias_0458,cr_0081,Natural Heritage Zoologist,searchable_title,,curated_search_term
+alias_0459,cr_0081,Wildlife Diversity Specialist,searchable_title,,curated_search_term
+alias_0460,cr_0081,Nongame wildlife,alternate_term,,curated_search_term
+alias_0461,cr_0081,biodiversity biologist,alternate_term,,curated_search_term
+alias_0462,cr_0081,natural heritage zoology,alternate_term,,curated_search_term
+alias_0463,cr_0082,Species Recovery Biologist,searchable_title,,curated_search_term
+alias_0464,cr_0082,Recovery Biologist,searchable_title,,curated_search_term
+alias_0465,cr_0082,Endangered Species Biologist,searchable_title,,curated_search_term
+alias_0466,cr_0082,Recovery Program Biologist,searchable_title,,curated_search_term
+alias_0467,cr_0082,Species recovery,alternate_term,,curated_search_term
+alias_0468,cr_0082,threatened and endangered species,alternate_term,,curated_search_term
+alias_0469,cr_0082,recovery planning,alternate_term,,curated_search_term
+alias_0470,cr_0083,Wildlife Refuge Manager,searchable_title,,curated_search_term
+alias_0471,cr_0083,Wildlife Refuge Specialist,searchable_title,,curated_search_term
+alias_0472,cr_0083,Deputy Refuge Manager,searchable_title,,curated_search_term
+alias_0473,cr_0083,Supervisory Wildlife Refuge Specialist,searchable_title,,curated_search_term
+alias_0474,cr_0083,Federal refuge management,alternate_term,,curated_search_term
+alias_0475,cr_0083,refuge specialist,alternate_term,,curated_search_term
+alias_0476,cr_0084,Conservation Delivery Specialist,searchable_title,,curated_search_term
+alias_0477,cr_0084,Habitat Delivery Coordinator,searchable_title,,curated_search_term
+alias_0478,cr_0084,Habitat Program Manager,searchable_title,,curated_search_term
+alias_0479,cr_0084,Conservation Delivery Coordinator,searchable_title,,curated_search_term
+alias_0480,cr_0084,Habitat delivery,alternate_term,,curated_search_term
+alias_0481,cr_0084,conservation implementation,alternate_term,,curated_search_term
+alias_0482,cr_0084,joint venture coordinator,alternate_term,,curated_search_term
+alias_0483,cr_0085,Regional Wildlife Program Manager,searchable_title,,curated_search_term
+alias_0484,cr_0085,Wildlife Program Manager,searchable_title,,curated_search_term
+alias_0485,cr_0085,Applied Research Section Manager,searchable_title,,curated_search_term
+alias_0486,cr_0085,Supervisory Wildlife Biologist,searchable_title,,curated_search_term
+alias_0487,cr_0085,Wildlife program leadership,alternate_term,,curated_search_term
+alias_0488,cr_0085,regional wildlife manager,alternate_term,,curated_search_term
+alias_0489,cr_0086,Research Geneticist,searchable_title,,curated_search_term
+alias_0490,cr_0086,Conservation Geneticist,searchable_title,,curated_search_term
+alias_0491,cr_0086,Wildlife Geneticist,searchable_title,,curated_search_term
+alias_0492,cr_0086,Population Genomics Scientist,searchable_title,,curated_search_term
+alias_0493,cr_0086,Conservation genomics,alternate_term,,curated_search_term
+alias_0494,cr_0086,population genetics,alternate_term,,curated_search_term
+alias_0495,cr_0086,molecular ecology,alternate_term,,curated_search_term
+alias_0496,cr_0087,Research Ecologist,searchable_title,,curated_search_term
+alias_0497,cr_0087,Ecologist,searchable_title,,curated_search_term
+alias_0498,cr_0087,Supervisory Research Ecologist,searchable_title,,curated_search_term
+alias_0499,cr_0087,Applied ecologist,alternate_term,,curated_search_term
+alias_0500,cr_0087,ecological scientist,alternate_term,,curated_search_term
+alias_0501,cr_0088,Biologist (Data Scientist),searchable_title,,curated_search_term
+alias_0502,cr_0088,Ecological Data Scientist,searchable_title,,curated_search_term
+alias_0503,cr_0088,Wildlife Data Scientist,searchable_title,,curated_search_term
+alias_0504,cr_0088,Biodiversity Data Analyst,searchable_title,,curated_search_term
+alias_0505,cr_0088,Ecological informatics,alternate_term,,curated_search_term
+alias_0506,cr_0088,conservation data science,alternate_term,,curated_search_term
+alias_0507,cr_0089,Research Statistician,searchable_title,,curated_search_term
+alias_0508,cr_0089,Research Statistician (Biology),searchable_title,,curated_search_term
+alias_0509,cr_0089,Biometrician,searchable_title,,curated_search_term
+alias_0510,cr_0089,Quantitative Ecologist,searchable_title,,curated_search_term
+alias_0511,cr_0089,Biological statistician,alternate_term,,curated_search_term
+alias_0512,cr_0089,ecological statistician,alternate_term,,curated_search_term
+alias_0513,cr_0090,Environmental DNA Lab Technician,searchable_title,,curated_search_term
+alias_0514,cr_0090,eDNA Technician,searchable_title,,curated_search_term
+alias_0515,cr_0090,Molecular Ecology Technician,searchable_title,,curated_search_term
+alias_0516,cr_0090,Conservation Genetics Technician,searchable_title,,curated_search_term
+alias_0517,cr_0090,Molecular ecology lab tech,alternate_term,,curated_search_term
+alias_0518,cr_0090,eDNA analyst,alternate_term,,curated_search_term
+alias_0519,cr_0091,Geospatial Ecologist,searchable_title,,curated_search_term
+alias_0520,cr_0091,Remote Sensing Ecologist,searchable_title,,curated_search_term
+alias_0521,cr_0091,GIS Specialist,searchable_title,,curated_search_term
+alias_0522,cr_0091,Spatial Ecologist,searchable_title,,curated_search_term
+alias_0523,cr_0091,Geospatial Scientist,searchable_title,,curated_search_term
+alias_0524,cr_0091,Landscape ecology,alternate_term,,curated_search_term
+alias_0525,cr_0091,spatial ecology,alternate_term,,curated_search_term
+alias_0526,cr_0091,remote sensing,alternate_term,,curated_search_term
+alias_0527,cr_0092,Research Social Scientist,searchable_title,,curated_search_term
+alias_0528,cr_0092,Human Dimensions Specialist,searchable_title,,curated_search_term
+alias_0529,cr_0092,Wildlife Human Dimensions Scientist,searchable_title,,curated_search_term
+alias_0530,cr_0092,Conservation Social Scientist,searchable_title,,curated_search_term
+alias_0531,cr_0092,Human dimensions of wildlife,alternate_term,,curated_search_term
+alias_0532,cr_0092,conservation social science,alternate_term,,curated_search_term
+alias_0533,cr_0093,Wildlife Care Manager,searchable_title,,curated_search_term
+alias_0534,cr_0093,Rehabilitation Manager,searchable_title,,curated_search_term
+alias_0535,cr_0093,Wildlife Rehabilitation Program Manager,searchable_title,,curated_search_term
+alias_0536,cr_0093,Senior Rehabilitator,searchable_title,,curated_search_term
+alias_0537,cr_0093,Wildlife center manager,alternate_term,,curated_search_term
+alias_0538,cr_0093,rehabilitation supervisor,alternate_term,,curated_search_term

@@ -2,6 +2,8 @@
 
 This project is the data-management and publishing layer behind the Animal & Science Path Explorer.
 
+**Live site:** https://adichiara.github.io/animal_career_explorer/
+
 The project is deliberately designed so the website is **not** the source of truth. Research is stored in a normalized SQLite database, validated, and then published to the browser as generated JSON.
 
 ## Current research snapshot

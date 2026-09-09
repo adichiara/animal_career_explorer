@@ -458,12 +458,9 @@ async def open_board(page: Page):
 
 async def advance_board_page(page: Page, current_page: int, target_page: int):
     """Move the rendered board to the requested page using its UI controls."""
-    if target_page < current_page:
-        await open_board(page)
-        current_page = 1
-    while current_page < target_page:
+    while current_page != target_page:
         before = {x[0] for x in await visible_job_links(page)}
-        next_page = current_page + 1
+        next_page = target_page
         controls = [
             page.get_by_role("link", name=str(next_page), exact=True),
             page.get_by_role("button", name=str(next_page), exact=True),
@@ -510,12 +507,18 @@ async def scrape_detail(page: Page, listing: Listing):
             )
         except Exception:
             body = ""
+        correct_url = job_id_from_url(page.url) == listing.job_id
         title_present = listing.title.casefold() in body.casefold()
         challenge_present = (
             "just a moment" in page_title.casefold()
             or "enable javascript and cookies to continue" in body.casefold()
         )
-        if title_present and len(body) >= MIN_DETAIL_BODY_CHARS and not challenge_present:
+        if (
+            correct_url
+            and title_present
+            and len(body) >= MIN_DETAIL_BODY_CHARS
+            and not challenge_present
+        ):
             break
         await page.wait_for_timeout(CONTENT_POLL_MS)
     else:
@@ -655,8 +658,8 @@ async def main_async(args):
             viewport={"width": 1440, "height": 1000},
         )
         list_page = await context.new_page()
-        detail_page = await context.new_page()
         listings = await enumerate_all_listings(list_page)
+        final_board_page = max((x.listing_page for x in listings), default=1)
         # Preserve board order so detail links can be opened through the visible
         # board UI instead of direct navigations that Cloudflare challenges.
         listings.sort(key=lambda x: x.listing_page)
@@ -669,8 +672,10 @@ async def main_async(args):
                     (len(listings), max((x.listing_page for x in listings), default=0), run_id))
         con.commit()
 
-        await open_board(detail_page)
-        detail_board_page = 1
+        # Reuse the board page that successfully enumerated the listings. Opening
+        # a second copy immediately can trigger Cloudflare's interstitial.
+        detail_page = list_page
+        detail_board_page = final_board_page
         ok = fail = 0
         for i, listing in enumerate(listings, 1):
             if not args.refresh:

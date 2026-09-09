@@ -449,53 +449,16 @@ async def enumerate_all_listings(page: Page) -> list[Listing]:
     return list(all_listings.values())
 
 
-async def open_board(page: Page):
-    await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_MS)
-    await page.locator('a[href*="job="]').first.wait_for(
-        state="visible", timeout=CONTENT_READY_TIMEOUT_MS
-    )
-
-
-async def advance_board_page(page: Page, current_page: int, target_page: int):
-    """Move the rendered board to the requested page using its UI controls."""
-    while current_page != target_page:
-        before = {x[0] for x in await visible_job_links(page)}
-        next_page = target_page
-        controls = [
-            page.get_by_role("link", name=str(next_page), exact=True),
-            page.get_by_role("button", name=str(next_page), exact=True),
-        ]
-        moved = False
-        for control in controls:
-            for i in range(await control.count()):
-                candidate = control.nth(i)
-                if not await candidate.is_visible():
-                    continue
-                await candidate.click()
-                await page.wait_for_timeout(1_500)
-                after = {x[0] for x in await visible_job_links(page)}
-                if after and after != before:
-                    moved = True
-                    break
-            if moved:
-                break
-        if not moved:
-            raise RuntimeError(f"could not advance job board to page {next_page}")
-        current_page = next_page
-    return current_page
-
-
-async def click_detail_from_board(page: Page, listing: Listing):
-    link = page.locator(f'a[href*="job={listing.job_id}"]').first
-    await link.wait_for(state="visible", timeout=CONTENT_READY_TIMEOUT_MS)
-    await link.click()
-    await page.wait_for_load_state("domcontentloaded", timeout=NAVIGATION_TIMEOUT_MS)
-
-
 async def scrape_detail(page: Page, listing: Listing):
     # ``networkidle`` timed out on every detail page because the site retains
     # long-lived background connections. DOM readiness plus an explicit content
     # check distinguishes a rendered job from a Cloudflare/interstitial page.
+    await page.goto(
+        listing.url,
+        wait_until="domcontentloaded",
+        timeout=NAVIGATION_TIMEOUT_MS,
+        referer=BASE_URL,
+    )
     deadline = time.monotonic() + (CONTENT_READY_TIMEOUT_MS / 1000)
     body = ""
     page_title = ""
@@ -507,18 +470,12 @@ async def scrape_detail(page: Page, listing: Listing):
             )
         except Exception:
             body = ""
-        correct_url = job_id_from_url(page.url) == listing.job_id
         title_present = listing.title.casefold() in body.casefold()
         challenge_present = (
             "just a moment" in page_title.casefold()
             or "enable javascript and cookies to continue" in body.casefold()
         )
-        if (
-            correct_url
-            and title_present
-            and len(body) >= MIN_DETAIL_BODY_CHARS
-            and not challenge_present
-        ):
+        if title_present and len(body) >= MIN_DETAIL_BODY_CHARS and not challenge_present:
             break
         await page.wait_for_timeout(CONTENT_POLL_MS)
     else:
@@ -658,11 +615,9 @@ async def main_async(args):
             viewport={"width": 1440, "height": 1000},
         )
         list_page = await context.new_page()
+        detail_page = await context.new_page()
         listings = await enumerate_all_listings(list_page)
-        final_board_page = max((x.listing_page for x in listings), default=1)
-        # Preserve board order so detail links can be opened through the visible
-        # board UI instead of direct navigations that Cloudflare challenges.
-        listings.sort(key=lambda x: x.listing_page)
+        listings.sort(key=lambda x: (x.posted_date or "", x.job_id), reverse=True)
         if args.limit:
             listings = listings[:args.limit]
 
@@ -672,23 +627,13 @@ async def main_async(args):
                     (len(listings), max((x.listing_page for x in listings), default=0), run_id))
         con.commit()
 
-        # Reuse the board page that successfully enumerated the listings. Opening
-        # a second copy immediately can trigger Cloudflare's interstitial.
-        detail_page = list_page
-        detail_board_page = final_board_page
         ok = fail = 0
         for i, listing in enumerate(listings, 1):
             if not args.refresh:
                 prior = con.execute("SELECT detail_status, raw_text_sha256 FROM market_job_postings WHERE posting_id=?", (f"aza_{listing.job_id}",)).fetchone()
                 if prior and prior[0] == "scraped" and prior[1]:
                     continue
-            detail_opened = False
             try:
-                detail_board_page = await advance_board_page(
-                    detail_page, detail_board_page, listing.listing_page
-                )
-                await click_detail_from_board(detail_page, listing)
-                detail_opened = True
                 row = await scrape_detail(detail_page, listing)
                 upsert_posting(con, row)
                 ok += 1
@@ -697,18 +642,6 @@ async def main_async(args):
                 con.execute("UPDATE market_job_postings SET detail_status='error', notes=? WHERE posting_id=?", (str(e)[:1000], f"aza_{listing.job_id}"))
                 fail += 1
                 outcome = f"error: {type(e).__name__}: {e}"
-            finally:
-                if detail_opened:
-                    try:
-                        await detail_page.go_back(
-                            wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_MS
-                        )
-                        await detail_page.locator('a[href*="job="]').first.wait_for(
-                            state="visible", timeout=CONTENT_READY_TIMEOUT_MS
-                        )
-                    except Exception:
-                        await open_board(detail_page)
-                        detail_board_page = 1
             con.execute("UPDATE market_job_scrape_runs SET details_scraped=?, details_failed=? WHERE run_id=?", (ok, fail, run_id))
             con.commit()
             print(

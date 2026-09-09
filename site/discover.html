@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A gentler way to explore animal and science careers, everyday work, and college preparation.">
+  <title>Discover Animal & Science Paths</title>
+  <link rel="stylesheet" href="discover.css">
+</head>
+<body>
+  <header class="discovery-header">
+    <a class="discovery-brand" href="discover.html" aria-label="Animal and Science Path Explorer home">
+      <span class="discovery-brand-mark">A</span>
+      <span><b>Animal &amp; Science</b><small>Path Explorer</small></span>
+    </a>
+    <nav id="discoveryNav" class="discovery-nav" aria-label="Primary navigation">
+      <button class="discovery-nav-link active" type="button" data-screen-link="start">Explore</button>
+      <button class="discovery-nav-link" type="button" data-screen-link="shortlist">My shortlist <span id="navShortlistCount" class="count-badge">0</span></button>
+      <button class="discovery-nav-link" type="button" data-screen-link="shortlist" data-focus-programs>College paths</button>
+      <a class="discovery-nav-link" href="index.html">Full research</a>
+    </nav>
+    <button id="mobileMenuButton" class="mobile-menu" type="button" aria-expanded="false" aria-controls="discoveryNav" aria-label="Open navigation">☰</button>
+  </header>
+
+  <div class="journey-bar" aria-label="Exploration progress">
+    <div class="journey-copy"><span id="journeyLabel">Start anywhere</span><span id="journeyStep">1 of 4</span></div>
+    <div class="journey-track" aria-hidden="true"><span id="journeyProgress"></span></div>
+  </div>
+
+  <main id="experience" tabindex="-1"></main>
+
+  <footer class="discovery-footer">
+    <span>Your choices stay on this device. They are clues, not a career verdict.</span>
+    <a href="index.html">Open the complete 93-career research explorer →</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="discover.js"></script>
+</body>
+</html>

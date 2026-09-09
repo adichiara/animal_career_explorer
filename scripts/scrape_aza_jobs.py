@@ -48,6 +48,7 @@ NAVIGATION_TIMEOUT_MS = 90_000
 CONTENT_READY_TIMEOUT_MS = 60_000
 CONTENT_POLL_MS = 1_000
 MIN_DETAIL_BODY_CHARS = 500
+CHALLENGE_GRACE_SECONDS = 15
 
 DUTY_RULES = {
     "husbandry": ["husbandry", "animal care", "care for animals", "daily care"],
@@ -462,6 +463,7 @@ async def scrape_detail(page: Page, listing: Listing):
     deadline = time.monotonic() + (CONTENT_READY_TIMEOUT_MS / 1000)
     body = ""
     page_title = ""
+    challenge_started = None
     while time.monotonic() < deadline:
         try:
             page_title = normalize_space(await page.title())
@@ -475,6 +477,15 @@ async def scrape_detail(page: Page, listing: Listing):
             "just a moment" in page_title.casefold()
             or "enable javascript and cookies to continue" in body.casefold()
         )
+        if challenge_present:
+            challenge_started = challenge_started or time.monotonic()
+            if time.monotonic() - challenge_started >= CHALLENGE_GRACE_SECONDS:
+                raise RuntimeError(
+                    "Cloudflare challenge persisted "
+                    f"(page_title={page_title!r}, body_chars={len(body)})"
+                )
+        else:
+            challenge_started = None
         if title_present and len(body) >= MIN_DETAIL_BODY_CHARS and not challenge_present:
             break
         await page.wait_for_timeout(CONTENT_POLL_MS)
@@ -665,6 +676,7 @@ async def main_async(args):
         await browser.close()
     con.close()
     print(f"Run {run_id}: {len(listings)} listings, {ok} detail pages scraped, {fail} errors")
+    return fail
 
 
 def parse_args():
@@ -682,4 +694,6 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    asyncio.run(main_async(args))
+    failures = asyncio.run(main_async(args))
+    if failures:
+        raise SystemExit(1)

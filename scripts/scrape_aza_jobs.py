@@ -44,6 +44,10 @@ except Exception:  # pragma: no cover
 BASE_URL = "https://www.aza.org/Jobs"
 SOURCE_ID = "source_aza_jobs_board"
 DEFAULT_DELAY = 30.0
+NAVIGATION_TIMEOUT_MS = 90_000
+CONTENT_READY_TIMEOUT_MS = 60_000
+CONTENT_POLL_MS = 1_000
+MIN_DETAIL_BODY_CHARS = 500
 
 DUTY_RULES = {
     "husbandry": ["husbandry", "animal care", "care for animals", "daily care"],
@@ -393,7 +397,12 @@ async def enumerate_all_listings(page: Page) -> list[Listing]:
     The AZA board currently renders pagination client-side, so this deliberately
     follows the UI rather than guessing undocumented query parameters.
     """
-    await page.goto(BASE_URL, wait_until="networkidle", timeout=90000)
+    # The AZA site keeps background requests open, so ``networkidle`` is not a
+    # reliable readiness signal. Wait for the rendered job links instead.
+    await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=NAVIGATION_TIMEOUT_MS)
+    await page.locator('a[href*="job="]').first.wait_for(
+        state="visible", timeout=CONTENT_READY_TIMEOUT_MS
+    )
     all_listings: dict[str, Listing] = {}
     visited_signatures = set()
     page_no = 1
@@ -441,9 +450,40 @@ async def enumerate_all_listings(page: Page) -> list[Listing]:
 
 
 async def scrape_detail(page: Page, listing: Listing):
-    await page.goto(listing.url, wait_until="networkidle", timeout=90000)
-    await page.wait_for_timeout(500)
-    body = normalize_space(await page.locator("body").inner_text())
+    # ``networkidle`` timed out on every detail page because the site retains
+    # long-lived background connections. DOM readiness plus an explicit content
+    # check distinguishes a rendered job from a Cloudflare/interstitial page.
+    await page.goto(
+        listing.url,
+        wait_until="domcontentloaded",
+        timeout=NAVIGATION_TIMEOUT_MS,
+    )
+    deadline = time.monotonic() + (CONTENT_READY_TIMEOUT_MS / 1000)
+    body = ""
+    page_title = ""
+    while time.monotonic() < deadline:
+        try:
+            page_title = normalize_space(await page.title())
+            body = normalize_space(
+                await page.locator("body").inner_text(timeout=5_000)
+            )
+        except Exception:
+            body = ""
+        title_present = listing.title.casefold() in body.casefold()
+        challenge_present = (
+            "just a moment" in page_title.casefold()
+            or "enable javascript and cookies to continue" in body.casefold()
+        )
+        if title_present and len(body) >= MIN_DETAIL_BODY_CHARS and not challenge_present:
+            break
+        await page.wait_for_timeout(CONTENT_POLL_MS)
+    else:
+        raise RuntimeError(
+            "detail content did not become ready "
+            f"(page_title={page_title!r}, body_chars={len(body)}, "
+            f"expected_title={listing.title!r})"
+        )
+
     # Keep no raw body in DB; hash lets us detect changed source content later.
     body_hash = hashlib.sha256(body.encode("utf-8")).hexdigest()
 
@@ -594,13 +634,19 @@ async def main_async(args):
                     continue
             try:
                 row = await scrape_detail(detail_page, listing)
-                upsert_posting(con, row); ok += 1
+                upsert_posting(con, row)
+                ok += 1
+                outcome = "ok"
             except Exception as e:
                 con.execute("UPDATE market_job_postings SET detail_status='error', notes=? WHERE posting_id=?", (str(e)[:1000], f"aza_{listing.job_id}"))
                 fail += 1
+                outcome = f"error: {type(e).__name__}: {e}"
             con.execute("UPDATE market_job_scrape_runs SET details_scraped=?, details_failed=? WHERE run_id=?", (ok, fail, run_id))
             con.commit()
-            print(f"[{i}/{len(listings)}] {listing.job_id} {listing.title} -> {'ok' if ok+fail==i else 'processed'}", flush=True)
+            print(
+                f"[{i}/{len(listings)}] {listing.job_id} {listing.title} -> {outcome}",
+                flush=True,
+            )
             if i < len(listings) and args.delay > 0:
                 await asyncio.sleep(args.delay)
 

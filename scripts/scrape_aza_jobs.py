@@ -457,6 +457,7 @@ async def scrape_detail(page: Page, listing: Listing):
         listing.url,
         wait_until="domcontentloaded",
         timeout=NAVIGATION_TIMEOUT_MS,
+        referer=BASE_URL,
     )
     deadline = time.monotonic() + (CONTENT_READY_TIMEOUT_MS / 1000)
     body = ""

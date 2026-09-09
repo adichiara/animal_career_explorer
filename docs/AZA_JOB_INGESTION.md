@@ -51,6 +51,35 @@ The script uses a real browser because the AZA board's pagination is client-side
 
 The default `--delay 30` honors the generic 30-second crawl delay published in AZA's robots.txt. A full board scrape may therefore take substantial time; the script is intentionally resumable.
 
+## Current execution limitation
+
+**Status as of 2026-09-09:** GitHub-hosted Actions runners can render and enumerate the AZA Jobs listing table, but individual detail-page requests receive a persistent Cloudflare `Just a moment...` interstitial. GitHub Actions is therefore not currently a supported environment for a complete detail scrape.
+
+Evidence:
+
+- [Initial full-board run](https://github.com/adichiara/animal_career_explorer/actions/runs/34284874727): 280 listings were discovered. The first 149 detail requests timed out and GitHub cancelled the job at its five-hour limit; 131 listings were not attempted.
+- [Final two-listing smoke test](https://github.com/adichiara/animal_career_explorer/actions/runs/34343973964): 2 listings were discovered, 0 details were scraped, and both failures explicitly identified a persistent Cloudflare interstitial.
+- The initial `-> ok` console messages were incorrect. The former logging expression indicated that an attempt had finished, not that extraction had succeeded. Database counters and saved row statuses showed 0 successful detail pages.
+
+Repairs completed after the initial run:
+
+- Detail navigation no longer waits for `networkidle`, which is unreliable on pages with long-lived background connections.
+- A detail page is accepted only when expected job content is present and the response is not an interstitial.
+- Persistent Cloudflare pages are reported explicitly.
+- Per-listing output now reports the actual success or exception.
+- Any detail failure makes the scrape command exit nonzero.
+- Workflow push events use a two-listing smoke-test limit; full-board runs require a manual request.
+- Diagnostic exports, validation, and artifact upload still run after a scrape failure.
+
+The structural validation report can still show zero database errors after a failed scrape. That means the resulting database is internally consistent; it does **not** mean the detail pages were captured. Confirm `details_scraped`, `details_failed`, and the posting-level `detail_status` values before using an artifact.
+
+Until [issue #1](https://github.com/adichiara/animal_career_explorer/issues/1) is resolved:
+
+1. Do not request a full-board GitHub Actions run.
+2. Test any proposed environment with exactly two listings first.
+3. Verify extracted fields against the source pages before scaling up.
+4. Do not add challenge-bypass, CAPTCHA-solving, or similar behavior. Prefer an interactive local browser/network accepted by AZA or an authorized feed, export, or API.
+
 ## Run
 
 ```bash
@@ -63,7 +92,7 @@ python scripts/export_aza_jobs.py
 Testing only:
 
 ```bash
-python scripts/scrape_aza_jobs.py --limit 3 --headful
+python scripts/scrape_aza_jobs.py --limit 2 --headful
 ```
 
 ## Quality review

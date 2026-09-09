@@ -35,6 +35,18 @@ These counts are descriptive of the current research snapshot, not a claim that 
 5. **Known gaps are explicit.** Missing title, posting or progression evidence becomes a review-queue item rather than being silently hidden.
 6. **The website consumes generated data.** `site/data.js` is rebuilt from SQLite; it should not be hand-edited.
 
+## Editing Area Explorer content
+
+The explanatory content used by `site/areas.html` is intentionally separate from the generated career database. Each field has its own editable file under `site/content/areas/`, and the page loads those JSON files at runtime.
+
+See [`site/content/areas/README.md`](site/content/areas/README.md) for examples and editing instructions. A normal wording change requires editing only the relevant area file and committing it; GitHub Pages redeploys automatically.
+
+## Editing Area Explorer content
+
+The explanatory content for `areas.html` is intentionally separate from the generated career database. Each field has a human-editable file under `site/content/areas/`, such as `wildlife-rehabilitation.json`. Editing and committing one of those files updates the live page after GitHub Pages redeploys; `areas.js` does not need to be changed.
+
+See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. Career and college records displayed inside an area still come from the validated `site/data.js` export.
+
 ## Directory structure
 
 ```
@@ -67,7 +79,8 @@ Animal_Career_Data_Project/
     ├── index.html
     ├── app.js
     ├── styles.css
-    └── data.js                 # GENERATED from SQLite
+    ├── data.js                 # GENERATED from SQLite
+    └── content/areas/          # editable Area Explorer content
 ```
 
 ## Rebuild sequence

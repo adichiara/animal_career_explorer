@@ -1,0 +1,18 @@
+{
+  "groups": "groups.json",
+  "areas": [
+    "animal-biology.json",
+    "zoology.json",
+    "ecology.json",
+    "wildlife-biology.json",
+    "wildlife-conservation.json",
+    "marine-biology.json",
+    "animal-behavior.json",
+    "animal-cognition.json",
+    "animal-welfare.json",
+    "animal-science.json",
+    "zoo-aquarium-science.json",
+    "veterinary-science.json",
+    "wildlife-rehabilitation.json"
+  ]
+}

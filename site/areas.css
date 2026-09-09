@@ -268,6 +268,7 @@ p { margin: .7em 0 0; }
 .reaction-entry small { display: block; color: var(--muted); }
 .empty { padding: 32px; border: 1px dashed #b9cbd6; border-radius: 15px; color: var(--muted); text-align: center; background: rgba(255,255,255,.65); }
 .empty .btn { margin-top: 15px; }
+.content-error code { display: inline-block; max-width: 100%; margin-top: 14px; padding: 9px 12px; overflow-wrap: anywhere; border-radius: 8px; color: #7d2e2e; background: #fbecec; text-align: left; }
 .summary-actions { display: flex; flex-wrap: wrap; gap: 9px; }
 
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px clamp(18px, 4vw, 58px); border-top: 1px solid var(--line); color: var(--muted); background: #fff; font-size: .82rem; }

@@ -1,0 +1,134 @@
+{
+  "id": "veterinary-science",
+  "group": "health",
+  "title": "Animal Health / Veterinary Science",
+  "short": "Preventing, diagnosing, and treating animal disease, injury, pain, and other health problems.",
+  "bigPicture": "Animal health work focuses on disease prevention, diagnosis, treatment, recovery, and population health. Veterinary medicine requires professional education, but many undergraduate majors can provide the prerequisites and scientific foundation.",
+  "focus": [
+    {
+      "title": "Anatomy, physiology, pathology, and disease",
+      "description": "Anatomy and physiology establish how healthy bodies are structured and function. Pathology and disease science identify what has changed, why it changed, and how infection, injury, genetics, nutrition, toxins, or aging may be involved."
+    },
+    {
+      "title": "Diagnosis, treatment, surgery, and pain management",
+      "description": "Diagnosis combines history, physical examination, laboratory tests, imaging, and clinical reasoning. Treatment may involve medication, surgery, nursing care, rehabilitation, and pain control, followed by monitoring of the animal’s response."
+    },
+    {
+      "title": "Preventive medicine, nutrition, and epidemiology",
+      "description": "Preventive medicine reduces disease before it occurs through vaccination, parasite control, nutrition, screening, sanitation, and risk management. Epidemiology examines patterns of disease across groups and identifies likely causes or routes of spread."
+    },
+    {
+      "title": "Clinical care, population health, and biosecurity",
+      "description": "Clinical care focuses on individual patients; population health looks for patterns across herds, shelters, colonies, wildlife populations, or facilities. Biosecurity uses procedures, spaces, equipment, and movement controls to limit transmission."
+    }
+  ],
+  "questions": [
+    "What is causing an animal’s illness, injury, pain, or change in function?",
+    "Which diagnostic evidence is needed to choose a treatment?",
+    "How can disease or injury be prevented?",
+    "How do diseases spread among animals, people, or environments?"
+  ],
+  "responsibilities": [
+    "Examine animals, gather histories, collect samples, and interpret diagnostic information.",
+    "Provide or assist with treatment, medication, surgery, nursing care, or rehabilitation.",
+    "Maintain medical records, infection-control procedures, equipment, and legal documentation.",
+    "Communicate risks, options, prognosis, welfare considerations, and care instructions."
+  ],
+  "knowledgeSkills": [
+    "Anatomy, physiology, pathology, and pharmacology",
+    "Microbiology, immunology, and epidemiology",
+    "Clinical observation and diagnostic reasoning",
+    "Technical procedures, hygiene, and biosecurity",
+    "Communication, teamwork, ethics, and decision-making"
+  ],
+  "variations": [
+    {
+      "label": "Professional role",
+      "description": "Veterinarians, veterinary technicians, assistants, pathologists, epidemiologists, nutritionists, and researchers have different education and duties."
+    },
+    {
+      "label": "Species",
+      "description": "Companion, farm, equine, laboratory, zoo, wildlife, aquatic, and public-health work require different knowledge and settings."
+    },
+    {
+      "label": "Clinical contact",
+      "description": "Some roles provide continuous patient care; others focus on diagnostics, pathology, population health, research, or regulation."
+    },
+    {
+      "label": "Work context",
+      "description": "Private practice, shelters, government, universities, industry, zoos, and field programs differ in resources and decisions."
+    }
+  ],
+  "settings": [
+    "Veterinary hospitals and clinics",
+    "Shelters, farms, zoos, aquariums, and rehabilitation centers",
+    "Diagnostic laboratories and universities",
+    "Government, public-health, research, and industry programs"
+  ],
+  "realities": [
+    "Veterinary school is competitive, lengthy, and potentially expensive.",
+    "Clinical work can include emergencies, bodily fluids, injury, distress, euthanasia, and difficult client conversations.",
+    "Schedules vary from regular laboratory hours to nights, weekends, and on-call coverage.",
+    "Strong science preparation must be paired with clinical judgment, technical skill, and communication."
+  ],
+  "careers": [
+    {
+      "name": "Veterinarian",
+      "focus": "Diagnoses, treats, and prevents disease and injury and advises on animal health and welfare.",
+      "educationBand": "Doctor of Veterinary Medicine and licensure required",
+      "workTags": [
+        "Animal care",
+        "Research",
+        "Education / public"
+      ]
+    },
+    {
+      "name": "Veterinary technician",
+      "focus": "Provides nursing, diagnostic, laboratory, anesthesia, and treatment support under veterinary supervision.",
+      "educationBand": "Accredited veterinary-technology education and credentialing typically required",
+      "workTags": [
+        "Animal care",
+        "Laboratory"
+      ]
+    },
+    "Wildlife disease / ecophysiology specialist",
+    "Animal physiologist",
+    "Zoo animal nutritionist / nutrition coordinator",
+    "Wildlife rehabilitator"
+  ],
+  "programCodes": [
+    "UMA-AS",
+    "URI-AZ",
+    "UMA-BIO",
+    "ME-ZOO",
+    "UNE-AN"
+  ],
+  "related": [
+    "animal-biology",
+    "animal-science",
+    "animal-welfare",
+    "wildlife-rehabilitation"
+  ],
+  "references": [
+    {
+      "title": "BLS: Veterinarians",
+      "type": "Occupational overview",
+      "url": "https://www.bls.gov/ooh/healthcare/veterinarians.htm"
+    },
+    {
+      "title": "UMass Amherst: Animal Science",
+      "type": "Undergraduate preparation example",
+      "url": "https://www.umass.edu/veterinary-animal-sciences/animal-science-major"
+    },
+    {
+      "title": "URI: Animal Science option",
+      "type": "Undergraduate preparation example",
+      "url": "https://web.uri.edu/favs/academics/animal-and-veterinary-science-b-s/animal-science-option/"
+    },
+    {
+      "title": "O*NET: Biological Technicians",
+      "type": "Related laboratory work",
+      "url": "https://www.onetonline.org/link/summary/19-4021.00"
+    }
+  ]
+}

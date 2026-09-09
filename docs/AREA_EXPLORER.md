@@ -15,6 +15,7 @@ The dedicated **How work within this area varies** section carries the main expl
 
 ## Sources and data
 
+- Area content is loaded at runtime from the editable JSON files in `site/content/areas/`.
 - Area definitions and distinctions draw from the project's *Core Animal-Related Fields* source.
 - Career examples and college-path information use `site/data.js`.
 - External links come primarily from the source notes in *Animal Behavior, Wildlife, Animal Care & Conservation — Undergraduate Pathways and Career Exploration Guide*.
@@ -25,6 +26,10 @@ The dedicated **How work within this area varies** section carries the main expl
 - `site/areas.html`
 - `site/areas.css`
 - `site/areas.js`
+- `site/content/areas/index.json`
+- `site/content/areas/groups.json`
+- `site/content/areas/<area-id>.json`
+- `site/content/areas/README.md`
 
 The route stores reactions under `animalExplorerAreasV1`. It does not alter the saved state or files used by `site/index.html` or `site/discover.html`.
 

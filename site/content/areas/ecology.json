@@ -1,0 +1,117 @@
+{
+  "id": "ecology",
+  "group": "organismal",
+  "title": "Ecology",
+  "short": "How organisms interact with each other and with their physical environments.",
+  "bigPicture": "Ecology examines relationships at several levels—from individual organisms and populations to communities and ecosystems. It supplies much of the scientific foundation used in wildlife biology, conservation, restoration, and environmental management.",
+  "focus": [
+    {
+      "title": "Populations and communities",
+      "description": "Population ecology studies the size, structure, distribution, and change of a single species. Community ecology examines how multiple species coexist and affect one another through competition, predation, disease, and cooperation."
+    },
+    {
+      "title": "Food webs and species interactions",
+      "description": "Food-web research traces energy and nutrients through producers, consumers, scavengers, and decomposers. It also examines how changing one species can produce indirect effects throughout a community."
+    },
+    {
+      "title": "Habitats and environmental change",
+      "description": "Habitat research identifies the physical and biological conditions organisms need. Ecologists then study how climate, land use, pollution, fragmentation, fire, storms, and other changes alter those conditions."
+    },
+    {
+      "title": "Ecosystem processes and restoration",
+      "description": "Ecosystem ecology follows flows of energy, water, carbon, and nutrients. Restoration applies that knowledge to repair damaged habitats, reestablish ecological processes, and measure whether recovery is occurring."
+    }
+  ],
+  "questions": [
+    "Why is a population increasing, declining, moving, or changing?",
+    "How does one species affect other organisms in a community?",
+    "What determines where organisms can live and reproduce?",
+    "How do climate, disturbance, or restoration change ecological systems?"
+  ],
+  "responsibilities": [
+    "Design surveys or experiments in field, laboratory, or computational settings.",
+    "Measure organisms, populations, habitats, or environmental conditions.",
+    "Use statistics, GIS, models, or long-term datasets to test ecological explanations.",
+    "Translate findings into scientific publications, monitoring plans, or management recommendations."
+  ],
+  "knowledgeSkills": [
+    "Population, community, and ecosystem ecology",
+    "Evolution and organismal biology",
+    "Sampling design and statistics",
+    "Field identification and measurement",
+    "GIS, coding, modeling, or data visualization"
+  ],
+  "variations": [
+    {
+      "label": "Organisms",
+      "description": "Ecologists may study animals, plants, microbes, whole communities, or interactions among them."
+    },
+    {
+      "label": "Methods",
+      "description": "Projects range from intensive outdoor sampling to laboratory experiments, remote sensing, mathematical modeling, and existing-data analysis."
+    },
+    {
+      "label": "Purpose",
+      "description": "Some ecology is curiosity-driven research; other work directly supports restoration, regulation, land management, or conservation."
+    },
+    {
+      "label": "Time scale",
+      "description": "Studies may examine a short behavioral interaction or decades of population and ecosystem change."
+    }
+  ],
+  "settings": [
+    "Natural areas and field stations",
+    "Universities and laboratories",
+    "Government agencies and consulting firms",
+    "Conservation organizations and restoration projects"
+  ],
+  "realities": [
+    "Fieldwork is common but not universal.",
+    "Data management, statistics, coding, and writing often occupy more time than animal observation.",
+    "Seasonal or temporary positions are common early in field-based careers.",
+    "Ecological conclusions often involve uncertainty, incomplete detection, and long time scales."
+  ],
+  "careers": [
+    "Field ecologist",
+    "Ecological research technician",
+    "Research ecologist",
+    "Population ecologist",
+    "Quantitative ecologist / biometrician",
+    "Habitat restoration / ecological-monitoring specialist"
+  ],
+  "programCodes": [
+    "ME-WE",
+    "UMA-WEC",
+    "URI-W",
+    "ME-ZOO",
+    "UMA-BIO"
+  ],
+  "related": [
+    "wildlife-biology",
+    "wildlife-conservation",
+    "zoology",
+    "marine-biology"
+  ],
+  "references": [
+    {
+      "title": "O*NET: Environmental Restoration Planners",
+      "type": "Applied ecology tasks",
+      "url": "https://www.onetonline.org/link/summary/19-2041.02"
+    },
+    {
+      "title": "The Wildlife Society: Career paths",
+      "type": "Professional field guide",
+      "url": "https://wildlife.org/paths-to-becoming-a-wildlifer/"
+    },
+    {
+      "title": "UMass: Wildlife Ecology & Conservation",
+      "type": "Undergraduate example",
+      "url": "https://www.umass.edu/environmental-conservation/academics/undergraduate-programs/natural-resources-conservation/major/wildlife-ecology-conservation-concentration"
+    },
+    {
+      "title": "URI: Wildlife & Conservation curriculum",
+      "type": "Undergraduate example",
+      "url": "https://web.uri.edu/nrs/academics/wildlife-and-conservation-biology/curriculum/"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "animal-science",
+  "group": "managed",
+  "title": "Animal Science",
+  "short": "The biology, care, management, and use of domesticated animals, traditionally with an agricultural emphasis.",
+  "bigPicture": "Animal science combines biological science with the care and management of domesticated animals. Program concentrations include livestock production, companion animals, equine science, behavior, welfare, nutrition, and pre-veterinary preparation.",
+  "focus": [
+    {
+      "title": "Nutrition, physiology, and health",
+      "description": "Nutrition connects feed composition and digestion to growth, reproduction, immunity, health, and performance. Physiology explains how animals use those nutrients and respond to management and environmental conditions."
+    },
+    {
+      "title": "Genetics, breeding, and reproduction",
+      "description": "Genetics and breeding use pedigrees, performance records, and genomic information to select traits. Reproductive science includes fertility, gestation, birth, reproductive technologies, and management of breeding animals."
+    },
+    {
+      "title": "Husbandry and production systems",
+      "description": "Husbandry systems organize feeding, housing, sanitation, handling, breeding, health monitoring, and recordkeeping. Production science evaluates how those systems affect animals, workers, resources, food, and farm outcomes."
+    },
+    {
+      "title": "Behavior, welfare, and animal management",
+      "description": "Behavior and welfare inform handling, housing, social management, enrichment, transport, and routine care. Animal managers use these observations with health and production data to adjust practices."
+    }
+  ],
+  "questions": [
+    "What nutrition best supports animal health, growth, or performance?",
+    "How do genetics and breeding influence traits and health?",
+    "How do housing, handling, or management affect welfare and behavior?",
+    "How can reproductive, production, or health outcomes be managed responsibly?"
+  ],
+  "responsibilities": [
+    "Provide or supervise feeding, handling, husbandry, health observation, and recordkeeping.",
+    "Collect and analyze nutrition, reproduction, growth, health, behavior, or welfare data.",
+    "Implement management, breeding, research, or quality-assurance protocols.",
+    "Communicate with veterinarians, producers, researchers, caregivers, and regulatory personnel."
+  ],
+  "knowledgeSkills": [
+    "Anatomy, physiology, nutrition, and reproduction",
+    "Genetics, microbiology, and animal health",
+    "Husbandry, handling, and welfare",
+    "Statistics and experimental methods",
+    "Management, records, biosecurity, and communication"
+  ],
+  "variations": [
+    {
+      "label": "Species",
+      "description": "Programs may concentrate on livestock, horses, companion animals, laboratory animals, or a broader combination."
+    },
+    {
+      "label": "Purpose",
+      "description": "Careers can involve hands-on management, research, industry, welfare, nutrition, breeding, extension, or veterinary preparation."
+    },
+    {
+      "label": "Curriculum",
+      "description": "Two programs with the same title may allocate very different amounts of coursework to agriculture, health science, behavior, or exotic animals."
+    },
+    {
+      "label": "Animal contact",
+      "description": "Farm and management roles may be hands-on; laboratory, nutrition, genetics, and industry roles may be less so."
+    }
+  ],
+  "settings": [
+    "Farms, equine facilities, kennels, and animal-care operations",
+    "Universities and research laboratories",
+    "Feed, genetics, pharmaceutical, and agricultural organizations",
+    "Zoos, shelters, veterinary, and companion-animal programs"
+  ],
+  "realities": [
+    "Agricultural and livestock coursework is central in many programs.",
+    "Hands-on animal work can be physical, scheduled around animal needs, and subject to biosecurity rules.",
+    "Pre-veterinary preparation is not the same thing as a veterinary degree or guaranteed admission.",
+    "Program details matter more than the major title when behavior, welfare, or zoo work is the goal."
+  ],
+  "careers": [
+    {
+      "name": "Animal scientist",
+      "focus": "Studies nutrition, genetics, reproduction, physiology, management, or welfare in domesticated animals.",
+      "educationBand": "Graduate study common for scientist roles",
+      "workTags": [
+        "Research",
+        "Data / statistics",
+        "Animal care"
+      ]
+    },
+    "Animal welfare / behavior coordinator",
+    "Service-dog / assistance-animal trainer",
+    "Animal collection / management specialist",
+    "Zoo animal nutritionist / nutrition coordinator",
+    "University / laboratory research assistant"
+  ],
+  "programCodes": [
+    "UMA-AS",
+    "URI-AZ",
+    "UNE-AB",
+    "UMA-BIO"
+  ],
+  "related": [
+    "animal-welfare",
+    "zoo-aquarium-science",
+    "veterinary-science",
+    "animal-biology"
+  ],
+  "references": [
+    {
+      "title": "O*NET: Animal Scientists",
+      "type": "Tasks and skills",
+      "url": "https://www.onetonline.org/link/summary/19-1011.00"
+    },
+    {
+      "title": "UMass Amherst: Animal Science",
+      "type": "Undergraduate example",
+      "url": "https://www.umass.edu/veterinary-animal-sciences/animal-science-major"
+    },
+    {
+      "title": "UMass: Animal Management concentration",
+      "type": "Undergraduate example",
+      "url": "https://www.umass.edu/veterinary-animal-sciences/animal-science-major/animal-management-concentration"
+    },
+    {
+      "title": "URI: Animal Science option",
+      "type": "Undergraduate example",
+      "url": "https://web.uri.edu/favs/academics/animal-and-veterinary-science-b-s/animal-science-option/"
+    }
+  ]
+}

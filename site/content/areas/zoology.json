@@ -1,0 +1,116 @@
+{
+  "id": "zoology",
+  "group": "organismal",
+  "title": "Zoology",
+  "short": "The broad scientific study of animals, their diversity, evolution, structure, function, behavior, and ecology.",
+  "bigPicture": "Zoology is organized around animals as a group of organisms. It spans molecular biology, anatomy, physiology, taxonomy, evolution, behavior, and ecology.",
+  "focus": [
+    {
+      "title": "Animal diversity and classification",
+      "description": "Zoologists identify and organize animal diversity using anatomy, genetics, evolutionary relationships, and formal classification. This work supports species inventories, museum collections, field identification, and the discovery or revision of species."
+    },
+    {
+      "title": "Comparative anatomy and physiology",
+      "description": "Comparative work asks how similar body systems solve different problems across animal groups—for example, how fishes, birds, and mammals exchange gases, regulate temperature, or move through their environments."
+    },
+    {
+      "title": "Evolution and adaptation",
+      "description": "Evolution explains how inherited traits change across generations. Zoologists compare living species, fossils, genes, and environments to reconstruct those changes and understand how particular adaptations arose."
+    },
+    {
+      "title": "Behavior, ecology, and life history",
+      "description": "Life-history research connects behavior and ecology to survival and reproduction: when animals mature, how many offspring they produce, how they use resources, and how they respond to competitors, predators, and seasonal change."
+    }
+  ],
+  "questions": [
+    "How are different groups of animals related evolutionarily?",
+    "Why did particular anatomical, physiological, or behavioral traits evolve?",
+    "How do different species survive, reproduce, and interact with their environments?",
+    "How can animal diversity be documented and understood?"
+  ],
+  "responsibilities": [
+    "Identify, observe, sample, or compare animals and their biological traits.",
+    "Conduct laboratory, museum, collection, or field research.",
+    "Maintain specimens, records, datasets, or research equipment.",
+    "Analyze evidence and communicate findings through reports, papers, exhibits, or presentations."
+  ],
+  "knowledgeSkills": [
+    "Animal diversity and natural history",
+    "Evolution, ecology, anatomy, and physiology",
+    "Species identification and comparative methods",
+    "Research design and statistics",
+    "Field, laboratory, or collections techniques"
+  ],
+  "variations": [
+    {
+      "label": "Specialization",
+      "description": "A zoologist may specialize in mammals, birds, reptiles, insects, marine animals, physiology, behavior, or another taxon or process."
+    },
+    {
+      "label": "Work setting",
+      "description": "The same degree can lead toward field research, laboratory science, museums, conservation, education, or graduate study."
+    },
+    {
+      "label": "Breadth",
+      "description": "Some programs retain broad animal diversity; others function much like general biology with animal-focused electives."
+    },
+    {
+      "label": "Career title",
+      "description": "Many people trained in zoology work under titles such as biologist, research technician, ecologist, curator, or environmental scientist."
+    }
+  ],
+  "settings": [
+    "Universities and research institutes",
+    "Museums and biological collections",
+    "Government and conservation organizations",
+    "Laboratories, field stations, and natural areas"
+  ],
+  "realities": [
+    "“Zoologist” is less common as a job title than many specialized biologist titles.",
+    "Broad programs require deliberate choices to build a distinctive specialty and experience record.",
+    "Field and laboratory opportunities depend heavily on faculty, location, and student initiative.",
+    "Graduate education is common for independent research and taxonomic specialties."
+  ],
+  "careers": [
+    "Zoologist",
+    "Mammalogist",
+    "Ornithologist",
+    "Herpetologist",
+    "Ecological research technician",
+    "Museum / natural-history education or collections work"
+  ],
+  "programCodes": [
+    "ME-ZOO",
+    "UMA-BIO",
+    "ME-WE",
+    "URI-W"
+  ],
+  "related": [
+    "animal-biology",
+    "ecology",
+    "wildlife-biology",
+    "animal-behavior"
+  ],
+  "references": [
+    {
+      "title": "BLS: Zoologists and Wildlife Biologists",
+      "type": "Occupational overview",
+      "url": "https://www.bls.gov/ooh/life-physical-and-social-science/zoologists-and-wildlife-biologists.htm"
+    },
+    {
+      "title": "O*NET: Zoologists and Wildlife Biologists",
+      "type": "Tasks and skills",
+      "url": "https://www.onetonline.org/link/summary/19-1023.00"
+    },
+    {
+      "title": "University of Maine: Zoology",
+      "type": "Undergraduate example",
+      "url": "https://sbe.umaine.edu/undergraduate/zoology/"
+    },
+    {
+      "title": "SPNHC: Job Opportunities",
+      "type": "Collections and natural-history jobs",
+      "url": "https://spnhc.org/category/job-opportunities/"
+    }
+  ]
+}

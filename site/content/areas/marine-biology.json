@@ -1,0 +1,135 @@
+{
+  "id": "marine-biology",
+  "group": "wild",
+  "title": "Marine Biology",
+  "short": "Organisms and biological processes associated with oceans, coasts, estuaries, and marine environments.",
+  "bigPicture": "Marine biology brings several sciences to the study of ocean and coastal organisms and ecosystems. Major specialties include ecology, behavior, physiology, genetics, fisheries, conservation, and animal care.",
+  "focus": [
+    {
+      "title": "Marine ecology and coastal ecosystems",
+      "description": "Marine ecology examines how organisms interact in estuaries, salt marshes, rocky shores, coral reefs, the open ocean, and the deep sea. It connects local species relationships to currents, nutrients, temperature, and habitat structure."
+    },
+    {
+      "title": "Fish, marine mammals, invertebrates, and algae",
+      "description": "Marine specialists may focus on one group—such as fishes, marine mammals, plankton, corals, mollusks, or algae—and learn its identification, life history, physiology, behavior, ecological role, and research methods."
+    },
+    {
+      "title": "Marine physiology and adaptation",
+      "description": "Marine physiology investigates how organisms breathe, regulate salt and water, tolerate pressure or temperature, obtain energy, and respond to conditions that differ sharply from those on land."
+    },
+    {
+      "title": "Fisheries, ocean change, and conservation",
+      "description": "Applied marine work examines fishing pressure, bycatch, warming, acidification, pollution, coastal development, and habitat loss. The evidence supports fisheries rules, protected areas, species recovery, and coastal planning."
+    }
+  ],
+  "questions": [
+    "How do marine animals communicate, migrate, forage, or reproduce?",
+    "How do warming, acidification, pollution, or habitat change affect marine life?",
+    "How do fishing and other human activities affect populations?",
+    "How are marine organisms physiologically adapted to their environments?"
+  ],
+  "responsibilities": [
+    "Conduct boat-, shore-, dive-, aquarium-, laboratory-, or sensor-based research.",
+    "Identify organisms and collect biological, behavioral, water, or habitat data.",
+    "Analyze movement, population, ecological, physiological, or fisheries information.",
+    "Maintain equipment, specimens, permits, safety procedures, and technical records."
+  ],
+  "knowledgeSkills": [
+    "Marine ecology and oceanography",
+    "Organismal biology and species identification",
+    "Statistics, GIS, acoustics, or telemetry",
+    "Laboratory, aquarium, boating, or diving methods",
+    "Field safety and scientific communication"
+  ],
+  "variations": [
+    {
+      "label": "Environment",
+      "description": "Work may occur on boats, coasts, underwater, in aquariums, laboratories, offices, or entirely through remote data."
+    },
+    {
+      "label": "Specialty",
+      "description": "Marine mammal behavior, fisheries biology, coral ecology, physiology, conservation, and aquaculture have different methods and career markets."
+    },
+    {
+      "label": "Animal contact",
+      "description": "Some aquarists provide daily care; many marine researchers observe remotely or work with samples and data."
+    },
+    {
+      "label": "Schedule",
+      "description": "Tides, weather, research cruises, seasonal migrations, and animal-care schedules can shape the work."
+    }
+  ],
+  "settings": [
+    "Oceans, coasts, estuaries, and research vessels",
+    "Aquariums and marine laboratories",
+    "Universities and government science agencies",
+    "Fisheries, conservation, and environmental consulting"
+  ],
+  "realities": [
+    "A marine subject does not guarantee frequent time at sea or direct animal contact.",
+    "Boat work, diving, and remote field sites require specialized training and safety practices.",
+    "Quantitative, laboratory, and writing skills remain central.",
+    "Independent research roles commonly require graduate education."
+  ],
+  "careers": [
+    {
+      "name": "Marine biologist",
+      "focus": "Studies marine organisms or systems using ecological, physiological, behavioral, genetic, or conservation approaches.",
+      "educationBand": "B.S. entry roles; graduate study common for research leadership",
+      "workTags": [
+        "Research",
+        "Fieldwork",
+        "Data / statistics"
+      ]
+    },
+    {
+      "name": "Fisheries biologist",
+      "focus": "Studies and helps manage fish populations, aquatic habitats, harvest, and ecosystem effects.",
+      "educationBand": "B.S.-accessible; graduate study useful for advanced roles",
+      "workTags": [
+        "Fieldwork",
+        "Conservation",
+        "Data / statistics"
+      ]
+    },
+    "Aquarist / aquarium animal-care specialist",
+    "Animal communication researcher",
+    "Movement / spatial ecologist",
+    "Ecological research technician"
+  ],
+  "programCodes": [
+    "URI-W",
+    "URI-WZ",
+    "ME-ZOO",
+    "UMA-BIO",
+    "ME-WE"
+  ],
+  "related": [
+    "ecology",
+    "wildlife-biology",
+    "animal-behavior",
+    "zoo-aquarium-science"
+  ],
+  "references": [
+    {
+      "title": "O*NET: Zoologists and Wildlife Biologists",
+      "type": "Related occupational data",
+      "url": "https://www.onetonline.org/link/summary/19-1023.00"
+    },
+    {
+      "title": "URI: Wildlife research",
+      "type": "Coastal-state research example",
+      "url": "https://web.uri.edu/nrs/research/wildlife-and-conservation-biology/"
+    },
+    {
+      "title": "URI: Undergraduate research",
+      "type": "Research opportunities",
+      "url": "https://web.uri.edu/undergraduate-research/programs-and-funding/"
+    },
+    {
+      "title": "AZA Career Center",
+      "type": "Aquarium and zoo jobs",
+      "url": "https://www.aza.org/jobs"
+    }
+  ]
+}

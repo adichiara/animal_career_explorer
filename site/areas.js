@@ -5,594 +5,8 @@
   const app = document.getElementById('app');
   const storageKey = 'animalExplorerAreasV1';
 
-  const groups = [
-    { id: 'organismal', title: 'Biological & organismal sciences', description: 'Fields centered on animals as organisms, their biological systems, their diversity, and their relationships with environments.', color: '#176d8c' },
-    { id: 'wild', title: 'Wildlife & environmental sciences', description: 'Fields centered on free-ranging animals, populations, habitats, marine systems, and conservation decisions.', color: '#087d72' },
-    { id: 'behavior', title: 'Behavior, cognition & welfare', description: 'Fields centered on what animals do, how they process information, and how their experiences and wellbeing can be studied and improved.', color: '#6457a6' },
-    { id: 'managed', title: 'Animals under human care', description: 'Fields centered on the biology, care, management, behavior, and welfare of domesticated or managed animals.', color: '#b95622' },
-    { id: 'health', title: 'Health, treatment & rehabilitation', description: 'Fields centered on preventing or treating illness and injury, restoring function, and preparing animals for continued care or release.', color: '#a83c61' }
-  ];
-
-  const areas = [
-    {
-      id: 'animal-biology', group: 'organismal', title: 'Animal Biology',
-      short: 'How animals function biologically, from cells and physiological systems to whole organisms.',
-      bigPicture: 'Animal biology studies the biological structure and function of animals. Programs can range from molecular and physiological science to whole-animal biology, behavior, ecology, and evolution.',
-      focus: ['Physiology and metabolism', 'Genetics, development, and reproduction', 'Anatomy and organismal function', 'Hormones, health, and biological responses'],
-      questions: [
-        'How does an animal regulate temperature, energy, or water balance?',
-        'How do hormones influence reproduction, stress, or behavior?',
-        'How do genetics and development produce physical or behavioral traits?',
-        'How do biological systems differ across animal groups?'
-      ],
-      responsibilities: [
-        'Conduct laboratory or organism-level experiments and follow research protocols.',
-        'Collect biological measurements, samples, images, or observational data.',
-        'Analyze results and connect cellular or physiological processes to whole-animal function.',
-        'Read scientific literature and communicate methods, findings, and limitations.'
-      ],
-      knowledgeSkills: ['Cell biology, genetics, anatomy, and physiology', 'Chemistry and biochemistry', 'Experimental design and statistics', 'Laboratory methods and careful measurement', 'Scientific writing and data interpretation'],
-      variations: [
-        ['Scale of study', 'Work may focus on molecules and cells, organs and systems, or intact animals.'],
-        ['Animal contact', 'Some studies require direct handling; others use tissues, samples, images, or existing datasets.'],
-        ['Research environment', 'Work can occur in laboratories, field stations, veterinary settings, museums, universities, or government facilities.'],
-        ['Program identity', 'At the undergraduate level, animal biology and zoology may be nearly identical or may emphasize very different faculty specialties.']
-      ],
-      settings: ['Laboratories and research facilities', 'Universities and museums', 'Government or nonprofit research programs', 'Field stations and animal-care facilities'],
-      realities: ['Many independent research roles require graduate education.', 'Laboratory work may involve repetitive protocols and detailed documentation.', 'Direct animal contact may be limited even when the research is entirely animal-focused.', 'Strong chemistry, quantitative, and writing preparation is often important.'],
-      careers: ['Animal physiologist', 'Evolutionary biologist studying animals', 'Conservation geneticist / wildlife genomicist', 'eDNA / molecular ecology technician', 'University / laboratory research assistant', 'Research scientist / principal investigator'],
-      programCodes: ['ME-ZOO', 'UMA-BIO', 'UNE-AN', 'UNE-AB'],
-      related: ['zoology', 'animal-behavior', 'animal-cognition', 'veterinary-science'],
-      references: [
-        ['O*NET: Biological Technicians', 'Occupational data', 'https://www.onetonline.org/link/summary/19-4021.00'],
-        ['University of Maine: Zoology', 'Undergraduate example', 'https://sbe.umaine.edu/undergraduate/zoology/'],
-        ['UMass Amherst: Biology electives', 'Undergraduate example', 'https://www.umass.edu/biology/academics/undergraduate-program/courses-approved-major-electives']
-      ]
-    },
-    {
-      id: 'zoology', group: 'organismal', title: 'Zoology',
-      short: 'The broad scientific study of animals, their diversity, evolution, structure, function, behavior, and ecology.',
-      bigPicture: 'Zoology is organized around animals as a group of organisms. It spans molecular biology, anatomy, physiology, taxonomy, evolution, behavior, and ecology.',
-      focus: ['Animal diversity and classification', 'Comparative anatomy and physiology', 'Evolution and adaptation', 'Behavior, ecology, and life history'],
-      questions: [
-        'How are different groups of animals related evolutionarily?',
-        'Why did particular anatomical, physiological, or behavioral traits evolve?',
-        'How do different species survive, reproduce, and interact with their environments?',
-        'How can animal diversity be documented and understood?'
-      ],
-      responsibilities: [
-        'Identify, observe, sample, or compare animals and their biological traits.',
-        'Conduct laboratory, museum, collection, or field research.',
-        'Maintain specimens, records, datasets, or research equipment.',
-        'Analyze evidence and communicate findings through reports, papers, exhibits, or presentations.'
-      ],
-      knowledgeSkills: ['Animal diversity and natural history', 'Evolution, ecology, anatomy, and physiology', 'Species identification and comparative methods', 'Research design and statistics', 'Field, laboratory, or collections techniques'],
-      variations: [
-        ['Specialization', 'A zoologist may specialize in mammals, birds, reptiles, insects, marine animals, physiology, behavior, or another taxon or process.'],
-        ['Work setting', 'The same degree can lead toward field research, laboratory science, museums, conservation, education, or graduate study.'],
-        ['Breadth', 'Some programs retain broad animal diversity; others function much like general biology with animal-focused electives.'],
-        ['Career title', 'Many people trained in zoology work under titles such as biologist, research technician, ecologist, curator, or environmental scientist.']
-      ],
-      settings: ['Universities and research institutes', 'Museums and biological collections', 'Government and conservation organizations', 'Laboratories, field stations, and natural areas'],
-      realities: ['“Zoologist” is less common as a job title than many specialized biologist titles.', 'Broad programs require deliberate choices to build a distinctive specialty and experience record.', 'Field and laboratory opportunities depend heavily on faculty, location, and student initiative.', 'Graduate education is common for independent research and taxonomic specialties.'],
-      careers: ['Zoologist', 'Mammalogist', 'Ornithologist', 'Herpetologist', 'Ecological research technician', 'Museum / natural-history education or collections work'],
-      programCodes: ['ME-ZOO', 'UMA-BIO', 'ME-WE', 'URI-W'],
-      related: ['animal-biology', 'ecology', 'wildlife-biology', 'animal-behavior'],
-      references: [
-        ['BLS: Zoologists and Wildlife Biologists', 'Occupational overview', 'https://www.bls.gov/ooh/life-physical-and-social-science/zoologists-and-wildlife-biologists.htm'],
-        ['O*NET: Zoologists and Wildlife Biologists', 'Tasks and skills', 'https://www.onetonline.org/link/summary/19-1023.00'],
-        ['University of Maine: Zoology', 'Undergraduate example', 'https://sbe.umaine.edu/undergraduate/zoology/'],
-        ['SPNHC: Job Opportunities', 'Collections and natural-history jobs', 'https://spnhc.org/category/job-opportunities/']
-      ]
-    },
-    {
-      id: 'ecology', group: 'organismal', title: 'Ecology',
-      short: 'How organisms interact with each other and with their physical environments.',
-      bigPicture: 'Ecology examines relationships at several levels—from individual organisms and populations to communities and ecosystems. It supplies much of the scientific foundation used in wildlife biology, conservation, restoration, and environmental management.',
-      focus: ['Populations and communities', 'Food webs and species interactions', 'Habitats and environmental change', 'Ecosystem processes and restoration'],
-      questions: [
-        'Why is a population increasing, declining, moving, or changing?',
-        'How does one species affect other organisms in a community?',
-        'What determines where organisms can live and reproduce?',
-        'How do climate, disturbance, or restoration change ecological systems?'
-      ],
-      responsibilities: [
-        'Design surveys or experiments in field, laboratory, or computational settings.',
-        'Measure organisms, populations, habitats, or environmental conditions.',
-        'Use statistics, GIS, models, or long-term datasets to test ecological explanations.',
-        'Translate findings into scientific publications, monitoring plans, or management recommendations.'
-      ],
-      knowledgeSkills: ['Population, community, and ecosystem ecology', 'Evolution and organismal biology', 'Sampling design and statistics', 'Field identification and measurement', 'GIS, coding, modeling, or data visualization'],
-      variations: [
-        ['Organisms', 'Ecologists may study animals, plants, microbes, whole communities, or interactions among them.'],
-        ['Methods', 'Projects range from intensive outdoor sampling to laboratory experiments, remote sensing, mathematical modeling, and existing-data analysis.'],
-        ['Purpose', 'Some ecology is curiosity-driven research; other work directly supports restoration, regulation, land management, or conservation.'],
-        ['Time scale', 'Studies may examine a short behavioral interaction or decades of population and ecosystem change.']
-      ],
-      settings: ['Natural areas and field stations', 'Universities and laboratories', 'Government agencies and consulting firms', 'Conservation organizations and restoration projects'],
-      realities: ['Fieldwork is common but not universal.', 'Data management, statistics, coding, and writing often occupy more time than animal observation.', 'Seasonal or temporary positions are common early in field-based careers.', 'Ecological conclusions often involve uncertainty, incomplete detection, and long time scales.'],
-      careers: ['Field ecologist', 'Ecological research technician', 'Research ecologist', 'Population ecologist', 'Quantitative ecologist / biometrician', 'Habitat restoration / ecological-monitoring specialist'],
-      programCodes: ['ME-WE', 'UMA-WEC', 'URI-W', 'ME-ZOO', 'UMA-BIO'],
-      related: ['wildlife-biology', 'wildlife-conservation', 'zoology', 'marine-biology'],
-      references: [
-        ['O*NET: Environmental Restoration Planners', 'Applied ecology tasks', 'https://www.onetonline.org/link/summary/19-2041.02'],
-        ['The Wildlife Society: Career paths', 'Professional field guide', 'https://wildlife.org/paths-to-becoming-a-wildlifer/'],
-        ['UMass: Wildlife Ecology & Conservation', 'Undergraduate example', 'https://www.umass.edu/environmental-conservation/academics/undergraduate-programs/natural-resources-conservation/major/wildlife-ecology-conservation-concentration'],
-        ['URI: Wildlife & Conservation curriculum', 'Undergraduate example', 'https://web.uri.edu/nrs/academics/wildlife-and-conservation-biology/curriculum/']
-      ]
-    },
-    {
-      id: 'wildlife-biology', group: 'wild', title: 'Wildlife Biology',
-      short: 'Wild animals as members of populations and ecosystems: their survival, movement, reproduction, and habitats.',
-      bigPicture: 'Wildlife biology focuses primarily on free-ranging animals, their populations, and their ecological relationships. Fieldwork is visible, but the work also depends on statistics, GIS, population models, genetics, remote sensing, permits, and technical writing.',
-      focus: ['Population size, survival, and reproduction', 'Movement, migration, and habitat use', 'Wildlife disease and human–wildlife interactions', 'Monitoring, management, and applied research'],
-      questions: [
-        'How many animals remain, and how confidently can we estimate that number?',
-        'Where do animals move during different seasons?',
-        'Which habitat conditions predict survival or reproduction?',
-        'What biological or human pressures explain a population change?'
-      ],
-      responsibilities: [
-        'Conduct wildlife surveys, capture or observe animals, and collect samples or habitat data.',
-        'Deploy cameras, acoustic sensors, telemetry, GPS, or other monitoring equipment.',
-        'Clean and analyze population, movement, habitat, or survival data.',
-        'Prepare permits, protocols, maps, reports, and recommendations for agencies or partners.'
-      ],
-      knowledgeSkills: ['Wildlife ecology and natural history', 'Population biology and habitat relationships', 'Field sampling, species identification, and safety', 'Statistics, GIS, and data management', 'Permitting, technical writing, and teamwork'],
-      variations: [
-        ['Field intensity', 'Some roles spend months outdoors; others coordinate field crews or analyze data primarily from an office.'],
-        ['Animal contact', 'Work may involve capture and handling, distant observation, automated sensors, samples, or no direct contact.'],
-        ['Employer', 'Agencies, universities, consulting firms, nonprofits, parks, tribes, and private landowners have different missions and constraints.'],
-        ['Species and methods', 'Bird, mammal, reptile, fisheries, disease, movement, habitat, and population specialties can produce very different workdays.']
-      ],
-      settings: ['Parks, refuges, forests, wetlands, and other field sites', 'Government wildlife agencies', 'Universities and research projects', 'Environmental consulting and conservation organizations'],
-      realities: ['Entry work may be seasonal, geographically mobile, and physically demanding.', 'Early mornings, nights, weather, insects, and difficult terrain may be part of some projects.', 'Federal wildlife-biologist positions have specific college-course requirements.', 'Many professional roles combine field experience with substantial analysis and reporting.'],
-      careers: ['Wildlife technician / biological science technician', 'Wildlife biologist', 'Movement / spatial ecologist', 'Wildlife disease / ecophysiology specialist', 'Natural-resource agency biologist', 'Post-release monitoring biologist'],
-      programCodes: ['ME-WE', 'UMA-WEC', 'URI-W', 'URI-WZ', 'ME-ZOO'],
-      related: ['ecology', 'wildlife-conservation', 'animal-behavior', 'wildlife-rehabilitation'],
-      references: [
-        ['BLS: Zoologists and Wildlife Biologists', 'Occupational overview', 'https://www.bls.gov/ooh/life-physical-and-social-science/zoologists-and-wildlife-biologists.htm'],
-        ['OPM Wildlife Biology Series 0486', 'Federal qualification standard', 'https://www.opm.gov/policy-data-oversight/classification-qualifications/general-schedule-qualification-standards/0400/wildlife-biology-series-0486/'],
-        ['The Wildlife Society: Career paths', 'Professional field guide', 'https://wildlife.org/paths-to-becoming-a-wildlifer/'],
-        ['Texas A&M Wildlife Job Board', 'Current field opportunities', 'https://jobs.rwfm.tamu.edu/']
-      ]
-    },
-    {
-      id: 'wildlife-conservation', group: 'wild', title: 'Wildlife Conservation',
-      short: 'Applying science, management, policy, and collaboration to protect species, populations, and habitats.',
-      bigPicture: 'Wildlife conservation uses biological and ecological evidence to decide and carry out actions intended to maintain biodiversity or recover threatened species and habitats. The same professional may conduct both wildlife biology and conservation work.',
-      focus: ['Endangered-species recovery', 'Habitat protection and restoration', 'Population and threat management', 'Conservation planning, policy, and implementation'],
-      questions: [
-        'What action is most likely to help a declining population recover?',
-        'Which habitats or ecological connections should receive priority?',
-        'How can development, roads, recreation, or conflict be managed?',
-        'Should animals be translocated or reintroduced, and how should success be measured?'
-      ],
-      responsibilities: [
-        'Assess species, habitats, threats, and the strength of available evidence.',
-        'Design or implement recovery, restoration, monitoring, or conflict-reduction actions.',
-        'Coordinate projects involving agencies, landowners, scientists, communities, and funders.',
-        'Prepare management plans, environmental documents, grants, budgets, and progress reports.'
-      ],
-      knowledgeSkills: ['Conservation biology and population ecology', 'Habitat management and restoration', 'Environmental law, policy, and permitting', 'Project planning and program evaluation', 'Communication, negotiation, and stakeholder collaboration'],
-      variations: [
-        ['Role emphasis', 'A conservation role may emphasize science, land management, policy, community engagement, fundraising, or project delivery.'],
-        ['Animal contact', 'Most conservation work affects animals indirectly through populations, habitats, policy, or people.'],
-        ['Organization', 'Agency, nonprofit, consulting, zoo, and academic programs differ in authority, pace, funding, and measures of success.'],
-        ['Scale', 'Projects range from one local population or habitat parcel to regional, national, or international planning.']
-      ],
-      settings: ['Government agencies and protected areas', 'Conservation nonprofits and land trusts', 'Consulting firms and restoration projects', 'Zoos, universities, and community partnerships'],
-      realities: ['Conservation outcomes depend heavily on people, budgets, land use, law, and politics.', 'Progress can be slow and difficult to measure.', 'The work often includes meetings, planning, documentation, and coordination alongside science.', 'Tradeoffs among species, habitats, communities, and limited resources are common.'],
-      careers: ['Conservation delivery / habitat program coordinator', 'Conservation biologist', 'Endangered-species biologist', 'Species recovery biologist', 'Conservation NGO scientist / coordinator', 'Human-wildlife conflict specialist'],
-      programCodes: ['ME-WE', 'UMA-WEC', 'URI-W', 'URI-WZ', 'ME-ZOO'],
-      related: ['wildlife-biology', 'ecology', 'zoo-aquarium-science', 'marine-biology'],
-      references: [
-        ['The Wildlife Society: Certifications', 'Professional preparation', 'https://wildlife.org/tws-certifications/'],
-        ['O*NET: Conservation Scientists', 'Tasks and skills', 'https://www.onetonline.org/link/summary/19-1031.00'],
-        ['UMass: Wildlife Ecology & Conservation', 'Undergraduate example', 'https://www.umass.edu/environmental-conservation/academics/undergraduate-programs/natural-resources-conservation/major/wildlife-ecology-conservation-concentration'],
-        ['URI: Wildlife research', 'University research example', 'https://web.uri.edu/nrs/research/wildlife-and-conservation-biology/']
-      ]
-    },
-    {
-      id: 'marine-biology', group: 'wild', title: 'Marine Biology',
-      short: 'Organisms and biological processes associated with oceans, coasts, estuaries, and marine environments.',
-      bigPicture: 'Marine biology brings several sciences to the study of ocean and coastal organisms and ecosystems. Major specialties include ecology, behavior, physiology, genetics, fisheries, conservation, and animal care.',
-      focus: ['Marine ecology and coastal ecosystems', 'Fish, marine mammals, invertebrates, and algae', 'Marine physiology and adaptation', 'Fisheries, ocean change, and conservation'],
-      questions: [
-        'How do marine animals communicate, migrate, forage, or reproduce?',
-        'How do warming, acidification, pollution, or habitat change affect marine life?',
-        'How do fishing and other human activities affect populations?',
-        'How are marine organisms physiologically adapted to their environments?'
-      ],
-      responsibilities: [
-        'Conduct boat-, shore-, dive-, aquarium-, laboratory-, or sensor-based research.',
-        'Identify organisms and collect biological, behavioral, water, or habitat data.',
-        'Analyze movement, population, ecological, physiological, or fisheries information.',
-        'Maintain equipment, specimens, permits, safety procedures, and technical records.'
-      ],
-      knowledgeSkills: ['Marine ecology and oceanography', 'Organismal biology and species identification', 'Statistics, GIS, acoustics, or telemetry', 'Laboratory, aquarium, boating, or diving methods', 'Field safety and scientific communication'],
-      variations: [
-        ['Environment', 'Work may occur on boats, coasts, underwater, in aquariums, laboratories, offices, or entirely through remote data.'],
-        ['Specialty', 'Marine mammal behavior, fisheries biology, coral ecology, physiology, conservation, and aquaculture have different methods and career markets.'],
-        ['Animal contact', 'Some aquarists provide daily care; many marine researchers observe remotely or work with samples and data.'],
-        ['Schedule', 'Tides, weather, research cruises, seasonal migrations, and animal-care schedules can shape the work.']
-      ],
-      settings: ['Oceans, coasts, estuaries, and research vessels', 'Aquariums and marine laboratories', 'Universities and government science agencies', 'Fisheries, conservation, and environmental consulting'],
-      realities: ['A marine subject does not guarantee frequent time at sea or direct animal contact.', 'Boat work, diving, and remote field sites require specialized training and safety practices.', 'Quantitative, laboratory, and writing skills remain central.', 'Independent research roles commonly require graduate education.'],
-      careers: [
-        { name: 'Marine biologist', focus: 'Studies marine organisms or systems using ecological, physiological, behavioral, genetic, or conservation approaches.', educationBand: 'B.S. entry roles; graduate study common for research leadership', workTags: ['Research', 'Fieldwork', 'Data / statistics'] },
-        { name: 'Fisheries biologist', focus: 'Studies and helps manage fish populations, aquatic habitats, harvest, and ecosystem effects.', educationBand: 'B.S.-accessible; graduate study useful for advanced roles', workTags: ['Fieldwork', 'Conservation', 'Data / statistics'] },
-        'Aquarist / aquarium animal-care specialist', 'Animal communication researcher', 'Movement / spatial ecologist', 'Ecological research technician'
-      ],
-      programCodes: ['URI-W', 'URI-WZ', 'ME-ZOO', 'UMA-BIO', 'ME-WE'],
-      related: ['ecology', 'wildlife-biology', 'animal-behavior', 'zoo-aquarium-science'],
-      references: [
-        ['O*NET: Zoologists and Wildlife Biologists', 'Related occupational data', 'https://www.onetonline.org/link/summary/19-1023.00'],
-        ['URI: Wildlife research', 'Coastal-state research example', 'https://web.uri.edu/nrs/research/wildlife-and-conservation-biology/'],
-        ['URI: Undergraduate research', 'Research opportunities', 'https://web.uri.edu/undergraduate-research/programs-and-funding/'],
-        ['AZA Career Center', 'Aquarium and zoo jobs', 'https://www.aza.org/jobs']
-      ]
-    },
-    {
-      id: 'animal-behavior', group: 'behavior', title: 'Animal Behavior / Ethology',
-      short: 'What animals do, how behavior develops and changes, and why behavioral patterns occur.',
-      bigPicture: 'Animal behavior examines actions, communication, learning, social relationships, decision-making, and responses to the environment. It can be studied in wild, companion, farm, laboratory, shelter, or zoo animals.',
-      focus: ['Social and reproductive behavior', 'Communication and sensory behavior', 'Learning and behavioral development', 'Foraging, movement, and environmental responses'],
-      questions: [
-        'Why does an animal choose one social partner, food source, or habitat over another?',
-        'How does experience change behavior?',
-        'How do animals communicate and interpret signals?',
-        'How do social and environmental conditions affect behavior?'
-      ],
-      responsibilities: [
-        'Define behaviors clearly and develop an observation or coding system.',
-        'Observe animals directly or from video and record behavior systematically.',
-        'Design experiments or compare behavior across individuals, groups, species, or conditions.',
-        'Analyze behavioral data and explain conclusions, uncertainty, and practical implications.'
-      ],
-      knowledgeSkills: ['Ethology, evolution, ecology, and natural history', 'Learning theory and behavioral development', 'Behavioral observation and ethograms', 'Research design and statistics', 'Scientific writing and interpretation'],
-      variations: [
-        ['Purpose', 'Behavior research may build basic knowledge or support welfare, training, conservation, or management decisions.'],
-        ['Setting', 'The work can occur in natural habitats, zoos, farms, shelters, homes, laboratories, or through archived video and datasets.'],
-        ['Animal contact', 'Systematic observation may involve little handling; applied training and husbandry may involve frequent direct contact.'],
-        ['Career structure', 'Technician and applied roles can be B.S.-accessible, while independent research positions usually require graduate training.']
-      ],
-      settings: ['Universities and research laboratories', 'Zoos, aquariums, farms, and shelters', 'Wildlife field projects', 'Animal-welfare and training programs'],
-      realities: ['Behavioral research can involve long periods of observation, coding, data cleaning, and writing.', 'Interesting animal behavior does not necessarily mean frequent animal handling.', 'Applied roles often require substantial hands-on experience in addition to academic knowledge.', 'Behavioral explanations must separate evidence from assumptions about intention or emotion.'],
-      careers: ['Animal behavior research assistant / technician', 'Animal behaviorist / applied animal behavior scientist', 'Behavioral ecologist', 'Animal communication researcher', 'Behavioral husbandry specialist', 'Science-based animal trainer'],
-      programCodes: ['UNE-AB', 'UNE-AN', 'UMA-BIO', 'ME-ZOO', 'URI-WZ'],
-      related: ['animal-cognition', 'animal-welfare', 'wildlife-biology', 'zoo-aquarium-science'],
-      references: [
-        ['Animal Behavior Society', 'Professional society and opportunities', 'https://www.animalbehaviorsociety.org/web/news.php'],
-        ['Animal Behavior Society: Applied certification', 'Professional pathway', 'https://www.animalbehaviorsociety.org/web/committees-applied-behavior-caab.php'],
-        ['UNE: Animal Behavior B.S.', 'Undergraduate example', 'https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior'],
-        ['O*NET: Animal Trainers', 'Related occupational data', 'https://www.onetonline.org/link/summary/39-2011.00']
-      ]
-    },
-    {
-      id: 'animal-cognition', group: 'behavior', title: 'Animal Cognition / Comparative Psychology',
-      short: 'How animals perceive, learn, remember, solve problems, make decisions, and process information.',
-      bigPicture: 'Animal cognition focuses on the mental and information-processing mechanisms underlying behavior. Researchers approach it through psychology, neuroscience, biology, and animal-behavior programs.',
-      focus: ['Learning and memory', 'Perception and attention', 'Problem-solving and decision-making', 'Social cognition and communication'],
-      questions: [
-        'What information can an animal perceive and remember?',
-        'How does an animal solve a novel problem?',
-        'Can animals recognize individuals, quantities, signals, or relationships?',
-        'How do cognition and decision-making differ across species and environments?'
-      ],
-      responsibilities: [
-        'Design tasks that isolate a specific learning, memory, perception, or decision process.',
-        'Train or habituate animals to participate safely and voluntarily in research procedures.',
-        'Record choices, response times, behavior, or physiological measures.',
-        'Use careful controls and statistical analysis to evaluate competing explanations.'
-      ],
-      knowledgeSkills: ['Comparative psychology and learning theory', 'Animal behavior, biology, and neuroscience', 'Experimental design and measurement', 'Statistics, programming, and data visualization', 'Patient animal work and precise protocol control'],
-      variations: [
-        ['Disciplinary home', 'A project may be grounded in psychology, biology, neuroscience, animal behavior, or philosophy of cognition.'],
-        ['Species', 'Research can involve primates, birds, dogs, rodents, fish, insects, zoo animals, or many other groups.'],
-        ['Method', 'Studies range from controlled laboratory tasks to field experiments, eye tracking, neuroscience, and analysis of spontaneous behavior.'],
-        ['Application', 'Cognition work can inform basic science, enrichment, training, welfare assessment, conservation, and human–animal communication.']
-      ],
-      settings: ['Psychology and biology laboratories', 'Zoos and comparative-cognition research programs', 'Universities and neuroscience centers', 'Field research and companion-animal studies'],
-      realities: ['Research questions that sound intuitive can be difficult to test without alternative explanations.', 'Studies may require many sessions, patient shaping, video coding, and small sample sizes.', 'Independent researcher roles normally require a Ph.D.', 'The undergraduate route may be less obvious because relevant work spans several departments.'],
-      careers: ['Comparative cognition researcher', 'Animal learning researcher', 'Companion-animal behavior researcher', 'Neuroethologist / neural-behavior researcher', 'Animal behavior research assistant / technician', 'Zoo / aquarium behavioral researcher'],
-      programCodes: ['UNE-AN', 'UNE-AB', 'UMA-BIO', 'ME-ZOO', 'URI-AZ'],
-      related: ['animal-behavior', 'animal-biology', 'animal-welfare', 'zoo-aquarium-science'],
-      references: [
-        ['Animal Behavior Society', 'Professional field', 'https://www.animalbehaviorsociety.org/web/news.php'],
-        ['UNE: Animal Behavior B.S.', 'Undergraduate example', 'https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior'],
-        ['UNE: Neuroscience', 'Mechanistic undergraduate option', 'https://www.une.edu/catalog/2025-2026/undergraduate/neuroscience'],
-        ['UMass Biology: Jeffrey Podos', 'Faculty research example', 'https://www.umass.edu/biology/about/directory/jeffrey-podos']
-      ]
-    },
-    {
-      id: 'animal-welfare', group: 'behavior', title: 'Animal Welfare Science',
-      short: 'Scientifically evaluating and improving animals’ physical and psychological wellbeing.',
-      bigPicture: 'Animal welfare science asks how animals experience their lives and how that experience can be improved. It combines behavioral, physiological, veterinary, environmental, and management evidence. Ethical values influence decisions, but the scientific measurements are empirical.',
-      focus: ['Stress, pain, fear, and health', 'Positive states, choice, and behavioral needs', 'Housing, enrichment, and human–animal interactions', 'Welfare indicators and quality-of-life assessment'],
-      questions: [
-        'What evidence indicates that an animal is coping well or poorly?',
-        'Does enrichment, training, or environmental change improve welfare?',
-        'Which housing or management system better supports important behavior?',
-        'How should behavioral and physiological indicators be combined?'
-      ],
-      responsibilities: [
-        'Develop and apply behavioral, health, or physiological welfare measures.',
-        'Observe animals and evaluate housing, routines, enrichment, handling, or social conditions.',
-        'Design studies or program evaluations and analyze outcomes.',
-        'Translate findings into practical recommendations, protocols, staff training, or policy.'
-      ],
-      knowledgeSkills: ['Animal behavior and species-specific needs', 'Physiology, health, and indicators of stress or positive welfare', 'Welfare assessment and research design', 'Statistics and program evaluation', 'Communication across care, veterinary, research, and management teams'],
-      variations: [
-        ['Species and sector', 'Welfare science includes farm, companion, laboratory, shelter, working, zoo, aquarium, and sometimes wild animals.'],
-        ['Work balance', 'Roles may emphasize research, direct assessment, program coordination, policy, auditing, training, or animal care.'],
-        ['Animal contact', 'Some specialists work regularly around animals; others analyze data, develop standards, or advise organizations.'],
-        ['Education', 'Applied coordinator roles may be experience-driven, while welfare-scientist positions commonly require graduate study.']
-      ],
-      settings: ['Zoos, aquariums, shelters, farms, and laboratories', 'Universities and research institutes', 'Animal-welfare organizations and certifiers', 'Government, consulting, and industry programs'],
-      realities: ['Welfare conclusions may require balancing imperfect behavioral, health, and physiological indicators.', 'Some work involves distress, poor conditions, difficult decisions, or euthanasia.', 'Changing practice requires communication and institutional cooperation, not evidence alone.', 'Daily work may contain more documentation, staff consultation, and analysis than animal handling.'],
-      careers: ['Animal welfare scientist', 'Animal welfare / behavior coordinator', 'Zoo / aquarium welfare specialist', 'Shelter behavior specialist / coordinator', 'Enrichment coordinator / specialist', 'Behavioral husbandry specialist'],
-      programCodes: ['UNE-AB', 'UNE-AN', 'URI-AZ', 'URI-WZ', 'UMA-AS'],
-      related: ['animal-behavior', 'zoo-aquarium-science', 'animal-science', 'veterinary-science'],
-      references: [
-        ['Animal Behavior Society: Applied certification', 'Professional pathway', 'https://www.animalbehaviorsociety.org/web/committees-applied-behavior-caab.php'],
-        ['URI: Zoo & Aquarium Science certificate', 'Undergraduate example', 'https://web.uri.edu/favs/academics/zoo-and-aquarium-science-certificate/'],
-        ['UNE: Animal Behavior B.S.', 'Undergraduate example', 'https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior'],
-        ['O*NET: Animal Caretakers', 'Related occupational data', 'https://www.onetonline.org/link/summary/39-2021.00']
-      ]
-    },
-    {
-      id: 'animal-science', group: 'managed', title: 'Animal Science',
-      short: 'The biology, care, management, and use of domesticated animals, traditionally with an agricultural emphasis.',
-      bigPicture: 'Animal science combines biological science with the care and management of domesticated animals. Program concentrations include livestock production, companion animals, equine science, behavior, welfare, nutrition, and pre-veterinary preparation.',
-      focus: ['Nutrition, physiology, and health', 'Genetics, breeding, and reproduction', 'Husbandry and production systems', 'Behavior, welfare, and animal management'],
-      questions: [
-        'What nutrition best supports animal health, growth, or performance?',
-        'How do genetics and breeding influence traits and health?',
-        'How do housing, handling, or management affect welfare and behavior?',
-        'How can reproductive, production, or health outcomes be managed responsibly?'
-      ],
-      responsibilities: [
-        'Provide or supervise feeding, handling, husbandry, health observation, and recordkeeping.',
-        'Collect and analyze nutrition, reproduction, growth, health, behavior, or welfare data.',
-        'Implement management, breeding, research, or quality-assurance protocols.',
-        'Communicate with veterinarians, producers, researchers, caregivers, and regulatory personnel.'
-      ],
-      knowledgeSkills: ['Anatomy, physiology, nutrition, and reproduction', 'Genetics, microbiology, and animal health', 'Husbandry, handling, and welfare', 'Statistics and experimental methods', 'Management, records, biosecurity, and communication'],
-      variations: [
-        ['Species', 'Programs may concentrate on livestock, horses, companion animals, laboratory animals, or a broader combination.'],
-        ['Purpose', 'Careers can involve hands-on management, research, industry, welfare, nutrition, breeding, extension, or veterinary preparation.'],
-        ['Curriculum', 'Two programs with the same title may allocate very different amounts of coursework to agriculture, health science, behavior, or exotic animals.'],
-        ['Animal contact', 'Farm and management roles may be hands-on; laboratory, nutrition, genetics, and industry roles may be less so.']
-      ],
-      settings: ['Farms, equine facilities, kennels, and animal-care operations', 'Universities and research laboratories', 'Feed, genetics, pharmaceutical, and agricultural organizations', 'Zoos, shelters, veterinary, and companion-animal programs'],
-      realities: ['Agricultural and livestock coursework is central in many programs.', 'Hands-on animal work can be physical, scheduled around animal needs, and subject to biosecurity rules.', 'Pre-veterinary preparation is not the same thing as a veterinary degree or guaranteed admission.', 'Program details matter more than the major title when behavior, welfare, or zoo work is the goal.'],
-      careers: [
-        { name: 'Animal scientist', focus: 'Studies nutrition, genetics, reproduction, physiology, management, or welfare in domesticated animals.', educationBand: 'Graduate study common for scientist roles', workTags: ['Research', 'Data / statistics', 'Animal care'] },
-        'Animal welfare / behavior coordinator', 'Service-dog / assistance-animal trainer', 'Animal collection / management specialist', 'Zoo animal nutritionist / nutrition coordinator', 'University / laboratory research assistant'
-      ],
-      programCodes: ['UMA-AS', 'URI-AZ', 'UNE-AB', 'UMA-BIO'],
-      related: ['animal-welfare', 'zoo-aquarium-science', 'veterinary-science', 'animal-biology'],
-      references: [
-        ['O*NET: Animal Scientists', 'Tasks and skills', 'https://www.onetonline.org/link/summary/19-1011.00'],
-        ['UMass Amherst: Animal Science', 'Undergraduate example', 'https://www.umass.edu/veterinary-animal-sciences/animal-science-major'],
-        ['UMass: Animal Management concentration', 'Undergraduate example', 'https://www.umass.edu/veterinary-animal-sciences/animal-science-major/animal-management-concentration'],
-        ['URI: Animal Science option', 'Undergraduate example', 'https://web.uri.edu/favs/academics/animal-and-veterinary-science-b-s/animal-science-option/']
-      ]
-    },
-    {
-      id: 'zoo-aquarium-science', group: 'managed', title: 'Zoo & Aquarium Science / Captive Wildlife Management',
-      short: 'The care, behavior, welfare, management, and conservation of wild animals living under human care.',
-      bigPicture: 'This area integrates husbandry, behavior, welfare, animal health, conservation breeding, education, and facility operations into a managed-animal system.',
-      focus: ['Daily husbandry and animal health observation', 'Enrichment, training, and behavioral management', 'Welfare assessment and habitat design', 'Conservation breeding and population management'],
-      questions: [
-        'What care and environment support species-appropriate behavior and good welfare?',
-        'How should social groups, feeding, enrichment, and training be structured?',
-        'How can animals voluntarily participate in veterinary procedures?',
-        'How can managed populations contribute responsibly to conservation?'
-      ],
-      responsibilities: [
-        'Prepare diets, clean habitats, inspect facilities, observe animals, and maintain detailed records.',
-        'Plan enrichment or training and evaluate behavioral and welfare outcomes.',
-        'Support veterinary care, transport, breeding, introductions, and safety procedures.',
-        'Contribute to conservation, research, education, population planning, or program coordination.'
-      ],
-      knowledgeSkills: ['Species biology, natural history, and husbandry', 'Behavior, learning, enrichment, and welfare', 'Nutrition, health observation, and biosecurity', 'Safe handling, facilities, and emergency procedures', 'Recordkeeping, teamwork, and public communication'],
-      variations: [
-        ['Department', 'Keeper, aquarist, training, welfare, nutrition, research, population management, education, and curatorial roles differ greatly.'],
-        ['Animal contact', 'Care staff work closely with animals; researchers, planners, educators, and managers may have much less direct contact.'],
-        ['Taxa and facility', 'Aquarium systems, bird programs, large mammals, reptiles, ambassador animals, sanctuaries, and conservation centers require different expertise.'],
-        ['Career stage', 'Early roles are often physical and routine-intensive; later roles may shift toward planning, supervision, coordination, or specialization.']
-      ],
-      settings: ['Zoos, aquariums, sanctuaries, and conservation centers', 'Breeding and population-management programs', 'Animal hospitals and nutrition facilities', 'Education, research, and administrative departments'],
-      realities: ['Animal-care schedules commonly include early mornings, weekends, holidays, cleaning, and outdoor work.', 'Jobs are competitive, and substantial volunteer, internship, or paid animal-care experience is often expected.', 'Emotional demands can include illness, aging animals, transfers, safety risks, and euthanasia.', 'Some specialized roles require graduate education or years of operational experience.'],
-      careers: ['Zookeeper / animal-care specialist', 'Aquarist / aquarium animal-care specialist', 'Zoo behavioral-husbandry specialist', 'Zoo / aquarium welfare specialist', 'Conservation-breeding technician', 'Population biologist / zoo population management scientist', 'Zoo animal curator', 'Zoo research coordinator'],
-      programCodes: ['URI-AZ', 'URI-WZ', 'UNE-AB', 'UNE-AN', 'UMA-AS'],
-      related: ['animal-welfare', 'animal-behavior', 'animal-science', 'wildlife-conservation'],
-      references: [
-        ['AZA Career Center', 'Zoo and aquarium job examples', 'https://www.aza.org/jobs'],
-        ['URI: Zoo & Aquarium Science certificate', 'Undergraduate example', 'https://web.uri.edu/favs/academics/zoo-and-aquarium-science-certificate/'],
-        ['O*NET: Animal Caretakers', 'Related occupational data', 'https://www.onetonline.org/link/summary/39-2021.00'],
-        ['O*NET: Animal Trainers', 'Related occupational data', 'https://www.onetonline.org/link/summary/39-2011.00']
-      ]
-    },
-    {
-      id: 'veterinary-science', group: 'health', title: 'Animal Health / Veterinary Science',
-      short: 'Preventing, diagnosing, and treating animal disease, injury, pain, and other health problems.',
-      bigPicture: 'Animal health work focuses on disease prevention, diagnosis, treatment, recovery, and population health. Veterinary medicine requires professional education, but many undergraduate majors can provide the prerequisites and scientific foundation.',
-      focus: ['Anatomy, physiology, pathology, and disease', 'Diagnosis, treatment, surgery, and pain management', 'Preventive medicine, nutrition, and epidemiology', 'Clinical care, population health, and biosecurity'],
-      questions: [
-        'What is causing an animal’s illness, injury, pain, or change in function?',
-        'Which diagnostic evidence is needed to choose a treatment?',
-        'How can disease or injury be prevented?',
-        'How do diseases spread among animals, people, or environments?'
-      ],
-      responsibilities: [
-        'Examine animals, gather histories, collect samples, and interpret diagnostic information.',
-        'Provide or assist with treatment, medication, surgery, nursing care, or rehabilitation.',
-        'Maintain medical records, infection-control procedures, equipment, and legal documentation.',
-        'Communicate risks, options, prognosis, welfare considerations, and care instructions.'
-      ],
-      knowledgeSkills: ['Anatomy, physiology, pathology, and pharmacology', 'Microbiology, immunology, and epidemiology', 'Clinical observation and diagnostic reasoning', 'Technical procedures, hygiene, and biosecurity', 'Communication, teamwork, ethics, and decision-making'],
-      variations: [
-        ['Professional role', 'Veterinarians, veterinary technicians, assistants, pathologists, epidemiologists, nutritionists, and researchers have different education and duties.'],
-        ['Species', 'Companion, farm, equine, laboratory, zoo, wildlife, aquatic, and public-health work require different knowledge and settings.'],
-        ['Clinical contact', 'Some roles provide continuous patient care; others focus on diagnostics, pathology, population health, research, or regulation.'],
-        ['Work context', 'Private practice, shelters, government, universities, industry, zoos, and field programs differ in resources and decisions.']
-      ],
-      settings: ['Veterinary hospitals and clinics', 'Shelters, farms, zoos, aquariums, and rehabilitation centers', 'Diagnostic laboratories and universities', 'Government, public-health, research, and industry programs'],
-      realities: ['Veterinary school is competitive, lengthy, and potentially expensive.', 'Clinical work can include emergencies, bodily fluids, injury, distress, euthanasia, and difficult client conversations.', 'Schedules vary from regular laboratory hours to nights, weekends, and on-call coverage.', 'Strong science preparation must be paired with clinical judgment, technical skill, and communication.'],
-      careers: [
-        { name: 'Veterinarian', focus: 'Diagnoses, treats, and prevents disease and injury and advises on animal health and welfare.', educationBand: 'Doctor of Veterinary Medicine and licensure required', workTags: ['Animal care', 'Research', 'Education / public'] },
-        { name: 'Veterinary technician', focus: 'Provides nursing, diagnostic, laboratory, anesthesia, and treatment support under veterinary supervision.', educationBand: 'Accredited veterinary-technology education and credentialing typically required', workTags: ['Animal care', 'Laboratory'] },
-        'Wildlife disease / ecophysiology specialist', 'Animal physiologist', 'Zoo animal nutritionist / nutrition coordinator', 'Wildlife rehabilitator'
-      ],
-      programCodes: ['UMA-AS', 'URI-AZ', 'UMA-BIO', 'ME-ZOO', 'UNE-AN'],
-      related: ['animal-biology', 'animal-science', 'animal-welfare', 'wildlife-rehabilitation'],
-      references: [
-        ['BLS: Veterinarians', 'Occupational overview', 'https://www.bls.gov/ooh/healthcare/veterinarians.htm'],
-        ['UMass Amherst: Animal Science', 'Undergraduate preparation example', 'https://www.umass.edu/veterinary-animal-sciences/animal-science-major'],
-        ['URI: Animal Science option', 'Undergraduate preparation example', 'https://web.uri.edu/favs/academics/animal-and-veterinary-science-b-s/animal-science-option/'],
-        ['O*NET: Biological Technicians', 'Related laboratory work', 'https://www.onetonline.org/link/summary/19-4021.00']
-      ]
-    },
-    {
-      id: 'wildlife-rehabilitation', group: 'health', title: 'Wildlife Rehabilitation',
-      short: 'Temporary care and treatment of injured, sick, displaced, or orphaned wild animals with release as the goal when possible.',
-      bigPicture: 'Wildlife rehabilitation combines individual-animal care, species-specific husbandry, health support, behavioral preparation, legal requirements, and release assessment. Rehabilitation organizations may also contribute to research and conservation.',
-      focus: ['Emergency stabilization and supportive care', 'Species-specific nutrition and husbandry', 'Preventing habituation and preserving wild behavior', 'Conditioning, release decisions, and post-release learning'],
-      questions: [
-        'Can this animal recover sufficiently to survive independently?',
-        'What care does an orphan require without becoming habituated to people?',
-        'Can the animal fly, hunt, forage, navigate, or behave normally enough for release?',
-        'When, where, and under what conditions should release occur?'
-      ],
-      responsibilities: [
-        'Intake and assess animals, provide stabilization, and follow veterinary or rehabilitation plans.',
-        'Prepare diets, feed, clean, medicate, maintain enclosures, and document progress.',
-        'Minimize stress and habituation while evaluating behavior and physical function.',
-        'Coordinate permits, release sites, volunteers, transport, public calls, and sometimes post-release monitoring.'
-      ],
-      knowledgeSkills: ['Species identification, natural history, and behavior', 'Nutrition, husbandry, basic health, and biosecurity', 'Safe handling, restraint, and enclosure management', 'Behavioral and physical release assessment', 'Recordkeeping, permits, volunteer coordination, and public communication'],
-      variations: [
-        ['Facility', 'Large hospitals, small nonprofit centers, home-based permittees, and species-specialty programs have different staffing and resources.'],
-        ['Role', 'Animal-care, veterinary, education, volunteer-coordination, operations, research, and release-monitoring work can coexist.'],
-        ['Species', 'Birds, mammals, reptiles, marine wildlife, and large animals require different facilities, permits, and expertise.'],
-        ['Season', 'Caseload, hours, species, and staffing can change dramatically during nesting, migration, weather events, or disease outbreaks.']
-      ],
-      settings: ['Wildlife rehabilitation centers and hospitals', 'Veterinary and diagnostic facilities', 'Home-based or species-specialty programs', 'Release sites and post-release field projects'],
-      realities: ['The work is physically demanding and includes extensive feeding, cleaning, laundry, and sanitation.', 'High caseloads, limited resources, irregular hours, and unpaid or low-paid entry experiences are common.', 'Not every animal can be released; suffering, mortality, and euthanasia are part of the work.', 'Permits define what activities are legal, and requirements vary by species and jurisdiction.'],
-      careers: ['Wildlife rehabilitator', 'Wildlife rehabilitation / release coordinator', 'Wildlife rehabilitation program manager', 'Reintroduction / release field technician', 'Post-release monitoring biologist', 'Wildlife disease / ecophysiology specialist'],
-      programCodes: ['ME-WE', 'URI-WZ', 'URI-W', 'UNE-AB', 'ME-ZOO'],
-      related: ['veterinary-science', 'wildlife-biology', 'animal-welfare', 'wildlife-conservation'],
-      references: [
-        ['National Wildlife Rehabilitators Association', 'Professional network and opportunities', 'https://www.nwrawildlife.org/networking/'],
-        ['U.S. Fish & Wildlife Service: Migratory bird rehabilitation', 'Federal permit guidance', 'https://www.fws.gov/service/3-200-10b-migratory-bird-rehabilitation'],
-        ['Texas A&M Wildlife Job Board', 'Current field opportunities', 'https://jobs.rwfm.tamu.edu/'],
-        ['O*NET: Animal Caretakers', 'Related occupational data', 'https://www.onetonline.org/link/summary/39-2021.00']
-      ]
-    }
-  ];
-
-  const curatedDetails = {
-    'wildlife-rehabilitation': { topics: [
-      { explanation: 'The first priority is to identify immediate threats to life and reduce pain, shock, dehydration, breathing difficulty, or heat loss. A rehabilitator works within legal and clinical limits and involves a veterinarian when diagnosis, surgery, prescription medication, or advanced treatment is needed.', examples: [
-        ['Intake example', 'A window-strike bird may need a quiet, dark holding space and evaluation for head or eye trauma before anyone can judge whether release is appropriate.'],
-        ['Supportive-care example', 'An orphaned mammal may need careful warming and fluid support before feeding; giving food too early or using the wrong technique can cause additional harm.'],
-        ['What gets documented', 'Time and location found, body condition, weight, temperature, injuries, behavior, initial care, and changes after treatment.']
-      ], referenceIndex: 0 },
-      { explanation: 'Nutrition and housing have to match the species, age, medical condition, and stage of rehabilitation. The goal is not simply to keep an animal fed—it is to support normal growth, movement, digestion, feather or coat condition, and behavior without creating preventable disease.', examples: [
-        ['Diet example', 'An insect-eating songbird, a raptor, and a young rabbit have different nutrient needs, feeding schedules, and safe feeding methods.'],
-        ['Housing example', 'Temperature, humidity, substrates, perches, water access, hiding places, and enclosure size change as an animal stabilizes and becomes more active.'],
-        ['Daily evidence', 'Food intake, feces, hydration, weight trend, mobility, and response to the enclosure help determine whether the care plan is working.']
-      ], referenceIndex: 0 },
-      { explanation: 'A healthy wild animal also needs species-appropriate behavior. Care is arranged to limit unnecessary exposure to people, pets, household sounds, and predictable human rewards, especially during sensitive developmental periods.', examples: [
-        ['Care practice', 'Staff may use visual barriers, quiet routines, remote feeding, or conspecific housing so an animal does not associate people with comfort or food.'],
-        ['Behavioral sign', 'Appropriate avoidance of people, normal social behavior, foraging, predator awareness, and species-typical movement can matter as much as a healed injury.'],
-        ['Why it matters', 'An animal that approaches people or lacks survival behavior may be physically healthy but still unsafe to release.']
-      ], referenceIndex: 1 },
-      { explanation: 'Recovery has to be translated into the functions an animal will need in the wild. Release decisions combine health, behavior, weather, season, habitat, food availability, legal requirements, and sometimes what can be learned after release.', examples: [
-        ['Conditioning example', 'A bird may progress to a flight enclosure where endurance, maneuvering, landing, and feather condition can be observed.'],
-        ['Release decision', 'The team considers whether the animal can obtain food, avoid danger, move normally, and return to suitable habitat at an appropriate time.'],
-        ['Post-release learning', 'Bands, tags, radio transmitters, sightings, or recapture records can reveal survival, movement, and whether rehabilitation methods need improvement.']
-      ], referenceIndex: 1 }
-    ] }
-  };
-
-  const topicExplanations = {
-    'animal-biology': [
-      'Physiology examines how organs and body systems obtain energy, maintain internal balance, and respond to changing conditions. Metabolism traces how nutrients and stored fuels are converted into energy, growth, heat, and biological work.',
-      'Genetics examines inherited variation, while development follows the processes that build an animal from embryo to adult. Reproductive biology adds the hormones, anatomy, behavior, and environmental conditions involved in producing offspring.',
-      'Comparative anatomy links physical structures to what animals can do: move, breathe, feed, sense, reproduce, and survive. Organismal biology connects those structures into functioning whole animals.',
-      'Hormones coordinate growth, reproduction, stress, appetite, and many behavioral responses. Researchers measure these signals alongside health and environmental conditions to understand why an animal responds as it does.'
-    ],
-    zoology: [
-      'Zoologists identify and organize animal diversity using anatomy, genetics, evolutionary relationships, and formal classification. This work supports species inventories, museum collections, field identification, and the discovery or revision of species.',
-      'Comparative work asks how similar body systems solve different problems across animal groups—for example, how fishes, birds, and mammals exchange gases, regulate temperature, or move through their environments.',
-      'Evolution explains how inherited traits change across generations. Zoologists compare living species, fossils, genes, and environments to reconstruct those changes and understand how particular adaptations arose.',
-      'Life-history research connects behavior and ecology to survival and reproduction: when animals mature, how many offspring they produce, how they use resources, and how they respond to competitors, predators, and seasonal change.'
-    ],
-    ecology: [
-      'Population ecology studies the size, structure, distribution, and change of a single species. Community ecology examines how multiple species coexist and affect one another through competition, predation, disease, and cooperation.',
-      'Food-web research traces energy and nutrients through producers, consumers, scavengers, and decomposers. It also examines how changing one species can produce indirect effects throughout a community.',
-      'Habitat research identifies the physical and biological conditions organisms need. Ecologists then study how climate, land use, pollution, fragmentation, fire, storms, and other changes alter those conditions.',
-      'Ecosystem ecology follows flows of energy, water, carbon, and nutrients. Restoration applies that knowledge to repair damaged habitats, reestablish ecological processes, and measure whether recovery is occurring.'
-    ],
-    'wildlife-biology': [
-      'Biologists estimate abundance, age structure, survival, mortality, and reproductive success to determine how a wildlife population is changing and which life stages most influence its future.',
-      'Movement studies reveal home ranges, migration routes, seasonal habitat needs, and barriers. Methods include direct observation, tracking devices, banding, genetic samples, camera traps, and spatial analysis.',
-      'Wildlife health connects pathogens, contaminants, nutrition, climate, and population change. Human–wildlife work examines conflict, coexistence, harvest, vehicle collisions, urban adaptation, and public responses to wildlife.',
-      'Monitoring turns repeated surveys into evidence about trends and management outcomes. Applied research tests actions such as habitat improvements, harvest rules, invasive-species control, translocation, or protection of breeding sites.'
-    ],
-    'wildlife-conservation': [
-      'Recovery work identifies why a species is declining, protects remaining populations, reduces immediate threats, and tracks progress toward measurable population and habitat goals.',
-      'Habitat protection secures places species need, while restoration repairs vegetation, water, connectivity, disturbance patterns, or other ecological functions that have been degraded.',
-      'Threat management addresses pressures such as habitat loss, invasive species, disease, pollution, overuse, climate change, and conflict with people. Population management may add breeding, reintroduction, translocation, or carefully regulated harvest.',
-      'Conservation planning compares evidence, feasibility, cost, law, and community priorities to choose actions. Policy and implementation turn those choices into permits, funding, partnerships, land management, enforcement, and long-term monitoring.'
-    ],
-    'marine-biology': [
-      'Marine ecology examines how organisms interact in estuaries, salt marshes, rocky shores, coral reefs, the open ocean, and the deep sea. It connects local species relationships to currents, nutrients, temperature, and habitat structure.',
-      'Marine specialists may focus on one group—such as fishes, marine mammals, plankton, corals, mollusks, or algae—and learn its identification, life history, physiology, behavior, ecological role, and research methods.',
-      'Marine physiology investigates how organisms breathe, regulate salt and water, tolerate pressure or temperature, obtain energy, and respond to conditions that differ sharply from those on land.',
-      'Applied marine work examines fishing pressure, bycatch, warming, acidification, pollution, coastal development, and habitat loss. The evidence supports fisheries rules, protected areas, species recovery, and coastal planning.'
-    ],
-    'animal-behavior': [
-      'Social and reproductive behavior includes bonding, dominance, cooperation, conflict, courtship, mate choice, parental care, and group organization. Researchers examine both immediate causes and evolutionary consequences.',
-      'Animals communicate through sound, scent, posture, touch, vibration, color, and electrical or chemical signals. Sensory research asks what animals can detect and how that information guides action.',
-      'Learning changes behavior through experience; development examines how behavior emerges across an animal’s life. Studies may separate inherited tendencies, early experience, social exposure, training, and current conditions.',
-      'Foraging and movement research examines how animals locate resources, evaluate risk, navigate, choose habitats, and adjust to weather, predators, competitors, people, or changes in their environment.'
-    ],
-    'animal-cognition': [
-      'Learning and memory research tests how animals acquire information, retain it, generalize it, and use past experience. Tasks may involve locations, objects, sounds, social partners, rules, or sequences of events.',
-      'Perception concerns what information an animal can detect; attention concerns which information it selects and prioritizes. Experimental tasks help distinguish sensory limits from memory, motivation, or decision-making.',
-      'Problem-solving studies how animals respond to new obstacles, tools, choices, and changing rules. Decision research examines how they weigh rewards, delays, uncertainty, effort, risk, and prior experience.',
-      'Social-cognition research asks how animals recognize individuals, follow attention or gestures, learn from others, compete, cooperate, and interpret social signals. Communication studies connect those abilities to the signals animals produce and receive.'
-    ],
-    'animal-welfare': [
-      'Welfare scientists measure behavioral and physiological signs of pain, fear, injury, illness, and chronic stress. They also test whether a measure reflects a short-term response or a sustained welfare problem.',
-      'Good welfare includes opportunities for comfort, engagement, control, exploration, social contact, and other rewarding experiences. Preference and motivation tests help reveal what resources or activities animals value.',
-      'Housing and enrichment research tests how space, complexity, social grouping, routines, handling, training, and relationships with caregivers affect behavior, health, and emotional state.',
-      'Welfare assessment combines several indicators—such as behavior, health, physical condition, resource use, and response to people—into structured evaluations that support care decisions and quality-of-life judgments.'
-    ],
-    'animal-science': [
-      'Nutrition connects feed composition and digestion to growth, reproduction, immunity, health, and performance. Physiology explains how animals use those nutrients and respond to management and environmental conditions.',
-      'Genetics and breeding use pedigrees, performance records, and genomic information to select traits. Reproductive science includes fertility, gestation, birth, reproductive technologies, and management of breeding animals.',
-      'Husbandry systems organize feeding, housing, sanitation, handling, breeding, health monitoring, and recordkeeping. Production science evaluates how those systems affect animals, workers, resources, food, and farm outcomes.',
-      'Behavior and welfare inform handling, housing, social management, enrichment, transport, and routine care. Animal managers use these observations with health and production data to adjust practices.'
-    ],
-    'zoo-aquarium-science': [
-      'Daily husbandry includes feeding, cleaning, enclosure checks, recordkeeping, and close observation of appetite, movement, appearance, social behavior, and other changes that may signal a health or welfare concern.',
-      'Enrichment creates opportunities for species-appropriate behavior, while training uses voluntary participation to support healthcare, movement, husbandry, mental stimulation, and safer interactions between animals and staff.',
-      'Welfare assessment combines behavioral, health, environmental, and management evidence. Habitat design translates species biology into spaces for movement, choice, privacy, social interaction, care, and visitor management.',
-      'Conservation breeding coordinates reproduction while maintaining genetic diversity and sustainable populations. Population managers use pedigrees, demographics, transfers, institutional capacity, and long-term species plans.'
-    ],
-    'veterinary-science': [
-      'Anatomy and physiology establish how healthy bodies are structured and function. Pathology and disease science identify what has changed, why it changed, and how infection, injury, genetics, nutrition, toxins, or aging may be involved.',
-      'Diagnosis combines history, physical examination, laboratory tests, imaging, and clinical reasoning. Treatment may involve medication, surgery, nursing care, rehabilitation, and pain control, followed by monitoring of the animal’s response.',
-      'Preventive medicine reduces disease before it occurs through vaccination, parasite control, nutrition, screening, sanitation, and risk management. Epidemiology examines patterns of disease across groups and identifies likely causes or routes of spread.',
-      'Clinical care focuses on individual patients; population health looks for patterns across herds, shelters, colonies, wildlife populations, or facilities. Biosecurity uses procedures, spaces, equipment, and movement controls to limit transmission.'
-    ]
-  };
+  let groups = [];
+  let areas = [];
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -625,6 +39,70 @@
   function aspectKey(areaId, kind, index) { return `${areaId}::${kind}::${index}`; }
   function reactionFor(key) { return state.reactions[key] || ''; }
 
+  async function fetchJson(path) {
+    const response = await fetch(path, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`${path} returned ${response.status}`);
+    try {
+      return await response.json();
+    } catch (error) {
+      throw new Error(`${path}: ${error.message}`);
+    }
+  }
+
+  function validateContent() {
+    if (!Array.isArray(groups) || !groups.length) throw new Error('groups.json must contain at least one group.');
+    if (!Array.isArray(areas) || !areas.length) throw new Error('The area manifest does not contain any area files.');
+    const groupIds = new Set(groups.map(group => group.id));
+    const areaIds = new Set();
+    const requiredLists = ['focus', 'questions', 'responsibilities', 'knowledgeSkills', 'variations', 'settings', 'realities', 'careers', 'programCodes', 'related', 'references'];
+    areas.forEach(area => {
+      if (!area.id || !area.title || !groupIds.has(area.group)) throw new Error(`Invalid identity or group in ${area.id || 'an area file'}.`);
+      if (areaIds.has(area.id)) throw new Error(`Duplicate area id: ${area.id}.`);
+      areaIds.add(area.id);
+      requiredLists.forEach(field => {
+        if (!Array.isArray(area[field])) throw new Error(`${area.id}: ${field} must be a list.`);
+      });
+      area.focus.forEach((topic, index) => {
+        if (!topic.title || !topic.description) throw new Error(`${area.id}: focus item ${index + 1} needs a title and description.`);
+      });
+      area.references.forEach((reference, index) => {
+        if (!reference.title || !reference.type || !reference.url) throw new Error(`${area.id}: reference ${index + 1} is incomplete.`);
+      });
+    });
+    const programCodes = new Set(D.programs.map(program => program.code));
+    areas.forEach(area => {
+      area.related.forEach(relatedId => {
+        if (!areaIds.has(relatedId)) throw new Error(`${area.id}: related area ${relatedId} does not exist.`);
+      });
+      area.programCodes.forEach(code => {
+        if (!programCodes.has(code)) throw new Error(`${area.id}: program code ${code} does not exist in site/data.js.`);
+      });
+    });
+  }
+
+  async function loadContent() {
+    const root = 'content/areas/';
+    const manifest = await fetchJson(`${root}index.json`);
+    const loaded = await Promise.all([
+      fetchJson(`${root}${manifest.groups}`),
+      ...manifest.areas.map(file => fetchJson(`${root}${file}`))
+    ]);
+    groups = loaded[0];
+    areas = loaded.slice(1);
+    validateContent();
+  }
+
+  async function initialize() {
+    try {
+      await loadContent();
+      window.addEventListener('hashchange', route);
+      route();
+    } catch (error) {
+      console.error('Unable to load area content', error);
+      app.innerHTML = `<div class="page narrow"><div class="empty content-error"><h1>Area content could not be loaded</h1><p>Check the edited JSON file for a missing comma, quote, or required field, then reload the page.</p><code>${esc(error.message)}</code></div></div>`;
+    }
+  }
+
   function setActiveNav(route) {
     document.querySelectorAll('[data-route]').forEach(link => link.classList.toggle('active', link.dataset.route === route));
     document.getElementById('primaryNav').classList.remove('open');
@@ -653,7 +131,7 @@
       <div class="page">
         <div class="page-heading">
           <div>
-            <div class="eyebrow">13 overlapping fields and work areas</div>
+            <div class="eyebrow">${areas.length} overlapping fields and work areas</div>
             <h1>Explore the different ways people study, care for, and work with animals</h1>
             <p class="lead">Open an area to learn what it covers, how the work varies, which responsibilities and skills it may involve, and where it can lead.</p>
           </div>
@@ -673,7 +151,7 @@
     root.innerHTML = groups.map(group => {
       const matches = areas.filter(arealabs => {
         if (arealabs.group !== group.id) return false;
-        const blob = [arealabs.title, arealabs.short, arealabs.bigPicture, ...arealabs.focus, ...arealabs.knowledgeSkills].join(' ').toLowerCase();
+        const blob = [arealabs.title, arealabs.short, arealabs.bigPicture, ...arealabs.focus.map(itemText), ...arealabs.knowledgeSkills.map(itemText)].join(' ').toLowerCase();
         return !q || blob.includes(q);
       });
       if (!matches.length) return '';
@@ -710,34 +188,49 @@
     </div>`;
   }
 
-  function itemText(item) { return Array.isArray(item) ? item.join(': ') : item; }
-  function referenceFor(area, kind, index, preferredIndex) {
+  function itemText(item) {
+    if (typeof item === 'string') return item;
+    if (Array.isArray(item)) return item.join(': ');
+    return item.title || item.text || item.label || '';
+  }
+
+  function referenceFor(area, kind, index, preferredSource) {
     if (!area.references.length) return null;
     const offsets = { topics: 0, questions: 1, activities: 0, skills: 2, settings: 1, realities: 1 };
-    const selectedIndex = preferredIndex == null ? (index + (offsets[kind] || 0)) % area.references.length : preferredIndex;
+    if (typeof preferredSource === 'string') {
+      const matched = area.references.find(reference => reference.title === preferredSource || reference.url === preferredSource);
+      if (matched) return matched;
+    }
+    const selectedIndex = Number.isInteger(preferredSource) ? preferredSource : (index + (offsets[kind] || 0)) % area.references.length;
     return area.references[selectedIndex % area.references.length];
   }
+
   function detailFor(area, kind, item, index) {
-    const curated = curatedDetails[area.id]?.[kind]?.[index];
-    if (curated) return { ...curated, reference: referenceFor(area, kind, index, curated.referenceIndex) };
-    const responsibility = area.responsibilities[index % area.responsibilities.length];
-    const question = area.questions[index % area.questions.length];
-    const skill = area.knowledgeSkills[index % area.knowledgeSkills.length];
-    const setting = area.settings[index % area.settings.length];
+    const responsibility = itemText(area.responsibilities[index % area.responsibilities.length]);
+    const question = itemText(area.questions[index % area.questions.length]);
+    const skill = itemText(area.knowledgeSkills[index % area.knowledgeSkills.length]);
+    const setting = itemText(area.settings[index % area.settings.length]);
     const variation = area.variations[index % area.variations.length];
     const career = area.careers[index % area.careers.length];
     const careerName = typeof career === 'object' ? career.name : career;
-    const topicExplanation = topicExplanations[area.id]?.[index];
     const lower = value => String(value).replace(/^[A-Z]/, letter => letter.toLowerCase()).replace(/\.$/, '');
+    const customExamples = typeof item === 'object' && Array.isArray(item.examples)
+      ? item.examples.map(example => [example.label, example.text])
+      : null;
     const details = {
-      topics: { explanation: topicExplanation, examples: [['A question it can raise', question], ['How it appears in the work', responsibility], ['Useful preparation', skill]] },
+      topics: { explanation: item.description, examples: [['A question it can raise', question], ['How it appears in the work', responsibility], ['Useful preparation', skill]] },
       questions: { explanation: `Investigating this question draws on ${lower(skill)}. Evidence may come from experiments, direct observation, care records, field monitoring, or existing datasets.`, examples: [['Related activity', responsibility], ['Evidence or expertise', skill], ['Possible work context', setting]] },
       activities: { explanation: `This work uses ${lower(skill)} to collect information, provide care, or support a decision. It may contribute to questions such as “${question}”`, examples: [['Knowledge that supports it', skill], ['Where it may happen', setting], ['Related career example', careerName]] },
       skills: { explanation: `In ${area.title}, this preparation supports work such as ${lower(responsibility)}.`, examples: [['Used for', responsibility], ['Question it can help answer', question], ['Place to develop it', setting]] },
       settings: { explanation: `In ${area.title}, work here may include ${lower(responsibility)}.`, examples: [['Example activity', responsibility], ['Relevant preparation', skill], ['Related career example', careerName]] },
-      realities: { explanation: `This condition can shape daily routines and the ${lower(variation[0])} of the work.`, examples: [['What that range can look like', variation[1]], ['Responsibility affected', responsibility], ['Setting to investigate', setting]] }
+      realities: { explanation: `This condition can shape daily routines and the ${lower(variation.label)} of the work.`, examples: [['What that range can look like', variation.description], ['Responsibility affected', responsibility], ['Setting to investigate', setting]] }
     };
-    return { ...details[kind], reference: referenceFor(area, kind, index) };
+    const generated = details[kind];
+    return {
+      explanation: (typeof item === 'object' && item.description) || generated.explanation,
+      examples: customExamples || generated.examples,
+      reference: referenceFor(area, kind, index, typeof item === 'object' ? item.source : null)
+    };
   }
   function drillCard(area, kind, item, index) {
     const text = itemText(item);
@@ -747,7 +240,7 @@
     return `<details class="drill-card"><summary><span class="drill-number">${String(index + 1).padStart(2, '0')}</span><span class="drill-title">${esc(text)}</span><span class="drill-cue">Details &amp; examples</span></summary>
       <div class="drill-content"><p class="drill-explanation">${esc(detail.explanation)}</p>
         <div class="example-list">${detail.examples.map(example => `<div class="example-item"><strong>${esc(example[0])}</strong><span>${esc(example[1])}</span></div>`).join('')}</div>
-        <div class="drill-footer">${reference ? `<a class="source-link" href="${esc(reference[2])}" target="_blank" rel="noopener"><span>${esc(reference[1])}</span>${esc(reference[0])} ↗</a>` : '<span></span>'}${reactionButtons(key)}</div>
+        <div class="drill-footer">${reference ? `<a class="source-link" href="${esc(reference.url)}" target="_blank" rel="noopener"><span>${esc(reference.type)}</span>${esc(reference.title)} ↗</a>` : '<span></span>'}${reactionButtons(key)}</div>
       </div></details>`;
   }
   function aspectSection(area, kind, title, intro, items, tag) {
@@ -796,7 +289,7 @@
 
           <section class="content-section" id="variety">
             <div class="section-head"><div><h2>How work within this area varies</h2><p>The same field can produce very different workdays, settings, and relationships with animals.</p></div><span class="section-tag">Range</span></div>
-            <div class="variation-grid">${area.variations.map(item => `<div class="info-box variation"><h3>${esc(item[0])}</h3><p>${esc(item[1])}</p></div>`).join('')}</div>
+            <div class="variation-grid">${area.variations.map(item => `<div class="info-box variation"><h3>${esc(item.label)}</h3><p>${esc(item.description)}</p></div>`).join('')}</div>
           </section>
 
           ${aspectSection(area, 'skills', 'Knowledge and skills', 'Scientific, technical, analytical, and communication preparation used in the field.', area.knowledgeSkills, 'Preparation')}
@@ -822,7 +315,7 @@
 
           <section class="content-section" id="references">
             <div class="section-head"><div><h2>Learn more from field and program sources</h2><p>Professional organizations, occupational references, qualification standards, job boards, and official university pages from the project research.</p></div><span class="section-tag">Sources</span></div>
-            <div class="reference-grid">${area.references.map(reference => `<article class="reference-card"><span class="source-type">${esc(reference[1])}</span><h3>${esc(reference[0])}</h3><a href="${esc(reference[2])}" target="_blank" rel="noopener">Open source ↗</a></article>`).join('')}</div>
+            <div class="reference-grid">${area.references.map(reference => `<article class="reference-card"><span class="source-type">${esc(reference.type)}</span><h3>${esc(reference.title)}</h3><a href="${esc(reference.url)}" target="_blank" rel="noopener">Open source ↗</a></article>`).join('')}</div>
           </section>
         </div>
       </div>
@@ -846,7 +339,7 @@
         items.forEach((item, index) => {
           const key = aspectKey(area.id, kind, index);
           const value = reactionFor(key);
-          if (value) entries.push({ area, kind, text: Array.isArray(item) ? item.join(': ') : item, value });
+          if (value) entries.push({ area, kind, text: itemText(item), value });
         });
       });
     });
@@ -894,6 +387,5 @@
     event.currentTarget.setAttribute('aria-expanded', String(open));
   });
 
-  window.addEventListener('hashchange', route);
-  route();
+  initialize();
 })();

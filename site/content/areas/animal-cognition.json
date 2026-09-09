@@ -1,0 +1,117 @@
+{
+  "id": "animal-cognition",
+  "group": "behavior",
+  "title": "Animal Cognition / Comparative Psychology",
+  "short": "How animals perceive, learn, remember, solve problems, make decisions, and process information.",
+  "bigPicture": "Animal cognition focuses on the mental and information-processing mechanisms underlying behavior. Researchers approach it through psychology, neuroscience, biology, and animal-behavior programs.",
+  "focus": [
+    {
+      "title": "Learning and memory",
+      "description": "Learning and memory research tests how animals acquire information, retain it, generalize it, and use past experience. Tasks may involve locations, objects, sounds, social partners, rules, or sequences of events."
+    },
+    {
+      "title": "Perception and attention",
+      "description": "Perception concerns what information an animal can detect; attention concerns which information it selects and prioritizes. Experimental tasks help distinguish sensory limits from memory, motivation, or decision-making."
+    },
+    {
+      "title": "Problem-solving and decision-making",
+      "description": "Problem-solving studies how animals respond to new obstacles, tools, choices, and changing rules. Decision research examines how they weigh rewards, delays, uncertainty, effort, risk, and prior experience."
+    },
+    {
+      "title": "Social cognition and communication",
+      "description": "Social-cognition research asks how animals recognize individuals, follow attention or gestures, learn from others, compete, cooperate, and interpret social signals. Communication studies connect those abilities to the signals animals produce and receive."
+    }
+  ],
+  "questions": [
+    "What information can an animal perceive and remember?",
+    "How does an animal solve a novel problem?",
+    "Can animals recognize individuals, quantities, signals, or relationships?",
+    "How do cognition and decision-making differ across species and environments?"
+  ],
+  "responsibilities": [
+    "Design tasks that isolate a specific learning, memory, perception, or decision process.",
+    "Train or habituate animals to participate safely and voluntarily in research procedures.",
+    "Record choices, response times, behavior, or physiological measures.",
+    "Use careful controls and statistical analysis to evaluate competing explanations."
+  ],
+  "knowledgeSkills": [
+    "Comparative psychology and learning theory",
+    "Animal behavior, biology, and neuroscience",
+    "Experimental design and measurement",
+    "Statistics, programming, and data visualization",
+    "Patient animal work and precise protocol control"
+  ],
+  "variations": [
+    {
+      "label": "Disciplinary home",
+      "description": "A project may be grounded in psychology, biology, neuroscience, animal behavior, or philosophy of cognition."
+    },
+    {
+      "label": "Species",
+      "description": "Research can involve primates, birds, dogs, rodents, fish, insects, zoo animals, or many other groups."
+    },
+    {
+      "label": "Method",
+      "description": "Studies range from controlled laboratory tasks to field experiments, eye tracking, neuroscience, and analysis of spontaneous behavior."
+    },
+    {
+      "label": "Application",
+      "description": "Cognition work can inform basic science, enrichment, training, welfare assessment, conservation, and human–animal communication."
+    }
+  ],
+  "settings": [
+    "Psychology and biology laboratories",
+    "Zoos and comparative-cognition research programs",
+    "Universities and neuroscience centers",
+    "Field research and companion-animal studies"
+  ],
+  "realities": [
+    "Research questions that sound intuitive can be difficult to test without alternative explanations.",
+    "Studies may require many sessions, patient shaping, video coding, and small sample sizes.",
+    "Independent researcher roles normally require a Ph.D.",
+    "The undergraduate route may be less obvious because relevant work spans several departments."
+  ],
+  "careers": [
+    "Comparative cognition researcher",
+    "Animal learning researcher",
+    "Companion-animal behavior researcher",
+    "Neuroethologist / neural-behavior researcher",
+    "Animal behavior research assistant / technician",
+    "Zoo / aquarium behavioral researcher"
+  ],
+  "programCodes": [
+    "UNE-AN",
+    "UNE-AB",
+    "UMA-BIO",
+    "ME-ZOO",
+    "URI-AZ"
+  ],
+  "related": [
+    "animal-behavior",
+    "animal-biology",
+    "animal-welfare",
+    "zoo-aquarium-science"
+  ],
+  "references": [
+    {
+      "title": "Animal Behavior Society",
+      "type": "Professional field",
+      "url": "https://www.animalbehaviorsociety.org/web/news.php"
+    },
+    {
+      "title": "UNE: Animal Behavior B.S.",
+      "type": "Undergraduate example",
+      "url": "https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior"
+    },
+    {
+      "title": "UNE: Neuroscience",
+      "type": "Mechanistic undergraduate option",
+      "url": "https://www.une.edu/catalog/2025-2026/undergraduate/neuroscience"
+    },
+    {
+      "title": "UMass Biology: Jeffrey Podos",
+      "type": "Faculty research example",
+      "url": "https://www.umass.edu/biology/about/directory/jeffrey-podos"
+    }
+  ]
+}

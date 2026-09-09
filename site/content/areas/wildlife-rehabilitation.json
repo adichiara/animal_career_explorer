@@ -1,0 +1,177 @@
+{
+  "id": "wildlife-rehabilitation",
+  "group": "health",
+  "title": "Wildlife Rehabilitation",
+  "short": "Temporary care and treatment of injured, sick, displaced, or orphaned wild animals with release as the goal when possible.",
+  "bigPicture": "Wildlife rehabilitation combines individual-animal care, species-specific husbandry, health support, behavioral preparation, legal requirements, and release assessment. Rehabilitation organizations may also contribute to research and conservation.",
+  "focus": [
+    {
+      "title": "Emergency stabilization and supportive care",
+      "description": "The first priority is to identify immediate threats to life and reduce pain, shock, dehydration, breathing difficulty, or heat loss. A rehabilitator works within legal and clinical limits and involves a veterinarian when diagnosis, surgery, prescription medication, or advanced treatment is needed.",
+      "examples": [
+        {
+          "label": "Intake example",
+          "text": "A window-strike bird may need a quiet, dark holding space and evaluation for head or eye trauma before anyone can judge whether release is appropriate."
+        },
+        {
+          "label": "Supportive-care example",
+          "text": "An orphaned mammal may need careful warming and fluid support before feeding; giving food too early or using the wrong technique can cause additional harm."
+        },
+        {
+          "label": "What gets documented",
+          "text": "Time and location found, body condition, weight, temperature, injuries, behavior, initial care, and changes after treatment."
+        }
+      ],
+      "source": "National Wildlife Rehabilitators Association"
+    },
+    {
+      "title": "Species-specific nutrition and husbandry",
+      "description": "Nutrition and housing have to match the species, age, medical condition, and stage of rehabilitation. The goal is not simply to keep an animal fed—it is to support normal growth, movement, digestion, feather or coat condition, and behavior without creating preventable disease.",
+      "examples": [
+        {
+          "label": "Diet example",
+          "text": "An insect-eating songbird, a raptor, and a young rabbit have different nutrient needs, feeding schedules, and safe feeding methods."
+        },
+        {
+          "label": "Housing example",
+          "text": "Temperature, humidity, substrates, perches, water access, hiding places, and enclosure size change as an animal stabilizes and becomes more active."
+        },
+        {
+          "label": "Daily evidence",
+          "text": "Food intake, feces, hydration, weight trend, mobility, and response to the enclosure help determine whether the care plan is working."
+        }
+      ],
+      "source": "National Wildlife Rehabilitators Association"
+    },
+    {
+      "title": "Preventing habituation and preserving wild behavior",
+      "description": "A healthy wild animal also needs species-appropriate behavior. Care is arranged to limit unnecessary exposure to people, pets, household sounds, and predictable human rewards, especially during sensitive developmental periods.",
+      "examples": [
+        {
+          "label": "Care practice",
+          "text": "Staff may use visual barriers, quiet routines, remote feeding, or conspecific housing so an animal does not associate people with comfort or food."
+        },
+        {
+          "label": "Behavioral sign",
+          "text": "Appropriate avoidance of people, normal social behavior, foraging, predator awareness, and species-typical movement can matter as much as a healed injury."
+        },
+        {
+          "label": "Why it matters",
+          "text": "An animal that approaches people or lacks survival behavior may be physically healthy but still unsafe to release."
+        }
+      ],
+      "source": "U.S. Fish & Wildlife Service: Migratory bird rehabilitation"
+    },
+    {
+      "title": "Conditioning, release decisions, and post-release learning",
+      "description": "Recovery has to be translated into the functions an animal will need in the wild. Release decisions combine health, behavior, weather, season, habitat, food availability, legal requirements, and sometimes what can be learned after release.",
+      "examples": [
+        {
+          "label": "Conditioning example",
+          "text": "A bird may progress to a flight enclosure where endurance, maneuvering, landing, and feather condition can be observed."
+        },
+        {
+          "label": "Release decision",
+          "text": "The team considers whether the animal can obtain food, avoid danger, move normally, and return to suitable habitat at an appropriate time."
+        },
+        {
+          "label": "Post-release learning",
+          "text": "Bands, tags, radio transmitters, sightings, or recapture records can reveal survival, movement, and whether rehabilitation methods need improvement."
+        }
+      ],
+      "source": "U.S. Fish & Wildlife Service: Migratory bird rehabilitation"
+    }
+  ],
+  "questions": [
+    "Can this animal recover sufficiently to survive independently?",
+    "What care does an orphan require without becoming habituated to people?",
+    "Can the animal fly, hunt, forage, navigate, or behave normally enough for release?",
+    "When, where, and under what conditions should release occur?"
+  ],
+  "responsibilities": [
+    "Intake and assess animals, provide stabilization, and follow veterinary or rehabilitation plans.",
+    "Prepare diets, feed, clean, medicate, maintain enclosures, and document progress.",
+    "Minimize stress and habituation while evaluating behavior and physical function.",
+    "Coordinate permits, release sites, volunteers, transport, public calls, and sometimes post-release monitoring."
+  ],
+  "knowledgeSkills": [
+    "Species identification, natural history, and behavior",
+    "Nutrition, husbandry, basic health, and biosecurity",
+    "Safe handling, restraint, and enclosure management",
+    "Behavioral and physical release assessment",
+    "Recordkeeping, permits, volunteer coordination, and public communication"
+  ],
+  "variations": [
+    {
+      "label": "Facility",
+      "description": "Large hospitals, small nonprofit centers, home-based permittees, and species-specialty programs have different staffing and resources."
+    },
+    {
+      "label": "Role",
+      "description": "Animal-care, veterinary, education, volunteer-coordination, operations, research, and release-monitoring work can coexist."
+    },
+    {
+      "label": "Species",
+      "description": "Birds, mammals, reptiles, marine wildlife, and large animals require different facilities, permits, and expertise."
+    },
+    {
+      "label": "Season",
+      "description": "Caseload, hours, species, and staffing can change dramatically during nesting, migration, weather events, or disease outbreaks."
+    }
+  ],
+  "settings": [
+    "Wildlife rehabilitation centers and hospitals",
+    "Veterinary and diagnostic facilities",
+    "Home-based or species-specialty programs",
+    "Release sites and post-release field projects"
+  ],
+  "realities": [
+    "The work is physically demanding and includes extensive feeding, cleaning, laundry, and sanitation.",
+    "High caseloads, limited resources, irregular hours, and unpaid or low-paid entry experiences are common.",
+    "Not every animal can be released; suffering, mortality, and euthanasia are part of the work.",
+    "Permits define what activities are legal, and requirements vary by species and jurisdiction."
+  ],
+  "careers": [
+    "Wildlife rehabilitator",
+    "Wildlife rehabilitation / release coordinator",
+    "Wildlife rehabilitation program manager",
+    "Reintroduction / release field technician",
+    "Post-release monitoring biologist",
+    "Wildlife disease / ecophysiology specialist"
+  ],
+  "programCodes": [
+    "ME-WE",
+    "URI-WZ",
+    "URI-W",
+    "UNE-AB",
+    "ME-ZOO"
+  ],
+  "related": [
+    "veterinary-science",
+    "wildlife-biology",
+    "animal-welfare",
+    "wildlife-conservation"
+  ],
+  "references": [
+    {
+      "title": "National Wildlife Rehabilitators Association",
+      "type": "Professional network and opportunities",
+      "url": "https://www.nwrawildlife.org/networking/"
+    },
+    {
+      "title": "U.S. Fish & Wildlife Service: Migratory bird rehabilitation",
+      "type": "Federal permit guidance",
+      "url": "https://www.fws.gov/service/3-200-10b-migratory-bird-rehabilitation"
+    },
+    {
+      "title": "Texas A&M Wildlife Job Board",
+      "type": "Current field opportunities",
+      "url": "https://jobs.rwfm.tamu.edu/"
+    },
+    {
+      "title": "O*NET: Animal Caretakers",
+      "type": "Related occupational data",
+      "url": "https://www.onetonline.org/link/summary/39-2021.00"
+    }
+  ]
+}

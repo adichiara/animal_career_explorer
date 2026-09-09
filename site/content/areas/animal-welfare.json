@@ -1,0 +1,117 @@
+{
+  "id": "animal-welfare",
+  "group": "behavior",
+  "title": "Animal Welfare Science",
+  "short": "Scientifically evaluating and improving animals’ physical and psychological wellbeing.",
+  "bigPicture": "Animal welfare science asks how animals experience their lives and how that experience can be improved. It combines behavioral, physiological, veterinary, environmental, and management evidence. Ethical values influence decisions, but the scientific measurements are empirical.",
+  "focus": [
+    {
+      "title": "Stress, pain, fear, and health",
+      "description": "Welfare scientists measure behavioral and physiological signs of pain, fear, injury, illness, and chronic stress. They also test whether a measure reflects a short-term response or a sustained welfare problem."
+    },
+    {
+      "title": "Positive states, choice, and behavioral needs",
+      "description": "Good welfare includes opportunities for comfort, engagement, control, exploration, social contact, and other rewarding experiences. Preference and motivation tests help reveal what resources or activities animals value."
+    },
+    {
+      "title": "Housing, enrichment, and human–animal interactions",
+      "description": "Housing and enrichment research tests how space, complexity, social grouping, routines, handling, training, and relationships with caregivers affect behavior, health, and emotional state."
+    },
+    {
+      "title": "Welfare indicators and quality-of-life assessment",
+      "description": "Welfare assessment combines several indicators—such as behavior, health, physical condition, resource use, and response to people—into structured evaluations that support care decisions and quality-of-life judgments."
+    }
+  ],
+  "questions": [
+    "What evidence indicates that an animal is coping well or poorly?",
+    "Does enrichment, training, or environmental change improve welfare?",
+    "Which housing or management system better supports important behavior?",
+    "How should behavioral and physiological indicators be combined?"
+  ],
+  "responsibilities": [
+    "Develop and apply behavioral, health, or physiological welfare measures.",
+    "Observe animals and evaluate housing, routines, enrichment, handling, or social conditions.",
+    "Design studies or program evaluations and analyze outcomes.",
+    "Translate findings into practical recommendations, protocols, staff training, or policy."
+  ],
+  "knowledgeSkills": [
+    "Animal behavior and species-specific needs",
+    "Physiology, health, and indicators of stress or positive welfare",
+    "Welfare assessment and research design",
+    "Statistics and program evaluation",
+    "Communication across care, veterinary, research, and management teams"
+  ],
+  "variations": [
+    {
+      "label": "Species and sector",
+      "description": "Welfare science includes farm, companion, laboratory, shelter, working, zoo, aquarium, and sometimes wild animals."
+    },
+    {
+      "label": "Work balance",
+      "description": "Roles may emphasize research, direct assessment, program coordination, policy, auditing, training, or animal care."
+    },
+    {
+      "label": "Animal contact",
+      "description": "Some specialists work regularly around animals; others analyze data, develop standards, or advise organizations."
+    },
+    {
+      "label": "Education",
+      "description": "Applied coordinator roles may be experience-driven, while welfare-scientist positions commonly require graduate study."
+    }
+  ],
+  "settings": [
+    "Zoos, aquariums, shelters, farms, and laboratories",
+    "Universities and research institutes",
+    "Animal-welfare organizations and certifiers",
+    "Government, consulting, and industry programs"
+  ],
+  "realities": [
+    "Welfare conclusions may require balancing imperfect behavioral, health, and physiological indicators.",
+    "Some work involves distress, poor conditions, difficult decisions, or euthanasia.",
+    "Changing practice requires communication and institutional cooperation, not evidence alone.",
+    "Daily work may contain more documentation, staff consultation, and analysis than animal handling."
+  ],
+  "careers": [
+    "Animal welfare scientist",
+    "Animal welfare / behavior coordinator",
+    "Zoo / aquarium welfare specialist",
+    "Shelter behavior specialist / coordinator",
+    "Enrichment coordinator / specialist",
+    "Behavioral husbandry specialist"
+  ],
+  "programCodes": [
+    "UNE-AB",
+    "UNE-AN",
+    "URI-AZ",
+    "URI-WZ",
+    "UMA-AS"
+  ],
+  "related": [
+    "animal-behavior",
+    "zoo-aquarium-science",
+    "animal-science",
+    "veterinary-science"
+  ],
+  "references": [
+    {
+      "title": "Animal Behavior Society: Applied certification",
+      "type": "Professional pathway",
+      "url": "https://www.animalbehaviorsociety.org/web/committees-applied-behavior-caab.php"
+    },
+    {
+      "title": "URI: Zoo & Aquarium Science certificate",
+      "type": "Undergraduate example",
+      "url": "https://web.uri.edu/favs/academics/zoo-and-aquarium-science-certificate/"
+    },
+    {
+      "title": "UNE: Animal Behavior B.S.",
+      "type": "Undergraduate example",
+      "url": "https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior"
+    },
+    {
+      "title": "O*NET: Animal Caretakers",
+      "type": "Related occupational data",
+      "url": "https://www.onetonline.org/link/summary/39-2021.00"
+    }
+  ]
+}

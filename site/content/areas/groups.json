@@ -1,0 +1,32 @@
+[
+  {
+    "id": "organismal",
+    "title": "Biological & organismal sciences",
+    "description": "Fields centered on animals as organisms, their biological systems, their diversity, and their relationships with environments.",
+    "color": "#176d8c"
+  },
+  {
+    "id": "wild",
+    "title": "Wildlife & environmental sciences",
+    "description": "Fields centered on free-ranging animals, populations, habitats, marine systems, and conservation decisions.",
+    "color": "#087d72"
+  },
+  {
+    "id": "behavior",
+    "title": "Behavior, cognition & welfare",
+    "description": "Fields centered on what animals do, how they process information, and how their experiences and wellbeing can be studied and improved.",
+    "color": "#6457a6"
+  },
+  {
+    "id": "managed",
+    "title": "Animals under human care",
+    "description": "Fields centered on the biology, care, management, behavior, and welfare of domesticated or managed animals.",
+    "color": "#b95622"
+  },
+  {
+    "id": "health",
+    "title": "Health, treatment & rehabilitation",
+    "description": "Fields centered on preventing or treating illness and injury, restoring function, and preparing animals for continued care or release.",
+    "color": "#a83c61"
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "id": "animal-biology",
+  "group": "organismal",
+  "title": "Animal Biology",
+  "short": "How animals function biologically, from cells and physiological systems to whole organisms.",
+  "bigPicture": "Animal biology studies the biological structure and function of animals. Programs can range from molecular and physiological science to whole-animal biology, behavior, ecology, and evolution.",
+  "focus": [
+    {
+      "title": "Physiology and metabolism",
+      "description": "Physiology examines how organs and body systems obtain energy, maintain internal balance, and respond to changing conditions. Metabolism traces how nutrients and stored fuels are converted into energy, growth, heat, and biological work."
+    },
+    {
+      "title": "Genetics, development, and reproduction",
+      "description": "Genetics examines inherited variation, while development follows the processes that build an animal from embryo to adult. Reproductive biology adds the hormones, anatomy, behavior, and environmental conditions involved in producing offspring."
+    },
+    {
+      "title": "Anatomy and organismal function",
+      "description": "Comparative anatomy links physical structures to what animals can do: move, breathe, feed, sense, reproduce, and survive. Organismal biology connects those structures into functioning whole animals."
+    },
+    {
+      "title": "Hormones, health, and biological responses",
+      "description": "Hormones coordinate growth, reproduction, stress, appetite, and many behavioral responses. Researchers measure these signals alongside health and environmental conditions to understand why an animal responds as it does."
+    }
+  ],
+  "questions": [
+    "How does an animal regulate temperature, energy, or water balance?",
+    "How do hormones influence reproduction, stress, or behavior?",
+    "How do genetics and development produce physical or behavioral traits?",
+    "How do biological systems differ across animal groups?"
+  ],
+  "responsibilities": [
+    "Conduct laboratory or organism-level experiments and follow research protocols.",
+    "Collect biological measurements, samples, images, or observational data.",
+    "Analyze results and connect cellular or physiological processes to whole-animal function.",
+    "Read scientific literature and communicate methods, findings, and limitations."
+  ],
+  "knowledgeSkills": [
+    "Cell biology, genetics, anatomy, and physiology",
+    "Chemistry and biochemistry",
+    "Experimental design and statistics",
+    "Laboratory methods and careful measurement",
+    "Scientific writing and data interpretation"
+  ],
+  "variations": [
+    {
+      "label": "Scale of study",
+      "description": "Work may focus on molecules and cells, organs and systems, or intact animals."
+    },
+    {
+      "label": "Animal contact",
+      "description": "Some studies require direct handling; others use tissues, samples, images, or existing datasets."
+    },
+    {
+      "label": "Research environment",
+      "description": "Work can occur in laboratories, field stations, veterinary settings, museums, universities, or government facilities."
+    },
+    {
+      "label": "Program identity",
+      "description": "At the undergraduate level, animal biology and zoology may be nearly identical or may emphasize very different faculty specialties."
+    }
+  ],
+  "settings": [
+    "Laboratories and research facilities",
+    "Universities and museums",
+    "Government or nonprofit research programs",
+    "Field stations and animal-care facilities"
+  ],
+  "realities": [
+    "Many independent research roles require graduate education.",
+    "Laboratory work may involve repetitive protocols and detailed documentation.",
+    "Direct animal contact may be limited even when the research is entirely animal-focused.",
+    "Strong chemistry, quantitative, and writing preparation is often important."
+  ],
+  "careers": [
+    "Animal physiologist",
+    "Evolutionary biologist studying animals",
+    "Conservation geneticist / wildlife genomicist",
+    "eDNA / molecular ecology technician",
+    "University / laboratory research assistant",
+    "Research scientist / principal investigator"
+  ],
+  "programCodes": [
+    "ME-ZOO",
+    "UMA-BIO",
+    "UNE-AN",
+    "UNE-AB"
+  ],
+  "related": [
+    "zoology",
+    "animal-behavior",
+    "animal-cognition",
+    "veterinary-science"
+  ],
+  "references": [
+    {
+      "title": "O*NET: Biological Technicians",
+      "type": "Occupational data",
+      "url": "https://www.onetonline.org/link/summary/19-4021.00"
+    },
+    {
+      "title": "University of Maine: Zoology",
+      "type": "Undergraduate example",
+      "url": "https://sbe.umaine.edu/undergraduate/zoology/"
+    },
+    {
+      "title": "UMass Amherst: Biology electives",
+      "type": "Undergraduate example",
+      "url": "https://www.umass.edu/biology/academics/undergraduate-program/courses-approved-major-electives"
+    }
+  ]
+}

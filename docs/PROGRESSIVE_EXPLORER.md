@@ -8,10 +8,11 @@ The existing `site/index.html`, `site/app.js`, and `site/styles.css` are unchang
 
 ## Experience sequence
 
-1. Choose a comfortable starting point.
-2. Explore broad kinds of work rather than unfamiliar job titles.
-3. React to a small sample of real careers.
-4. Look for patterns across a shortlist before considering college programs.
+1. Choose interest-led exploration, work-area browsing, or direct role search.
+2. Select up to three interests or work areas.
+3. Review the responsibilities, knowledge, skills, settings, and working conditions associated with those areas.
+4. Examine a limited sample of related careers and record reactions.
+5. Compare shared career dimensions and mapped college-program support.
 
 Detailed evidence, observed titles, pay, qualifications, and progression remain available in expandable sections and through the original full explorer.
 

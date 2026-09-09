@@ -92,6 +92,96 @@
     }
   ];
 
+  const interestPrompts = {
+    care: 'Caring for individual animals and noticing what they need',
+    behavior: 'Figuring out why animals behave, learn, or respond as they do',
+    wildlife: 'Observing animals outdoors and understanding how they live',
+    protect: 'Helping species recover and improving the habitats they depend on',
+    research: 'Answering biological questions through systematic investigation',
+    data: 'Finding patterns in measurements, maps, or scientific evidence',
+    communicate: 'Explaining animal science and conservation to other people'
+  };
+
+  const areaDetails = {
+    care: {
+      settings: 'Zoos, aquariums, sanctuaries, rehabilitation centers, breeding programs, shelters, and assistance-animal organizations.',
+      responsibilities: [
+        'Prepare food, feed animals, clean and maintain living spaces, and monitor daily routines.',
+        'Observe health and behavior, recognize changes, and maintain accurate records.',
+        'Provide enrichment or training, support veterinary procedures, and follow safety protocols.'
+      ],
+      knowledge: ['Species biology and natural history', 'Husbandry, nutrition, welfare, and basic health', 'Learning principles, safety procedures, ethics, and regulations'],
+      skills: ['Detailed observation', 'Safe handling and husbandry techniques', 'Reliability, teamwork, recordkeeping, and physical stamina'],
+      realities: 'Often physical and repetitive. Schedules may include early mornings, weekends, holidays, outdoor work, cleaning, and strict safety routines.'
+    },
+    behavior: {
+      settings: 'Zoos, aquariums, shelters, universities, laboratories, farms, consulting practices, and animal-welfare programs.',
+      responsibilities: [
+        'Define and observe behavior systematically using ethograms, logs, video, or other measures.',
+        'Develop enrichment, training, management, or research plans based on behavior and welfare goals.',
+        'Evaluate outcomes, interpret evidence, and communicate recommendations to caregivers, researchers, or clients.'
+      ],
+      knowledge: ['Ethology, cognition, and learning theory', 'Animal welfare and species-specific behavior', 'Research design, measurement, and statistics'],
+      skills: ['Behavioral observation and coding', 'Humane training or intervention design', 'Data interpretation, clear writing, and collaborative problem-solving'],
+      realities: 'Direct animal contact varies widely. Many roles involve more observation, documentation, data analysis, and staff communication than handling.'
+    },
+    wildlife: {
+      settings: 'Field stations, universities, consulting firms, parks, refuges, government agencies, and conservation organizations.',
+      responsibilities: [
+        'Conduct surveys, identify species, collect samples, and record habitat or population data.',
+        'Use tools such as cameras, acoustic sensors, telemetry, GPS, or GIS to monitor wildlife.',
+        'Manage field protocols, equipment, permits, data quality, and reports.'
+      ],
+      knowledge: ['Ecology, evolution, and natural history', 'Population biology and habitat relationships', 'Sampling design, statistics, GIS, and field safety'],
+      skills: ['Species identification and field observation', 'Accurate data collection under variable conditions', 'Navigation, equipment use, teamwork, and technical writing'],
+      realities: 'Work can involve travel, irregular hours, weather, insects, difficult terrain, seasonal appointments, and long periods with limited animal contact.'
+    },
+    protect: {
+      settings: 'Government agencies, conservation nonprofits, land trusts, parks, refuges, consulting firms, and species-recovery programs.',
+      responsibilities: [
+        'Assess species, populations, habitats, and threats using field and existing evidence.',
+        'Plan or implement recovery, restoration, monitoring, compliance, or management actions.',
+        'Coordinate with landowners, agencies, scientists, community groups, and funders.'
+      ],
+      knowledge: ['Conservation biology and population ecology', 'Habitat management, restoration, and environmental policy', 'Monitoring methods, GIS, statistics, and project planning'],
+      skills: ['Evaluating evidence and tradeoffs', 'Project coordination and regulatory documentation', 'Field methods, mapping, communication, and stakeholder work'],
+      realities: 'Conservation outcomes depend heavily on people, budgets, land use, policy, and long timelines—not only biological knowledge.'
+    },
+    research: {
+      settings: 'Universities, government laboratories, zoos, museums, nonprofit institutes, field stations, and private research organizations.',
+      responsibilities: [
+        'Turn a broad question into testable hypotheses, measures, and a workable study design.',
+        'Collect, manage, analyze, and document data while following research and animal-care protocols.',
+        'Interpret results, identify limitations, and communicate findings through reports, papers, or presentations.'
+      ],
+      knowledge: ['Biology relevant to the research question', 'Experimental and observational research methods', 'Statistics, scientific ethics, and literature evaluation'],
+      skills: ['Careful measurement and protocol adherence', 'Data analysis and scientific reasoning', 'Technical writing, persistence, and troubleshooting'],
+      realities: 'Independent scientist roles usually require graduate training. Undergraduate entry points are commonly assistant, technician, laboratory, or field positions.'
+    },
+    data: {
+      settings: 'Government agencies, universities, consulting firms, conservation organizations, environmental companies, and research teams.',
+      responsibilities: [
+        'Clean, organize, document, and assess the quality of biological or environmental data.',
+        'Analyze patterns using statistics, code, databases, GIS, remote sensing, or models.',
+        'Create maps, figures, reports, or decision tools and explain uncertainty to non-specialists.'
+      ],
+      knowledge: ['Ecology or biological science', 'Statistics, study design, and data quality', 'Programming, databases, GIS, remote sensing, or quantitative modeling'],
+      skills: ['Structured analytical thinking', 'Reproducible data management and visualization', 'Explaining assumptions, uncertainty, and results clearly'],
+      realities: 'Most time is computer-based. Strong biological context is still important because technically correct analysis can be scientifically misleading.'
+    },
+    communicate: {
+      settings: 'Zoos, aquariums, museums, schools, parks, nature centers, nonprofits, media organizations, and public agencies.',
+      responsibilities: [
+        'Translate animal science or conservation information for a specific audience.',
+        'Develop programs, lessons, exhibits, articles, presentations, or public events.',
+        'Evaluate audience needs, coordinate logistics, and revise content for accuracy and accessibility.'
+      ],
+      knowledge: ['Animal biology, ecology, or conservation', 'Learning, interpretation, and audience engagement', 'Writing, media, program design, and information accuracy'],
+      skills: ['Public speaking and explanatory writing', 'Adapting content for different audiences', 'Facilitation, planning, collaboration, and feedback'],
+      realities: 'The work often combines science with customer service, scheduling, event logistics, writing, and repeated delivery to varied audiences.'
+    }
+  };
+
   const taskByTag = {
     'Animal care': 'Provide routine care, notice changes in health or behavior, and keep clear records.',
     'Behavior / training': 'Observe behavior and use learning, training, or enrichment methods to improve outcomes.',
@@ -104,11 +194,13 @@
   };
 
   const steps = {
-    start: { label: 'Start anywhere', number: '1 of 4', width: '25%' },
-    worlds: { label: 'Notice what draws you in', number: '1 of 4', width: '25%' },
-    roles: { label: 'Sample the work', number: '2 of 4', width: '50%' },
-    role: { label: 'React to a real role', number: '3 of 4', width: '75%' },
-    shortlist: { label: 'Look for patterns', number: '4 of 4', width: '100%' }
+    start: { label: 'Choose a starting point', number: '1 of 5', width: '20%' },
+    interests: { label: 'Select interests', number: '1 of 5', width: '20%' },
+    worlds: { label: 'Select work areas', number: '1 of 5', width: '20%' },
+    areas: { label: 'Understand the work areas', number: '2 of 5', width: '40%' },
+    roles: { label: 'View related roles', number: '3 of 5', width: '60%' },
+    role: { label: 'Examine a role', number: '4 of 5', width: '80%' },
+    shortlist: { label: 'Compare roles and programs', number: '5 of 5', width: '100%' }
   };
 
   let state = loadState();
@@ -116,6 +208,7 @@
   let searchText = '';
   let currentRoleId = '';
   let roleLimit = 12;
+  let areaSource = 'worlds';
 
   function blankState() {
     return { selectedWorlds: [], reactions: {}, viewed: [] };
@@ -124,7 +217,7 @@
   function loadState() {
     try {
       const parsed = JSON.parse(localStorage.getItem(storageKey) || '{}');
-      return { ...blankState(), ...parsed };
+      return { ...blankState(), ...parsed, selectedWorlds: (parsed.selectedWorlds || []).slice(0, 3) };
     } catch (_) {
       return blankState();
     }
@@ -141,6 +234,14 @@
     })[char]);
   }
 
+  function excerpt(value, max = 240) {
+    const text = String(value || '').trim();
+    if (text.length <= max) return text;
+    const shortened = text.slice(0, max);
+    const boundary = Math.max(shortened.lastIndexOf('. '), shortened.lastIndexOf('; '), shortened.lastIndexOf(', '));
+    return `${shortened.slice(0, boundary > max * .55 ? boundary + 1 : max).trim()}…`;
+  }
+
   function careerByName(name) { return D.careers.find(career => career.name === name); }
   function careerById(id) { return D.careers.find(career => career.id === id); }
 
@@ -149,7 +250,7 @@
     document.getElementById('navShortlistCount').textContent = count;
     document.querySelectorAll('.discovery-nav-link').forEach(link => {
       const target = link.dataset.screenLink;
-      link.classList.toggle('active', target === currentScreen || (target === 'start' && ['worlds', 'roles', 'role'].includes(currentScreen)));
+      link.classList.toggle('active', target === currentScreen || (target === 'start' && ['interests', 'worlds', 'areas', 'roles', 'role'].includes(currentScreen)));
     });
   }
 
@@ -165,7 +266,9 @@
     updateJourney(screen);
     updateHeader();
     if (screen === 'start') renderStart();
+    if (screen === 'interests') renderInterests();
     if (screen === 'worlds') renderWorlds();
+    if (screen === 'areas') renderAreas();
     if (screen === 'roles') renderRoles();
     if (screen === 'role') renderRole();
     if (screen === 'shortlist') renderShortlist(options);
@@ -178,30 +281,53 @@
   function renderStart() {
     root.innerHTML = `
       <section class="screen">
-        <div class="eyebrow">Explore without committing</div>
-        <h1>What kind of animal work might be worth exploring?</h1>
-        <p class="lead">You do not need to know your future career. Choose the easiest starting point; you can change direction at any time.</p>
+        <div class="eyebrow">Career exploration</div>
+        <h1>Explore animal-related work from different starting points.</h1>
+        <p class="lead">Begin with interests, broad work areas, or a role you already know.</p>
 
         <div class="choice-grid">
-          <button class="choice-card" type="button" data-start="worlds">
+          <button class="choice-card" type="button" data-start="interests">
             <span class="choice-icon">✦</span>
             <strong>Start with what sounds interesting</strong>
-            <span>Choose concrete activities such as caring, observing, researching, protecting, or teaching.</span>
+            <span>Select topics and activities first, without needing to know career categories.</span>
           </button>
           <button class="choice-card" type="button" data-start="worlds">
             <span class="choice-icon">⌁</span>
             <strong>Browse types of animal work</strong>
-            <span>See a small set of career worlds before looking at individual job titles.</span>
+            <span>Compare seven broad areas of work and the kinds of roles found within them.</span>
           </button>
           <button class="choice-card" type="button" data-start="search">
             <span class="choice-icon">⌕</span>
             <strong>I already have something in mind</strong>
-            <span>Search for a familiar role and use it as a doorway to related possibilities.</span>
+            <span>Search the career library by role, activity, specialty, or setting.</span>
           </button>
         </div>
 
-        <p class="reassurance">This is exploration, not a test. “Maybe,” “not for me,” and “I need to learn more” are all useful answers.</p>
         ${shortlistedCareers().length ? `<div class="button-row"><button class="btn soft" type="button" data-go="shortlist">Continue with my ${shortlistedCareers().length}-role shortlist</button></div>` : ''}
+      </section>`;
+  }
+
+  function renderInterests() {
+    root.innerHTML = `
+      <section class="screen">
+        <div class="eyebrow">Interest areas</div>
+        <h1>What sounds interesting?</h1>
+        <p class="lead">Select up to three. The next page explains the responsibilities, knowledge, and skills connected with each choice.</p>
+
+        <div class="interest-grid">
+          ${worlds.map(world => `
+            <button class="interest-card" type="button" data-interest="${world.id}" aria-pressed="${state.selectedWorlds.includes(world.id)}">
+              <span class="world-icon">${world.icon}</span>
+              <strong>${esc(interestPrompts[world.id])}</strong>
+              <span class="interest-area-label">Related area: ${esc(world.title)}</span>
+            </button>`).join('')}
+        </div>
+        <p id="selectionHint" class="selection-hint">${state.selectedWorlds.length} of 3 selected</p>
+
+        <div class="button-row">
+          <button class="btn" type="button" data-go="start">Back</button>
+          <button class="btn primary" id="understandInterestsButton" type="button" ${state.selectedWorlds.length ? '' : 'disabled'}>Understand these interest areas</button>
+        </div>
       </section>`;
   }
 
@@ -209,8 +335,8 @@
     root.innerHTML = `
       <section class="screen">
         <div class="eyebrow">Career worlds</div>
-        <h1>Which kinds of work deserve a closer look?</h1>
-        <p class="lead">Choose one or more based on the work itself—not whether you recognize a job title.</p>
+        <h1>Types of animal-related work</h1>
+        <p class="lead">Select up to three areas to compare their responsibilities, knowledge, skills, settings, and working conditions.</p>
 
         <div class="world-grid" style="margin-top:28px">
           ${worlds.map(world => `
@@ -222,10 +348,49 @@
             </button>`).join('')}
         </div>
 
+        <p id="selectionHint" class="selection-hint">${state.selectedWorlds.length} of 3 selected</p>
         <div class="button-row">
           <button class="btn" type="button" data-go="start">Back</button>
-          <button class="btn primary" id="seeRolesButton" type="button" ${state.selectedWorlds.length ? '' : 'disabled'}>See roles from my choices</button>
+          <button class="btn primary" id="seeRolesButton" type="button" ${state.selectedWorlds.length ? '' : 'disabled'}>Understand selected areas</button>
           <button class="btn text" type="button" data-browse-all>Browse all 93 careers instead</button>
+        </div>
+      </section>`;
+  }
+
+  function renderAreas() {
+    const selected = state.selectedWorlds.map(id => worlds.find(world => world.id === id)).filter(Boolean);
+    if (!selected.length) return showScreen(areaSource);
+    root.innerHTML = `
+      <section class="screen">
+        <div class="eyebrow">Work-area briefing</div>
+        <h1>What these areas involve</h1>
+        <p class="lead">Responsibilities describe the work performed. Knowledge is what workers need to understand. Skills are capabilities used to do the work effectively.</p>
+
+        <div class="area-stack">
+          ${selected.map(world => {
+            const info = areaDetails[world.id];
+            return `
+              <article class="card area-card">
+                <header class="area-card-header">
+                  <span class="world-icon">${world.icon}</span>
+                  <div><h2>${esc(world.title)}</h2><p>${esc(world.description)}</p></div>
+                  <button class="btn small-btn text" type="button" data-remove-area="${world.id}">Remove</button>
+                </header>
+                <div class="area-setting"><strong>Common settings</strong><span>${esc(info.settings)}</span></div>
+                <div class="area-examples"><strong>Example roles</strong><span>${world.careers.slice(0, 5).map(esc).join(' · ')}</span></div>
+                <div class="area-info-grid">
+                  <section><h3>Responsibilities</h3><ul>${info.responsibilities.map(item => `<li>${esc(item)}</li>`).join('')}</ul></section>
+                  <section><h3>Knowledge</h3><ul>${info.knowledge.map(item => `<li>${esc(item)}</li>`).join('')}</ul></section>
+                  <section><h3>Skills</h3><ul>${info.skills.map(item => `<li>${esc(item)}</li>`).join('')}</ul></section>
+                </div>
+                <div class="area-realities"><strong>Typical work realities</strong><span>${esc(info.realities)}</span></div>
+              </article>`;
+          }).join('')}
+        </div>
+
+        <div class="button-row">
+          <button class="btn" type="button" data-go="${areaSource}">${areaSource === 'interests' ? 'Change interests' : 'Change work areas'}</button>
+          <button class="btn primary" type="button" data-go="roles">View ${rolePool().length} related roles</button>
         </div>
       </section>`;
   }
@@ -251,8 +416,8 @@
     root.innerHTML = `
       <section class="screen">
         <div class="eyebrow">Representative roles</div>
-        <h1>Sample the work, not just the title.</h1>
-        <p class="lead">Open a role to see its purpose, typical duties, setting, degree reality, and what might be easy to overlook.</p>
+        <h1>${selectedLabels.length ? 'Roles related to the selected work areas' : 'Career role library'}</h1>
+        <p class="lead">Each profile summarizes purpose, responsibilities, setting, animal contact, education, experience, and supporting evidence.</p>
 
         <div class="search-wrap">
           <label class="sr-only" for="roleSearch">Search careers</label>
@@ -329,7 +494,7 @@
 
   function surpriseText(career) {
     const band = career.educationBand || '';
-    if (band.includes('Graduate degree typical')) return 'The interesting title is usually not the first job. Undergraduate research, methods courses, and early technician work often come before graduate specialization.';
+    if (band.includes('Graduate degree typical')) return 'The title is usually not an entry role. Undergraduate research, methods courses, and early technician work often come before graduate specialization.';
     if (band.includes('later career') || band.includes('substantial') || band.includes('progressive')) return 'This is generally a destination role rather than an entry job. Early positions build the experience needed to reach it.';
     if ((career.directContact || '').startsWith('High')) return 'High animal contact does not mean the whole day is hands-on. Cleaning, preparation, safety, documentation, and teamwork can take substantial time.';
     if ((career.directContact || '').startsWith('Low')) return 'Working for animals does not always mean working directly with them. Data, habitats, research protocols, writing, or people may occupy most of the day.';
@@ -338,10 +503,10 @@
 
   function earlyTest(career) {
     const tags = career.workTags || [];
-    if (tags.includes('Animal care')) return 'Try structured animal-care work that includes cleaning, observation, recordkeeping, and feedback—not only casual animal contact.';
-    if (tags.includes('Fieldwork')) return 'Try a field survey, habitat-monitoring project, or outdoor volunteer role with real data collection.';
-    if (tags.includes('Data / statistics')) return 'Try organizing and analyzing a small biology or ecology dataset, then explain what the evidence does and does not show.';
-    if (tags.includes('Education / public')) return 'Try explaining an animal or conservation topic to a real audience through teaching, interpretation, or writing.';
+    if (tags.includes('Animal care')) return 'Structured animal-care work that includes cleaning, observation, recordkeeping, feedback, and safety procedures.';
+    if (tags.includes('Fieldwork')) return 'Field surveys, habitat-monitoring projects, or outdoor volunteer roles with systematic data collection.';
+    if (tags.includes('Data / statistics')) return 'Organizing and analyzing biology or ecology data, including explaining results and limitations.';
+    if (tags.includes('Education / public')) return 'Teaching, interpretation, or science writing for a real audience.';
     return 'Look for a supervised experience that exposes the routine parts of the work, not only its most exciting moments.';
   }
 
@@ -372,11 +537,11 @@
               ${tasks.map((task, index) => `<div class="task-item"><span class="task-number">${index + 1}</span><span>${esc(task)}</span></div>`).join('')}
             </div>
 
-            <div class="surprise"><strong>What might surprise you</strong>${esc(surpriseText(career))}</div>
+            <div class="surprise"><strong>Commonly overlooked part of the work</strong>${esc(surpriseText(career))}</div>
 
             <div class="reaction-panel">
               <h2>Your reaction</h2>
-              <p>React to the actual work—not whether the title sounds impressive.</p>
+              <p>Consider the responsibilities, setting, contact level, and preparation.</p>
               <div class="reaction-buttons">
                 ${['Interesting', 'Maybe', 'Not for me', 'Need to learn more'].map(label => `<button class="btn reaction-btn" type="button" data-reaction="${esc(label)}" aria-pressed="${reaction === label}">${esc(label)}</button>`).join('')}
               </div>
@@ -389,7 +554,7 @@
             <div class="fact"><small>Typical settings</small><strong>${esc(details['Typical work settings'] || career.category)}</strong></div>
             <div class="fact"><small>Animal contact</small><strong>${esc(career.directContact || 'Varies by employer')}</strong></div>
             <div class="fact"><small>School reality</small><strong>${esc(career.educationBand || details['Typical education / progression'] || 'Preparation varies')}</strong></div>
-            <div class="fact"><small>Good to test early</small><strong>${esc(earlyTest(career))}</strong></div>
+            <div class="fact"><small>Relevant early experience</small><strong>${esc(earlyTest(career))}</strong></div>
           </aside>
         </div>
 
@@ -409,8 +574,8 @@
 
         <div class="button-row">
           <button class="btn" type="button" data-go="roles">Back to roles</button>
-          <button class="btn primary" type="button" data-next-role>${reaction ? 'See another role' : 'Skip for now and see another'}</button>
-          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">See what connects (${shortlistedCareers().length})</button>` : ''}
+          <button class="btn primary" type="button" data-next-role>Next role</button>
+          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">Compare shortlist (${shortlistedCareers().length})</button>` : ''}
         </div>
       </section>`;
   }
@@ -459,13 +624,13 @@
     root.innerHTML = `
       <section class="screen">
         <div class="eyebrow">Your emerging shortlist</div>
-        <h1>Look for patterns before choosing a college path.</h1>
-        <p class="lead">These roles are starting points. The useful question is what they share—and which programs preserve several possibilities.</p>
+        <h1>Compare selected roles and college preparation.</h1>
+        <p class="lead">Shared content areas are calculated from the career profiles. Program connections use the project’s curriculum-support mappings.</p>
 
         ${careers.length ? `
           <div class="shortlist-layout">
             <div class="card shortlist-card">
-              <h2>${careers.length} role${careers.length === 1 ? '' : 's'} worth keeping in view</h2>
+              <h2>${careers.length} selected role${careers.length === 1 ? '' : 's'}</h2>
               ${careers.map(career => `
                 <div class="shortlist-row">
                   <div><strong>${esc(career.name)}</strong><p>${esc(career.roleFocus || '')}</p><span class="pill ${state.reactions[career.id] === 'Interesting' ? 'green' : 'blue'}">${esc(state.reactions[career.id])}</span></div>
@@ -473,27 +638,29 @@
                 </div>`).join('')}
             </div>
             <aside class="card shortlist-card pattern-card">
-              <div class="eyebrow" style="color:#bfe8da">Patterns to notice</div>
-              <h2>Your choices currently lean toward</h2>
-              <div class="pill-row" style="margin-top:16px">${patterns.map(item => `<span class="pill">${esc(item.label)}</span>`).join('') || '<span class="pill">Keep exploring to reveal a pattern</span>'}</div>
-              <p style="margin-top:18px">A pattern is more useful than a single title. It can guide courses, volunteering, and college comparisons while leaving room to change.</p>
+              <div class="eyebrow" style="color:#bfe8da">Shared career content</div>
+              <h2>Strongest areas across these roles</h2>
+              <div class="pill-row" style="margin-top:16px">${patterns.map(item => `<span class="pill">${esc(item.label)}</span>`).join('') || '<span class="pill">Not enough profile overlap yet</span>'}</div>
+              <p style="margin-top:18px">These areas are based on the highest average profile dimensions among the selected careers.</p>
             </aside>
           </div>
 
           <section id="programConnections" class="program-section">
-            <div class="section-heading"><div><h2>Programs that preserve these possibilities</h2><p>Examples from the researched college set—not a ranking or final list.</p></div></div>
+            <div class="section-heading"><div><h2>Programs with the strongest mapped support</h2><p>Top three among the ten researched programs for the current shortlist.</p></div></div>
             <div class="program-grid">
               ${programs.map(match => `
                 <article class="card program-card">
                   <span class="school">${esc(match.program.school)}</span>
                   <h3>${esc(match.program.title)}</h3>
                   <p class="match-reason"><strong>Why it connects:</strong> ${esc(programReason(match))}</p>
-                  <p><strong>Best when:</strong> ${esc(match.program.bestWhen || 'The program’s strengths match the kind of work the student wants to test.')}</p>
+                  <p><strong>Program focus:</strong> ${esc(excerpt(match.program.fundamental, 260))}</p>
+                  <p><strong>Experience structure:</strong> ${esc(excerpt(match.program.experience, 220))}</p>
+                  ${(match.program.tradeoffs || []).length ? `<p><strong>Important limitation:</strong> ${esc(match.program.tradeoffs[0])}</p>` : ''}
                   <div class="pill-row">${(match.program.experienceTags || []).slice(0, 4).map(tag => `<span class="pill">${esc(tag)}</span>`).join('')}</div>
                   <div class="button-row"><a class="btn small-btn" href="index.html#programs">Compare in full explorer</a></div>
                 </article>`).join('')}
             </div>
-            <div class="context-note"><strong>Sequence matters:</strong> first identify work worth testing, then compare how well a program builds the science, methods, and experience needed across several possible roles.</div>
+            <div class="context-note"><strong>How connections are calculated:</strong> each career is mapped to programs as strong preparation, complementary preparation, general background, or not a direct fit. The cards above have the highest average support across the current shortlist.</div>
           </section>
         ` : `
           <div class="empty-state" style="margin-top:28px">
@@ -504,7 +671,7 @@
 
         <div class="next-actions">
           <div class="button-row">
-            <button class="btn" type="button" data-go="worlds">Explore another career world</button>
+            <button class="btn" type="button" data-go="worlds">Select different work areas</button>
             <button class="btn soft" type="button" data-go="roles">Browse more roles</button>
             <a class="btn" href="index.html">Use the full research explorer</a>
           </div>
@@ -528,6 +695,21 @@
     if (next) openRole(next.id);
   }
 
+  function toggleArea(id, screen) {
+    const index = state.selectedWorlds.indexOf(id);
+    if (index >= 0) state.selectedWorlds.splice(index, 1);
+    else if (state.selectedWorlds.length < 3) state.selectedWorlds.push(id);
+    else {
+      const hint = document.getElementById('selectionHint');
+      if (hint) hint.textContent = 'Three areas are already selected. Remove one to add another.';
+      return;
+    }
+    saveState();
+    roleLimit = 12;
+    if (screen === 'interests') renderInterests();
+    else renderWorlds();
+  }
+
   root.addEventListener('click', event => {
     const start = event.target.closest('[data-start]');
     if (start) {
@@ -538,7 +720,10 @@
         saveState();
         showScreen('roles');
         requestAnimationFrame(() => document.getElementById('roleSearch')?.focus());
-      } else showScreen('worlds');
+      } else {
+        areaSource = start.dataset.start;
+        showScreen(start.dataset.start);
+      }
       return;
     }
 
@@ -547,22 +732,30 @@
 
     const worldButton = event.target.closest('[data-world]');
     if (worldButton) {
-      const id = worldButton.dataset.world;
-      state.selectedWorlds = state.selectedWorlds.includes(id)
-        ? state.selectedWorlds.filter(item => item !== id)
-        : [...state.selectedWorlds, id];
-      saveState();
-      roleLimit = 12;
-      renderWorlds();
+      toggleArea(worldButton.dataset.world, 'worlds');
       return;
     }
 
-    if (event.target.closest('#seeRolesButton')) { searchText = ''; roleLimit = 12; showScreen('roles'); return; }
+    const interestButton = event.target.closest('[data-interest]');
+    if (interestButton) {
+      toggleArea(interestButton.dataset.interest, 'interests');
+      return;
+    }
+
+    if (event.target.closest('#seeRolesButton') || event.target.closest('#understandInterestsButton')) { areaSource = currentScreen; searchText = ''; roleLimit = 12; showScreen('areas'); return; }
     if (event.target.closest('[data-browse-all]')) { state.selectedWorlds = []; searchText = ''; roleLimit = 12; saveState(); showScreen('roles'); return; }
 
     if (event.target.closest('[data-show-more]')) {
       roleLimit += 12;
       updateRoleResults();
+      return;
+    }
+
+    const removeArea = event.target.closest('[data-remove-area]');
+    if (removeArea) {
+      state.selectedWorlds = state.selectedWorlds.filter(id => id !== removeArea.dataset.removeArea);
+      saveState();
+      showScreen(state.selectedWorlds.length ? 'areas' : areaSource);
       return;
     }
 

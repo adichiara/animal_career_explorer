@@ -17,6 +17,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/aza-scrape.yml"
+      - "scripts/scrape_aza_jobs.py"
 
 permissions:
   contents: read
@@ -52,8 +53,14 @@ jobs:
         shell: bash
         run: |
           args=(--db database/careers.sqlite --delay 30)
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.limit }}" != "0" ]]; then
-            args+=(--limit "${{ inputs.limit }}")
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            test_limit="${{ inputs.limit }}"
+          else
+            # Code/workflow pushes are smoke tests; full-board runs are manual.
+            test_limit="2"
+          fi
+          if [[ "$test_limit" != "0" ]]; then
+            args+=(--limit "$test_limit")
           fi
           if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.refresh }}" == "true" ]]; then
             args+=(--refresh)

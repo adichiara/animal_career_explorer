@@ -494,6 +494,31 @@
     }
   ];
 
+  const curatedDetails = {
+    'wildlife-rehabilitation': { topics: [
+      { explanation: 'The first priority is to identify immediate threats to life and reduce pain, shock, dehydration, breathing difficulty, or heat loss. A rehabilitator works within legal and clinical limits and involves a veterinarian when diagnosis, surgery, prescription medication, or advanced treatment is needed.', examples: [
+        ['Intake example', 'A window-strike bird may need a quiet, dark holding space and evaluation for head or eye trauma before anyone can judge whether release is appropriate.'],
+        ['Supportive-care example', 'An orphaned mammal may need careful warming and fluid support before feeding; giving food too early or using the wrong technique can cause additional harm.'],
+        ['What gets documented', 'Time and location found, body condition, weight, temperature, injuries, behavior, initial care, and changes after treatment.']
+      ], referenceIndex: 0 },
+      { explanation: 'Nutrition and housing have to match the species, age, medical condition, and stage of rehabilitation. The goal is not simply to keep an animal fed—it is to support normal growth, movement, digestion, feather or coat condition, and behavior without creating preventable disease.', examples: [
+        ['Diet example', 'An insect-eating songbird, a raptor, and a young rabbit have different nutrient needs, feeding schedules, and safe feeding methods.'],
+        ['Housing example', 'Temperature, humidity, substrates, perches, water access, hiding places, and enclosure size change as an animal stabilizes and becomes more active.'],
+        ['Daily evidence', 'Food intake, feces, hydration, weight trend, mobility, and response to the enclosure help determine whether the care plan is working.']
+      ], referenceIndex: 0 },
+      { explanation: 'A healthy wild animal also needs species-appropriate behavior. Care is arranged to limit unnecessary exposure to people, pets, household sounds, and predictable human rewards, especially during sensitive developmental periods.', examples: [
+        ['Care practice', 'Staff may use visual barriers, quiet routines, remote feeding, or conspecific housing so an animal does not associate people with comfort or food.'],
+        ['Behavioral sign', 'Appropriate avoidance of people, normal social behavior, foraging, predator awareness, and species-typical movement can matter as much as a healed injury.'],
+        ['Why it matters', 'An animal that approaches people or lacks survival behavior may be physically healthy but still unsafe to release.']
+      ], referenceIndex: 1 },
+      { explanation: 'Recovery has to be translated into the functions an animal will need in the wild. Release decisions combine health, behavior, weather, season, habitat, food availability, legal requirements, and sometimes what can be learned after release.', examples: [
+        ['Conditioning example', 'A bird may progress to a flight enclosure where endurance, maneuvering, landing, and feather condition can be observed.'],
+        ['Release decision', 'The team considers whether the animal can obtain food, avoid danger, move normally, and return to suitable habitat at an appropriate time.'],
+        ['Post-release learning', 'Bands, tags, radio transmitters, sightings, or recapture records can reveal survival, movement, and whether rehabilitation methods need improvement.']
+      ], referenceIndex: 1 }
+    ] }
+  };
+
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
   }
@@ -501,7 +526,12 @@
   function loadState() {
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
-      return { reactions: saved.reactions || {}, savedAreas: saved.savedAreas || [] };
+      const reactions = {};
+      Object.entries(saved.reactions || {}).forEach(([key, value]) => {
+        if (value === 'appealing' || value === 'up') reactions[key] = 'up';
+        if (value === 'unappealing' || value === 'down') reactions[key] = 'down';
+      });
+      return { reactions, savedAreas: saved.savedAreas || [] };
     } catch (_) {
       return { reactions: {}, savedAreas: [] };
     }
@@ -511,7 +541,6 @@
 
   function saveState() {
     localStorage.setItem(storageKey, JSON.stringify(state));
-    updateReactionCount();
   }
 
   function groupFor(area) { return groups.find(group => group.id === area.group); }
@@ -520,17 +549,6 @@
   function careerByName(name) { return D.careers.find(career => career.name === name); }
   function aspectKey(areaId, kind, index) { return `${areaId}::${kind}::${index}`; }
   function reactionFor(key) { return state.reactions[key] || ''; }
-
-  function totalReactions() { return Object.keys(state.reactions).length; }
-  function updateReactionCount() { document.getElementById('reactionCount').textContent = totalReactions(); }
-
-  function reactionCounts(areaId) {
-    const counts = { appealing: 0, unappealing: 0, unsure: 0 };
-    Object.entries(state.reactions).forEach(([key, value]) => {
-      if (key.startsWith(`${areaId}::`) && counts[value] != null) counts[value] += 1;
-    });
-    return counts;
-  }
 
   function setActiveNav(route) {
     document.querySelectorAll('[data-route]').forEach(link => link.classList.toggle('active', link.dataset.route === route));
@@ -593,16 +611,11 @@
 
   function areaCard(area, index) {
     const group = groupFor(area);
-    const counts = reactionCounts(area.id);
-    const marked = counts.appealing + counts.unappealing + counts.unsure;
+    const saved = state.savedAreas.includes(area.id);
     return `<article class="area-card" style="--group-color:${group.color}">
       <span class="area-number">${String(index + 1).padStart(2, '0')} · ${esc(group.title)}</span>
-      <h3>${esc(area.title)}</h3>
-      <p>${esc(area.short)}</p>
-      <div class="card-footer">
-        <span class="stat">${marked ? `${marked} aspect${marked === 1 ? '' : 's'} marked` : `${area.careers.length} career examples`}</span>
-        <a class="btn small" href="#area/${area.id}">Explore area</a>
-      </div>
+      <h3>${esc(area.title)}</h3><p>${esc(area.short)}</p>
+      <div class="card-footer"><span class="stat">${saved ? 'Saved area' : `${area.careers.length} career examples`}</span><a class="btn small" href="#area/${area.id}">Explore area</a></div>
     </article>`;
   }
 
@@ -610,26 +623,60 @@
     return `<aside class="area-nav" aria-label="Field navigation">
       <strong>Areas</strong>
       ${areas.map(area => `<a class="${area.id === currentId ? 'current' : ''}" href="#area/${area.id}">${esc(area.title)}</a>`).join('')}
-      <a class="summary-link" href="#summary">My reactions</a>
+      <a class="summary-link" href="#summary">Saved &amp; marked</a>
     </aside>`;
   }
 
   function reactionButtons(key) {
     const selected = reactionFor(key);
-    return `<div class="reaction-options" role="group" aria-label="Your reaction">
-      ${[['appealing', 'Appealing'], ['unappealing', 'Unappealing'], ['unsure', 'Unsure']].map(([value, label]) => `<button class="reaction ${value} ${selected === value ? 'selected' : ''}" type="button" data-reaction-key="${esc(key)}" data-reaction-value="${value}" aria-pressed="${selected === value}">${label}</button>`).join('')}
+    return `<div class="micro-reactions" role="group" aria-label="Optional quick reaction"><span>Optional</span>
+      <button class="micro-reaction up ${selected === 'up' ? 'selected' : ''}" type="button" data-reaction-key="${esc(key)}" data-reaction-value="up" aria-label="Mark as interesting" title="Mark as interesting" aria-pressed="${selected === 'up'}"><span aria-hidden="true">👍</span></button>
+      <button class="micro-reaction down ${selected === 'down' ? 'selected' : ''}" type="button" data-reaction-key="${esc(key)}" data-reaction-value="down" aria-label="Mark as not appealing right now" title="Mark as not appealing right now" aria-pressed="${selected === 'down'}"><span aria-hidden="true">👎</span></button>
     </div>`;
   }
 
+  function itemText(item) { return Array.isArray(item) ? item.join(': ') : item; }
+  function referenceFor(area, kind, index, preferredIndex) {
+    if (!area.references.length) return null;
+    const offsets = { topics: 0, questions: 1, activities: 0, skills: 2, settings: 1, realities: 1 };
+    const selectedIndex = preferredIndex == null ? (index + (offsets[kind] || 0)) % area.references.length : preferredIndex;
+    return area.references[selectedIndex % area.references.length];
+  }
+  function detailFor(area, kind, item, index) {
+    const curated = curatedDetails[area.id]?.[kind]?.[index];
+    if (curated) return { ...curated, reference: referenceFor(area, kind, index, curated.referenceIndex) };
+    const responsibility = area.responsibilities[index % area.responsibilities.length];
+    const question = area.questions[index % area.questions.length];
+    const skill = area.knowledgeSkills[index % area.knowledgeSkills.length];
+    const setting = area.settings[index % area.settings.length];
+    const variation = area.variations[index % area.variations.length];
+    const career = area.careers[index % area.careers.length];
+    const careerName = typeof career === 'object' ? career.name : career;
+    const text = itemText(item);
+    const details = {
+      topics: { explanation: `${text} is one lens within ${area.title}, not a requirement of every position. It can become a specialty, combine with other parts of the field, or appear only in certain projects or seasons.`, examples: [['A question it can raise', question], ['How it may appear in the work', responsibility], ['Useful preparation', skill]] },
+      questions: { explanation: 'This kind of question is usually answered by combining observations or measurements with knowledge of the animal, its environment, and the limits of the available evidence. Different roles may investigate it experimentally, through field monitoring, during care, or by analyzing existing records.', examples: [['One relevant activity', responsibility], ['Knowledge or skill used', skill], ['A possible work context', setting]] },
+      activities: { explanation: `This responsibility can be a central duty in one ${area.title} role and a small part of another. The tools, level of independence, animal contact, and decision-making authority change with training, employer, and project purpose.`, examples: [['Knowledge that supports it', skill], ['Where it may happen', setting], ['A related career example', careerName]] },
+      skills: { explanation: 'This knowledge or skill becomes useful when it helps someone collect reliable evidence, care for animals safely, make a defensible decision, or communicate work to others. Introductory exposure and professional mastery are very different levels of preparation.', examples: [['Applied to', responsibility], ['Helps investigate', question], ['One setting for practice', setting]] },
+      settings: { explanation: 'Jobs in this setting can differ in mission, pace, staffing, resources, and contact with animals. The setting alone does not determine the work: a researcher, technician, educator, manager, or care specialist may experience the same organization very differently.', examples: [['Work that may occur here', responsibility], ['A skill that may matter', skill], ['Role example', careerName]] },
+      realities: { explanation: 'This is worth investigating before committing to a path because it can affect daily routine, training, job availability, schedule, emotional load, or working conditions. Its importance varies substantially among employers and roles.', examples: [['A dimension to compare', `${variation[0]} — ${variation[1]}`], ['A related responsibility', responsibility], ['A setting to ask about', setting]] }
+    };
+    return { ...details[kind], reference: referenceFor(area, kind, index) };
+  }
+  function drillCard(area, kind, item, index) {
+    const text = itemText(item);
+    const key = aspectKey(area.id, kind, index);
+    const detail = detailFor(area, kind, item, index);
+    const reference = detail.reference;
+    return `<details class="drill-card"><summary><span class="drill-number">${String(index + 1).padStart(2, '0')}</span><span class="drill-title">${esc(text)}</span><span class="drill-cue">Details &amp; examples</span></summary>
+      <div class="drill-content"><p class="drill-explanation">${esc(detail.explanation)}</p>
+        <div class="example-list">${detail.examples.map(example => `<div class="example-item"><strong>${esc(example[0])}</strong><span>${esc(example[1])}</span></div>`).join('')}</div>
+        <div class="drill-footer">${reference ? `<a class="source-link" href="${esc(reference[2])}" target="_blank" rel="noopener"><span>${esc(reference[1])}</span>${esc(reference[0])} ↗</a>` : '<span></span>'}${reactionButtons(key)}</div>
+      </div></details>`;
+  }
   function aspectSection(area, kind, title, intro, items, tag) {
-    return `<section class="content-section" id="${kind}">
-      <div class="section-head"><div><h2>${esc(title)}</h2><p>${esc(intro)}</p></div><span class="section-tag">${esc(tag)}</span></div>
-      <div class="aspect-list">${items.map((item, index) => {
-        const text = Array.isArray(item) ? item.join(': ') : item;
-        const key = aspectKey(area.id, kind, index);
-        return `<div class="aspect-row"><div class="aspect-copy">${esc(text)}</div>${reactionButtons(key)}</div>`;
-      }).join('')}</div>
-    </section>`;
+    return `<section class="content-section" id="${kind}"><div class="section-head"><div><h2>${esc(title)}</h2><p>${esc(intro)}</p></div><span class="section-tag">${esc(tag)}</span></div>
+      <div class="drill-list">${items.map((item, index) => drillCard(area, kind, item, index)).join('')}</div></section>`;
   }
 
   function careerCard(item) {
@@ -652,7 +699,6 @@
     const area = areaById(id);
     if (!area) { location.hash = 'areas'; return; }
     const group = groupFor(area);
-    const counts = reactionCounts(area.id);
     const saved = state.savedAreas.includes(area.id);
     const programs = area.programCodes.map(programByCode).filter(Boolean);
     app.innerHTML = `<div class="page">
@@ -664,11 +710,9 @@
             <div class="eyebrow">${esc(group.title)}</div>
             <h1>${esc(area.title)}</h1>
             <p class="lead">${esc(area.bigPicture)}</p>
-            <div class="hero-actions">
-              <button id="saveArea" class="btn ${saved ? 'saved' : ''}" type="button">${saved ? 'Saved area' : 'Save area'}</button>
-              <a class="btn" href="#summary">View my reactions (${counts.appealing + counts.unappealing + counts.unsure})</a>
-            </div>
+            <div class="hero-actions"><button id="saveArea" class="btn ${saved ? 'saved' : ''}" type="button">${saved ? 'Saved area' : 'Save area'}</button></div>
           </section>
+          <nav class="section-jump" aria-label="On this page"><strong>On this page</strong><a href="#topics">Focus</a><a href="#questions">Questions</a><a href="#activities">Work</a><a href="#skills">Skills</a><a href="#settings">Settings</a><a href="#realities">Realities</a><a href="#careers">Careers</a><a href="#programs">College paths</a><a href="#references">Sources</a></nav>
 
           ${aspectSection(area, 'topics', 'What this area commonly focuses on', 'These are important parts of the field, but not every role emphasizes all of them.', area.focus, 'Topics')}
           ${aspectSection(area, 'questions', 'Questions people may investigate', 'The questions can be scientific, clinical, operational, or management-oriented depending on the role.', area.questions, 'Questions')}
@@ -742,27 +786,15 @@
 
   function renderSummary() {
     const entries = allReactionEntries();
-    const appealing = entries.filter(entry => entry.value === 'appealing');
-    const unappealing = entries.filter(entry => entry.value === 'unappealing');
-    const unsure = entries.filter(entry => entry.value === 'unsure');
+    const up = entries.filter(entry => entry.value === 'up');
+    const down = entries.filter(entry => entry.value === 'down');
     const saved = state.savedAreas.map(areaById).filter(Boolean);
-    app.innerHTML = `<div class="page narrow">
-      <div class="page-heading"><div><div class="eyebrow">Your exploration notes</div><h1>What currently appeals, what does not, and what remains uncertain</h1><p class="lead">This is a record of individual reactions, not a score or a career recommendation.</p></div></div>
-      ${entries.length ? `
-        <div class="summary-grid">
-          <div class="summary-card appealing"><h3>Appealing</h3><strong class="big-number">${appealing.length}</strong><p>Topics, questions, activities, skills, settings, or realities marked appealing.</p></div>
-          <div class="summary-card unappealing"><h3>Unappealing</h3><strong class="big-number">${unappealing.length}</strong><p>Aspects that currently reduce interest or deserve closer consideration.</p></div>
-          <div class="summary-card unsure"><h3>Unsure</h3><strong class="big-number">${unsure.length}</strong><p>Useful targets for further reading, conversation, or real-world experience.</p></div>
-        </div>
-        ${saved.length ? `<section class="summary-section"><h2>Saved areas</h2><div class="pill-row">${saved.map(area => `<a class="btn small" href="#area/${area.id}">${esc(area.title)}</a>`).join('')}</div></section>` : ''}
-        <section class="summary-section">
-          <h2>Reactions by type</h2>
-          ${renderReactionGroup('appealing', 'Appealing', appealing)}
-          ${renderReactionGroup('unappealing', 'Unappealing', unappealing)}
-          ${renderReactionGroup('unsure', 'Unsure', unsure)}
-        </section>
-        <div class="summary-actions"><a class="btn primary" href="#areas">Continue exploring areas</a></div>
-      ` : `<div class="empty"><h2>No aspects marked yet</h2><p>Open any area and mark whichever topics, questions, activities, skills, settings, or realities stand out.</p><a class="btn primary" href="#areas">Explore areas</a></div>`}
+    app.innerHTML = `<div class="page narrow"><div class="page-heading"><div><div class="eyebrow">Saved for later</div><h1>Saved areas and quick marks</h1><p class="lead">A compact record of the areas and individual details you chose to keep track of.</p></div></div>
+      ${saved.length || entries.length ? `${saved.length ? `<section class="summary-section"><h2>Saved areas</h2><p class="muted">Return directly to any field guide.</p><div class="pill-row">${saved.map(area => `<a class="btn small" href="#area/${area.id}">${esc(area.title)}</a>`).join('')}</div></section>` : ''}
+        <section class="summary-section"><h2>Quick marks</h2><p class="muted">These are optional reminders, not a fit score or recommendation.</p><div class="mark-columns">
+          <div>${renderReactionGroup('up', 'Interesting', up) || '<p class="muted">Nothing marked interesting yet.</p>'}</div><div>${renderReactionGroup('down', 'Not appealing right now', down) || '<p class="muted">Nothing marked unappealing.</p>'}</div>
+        </div></section><div class="summary-actions"><a class="btn primary" href="#areas">Continue exploring areas</a></div>
+      ` : `<div class="empty"><h2>Nothing saved or marked yet</h2><p>Open an area to read the field guide. Save an area or use the small thumbs inside any expanded item only when something stands out.</p><a class="btn primary" href="#areas">Explore areas</a></div>`}
     </div>`;
   }
 
@@ -773,10 +805,11 @@
     const value = button.dataset.reactionValue;
     if (state.reactions[key] === value) delete state.reactions[key]; else state.reactions[key] = value;
     saveState();
-    const areaId = key.split('::')[0];
-    renderArea(areaId);
-    const kind = key.split('::')[1];
-    document.getElementById(kind)?.scrollIntoView({ block: 'center' });
+    button.closest('.micro-reactions').querySelectorAll('[data-reaction-key]').forEach(control => {
+      const isSelected = state.reactions[key] === control.dataset.reactionValue;
+      control.classList.toggle('selected', isSelected);
+      control.setAttribute('aria-pressed', String(isSelected));
+    });
   });
 
   document.getElementById('menuButton').addEventListener('click', event => {
@@ -786,6 +819,5 @@
   });
 
   window.addEventListener('hashchange', route);
-  updateReactionCount();
   route();
 })();

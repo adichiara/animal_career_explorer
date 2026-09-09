@@ -104,6 +104,8 @@ See `docs/DATA_MODEL.md` and `docs/RESEARCH_WORKFLOW.md` for detail.
 
 The project now includes a resumable Playwright scraper for the public AZA Jobs board. It enumerates the board's client-side pagination, follows every `?job=` detail page, and writes normalized facts into `market_job_postings` without forcing unrelated institutional jobs into the animal-career taxonomy. See `docs/AZA_JOB_INGESTION.md`.
 
+> **Current limitation (2026-09-09):** GitHub-hosted Actions runners can enumerate the board but receive a persistent Cloudflare interstitial on detail pages. Do not start a full-board Actions scrape until [issue #1](https://github.com/adichiara/animal_career_explorer/issues/1) is resolved. The scraper now detects and reports this condition without publishing failed detail records.
+
 The scraper defaults to a 30-second request delay in accordance with AZA's published generic crawl-delay and stores structured facts/derived summaries rather than full verbatim job descriptions. A separate conservative rules stage classifies the complete board and proposes canonical-role matches; those suggestions must be reviewed before they appear as career evidence in the website.
 
 Run in a network-enabled environment:
@@ -124,6 +126,8 @@ python scripts/build_artifacts.py
 
 ## GitHub Actions
 
-The repository includes `.github/workflows/aza-scrape.yml`. Its initial commit triggers one complete-board run using the scraper's 30-second crawl delay. Later runs can be started from **Actions → AZA jobs scrape and build → Run workflow**.
+The repository includes `.github/workflows/aza-scrape.yml`. Changes to the scraper or workflow trigger a two-listing smoke test. A manual run can be started from **Actions → AZA jobs scrape and build → Run workflow**, where a test limit can be supplied; `0` requests the complete board.
 
-The workflow installs Chromium, runs the scrape and conservative role-matching stage, validates and rebuilds the project, then uploads a 30-day artifact containing the updated database, review CSV, market export, reports, website package, and master project package. A test limit can be supplied for troubleshooting; `0` means the complete board.
+The workflow installs Chromium, runs the scrape and conservative role-matching stage, validates and rebuilds the project, then uploads a 30-day artifact containing the updated database, review CSV, market export, reports, website package, and master project package. Scrape failures make the workflow fail visibly, while the later diagnostic and artifact-upload steps still run.
+
+Because AZA currently challenges GitHub-hosted runners, `0` should not be used until a permitted working environment or authorized feed is documented and passes a two-listing test. See [issue #1](https://github.com/adichiara/animal_career_explorer/issues/1).

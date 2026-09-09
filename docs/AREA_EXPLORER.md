@@ -6,12 +6,12 @@
 
 1. Browse 13 overlapping fields and work areas in five broad groups.
 2. Open an area to read its scope and use expandable field-guide entries for topics, questions, responsibilities, knowledge and skills, work settings, and practical realities.
-3. Drill into any entry for a fuller explanation, concrete examples, connections to other parts of the work, and a related authoritative source.
+3. Drill into any entry for a field-specific explanation, concrete examples, connections to other parts of the work, and a related authoritative source.
 4. Optionally use compact thumbs-up or thumbs-down controls inside an expanded entry when a detail stands out.
 5. Review related careers, undergraduate paths, adjacent areas, and the full source collection.
 6. Return to saved areas and quick marks. The experience does not calculate a fit score, rank careers, or eliminate an area.
 
-The content repeatedly distinguishes the range within an area from the examples used to explain it. The expanded details connect ideas rather than presenting them as universal duties. Quick marks are optional reminders, not a fixed profile of either the student or the field.
+The dedicated **How work within this area varies** section carries the main explanation of role and setting differences. Other sections prioritize substantive field information instead of repeating qualifications on every item. Quick marks remain optional reminders rather than a scoring system.
 
 ## Sources and data
 

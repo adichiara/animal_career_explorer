@@ -52,7 +52,7 @@
     {
       id: 'zoology', group: 'organismal', title: 'Zoology',
       short: 'The broad scientific study of animals, their diversity, evolution, structure, function, behavior, and ecology.',
-      bigPicture: 'Zoology is organized around animals as a group of organisms. It can span molecular biology, anatomy, physiology, taxonomy, evolution, behavior, and ecology rather than prescribing one kind of job.',
+      bigPicture: 'Zoology is organized around animals as a group of organisms. It spans molecular biology, anatomy, physiology, taxonomy, evolution, behavior, and ecology.',
       focus: ['Animal diversity and classification', 'Comparative anatomy and physiology', 'Evolution and adaptation', 'Behavior, ecology, and life history'],
       questions: [
         'How are different groups of animals related evolutionarily?',
@@ -196,7 +196,7 @@
     {
       id: 'marine-biology', group: 'wild', title: 'Marine Biology',
       short: 'Organisms and biological processes associated with oceans, coasts, estuaries, and marine environments.',
-      bigPicture: 'Marine biology is defined mainly by the organisms and environment being studied, not by one scientific method. A marine biologist may specialize in ecology, behavior, physiology, genetics, fisheries, conservation, or animal care.',
+      bigPicture: 'Marine biology brings several sciences to the study of ocean and coastal organisms and ecosystems. Major specialties include ecology, behavior, physiology, genetics, fisheries, conservation, and animal care.',
       focus: ['Marine ecology and coastal ecosystems', 'Fish, marine mammals, invertebrates, and algae', 'Marine physiology and adaptation', 'Fisheries, ocean change, and conservation'],
       questions: [
         'How do marine animals communicate, migrate, forage, or reproduce?',
@@ -272,7 +272,7 @@
     {
       id: 'animal-cognition', group: 'behavior', title: 'Animal Cognition / Comparative Psychology',
       short: 'How animals perceive, learn, remember, solve problems, make decisions, and process information.',
-      bigPicture: 'Animal cognition focuses on the mental and information-processing mechanisms underlying behavior. It is commonly studied within psychology, neuroscience, biology, or animal-behavior programs rather than offered as a separate undergraduate major.',
+      bigPicture: 'Animal cognition focuses on the mental and information-processing mechanisms underlying behavior. Researchers approach it through psychology, neuroscience, biology, and animal-behavior programs.',
       focus: ['Learning and memory', 'Perception and attention', 'Problem-solving and decision-making', 'Social cognition and communication'],
       questions: [
         'What information can an animal perceive and remember?',
@@ -344,7 +344,7 @@
     {
       id: 'animal-science', group: 'managed', title: 'Animal Science',
       short: 'The biology, care, management, and use of domesticated animals, traditionally with an agricultural emphasis.',
-      bigPicture: 'Animal science combines biological science with management of domesticated animals. Programs differ considerably: some emphasize livestock production, while others provide meaningful options in companion animals, equine science, behavior, welfare, nutrition, or pre-veterinary preparation.',
+      bigPicture: 'Animal science combines biological science with the care and management of domesticated animals. Program concentrations include livestock production, companion animals, equine science, behavior, welfare, nutrition, and pre-veterinary preparation.',
       focus: ['Nutrition, physiology, and health', 'Genetics, breeding, and reproduction', 'Husbandry and production systems', 'Behavior, welfare, and animal management'],
       questions: [
         'What nutrition best supports animal health, growth, or performance?',
@@ -383,7 +383,7 @@
     {
       id: 'zoo-aquarium-science', group: 'managed', title: 'Zoo & Aquarium Science / Captive Wildlife Management',
       short: 'The care, behavior, welfare, management, and conservation of wild animals living under human care.',
-      bigPicture: 'This area sits at the intersection of husbandry, behavior, welfare, animal health, conservation breeding, education, and facility operations. Direct care is one part of a much wider managed-animal system.',
+      bigPicture: 'This area integrates husbandry, behavior, welfare, animal health, conservation breeding, education, and facility operations into a managed-animal system.',
       focus: ['Daily husbandry and animal health observation', 'Enrichment, training, and behavioral management', 'Welfare assessment and habitat design', 'Conservation breeding and population management'],
       questions: [
         'What care and environment support species-appropriate behavior and good welfare?',
@@ -459,7 +459,7 @@
     {
       id: 'wildlife-rehabilitation', group: 'health', title: 'Wildlife Rehabilitation',
       short: 'Temporary care and treatment of injured, sick, displaced, or orphaned wild animals with release as the goal when possible.',
-      bigPicture: 'Wildlife rehabilitation combines individual-animal care, species-specific husbandry, health support, behavioral preparation, legal requirements, and release assessment. It differs from population-focused wildlife biology, although rehabilitation organizations may contribute to research and conservation.',
+      bigPicture: 'Wildlife rehabilitation combines individual-animal care, species-specific husbandry, health support, behavioral preparation, legal requirements, and release assessment. Rehabilitation organizations may also contribute to research and conservation.',
       focus: ['Emergency stabilization and supportive care', 'Species-specific nutrition and husbandry', 'Preventing habituation and preserving wild behavior', 'Conditioning, release decisions, and post-release learning'],
       questions: [
         'Can this animal recover sufficiently to survive independently?',
@@ -517,6 +517,81 @@
         ['Post-release learning', 'Bands, tags, radio transmitters, sightings, or recapture records can reveal survival, movement, and whether rehabilitation methods need improvement.']
       ], referenceIndex: 1 }
     ] }
+  };
+
+  const topicExplanations = {
+    'animal-biology': [
+      'Physiology examines how organs and body systems obtain energy, maintain internal balance, and respond to changing conditions. Metabolism traces how nutrients and stored fuels are converted into energy, growth, heat, and biological work.',
+      'Genetics examines inherited variation, while development follows the processes that build an animal from embryo to adult. Reproductive biology adds the hormones, anatomy, behavior, and environmental conditions involved in producing offspring.',
+      'Comparative anatomy links physical structures to what animals can do: move, breathe, feed, sense, reproduce, and survive. Organismal biology connects those structures into functioning whole animals.',
+      'Hormones coordinate growth, reproduction, stress, appetite, and many behavioral responses. Researchers measure these signals alongside health and environmental conditions to understand why an animal responds as it does.'
+    ],
+    zoology: [
+      'Zoologists identify and organize animal diversity using anatomy, genetics, evolutionary relationships, and formal classification. This work supports species inventories, museum collections, field identification, and the discovery or revision of species.',
+      'Comparative work asks how similar body systems solve different problems across animal groups—for example, how fishes, birds, and mammals exchange gases, regulate temperature, or move through their environments.',
+      'Evolution explains how inherited traits change across generations. Zoologists compare living species, fossils, genes, and environments to reconstruct those changes and understand how particular adaptations arose.',
+      'Life-history research connects behavior and ecology to survival and reproduction: when animals mature, how many offspring they produce, how they use resources, and how they respond to competitors, predators, and seasonal change.'
+    ],
+    ecology: [
+      'Population ecology studies the size, structure, distribution, and change of a single species. Community ecology examines how multiple species coexist and affect one another through competition, predation, disease, and cooperation.',
+      'Food-web research traces energy and nutrients through producers, consumers, scavengers, and decomposers. It also examines how changing one species can produce indirect effects throughout a community.',
+      'Habitat research identifies the physical and biological conditions organisms need. Ecologists then study how climate, land use, pollution, fragmentation, fire, storms, and other changes alter those conditions.',
+      'Ecosystem ecology follows flows of energy, water, carbon, and nutrients. Restoration applies that knowledge to repair damaged habitats, reestablish ecological processes, and measure whether recovery is occurring.'
+    ],
+    'wildlife-biology': [
+      'Biologists estimate abundance, age structure, survival, mortality, and reproductive success to determine how a wildlife population is changing and which life stages most influence its future.',
+      'Movement studies reveal home ranges, migration routes, seasonal habitat needs, and barriers. Methods include direct observation, tracking devices, banding, genetic samples, camera traps, and spatial analysis.',
+      'Wildlife health connects pathogens, contaminants, nutrition, climate, and population change. Human–wildlife work examines conflict, coexistence, harvest, vehicle collisions, urban adaptation, and public responses to wildlife.',
+      'Monitoring turns repeated surveys into evidence about trends and management outcomes. Applied research tests actions such as habitat improvements, harvest rules, invasive-species control, translocation, or protection of breeding sites.'
+    ],
+    'wildlife-conservation': [
+      'Recovery work identifies why a species is declining, protects remaining populations, reduces immediate threats, and tracks progress toward measurable population and habitat goals.',
+      'Habitat protection secures places species need, while restoration repairs vegetation, water, connectivity, disturbance patterns, or other ecological functions that have been degraded.',
+      'Threat management addresses pressures such as habitat loss, invasive species, disease, pollution, overuse, climate change, and conflict with people. Population management may add breeding, reintroduction, translocation, or carefully regulated harvest.',
+      'Conservation planning compares evidence, feasibility, cost, law, and community priorities to choose actions. Policy and implementation turn those choices into permits, funding, partnerships, land management, enforcement, and long-term monitoring.'
+    ],
+    'marine-biology': [
+      'Marine ecology examines how organisms interact in estuaries, salt marshes, rocky shores, coral reefs, the open ocean, and the deep sea. It connects local species relationships to currents, nutrients, temperature, and habitat structure.',
+      'Marine specialists may focus on one group—such as fishes, marine mammals, plankton, corals, mollusks, or algae—and learn its identification, life history, physiology, behavior, ecological role, and research methods.',
+      'Marine physiology investigates how organisms breathe, regulate salt and water, tolerate pressure or temperature, obtain energy, and respond to conditions that differ sharply from those on land.',
+      'Applied marine work examines fishing pressure, bycatch, warming, acidification, pollution, coastal development, and habitat loss. The evidence supports fisheries rules, protected areas, species recovery, and coastal planning.'
+    ],
+    'animal-behavior': [
+      'Social and reproductive behavior includes bonding, dominance, cooperation, conflict, courtship, mate choice, parental care, and group organization. Researchers examine both immediate causes and evolutionary consequences.',
+      'Animals communicate through sound, scent, posture, touch, vibration, color, and electrical or chemical signals. Sensory research asks what animals can detect and how that information guides action.',
+      'Learning changes behavior through experience; development examines how behavior emerges across an animal’s life. Studies may separate inherited tendencies, early experience, social exposure, training, and current conditions.',
+      'Foraging and movement research examines how animals locate resources, evaluate risk, navigate, choose habitats, and adjust to weather, predators, competitors, people, or changes in their environment.'
+    ],
+    'animal-cognition': [
+      'Learning and memory research tests how animals acquire information, retain it, generalize it, and use past experience. Tasks may involve locations, objects, sounds, social partners, rules, or sequences of events.',
+      'Perception concerns what information an animal can detect; attention concerns which information it selects and prioritizes. Experimental tasks help distinguish sensory limits from memory, motivation, or decision-making.',
+      'Problem-solving studies how animals respond to new obstacles, tools, choices, and changing rules. Decision research examines how they weigh rewards, delays, uncertainty, effort, risk, and prior experience.',
+      'Social-cognition research asks how animals recognize individuals, follow attention or gestures, learn from others, compete, cooperate, and interpret social signals. Communication studies connect those abilities to the signals animals produce and receive.'
+    ],
+    'animal-welfare': [
+      'Welfare scientists measure behavioral and physiological signs of pain, fear, injury, illness, and chronic stress. They also test whether a measure reflects a short-term response or a sustained welfare problem.',
+      'Good welfare includes opportunities for comfort, engagement, control, exploration, social contact, and other rewarding experiences. Preference and motivation tests help reveal what resources or activities animals value.',
+      'Housing and enrichment research tests how space, complexity, social grouping, routines, handling, training, and relationships with caregivers affect behavior, health, and emotional state.',
+      'Welfare assessment combines several indicators—such as behavior, health, physical condition, resource use, and response to people—into structured evaluations that support care decisions and quality-of-life judgments.'
+    ],
+    'animal-science': [
+      'Nutrition connects feed composition and digestion to growth, reproduction, immunity, health, and performance. Physiology explains how animals use those nutrients and respond to management and environmental conditions.',
+      'Genetics and breeding use pedigrees, performance records, and genomic information to select traits. Reproductive science includes fertility, gestation, birth, reproductive technologies, and management of breeding animals.',
+      'Husbandry systems organize feeding, housing, sanitation, handling, breeding, health monitoring, and recordkeeping. Production science evaluates how those systems affect animals, workers, resources, food, and farm outcomes.',
+      'Behavior and welfare inform handling, housing, social management, enrichment, transport, and routine care. Animal managers use these observations with health and production data to adjust practices.'
+    ],
+    'zoo-aquarium-science': [
+      'Daily husbandry includes feeding, cleaning, enclosure checks, recordkeeping, and close observation of appetite, movement, appearance, social behavior, and other changes that may signal a health or welfare concern.',
+      'Enrichment creates opportunities for species-appropriate behavior, while training uses voluntary participation to support healthcare, movement, husbandry, mental stimulation, and safer interactions between animals and staff.',
+      'Welfare assessment combines behavioral, health, environmental, and management evidence. Habitat design translates species biology into spaces for movement, choice, privacy, social interaction, care, and visitor management.',
+      'Conservation breeding coordinates reproduction while maintaining genetic diversity and sustainable populations. Population managers use pedigrees, demographics, transfers, institutional capacity, and long-term species plans.'
+    ],
+    'veterinary-science': [
+      'Anatomy and physiology establish how healthy bodies are structured and function. Pathology and disease science identify what has changed, why it changed, and how infection, injury, genetics, nutrition, toxins, or aging may be involved.',
+      'Diagnosis combines history, physical examination, laboratory tests, imaging, and clinical reasoning. Treatment may involve medication, surgery, nursing care, rehabilitation, and pain control, followed by monitoring of the animal’s response.',
+      'Preventive medicine reduces disease before it occurs through vaccination, parasite control, nutrition, screening, sanitation, and risk management. Epidemiology examines patterns of disease across groups and identifies likely causes or routes of spread.',
+      'Clinical care focuses on individual patients; population health looks for patterns across herds, shelters, colonies, wildlife populations, or facilities. Biosecurity uses procedures, spaces, equipment, and movement controls to limit transmission.'
+    ]
   };
 
   function esc(value) {
@@ -652,14 +727,15 @@
     const variation = area.variations[index % area.variations.length];
     const career = area.careers[index % area.careers.length];
     const careerName = typeof career === 'object' ? career.name : career;
-    const text = itemText(item);
+    const topicExplanation = topicExplanations[area.id]?.[index];
+    const lower = value => String(value).replace(/^[A-Z]/, letter => letter.toLowerCase()).replace(/\.$/, '');
     const details = {
-      topics: { explanation: `${text} is one lens within ${area.title}, not a requirement of every position. It can become a specialty, combine with other parts of the field, or appear only in certain projects or seasons.`, examples: [['A question it can raise', question], ['How it may appear in the work', responsibility], ['Useful preparation', skill]] },
-      questions: { explanation: 'This kind of question is usually answered by combining observations or measurements with knowledge of the animal, its environment, and the limits of the available evidence. Different roles may investigate it experimentally, through field monitoring, during care, or by analyzing existing records.', examples: [['One relevant activity', responsibility], ['Knowledge or skill used', skill], ['A possible work context', setting]] },
-      activities: { explanation: `This responsibility can be a central duty in one ${area.title} role and a small part of another. The tools, level of independence, animal contact, and decision-making authority change with training, employer, and project purpose.`, examples: [['Knowledge that supports it', skill], ['Where it may happen', setting], ['A related career example', careerName]] },
-      skills: { explanation: 'This knowledge or skill becomes useful when it helps someone collect reliable evidence, care for animals safely, make a defensible decision, or communicate work to others. Introductory exposure and professional mastery are very different levels of preparation.', examples: [['Applied to', responsibility], ['Helps investigate', question], ['One setting for practice', setting]] },
-      settings: { explanation: 'Jobs in this setting can differ in mission, pace, staffing, resources, and contact with animals. The setting alone does not determine the work: a researcher, technician, educator, manager, or care specialist may experience the same organization very differently.', examples: [['Work that may occur here', responsibility], ['A skill that may matter', skill], ['Role example', careerName]] },
-      realities: { explanation: 'This is worth investigating before committing to a path because it can affect daily routine, training, job availability, schedule, emotional load, or working conditions. Its importance varies substantially among employers and roles.', examples: [['A dimension to compare', `${variation[0]} — ${variation[1]}`], ['A related responsibility', responsibility], ['A setting to ask about', setting]] }
+      topics: { explanation: topicExplanation, examples: [['A question it can raise', question], ['How it appears in the work', responsibility], ['Useful preparation', skill]] },
+      questions: { explanation: `Investigating this question draws on ${lower(skill)}. Evidence may come from experiments, direct observation, care records, field monitoring, or existing datasets.`, examples: [['Related activity', responsibility], ['Evidence or expertise', skill], ['Possible work context', setting]] },
+      activities: { explanation: `This work uses ${lower(skill)} to collect information, provide care, or support a decision. It may contribute to questions such as “${question}”`, examples: [['Knowledge that supports it', skill], ['Where it may happen', setting], ['Related career example', careerName]] },
+      skills: { explanation: `In ${area.title}, this preparation supports work such as ${lower(responsibility)}.`, examples: [['Used for', responsibility], ['Question it can help answer', question], ['Place to develop it', setting]] },
+      settings: { explanation: `In ${area.title}, work here may include ${lower(responsibility)}.`, examples: [['Example activity', responsibility], ['Relevant preparation', skill], ['Related career example', careerName]] },
+      realities: { explanation: `This condition can shape daily routines and the ${lower(variation[0])} of the work.`, examples: [['What that range can look like', variation[1]], ['Responsibility affected', responsibility], ['Setting to investigate', setting]] }
     };
     return { ...details[kind], reference: referenceFor(area, kind, index) };
   }
@@ -714,27 +790,27 @@
           </section>
           <nav class="section-jump" aria-label="On this page"><strong>On this page</strong><a href="#topics">Focus</a><a href="#questions">Questions</a><a href="#activities">Work</a><a href="#skills">Skills</a><a href="#settings">Settings</a><a href="#realities">Realities</a><a href="#careers">Careers</a><a href="#programs">College paths</a><a href="#references">Sources</a></nav>
 
-          ${aspectSection(area, 'topics', 'What this area commonly focuses on', 'These are important parts of the field, but not every role emphasizes all of them.', area.focus, 'Topics')}
-          ${aspectSection(area, 'questions', 'Questions people may investigate', 'The questions can be scientific, clinical, operational, or management-oriented depending on the role.', area.questions, 'Questions')}
-          ${aspectSection(area, 'activities', 'Responsibilities and activities', 'These examples describe work that occurs somewhere within the area; they are not a checklist for every job.', area.responsibilities, 'Work')}
+          ${aspectSection(area, 'topics', 'What this area commonly focuses on', 'Major subjects, processes, and problems studied or managed in this field.', area.focus, 'Topics')}
+          ${aspectSection(area, 'questions', 'Questions people investigate', 'Scientific, clinical, operational, and management questions that guide the work.', area.questions, 'Questions')}
+          ${aspectSection(area, 'activities', 'Responsibilities and activities', 'How professionals and students carry out the work.', area.responsibilities, 'Work')}
 
           <section class="content-section" id="variety">
             <div class="section-head"><div><h2>How work within this area varies</h2><p>The same field can produce very different workdays, settings, and relationships with animals.</p></div><span class="section-tag">Range</span></div>
             <div class="variation-grid">${area.variations.map(item => `<div class="info-box variation"><h3>${esc(item[0])}</h3><p>${esc(item[1])}</p></div>`).join('')}</div>
           </section>
 
-          ${aspectSection(area, 'skills', 'Knowledge and skills', 'These can be developed through coursework, research, employment, internships, volunteering, and practice.', area.knowledgeSkills, 'Preparation')}
-          ${aspectSection(area, 'settings', 'Work settings', 'Organizations and individual positions vary, even when they use the same field name.', area.settings, 'Environment')}
-          ${aspectSection(area, 'realities', 'Practical realities', 'These are common enough to consider, but their intensity differs across employers and roles.', area.realities, 'Conditions')}
+          ${aspectSection(area, 'skills', 'Knowledge and skills', 'Scientific, technical, analytical, and communication preparation used in the field.', area.knowledgeSkills, 'Preparation')}
+          ${aspectSection(area, 'settings', 'Work settings', 'Places and organizations where this work occurs.', area.settings, 'Environment')}
+          ${aspectSection(area, 'realities', 'Practical realities', 'Conditions that can shape training, schedules, workload, and early-career experience.', area.realities, 'Conditions')}
 
           <section class="content-section" id="careers">
-            <div class="section-head"><div><h2>Related careers</h2><p>Examples from the broader career database, plus a small number of important area examples. They are not an exhaustive list.</p></div><span class="section-tag">${area.careers.length} examples</span></div>
+            <div class="section-head"><div><h2>Related careers</h2><p>Career examples from the research database, with role focus, education level, work type, and selected competencies.</p></div><span class="section-tag">${area.careers.length} examples</span></div>
             <div class="career-grid">${area.careers.map(careerCard).join('')}</div>
             <p><a class="btn text" href="index.html#careers">Browse all 93 researched roles →</a></p>
           </section>
 
           <section class="content-section" id="programs">
-            <div class="section-head"><div><h2>Undergraduate paths to examine</h2><p>These researched paths provide different combinations of breadth, specialization, experience, and preparation. Their inclusion does not mean they are the only routes into the area.</p></div><span class="section-tag">College</span></div>
+            <div class="section-head"><div><h2>Undergraduate paths to examine</h2><p>Researched programs with different combinations of scientific breadth, specialization, and hands-on experience.</p></div><span class="section-tag">College</span></div>
             <div class="program-grid">${programs.map(program => `<article class="program-card"><span class="school">${esc(program.school)}</span><h3>${esc(program.code)} · ${esc(program.title)}</h3><p>${esc(program.fundamental)}</p><div class="pill-row">${(program.experienceTags || []).slice(0, 5).map(tag => `<span class="pill">${esc(tag)}</span>`).join('')}</div></article>`).join('')}</div>
             <p><a class="btn text" href="index.html#programs">Compare all researched college paths →</a></p>
           </section>

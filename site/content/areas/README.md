@@ -14,7 +14,7 @@ Each area file controls its overview, glossary terms, focus topics, questions an
 
 ## Focus topics
 
-Focus topics have a title and the description shown when the topic is expanded:
+Focus topics have a title and the description shown when the topic is selected:
 
 ```json
 {
@@ -43,7 +43,7 @@ To provide hand-written examples instead of the automatically connected question
 
 ## Questions and approaches
 
-Questions use two fields. `question` appears on the closed card; `approach` explains how someone might investigate it when the card is opened:
+Questions use two fields. `question` appears in the selection list; `approach` explains how someone might investigate it in the detail panel:
 
 ```json
 {
@@ -54,7 +54,7 @@ Questions use two fields. `question` appears on the closed card; `approach` expl
 
 ## Adding custom detail elsewhere
 
-Responsibilities, knowledge and skills, settings, and practical realities are normally simple strings. The site creates their expanded connections from the other content in the area. A string can be replaced with an object whenever a custom explanation or examples are preferable:
+Responsibilities, knowledge and skills, settings, and practical realities are normally simple strings. The site creates their detailed connections from the other content in the area. A string can be replaced with an object whenever a custom explanation or examples are preferable:
 
 ```json
 {

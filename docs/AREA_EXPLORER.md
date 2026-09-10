@@ -4,14 +4,14 @@
 
 ## Experience
 
-1. Browse 16 overlapping fields and work areas in a single searchable list.
-2. Open an area to read its scope and use expandable field-guide entries for topics, questions and research approaches, responsibilities, knowledge and skills, work settings, and practical realities.
-3. Drill into any entry for a field-specific explanation, concrete examples, connections to other parts of the work, and a related authoritative source; use the area glossary for unfamiliar terms.
-4. Optionally use compact thumbs-up or thumbs-down controls inside an expanded entry when a detail stands out.
+1. Browse 15 overlapping fields and work areas in a searchable selection workspace.
+2. Open one area at a time and move among five focused views: Overview, Questions & Work, Knowledge, Careers & Study, and Sources.
+3. Select any entry to update an adjacent detail panel with its explanation, examples, connections, and related source without expanding the page.
+4. Optionally use compact thumbs-up or thumbs-down controls inside the detail panel when something stands out.
 5. Review related careers, undergraduate paths, adjacent areas, and the full source collection.
 6. Return to saved areas and quick marks. The experience does not calculate a fit score, rank careers, or eliminate an area.
 
-The dedicated **How work within this area varies** section carries the main explanation of role and setting differences. Other sections prioritize substantive field information instead of repeating qualifications on every item. Quick marks remain optional reminders rather than a scoring system.
+The **How the work varies** choices in the Overview carry the main explanation of role and setting differences. Other views prioritize substantive field information instead of repeating qualifications on every item. Quick marks remain optional reminders rather than a scoring system.
 
 ## Sources and data
 

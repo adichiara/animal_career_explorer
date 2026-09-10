@@ -1,117 +1,180 @@
 {
   "id": "ecology",
-  "group": "organismal",
   "title": "Ecology",
-  "short": "How organisms interact with each other and with their physical environments.",
-  "bigPicture": "Ecology examines relationships at several levels—from individual organisms and populations to communities and ecosystems. It supplies much of the scientific foundation used in wildlife biology, conservation, restoration, and environmental management.",
+  "short": "How living things and their environments shape each other, across populations, communities, and whole ecosystems. Animals are one part of the system rather than the whole subject.",
+  "bigPicture": "Ecology is the scientific discipline concerned with the relationships between organisms and their past, present, and future environments. Those relationships run from the physiological responses of individuals through the structure and dynamics of populations, the interactions among species, the organization of communities, and the movement of energy and matter through ecosystems. It is the foundation underneath wildlife, conservation, and much of the quantitative work in this field, and its professional society has existed since 1915.",
+  "terms": [
+    {
+      "term": "Population",
+      "definition": "A group of individuals of one species in a defined area, treated as a unit for study and management."
+    },
+    {
+      "term": "Community",
+      "definition": "All the interacting species present in an area."
+    },
+    {
+      "term": "Ecosystem",
+      "definition": "A community together with its physical environment, studied as a system of energy and material flows."
+    },
+    {
+      "term": "Trophic level",
+      "definition": "An organism's position in the food chain — producer, herbivore, predator — used to describe energy flow."
+    },
+    {
+      "term": "Carrying capacity",
+      "definition": "The population size an environment can sustain over time given available resources."
+    },
+    {
+      "term": "Long-term monitoring",
+      "definition": "Repeated standardized measurement over many years, which is what makes it possible to distinguish a real trend from normal variation."
+    }
+  ],
   "focus": [
     {
       "title": "Populations and communities",
-      "description": "Population ecology studies the size, structure, distribution, and change of a single species. Community ecology examines how multiple species coexist and affect one another through competition, predation, disease, and cooperation."
+      "description": "How numbers change over time, what regulates them, and how species interact through competition, predation, and cooperation.",
+      "source": "Ecological Society of America"
     },
     {
-      "title": "Food webs and species interactions",
-      "description": "Food-web research traces energy and nutrients through producers, consumers, scavengers, and decomposers. It also examines how changing one species can produce indirect effects throughout a community."
+      "title": "Ecosystems and energy flow",
+      "description": "How energy and matter move through systems, and how disturbance, nutrients, and climate shape what those systems can support.",
+      "source": "Ecological Society of America"
     },
     {
-      "title": "Habitats and environmental change",
-      "description": "Habitat research identifies the physical and biological conditions organisms need. Ecologists then study how climate, land use, pollution, fragmentation, fire, storms, and other changes alter those conditions."
+      "title": "Field measurement and monitoring",
+      "description": "Designing sampling schemes, running surveys, and building long-term datasets, since most ecological claims depend on how the data were collected.",
+      "source": "Ecological Society of America"
     },
     {
-      "title": "Ecosystem processes and restoration",
-      "description": "Ecosystem ecology follows flows of energy, water, carbon, and nutrients. Restoration applies that knowledge to repair damaged habitats, reestablish ecological processes, and measure whether recovery is occurring."
+      "title": "Applied and environmental ecology",
+      "description": "Using ecological science in restoration, land management, environmental assessment, and policy, which is where a large share of the jobs are.",
+      "source": "Ecological Society of America (ESA): Certified Ecologist program"
     }
   ],
   "questions": [
-    "Why is a population increasing, declining, moving, or changing?",
-    "How does one species affect other organisms in a community?",
-    "What determines where organisms can live and reproduce?",
-    "How do climate, disturbance, or restoration change ecological systems?"
+    {
+      "question": "What determines where a species can live and how many there are?",
+      "approach": "By combining occurrence surveys with environmental measurements, then modeling which conditions predict presence and testing predictions in new areas."
+    },
+    {
+      "question": "How do species interactions structure a community?",
+      "approach": "Through removal or exclusion experiments, long-term observation, and comparison across sites where interacting species are present or absent."
+    },
+    {
+      "question": "How does energy or matter move through this system?",
+      "approach": "By measuring inputs, outputs, and standing stocks, using isotopes and flux measurements to trace pathways rather than assuming them."
+    },
+    {
+      "question": "How will this system respond to disturbance or environmental change?",
+      "approach": "By studying past disturbances, running manipulations where possible, and building models that project forward with stated uncertainty."
+    },
+    {
+      "question": "Is what we are seeing a real trend or normal variation?",
+      "approach": "By analyzing long-term monitoring data with enough years to distinguish signal from noise, which is why long-running datasets are so valuable."
+    },
+    {
+      "question": "Did the restoration or management action work?",
+      "approach": "By defining success measures before acting, monitoring treated and untreated areas, and continuing long enough for slow responses to appear."
+    }
   ],
   "responsibilities": [
-    "Design surveys or experiments in field, laboratory, or computational settings.",
-    "Measure organisms, populations, habitats, or environmental conditions.",
-    "Use statistics, GIS, models, or long-term datasets to test ecological explanations.",
-    "Translate findings into scientific publications, monitoring plans, or management recommendations."
+    "Design and carry out field sampling, surveys, and monitoring.",
+    "Analyze ecological data and model system behavior.",
+    "Write technical reports, assessments, and peer-reviewed papers.",
+    "Advise on management, restoration, or regulatory decisions."
   ],
   "knowledgeSkills": [
     "Population, community, and ecosystem ecology",
-    "Evolution and organismal biology",
-    "Sampling design and statistics",
-    "Field identification and measurement",
-    "GIS, coding, modeling, or data visualization"
+    "Field sampling design and identification skills",
+    "Statistics, R, and data management",
+    "geographic information systems (GIS) and spatial analysis",
+    "Technical writing and reporting"
   ],
   "variations": [
     {
-      "label": "Organisms",
-      "description": "Ecologists may study animals, plants, microbes, whole communities, or interactions among them."
+      "label": "Not an animal discipline",
+      "description": "Ecology covers plants, microbes, soils, and water as much as animals. If the interest is specifically in animals, ecology is the toolkit rather than the subject, and coursework will include a good deal that is not about animals at all.",
+      "source": "Ecological Society of America"
     },
     {
-      "label": "Methods",
-      "description": "Projects range from intensive outdoor sampling to laboratory experiments, remote sensing, mathematical modeling, and existing-data analysis."
+      "label": "There is a credential",
+      "description": "the Ecological Society of America (ESA) runs a professional certification program with a Certified Ecologist designation, assessed on education and experience and backed by a code of ethics. It is well known in consulting and agency work.",
+      "source": "Ecological Society of America (ESA): Certified Ecologist program"
     },
     {
-      "label": "Purpose",
-      "description": "Some ecology is curiosity-driven research; other work directly supports restoration, regulation, land management, or conservation."
+      "label": "Basic versus applied",
+      "description": "Research ecology and applied ecology in consulting, restoration, or agencies use the same science but differ in pace, output, and who the client is."
     },
     {
-      "label": "Time scale",
-      "description": "Studies may examine a short behavioral interaction or decades of population and ecosystem change."
+      "label": "Quantitative demand",
+      "description": "Ecology is a statistically heavy field, and comfort with data analysis increasingly separates competitive candidates from the rest."
     }
   ],
   "settings": [
-    "Natural areas and field stations",
-    "Universities and laboratories",
-    "Government agencies and consulting firms",
-    "Conservation organizations and restoration projects"
+    "Universities and research institutes",
+    "Environmental consulting firms",
+    "State and federal agencies",
+    "Conservation nonprofits and land trusts"
   ],
   "realities": [
-    "Fieldwork is common but not universal.",
-    "Data management, statistics, coding, and writing often occupy more time than animal observation.",
-    "Seasonal or temporary positions are common early in field-based careers.",
-    "Ecological conclusions often involve uncertainty, incomplete detection, and long time scales."
+    "Early field positions are commonly seasonal, short-term, and modestly paid, and stacking several is a normal entry pattern.",
+    "Statistical and data skills now matter as much as field skills for advancement.",
+    "A good deal of applied ecology work is report writing and regulatory compliance.",
+    "Coursework will cover plants, soils, and systems, not only animals."
   ],
   "careers": [
     "Field ecologist",
-    "Ecological research technician",
     "Research ecologist",
-    "Population ecologist",
-    "Quantitative ecologist / biometrician",
-    "Habitat restoration / ecological-monitoring specialist"
+    "Ecological research technician",
+    "Habitat restoration / ecological-monitoring specialist",
+    "Environmental consultant — wildlife/ecology",
+    "Environmental permitting / compliance biologist",
+    "M.S. / Ph.D. in wildlife ecology / conservation"
+  ],
+  "programs": [
+    {
+      "code": "ME-ZOO",
+      "school": "University of Maine",
+      "title": "Zoology B.S. with Ecology concentration"
+    },
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Wildlife Ecology & Conservation"
+    },
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    }
   ],
   "programCodes": [
+    "ME-ZOO",
     "ME-WE",
     "UMA-WEC",
-    "URI-W",
-    "ME-ZOO",
-    "UMA-BIO"
+    "URI-W"
   ],
   "related": [
-    "wildlife-biology",
-    "wildlife-conservation",
-    "zoology",
-    "marine-biology"
+    "wildlife-ecology-management",
+    "quantitative-ecology",
+    "conservation-biology",
+    "zoology"
   ],
   "references": [
     {
-      "title": "O*NET: Environmental Restoration Planners",
-      "type": "Applied ecology tasks",
-      "url": "https://www.onetonline.org/link/summary/19-2041.02"
+      "title": "Ecological Society of America",
+      "type": "Professional society",
+      "url": "https://esa.org/about/"
     },
     {
-      "title": "The Wildlife Society: Career paths",
-      "type": "Professional field guide",
-      "url": "https://wildlife.org/paths-to-becoming-a-wildlifer/"
-    },
-    {
-      "title": "UMass: Wildlife Ecology & Conservation",
-      "type": "Undergraduate example",
-      "url": "https://www.umass.edu/environmental-conservation/academics/undergraduate-programs/natural-resources-conservation/major/wildlife-ecology-conservation-concentration"
-    },
-    {
-      "title": "URI: Wildlife & Conservation curriculum",
-      "type": "Undergraduate example",
-      "url": "https://web.uri.edu/nrs/academics/wildlife-and-conservation-biology/curriculum/"
+      "title": "Ecological Society of America (ESA): Certified Ecologist program",
+      "type": "Credential",
+      "url": "https://esa.org/career-development/certification-from-esa/"
     }
   ]
 }

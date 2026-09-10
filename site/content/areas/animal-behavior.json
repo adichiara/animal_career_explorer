@@ -1,117 +1,201 @@
 {
   "id": "animal-behavior",
-  "group": "behavior",
   "title": "Animal Behavior / Ethology",
-  "short": "What animals do, how behavior develops and changes, and why behavioral patterns occur.",
-  "bigPicture": "Animal behavior examines actions, communication, learning, social relationships, decision-making, and responses to the environment. It can be studied in wild, companion, farm, laboratory, shelter, or zoo animals.",
+  "short": "What animals actually do in the world: how a behavior develops, what triggers it, and what purpose it serves.",
+  "bigPicture": "Animal behavior is the scientific study of what animals do and why, covering communication, movement, feeding, mating, social life, learning, and responses to the environment. It has a long-established research literature and its own credential structure for applied practitioners. The field is genuinely interdisciplinary: people enter it from biology, psychology, animal science, wildlife biology, and zoology, and the certification requirements for applied behaviorists recognize all of those routes.",
+  "terms": [
+    {
+      "term": "Ethology",
+      "definition": "The biological study of animal behavior, especially in natural conditions and with attention to how behavior evolved."
+    },
+    {
+      "term": "Ethogram",
+      "definition": "A catalogue of the distinct behaviors a species performs, defined precisely enough that different observers score them the same way."
+    },
+    {
+      "term": "Behavioral ecology",
+      "definition": "The study of how behavior contributes to survival and reproduction in a given environment."
+    },
+    {
+      "term": "Operant conditioning",
+      "definition": "Learning in which the consequences of a behavior change how often it occurs; the basis of most modern animal training."
+    },
+    {
+      "term": "Positive reinforcement",
+      "definition": "Adding something the animal wants after a behavior, making that behavior more likely to happen again."
+    },
+    {
+      "term": "Applied animal behavior",
+      "definition": "Using behavioral science to solve practical problems in training, husbandry, welfare, and problem behavior."
+    },
+    {
+      "term": "Playback experiment",
+      "definition": "Playing a recorded signal to an animal and measuring the response, used to test what a signal communicates."
+    }
+  ],
   "focus": [
     {
-      "title": "Social and reproductive behavior",
-      "description": "Social and reproductive behavior includes bonding, dominance, cooperation, conflict, courtship, mate choice, parental care, and group organization. Researchers examine both immediate causes and evolutionary consequences."
+      "title": "Mechanism and development",
+      "description": "What causes a behavior in the moment, and how it emerges over an animal's lifetime through genetics, maturation, experience, and learning.",
+      "source": "Association for the Study of Animal Behaviour (ASAB): the journal Animal Behaviour"
     },
     {
-      "title": "Communication and sensory behavior",
-      "description": "Animals communicate through sound, scent, posture, touch, vibration, color, and electrical or chemical signals. Sensory research asks what animals can detect and how that information guides action."
+      "title": "Function and evolution",
+      "description": "What a behavior accomplishes for the animal and how selection shaped it. Behavioral ecology sits here, connecting behavior to survival, reproduction, and environment.",
+      "source": "Association for the Study of Animal Behaviour (ASAB): the journal Animal Behaviour"
     },
     {
-      "title": "Learning and behavioral development",
-      "description": "Learning changes behavior through experience; development examines how behavior emerges across an animal’s life. Studies may separate inherited tendencies, early experience, social exposure, training, and current conditions."
+      "title": "Social behavior and communication",
+      "description": "How animals signal, coordinate, compete, cooperate, and organize into groups, and how those systems break down or shift under changed conditions.",
+      "source": "Association for the Study of Animal Behaviour (ASAB): the journal Animal Behaviour"
     },
     {
-      "title": "Foraging, movement, and environmental responses",
-      "description": "Foraging and movement research examines how animals locate resources, evaluate risk, navigate, choose habitats, and adjust to weather, predators, competitors, people, or changes in their environment."
+      "title": "Applied animal behavior",
+      "description": "Using behavioral science to solve practical problems: training, behavior modification, husbandry, enrichment, handling, and resolving problem behavior in animals under human care.",
+      "source": "Animal Behavior Society: Applied Animal Behavior"
     }
   ],
   "questions": [
-    "Why does an animal choose one social partner, food source, or habitat over another?",
-    "How does experience change behavior?",
-    "How do animals communicate and interpret signals?",
-    "How do social and environmental conditions affect behavior?"
+    {
+      "question": "Why does this animal do this, and what triggers it?",
+      "approach": "By building an ethogram, recording behavior systematically against context, and then testing candidate triggers experimentally rather than inferring them from observation alone."
+    },
+    {
+      "question": "How does this behavior develop, and how much of it is learned?",
+      "approach": "By following individuals from early life, comparing animals with different experience, and running controlled learning tests to separate maturation from experience."
+    },
+    {
+      "question": "What does the behavior accomplish for the animal?",
+      "approach": "By measuring consequences — feeding success, mating outcomes, survival — and comparing individuals or species that do it more or less."
+    },
+    {
+      "question": "How do these animals communicate?",
+      "approach": "By recording signals, characterizing their structure, and running playback or presentation experiments to see how receivers respond."
+    },
+    {
+      "question": "Why do individuals of the same species behave differently?",
+      "approach": "By repeated testing of the same individuals across contexts to see whether differences are consistent, then relating them to sex, age, condition, or history."
+    },
+    {
+      "question": "How can behavioral knowledge improve care, training, or management?",
+      "approach": "By defining the target behavior in observable terms, applying learning principles in a structured plan, and measuring whether the behavior actually changed."
+    }
   ],
   "responsibilities": [
-    "Define behaviors clearly and develop an observation or coding system.",
-    "Observe animals directly or from video and record behavior systematically.",
-    "Design experiments or compare behavior across individuals, groups, species, or conditions.",
-    "Analyze behavioral data and explain conclusions, uncertainty, and practical implications."
+    "Design observation protocols and collect systematic behavioral data.",
+    "Analyze behavioral data and test hypotheses about cause or function.",
+    "Apply behavioral principles to training, enrichment, handling, or problem behavior.",
+    "Advise caretakers, owners, or managers and document outcomes."
   ],
   "knowledgeSkills": [
-    "Ethology, evolution, ecology, and natural history",
-    "Learning theory and behavioral development",
-    "Behavioral observation and ethograms",
-    "Research design and statistics",
-    "Scientific writing and interpretation"
+    "Ethological observation and behavioral coding",
+    "Learning theory and behavior modification",
+    "Experimental design and statistics",
+    "Species-specific natural history and husbandry",
+    "Written and interpersonal communication"
   ],
   "variations": [
     {
-      "label": "Purpose",
-      "description": "Behavior research may build basic knowledge or support welfare, training, conservation, or management decisions."
+      "label": "Research versus applied",
+      "description": "Research behavior work asks why animals do what they do; applied behavior work uses that knowledge to change outcomes for specific animals. The Animal Behavior Society certifies applied practitioners at two levels, requiring graduate-level behavioral coursework plus at least two years of professional experience.",
+      "source": "Animal Behavior Society (ABS): Certified Applied Animal Behaviorist requirements"
+    },
+    {
+      "label": "Entry disciplines",
+      "description": "Behaviorists come out of animal science, ethology, psychology, wildlife biology, behavioral ecology, and zoology. There is no single required major, which is unusual in this space.",
+      "source": "Animal Behavior Society (ABS): Certified Applied Animal Behaviorist requirements"
     },
     {
       "label": "Setting",
-      "description": "The work can occur in natural habitats, zoos, farms, shelters, homes, laboratories, or through archived video and datasets."
+      "description": "The same science supports work in laboratories, zoos, farms, shelters, universities, and private consulting."
     },
     {
-      "label": "Animal contact",
-      "description": "Systematic observation may involve little handling; applied training and husbandry may involve frequent direct contact."
-    },
-    {
-      "label": "Career structure",
-      "description": "Technician and applied roles can be B.S.-accessible, while independent research positions usually require graduate training."
+      "label": "Species",
+      "description": "Wild, farm, companion, and laboratory animals all have behavior specialists, and the applied literature is largely organized by that split.",
+      "source": "Applied Animal Behaviour Science"
     }
   ],
   "settings": [
-    "Universities and research laboratories",
-    "Zoos, aquariums, farms, and shelters",
-    "Wildlife field projects",
-    "Animal-welfare and training programs"
+    "Universities and research programs",
+    "Zoos, aquariums, and sanctuaries",
+    "Shelters and companion-animal practice",
+    "Farms and managed-animal facilities"
   ],
   "realities": [
-    "Behavioral research can involve long periods of observation, coding, data cleaning, and writing.",
-    "Interesting animal behavior does not necessarily mean frequent animal handling.",
-    "Applied roles often require substantial hands-on experience in addition to academic knowledge.",
-    "Behavioral explanations must separate evidence from assumptions about intention or emotion."
+    "Applied certification requires graduate coursework and documented professional experience, not just interest or hands-on hours.",
+    "Behavior work is observation-heavy and often slow; data collection can take far longer than analysis.",
+    "Many applied roles are self-employed or consulting rather than salaried positions.",
+    "The title 'animal behaviorist' is not legally protected, so credentials matter for credibility."
   ],
   "careers": [
-    "Animal behavior research assistant / technician",
     "Animal behaviorist / applied animal behavior scientist",
+    "Animal behavior research assistant / technician",
+    "Science-based animal trainer",
+    "Canine behavior consultant",
+    "Shelter behavior specialist / coordinator",
+    "Companion-animal behavior researcher",
     "Behavioral ecologist",
-    "Animal communication researcher",
-    "Behavioral husbandry specialist",
-    "Science-based animal trainer"
+    "M.S. in animal behavior / ethology"
+  ],
+  "programs": [
+    {
+      "code": "UNE-AB",
+      "school": "University of New England",
+      "title": "Animal Behavior B.S."
+    },
+    {
+      "code": "UNE-AN",
+      "school": "University of New England",
+      "title": "Animal Behavior B.S. with selected neuroscience"
+    },
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S., Behavior/Ecology track"
+    },
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    }
   ],
   "programCodes": [
     "UNE-AB",
     "UNE-AN",
     "UMA-BIO",
-    "ME-ZOO",
-    "URI-WZ"
+    "ME-WE"
   ],
   "related": [
     "animal-cognition",
     "animal-welfare",
-    "wildlife-biology",
-    "zoo-aquarium-science"
+    "zoo-aquarium-science",
+    "anthrozoology"
   ],
   "references": [
     {
-      "title": "Animal Behavior Society",
-      "type": "Professional society and opportunities",
-      "url": "https://www.animalbehaviorsociety.org/web/news.php"
+      "title": "Animal Behavior Society: Applied Animal Behavior",
+      "type": "Professional society",
+      "url": "https://www.animalbehaviorsociety.org/web/committees-applied-behavior.php"
     },
     {
-      "title": "Animal Behavior Society: Applied certification",
-      "type": "Professional pathway",
+      "title": "Animal Behavior Society (ABS): Certified Applied Animal Behaviorist requirements",
+      "type": "Credential requirements",
       "url": "https://www.animalbehaviorsociety.org/web/committees-applied-behavior-caab.php"
     },
     {
-      "title": "UNE: Animal Behavior B.S.",
-      "type": "Undergraduate example",
-      "url": "https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior"
+      "title": "Association for the Study of Animal Behaviour (ASAB): the journal Animal Behaviour",
+      "type": "Field journal",
+      "url": "https://www.asab.org/journal"
     },
     {
-      "title": "O*NET: Animal Trainers",
-      "type": "Related occupational data",
-      "url": "https://www.onetonline.org/link/summary/39-2011.00"
+      "title": "Applied Animal Behaviour Science",
+      "type": "Field journal",
+      "url": "https://www.sciencedirect.com/journal/applied-animal-behaviour-science"
+    },
+    {
+      "title": "International Society for Applied Ethology",
+      "type": "Professional society",
+      "url": "https://www.applied-ethology.org/Applied_Animal_Behaviour_Science.html"
     }
   ]
 }

@@ -1,0 +1,200 @@
+{
+  "id": "wildlife-ecology-management",
+  "title": "Wildlife Ecology & Management",
+  "short": "Free-ranging animal populations in particular: how many there are, where they go, and whether they persist. Sampling design and statistics carry most of the weight.",
+  "bigPicture": "Wildlife ecology and management is the professional field concerned with free-ranging animal populations and the habitats that support them. It combines ecological science with the practical and social work of managing game, nongame, endangered, and invasive species. The Wildlife Society, founded in the 1930s, anchors the profession and has run a wildlife biologist certification program since 1977; many degree programs are built so their coursework satisfies its requirements.",
+  "terms": [
+    {
+      "term": "Mark-recapture",
+      "definition": "Marking a sample of animals, then using how many marked animals turn up later to estimate total population size."
+    },
+    {
+      "term": "Occupancy modeling",
+      "definition": "Estimating what fraction of sites a species occupies while accounting for the times it was present but not detected."
+    },
+    {
+      "term": "Detection probability",
+      "definition": "The chance of recording an animal that is actually there; ignoring it makes every count an underestimate."
+    },
+    {
+      "term": "Distance sampling",
+      "definition": "A survey method that uses how far detected animals were from the observer to correct for animals missed at greater distances."
+    },
+    {
+      "term": "Telemetry",
+      "definition": "Tracking animals using radio, satellite, or GPS devices to record where they go over time."
+    },
+    {
+      "term": "Home range",
+      "definition": "The area an individual animal uses in its normal activities over a given period."
+    },
+    {
+      "term": "Human dimensions",
+      "definition": "The social-science side of wildlife management: stakeholder attitudes, conflict, and public expectations."
+    },
+    {
+      "term": "Nongame species",
+      "definition": "Wildlife not hunted or fished, which agencies still manage but which historically received less funding."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Population assessment",
+      "description": "Estimating abundance, survival, reproduction, and trend using surveys, marking, and statistical estimation, since almost nothing about a wild population can be counted directly.",
+      "source": "The Wildlife Society"
+    },
+    {
+      "title": "Habitat and land management",
+      "description": "Evaluating what habitat a species needs and managing land to provide it, including restoration, disturbance regimes, and working with landowners.",
+      "source": "Michigan State: Wildlife Ecology and Management B.S."
+    },
+    {
+      "title": "Species and program management",
+      "description": "Setting and implementing management for game, nongame, endangered, and invasive species, usually inside an agency framework with legal mandates.",
+      "source": "Michigan State: Wildlife Ecology and Management B.S."
+    },
+    {
+      "title": "Human dimensions",
+      "description": "Wildlife management is as much about people as animals: stakeholders, conflict, regulation, and public expectation are part of the professional core rather than an add-on.",
+      "source": "Michigan State: Wildlife Ecology and Management B.S."
+    }
+  ],
+  "questions": [
+    {
+      "question": "How many are there, and is the number changing?",
+      "approach": "Through survey designs that account for animals you fail to detect — mark-recapture, distance sampling, occupancy modeling — since raw counts almost always undercount."
+    },
+    {
+      "question": "What habitat does this population need, and is it available?",
+      "approach": "By relating animal locations to measured habitat features, often with tracking data and remote sensing, then mapping where suitable habitat actually exists."
+    },
+    {
+      "question": "Where do these animals go, and when?",
+      "approach": "By fitting tracking devices and analyzing movement paths for migration routes, home ranges, corridors, and barriers."
+    },
+    {
+      "question": "What management action would change the outcome, and at what cost?",
+      "approach": "By modeling alternative scenarios against population objectives and comparing expected results to budget and staff realities."
+    },
+    {
+      "question": "Is this harvest or take level sustainable?",
+      "approach": "By combining population estimates with survival and reproduction data in a population model, then setting limits with a margin for uncertainty."
+    },
+    {
+      "question": "How do people's interests and behavior shape what is possible?",
+      "approach": "Through stakeholder surveys, public meetings, and human dimensions research, treating social data with the same rigor as biological data."
+    }
+  ],
+  "responsibilities": [
+    "Plan and conduct field surveys, capture, and monitoring programs.",
+    "Analyze population and habitat data and produce estimates with uncertainty.",
+    "Write management plans, technical reports, and permit documentation.",
+    "Coordinate with landowners, agencies, and the public."
+  ],
+  "knowledgeSkills": [
+    "Population ecology and estimation methods",
+    "Field survey, capture, and handling techniques",
+    "Statistics, R, and geographic information systems (GIS)",
+    "Wildlife law, policy, and agency process",
+    "Communication with non-scientific audiences"
+  ],
+  "variations": [
+    {
+      "label": "Degree names differ, requirements do not",
+      "description": "Programs appear as Wildlife Ecology and Management, Wildlife Ecology, Wildlife Biology, or Wildlife and Fisheries. What matters is whether the coursework meets The Wildlife Society (TWS) certification requirements, which many programs are explicitly designed around. TWS has also moved away from requiring a wildlife-titled degree, focusing on the courses taken instead.",
+      "source": "The Wildlife Society (TWS): wildlife biologist certification"
+    },
+    {
+      "label": "Fisheries alongside wildlife",
+      "description": "Many departments combine wildlife and fisheries, and some curricula let students meet either The Wildlife Society or American Fisheries Society requirements.",
+      "source": "UMaine: Wildlife, Fisheries, and Conservation Biology"
+    },
+    {
+      "label": "Employer type",
+      "description": "State and federal agencies, consulting firms, nonprofits, and universities all hire from this field, and the day-to-day work differs considerably between them."
+    },
+    {
+      "label": "Certification levels",
+      "description": "TWS offers an associate-level certification for those meeting education requirements and a full certification once experience requirements are met, renewable on a five-year cycle.",
+      "source": "The Wildlife Society (TWS): wildlife biologist certification"
+    }
+  ],
+  "settings": [
+    "State and federal wildlife agencies",
+    "Environmental consulting firms",
+    "Conservation nonprofits",
+    "Universities and research programs"
+  ],
+  "realities": [
+    "Certification is coursework-driven, so specific classes taken as an undergraduate matter more here than in most areas.",
+    "Entry usually runs through seasonal technician work, often several seasons in different states.",
+    "The job includes substantial writing, permitting, and public interaction alongside field work.",
+    "Agency hiring is tied to budget cycles and can be slow or intermittent."
+  ],
+  "careers": [
+    "Wildlife biologist",
+    "Wildlife technician / biological science technician",
+    "Wildlife diversity / nongame biologist",
+    "Habitat / wildlife management biologist",
+    "Natural-resource agency biologist",
+    "Population ecologist",
+    "Wildlife program manager",
+    "Human-wildlife conflict specialist"
+  ],
+  "programs": [
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Wildlife Ecology & Conservation"
+    },
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    },
+    {
+      "code": "URI-WZ",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology with Zoo & Aquarium Science certificate"
+    }
+  ],
+  "programCodes": [
+    "ME-WE",
+    "UMA-WEC",
+    "URI-W",
+    "URI-WZ"
+  ],
+  "related": [
+    "ecology",
+    "conservation-biology",
+    "quantitative-ecology",
+    "wildlife-health"
+  ],
+  "references": [
+    {
+      "title": "The Wildlife Society",
+      "type": "Professional society",
+      "url": "https://wildlife.org/"
+    },
+    {
+      "title": "The Wildlife Society (TWS): wildlife biologist certification",
+      "type": "Credential",
+      "url": "https://wildlife.org/certification-programs/"
+    },
+    {
+      "title": "Michigan State: Wildlife Ecology and Management B.S.",
+      "type": "Undergraduate example",
+      "url": "https://www.canr.msu.edu/fw/undergraduate/Majors/Wildlife-Ecology-and-Management"
+    },
+    {
+      "title": "UMaine: Wildlife, Fisheries, and Conservation Biology",
+      "type": "Undergraduate example",
+      "url": "https://umaine.edu/wle/undergraduate-program/"
+    }
+  ]
+}

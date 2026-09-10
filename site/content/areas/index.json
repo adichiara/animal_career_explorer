@@ -1,18 +1,20 @@
 {
-  "groups": "groups.json",
   "areas": [
-    "animal-biology.json",
     "zoology.json",
-    "ecology.json",
-    "wildlife-biology.json",
-    "wildlife-conservation.json",
-    "marine-biology.json",
+    "animal-physiology.json",
     "animal-behavior.json",
     "animal-cognition.json",
     "animal-welfare.json",
+    "ecology.json",
+    "wildlife-ecology-management.json",
+    "quantitative-ecology.json",
+    "conservation-biology.json",
+    "veterinary-science.json",
+    "wildlife-health.json",
     "animal-science.json",
     "zoo-aquarium-science.json",
-    "veterinary-science.json",
-    "wildlife-rehabilitation.json"
+    "wildlife-rehabilitation.json",
+    "environmental-education.json",
+    "anthrozoology.json"
   ]
 }

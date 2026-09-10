@@ -1,32 +1,85 @@
 {
   "id": "animal-science",
-  "group": "managed",
   "title": "Animal Science",
   "short": "The biology, care, management, and use of domesticated animals, traditionally with an agricultural emphasis.",
-  "bigPicture": "Animal science combines biological science with the care and management of domesticated animals. Program concentrations include livestock production, companion animals, equine science, behavior, welfare, nutrition, and pre-veterinary preparation.",
+  "bigPicture": "Animal science combines biological science with the care and management of domesticated animals. It grew out of agriculture and its professional societies still center livestock production, but what a given program actually covers varies more than the shared title suggests. Concentrations may emphasize livestock production, companion animals, equine science, behavior, welfare, nutrition, biotechnology, or pre-veterinary preparation.",
+  "terms": [
+    {
+      "term": "Husbandry",
+      "definition": "The day-to-day practice of keeping animals: feeding, housing, handling, breeding, and health monitoring."
+    },
+    {
+      "term": "Production animals",
+      "definition": "Animals raised for food, fiber, or other products; the historical center of the discipline."
+    },
+    {
+      "term": "Ruminant",
+      "definition": "An animal such as cattle, sheep, or goats with a multi-chambered stomach that ferments plant material."
+    },
+    {
+      "term": "Breeding value",
+      "definition": "An estimate of the genetic merit an animal would pass to its offspring, calculated from pedigree and performance records."
+    },
+    {
+      "term": "Heritability",
+      "definition": "The proportion of variation in a trait within a population that is due to genetic differences."
+    },
+    {
+      "term": "Extension",
+      "definition": "University outreach that delivers research-based information directly to producers and the public."
+    },
+    {
+      "term": "Concentration",
+      "definition": "A defined track within a major that determines much of the required coursework; the main reason two same-named degrees can differ so much."
+    }
+  ],
   "focus": [
     {
       "title": "Nutrition, physiology, and health",
-      "description": "Nutrition connects feed composition and digestion to growth, reproduction, immunity, health, and performance. Physiology explains how animals use those nutrients and respond to management and environmental conditions."
+      "description": "Nutrition connects feed composition and digestion to growth, reproduction, immunity, health, and performance. Physiology explains how animals use those nutrients and respond to management and environmental conditions.",
+      "source": "O*NET Occupational Information Network: Animal Scientists"
     },
     {
       "title": "Genetics, breeding, and reproduction",
-      "description": "Genetics and breeding use pedigrees, performance records, and genomic information to select traits. Reproductive science includes fertility, gestation, birth, reproductive technologies, and management of breeding animals."
+      "description": "Genetics and breeding use pedigrees, performance records, and genomic information to select traits. Reproductive science includes fertility, gestation, birth, reproductive technologies, and management of breeding animals.",
+      "source": "O*NET Occupational Information Network: Animal Scientists"
     },
     {
       "title": "Husbandry and production systems",
-      "description": "Husbandry systems organize feeding, housing, sanitation, handling, breeding, health monitoring, and recordkeeping. Production science evaluates how those systems affect animals, workers, resources, food, and farm outcomes."
+      "description": "Husbandry systems organize feeding, housing, sanitation, handling, breeding, health monitoring, and recordkeeping. Production science evaluates how those systems affect animals, workers, resources, food, and farm outcomes. This is the part of the field that most directly reflects its agricultural origins, and in many programs it is where the required hands-on coursework happens.",
+      "source": "American Society of Animal Science (ASAS): What is Animal Science"
     },
     {
       "title": "Behavior, welfare, and animal management",
-      "description": "Behavior and welfare inform handling, housing, social management, enrichment, transport, and routine care. Animal managers use these observations with health and production data to adjust practices."
+      "description": "Behavior and welfare inform handling, housing, social management, enrichment, transport, and routine care. Animal managers use these observations with health and production data to adjust practices.",
+      "source": "O*NET Occupational Information Network: Animal Scientists"
     }
   ],
   "questions": [
-    "What nutrition best supports animal health, growth, or performance?",
-    "How do genetics and breeding influence traits and health?",
-    "How do housing, handling, or management affect welfare and behavior?",
-    "How can reproductive, production, or health outcomes be managed responsibly?"
+    {
+      "question": "What nutrition best supports animal health, growth, or performance?",
+      "approach": "Through controlled feeding trials comparing formulated diets, with intake, growth, health, and product measures recorded against a control group."
+    },
+    {
+      "question": "How do genetics and breeding influence traits and health?",
+      "approach": "By analyzing pedigrees and performance records, increasingly with genomic markers, to estimate how much of a trait is heritable and predict breeding value."
+    },
+    {
+      "question": "How do housing, handling, or management affect welfare and behavior?",
+      "approach": "By comparing systems using behavioral observation, physiological stress measures, health records, and productivity together."
+    },
+    {
+      "question": "Why is reproduction failing in this group?",
+      "approach": "By working through nutrition, body condition, hormone profiles, timing, and management practice systematically rather than fixing on the first plausible cause."
+    },
+    {
+      "question": "Is this practice economically viable as well as sound?",
+      "approach": "By costing inputs against outcomes, since a practice that improves animals but bankrupts the operation will not be adopted."
+    },
+    {
+      "question": "How can reproductive, production, or health outcomes be managed responsibly?",
+      "approach": "By setting protocols against published standards, recording outcomes, and auditing whether practice matches the written protocol."
+    }
   ],
   "responsibilities": [
     "Provide or supervise feeding, handling, husbandry, health observation, and recordkeeping.",
@@ -43,16 +96,21 @@
   ],
   "variations": [
     {
+      "label": "Agricultural roots",
+      "description": "Animal science developed as an agricultural discipline, and much of its core science—nutrition, reproduction, genetics, herd health—was built around production animals. The field's main professional society still describes animal science as concerned with the science and business of producing domestic livestock. That inheritance stays visible in course titles, department names, and the farm facilities many programs teach on, even in concentrations aimed at companion animals or behavior. A program does not have to be agricultural in its goals to be agricultural in its foundations.",
+      "source": "American Society of Animal Science (ASAS): What is Animal Science"
+    },
+    {
+      "label": "How programs differ",
+      "description": "Two degrees sharing this title can be built very differently. Some are anchored in production agriculture and required livestock coursework. Some are anchored in biomedical science and pre-veterinary preparation, and say plainly that they offer limited exotic or wildlife experience. Some leave real room for behavior, welfare, or animals in zoos and aquariums. Departments also rename majors and reshuffle concentrations between catalog years, so the name on the degree is a weak signal. The current curriculum sheet and course requirements are the only reliable way to tell two programs apart."
+    },
+    {
       "label": "Species",
       "description": "Programs may concentrate on livestock, horses, companion animals, laboratory animals, or a broader combination."
     },
     {
       "label": "Purpose",
       "description": "Careers can involve hands-on management, research, industry, welfare, nutrition, breeding, extension, or veterinary preparation."
-    },
-    {
-      "label": "Curriculum",
-      "description": "Two programs with the same title may allocate very different amounts of coursework to agriculture, health science, behavior, or exotic animals."
     },
     {
       "label": "Animal contact",
@@ -66,27 +124,41 @@
     "Zoos, shelters, veterinary, and companion-animal programs"
   ],
   "realities": [
-    "Agricultural and livestock coursework is central in many programs.",
+    "Agricultural and livestock coursework is central in many programs, including ones whose concentrations point elsewhere.",
+    "Program titles are not stable. Departments rename majors and reshuffle options between catalog years, so the current curriculum sheet is more reliable than the program name.",
     "Hands-on animal work can be physical, scheduled around animal needs, and subject to biosecurity rules.",
     "Pre-veterinary preparation is not the same thing as a veterinary degree or guaranteed admission.",
     "Program details matter more than the major title when behavior, welfare, or zoo work is the goal."
   ],
   "careers": [
-    {
-      "name": "Animal scientist",
-      "focus": "Studies nutrition, genetics, reproduction, physiology, management, or welfare in domesticated animals.",
-      "educationBand": "Graduate study common for scientist roles",
-      "workTags": [
-        "Research",
-        "Data / statistics",
-        "Animal care"
-      ]
-    },
+    "Animal scientist",
     "Animal welfare / behavior coordinator",
     "Service-dog / assistance-animal trainer",
     "Animal collection / management specialist",
     "Zoo animal nutritionist / nutrition coordinator",
     "University / laboratory research assistant"
+  ],
+  "programs": [
+    {
+      "code": "UMA-AS",
+      "school": "University of Massachusetts Amherst",
+      "title": "Animal Science, Management/Behavior track"
+    },
+    {
+      "code": "URI-AZ",
+      "school": "University of Rhode Island",
+      "title": "Animal Science with Zoo & Aquarium Science certificate"
+    },
+    {
+      "code": "UNE-AB",
+      "school": "University of New England",
+      "title": "Animal Behavior B.S."
+    },
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S., Behavior/Ecology track"
+    }
   ],
   "programCodes": [
     "UMA-AS",
@@ -98,28 +170,18 @@
     "animal-welfare",
     "zoo-aquarium-science",
     "veterinary-science",
-    "animal-biology"
+    "animal-physiology"
   ],
   "references": [
     {
-      "title": "O*NET: Animal Scientists",
+      "title": "O*NET Occupational Information Network: Animal Scientists",
       "type": "Tasks and skills",
       "url": "https://www.onetonline.org/link/summary/19-1011.00"
     },
     {
-      "title": "UMass Amherst: Animal Science",
-      "type": "Undergraduate example",
-      "url": "https://www.umass.edu/veterinary-animal-sciences/animal-science-major"
-    },
-    {
-      "title": "UMass: Animal Management concentration",
-      "type": "Undergraduate example",
-      "url": "https://www.umass.edu/veterinary-animal-sciences/animal-science-major/animal-management-concentration"
-    },
-    {
-      "title": "URI: Animal Science option",
-      "type": "Undergraduate example",
-      "url": "https://web.uri.edu/favs/academics/animal-and-veterinary-science-b-s/animal-science-option/"
+      "title": "American Society of Animal Science (ASAS): What is Animal Science",
+      "type": "Professional society definition",
+      "url": "https://www.asas.org/services/student-resources/what-is-animal-science"
     }
   ]
 }

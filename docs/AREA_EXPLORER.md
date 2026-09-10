@@ -4,9 +4,9 @@
 
 ## Experience
 
-1. Browse 13 overlapping fields and work areas in five broad groups.
-2. Open an area to read its scope and use expandable field-guide entries for topics, questions, responsibilities, knowledge and skills, work settings, and practical realities.
-3. Drill into any entry for a field-specific explanation, concrete examples, connections to other parts of the work, and a related authoritative source.
+1. Browse 16 overlapping fields and work areas in a single searchable list.
+2. Open an area to read its scope and use expandable field-guide entries for topics, questions and research approaches, responsibilities, knowledge and skills, work settings, and practical realities.
+3. Drill into any entry for a field-specific explanation, concrete examples, connections to other parts of the work, and a related authoritative source; use the area glossary for unfamiliar terms.
 4. Optionally use compact thumbs-up or thumbs-down controls inside an expanded entry when a detail stands out.
 5. Review related careers, undergraduate paths, adjacent areas, and the full source collection.
 6. Return to saved areas and quick marks. The experience does not calculate a fit score, rank careers, or eliminate an area.
@@ -27,7 +27,6 @@ The dedicated **How work within this area varies** section carries the main expl
 - `site/areas.css`
 - `site/areas.js`
 - `site/content/areas/index.json`
-- `site/content/areas/groups.json`
 - `site/content/areas/<area-id>.json`
 - `site/content/areas/README.md`
 

@@ -1,134 +1,174 @@
 {
   "id": "veterinary-science",
-  "group": "health",
-  "title": "Animal Health / Veterinary Science",
-  "short": "Preventing, diagnosing, and treating animal disease, injury, pain, and other health problems.",
-  "bigPicture": "Animal health work focuses on disease prevention, diagnosis, treatment, recovery, and population health. Veterinary medicine requires professional education, but many undergraduate majors can provide the prerequisites and scientific foundation.",
+  "title": "Veterinary & Animal Health Sciences",
+  "short": "Diagnosing and treating disease and injury in individual animals, and the clinical training that requires.",
+  "bigPicture": "Veterinary medicine covers the diagnosis, treatment, and prevention of disease and injury in animals. The Doctor of Veterinary Medicine (DVM) is a professional doctorate with its own admissions pipeline, and it anchors the area, but it is far from the only path: veterinary technicians, nutritionists, pathologists, laboratory staff, and practice managers all work in animal health without one. Board-certified specialties continue to be added, including shelter medicine, which reached full recognition in 2023.",
+  "terms": [
+    {
+      "term": "Doctor of Veterinary Medicine (DVM)",
+      "definition": "The professional doctorate required to practice veterinary medicine, with its own separate admissions process."
+    },
+    {
+      "term": "Veterinary technician",
+      "definition": "A credentialed clinical professional who performs much of the hands-on nursing, laboratory, and anesthesia work, trained in far less time than a DVM."
+    },
+    {
+      "term": "Differential diagnosis",
+      "definition": "The list of conditions that could explain what is being seen, worked through systematically toward the most likely one."
+    },
+    {
+      "term": "Board certification",
+      "definition": "Advanced credentialing in a recognized specialty, earned through residency and examination after the DVM."
+    },
+    {
+      "term": "Shelter medicine",
+      "definition": "A recognized veterinary specialty balancing individual care against population health and resource limits in sheltering organizations."
+    },
+    {
+      "term": "Biosecurity",
+      "definition": "Procedures that prevent disease from entering, spreading within, or leaving a facility."
+    },
+    {
+      "term": "Pre-veterinary",
+      "definition": "A set of prerequisite courses for veterinary school admission, completable within many majors; not itself a degree or credential."
+    }
+  ],
   "focus": [
     {
-      "title": "Anatomy, physiology, pathology, and disease",
-      "description": "Anatomy and physiology establish how healthy bodies are structured and function. Pathology and disease science identify what has changed, why it changed, and how infection, injury, genetics, nutrition, toxins, or aging may be involved."
+      "title": "Clinical diagnosis and treatment",
+      "description": "Examining animals, interpreting diagnostics, and delivering medical or surgical care, with the practical constraint that the patient cannot describe the problem.",
+      "source": "Merck Veterinary Manual: shelter medicine"
     },
     {
-      "title": "Diagnosis, treatment, surgery, and pain management",
-      "description": "Diagnosis combines history, physical examination, laboratory tests, imaging, and clinical reasoning. Treatment may involve medication, surgery, nursing care, rehabilitation, and pain control, followed by monitoring of the animal’s response."
+      "title": "Preventive and population health",
+      "description": "Vaccination, parasite control, nutrition, and biosecurity, and managing health at the level of a herd, colony, or facility rather than one animal.",
+      "source": "Merck Veterinary Manual: shelter medicine"
     },
     {
-      "title": "Preventive medicine, nutrition, and epidemiology",
-      "description": "Preventive medicine reduces disease before it occurs through vaccination, parasite control, nutrition, screening, sanitation, and risk management. Epidemiology examines patterns of disease across groups and identifies likely causes or routes of spread."
+      "title": "Specialties and settings",
+      "description": "Small animal, large animal, equine, exotic, zoo and wildlife, laboratory animal, pathology, and shelter medicine are distinct practice areas with their own training routes.",
+      "source": "American Veterinary Medical Association (AVMA): shelter medicine as a specialty"
     },
     {
-      "title": "Clinical care, population health, and biosecurity",
-      "description": "Clinical care focuses on individual patients; population health looks for patterns across herds, shelters, colonies, wildlife populations, or facilities. Biosecurity uses procedures, spaces, equipment, and movement controls to limit transmission."
+      "title": "Support and technical roles",
+      "description": "Veterinary technicians and technologists, assistants, and practice staff perform much of the clinical work, with their own credentialing and considerably shorter training.",
+      "source": "Merck Veterinary Manual: shelter medicine"
     }
   ],
   "questions": [
-    "What is causing an animal’s illness, injury, pain, or change in function?",
-    "Which diagnostic evidence is needed to choose a treatment?",
-    "How can disease or injury be prevented?",
-    "How do diseases spread among animals, people, or environments?"
+    {
+      "question": "What is wrong with this animal, and how do we know?",
+      "approach": "By history, physical examination, and diagnostics — imaging, bloodwork, cytology — working from a differential list toward the most likely explanation."
+    },
+    {
+      "question": "What treatment is appropriate given the animal, the owner, and the resources?",
+      "approach": "By weighing likely outcome, cost, and the animal's welfare, and presenting realistic options rather than only the ideal one."
+    },
+    {
+      "question": "Is this a problem in one animal or across the population?",
+      "approach": "By reviewing records across the herd, colony, or facility for pattern, and sampling more broadly when one case suggests a shared cause."
+    },
+    {
+      "question": "How do we prevent this rather than treating it one animal at a time?",
+      "approach": "Through vaccination, parasite control, nutrition, and biosecurity protocols, then auditing whether the protocol is actually being followed."
+    },
+    {
+      "question": "What are the ethical limits of what should be done here?",
+      "approach": "By weighing prognosis, suffering, and quality of life against what intervention would cost the animal, which is a judgment the evidence informs but does not settle."
+    },
+    {
+      "question": "How do we know a treatment works?",
+      "approach": "By reading the clinical evidence base critically, since much of veterinary practice rests on smaller trials than human medicine does."
+    }
   ],
   "responsibilities": [
-    "Examine animals, gather histories, collect samples, and interpret diagnostic information.",
-    "Provide or assist with treatment, medication, surgery, nursing care, or rehabilitation.",
-    "Maintain medical records, infection-control procedures, equipment, and legal documentation.",
-    "Communicate risks, options, prognosis, welfare considerations, and care instructions."
+    "Examine animals, order and interpret diagnostics, and deliver treatment.",
+    "Perform or assist with surgery, anesthesia, and clinical procedures.",
+    "Maintain medical records and comply with regulatory requirements.",
+    "Communicate diagnoses, options, and costs to owners or managers."
   ],
   "knowledgeSkills": [
-    "Anatomy, physiology, pathology, and pharmacology",
-    "Microbiology, immunology, and epidemiology",
-    "Clinical observation and diagnostic reasoning",
-    "Technical procedures, hygiene, and biosecurity",
-    "Communication, teamwork, ethics, and decision-making"
+    "Anatomy, physiology, pharmacology, and pathology",
+    "Clinical examination and diagnostic reasoning",
+    "Surgical and anesthetic technique",
+    "Animal handling and restraint",
+    "Client communication and ethical decision-making"
   ],
   "variations": [
     {
-      "label": "Professional role",
-      "description": "Veterinarians, veterinary technicians, assistants, pathologists, epidemiologists, nutritionists, and researchers have different education and duties."
+      "label": "The DVM is one route, not the area",
+      "description": "Veterinary technicians, nutritionists, pathologists, laboratory staff, and researchers all work in animal health without a DVM, with substantially shorter and less competitive training paths."
     },
     {
-      "label": "Species",
-      "description": "Companion, farm, equine, laboratory, zoo, wildlife, aquatic, and public-health work require different knowledge and settings."
+      "label": "Shelter medicine",
+      "description": "A recognized veterinary specialty, provisionally recognized in 2014 and fully recognized in 2023, requiring practitioners to balance individual animal care against population health, resource limits, and community needs. It is a growing area with a small number of board-certified specialists.",
+      "source": "American Veterinary Medical Association (AVMA): shelter medicine as a specialty"
     },
     {
-      "label": "Clinical contact",
-      "description": "Some roles provide continuous patient care; others focus on diagnostics, pathology, population health, research, or regulation."
+      "label": "Wildlife and zoo practice",
+      "description": "Zoo, wildlife, and exotic practice are small, competitive specialties usually entered through internship and residency rather than directly."
     },
     {
-      "label": "Work context",
-      "description": "Private practice, shelters, government, universities, industry, zoos, and field programs differ in resources and decisions."
+      "label": "Pre-vet is not a major",
+      "description": "Pre-veterinary is a set of prerequisite courses that can be completed within many majors. It is not itself a degree, and completing it guarantees nothing about admission."
     }
   ],
   "settings": [
-    "Veterinary hospitals and clinics",
-    "Shelters, farms, zoos, aquariums, and rehabilitation centers",
-    "Diagnostic laboratories and universities",
-    "Government, public-health, research, and industry programs"
+    "Clinical practices and animal hospitals",
+    "Shelters and community medicine programs",
+    "Zoos, aquariums, and wildlife facilities",
+    "Laboratories, industry, and government agencies"
   ],
   "realities": [
-    "Veterinary school is competitive, lengthy, and potentially expensive.",
-    "Clinical work can include emergencies, bodily fluids, injury, distress, euthanasia, and difficult client conversations.",
-    "Schedules vary from regular laboratory hours to nights, weekends, and on-call coverage.",
-    "Strong science preparation must be paired with clinical judgment, technical skill, and communication."
+    "Veterinary school admission is highly competitive and the degree is expensive relative to typical starting salaries.",
+    "Pre-veterinary preparation is not a guarantee of admission and is not itself a credential.",
+    "Clinical work carries real emotional weight, including euthanasia and cases limited by cost.",
+    "Many rewarding animal-health careers do not require a DVM at all."
   ],
   "careers": [
-    {
-      "name": "Veterinarian",
-      "focus": "Diagnoses, treats, and prevents disease and injury and advises on animal health and welfare.",
-      "educationBand": "Doctor of Veterinary Medicine and licensure required",
-      "workTags": [
-        "Animal care",
-        "Research",
-        "Education / public"
-      ]
-    },
-    {
-      "name": "Veterinary technician",
-      "focus": "Provides nursing, diagnostic, laboratory, anesthesia, and treatment support under veterinary supervision.",
-      "educationBand": "Accredited veterinary-technology education and credentialing typically required",
-      "workTags": [
-        "Animal care",
-        "Laboratory"
-      ]
-    },
-    "Wildlife disease / ecophysiology specialist",
-    "Animal physiologist",
     "Zoo animal nutritionist / nutrition coordinator",
-    "Wildlife rehabilitator"
+    "Wildlife disease / ecophysiology specialist",
+    "University / laboratory research assistant",
+    "Animal welfare / behavior coordinator"
+  ],
+  "programs": [
+    {
+      "code": "URI-AZ",
+      "school": "University of Rhode Island",
+      "title": "Animal Science with Zoo & Aquarium Science certificate"
+    },
+    {
+      "code": "UMA-AS",
+      "school": "University of Massachusetts Amherst",
+      "title": "Animal Science, Management/Behavior track"
+    },
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S., Behavior/Ecology track"
+    }
   ],
   "programCodes": [
-    "UMA-AS",
     "URI-AZ",
-    "UMA-BIO",
-    "ME-ZOO",
-    "UNE-AN"
+    "UMA-AS",
+    "UMA-BIO"
   ],
   "related": [
-    "animal-biology",
+    "wildlife-health",
     "animal-science",
     "animal-welfare",
-    "wildlife-rehabilitation"
+    "zoo-aquarium-science"
   ],
   "references": [
     {
-      "title": "BLS: Veterinarians",
-      "type": "Occupational overview",
-      "url": "https://www.bls.gov/ooh/healthcare/veterinarians.htm"
+      "title": "Merck Veterinary Manual: shelter medicine",
+      "type": "Clinical reference",
+      "url": "https://www.merckvetmanual.com/special-subjects/shelter-medicine/overview-of-shelter-medicine"
     },
     {
-      "title": "UMass Amherst: Animal Science",
-      "type": "Undergraduate preparation example",
-      "url": "https://www.umass.edu/veterinary-animal-sciences/animal-science-major"
-    },
-    {
-      "title": "URI: Animal Science option",
-      "type": "Undergraduate preparation example",
-      "url": "https://web.uri.edu/favs/academics/animal-and-veterinary-science-b-s/animal-science-option/"
-    },
-    {
-      "title": "O*NET: Biological Technicians",
-      "type": "Related laboratory work",
-      "url": "https://www.onetonline.org/link/summary/19-4021.00"
+      "title": "American Veterinary Medical Association (AVMA): shelter medicine as a specialty",
+      "type": "Professional body",
+      "url": "https://www.avma.org/javma-news/2014-06-01/specialty-whose-time-has-come"
     }
   ]
 }

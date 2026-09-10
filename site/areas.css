@@ -208,7 +208,7 @@ p { margin: .7em 0 0; }
 .section-head p { max-width: 700px; color: var(--muted); }
 .section-tag { flex: 0 0 auto; padding: 5px 9px; border-radius: 99px; color: var(--blue); background: #eaf5f8; font-size: .76rem; font-weight: 800; }
 
-.focus-grid, .variation-grid, .settings-grid, .career-grid, .program-grid, .reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.focus-grid, .variation-grid, .settings-grid, .career-grid, .program-grid, .reference-grid, .term-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .info-box { padding: 16px; border-radius: 12px; background: #f3f7fa; }
 .info-box p { color: #42596a; }
 .variation { border-left: 4px solid var(--group-color, var(--blue)); }
@@ -242,7 +242,9 @@ p { margin: .7em 0 0; }
 .micro-reaction.up.selected { border-color: var(--positive); background: var(--positive-bg); filter: none; opacity: 1; }
 .micro-reaction.down.selected { border-color: var(--negative); background: var(--negative-bg); filter: none; opacity: 1; }
 
-.career-card, .program-card, .reference-card { padding: 18px; border: 1px solid #d9e3e9; border-radius: 13px; background: #fff; }
+.career-card, .program-card, .reference-card, .term-card { padding: 18px; border: 1px solid #d9e3e9; border-radius: 13px; background: #fff; }
+.term-card { background: #f8fafb; }
+.term-card p { color: var(--muted); font-size: .91rem; }
 .career-card p, .program-card p, .reference-card p { color: var(--muted); font-size: .91rem; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 11px; }
 .pill { padding: 4px 8px; border-radius: 99px; color: #476071; background: #edf3f6; font-size: .74rem; font-weight: 700; }
@@ -290,7 +292,7 @@ p { margin: .7em 0 0; }
   .page { width: min(100% - 24px, 1220px); padding-top: 27px; }
   .page-heading { grid-template-columns: 1fr; align-items: start; }
   .search-wrap { min-width: 0; }
-  .area-grid, .focus-grid, .variation-grid, .settings-grid, .career-grid, .program-grid, .reference-grid, .drill-list, .mark-columns { grid-template-columns: 1fr; }
+  .area-grid, .focus-grid, .variation-grid, .settings-grid, .career-grid, .program-grid, .reference-grid, .term-grid, .drill-list, .mark-columns { grid-template-columns: 1fr; }
   .area-card { min-height: 0; }
   .content-section { padding: 19px; }
   .section-head { display: block; }

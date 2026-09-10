@@ -1,0 +1,186 @@
+{
+  "id": "quantitative-ecology",
+  "title": "Quantitative Ecology",
+  "short": "The modeling, statistics, and mapping behind ecological claims. Estimating what cannot be counted directly, and analyzing movement, habitat, and change over time.",
+  "bigPicture": "Quantitative ecology is the analytical side of animal science: the statistical models, spatial analysis, and computational methods that turn field observations into defensible estimates. Almost no wild population can be counted directly, so nearly every number in wildlife and conservation rests on inference. This is a route into animal science for people whose strength is mathematics and programming rather than field work, and demand for it has grown faster than the supply of people trained in it.",
+  "terms": [
+    {
+      "term": "Statistical model",
+      "definition": "A mathematical description of how data were generated, used to estimate quantities and state how uncertain those estimates are."
+    },
+    {
+      "term": "Bayesian methods",
+      "definition": "An approach that combines prior information with data to produce probability distributions for the quantities being estimated."
+    },
+    {
+      "term": "Hierarchical model",
+      "definition": "A model with multiple linked levels, commonly used to separate the biological process from the imperfect observation of it."
+    },
+    {
+      "term": "Cross-validation",
+      "definition": "Testing a model by holding back part of the data, fitting on the rest, and checking predictions against what was held back."
+    },
+    {
+      "term": "Confounder",
+      "definition": "A third factor that influences both variables of interest and can create an apparent relationship where none exists."
+    },
+    {
+      "term": "Power analysis",
+      "definition": "Working out in advance how much data would be needed to detect an effect of a given size."
+    },
+    {
+      "term": "Remote sensing",
+      "definition": "Collecting environmental data from satellites or aircraft, used to map habitat and land cover at large scales."
+    },
+    {
+      "term": "Environmental DNA (eDNA)",
+      "definition": "Genetic material shed into water or soil, which can be sampled to detect which species are present without observing them."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Estimation and inference",
+      "description": "Methods for estimating abundance, survival, occupancy, and detection when animals are hard to observe, and for attaching honest uncertainty to those estimates.",
+      "source": "Ecological Society of America"
+    },
+    {
+      "title": "Spatial analysis and mapping",
+      "description": "geographic information systems (GIS), remote sensing, and landscape analysis used to describe habitat, connectivity, and change across space and time.",
+      "source": "Ecological Society of America"
+    },
+    {
+      "title": "Movement and telemetry",
+      "description": "Analyzing tracking data to understand how animals use space, migrate, select habitat, and respond to disturbance.",
+      "source": "Ecological Society of America"
+    },
+    {
+      "title": "Modeling and prediction",
+      "description": "Building models that project population trajectories, species distributions, or management outcomes, and being clear about what the model can and cannot support.",
+      "source": "Ecological Society of America (ESA): Certified Ecologist program"
+    }
+  ],
+  "questions": [
+    {
+      "question": "How do we estimate something we cannot count?",
+      "approach": "By modeling the observation process alongside the biological process, so that imperfect detection is estimated rather than ignored."
+    },
+    {
+      "question": "How confident should we be in this number?",
+      "approach": "By propagating uncertainty through the analysis and reporting intervals, then checking whether the model reproduces data it has not seen."
+    },
+    {
+      "question": "Is this model actually any good?",
+      "approach": "Through cross-validation, posterior predictive checks, and simulating data from known parameters to confirm the method recovers the truth."
+    },
+    {
+      "question": "What is this animal's use of space telling us?",
+      "approach": "By analyzing tracking data with home range, habitat selection, and step-selection methods that compare used locations against available ones."
+    },
+    {
+      "question": "Are these two things related, or does something else explain both?",
+      "approach": "By specifying the causal structure before fitting, controlling for confounders deliberately, and resisting the pull of correlation in observational data."
+    },
+    {
+      "question": "How much sampling effort is enough?",
+      "approach": "By simulating the study before running it and asking how much data would be needed to detect an effect of the size that would matter."
+    }
+  ],
+  "responsibilities": [
+    "Design sampling and analysis approaches for ecological questions.",
+    "Write code to clean, analyze, and model ecological datasets.",
+    "Produce estimates, figures, and technical documentation.",
+    "Collaborate with field biologists and translate between data and management."
+  ],
+  "knowledgeSkills": [
+    "Statistics, including hierarchical and Bayesian methods",
+    "R and often Python",
+    "GIS and remote sensing",
+    "Ecological theory and study design",
+    "Reproducible analysis and clear technical writing"
+  ],
+  "variations": [
+    {
+      "label": "A site-level grouping, not a discipline name",
+      "description": "Quantitative ecology and spatial ecology are both real subfields with substantial literatures, but this is not a standard degree title. Programs usually deliver it as a concentration, a set of statistics and GIS courses inside an ecology or wildlife degree, or graduate specialization. This area exists here so the path is findable, not because a department is likely to carry the name."
+    },
+    {
+      "label": "Desk-based entry",
+      "description": "This is the most office-based route in this field. Some practitioners do field work by choice; many analyze data collected by others. That makes it accessible to people who want the science without the seasonal field cycle, though the two are not fully separable."
+    },
+    {
+      "label": "Transferable in both directions",
+      "description": "The skills move readily between ecology, public health, agriculture, and data science generally, which makes this one of the more portable specializations here."
+    },
+    {
+      "label": "How you get it",
+      "description": "Usually assembled deliberately: statistics and computing courses layered onto a biology, wildlife, or ecology major, plus undergraduate research analyzing real data."
+    }
+  ],
+  "settings": [
+    "Universities and research institutes",
+    "State and federal agencies",
+    "Environmental consulting firms",
+    "Conservation nonprofits and data programs"
+  ],
+  "realities": [
+    "Programming and statistics are the core competencies, and they take deliberate practice to build.",
+    "There is rarely a major with this name, so the path has to be assembled from courses and research experience.",
+    "Analysts often depend on data quality they did not control, which is a recurring frustration.",
+    "Demand is comparatively strong, but positions are frequently grant-funded."
+  ],
+  "careers": [
+    "Quantitative ecologist / biometrician",
+    "Ecological data scientist",
+    "Research statistician — ecology/biology",
+    "GIS / wildlife spatial analyst",
+    "Remote sensing / geospatial ecologist",
+    "Movement / spatial ecologist",
+    "Quantitative ecology research assistant",
+    "eDNA / molecular ecology technician"
+  ],
+  "programs": [
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Wildlife Ecology & Conservation"
+    },
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    },
+    {
+      "code": "ME-ZOO",
+      "school": "University of Maine",
+      "title": "Zoology B.S. with Ecology concentration"
+    }
+  ],
+  "programCodes": [
+    "ME-WE",
+    "UMA-WEC",
+    "URI-W",
+    "ME-ZOO"
+  ],
+  "related": [
+    "ecology",
+    "wildlife-ecology-management",
+    "conservation-biology"
+  ],
+  "references": [
+    {
+      "title": "Ecological Society of America",
+      "type": "Professional society",
+      "url": "https://esa.org/about/"
+    },
+    {
+      "title": "Ecological Society of America (ESA): Certified Ecologist program",
+      "type": "Credential",
+      "url": "https://esa.org/career-development/certification-from-esa/"
+    }
+  ]
+}

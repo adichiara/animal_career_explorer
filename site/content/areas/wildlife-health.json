@@ -1,0 +1,181 @@
+{
+  "id": "wildlife-health",
+  "title": "Wildlife Health / One Health",
+  "short": "Health at the population scale, where wildlife, domestic animals, and people meet. Surveillance and investigation rather than treating patients.",
+  "bigPicture": "Wildlife health concerns the condition of free-ranging animal populations: infectious and parasitic disease, but also toxic, nutritional, developmental, and physiological factors, and the pressures of habitat loss, trade, land use, and climate. The Wildlife Disease Association and its journal have anchored the field since the 1960s. There is an active argument inside the field that defining health as the absence of disease is decades out of date, and that One Health framing has narrowed attention toward wildlife as a source of human infections rather than as populations with health of their own.",
+  "terms": [
+    {
+      "term": "Epidemiology",
+      "definition": "The study of how disease is distributed in populations and what determines that distribution."
+    },
+    {
+      "term": "Surveillance",
+      "definition": "Ongoing systematic collection of health data from a population so problems are detected early rather than after a visible die-off."
+    },
+    {
+      "term": "Zoonosis",
+      "definition": "A disease that can pass between animals and people."
+    },
+    {
+      "term": "Spillover",
+      "definition": "Transmission of a pathogen from one host species into another, such as from wildlife into livestock or people."
+    },
+    {
+      "term": "One Health",
+      "definition": "An approach treating human, animal, and environmental health as connected and requiring coordinated work across all three."
+    },
+    {
+      "term": "Necropsy",
+      "definition": "Post-mortem examination of an animal to determine cause of death and document findings."
+    },
+    {
+      "term": "Sentinel site",
+      "definition": "A location monitored consistently over time as an early-warning indicator for a wider area."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Disease surveillance and investigation",
+      "description": "Detecting, diagnosing, and tracking disease in free-ranging populations, including mortality events, emerging pathogens, and long-running conditions.",
+      "source": "Journal of Wildlife Diseases: scope"
+    },
+    {
+      "title": "Beyond pathogens",
+      "description": "Toxic, nutritional, developmental, and physiological factors affecting wild animal health, alongside contamination and environmental stressors.",
+      "source": "Journal of Wildlife Diseases: scope"
+    },
+    {
+      "title": "The wildlife, livestock, human interface",
+      "description": "Zoonoses, spillover, and shared disease risk between wild animals, domestic animals, and people, which is where One Health work concentrates.",
+      "source": "Wildlife Disease Association"
+    },
+    {
+      "title": "Health as more than absence of disease",
+      "description": "An active effort within the field to define wildlife health in terms of vulnerability, resilience, and sustainability, recognizing that habitat loss, trade, land-use pressure, and climate change are drivers alongside pathogens.",
+      "source": "Toward a Modernized Definition of Wildlife Health"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is causing mortality or decline in this population?",
+      "approach": "By collecting carcasses, running necropsy and laboratory diagnostics, and comparing affected and unaffected animals rather than assuming the first pathogen found is the cause."
+    },
+    {
+      "question": "Is this pathogen moving between wildlife, livestock, and people?",
+      "approach": "Through coordinated sampling across all three groups and genetic comparison of isolates to reconstruct who transmitted to whom."
+    },
+    {
+      "question": "How do we detect a problem early enough to act?",
+      "approach": "By running ongoing surveillance — hunter-harvested samples, sentinel sites, mortality reporting — rather than waiting for a visible die-off."
+    },
+    {
+      "question": "How far and how fast will this spread?",
+      "approach": "By fitting epidemiological models to observed cases with data on host density and movement, and testing what control measures would change."
+    },
+    {
+      "question": "Is this population healthy in a broader sense than absence of disease?",
+      "approach": "By assessing body condition, stress physiology, reproduction, and contaminant load together, in line with the field's argument that health means more than not being infected."
+    },
+    {
+      "question": "Is a contaminant or nutritional factor involved rather than a pathogen?",
+      "approach": "Through toxicology and tissue analysis alongside pathology, since non-infectious causes are easy to miss when the search starts with pathogens."
+    }
+  ],
+  "responsibilities": [
+    "Conduct surveillance, sampling, and necropsy in field and laboratory settings.",
+    "Diagnose and characterize disease and other health threats.",
+    "Analyze epidemiological data and report findings to agencies.",
+    "Coordinate across wildlife, veterinary, agricultural, and public health bodies."
+  ],
+  "knowledgeSkills": [
+    "Epidemiology and disease ecology",
+    "Pathology, microbiology, and parasitology",
+    "Field sampling, necropsy, and biosafety",
+    "Statistics and spatial analysis",
+    "Cross-agency coordination and reporting"
+  ],
+  "variations": [
+    {
+      "label": "Health versus disease",
+      "description": "The older framing of the field is wildlife disease; the newer framing is wildlife health, which is broader. The distinction is not cosmetic: the disease framing shapes what gets funded and monitored, and the field has published directly on the limits of defining health as the absence of disease.",
+      "source": "Toward a Modernized Definition of Wildlife Health"
+    },
+    {
+      "label": "Entry routes",
+      "description": "People arrive with a Doctor of Veterinary Medicine (DVM), with a graduate degree in epidemiology or ecology, or through laboratory and diagnostic pathways. It is not a veterinary-only field, though veterinary training opens the most doors."
+    },
+    {
+      "label": "One Health scope",
+      "description": "One Health links human, animal, and environmental health. Practitioners note that its emphasis has often been on wildlife as a source of human infection rather than on wildlife health as an end in itself.",
+      "source": "Toward a Modernized Definition of Wildlife Health"
+    },
+    {
+      "label": "Employer type",
+      "description": "State and federal agencies, universities, diagnostic laboratories, and international organizations all employ in this space."
+    }
+  ],
+  "settings": [
+    "State and federal wildlife and agriculture agencies",
+    "Diagnostic and research laboratories",
+    "Universities and research institutes",
+    "International and public health organizations"
+  ],
+  "realities": [
+    "Graduate or veterinary training is effectively required for most positions.",
+    "The work involves necropsy, biosafety protocols, and sometimes large mortality events.",
+    "Funding and attention rise sharply during outbreaks and fall away between them.",
+    "Results are often used in policy decisions, which brings scrutiny and time pressure."
+  ],
+  "careers": [
+    "Wildlife disease / ecophysiology specialist",
+    "Wildlife biologist",
+    "Natural-resource agency biologist",
+    "University / laboratory research assistant",
+    "Research scientist / principal investigator"
+  ],
+  "programs": [
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Wildlife Ecology & Conservation"
+    },
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    }
+  ],
+  "programCodes": [
+    "ME-WE",
+    "UMA-WEC",
+    "URI-W"
+  ],
+  "related": [
+    "veterinary-science",
+    "wildlife-ecology-management",
+    "wildlife-rehabilitation",
+    "ecology"
+  ],
+  "references": [
+    {
+      "title": "Wildlife Disease Association",
+      "type": "Professional society",
+      "url": "https://wildlifedisease.site-ym.com/"
+    },
+    {
+      "title": "Journal of Wildlife Diseases: scope",
+      "type": "Field journal",
+      "url": "https://bioone.org/journals/journal-of-wildlife-diseases/scope-and-details"
+    },
+    {
+      "title": "Toward a Modernized Definition of Wildlife Health",
+      "type": "Field perspective",
+      "url": "https://meridian.allenpress.com/jwd/article/50/3/427/123351/TOWARD-A-MODERNIZED-DEFINITION-OF-WILDLIFE-HEALTH"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "conservation-biology",
+  "title": "Conservation Biology",
+  "short": "Deciding and carrying out what should be done about species and habitats, including the laws, funding, and human conflicts that shape those decisions.",
+  "bigPicture": "Conservation biology applies biological science to the problem of preserving biodiversity. It emerged as a named discipline around 1980 and has had its own society and flagship journal since 1987. The field reaches well beyond biology into law, economics, anthropology, and policy, and it has always been openly normative: it exists because its practitioners think biodiversity loss is a problem worth acting on. Distinguishing the science from the advocacy is treated as a core professional skill rather than an awkward footnote.",
+  "terms": [
+    {
+      "term": "Biodiversity",
+      "definition": "The variety of life at all levels — genetic, species, and ecosystem."
+    },
+    {
+      "term": "Population viability analysis",
+      "definition": "Modeling a population forward under different assumptions to estimate its risk of extinction."
+    },
+    {
+      "term": "Conservation genetics",
+      "definition": "Using genetic data to assess diversity, inbreeding, and connectivity, and to guide breeding and translocation decisions."
+    },
+    {
+      "term": "Inbreeding depression",
+      "definition": "Reduced survival or reproduction caused by breeding between close relatives in a small population."
+    },
+    {
+      "term": "Translocation",
+      "definition": "Deliberately moving animals to a new location, whether to reestablish or to reinforce a population."
+    },
+    {
+      "term": "Reintroduction",
+      "definition": "Releasing animals into an area where the species previously occurred but has been lost."
+    },
+    {
+      "term": "Normative discipline",
+      "definition": "A field that openly holds a goal — here, conserving biodiversity — which makes separating evidence from advocacy a professional skill."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Threat assessment and prioritization",
+      "description": "Identifying what is declining, why, and where limited effort produces the most benefit, which is as much a decision science problem as a biological one.",
+      "source": "Society for Conservation Biology journals"
+    },
+    {
+      "title": "Population viability and genetics",
+      "description": "Assessing whether small populations can persist, and using genetic tools to understand connectivity, inbreeding, and recovery potential.",
+      "source": "Society for Conservation Biology journals"
+    },
+    {
+      "title": "Recovery and intervention",
+      "description": "Designing and running reintroductions, translocations, habitat protection, and species recovery programs, then monitoring whether they worked.",
+      "source": "Biological Conservation"
+    },
+    {
+      "title": "People, policy, and economics",
+      "description": "The social, economic, ethical, and legal dimensions of conservation, including conflict, land use, and the machinery through which decisions actually get made.",
+      "source": "Biological Conservation"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is declining, and what is driving it?",
+      "approach": "By assembling trend data from monitoring and museum records, then testing candidate drivers against the spatial and temporal pattern of decline."
+    },
+    {
+      "question": "Can this population persist, and under what conditions?",
+      "approach": "Through population viability analysis, projecting forward under different survival, reproduction, and threat scenarios to estimate extinction risk."
+    },
+    {
+      "question": "Is this population genetically healthy?",
+      "approach": "By sampling genetic markers to assess diversity, inbreeding, and connectivity with other populations, which often reveals problems that counting individuals misses."
+    },
+    {
+      "question": "Which intervention gives the most benefit for the resources available?",
+      "approach": "By costing options and comparing expected gains explicitly, since the binding constraint is almost always money and staff rather than knowledge."
+    },
+    {
+      "question": "Did the reintroduction work?",
+      "approach": "By monitoring released animals for survival, reproduction, and establishment over years, with success defined as a self-sustaining population rather than survival to release."
+    },
+    {
+      "question": "Who decides, who is affected, and how does that shape what is possible?",
+      "approach": "Through stakeholder analysis, interviews, and reading the legal and funding structures, because a biologically sound plan that no one will implement changes nothing."
+    }
+  ],
+  "responsibilities": [
+    "Assess species status and threats using field and analytical evidence.",
+    "Design, implement, and evaluate conservation interventions.",
+    "Prepare plans, proposals, and regulatory documentation.",
+    "Work with communities, landowners, agencies, and funders."
+  ],
+  "knowledgeSkills": [
+    "Population biology and conservation genetics",
+    "Field survey and monitoring methods",
+    "Statistics, geographic information systems (GIS), and modeling",
+    "Environmental law, policy, and funding mechanisms",
+    "Negotiation, facilitation, and writing"
+  ],
+  "variations": [
+    {
+      "label": "Watch the occupational label",
+      "description": "Federal occupational data has a category called Conservation Scientists that mostly covers soil, rangeland, and forest conservation. It is not the same profession as conservation biology, and salary or outlook figures taken from it describe different work. This is a genuine trap when researching the field."
+    },
+    {
+      "label": "Biology or science",
+      "description": "Conservation biology is the established name, with a society and journal behind it since the 1980s. Conservation science is a newer and broader term some departments have adopted to signal the social and economic dimensions. Both are in use; the older name will find more programs.",
+      "source": "Society for Conservation Biology journals"
+    },
+    {
+      "label": "Science and advocacy",
+      "description": "The field openly holds a normative goal, and practitioners are expected to be able to separate what the evidence shows from what they think should be done."
+    },
+    {
+      "label": "Scale",
+      "description": "Work runs from single-species recovery to landscape planning to international policy, and these involve very different daily activities."
+    }
+  ],
+  "settings": [
+    "Conservation nonprofits and NGOs",
+    "State, federal, and international agencies",
+    "Universities and research institutes",
+    "Zoos, aquariums, and botanical institutions"
+  ],
+  "realities": [
+    "Much of the work is funding-dependent, and programs can end when grants do.",
+    "Outcomes are slow and often partial, which practitioners describe as the hardest part of the job.",
+    "Social and political skills matter as much as biological ones in most positions.",
+    "Field-based entry roles are often seasonal and geographically demanding."
+  ],
+  "careers": [
+    "Conservation biologist",
+    "Endangered-species biologist",
+    "Species recovery biologist",
+    "Conservation NGO scientist / coordinator",
+    "Conservation geneticist / wildlife genomicist",
+    "Conservation delivery / habitat program coordinator",
+    "Human dimensions / conservation social scientist",
+    "Post-release monitoring biologist"
+  ],
+  "programs": [
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Wildlife Ecology & Conservation"
+    },
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    },
+    {
+      "code": "URI-WZ",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology with Zoo & Aquarium Science certificate"
+    }
+  ],
+  "programCodes": [
+    "URI-W",
+    "UMA-WEC",
+    "ME-WE",
+    "URI-WZ"
+  ],
+  "related": [
+    "wildlife-ecology-management",
+    "ecology",
+    "quantitative-ecology",
+    "environmental-education"
+  ],
+  "references": [
+    {
+      "title": "Society for Conservation Biology journals",
+      "type": "Professional society",
+      "url": "https://conbio.onlinelibrary.wiley.com/"
+    },
+    {
+      "title": "Biological Conservation",
+      "type": "Field journal",
+      "url": "https://www.sciencedirect.com/journal/biological-conservation"
+    }
+  ]
+}

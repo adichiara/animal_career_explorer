@@ -1,116 +1,172 @@
 {
   "id": "zoology",
-  "group": "organismal",
   "title": "Zoology",
-  "short": "The broad scientific study of animals, their diversity, evolution, structure, function, behavior, and ecology.",
-  "bigPicture": "Zoology is organized around animals as a group of organisms. It spans molecular biology, anatomy, physiology, taxonomy, evolution, behavior, and ecology.",
+  "short": "How animal species differ, how they are related, and how bodies are built across the animal kingdom. Comparison and classification are the core methods.",
+  "bigPicture": "Zoology is the broad scientific study of animals: their structure, function, development, evolution, classification, and natural history. It is one of the oldest names in the animal sciences and still appears on degrees, but the professional world around it has reorganized. The field's original flagship society was founded in 1902 as the American Society of Zoologists and renamed itself in 1996 to reflect an integrative, cross-scale approach to organismal biology. Zoology today is best understood as a foundation that other areas are built on rather than a single job description.",
+  "terms": [
+    {
+      "term": "Systematics",
+      "definition": "The study of how organisms are related and how they should be classified, using evidence from anatomy, genetics, and the fossil record."
+    },
+    {
+      "term": "Taxonomy",
+      "definition": "The specific practice of naming and formally describing species and higher groups within a classification."
+    },
+    {
+      "term": "Phylogeny",
+      "definition": "The evolutionary tree showing how a set of species descended from common ancestors."
+    },
+    {
+      "term": "Comparative anatomy",
+      "definition": "Comparing body structures across species to work out shared ancestry, function, and constraint."
+    },
+    {
+      "term": "Organismal biology",
+      "definition": "Biology studied at the level of the whole animal rather than cells, molecules, or ecosystems."
+    },
+    {
+      "term": "Natural history",
+      "definition": "Detailed descriptive knowledge of how a species actually lives — diet, habitat, breeding, daily and seasonal patterns."
+    }
+  ],
   "focus": [
     {
-      "title": "Animal diversity and classification",
-      "description": "Zoologists identify and organize animal diversity using anatomy, genetics, evolutionary relationships, and formal classification. This work supports species inventories, museum collections, field identification, and the discovery or revision of species."
+      "title": "Diversity and classification",
+      "description": "Describing what animal groups exist, how they are distinguished, and how they are related. Systematics, taxonomy, and comparative morphology give the rest of the animal sciences their vocabulary.",
+      "source": "Society for Integrative and Comparative Biology"
     },
     {
-      "title": "Comparative anatomy and physiology",
-      "description": "Comparative work asks how similar body systems solve different problems across animal groups—for example, how fishes, birds, and mammals exchange gases, regulate temperature, or move through their environments."
+      "title": "Comparative anatomy and form",
+      "description": "How bodies are built across groups, and what structural differences reveal about ancestry, constraint, and way of life. Vertebrate morphology and invertebrate zoology are long-standing specialties.",
+      "source": "SICB: mission and history"
     },
     {
-      "title": "Evolution and adaptation",
-      "description": "Evolution explains how inherited traits change across generations. Zoologists compare living species, fossils, genes, and environments to reconstruct those changes and understand how particular adaptations arose."
+      "title": "Evolution and natural history",
+      "description": "How lineages changed over time, and how a species actually lives: what it eats, where it goes, how it reproduces, and how it interacts with others. Natural history knowledge remains the backbone of field work.",
+      "source": "Integrative and Comparative Biology (formerly American Zoologist)"
     },
     {
-      "title": "Behavior, ecology, and life history",
-      "description": "Life-history research connects behavior and ecology to survival and reproduction: when animals mature, how many offspring they produce, how they use resources, and how they respond to competitors, predators, and seasonal change."
+      "title": "Taxon specialization",
+      "description": "Many zoologists work within one group: mammalogy, ornithology, herpetology, ichthyology, entomology. Specialization usually develops in graduate school rather than as an undergraduate.",
+      "source": "Society for Integrative and Comparative Biology"
     }
   ],
   "questions": [
-    "How are different groups of animals related evolutionarily?",
-    "Why did particular anatomical, physiological, or behavioral traits evolve?",
-    "How do different species survive, reproduce, and interact with their environments?",
-    "How can animal diversity be documented and understood?"
+    {
+      "question": "What animal groups exist, and how are they related to each other?",
+      "approach": "By combining morphological comparison with molecular phylogenetics: sequencing genes across species, building trees, and testing them against anatomical and fossil evidence."
+    },
+    {
+      "question": "How does body structure differ across species, and why?",
+      "approach": "Through comparative anatomy — dissection, imaging, and museum specimens — asking whether a difference reflects shared ancestry, an adaptation, or a developmental constraint."
+    },
+    {
+      "question": "How does this species actually live in the wild?",
+      "approach": "By sustained field observation and natural history work: following individuals, recording diet and habitat use, and building a picture over seasons rather than days."
+    },
+    {
+      "question": "Is this population actually a distinct species?",
+      "approach": "By testing whether groups are reproductively or genetically separated, using genetic markers plus morphological and behavioral comparison, then arguing it against existing taxonomy."
+    },
+    {
+      "question": "What did this lineage look like in the past?",
+      "approach": "By reading fossils and comparative development together, and mapping traits onto a phylogeny to infer what ancestral forms most likely had."
+    },
+    {
+      "question": "What can comparison across many species reveal that studying one cannot?",
+      "approach": "By assembling data from many species and asking whether a pattern holds broadly, which separates general biological principles from quirks of a single organism."
+    }
   ],
   "responsibilities": [
-    "Identify, observe, sample, or compare animals and their biological traits.",
-    "Conduct laboratory, museum, collection, or field research.",
-    "Maintain specimens, records, datasets, or research equipment.",
-    "Analyze evidence and communicate findings through reports, papers, exhibits, or presentations."
+    "Identify, describe, and classify organisms using morphological or molecular evidence.",
+    "Conduct field and laboratory studies of species biology and natural history.",
+    "Manage or contribute to collections, specimens, and species records.",
+    "Publish, teach, and communicate findings to scientific and public audiences."
   ],
   "knowledgeSkills": [
-    "Animal diversity and natural history",
-    "Evolution, ecology, anatomy, and physiology",
-    "Species identification and comparative methods",
-    "Research design and statistics",
-    "Field, laboratory, or collections techniques"
+    "Comparative anatomy, physiology, and development",
+    "Evolution, systematics, and phylogenetics",
+    "Species identification and natural history",
+    "Field and laboratory methods",
+    "Scientific writing and data management"
   ],
   "variations": [
     {
-      "label": "Specialization",
-      "description": "A zoologist may specialize in mammals, birds, reptiles, insects, marine animals, physiology, behavior, or another taxon or process."
+      "label": "The name versus the work",
+      "description": "Zoology persists strongly as a degree title but weakly as a job title. Positions are more often advertised as biologist, ecologist, curator, or a taxon specialty. The society that once carried the name dropped it in 1996. This is not a warning about the degree; it is a warning about searching for jobs by that word.",
+      "source": "SICB: mission and history"
     },
     {
-      "label": "Work setting",
-      "description": "The same degree can lead toward field research, laboratory science, museums, conservation, education, or graduate study."
+      "label": "Taxon focus",
+      "description": "Work can concentrate on mammals, birds, reptiles and amphibians, fishes, or invertebrates, and the day-to-day methods differ considerably between them."
     },
     {
-      "label": "Breadth",
-      "description": "Some programs retain broad animal diversity; others function much like general biology with animal-focused electives."
+      "label": "Setting",
+      "description": "Zoology supports museum and collections work, university research and teaching, agency biology, and field science."
     },
     {
-      "label": "Career title",
-      "description": "Many people trained in zoology work under titles such as biologist, research technician, ecologist, curator, or environmental scientist."
+      "label": "Scale",
+      "description": "Some zoologists work at the level of tissue and structure; others work on whole animals in the field. Both are zoology."
     }
   ],
   "settings": [
     "Universities and research institutes",
-    "Museums and biological collections",
-    "Government and conservation organizations",
-    "Laboratories, field stations, and natural areas"
+    "Natural history museums and collections",
+    "State and federal agencies",
+    "Field stations and research sites"
   ],
   "realities": [
-    "“Zoologist” is less common as a job title than many specialized biologist titles.",
-    "Broad programs require deliberate choices to build a distinctive specialty and experience record.",
-    "Field and laboratory opportunities depend heavily on faculty, location, and student initiative.",
-    "Graduate education is common for independent research and taxonomic specialties."
+    "Independent research positions usually require graduate study; a bachelor's degree more often leads to technician, collections, or education roles.",
+    "Job postings rarely use the word zoology, so searching by that term alone will understate what is available.",
+    "Taxon specialization is real but usually develops later, not at application time.",
+    "Field and collections work can involve travel, seasonal contracts, and physical conditions."
   ],
   "careers": [
     "Zoologist",
     "Mammalogist",
     "Ornithologist",
     "Herpetologist",
-    "Ecological research technician",
-    "Museum / natural-history education or collections work"
+    "Evolutionary biologist studying animals",
+    "Museum / natural-history education or collections work",
+    "M.S. / Ph.D. in zoology / organismal biology"
+  ],
+  "programs": [
+    {
+      "code": "ME-ZOO",
+      "school": "University of Maine",
+      "title": "Zoology B.S. with Ecology concentration"
+    },
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S., Behavior/Ecology track"
+    }
   ],
   "programCodes": [
     "ME-ZOO",
-    "UMA-BIO",
-    "ME-WE",
-    "URI-W"
+    "UMA-BIO"
   ],
   "related": [
-    "animal-biology",
+    "animal-physiology",
     "ecology",
-    "wildlife-biology",
-    "animal-behavior"
+    "animal-behavior",
+    "wildlife-ecology-management"
   ],
   "references": [
     {
-      "title": "BLS: Zoologists and Wildlife Biologists",
-      "type": "Occupational overview",
-      "url": "https://www.bls.gov/ooh/life-physical-and-social-science/zoologists-and-wildlife-biologists.htm"
+      "title": "Society for Integrative and Comparative Biology",
+      "type": "Professional society",
+      "url": "https://sicb.org/"
     },
     {
-      "title": "O*NET: Zoologists and Wildlife Biologists",
-      "type": "Tasks and skills",
-      "url": "https://www.onetonline.org/link/summary/19-1023.00"
+      "title": "SICB: mission and history",
+      "type": "Professional society",
+      "url": "https://sicb.org/our-mission/"
     },
     {
-      "title": "University of Maine: Zoology",
-      "type": "Undergraduate example",
-      "url": "https://sbe.umaine.edu/undergraduate/zoology/"
-    },
-    {
-      "title": "SPNHC: Job Opportunities",
-      "type": "Collections and natural-history jobs",
-      "url": "https://spnhc.org/category/job-opportunities/"
+      "title": "Integrative and Comparative Biology (formerly American Zoologist)",
+      "type": "Field journal",
+      "url": "https://academic.oup.com/icb/"
     }
   ]
 }

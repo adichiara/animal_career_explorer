@@ -1,0 +1,175 @@
+{
+  "id": "anthrozoology",
+  "title": "Human–Animal Interaction / Anthrozoology",
+  "short": "How people and animals affect each other, including assistance animals, working animals, and everyday companionship.",
+  "bigPicture": "Anthrozoology is the scholarly study of human-animal interactions and relationships. It is genuinely interdisciplinary, drawing on psychology, anthropology, sociology, veterinary medicine, ethology, history, and education, and its international society was founded in 1991 specifically to support the growing research field. The journal predates the society by several years. This is a small field with a real research base, and it is where questions about assistance animals, the human-animal bond, and animal-assisted intervention get studied rather than asserted.",
+  "terms": [
+    {
+      "term": "Anthrozoology",
+      "definition": "The scholarly study of interactions and relationships between humans and other animals, drawing on many disciplines."
+    },
+    {
+      "term": "Human-animal interaction (HAI)",
+      "definition": "The same research field under the name most used by its professional society."
+    },
+    {
+      "term": "Human-animal bond",
+      "definition": "The mutual relationship between a person and an animal, and the effects it has on both."
+    },
+    {
+      "term": "Animal-assisted intervention",
+      "definition": "Structured use of animals in therapeutic, educational, or healthcare programs with defined goals."
+    },
+    {
+      "term": "Assistance animal",
+      "definition": "An animal trained to perform specific tasks for a person with a disability."
+    },
+    {
+      "term": "Wash-out rate",
+      "definition": "The proportion of animals entering an assistance-animal training program that do not complete it."
+    },
+    {
+      "term": "Relinquishment",
+      "definition": "Surrender of an animal by its owner, studied for what it reveals about why relationships end."
+    }
+  ],
+  "focus": [
+    {
+      "title": "The human-animal bond",
+      "description": "How relationships between people and animals form, what they provide on both sides, and how they are affected by loss, conflict, or change.",
+      "source": "International Society for Anthrozoology"
+    },
+    {
+      "title": "Assistance and working animals",
+      "description": "Service dogs, assistance animals, and working animals: selection, training, effectiveness, and welfare of the animals doing the work."
+    },
+    {
+      "title": "Animal-assisted intervention",
+      "description": "Programs using animals in therapeutic, educational, and healthcare settings, and the evidence about whether and how they help.",
+      "source": "Anthrozoos"
+    },
+    {
+      "title": "Attitudes and society",
+      "description": "How people think about animals, why attitudes differ across cultures and contexts, and how those attitudes shape policy, food systems, and pet keeping.",
+      "source": "Anthrozoos"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What do people and animals actually get from this relationship?",
+      "approach": "Through surveys and interviews with people alongside behavioral and physiological measures on the animals, since self-report alone tells only one side."
+    },
+    {
+      "question": "Does this animal-assisted intervention work, and how would we know?",
+      "approach": "By running controlled studies with comparison conditions and pre-specified outcomes, because much of the existing literature lacks controls."
+    },
+    {
+      "question": "What is the welfare cost to the animal in this arrangement?",
+      "approach": "By assessing the animal's behavior and stress physiology during and after sessions, and checking whether it can opt out."
+    },
+    {
+      "question": "Why do attitudes toward animals differ so sharply between people and cultures?",
+      "approach": "Through validated attitude scales, cross-cultural comparison, and qualitative work on how people explain their own views."
+    },
+    {
+      "question": "What makes an assistance animal succeed or wash out?",
+      "approach": "By following cohorts from selection through training and placement, and relating outcomes to temperament, early experience, and training method."
+    },
+    {
+      "question": "How does the relationship change when it ends?",
+      "approach": "Through studies of loss, relinquishment, and grief, using both interview data and standard psychological measures."
+    }
+  ],
+  "responsibilities": [
+    "Design and conduct studies involving both human and animal participants.",
+    "Collect and analyze survey, observational, and physiological data.",
+    "Navigate ethical review for research involving people and animals.",
+    "Publish and advise programs that place animals with people."
+  ],
+  "knowledgeSkills": [
+    "Research methods in psychology and social science",
+    "Animal behavior and welfare assessment",
+    "Statistics and survey design",
+    "Research ethics across human and animal subjects",
+    "Interdisciplinary reading and writing"
+  ],
+  "variations": [
+    {
+      "label": "Two names, one field",
+      "description": "Anthrozoology and human-animal interaction are used interchangeably by the same professional community, and human-animal studies appears as a third. The society describes its purpose as advancing scholarship on human-animal interactions and relationships.",
+      "source": "International Society for Anthrozoology"
+    },
+    {
+      "label": "Genuinely interdisciplinary",
+      "description": "Published work comes from anthropology, archaeozoology, art and literature, education, ethology, history, human medicine, psychology, sociology, and veterinary medicine. There is no single home department.",
+      "source": "Anthrozoos"
+    },
+    {
+      "label": "Small field, real base",
+      "description": "University-based centers exist in the United States, Europe, and Australia, and coursework has become more common, but few institutions offer a dedicated undergraduate degree. Most people arrive through psychology, animal science, or veterinary routes."
+    },
+    {
+      "label": "Where the jobs are",
+      "description": "Research positions are limited. The larger employment picture is in assistance-animal organizations, animal-assisted intervention programs, shelters, and welfare nonprofits, where the research informs practice."
+    }
+  ],
+  "settings": [
+    "Universities and research centers",
+    "Assistance and service-animal organizations",
+    "Healthcare, education, and therapy programs",
+    "Shelters and animal welfare nonprofits"
+  ],
+  "realities": [
+    "Academic positions specifically in this field are scarce; most researchers hold appointments in another department.",
+    "Evidence quality varies considerably across animal-assisted intervention research, and reading it critically is part of the training.",
+    "Programs placing animals with people carry welfare obligations to the animal that are easy to underweight.",
+    "There are few dedicated undergraduate degrees, so the path is usually assembled."
+  ],
+  "careers": [
+    "Service-dog / assistance-animal trainer",
+    "Companion-animal behavior researcher",
+    "Animal behaviorist / applied animal behavior scientist",
+    "Canine behavior consultant",
+    "Science writer / communicator — biology and animals"
+  ],
+  "programs": [
+    {
+      "code": "UNE-AB",
+      "school": "University of New England",
+      "title": "Animal Behavior B.S."
+    },
+    {
+      "code": "UMA-AS",
+      "school": "University of Massachusetts Amherst",
+      "title": "Animal Science, Management/Behavior track"
+    },
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S., Behavior/Ecology track"
+    }
+  ],
+  "programCodes": [
+    "UNE-AB",
+    "UMA-AS",
+    "UMA-BIO"
+  ],
+  "related": [
+    "animal-behavior",
+    "animal-welfare",
+    "environmental-education",
+    "animal-cognition"
+  ],
+  "references": [
+    {
+      "title": "International Society for Anthrozoology",
+      "type": "Professional society",
+      "url": "https://isaz.net/"
+    },
+    {
+      "title": "Anthrozoos",
+      "type": "Field journal",
+      "url": "https://isaz.net/journal/journal.html"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ The Area Explorer loads its content directly from the JSON files in this folder.
 4. Select **Commit changes**.
 5. Wait for the Pages workflow to finish, then reload `areas.html`.
 
-Each area file controls its overview, focus topics, questions, responsibilities, knowledge and skills, variations, settings, realities, related careers, college-program connections, adjacent areas, and references.
+Each area file controls its overview, glossary terms, focus topics, questions and research approaches, responsibilities, knowledge and skills, variations, settings, realities, related careers, college-program connections, adjacent areas, and references.
 
 ## Focus topics
 
@@ -41,9 +41,20 @@ To provide hand-written examples instead of the automatically connected question
 
 `source` can be the exact title or URL of any item in that area's `references` list. If it is omitted, the site selects a related reference from the list.
 
+## Questions and approaches
+
+Questions use two fields. `question` appears on the closed card; `approach` explains how someone might investigate it when the card is opened:
+
+```json
+{
+  "question": "How are animal groups related to each other?",
+  "approach": "By combining morphological comparison with molecular phylogenetics..."
+}
+```
+
 ## Adding custom detail elsewhere
 
-Questions, responsibilities, knowledge and skills, settings, and practical realities are normally simple strings. The site creates their expanded connections from the other content in the area. A string can be replaced with an object whenever a custom explanation or examples are preferable:
+Responsibilities, knowledge and skills, settings, and practical realities are normally simple strings. The site creates their expanded connections from the other content in the area. A string can be replaced with an object whenever a custom explanation or examples are preferable:
 
 ```json
 {
@@ -58,9 +69,19 @@ Questions, responsibilities, knowledge and skills, settings, and practical reali
 }
 ```
 
+## Glossary terms
+
+The `terms` list supplies the area glossary:
+
+```json
+{
+  "term": "Systematics",
+  "definition": "The study of how organisms are related and how they should be classified..."
+}
+```
+
 ## Other files
 
-- `groups.json` controls the five broad group headings, descriptions, and colors.
 - `index.json` controls which area files are loaded and their order.
 - To add an area, create its JSON file and add the filename to the `areas` list in `index.json`.
 
@@ -69,6 +90,6 @@ Questions, responsibilities, knowledge and skills, settings, and practical reali
 - Use double quotation marks around text and field names.
 - Keep a comma between list items and fields, but not after the final item.
 - Use `\"` when quotation marks need to appear inside text.
-- Leave identifiers such as `id`, `group`, `programCodes`, and `related` unchanged unless their connections are also being updated.
+- Leave identifiers such as `id`, `programCodes`, and `related` unchanged unless their connections are also being updated.
 
 If a file has invalid JSON or omits a required field, the Area Explorer displays a content-loading message with the file or field that needs attention rather than showing a partially broken page.

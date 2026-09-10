@@ -5,8 +5,8 @@
   const app = document.getElementById('app');
   const storageKey = 'animalExplorerAreasV1';
 
-  let groups = [];
   let areas = [];
+  const areaColors = ['#176d8c', '#087d72', '#6457a6', '#b95622', '#a83c61'];
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -32,8 +32,8 @@
     localStorage.setItem(storageKey, JSON.stringify(state));
   }
 
-  function groupFor(area) { return groups.find(group => group.id === area.group); }
   function areaById(id) { return areas.find(area => area.id === id); }
+  function colorFor(area) { return area.color || areaColors[Math.max(0, areas.indexOf(area)) % areaColors.length]; }
   function programByCode(code) { return D.programs.find(program => program.code === code); }
   function careerByName(name) { return D.careers.find(career => career.name === name); }
   function aspectKey(areaId, kind, index) { return `${areaId}::${kind}::${index}`; }
@@ -50,13 +50,11 @@
   }
 
   function validateContent() {
-    if (!Array.isArray(groups) || !groups.length) throw new Error('groups.json must contain at least one group.');
     if (!Array.isArray(areas) || !areas.length) throw new Error('The area manifest does not contain any area files.');
-    const groupIds = new Set(groups.map(group => group.id));
     const areaIds = new Set();
-    const requiredLists = ['focus', 'questions', 'responsibilities', 'knowledgeSkills', 'variations', 'settings', 'realities', 'careers', 'programCodes', 'related', 'references'];
+    const requiredLists = ['focus', 'questions', 'responsibilities', 'knowledgeSkills', 'variations', 'settings', 'realities', 'careers', 'programCodes', 'programs', 'related', 'references', 'terms'];
     areas.forEach(area => {
-      if (!area.id || !area.title || !groupIds.has(area.group)) throw new Error(`Invalid identity or group in ${area.id || 'an area file'}.`);
+      if (!area.id || !area.title) throw new Error(`Invalid identity in ${area.id || 'an area file'}.`);
       if (areaIds.has(area.id)) throw new Error(`Duplicate area id: ${area.id}.`);
       areaIds.add(area.id);
       requiredLists.forEach(field => {
@@ -64,6 +62,9 @@
       });
       area.focus.forEach((topic, index) => {
         if (!topic.title || !topic.description) throw new Error(`${area.id}: focus item ${index + 1} needs a title and description.`);
+      });
+      area.questions.forEach((question, index) => {
+        if (!question.question || !question.approach) throw new Error(`${area.id}: question ${index + 1} needs a question and approach.`);
       });
       area.references.forEach((reference, index) => {
         if (!reference.title || !reference.type || !reference.url) throw new Error(`${area.id}: reference ${index + 1} is incomplete.`);
@@ -83,12 +84,7 @@
   async function loadContent() {
     const root = 'content/areas/';
     const manifest = await fetchJson(`${root}index.json`);
-    const loaded = await Promise.all([
-      fetchJson(`${root}${manifest.groups}`),
-      ...manifest.areas.map(file => fetchJson(`${root}${file}`))
-    ]);
-    groups = loaded[0];
-    areas = loaded.slice(1);
+    areas = await Promise.all(manifest.areas.map(file => fetchJson(`${root}${file}`)));
     validateContent();
   }
 
@@ -142,31 +138,23 @@
         </div>
         <div id="areaGroups"></div>
       </div>`;
-    renderAreaGroups(q);
-    document.getElementById('areaSearch').addEventListener('input', event => renderAreaGroups(event.target.value.trim().toLowerCase()));
+    renderAreaList(q);
+    document.getElementById('areaSearch').addEventListener('input', event => renderAreaList(event.target.value.trim().toLowerCase()));
   }
 
-  function renderAreaGroups(q) {
+  function renderAreaList(q) {
     const root = document.getElementById('areaGroups');
-    root.innerHTML = groups.map(group => {
-      const matches = areas.filter(arealabs => {
-        if (arealabs.group !== group.id) return false;
-        const blob = [arealabs.title, arealabs.short, arealabs.bigPicture, ...arealabs.focus.map(itemText), ...arealabs.knowledgeSkills.map(itemText)].join(' ').toLowerCase();
-        return !q || blob.includes(q);
-      });
-      if (!matches.length) return '';
-      return `<section class="group" style="--group-color:${group.color}">
-        <div class="group-heading"><span class="group-line" aria-hidden="true"></span><div><h2>${esc(group.title)}</h2><p>${esc(group.description)}</p></div></div>
-        <div class="area-grid">${matches.map((area, index) => areaCard(area, index)).join('')}</div>
-      </section>`;
-    }).join('') || '<div class="empty">No areas match that search.</div>';
+    const matches = areas.filter(area => {
+      const blob = [area.title, area.short, area.bigPicture, ...area.focus.map(itemText), ...area.knowledgeSkills.map(itemText), ...area.terms.map(item => `${item.term} ${item.definition}`)].join(' ').toLowerCase();
+      return !q || blob.includes(q);
+    });
+    root.innerHTML = matches.length ? `<section class="group"><div class="area-grid">${matches.map(area => areaCard(area, areas.indexOf(area))).join('')}</div></section>` : '<div class="empty">No areas match that search.</div>';
   }
 
   function areaCard(area, index) {
-    const group = groupFor(area);
     const saved = state.savedAreas.includes(area.id);
-    return `<article class="area-card" style="--group-color:${group.color}">
-      <span class="area-number">${String(index + 1).padStart(2, '0')} · ${esc(group.title)}</span>
+    return `<article class="area-card" style="--group-color:${colorFor(area)}">
+      <span class="area-number">Area ${String(index + 1).padStart(2, '0')}</span>
       <h3>${esc(area.title)}</h3><p>${esc(area.short)}</p>
       <div class="card-footer"><span class="stat">${saved ? 'Saved area' : `${area.careers.length} career examples`}</span><a class="btn small" href="#area/${area.id}">Explore area</a></div>
     </article>`;
@@ -191,7 +179,7 @@
   function itemText(item) {
     if (typeof item === 'string') return item;
     if (Array.isArray(item)) return item.join(': ');
-    return item.title || item.text || item.label || '';
+    return item.title || item.question || item.text || item.label || '';
   }
 
   function referenceFor(area, kind, index, preferredSource) {
@@ -227,7 +215,7 @@
     };
     const generated = details[kind];
     return {
-      explanation: (typeof item === 'object' && item.description) || generated.explanation,
+      explanation: (typeof item === 'object' && (item.description || item.approach)) || generated.explanation,
       examples: customExamples || generated.examples,
       reference: referenceFor(area, kind, index, typeof item === 'object' ? item.source : null)
     };
@@ -267,21 +255,20 @@
   function renderArea(id) {
     const area = areaById(id);
     if (!area) { location.hash = 'areas'; return; }
-    const group = groupFor(area);
     const saved = state.savedAreas.includes(area.id);
-    const programs = area.programCodes.map(programByCode).filter(Boolean);
+    const programs = area.programs.map(program => ({ ...(programByCode(program.code) || {}), ...program }));
     app.innerHTML = `<div class="page">
       <div class="detail-shell">
         ${areaNavigation(area.id)}
-        <div class="detail-main" style="--group-color:${group.color}">
+        <div class="detail-main" style="--group-color:${colorFor(area)}">
           <a class="back" href="#areas">← All areas</a>
           <section class="detail-hero">
-            <div class="eyebrow">${esc(group.title)}</div>
+            <div class="eyebrow">Animal field &amp; work area</div>
             <h1>${esc(area.title)}</h1>
             <p class="lead">${esc(area.bigPicture)}</p>
             <div class="hero-actions"><button id="saveArea" class="btn ${saved ? 'saved' : ''}" type="button">${saved ? 'Saved area' : 'Save area'}</button></div>
           </section>
-          <nav class="section-jump" aria-label="On this page"><strong>On this page</strong><a href="#topics">Focus</a><a href="#questions">Questions</a><a href="#activities">Work</a><a href="#skills">Skills</a><a href="#settings">Settings</a><a href="#realities">Realities</a><a href="#careers">Careers</a><a href="#programs">College paths</a><a href="#references">Sources</a></nav>
+          <nav class="section-jump" aria-label="On this page"><strong>On this page</strong><a href="#topics">Focus</a><a href="#questions">Questions</a><a href="#activities">Work</a><a href="#skills">Skills</a><a href="#settings">Settings</a><a href="#realities">Realities</a><a href="#terms">Terms</a><a href="#careers">Careers</a><a href="#programs">College paths</a><a href="#references">Sources</a></nav>
 
           ${aspectSection(area, 'topics', 'What this area commonly focuses on', 'Major subjects, processes, and problems studied or managed in this field.', area.focus, 'Topics')}
           ${aspectSection(area, 'questions', 'Questions people investigate', 'Scientific, clinical, operational, and management questions that guide the work.', area.questions, 'Questions')}
@@ -295,6 +282,11 @@
           ${aspectSection(area, 'skills', 'Knowledge and skills', 'Scientific, technical, analytical, and communication preparation used in the field.', area.knowledgeSkills, 'Preparation')}
           ${aspectSection(area, 'settings', 'Work settings', 'Places and organizations where this work occurs.', area.settings, 'Environment')}
           ${aspectSection(area, 'realities', 'Practical realities', 'Conditions that can shape training, schedules, workload, and early-career experience.', area.realities, 'Conditions')}
+
+          <section class="content-section" id="terms">
+            <div class="section-head"><div><h2>Terms used in this area</h2><p>Concepts and technical language that appear in courses, research, and professional work.</p></div><span class="section-tag">Glossary</span></div>
+            <div class="term-grid">${area.terms.map(item => `<article class="term-card"><h3>${esc(item.term)}</h3><p>${esc(item.definition)}</p></article>`).join('')}</div>
+          </section>
 
           <section class="content-section" id="careers">
             <div class="section-head"><div><h2>Related careers</h2><p>Career examples from the research database, with role focus, education level, work type, and selected competencies.</p></div><span class="section-tag">${area.careers.length} examples</span></div>

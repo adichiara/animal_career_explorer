@@ -1,0 +1,176 @@
+{
+  "id": "animal-physiology",
+  "title": "Animal Physiology / Comparative Physiology",
+  "short": "How an individual animal's body works. Organs, hormones, metabolism, and the laboratory tools used to study them.",
+  "bigPicture": "Physiology asks how animal bodies function: how they move, breathe, regulate temperature, process food, respond to stress, and hold internal conditions steady. The comparative branch studies that diversity deliberately, choosing the species best suited to a question rather than defaulting to standard laboratory animals. Practitioners describe it as much as a viewpoint as a discipline, which is why you will meet it as a course called animal physiology and as a professional section called comparative and evolutionary physiology.",
+  "terms": [
+    {
+      "term": "Homeostasis",
+      "definition": "Keeping internal conditions such as temperature, water balance, and blood chemistry stable despite changes outside the body."
+    },
+    {
+      "term": "Endocrinology",
+      "definition": "The study of hormones and the glands producing them, and how they regulate body processes and behavior."
+    },
+    {
+      "term": "Metabolic rate",
+      "definition": "The rate at which an animal uses energy, often measured through oxygen consumption."
+    },
+    {
+      "term": "Thermoregulation",
+      "definition": "How an animal controls its body temperature, by behavior, physiology, or both."
+    },
+    {
+      "term": "Krogh's principle",
+      "definition": "The research strategy of choosing whichever species is best suited to the question, rather than defaulting to a standard laboratory animal."
+    },
+    {
+      "term": "Ecophysiology",
+      "definition": "Physiology studied in environmental context, asking how physiological limits shape where and how an animal can live."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Systems and mechanisms",
+      "description": "How circulation, respiration, digestion, excretion, muscle, and nervous systems work, and how they are coordinated. This is the mechanistic core that clinical and applied animal fields build on.",
+      "source": "American Physiological Society (APS): Comparative & Evolutionary Physiology Section"
+    },
+    {
+      "title": "Regulation and homeostasis",
+      "description": "How animals hold internal conditions stable against changing external ones, including thermoregulation, water and salt balance, and endocrine control.",
+      "source": "American Physiological Society (APS): Comparative & Evolutionary Physiology Section"
+    },
+    {
+      "title": "Comparison across species",
+      "description": "Comparing physiological responses across many species to separate general principles from specific adaptations, and to understand how some animals tolerate conditions others cannot.",
+      "source": "American Physiological Society (APS): Lessons from Comparative and Evolutionary Physiology"
+    },
+    {
+      "title": "Physiology in ecological context",
+      "description": "Extending mechanism into the environment: how physiological limits shape where animals can live, how they respond to stress, heat, or scarcity, and what that means under environmental change.",
+      "source": "American Physiological Society (APS): Lessons from Comparative and Evolutionary Physiology"
+    }
+  ],
+  "questions": [
+    {
+      "question": "How does this body system actually work in this animal?",
+      "approach": "By measuring function directly — respirometry, blood chemistry, hormone assays, telemetry — and then manipulating one variable at a time to see what changes."
+    },
+    {
+      "question": "How does the animal keep internal conditions stable when external ones change?",
+      "approach": "By exposing animals to controlled changes in temperature, oxygen, or water availability and tracking the physiological response, including how fast it engages and how long it lasts."
+    },
+    {
+      "question": "What does comparing species reveal that studying one species cannot?",
+      "approach": "By choosing species that face very different demands and testing the same system in each, following the principle of picking the animal best suited to the question."
+    },
+    {
+      "question": "Where are this animal's physiological limits, and what happens near them?",
+      "approach": "By stepwise testing toward the limit under controlled conditions, measuring performance and recovery, with ethical review setting the boundaries of how far testing goes."
+    },
+    {
+      "question": "How does physiology explain where a species can and cannot live?",
+      "approach": "By pairing laboratory measurements of tolerance with field data on where the animal actually occurs, then testing whether the physiological limit predicts the distribution."
+    },
+    {
+      "question": "What is happening at the molecular level behind this response?",
+      "approach": "Through gene expression, protein, and metabolite work in tissue samples, connecting whole-animal responses to the mechanisms producing them."
+    }
+  ],
+  "responsibilities": [
+    "Design and run controlled laboratory or field experiments on physiological function.",
+    "Collect and analyze physiological measurements, samples, and time-series data.",
+    "Maintain animals, equipment, and protocols to research and ethical standards.",
+    "Interpret mechanism in evolutionary or ecological terms and publish results."
+  ],
+  "knowledgeSkills": [
+    "Anatomy, physiology, and endocrinology",
+    "Cell and molecular biology, biochemistry",
+    "Experimental design and quantitative analysis",
+    "Laboratory instrumentation and technique",
+    "Research ethics and animal-use protocols"
+  ],
+  "variations": [
+    {
+      "label": "Two names, one field",
+      "description": "Animal physiology is the phrase you will meet as a course and textbook title. Comparative physiology is what the professional community calls itself, with sections and societies in many countries. Practitioners do not entirely agree it is a discipline rather than an approach, and the term is used somewhat differently by different researchers.",
+      "source": "American Physiological Society (APS): Lessons from Comparative and Evolutionary Physiology"
+    },
+    {
+      "label": "Where it sits",
+      "description": "Physiology courses live in biology, animal science, veterinary, neuroscience, and pre-health programs. Which department teaches it changes the emphasis considerably."
+    },
+    {
+      "label": "Laboratory versus field",
+      "description": "Some work is controlled and instrument-heavy; some is done on free-living animals in their own environment, which is often treated as the harder standard."
+    },
+    {
+      "label": "Adjacent paths",
+      "description": "This area feeds veterinary medicine, biomedical research, animal welfare science, and the physiological side of ecology."
+    }
+  ],
+  "settings": [
+    "University and institute laboratories",
+    "Veterinary and biomedical research settings",
+    "Field research programs",
+    "Industry and applied research organizations"
+  ],
+  "realities": [
+    "Much of the work is laboratory-based and instrument-heavy, with limited contact with animals in natural settings.",
+    "Research careers generally require graduate study; bachelor's-level roles are usually technician or research assistant positions.",
+    "Animal research is governed by institutional review and animal-use protocols.",
+    "The comparative label is not universally used the same way, so read course descriptions rather than titles."
+  ],
+  "careers": [
+    "Animal physiologist",
+    "Neuroethologist / neural-behavior researcher",
+    "University / laboratory research assistant",
+    "Research / laboratory manager — behavioral or biological science",
+    "Research scientist / principal investigator"
+  ],
+  "programs": [
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S., Behavior/Ecology track"
+    },
+    {
+      "code": "UNE-AN",
+      "school": "University of New England",
+      "title": "Animal Behavior B.S. with selected neuroscience"
+    },
+    {
+      "code": "ME-ZOO",
+      "school": "University of Maine",
+      "title": "Zoology B.S. with Ecology concentration"
+    }
+  ],
+  "programCodes": [
+    "UMA-BIO",
+    "UNE-AN",
+    "ME-ZOO"
+  ],
+  "related": [
+    "zoology",
+    "animal-behavior",
+    "veterinary-science",
+    "animal-science"
+  ],
+  "references": [
+    {
+      "title": "American Physiological Society (APS): Comparative & Evolutionary Physiology Section",
+      "type": "Professional society",
+      "url": "https://www.physiology.org/community/aps-communities/sections/Comparative-Evolutionary"
+    },
+    {
+      "title": "American Physiological Society (APS): Lessons from Comparative and Evolutionary Physiology",
+      "type": "Field perspective",
+      "url": "https://journals.physiology.org/doi/full/10.1152/physiol.00003.2015"
+    },
+    {
+      "title": "Society for Integrative and Comparative Biology",
+      "type": "Professional society",
+      "url": "https://sicb.org/"
+    }
+  ]
+}

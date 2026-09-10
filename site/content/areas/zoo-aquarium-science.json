@@ -1,119 +1,195 @@
 {
   "id": "zoo-aquarium-science",
-  "group": "managed",
-  "title": "Zoo & Aquarium Science / Captive Wildlife Management",
-  "short": "The care, behavior, welfare, management, and conservation of wild animals living under human care.",
-  "bigPicture": "This area integrates husbandry, behavior, welfare, animal health, conservation breeding, education, and facility operations into a managed-animal system.",
+  "title": "Zoo & Aquarium Science",
+  "short": "Daily care, behavior, welfare, and population management of wild species living permanently in human care.",
+  "bigPicture": "Zoo and aquarium science covers the husbandry, welfare, behavior, health, and population management of wild species held in professional facilities. It is a real program name as well as a working field, offered as a degree concentration and as technical curricula, usually built around partnerships with accredited institutions. Accreditation matters here more than in most areas: fewer than ten percent of the roughly 2,800 wildlife exhibitors licensed in the United States hold accreditation from the Association of Zoos & Aquariums (AZA), so where someone works says a great deal about the standards they work to.",
+  "terms": [
+    {
+      "term": "Accreditation",
+      "definition": "Independent evaluation against professional standards, involving a detailed application and a multi-day on-site inspection by expert teams."
+    },
+    {
+      "term": "Animals in human care",
+      "definition": "Current professional usage for animals living in managed facilities, replacing the older term captive animals."
+    },
+    {
+      "term": "Behavioral husbandry",
+      "definition": "Using behavior and training knowledge as part of routine daily care rather than as a separate activity."
+    },
+    {
+      "term": "Cooperative care",
+      "definition": "Training animals to participate voluntarily in their own medical and husbandry procedures."
+    },
+    {
+      "term": "Enrichment",
+      "definition": "Environmental and routine changes that give animals opportunity to perform species-typical behaviors."
+    },
+    {
+      "term": "Studbook",
+      "definition": "A record of every individual of a species in a managed population, with pedigree and transfer history."
+    },
+    {
+      "term": "Species Survival Plan (SSP)",
+      "definition": "A cooperative breeding and management program run across accredited institutions for a single species."
+    },
+    {
+      "term": "Registrar",
+      "definition": "The staff member responsible for animal records, permits, transfers, and regulatory compliance."
+    }
+  ],
   "focus": [
     {
-      "title": "Daily husbandry and animal health observation",
-      "description": "Daily husbandry includes feeding, cleaning, enclosure checks, recordkeeping, and close observation of appetite, movement, appearance, social behavior, and other changes that may signal a health or welfare concern."
+      "title": "Husbandry and daily care",
+      "description": "Feeding, cleaning, enrichment, training, health observation, and record-keeping. Keepers and aquarists provide direct care and are the people who notice when something changes.",
+      "source": "Association of Zoos & Aquariums (AZA): careers in zoos and aquariums"
     },
     {
-      "title": "Enrichment, training, and behavioral management",
-      "description": "Enrichment creates opportunities for species-appropriate behavior, while training uses voluntary participation to support healthcare, movement, husbandry, mental stimulation, and safer interactions between animals and staff."
+      "title": "Behavior, training, and welfare",
+      "description": "Behavioral husbandry, cooperative care training, enrichment design, and welfare assessment, drawing directly on applied behavior and welfare science.",
+      "source": "Association of Zoos & Aquariums: about"
     },
     {
-      "title": "Welfare assessment and habitat design",
-      "description": "Welfare assessment combines behavioral, health, environmental, and management evidence. Habitat design translates species biology into spaces for movement, choice, privacy, social interaction, care, and visitor management."
+      "title": "Population and collection management",
+      "description": "Cooperative breeding programs, studbooks, transfers, and collection planning coordinated across institutions rather than run facility by facility.",
+      "source": "Michigan State: Zoo and Aquarium Science"
     },
     {
-      "title": "Conservation breeding and population management",
-      "description": "Conservation breeding coordinates reproduction while maintaining genetic diversity and sustainable populations. Population managers use pedigrees, demographics, transfers, institutional capacity, and long-term species plans."
+      "title": "Conservation, research, and education",
+      "description": "Field conservation support, in-house research, and public education programs, which accredited institutions treat as part of their mandate rather than an extra.",
+      "source": "Association of Zoos & Aquariums: about"
     }
   ],
   "questions": [
-    "What care and environment support species-appropriate behavior and good welfare?",
-    "How should social groups, feeding, enrichment, and training be structured?",
-    "How can animals voluntarily participate in veterinary procedures?",
-    "How can managed populations contribute responsibly to conservation?"
+    {
+      "question": "What does this species need to thrive in this setting?",
+      "approach": "By starting from wild natural history — diet, space, social structure, climate — and adapting it to what the facility can actually provide."
+    },
+    {
+      "question": "How do we know whether this animal's welfare is good?",
+      "approach": "Through behavioral observation against a species ethogram, body condition and health records, and physiological measures where available."
+    },
+    {
+      "question": "Is this enrichment actually working?",
+      "approach": "By recording behavior before, during, and after, and checking whether the target behavior changed rather than whether the animal appeared to engage."
+    },
+    {
+      "question": "How do we train an animal to take part in its own care?",
+      "approach": "Through positive reinforcement training built in small approximations, so procedures like blood draws happen voluntarily rather than under restraint."
+    },
+    {
+      "question": "How should this population be managed across institutions over time?",
+      "approach": "Using studbooks and population software to track pedigrees and recommend transfers and pairings that keep genetic diversity across the whole managed population."
+    },
+    {
+      "question": "What should visitors take away, and does the program achieve it?",
+      "approach": "By setting explicit learning or behavior-change goals and evaluating with surveys and observation, rather than assuming exposure produces understanding."
+    }
   ],
   "responsibilities": [
-    "Prepare diets, clean habitats, inspect facilities, observe animals, and maintain detailed records.",
-    "Plan enrichment or training and evaluate behavioral and welfare outcomes.",
-    "Support veterinary care, transport, breeding, introductions, and safety procedures.",
-    "Contribute to conservation, research, education, population planning, or program coordination."
+    "Provide daily husbandry, feeding, cleaning, and health monitoring.",
+    "Design and deliver enrichment and training programs.",
+    "Keep detailed animal records and follow institutional protocols.",
+    "Support conservation, research, and public education activities."
   ],
   "knowledgeSkills": [
-    "Species biology, natural history, and husbandry",
-    "Behavior, learning, enrichment, and welfare",
-    "Nutrition, health observation, and biosecurity",
-    "Safe handling, facilities, and emergency procedures",
-    "Recordkeeping, teamwork, and public communication"
+    "Species husbandry and natural history",
+    "Behavior, training, and enrichment",
+    "Welfare assessment and record-keeping",
+    "Safety, handling, and facility protocols",
+    "Public speaking and visitor interaction"
   ],
   "variations": [
     {
-      "label": "Department",
-      "description": "Keeper, aquarist, training, welfare, nutrition, research, population management, education, and curatorial roles differ greatly."
+      "label": "Accreditation matters",
+      "description": "AZA is the independent accrediting body, and its process involves a detailed application and a multi-day on-site inspection by expert teams. Fewer than ten percent of U.S. Department of Agriculture (USDA)-licensed wildlife exhibitors are accredited. For someone choosing internships or a first job, accreditation is one of the clearest available signals of professional standards.",
+      "source": "Association of Zoos & Aquariums: about"
     },
     {
-      "label": "Animal contact",
-      "description": "Care staff work closely with animals; researchers, planners, educators, and managers may have much less direct contact."
+      "label": "Program shape",
+      "description": "This appears as a degree concentration inside a zoology or biology B.S., as a certificate alongside another major, and as a community-college technical curriculum. Programs are typically built around partnerships with accredited institutions and a required internship.",
+      "source": "Michigan State: Zoo and Aquarium Science"
     },
     {
-      "label": "Taxa and facility",
-      "description": "Aquarium systems, bird programs, large mammals, reptiles, ambassador animals, sanctuaries, and conservation centers require different expertise."
+      "label": "Terminology",
+      "description": "Current professional usage is animals in human care rather than captive animals. The older phrasing still appears in some program titles and course descriptions."
     },
     {
-      "label": "Career stage",
-      "description": "Early roles are often physical and routine-intensive; later roles may shift toward planning, supervision, coordination, or specialization."
+      "label": "Role range",
+      "description": "Keeper and aquarist work, training, education, veterinary support, records and registrar work, nutrition, curation, and research all sit inside these institutions."
     }
   ],
   "settings": [
-    "Zoos, aquariums, sanctuaries, and conservation centers",
-    "Breeding and population-management programs",
-    "Animal hospitals and nutrition facilities",
-    "Education, research, and administrative departments"
+    "Accredited zoos and aquariums",
+    "Sanctuaries and wildlife parks",
+    "Science centers and nature centers",
+    "Related conservation and research programs"
   ],
   "realities": [
-    "Animal-care schedules commonly include early mornings, weekends, holidays, cleaning, and outdoor work.",
-    "Jobs are competitive, and substantial volunteer, internship, or paid animal-care experience is often expected.",
-    "Emotional demands can include illness, aging animals, transfers, safety risks, and euthanasia.",
-    "Some specialized roles require graduate education or years of operational experience."
+    "The work is physical, scheduled around animals rather than people, and includes weekends, holidays, and bad weather.",
+    "Entry is competitive and usually runs through internships and volunteer work; starting pay is low relative to the education required.",
+    "Much of the day is cleaning, food preparation, and record-keeping rather than direct animal interaction.",
+    "Advancement is limited by the number of positions at any one institution and often requires relocating."
   ],
   "careers": [
     "Zookeeper / animal-care specialist",
     "Aquarist / aquarium animal-care specialist",
+    "Zoo / aquarium animal trainer",
+    "Ambassador animal specialist / animal programs keeper",
     "Zoo behavioral-husbandry specialist",
     "Zoo / aquarium welfare specialist",
-    "Conservation-breeding technician",
-    "Population biologist / zoo population management scientist",
+    "Zoo registrar / animal records & permits specialist",
     "Zoo animal curator",
-    "Zoo research coordinator"
+    "SSP coordinator / studbook keeper",
+    "Zoo / aquarium educator"
+  ],
+  "programs": [
+    {
+      "code": "URI-AZ",
+      "school": "University of Rhode Island",
+      "title": "Animal Science with Zoo & Aquarium Science certificate"
+    },
+    {
+      "code": "URI-WZ",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology with Zoo & Aquarium Science certificate"
+    },
+    {
+      "code": "UMA-AS",
+      "school": "University of Massachusetts Amherst",
+      "title": "Animal Science, Management/Behavior track"
+    }
   ],
   "programCodes": [
     "URI-AZ",
     "URI-WZ",
-    "UNE-AB",
-    "UNE-AN",
     "UMA-AS"
   ],
   "related": [
     "animal-welfare",
     "animal-behavior",
-    "animal-science",
-    "wildlife-conservation"
+    "environmental-education",
+    "conservation-biology"
   ],
   "references": [
     {
-      "title": "AZA Career Center",
-      "type": "Zoo and aquarium job examples",
-      "url": "https://www.aza.org/jobs"
+      "title": "Association of Zoos & Aquariums: about",
+      "type": "Professional society",
+      "url": "https://www.aza.org/about-us"
     },
     {
-      "title": "URI: Zoo & Aquarium Science certificate",
+      "title": "Association of Zoos & Aquariums (AZA): what accreditation means",
+      "type": "Accreditation standard",
+      "url": "https://www.aza.org/what-is-accreditation"
+    },
+    {
+      "title": "Association of Zoos & Aquariums (AZA): careers in zoos and aquariums",
+      "type": "Career guidance",
+      "url": "https://www.aza.org/careers_in_zoos_and_aquariums"
+    },
+    {
+      "title": "Michigan State: Zoo and Aquarium Science",
       "type": "Undergraduate example",
-      "url": "https://web.uri.edu/favs/academics/zoo-and-aquarium-science-certificate/"
-    },
-    {
-      "title": "O*NET: Animal Caretakers",
-      "type": "Related occupational data",
-      "url": "https://www.onetonline.org/link/summary/39-2021.00"
-    },
-    {
-      "title": "O*NET: Animal Trainers",
-      "type": "Related occupational data",
-      "url": "https://www.onetonline.org/link/summary/39-2011.00"
+      "url": "https://integrativebiology.natsci.msu.edu/undergraduate-program/undergraduate-degrees/zoo-and-aquarium-science.aspx"
     }
   ]
 }

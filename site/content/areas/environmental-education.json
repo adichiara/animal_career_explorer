@@ -1,0 +1,176 @@
+{
+  "id": "environmental-education",
+  "title": "Environmental Education & Interpretation",
+  "short": "Helping the public understand animals and the science about them, in zoos, museums, parks, classrooms, and media.",
+  "bigPicture": "This area covers the professional work of connecting people to the natural world. Interpretation is its own profession with a national association, a peer-reviewed journal, and certifications that agencies list as preferred or required qualifications. Environmental education is the broader umbrella, held by a long-established association with tens of thousands of members. For many people this is the first paid job in the animal field, and for some it becomes the whole career.",
+  "terms": [
+    {
+      "term": "Interpretation",
+      "definition": "The profession of connecting audiences to natural and cultural resources through programs built on a theme rather than a list of facts."
+    },
+    {
+      "term": "Environmental education",
+      "definition": "The broader field of teaching about environmental systems and issues, in schools and community settings as well as at sites."
+    },
+    {
+      "term": "Thematic programming",
+      "definition": "Building a program around one central message so audiences leave with a takeaway rather than assorted facts."
+    },
+    {
+      "term": "Docent",
+      "definition": "A trained volunteer who delivers educational programs or staffs interpretive stations."
+    },
+    {
+      "term": "Formative evaluation",
+      "definition": "Testing a program while developing it so it can be improved before full delivery."
+    },
+    {
+      "term": "Science communication",
+      "definition": "Translating research for general audiences without distorting what the research actually shows."
+    },
+    {
+      "term": "State science standards",
+      "definition": "The required content for each grade level, which programs are mapped to so schools can justify the visit."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Interpretation",
+      "description": "Designing and delivering programs that connect visitors to natural and cultural resources, built on an established body of theory about how to make programs purposeful, relevant, and thematic rather than merely informative.",
+      "source": "National Association for Interpretation (NAI): Certified Interpretive Guide program"
+    },
+    {
+      "title": "Program design and evaluation",
+      "description": "Building curricula and public programs against learning goals, and assessing whether audiences actually took away what was intended.",
+      "source": "North American Association for Environmental Education (NAAEE): careers in interpretation"
+    },
+    {
+      "title": "Science communication",
+      "description": "Translating research for general audiences through writing, media, exhibits, and public speaking without distorting it."
+    },
+    {
+      "title": "Working with schools and communities",
+      "description": "Partnering with teachers, districts, and community groups so programs connect to curricula and reach people who would not otherwise come.",
+      "source": "North American Association for Environmental Education (NAAEE): careers in interpretation"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What should this audience take away, and why does it matter to them?",
+      "approach": "By identifying the audience first, then building the program around a single clear theme connected to something they already care about."
+    },
+    {
+      "question": "How do we know whether the program worked?",
+      "approach": "Through evaluation designed in advance — pre- and post-questions, observation, follow-up — rather than relying on whether the audience seemed to enjoy it."
+    },
+    {
+      "question": "How do we stay accurate while making it accessible?",
+      "approach": "By working from primary sources, having content reviewed by someone with subject expertise, and being explicit about uncertainty instead of smoothing it over."
+    },
+    {
+      "question": "How do we handle a contested or uncomfortable topic?",
+      "approach": "By presenting evidence clearly, acknowledging genuine disagreement where it exists, and distinguishing what is known from what is debated."
+    },
+    {
+      "question": "Who is not being reached, and what would change that?",
+      "approach": "By looking at who actually attends against who lives nearby, and asking non-participants directly what the barriers are."
+    },
+    {
+      "question": "How do we connect this to what teachers already have to cover?",
+      "approach": "By mapping programs to state science standards and working with teachers on what fits their existing curriculum and schedule."
+    }
+  ],
+  "responsibilities": [
+    "Develop and deliver interpretive programs, tours, and lessons.",
+    "Create exhibit text, signage, and educational materials.",
+    "Train and coordinate volunteers, docents, and seasonal staff.",
+    "Evaluate programs and adjust based on results."
+  ],
+  "knowledgeSkills": [
+    "Interpretive theory and program design",
+    "Public speaking and audience management",
+    "Solid grounding in the underlying science",
+    "Writing for general audiences",
+    "Evaluation and basic program assessment"
+  ],
+  "variations": [
+    {
+      "label": "There is a credential",
+      "description": "The National Association for Interpretation offers Certified Interpretive Guide and related certifications, delivered through multi-day training courses. Many agencies and employers actively look for them, and they are accessible early, which makes this one of the few areas here where a meaningful credential is within reach before graduation.",
+      "source": "National Association for Interpretation (NAI): Certified Interpretive Guide program"
+    },
+    {
+      "label": "Two umbrellas",
+      "description": "Interpretation, associated with parks, nature centers, zoos, and heritage sites, and environmental education, associated with schools, curricula, and community programs, overlap heavily but have distinct professional communities.",
+      "source": "North American Association for Environmental Education (NAAEE): careers in interpretation"
+    },
+    {
+      "label": "Not classroom teaching",
+      "description": "This is not the same as K-12 science education, which requires teacher licensure and follows a different route entirely."
+    },
+    {
+      "label": "Entry point or destination",
+      "description": "Many people pass through education roles on the way elsewhere; others build entire careers in interpretation, program management, and exhibit development."
+    }
+  ],
+  "settings": [
+    "Parks, refuges, and public lands",
+    "Zoos, aquariums, and nature centers",
+    "Museums and science centers",
+    "Nonprofits, schools, and community programs"
+  ],
+  "realities": [
+    "Seasonal and part-time positions are common, particularly at the start.",
+    "Pay is generally lower than in research or agency biology roles.",
+    "The work is public-facing and performance-heavy, which suits some people and not others.",
+    "Scientific accuracy still matters; being engaging is not a substitute for being right."
+  ],
+  "careers": [
+    "Naturalist / interpretive educator",
+    "Wildlife / environmental educator",
+    "Zoo / aquarium educator",
+    "Conservation outreach / program coordinator",
+    "Science writer / communicator — biology and animals",
+    "Museum / natural-history education or collections work"
+  ],
+  "programs": [
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    },
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology, behavioral ecology emphasis"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Wildlife Ecology & Conservation"
+    }
+  ],
+  "programCodes": [
+    "URI-W",
+    "ME-WE",
+    "UMA-WEC"
+  ],
+  "related": [
+    "zoo-aquarium-science",
+    "conservation-biology",
+    "anthrozoology",
+    "ecology"
+  ],
+  "references": [
+    {
+      "title": "North American Association for Environmental Education (NAAEE): careers in interpretation",
+      "type": "Professional society",
+      "url": "https://jobs.naaee.org/careers/interpretation"
+    },
+    {
+      "title": "National Association for Interpretation (NAI): Certified Interpretive Guide program",
+      "type": "Credential",
+      "url": "https://eepro.naaee.org/learning/certified-interpretive-guide-programs"
+    }
+  ]
+}

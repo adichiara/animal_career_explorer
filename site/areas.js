@@ -5,14 +5,27 @@
   const app = document.getElementById('app');
   const storageKey = 'animalExplorerAreasV1';
   const areaColors = ['#176d8c', '#087d72', '#6457a6', '#b95622', '#a83c61'];
-  const views = ['overview', 'work', 'knowledge', 'paths', 'sources'];
-  const viewLabels = {
-    overview: 'Overview',
-    work: 'Questions & work',
-    knowledge: 'Knowledge',
-    paths: 'Careers & study',
-    sources: 'Sources'
+  const views = ['overview', 'focus', 'variations', 'questions', 'work', 'knowledge', 'settings', 'realities', 'careers', 'study', 'glossary', 'sources'];
+  const viewMeta = {
+    overview: { label: 'Overview', icon: '🧭', color: '#176d8c', intro: 'The scope of the field and routes into its detailed sections.' },
+    focus: { label: 'Main focus', icon: '🔎', color: '#087d72', intro: 'The subjects, processes, and problems at the center of this field.' },
+    variations: { label: 'How it varies', icon: '↔', color: '#5969a8', intro: 'Ways the emphasis, methods, species, and daily work can differ.' },
+    questions: { label: 'Questions investigated', icon: '?', color: '#6b4ca5', intro: 'Questions that guide scientific, clinical, operational, and management work.' },
+    work: { label: 'Responsibilities', icon: '✓', color: '#b95622', intro: 'The activities professionals and students carry out.' },
+    knowledge: { label: 'Knowledge & skills', icon: '◆', color: '#176d8c', intro: 'Scientific, technical, analytical, and communication preparation used in the field.' },
+    settings: { label: 'Work settings', icon: '⌂', color: '#2c765f', intro: 'Places and organizations where this work occurs.' },
+    realities: { label: 'Practical realities', icon: '!', color: '#9a5a20', intro: 'Conditions that can shape schedules, workload, training, and early-career experience.' },
+    careers: { label: 'Careers', icon: '▣', color: '#a83c61', intro: 'Example roles connected to the field, including their focus and preparation.' },
+    study: { label: 'College study', icon: '🎓', color: '#8b6418', intro: 'Undergraduate paths with different combinations of breadth, specialization, and experience.' },
+    glossary: { label: 'Glossary', icon: 'Aa', color: '#367187', intro: 'Concepts and technical language encountered in courses and professional work.' },
+    sources: { label: 'Sources & connections', icon: '↗', color: '#536677', intro: 'Professional resources and neighboring fields for further exploration.' }
   };
+  const overviewGroups = [
+    { label: 'Understand the field', views: ['focus', 'variations', 'questions'] },
+    { label: 'Experience the work', views: ['work', 'knowledge', 'settings', 'realities'] },
+    { label: 'Explore paths', views: ['careers', 'study'] },
+    { label: 'Reference', views: ['glossary', 'sources'] }
+  ];
   const kindLabels = {
     topics: 'Focus topic',
     variations: 'How the work varies',
@@ -30,6 +43,27 @@
 
   let areas = [];
   let browseSelection = '';
+
+  const photos = {
+    field: {
+      url: 'https://www.fws.gov/sites/default/files/2023-03/GMT%20veg%20transect%20072810%20LD.jpg',
+      alt: 'A wildlife biologist records measurements along a grassland survey transect.',
+      credit: 'Lauren Dennhardt / U.S. Fish & Wildlife Service',
+      source: 'https://www.fws.gov/media/sara-conducting-belt-transect-survey-grassland-monitoring-team-photo-credit-lauren'
+    },
+    health: {
+      url: 'https://www.fws.gov/sites/default/files/images/2024-03-3/5847.jpg',
+      alt: 'Wildlife researchers conduct a veterinary examination of a Florida panther in the field.',
+      credit: 'U.S. Fish & Wildlife Service',
+      source: 'https://www.fws.gov/media/florida-panther-research'
+    },
+    people: {
+      url: 'https://media.fisheries.noaa.gov/dam-migration/mteapstaff_birchaquarium-swfsc-mmtd-noaa.jpg',
+      alt: 'A marine educator speaks with visitors at an aquarium outreach exhibit.',
+      credit: 'NOAA Fisheries',
+      source: 'https://www.fisheries.noaa.gov/west-coast/science-data/marine-turtle-outreach'
+    }
+  };
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -57,6 +91,11 @@
 
   function areaById(id) { return areas.find(area => area.id === id); }
   function colorFor(area) { return area.color || areaColors[Math.max(0, areas.indexOf(area)) % areaColors.length]; }
+  function photoFor(area) {
+    if (['zoology', 'ecology', 'wildlife-ecology-management', 'conservation-biology'].includes(area.id)) return photos.field;
+    if (['animal-physiology', 'veterinary-science', 'wildlife-health', 'wildlife-rehabilitation', 'animal-science'].includes(area.id)) return photos.health;
+    return photos.people;
+  }
   function programByCode(code) { return D.programs.find(program => program.code === code); }
   function careerByName(name) { return D.careers.find(career => career.name === name); }
   function aspectKey(areaId, kind, index) { return `${areaId}::${kind}::${index}`; }
@@ -142,10 +181,10 @@
       renderAreas();
     }
     app.focus({ preventScroll: true });
-    window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
   function renderAreas(filterText) {
+    document.title = 'Animal Fields & Work Explorer';
     app.innerHTML = `<div class="page browse-page">
       <header class="browse-heading">
         <div><div class="eyebrow">${areas.length} fields and work areas</div><h1>Explore animal-related fields</h1><p class="lead">Choose an area to see its scope, central questions, work, preparation, and possible paths.</p></div>
@@ -169,32 +208,30 @@
     }
     if (!matches.some(area => area.id === browseSelection)) browseSelection = matches[0].id;
     const selected = areaById(browseSelection);
-    root.innerHTML = `<section class="area-browser" aria-label="Area explorer">
+    const photo = photoFor(selected);
+    root.innerHTML = `<label class="mobile-area-picker"><span>Choose a field</span><select id="browseAreaSelect">${matches.map(area => `<option value="${esc(area.id)}" ${area.id === selected.id ? 'selected' : ''}>${esc(area.title)}</option>`).join('')}</select></label>
+    <section class="area-browser" aria-label="Area explorer">
       <div class="area-browser-list" role="listbox" aria-label="Animal-related fields">
         ${matches.map(area => `<button type="button" class="area-choice ${area.id === selected.id ? 'selected' : ''}" data-preview-area="${esc(area.id)}" role="option" aria-selected="${area.id === selected.id}"><span>${esc(area.title)}</span><small>${esc(area.short)}</small></button>`).join('')}
       </div>
       <article class="area-preview" style="--group-color:${colorFor(selected)}">
+        <figure class="preview-photo"><img src="${esc(photo.url)}" alt="${esc(photo.alt)}"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a></figcaption></figure>
         <div class="preview-topline"><span>Field overview</span>${state.savedAreas.includes(selected.id) ? '<span class="saved-label">Saved</span>' : ''}</div>
         <h2>${esc(selected.title)}</h2>
-        <p class="preview-intro">${esc(selected.bigPicture)}</p>
-        <div class="preview-section"><h3>Central areas of focus</h3><div class="focus-chips">${selected.focus.map(item => `<span>${esc(item.title)}</span>`).join('')}</div></div>
+        <p class="preview-intro">${esc(selected.short)}</p>
         <div class="preview-stats"><span><strong>${selected.questions.length}</strong> questions</span><span><strong>${selected.careers.length}</strong> careers</span><span><strong>${selected.programs.length}</strong> college paths</span></div>
         <a class="btn primary" href="#area/${selected.id}/overview">Open ${esc(selected.title)}</a>
       </article>
     </section>`;
   }
 
-  function areaNavigation(currentId) {
-    return `<aside class="area-nav" aria-label="Field navigation"><strong>Explore fields</strong>
-      ${areas.map(area => `<a class="${area.id === currentId ? 'current' : ''}" href="#area/${area.id}/overview">${esc(area.title)}</a>`).join('')}
-      <a class="summary-link" href="#summary">Saved &amp; marked</a>
-    </aside>`;
-  }
-
-  function viewNavigation(area, activeView) {
-    return `<nav class="view-tabs" aria-label="Explore ${esc(area.title)}">
-      ${views.map(view => `<a href="#area/${area.id}/${view}" class="${view === activeView ? 'active' : ''}" ${view === activeView ? 'aria-current="page"' : ''}>${viewLabels[view]}</a>`).join('')}
-    </nav>`;
+  function explorerControls(area, activeView, saved) {
+    return `<div class="explorer-controls">
+      <a class="back" href="#areas" aria-label="Return to all areas">← All areas</a>
+      <label><span>Field</span><select id="fieldSelect">${areas.map(item => `<option value="${esc(item.id)}" ${item.id === area.id ? 'selected' : ''}>${esc(item.title)}</option>`).join('')}</select></label>
+      <label><span>Section</span><select id="sectionSelect">${views.map(view => `<option value="${view}" ${view === activeView ? 'selected' : ''}>${esc(viewMeta[view].label)}</option>`).join('')}</select></label>
+      <button id="saveArea" class="save-control ${saved ? 'saved' : ''}" type="button">${saved ? '★ Saved' : '☆ Save'}</button>
+    </div>`;
   }
 
   function reactionButtons(key) {
@@ -320,61 +357,53 @@
   }
 
   function contentBrowser(area, groups) {
-    const firstGroup = groups.find(group => group.items.length);
-    const firstKind = firstGroup.kind;
-    const firstItem = firstGroup.items[0];
+    const available = groups.filter(group => group.items.length);
+    const flattened = available.flatMap(group => group.items.map((item, index) => ({ kind: group.kind, index, item })));
+    const first = flattened[0];
     return `<div class="content-browser" data-content-browser>
-      <div class="browser-menu">${groups.map(group => `<section class="browser-menu-group"><h3>${esc(group.label)}</h3>${group.items.map((item, index) => `<button type="button" class="browser-item ${group.kind === firstKind && index === 0 ? 'selected' : ''}" data-browser-kind="${group.kind}" data-browser-index="${index}" aria-pressed="${group.kind === firstKind && index === 0}"><span>${esc(menuItemTitle(group.kind, item))}</span><b aria-hidden="true">›</b></button>`).join('')}</section>`).join('')}</div>
-      <article class="browser-detail" aria-live="polite">${browserDetailHtml(area, firstKind, firstItem, 0)}</article>
+      <div class="item-toolbar">
+        <label><span>${available.length === 1 ? esc(available[0].label) : 'Choose an item'}</span>
+          <select data-item-select>${available.map(group => `<optgroup label="${esc(group.label)}">${group.items.map((item, index) => `<option value="${group.kind}:${index}">${esc(menuItemTitle(group.kind, item))}</option>`).join('')}</optgroup>`).join('')}</select>
+        </label>
+        <div class="item-stepper"><span data-item-counter>1 of ${flattened.length}</span><button type="button" data-item-step="-1" disabled aria-label="Previous item">←</button><button type="button" data-item-step="1" ${flattened.length < 2 ? 'disabled' : ''} aria-label="Next item">→</button></div>
+      </div>
+      <article class="browser-detail" aria-live="polite">${browserDetailHtml(area, first.kind, first.item, first.index)}</article>
     </div>`;
   }
 
   function panelContent(area, activeView) {
     const programs = area.programs.map(program => ({ ...(programByCode(program.code) || {}), ...program }));
     const configurations = {
-      overview: {
-        title: 'Scope and variation',
-        intro: 'Explore the main subjects within this field and the ways its emphasis can change across roles.',
-        groups: [{ kind: 'topics', label: 'Areas of focus', items: area.focus }, { kind: 'variations', label: 'How the work varies', items: area.variations }]
-      },
-      work: {
-        title: 'Questions and professional work',
-        intro: 'See what people try to understand and the responsibilities used to investigate, care, manage, or make decisions.',
-        groups: [{ kind: 'questions', label: 'Questions people investigate', items: area.questions }, { kind: 'activities', label: 'Responsibilities and activities', items: area.responsibilities }]
-      },
-      knowledge: {
-        title: 'Knowledge, settings, and working realities',
-        intro: 'Examine the preparation used in the field, where the work happens, and conditions that shape the day-to-day experience.',
-        groups: [{ kind: 'skills', label: 'Knowledge and skills', items: area.knowledgeSkills }, { kind: 'settings', label: 'Work settings', items: area.settings }, { kind: 'realities', label: 'Practical realities', items: area.realities }, { kind: 'terms', label: 'Field glossary', items: area.terms }]
-      },
-      paths: {
-        title: 'Careers and undergraduate paths',
-        intro: 'Compare example roles with programs that offer different combinations of scientific breadth, specialization, and experience.',
-        groups: [{ kind: 'careers', label: 'Career examples', items: area.careers }, { kind: 'programs', label: 'Undergraduate paths', items: programs }]
-      },
-      sources: {
-        title: 'Sources and related fields',
-        intro: 'Continue with professional organizations, field references, official program information, and neighboring areas of study and work.',
-        groups: [{ kind: 'references', label: 'External resources', items: area.references }, { kind: 'related', label: 'Related areas', items: area.related }]
-      }
+      focus: [{ kind: 'topics', label: 'Areas of focus', items: area.focus }],
+      variations: [{ kind: 'variations', label: 'How the work varies', items: area.variations }],
+      questions: [{ kind: 'questions', label: 'Questions people investigate', items: area.questions }],
+      work: [{ kind: 'activities', label: 'Responsibilities and activities', items: area.responsibilities }],
+      knowledge: [{ kind: 'skills', label: 'Knowledge and skills', items: area.knowledgeSkills }],
+      settings: [{ kind: 'settings', label: 'Work settings', items: area.settings }],
+      realities: [{ kind: 'realities', label: 'Practical realities', items: area.realities }],
+      careers: [{ kind: 'careers', label: 'Career examples', items: area.careers }],
+      study: [{ kind: 'programs', label: 'Undergraduate paths', items: programs }],
+      glossary: [{ kind: 'terms', label: 'Field glossary', items: area.terms }],
+      sources: [{ kind: 'references', label: 'External resources', items: area.references }, { kind: 'related', label: 'Related areas', items: area.related }]
     };
-    const config = configurations[activeView];
-    return `<section class="view-panel"><header class="view-heading"><div><span class="view-label">${viewLabels[activeView]}</span><h2>${esc(config.title)}</h2><p>${esc(config.intro)}</p></div></header>${contentBrowser(area, config.groups)}</section>`;
+    const meta = viewMeta[activeView];
+    if (activeView === 'overview') {
+      const photo = photoFor(area);
+      return `<section class="view-panel overview-panel" style="--section-color:${meta.color}">
+        <header class="view-heading"><span class="view-icon" aria-hidden="true">${meta.icon}</span><div><span class="view-label">${esc(area.title)}</span><h1>${esc(meta.label)}</h1></div></header>
+        <div class="overview-feature"><figure><img src="${esc(photo.url)}" alt="${esc(photo.alt)}"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a></figcaption></figure><div><p class="overview-short">${esc(area.short)}</p><p>${esc(area.bigPicture)}</p><div class="overview-stats"><span><strong>${area.focus.length}</strong> focus areas</span><span><strong>${area.questions.length}</strong> questions</span><span><strong>${area.careers.length}</strong> careers</span></div></div></div>
+        <nav class="section-menu" aria-label="Sections in ${esc(area.title)}">${overviewGroups.map(group => `<section><h2>${esc(group.label)}</h2>${group.views.map(view => `<a href="#area/${area.id}/${view}" style="--tile-color:${viewMeta[view].color}"><span class="menu-icon" aria-hidden="true">${viewMeta[view].icon}</span><span>${esc(viewMeta[view].label)}</span></a>`).join('')}</section>`).join('')}</nav>
+      </section>`;
+    }
+    return `<section class="view-panel" style="--section-color:${meta.color}"><header class="view-heading"><span class="view-icon" aria-hidden="true">${meta.icon}</span><div><span class="view-label">${esc(area.title)}</span><h1>${esc(meta.label)}</h1><p>${esc(meta.intro)}</p></div></header>${contentBrowser(area, configurations[activeView])}</section>`;
   }
 
   function renderArea(id, activeView) {
     const area = areaById(id);
     if (!area) { location.hash = 'areas'; return; }
+    document.title = `${area.title} — ${viewMeta[activeView].label}`;
     const saved = state.savedAreas.includes(area.id);
-    app.innerHTML = `<div class="page detail-page"><div class="detail-shell">
-      ${areaNavigation(area.id)}
-      <div class="detail-main" style="--group-color:${colorFor(area)}">
-        <a class="back" href="#areas">← All areas</a>
-        <section class="detail-hero"><div><div class="eyebrow">Animal field &amp; work area</div><h1>${esc(area.title)}</h1><p class="lead">${esc(area.bigPicture)}</p></div><button id="saveArea" class="btn ${saved ? 'saved' : ''}" type="button">${saved ? 'Saved' : 'Save area'}</button></section>
-        ${viewNavigation(area, activeView)}
-        ${panelContent(area, activeView)}
-      </div>
-    </div></div>`;
+    app.innerHTML = `<div class="page detail-page"><div class="detail-main" style="--group-color:${colorFor(area)}">${explorerControls(area, activeView, saved)}${panelContent(area, activeView)}</div></div>`;
 
     document.getElementById('saveArea').addEventListener('click', () => {
       const index = state.savedAreas.indexOf(area.id);
@@ -407,6 +436,7 @@
   }
 
   function renderSummary() {
+    document.title = 'Saved areas and quick marks';
     const entries = allReactionEntries();
     const up = entries.filter(entry => entry.value === 'up');
     const down = entries.filter(entry => entry.value === 'down');
@@ -417,6 +447,58 @@
     </div>`;
   }
 
+  function collectionsForArea(area) {
+    return {
+      topics: area.focus,
+      variations: area.variations,
+      questions: area.questions,
+      activities: area.responsibilities,
+      skills: area.knowledgeSkills,
+      settings: area.settings,
+      realities: area.realities,
+      terms: area.terms,
+      careers: area.careers,
+      programs: area.programs.map(program => ({ ...(programByCode(program.code) || {}), ...program })),
+      references: area.references,
+      related: area.related
+    };
+  }
+
+  function updateItemBrowser(browser, area) {
+    const select = browser.querySelector('[data-item-select]');
+    const [kind, rawIndex] = select.value.split(':');
+    const index = Number(rawIndex);
+    const items = collectionsForArea(area)[kind];
+    browser.querySelector('.browser-detail').innerHTML = browserDetailHtml(area, kind, items[index], index);
+    browser.querySelector('[data-item-counter]').textContent = `${select.selectedIndex + 1} of ${select.options.length}`;
+    const buttons = browser.querySelectorAll('[data-item-step]');
+    buttons[0].disabled = select.selectedIndex === 0;
+    buttons[1].disabled = select.selectedIndex === select.options.length - 1;
+  }
+
+  app.addEventListener('change', event => {
+    if (event.target.id === 'browseAreaSelect') {
+      browseSelection = event.target.value;
+      const q = document.getElementById('areaSearch') ? document.getElementById('areaSearch').value.trim().toLowerCase() : '';
+      renderAreaBrowser(q);
+      return;
+    }
+    if (event.target.id === 'fieldSelect') {
+      const parts = (location.hash || '#area').slice(1).split('/');
+      location.hash = `area/${event.target.value}/${views.includes(parts[2]) ? parts[2] : 'overview'}`;
+      return;
+    }
+    if (event.target.id === 'sectionSelect') {
+      const parts = (location.hash || '').slice(1).split('/');
+      location.hash = `area/${parts[1]}/${event.target.value}`;
+      return;
+    }
+    if (event.target.matches('[data-item-select]')) {
+      const areaId = (location.hash || '').slice(1).split('/')[1];
+      updateItemBrowser(event.target.closest('[data-content-browser]'), areaById(areaId));
+    }
+  });
+
   app.addEventListener('click', event => {
     const previewButton = event.target.closest('[data-preview-area]');
     if (previewButton) {
@@ -426,35 +508,13 @@
       return;
     }
 
-    const browserButton = event.target.closest('[data-browser-kind]');
-    if (browserButton) {
-      const browser = browserButton.closest('[data-content-browser]');
-      const hashParts = (location.hash || '').slice(1).split('/');
-      const area = areaById(hashParts[1]);
-      const kind = browserButton.dataset.browserKind;
-      const index = Number(browserButton.dataset.browserIndex);
-      const programs = area.programs.map(program => ({ ...(programByCode(program.code) || {}), ...program }));
-      const collections = {
-        topics: area.focus,
-        variations: area.variations,
-        questions: area.questions,
-        activities: area.responsibilities,
-        skills: area.knowledgeSkills,
-        settings: area.settings,
-        realities: area.realities,
-        terms: area.terms,
-        careers: area.careers,
-        programs,
-        references: area.references,
-        related: area.related
-      };
-      browser.querySelectorAll('[data-browser-kind]').forEach(control => {
-        const selected = control === browserButton;
-        control.classList.toggle('selected', selected);
-        control.setAttribute('aria-pressed', String(selected));
-      });
-      browser.querySelector('.browser-detail').innerHTML = browserDetailHtml(area, kind, collections[kind][index], index);
-      if (window.matchMedia('(max-width: 760px)').matches) browser.querySelector('.browser-detail').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    const stepButton = event.target.closest('[data-item-step]');
+    if (stepButton) {
+      const browser = stepButton.closest('[data-content-browser]');
+      const select = browser.querySelector('[data-item-select]');
+      select.selectedIndex += Number(stepButton.dataset.itemStep);
+      const areaId = (location.hash || '').slice(1).split('/')[1];
+      updateItemBrowser(browser, areaById(areaId));
       return;
     }
 

@@ -5,13 +5,13 @@
 ## Experience
 
 1. Browse 15 overlapping fields and work areas in a searchable selection workspace.
-2. Open one area at a time and move among five focused views: Overview, Questions & Work, Knowledge, Careers & Study, and Sources.
-3. Select any entry to update an adjacent detail panel with its explanation, examples, connections, and related source without expanding the page.
-4. Optionally use compact thumbs-up or thumbs-down controls inside the detail panel when something stands out.
-5. Review related careers, undergraduate paths, adjacent areas, and the full source collection.
-6. Return to saved areas and quick marks. The experience does not calculate a fit score, rank careers, or eliminate an area.
+2. Choose the field and current section from persistent menus designed for a mobile screen.
+3. Move through short, distinct sections for focus, variation, questions, responsibilities, knowledge, settings, realities, careers, college study, glossary terms, and sources.
+4. Choose one item at a time from a menu to read its full explanation, examples, connections, and related source without expanding the page or triggering automatic scrolling.
+5. View Careers and College Study separately, while retaining links to the complete research tools.
+6. Optionally save areas or use compact thumbs-up and thumbs-down controls when something stands out.
 
-The **How the work varies** choices in the Overview carry the main explanation of role and setting differences. Other views prioritize substantive field information instead of repeating qualifications on every item. Quick marks remain optional reminders rather than a scoring system.
+The Overview uses grouped menus and a contextual photograph to orient the reader before the detailed sections. Each subsequent screen has its own label, color, and symbol. Quick marks remain optional reminders rather than a scoring system.
 
 ## Sources and data
 
@@ -20,6 +20,7 @@ The **How the work varies** choices in the Overview carry the main explanation o
 - Career examples and college-path information use `site/data.js`.
 - External links come primarily from the source notes in *Animal Behavior, Wildlife, Animal Care & Conservation — Undergraduate Pathways and Career Exploration Guide*.
 - The linked sources include professional organizations, O*NET/BLS occupation pages, qualification and permit guidance, field job boards, and official university programs.
+- Contextual photographs are credited and linked to the U.S. Fish & Wildlife Service or NOAA Fisheries source page.
 
 ## Files and isolation
 

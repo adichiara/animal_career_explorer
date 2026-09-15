@@ -1,13 +1,13 @@
 # Field guide image credits
 
-The field-guide hero images are optimized as 1200 × 675 WebP files. Most are cropped derivatives of the credited sources. The cognition illustration was created for this project. “AI-assisted extension” identifies photographs whose surrounding canvas was extended to keep the complete animal visible in the wide layout.
+The field-guide hero images are optimized as 1200 × 675 WebP files. Most are cropped derivatives of the credited sources. “AI-assisted extension” identifies photographs whose surrounding canvas was extended to keep the complete animal visible in the wide layout.
 
 | Field | Credit | Source | Rights noted at source |
 |---|---|---|---|
 | Zoology | Composite via Wikimedia Commons | [Animal diversity](https://commons.wikimedia.org/wiki/File:Animaldiversity.jpg) | Public domain |
 | Animal Physiology | Cat anatomy diagram via Wikimedia Commons | [Cat anatomy diagram](https://commons.wikimedia.org/wiki/File:Cat_anatomy_diagram.png) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Animal Behavior | Craig Dennis | [Wolves Playing](https://commons.wikimedia.org/wiki/File:Wolves_Playing_(23879309232).jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
-| Animal Cognition | Original project illustration; created with OpenAI image generation | This repository | Project asset |
+| Animal Cognition | Tiago Falótico | [Stone tool use by a capuchin monkey](https://commons.wikimedia.org/wiki/File:Stone_tool_use_by_a_capuchin_monkey.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Animal Welfare | Lincoln Park Zoo / Institute of Museum and Library Services | [Mobilizing Animal Welfare Around the World](https://www.imls.gov/blog/2016/11/mobilizing-animal-welfare-around-world) | See source page |
 | Ecology | Pekondjelo Himufe | [Animals drinking at a waterhole](https://commons.wikimedia.org/wiki/File:Animals_drinking_at_a_waterhole.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Wildlife Ecology & Management | W. Chris Clyne | [Raptor biology student holding a burrowing owl](https://commons.wikimedia.org/wiki/File:Solai_Le_Fay,_Boise_State_raptor_biology_master%27s_student,_holds_burrowing_owl_at_monitoring_and_banding_operations_at_Rees_Training_Center,_Oregon.jpg) | Public domain |

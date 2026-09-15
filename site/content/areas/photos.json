@@ -24,10 +24,12 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
     },
     "animal-cognition": {
-      "url": "../images/areas/animal-cognition-v2.webp",
-      "alt": "A dog, crow, octopus, and chimpanzee engage with different memory, tool-use, puzzle, and sequencing tasks.",
-      "credit": "Original project illustration",
-      "source": "https://github.com/adichiara/animal_career_explorer/blob/main/site/images/areas/CREDITS.md"
+      "url": "../images/areas/animal-cognition-v3.webp",
+      "alt": "A wild capuchin monkey raises a stone tool while positioning a nut on a larger stone.",
+      "credit": "Tiago Falótico",
+      "source": "https://commons.wikimedia.org/wiki/File:Stone_tool_use_by_a_capuchin_monkey.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     "animal-welfare": {
       "url": "../images/areas/animal-welfare.webp",

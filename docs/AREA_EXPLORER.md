@@ -4,14 +4,12 @@
 
 ## Experience
 
-1. Browse 15 overlapping fields and work areas in a searchable selection workspace.
-2. Choose the field and current section from persistent menus designed for a mobile screen.
-3. Move through short, distinct sections for focus, variation, questions, responsibilities, knowledge, settings, realities, careers, college study, glossary terms, and sources.
-4. Choose one item at a time from a menu to read its full explanation, examples, connections, and related source without expanding the page or triggering automatic scrolling.
-5. View Careers and College Study separately, while retaining links to the complete research tools.
-6. Optionally save areas or use compact thumbs-up and thumbs-down controls when something stands out.
+1. Browse 15 overlapping fields and work areas in a searchable index.
+2. Open one dedicated page for a field.
+3. Read a continuous, article-style guide with clearly differentiated sections for scope, variation, questions, responsibilities, preparation, working conditions, careers, college study, terminology, and sources.
+4. Follow simple links to related field guides or the complete career and college research tools when useful.
 
-The Overview uses grouped menus and a contextual photograph to orient the reader before the detailed sections. Each subsequent screen has its own label, color, and symbol. Quick marks remain optional reminders rather than a scoring system.
+The article pages contain no nested card navigation, saved-state controls, reaction interface, or automatic scrolling. A short table of contents provides optional jump links without hiding any content. Contextual photographs introduce the guides and link to their credited government source pages.
 
 ## Sources and data
 
@@ -27,10 +25,12 @@ The Overview uses grouped menus and a contextual photograph to orient the reader
 - `site/areas.html`
 - `site/areas.css`
 - `site/areas.js`
+- `site/area-article.js`
+- `site/areas/<area-id>.html`
 - `site/content/areas/index.json`
 - `site/content/areas/<area-id>.json`
 - `site/content/areas/README.md`
 
-The route stores reactions under `animalExplorerAreasV1`. It does not alter the saved state or files used by `site/index.html` or `site/discover.html`.
+The route does not store user state and does not alter the files or saved state used by `site/index.html` or `site/discover.html`.
 
-To remove the area-based experiment, delete these three `site/areas.*` files. The original and preference-based explorers require no restoration.
+To remove the area-based experiment, delete the field-guide files listed above. The original and preference-based explorers require no restoration.

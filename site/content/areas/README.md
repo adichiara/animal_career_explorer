@@ -8,13 +8,13 @@ The Area Explorer loads its content directly from the JSON files in this folder.
 2. Click the pencil icon in GitHub.
 3. Edit the wording inside the quotation marks.
 4. Select **Commit changes**.
-5. Wait for the Pages workflow to finish, then reload `areas.html`.
+5. Wait for the Pages workflow to finish, then reload that field's page under `areas/`.
 
 Each area file controls its overview, glossary terms, focus topics, questions and research approaches, responsibilities, knowledge and skills, variations, settings, realities, related careers, college-program connections, adjacent areas, and references.
 
 ## Focus topics
 
-Focus topics have a title and the description shown when the topic is selected:
+Focus topics have a title and description shown together in the article:
 
 ```json
 {
@@ -23,7 +23,7 @@ Focus topics have a title and the description shown when the topic is selected:
 }
 ```
 
-To provide hand-written examples instead of the automatically connected question, responsibility, and skill, add an `examples` list:
+To provide hand-written examples, add an `examples` list:
 
 ```json
 {
@@ -39,11 +39,11 @@ To provide hand-written examples instead of the automatically connected question
 }
 ```
 
-`source` can be the exact title or URL of any item in that area's `references` list. If it is omitted, the site selects a related reference from the list.
+`source` can be the exact title or URL of any item in that area's `references` list. If it is omitted, the article simply shows no source beside that item; the complete reference list remains at the end.
 
 ## Questions and approaches
 
-Questions use two fields. `question` appears in the selection list; `approach` explains how someone might investigate it in the detail panel:
+Questions use two fields. `question` is the question heading; `approach` explains how someone might investigate it:
 
 ```json
 {
@@ -54,7 +54,7 @@ Questions use two fields. `question` appears in the selection list; `approach` e
 
 ## Adding custom detail elsewhere
 
-Responsibilities, knowledge and skills, settings, and practical realities are normally simple strings. The site creates their detailed connections from the other content in the area. A string can be replaced with an object whenever a custom explanation or examples are preferable:
+Responsibilities, knowledge and skills, settings, and practical realities are normally simple strings. A string can be replaced with an object whenever a heading, custom explanation, or examples are preferable:
 
 ```json
 {
@@ -83,7 +83,8 @@ The `terms` list supplies the area glossary:
 ## Other files
 
 - `index.json` controls which area files are loaded and their order.
-- To add an area, create its JSON file and add the filename to the `areas` list in `index.json`.
+- Each field has a small HTML shell in `site/areas/`. The shared `site/area-article.js` reads the area's `data-area` value and pulls the article content from the matching JSON file.
+- To add an area, create its JSON file, add the filename to the `areas` list in `index.json`, and copy an existing HTML shell with the new `data-area` identifier.
 
 ## JSON rules
 

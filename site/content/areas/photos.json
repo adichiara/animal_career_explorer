@@ -1,7 +1,7 @@
 {
   "photos": {
     "zoology": {
-      "url": "../images/areas/zoology.webp",
+      "url": "../images/areas/zoology-v2.webp",
       "alt": "A collage shows the diversity of animal life, including an octopus, mantis, earthworm, tiger, and jellyfish.",
       "credit": "Composite via Wikimedia Commons",
       "source": "https://commons.wikimedia.org/wiki/File:Animaldiversity.jpg",
@@ -24,12 +24,10 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
     },
     "animal-cognition": {
-      "url": "../images/areas/animal-cognition.webp",
-      "alt": "A chimpanzee investigates an enrichment box designed to require manipulation and problem-solving.",
-      "credit": "Damien Neadle",
-      "source": "https://commons.wikimedia.org/wiki/File:Chimpanzee_using_enrichment_box.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "url": "../images/areas/animal-cognition-v2.webp",
+      "alt": "A dog, crow, octopus, and chimpanzee engage with different memory, tool-use, puzzle, and sequencing tasks.",
+      "credit": "Original project illustration",
+      "source": "https://github.com/adichiara/animal_career_explorer/blob/main/site/images/areas/CREDITS.md"
     },
     "animal-welfare": {
       "url": "../images/areas/animal-welfare.webp",
@@ -60,11 +58,11 @@
       "license": "Public domain"
     },
     "veterinary-science": {
-      "url": "../images/areas/veterinary-science.webp",
-      "alt": "A veterinary professional in scrubs examines a black kitten in a clinic.",
-      "credit": "Senior Airman Jared Duhon / U.S. Air Force",
-      "source": "https://commons.wikimedia.org/wiki/File:Veterinary_Clinic_130506-F-VJ706-001.jpg",
-      "license": "Public domain"
+      "url": "../images/areas/veterinary-science-v2.webp",
+      "alt": "Two veterinary professionals examine a cat in a clinic, with the complete animal visible on the examination table.",
+      "credit": "Government of Indonesia; AI-assisted extension",
+      "source": "https://commons.wikimedia.org/wiki/File:Two_Indonesia_medical_veterinarians_examining_a_cat.jpg",
+      "license": "Public-domain source"
     },
     "wildlife-health": {
       "url": "../images/areas/wildlife-health.webp",
@@ -103,11 +101,11 @@
       "license": "Public domain"
     },
     "anthrozoology": {
-      "url": "../images/areas/anthrozoology.webp",
-      "alt": "A young person embraces a dog, showing a close human-animal relationship.",
-      "credit": "Basile Morin",
-      "source": "https://commons.wikimedia.org/wiki/File:Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg",
-      "license": "CC BY-SA 4.0",
+      "url": "../images/areas/anthrozoology-v2.webp",
+      "alt": "A young person embraces a service dog, with the dog's complete body and working harness visible.",
+      "credit": "Zipster969; AI-assisted extension",
+      "source": "https://commons.wikimedia.org/wiki/File:Service_dog_being_hugged.jpg",
+      "license": "CC BY-SA 4.0 source",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   }

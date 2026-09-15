@@ -17,7 +17,8 @@ The homepage and primary navigation expose only the three reference sections. Th
 
 - Area content is loaded at runtime from the editable JSON files in `site/content/areas/`.
 - Area definitions and distinctions draw from the project's *Core Animal-Related Fields* source.
-- College Program guides and Job Example guides use `site/data.js`.
+- College Program guides merge the 10 focused records in `site/data.js` with the 7 hand-editable broader options in `site/content/programs/additional-programs.json`.
+- Job Example guides use `site/data.js`.
 - Job examples are dated observations, not current vacancy claims or a measure of the whole labor market.
 - External links come primarily from the source notes in *Animal Behavior, Wildlife, Animal Care & Conservation — Undergraduate Pathways and Career Exploration Guide*.
 - The linked sources include professional organizations, O*NET/BLS occupation pages, qualification and permit guidance, field job boards, and official university programs.

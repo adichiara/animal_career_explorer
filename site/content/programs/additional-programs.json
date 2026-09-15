@@ -1,0 +1,427 @@
+[
+  {
+    "code": "CAN-ABEC",
+    "collection": "additional",
+    "title": "Animal Behavior, Ecology, and Conservation B.S.",
+    "school": "Canisius University",
+    "type": "Animal behavior and conservation",
+    "scale": "Small private university · Buffalo, New York",
+    "lastVerified": "2026-09-15",
+    "overview": "Canisius combines behavioral biology, ecology, conservation, animal welfare, and ethical questions about human relationships with animals. The program is unusually explicit about connecting scientific study to the welfare of animals and the conservation of wildlife. Students can pursue faculty research and internships across zoos and aquariums, shelters and rescues, wildlife rehabilitation centers, wildlife refuges, and training settings.",
+    "fundamental": "An animal-behavior degree that joins biological science and research methods with ecology, conservation, welfare, and the ethical dimensions of work involving animals.",
+    "scienceFoundation": [
+      "Biological principles, organismal biology, ecology, and evolution",
+      "Animal behavior theory and behavioral research methods",
+      "Quantitative and qualitative research methods",
+      "Scientific reading, writing, analysis, and presentation",
+      "Conservation science and the relationships between animals and environments"
+    ],
+    "animalContent": [
+      "Behavior across captive wildlife, companion animals, and wild populations",
+      "Animal welfare, training, husbandry, and humane education",
+      "Wildlife conservation and human effects on animals",
+      "Human–animal relationships and ethical decision-making",
+      "Observation, study design, data collection, and interpretation"
+    ],
+    "experience": "The program sponsors credit-bearing internships in a wide range of animal settings, including zoos, aquariums, shelters, rescues, wildlife rehabilitation centers, refuges, and dog-training organizations. A limited paid-internship fund can help with some unpaid placements and related expenses.",
+    "research": "Students may join faculty research teams studying captive wildlife, companion animals, conservation, and the human–animal bond. The university describes opportunities to use quantitative and qualitative methods and to develop work into presentations or peer-reviewed publications.",
+    "progression": [
+      "Year 1: build biology and liberal-arts foundations while sampling animal behavior, ecology, conservation, and welfare questions.",
+      "Year 2: add core behavior and ecology study, statistics or research methods, and early observation or volunteer experience.",
+      "Year 3: pursue advanced behavior/conservation electives, join a faculty project, and complete a substantial internship in a setting of interest.",
+      "Year 4: develop an independent or team research product, present the work, and use advanced electives to clarify a graduate-school or employment direction."
+    ],
+    "resume": "B.S. in Animal Behavior, Ecology, and Conservation; behavioral observation and research methods; ecology and conservation; welfare and ethics; faculty research; presentation or publication potential; animal-focused internship experience.",
+    "advantages": [
+      "Behavior, welfare, conservation, and ethics are integrated rather than separated into unrelated electives.",
+      "Internship settings span wild, captive, companion-animal, rehabilitation, and training work.",
+      "Faculty-team research can give undergraduates substantial experience with study design, data, and scientific communication."
+    ],
+    "tradeoffs": [
+      "The program's breadth means students still need to choose whether to emphasize laboratory research, field ecology, managed-animal work, or human–animal studies.",
+      "Students aiming at veterinary school or a highly laboratory-intensive biological specialty should map the needed chemistry, physics, and prerequisite sequence early.",
+      "A small private-university setting differs substantially in scale, cost structure, and course breadth from the public research universities in the focused list."
+    ],
+    "bestWhen": "Especially relevant for a student who wants animal behavior to remain central while also exploring welfare, conservation, rehabilitation, training, and the human responsibilities that accompany animal work.",
+    "experienceTags": ["research", "internship", "zoo", "wildlife rehabilitation", "animal welfare", "training"],
+    "competencies": [
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 3},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.8},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.7},
+      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.5},
+      {"id": "comp_ecology", "name": "Ecology", "category": "Wildlife science", "description": "Organism–environment relationships, communities, habitats, and ecological processes.", "strength": 2.4},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.4},
+      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Research papers, presentations, and communication for scientific and public audiences.", "strength": 2.5},
+      {"id": "comp_learning", "name": "Learning & training", "category": "Behavior & welfare", "description": "Learning theory, conditioning, reinforcement, and humane training.", "strength": 2.1}
+    ],
+    "sources": [
+      "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation",
+      "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation/abec-research-opportunities",
+      "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation/abec-internships",
+      "https://catalog.canisius.edu/undergraduate/college-arts-sciences/animal-behavior-ecology-conservation/animal-behavior-ecology-conservation-bs/"
+    ]
+  },
+  {
+    "code": "DRAKE-ZCS",
+    "collection": "additional",
+    "title": "Zoo and Conservation Science B.S. · Comparative Animal Behavior",
+    "school": "Drake University",
+    "type": "Zoo science and comparative behavior",
+    "scale": "Private university · Des Moines, Iowa",
+    "lastVerified": "2026-09-15",
+    "overview": "Drake's Zoo and Conservation Science degree brings together biology, psychology, environmental science, and professional experience. The Comparative Animal Behavior concentration examines behavior through molecular, biological, comparative, and ecological lenses. The degree is connected to animal-care and conservation organizations in the Des Moines area, including Blank Park Zoo and the Ape Cognition and Conservation Initiative.",
+    "fundamental": "An interdisciplinary zoo and conservation degree with a dedicated comparative-animal-behavior concentration and access to professional and research experiences.",
+    "scienceFoundation": [
+      "Biology across molecular, organismal, and ecological scales",
+      "Psychology, learning, cognition, and comparative behavior",
+      "Environmental science and conservation",
+      "Research design, evidence analysis, and scientific communication",
+      "Animal health and disease concepts relevant to managed populations"
+    ],
+    "animalContent": [
+      "Comparative analysis of animal behavior",
+      "Biological and molecular determinants of behavior",
+      "Ecological factors that shape behavior",
+      "Zoo animal care, conservation, and professional practice",
+      "Cognition and behavior research with nonhuman animals"
+    ],
+    "experience": "The program emphasizes direct experience caring for animals and leading public education. Local connections with Blank Park Zoo, the Ape Cognition and Conservation Initiative, and other organizations create possibilities for exposure to zoo operations, animal care, cognition, and conservation.",
+    "research": "The Comparative Animal Behavior curriculum teaches students to develop and carry out research and to apply behavioral methods with wild and captive populations. Projects can connect biology and psychology and may address cognition, zoo populations, ecology, or conservation questions.",
+    "progression": [
+      "Year 1: begin biology, psychology, and environmental-science foundations and explore zoo and conservation work locally.",
+      "Year 2: add organismal science, statistics or methods, and core comparative-behavior coursework; seek early professional exposure.",
+      "Year 3: deepen the Comparative Animal Behavior concentration and pursue an internship or sustained experience in animal care, research, education, rehabilitation, or conservation.",
+      "Year 4: complete advanced research and concentration work, producing a strong writing, analysis, or presentation sample."
+    ],
+    "resume": "B.S. in Zoo and Conservation Science with Comparative Animal Behavior concentration; interdisciplinary biology and psychology; conservation; research design; professional experience connecting behavior questions to zoo and conservation practice.",
+    "advantages": [
+      "A named comparative-behavior concentration provides more depth than a general zoo-science curriculum alone.",
+      "The program emphasizes both direct professional experience and the ability to develop and execute research.",
+      "The program connects zoo practice with behavior, cognition, ecology, and conservation rather than treating keeper work as its only outcome."
+    ],
+    "tradeoffs": [
+      "The major is relatively new, so its long-term graduate outcomes are less established than those of older programs.",
+      "Students should examine the exact science prerequisites needed for veterinary school or highly specialized graduate programs.",
+      "A zoo-focused degree may be less flexible than broad biology for a student who later moves entirely away from animal or conservation work."
+    ],
+    "bestWhen": "Especially relevant when zoo or conservation work is appealing but the strongest intellectual interest is in why animals behave as they do, including learning and cognition.",
+    "experienceTags": ["zoo", "research", "internship", "animal cognition", "animal behavior", "conservation"],
+    "competencies": [
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 3},
+      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, memory, perception, problem-solving, and comparative cognition.", "strength": 3},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.8},
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 2.3},
+      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.4},
+      {"id": "comp_ecology", "name": "Ecology", "category": "Wildlife science", "description": "Organism–environment relationships and ecological influences on behavior.", "strength": 2.2},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.3},
+      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Reports, papers, presentations, and professional communication.", "strength": 2.5}
+    ],
+    "sources": [
+      "https://catalog.drake.edu/undergraduate/arts-sciences/areas-study/environmental-science-sustainability/zoo-conservation-science-bs/",
+      "https://www.drake.edu/degree-programs/concentrations/comparative-animal-behavior",
+      "https://catalog.drake.edu/undergraduate/arts-sciences/areas-study/environmental-science-sustainability/comparative-animal-behavior-concentration/"
+    ]
+  },
+  {
+    "code": "OTT-ZCS",
+    "collection": "additional",
+    "title": "Zoo & Conservation Science B.S.",
+    "school": "Otterbein University",
+    "type": "Zoo, wildlife rehabilitation, and conservation",
+    "scale": "Small private university · Westerville, Ohio",
+    "lastVerified": "2026-09-15",
+    "overview": "Otterbein's Zoo & Conservation Science program combines biological science with unusually structured experiences at the Columbus Zoo and Aquarium, Ohio Wildlife Center, and the university's equine facility. Students encounter zoo research, wildlife rehabilitation, veterinary techniques, enrichment, welfare assessment, training, husbandry, conservation, and animal-focused upper-level biology.",
+    "fundamental": "A science-based, highly experiential degree that moves among zoo animal care, wildlife rehabilitation, welfare, behavior, conservation, and undergraduate research.",
+    "scienceFoundation": [
+      "Biology, chemistry, mathematics, and statistics appropriate to the B.S. route",
+      "Animal nutrition, reproduction, anatomy, and organismal biology",
+      "Conservation biology, aquatic biology, and ecology",
+      "Research design, observation, data collection, and scientific communication",
+      "Animal health and welfare concepts"
+    ],
+    "animalContent": [
+      "Zoo and zookeeping science",
+      "Wildlife rehabilitation and hands-on veterinary techniques",
+      "Enrichment design, welfare assessment, and animal training",
+      "Animal nutrition, reproduction, vertebrate and invertebrate biology",
+      "Zoo, wildlife, aquarium, and conservation research topics"
+    ],
+    "experience": "The sequence begins with a first-year zoo research project, continues with sophomore practica at Ohio Wildlife Center, and adds junior practica at the Columbus Zoo and Otterbein's equine facility. Internships can emphasize animal care, research, operations, education, or conservation at partner and external sites.",
+    "research": "A senior can pursue undergraduate research in animal behavior, visitor studies, conservation, primates, birds, amphibians and reptiles, coral-reef ecology, freshwater systems, or wildlife-rehabilitation records. Research is tied to both faculty interests and professional partners.",
+    "progression": [
+      "Year 1: complete foundational science and the introductory zoo course with an observational research project at the Columbus Zoo.",
+      "Year 2: continue core biology and work through wildlife-rehabilitation practica at Ohio Wildlife Center.",
+      "Year 3: complete zoo/equine practica involving welfare, enrichment, training, and behind-the-scenes work; prepare for or complete an internship.",
+      "Year 4: select advanced animal and conservation biology and complete a focused undergraduate research project."
+    ],
+    "resume": "B.S. in Zoo & Conservation Science; repeated partner-based practica; wildlife rehabilitation and animal-health exposure; zoo observation and husbandry; enrichment, welfare, and training; internship; senior research.",
+    "advantages": [
+      "Experiential learning is sequenced across several years rather than left entirely to optional internships.",
+      "Students see zoo care, wildlife rehabilitation, research, education, welfare, and conservation as connected forms of work.",
+      "The Columbus Zoo and Ohio Wildlife Center partnerships provide concrete professional settings for coursework."
+    ],
+    "tradeoffs": [
+      "Admission to the Zoo track occurs after enrollment and capacity is limited; applicants should verify the current selection process and contingency options.",
+      "The degree is specialized and may offer less room than broad biology for unrelated electives or a second major.",
+      "Hands-on access does not make zoo employment automatic; internships, references, and a strong record remain important in a competitive field."
+    ],
+    "bestWhen": "Especially relevant for a student who wants repeated, structured contact with zoo and rehabilitation settings while still building a biological-science and research foundation.",
+    "experienceTags": ["zoo", "wildlife rehabilitation", "animal care", "animal welfare", "training", "research", "internship"],
+    "competencies": [
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 3},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.8},
+      {"id": "comp_learning", "name": "Learning & training", "category": "Behavior & welfare", "description": "Learning theory, reinforcement, enrichment, and humane training.", "strength": 2.7},
+      {"id": "comp_rehab", "name": "Wildlife rehabilitation", "category": "Applied animal care", "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.", "strength": 2.8},
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 2.5},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.6},
+      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.5},
+      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, reproduction, nutrition, and functional biology.", "strength": 2.4}
+    ],
+    "sources": [
+      "https://www.otterbein.edu/programs/ba-bs-zoo-conservation-science/",
+      "https://www.otterbein.edu/biology-earth-science/programs/zoo-conservation-science-faq/"
+    ]
+  },
+  {
+    "code": "BUCK-ANBE",
+    "collection": "additional",
+    "title": "Animal Behavior B.S.",
+    "school": "Bucknell University",
+    "type": "Interdisciplinary behavior science",
+    "scale": "Private liberal-arts university · Lewisburg, Pennsylvania",
+    "lastVerified": "2026-09-15",
+    "overview": "Bucknell's Animal Behavior major deliberately connects biology and psychology. The B.S. includes core biology, chemistry, statistics, quantitative study, learning, biopsychology, animal behavior, advanced research methods, and upper-level choices such as behavioral ecology, neuroethology, physiology, cognition, primatology, mammalogy, conservation genetics, and wildlife disease.",
+    "fundamental": "A research-centered animal-behavior degree integrating biological, psychological, ecological, evolutionary, physiological, and quantitative approaches.",
+    "scienceFoundation": [
+      "Core biology and chemistry",
+      "Learning, biopsychology, and behavioral science",
+      "Statistics and additional quantitative study",
+      "Advanced experimental, laboratory, or field research methods",
+      "Scientific literature, journal-style writing, and conference-style presentation"
+    ],
+    "animalContent": [
+      "Animal behavior, learning, and biopsychology",
+      "Behavioral ecology and evolution",
+      "Neuroethology, physiology, endocrinology, and neurophysiology",
+      "Comparative cognition, primatology, and primate minds",
+      "Organismal electives such as mammalogy, ornithology, amphibian biology, and invertebrate zoology"
+    ],
+    "experience": "The required advanced methods course has students develop hypotheses, conduct experimental research, analyze evidence, present conference-style results, and write a journal-style paper. Additional laboratory, field, and independent-research experience depends on selected electives and faculty opportunities.",
+    "research": "Research methods and a senior culminating seminar are built into the major. The curriculum supports mechanistic, cognitive, ecological, evolutionary, and organismal approaches, making it possible to develop a focused research identity before graduate school.",
+    "progression": [
+      "Year 1: begin animal behavior, biology, and statistics while exploring whether cognition, ecology, physiology, or evolution is most compelling.",
+      "Year 2: complete the biology sequence, learning, biopsychology, chemistry, and additional quantitative work.",
+      "Year 3: take advanced methods and upper-level animal-behavior electives; join a faculty lab or pursue independent research.",
+      "Year 4: deepen a specialty through advanced electives and complete the senior seminar with substantial literature, writing, and presentation work."
+    ],
+    "resume": "B.S. in Animal Behavior; integrated biology and psychology; statistics and quantitative study; experimental or field methods; journal-style research writing; conference-style presentation; advanced study in a selected behavior specialty.",
+    "advantages": [
+      "The program gives equal intellectual weight to biological mechanisms and psychological approaches to behavior.",
+      "Research design, analysis, writing, and presentation are explicit required outcomes.",
+      "A wide upper-level menu lets students explore cognition, physiology, ecology, evolution, or particular animal groups."
+    ],
+    "tradeoffs": [
+      "The major is more research-oriented than vocational; husbandry, rehabilitation, zoo operations, and animal-care credentials require outside experience.",
+      "A small private residential university has a very different cost and campus profile from the regional public options.",
+      "Students pursuing direct animal-care employment need to build substantial hands-on hours alongside the academic program."
+    ],
+    "bestWhen": "Especially relevant for a student drawn to animal behavior as a scientific question and considering research or graduate study in cognition, learning, neuroethology, behavioral ecology, or comparative biology.",
+    "experienceTags": ["research", "animal behavior", "animal cognition", "laboratory", "fieldwork", "graduate preparation"],
+    "competencies": [
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, behavior coding, experimentation, and interpretation.", "strength": 3},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 3},
+      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, memory, perception, problem-solving, and comparative cognition.", "strength": 2.8},
+      {"id": "comp_neuro", "name": "Neuroscience & neuroethology", "category": "Biological mechanisms", "description": "Neural and physiological mechanisms of behavior.", "strength": 2.6},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Statistical analysis, quantitative reasoning, and interpretation.", "strength": 2.7},
+      {"id": "comp_ecology", "name": "Behavioral ecology", "category": "Wildlife science", "description": "How ecological and evolutionary conditions shape behavior.", "strength": 2.5},
+      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Journal-style papers, literature reviews, formal presentations, and discussion leadership.", "strength": 3},
+      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, endocrine processes, and functional biology relevant to behavior.", "strength": 2.3}
+    ],
+    "sources": [
+      "https://coursecatalog.bucknell.edu/collegeofartsandsciencescurricula/areasofstudy/animalbehavioranbe/",
+      "https://www.bucknell.edu/academics/college-arts-sciences/academic-departments-programs/animal-behavior-program"
+    ]
+  },
+  {
+    "code": "ECK-AS",
+    "collection": "additional",
+    "title": "Animal Studies B.A.",
+    "school": "Eckerd College",
+    "type": "Interdisciplinary animal studies",
+    "scale": "Small private liberal-arts college · St. Petersburg, Florida",
+    "lastVerified": "2026-09-15",
+    "overview": "Eckerd's Animal Studies major examines animals and human–animal relationships through natural science, social science, and the humanities. It includes behavior, research methods, statistics, ethics and culture, and a required practicum. Faculty and collaborative projects span cognition, welfare, communication, behavior, training, conservation, human perceptions, and the roles of animal-serving organizations.",
+    "fundamental": "A broad interdisciplinary degree for studying animals and their relationships with people through scientific, social, cultural, ethical, and applied perspectives.",
+    "scienceFoundation": [
+      "Animal behavior and life-history concepts",
+      "Statistics and quantitative research skills",
+      "Qualitative, critical, and interdisciplinary research methods",
+      "Scientific and humanistic analysis of human–animal relationships",
+      "Communication, writing, and ethical reasoning"
+    ],
+    "animalContent": [
+      "Animal behavior, cognition, communication, and training",
+      "Animal welfare and the role of zoos, aquariums, shelters, and sanctuaries",
+      "Animal-assisted interventions",
+      "Human attitudes, cultures, policies, and practices involving animals",
+      "Conservation, rehabilitation, husbandry, advocacy, and education contexts"
+    ],
+    "experience": "The required Practicum in Animal Studies involves at least 130 hours with an approved animal-related organization plus structured reflection. Recent and listed settings include zoos, aquariums, sanctuaries, shelters, guide-dog organizations, rehabilitation programs, and government or research facilities.",
+    "research": "The Animal Studies Research Collaborative connects multiple laboratories and research groups. Projects described by the college include canine creativity, elephant cooperation, dolphin and parrot cognition, orangutan space use, animal welfare, communication, and human–animal relationships.",
+    "progression": [
+      "Year 1: explore the interdisciplinary foundations of animal studies and begin biology, psychology, statistics, or humanities support courses.",
+      "Year 2: take animal behavior and research-oriented coursework while sampling welfare, cognition, conservation, culture, or assisted-intervention topics.",
+      "Year 3: join a research group or independent project and complete the 130-hour practicum in a carefully selected setting.",
+      "Year 4: use advanced electives and the capstone to integrate evidence from multiple disciplines around a specific animal-related question."
+    ],
+    "resume": "B.A. in Animal Studies; animal behavior and human–animal studies; statistics; quantitative and qualitative research; a 130-hour practicum; interdisciplinary writing and communication; optional cognition, welfare, sanctuary, zoo, or conservation research.",
+    "advantages": [
+      "The program treats animal work as biological, behavioral, ethical, cultural, and organizational rather than only as natural science.",
+      "A required practicum gives every major a substantial real-world experience.",
+      "Research and local placement options include cognition, welfare, zoo/aquarium, sanctuary, shelter, rehabilitation, and human-services settings."
+    ],
+    "tradeoffs": [
+      "As a B.A. with an interdisciplinary focus, it does not automatically provide the same chemistry, physics, and advanced biology depth as a zoology or biology B.S.",
+      "Students targeting veterinary, physiology, or laboratory-intensive graduate programs may need a second major, minor, or carefully planned science prerequisites.",
+      "The breadth is valuable for exploration but requires deliberate choices to create a clear specialty and technical portfolio."
+    ],
+    "bestWhen": "Especially relevant when the student is interested not only in animal behavior, but also in welfare, ethics, animal-serving organizations, communication, and the many ways people and animals affect one another.",
+    "experienceTags": ["research", "internship", "practicum", "animal cognition", "animal welfare", "anthrozoology", "zoo"],
+    "competencies": [
+      {"id": "comp_human_animal", "name": "Human–animal relationships", "category": "Interdisciplinary", "description": "Scientific, cultural, ethical, and social analysis of relationships between humans and other animals.", "strength": 3},
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, behavior coding, and interpretation.", "strength": 2.7},
+      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, communication, problem-solving, and comparative cognition.", "strength": 2.6},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Understanding and evaluating physical and behavioral welfare.", "strength": 2.5},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Quantitative, qualitative, and interdisciplinary study design and reasoning.", "strength": 2.5},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.3},
+      {"id": "comp_writing", "name": "Writing & communication", "category": "Professional", "description": "Critical writing, research communication, reflection, and communication with varied audiences.", "strength": 2.7},
+      {"id": "comp_public", "name": "Public education & advocacy", "category": "Professional", "description": "Education, interpretation, outreach, and communication about animals and their interests.", "strength": 2.4}
+    ],
+    "sources": [
+      "https://www.eckerd.edu/animal-studies/",
+      "https://www.eckerd.edu/animal-studies/practicum/",
+      "https://catalog.eckerd.edu/programs/vTZ4Y58Xe1Ttu0f2MeA9"
+    ]
+  },
+  {
+    "code": "UNITY-WCR",
+    "collection": "additional",
+    "title": "Wildlife Care and Rehabilitation B.S.",
+    "school": "Unity Environmental University",
+    "type": "Wildlife care and rehabilitation",
+    "scale": "Small environmental university · in-person at Pineland, Maine",
+    "lastVerified": "2026-09-15",
+    "overview": "Unity's in-person Wildlife Care and Rehabilitation program is an applied pathway focused on wildlife care techniques, rehabilitation strategies, animal behavior, anatomy, and habitat design. It is more directly vocational than a broad zoology or ecology degree and is designed around immersive classes and career preparation for work involving injured, orphaned, displaced, or managed wildlife.",
+    "fundamental": "An applied, in-person degree centered on the practical science and decision-making involved in wildlife care, rehabilitation, behavior, anatomy, and habitat design.",
+    "scienceFoundation": [
+      "Animal anatomy and physiology",
+      "Animal behavior and welfare",
+      "Wildlife biology and ecological context",
+      "Health, care, rehabilitation, and release-related decision-making",
+      "Habitat and enclosure design"
+    ],
+    "animalContent": [
+      "Wildlife-care techniques and rehabilitation strategies",
+      "Species-appropriate husbandry, nutrition, and behavior",
+      "Preventing habituation and supporting release readiness",
+      "Animal handling, health observation, and care records",
+      "Habitat design and the relationship between care and natural behavior"
+    ],
+    "experience": "The program is presented as immersive and in person, with applied learning in wildlife-care techniques and rehabilitation practice. Prospective students should ask exactly which experiences involve live animals, which occur in simulations or laboratories, and which depend on external placements.",
+    "research": "This is primarily an applied professional pathway rather than a conventional research-intensive wildlife biology degree. Students considering research graduate programs should examine available statistics, research design, independent study, and faculty-project opportunities.",
+    "progression": [
+      "Year 1: build biology, anatomy, and animal-behavior foundations and learn safe, ethical approaches to wildlife care.",
+      "Year 2: develop husbandry, nutrition, health-observation, habitat, and rehabilitation-planning skills.",
+      "Year 3: apply the science in increasingly complex case-based or field experiences and seek a substantial placement with a rehabilitation or wildlife-care organization.",
+      "Year 4: complete advanced applied work and assemble evidence of handling, records, care planning, communication, and professional judgment."
+    ],
+    "resume": "B.S. in Wildlife Care and Rehabilitation; applied wildlife-care and husbandry concepts; animal behavior and anatomy; rehabilitation planning; habitat design; health observation; documented experiential learning.",
+    "advantages": [
+      "The degree directly names and teaches wildlife care and rehabilitation rather than requiring students to assemble the topic from unrelated electives.",
+      "Its applied emphasis may help a student test the day-to-day realities of care work earlier.",
+      "Behavior, anatomy, care, and habitat are treated as connected parts of rehabilitation."
+    ],
+    "tradeoffs": [
+      "The program is narrower than zoology, biology, or wildlife ecology and may be less flexible if interests shift toward laboratory science or ecosystem management.",
+      "Wildlife rehabilitation employment can be limited and experience-dependent; the degree alone does not replace permits, supervised hours, or role-specific credentials.",
+      "The current Unity model includes several distinct in-person and online pathways, so applicants should verify the exact degree length, delivery format, campus, and experiential commitments."
+    ],
+    "bestWhen": "Especially relevant when the student wants to understand the practical realities of caring for wild animals and is comfortable choosing a more specialized applied degree.",
+    "experienceTags": ["wildlife rehabilitation", "animal care", "animal health", "husbandry", "in-person", "applied learning"],
+    "competencies": [
+      {"id": "comp_rehab", "name": "Wildlife rehabilitation", "category": "Applied animal care", "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.", "strength": 3},
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 3},
+      {"id": "comp_health", "name": "Animal health observation", "category": "Animal health", "description": "Recognizing health concerns, monitoring change, and communicating observations within a care team.", "strength": 2.7},
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Observing behavior to guide care, welfare, habituation prevention, and release planning.", "strength": 2.6},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.5},
+      {"id": "comp_nutrition", "name": "Animal nutrition", "category": "Applied animal care", "description": "Species- and life-stage-appropriate nutrition and feeding management.", "strength": 2.5},
+      {"id": "comp_habitat", "name": "Habitat & enclosure design", "category": "Applied conservation", "description": "Designing environments that support safety, natural behavior, recovery, and release preparation.", "strength": 2.6},
+      {"id": "comp_ecology", "name": "Wildlife ecology", "category": "Wildlife science", "description": "Ecological context for species needs, natural behavior, habitat, and release.", "strength": 2.1}
+    ],
+    "sources": [
+      "https://unity.edu/programs/wildlife-care-and-rehabilitation/",
+      "https://unity.edu/in-person/"
+    ]
+  },
+  {
+    "code": "ME-AVS",
+    "collection": "additional",
+    "title": "Animal and Veterinary Sciences B.S.",
+    "school": "University of Maine",
+    "type": "Domestic-animal and pre-veterinary science",
+    "scale": "Public research university · Orono, Maine",
+    "lastVerified": "2026-09-15",
+    "overview": "UMaine's Animal and Veterinary Sciences degree builds a foundation in animal biology, nutrition, disease, physiology, management, and related sciences. Students can shape the degree toward animal science, equine study, pre-veterinary preparation, or pre-veterinary microbiology. Hands-on work at the J. Franklin Witter Teaching and Research Center emphasizes dairy cattle and standardbred horses.",
+    "fundamental": "A biologically rigorous, hands-on animal-science degree centered on health, physiology, nutrition, disease, reproduction, and management of domestic animals, with strong pre-veterinary relevance.",
+    "scienceFoundation": [
+      "Biology, chemistry, microbiology, and related laboratory science",
+      "Animal anatomy and physiology",
+      "Nutrition, genetics, reproduction, and disease",
+      "Animal management and agricultural systems",
+      "Pre-veterinary science requirements where selected"
+    ],
+    "animalContent": [
+      "Dairy cattle and equine care and management",
+      "Animal health, disease, nutrition, and reproduction",
+      "Domestic-animal handling and husbandry",
+      "Veterinary and biomedical preparation",
+      "Animal research and production systems"
+    ],
+    "experience": "Hands-on domestic-animal experience is a central requirement. At the Witter Teaching and Research Center, students work with dairy cattle and standardbred horses and can build competence toward increasingly responsible management tasks.",
+    "research": "The Witter Center supports teaching and research in animal science and sustainable agriculture, and UMaine's research-university environment creates additional laboratory and faculty-project options. The most visible program focus is domestic-animal health, management, and agricultural research.",
+    "progression": [
+      "Year 1: begin biology and chemistry while gaining early exposure to domestic-animal care and management.",
+      "Year 2: add anatomy, physiology, nutrition, genetics, or microbiology and increase practical responsibility at the teaching farm.",
+      "Year 3: follow the selected concentration, pursue faculty research or a veterinary/animal-industry internship, and complete advanced animal-science work.",
+      "Year 4: finish advanced health, reproduction, management, or pre-veterinary requirements and produce a research, internship, or professional portfolio."
+    ],
+    "resume": "B.S. in Animal and Veterinary Sciences; substantial biological and laboratory science; animal anatomy, physiology, nutrition, disease, reproduction, and management; hands-on dairy and equine experience; concentration-specific veterinary or research preparation.",
+    "advantages": [
+      "Strong preparation in animal health, physiology, nutrition, reproduction, and management.",
+      "Students gain repeated hands-on responsibility with live domestic animals rather than only occasional exposure.",
+      "The public research-university setting supports pre-veterinary prerequisites and faculty research opportunities."
+    ],
+    "tradeoffs": [
+      "The program's practical core is centered on dairy cattle, horses, agriculture, and pre-veterinary science—not wildlife, zoo animals, or comparative behavior.",
+      "A student focused on wild-animal behavior, field ecology, or conservation would find a more direct route in UMaine Wildlife Ecology or Zoology.",
+      "Behavior, cognition, enrichment, and wildlife rehabilitation would need to be developed through electives and external experience."
+    ],
+    "bestWhen": "Especially relevant when animal health, veterinary preparation, physiology, nutrition, or hands-on domestic-animal management is more important than wildlife ecology or comparative behavior.",
+    "experienceTags": ["animal care", "animal health", "pre-veterinary", "equine", "dairy", "research", "laboratory"],
+    "competencies": [
+      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, reproduction, endocrine processes, and functional biology.", "strength": 3},
+      {"id": "comp_nutrition", "name": "Animal nutrition", "category": "Applied animal care", "description": "Diet, nutrition science, feeding management, and effects on health and production.", "strength": 3},
+      {"id": "comp_health", "name": "Animal health & disease", "category": "Animal health", "description": "Health assessment, disease processes, microbiology, prevention, and veterinary context.", "strength": 3},
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Handling, feeding, sanitation, records, and daily management of domestic animals.", "strength": 3},
+      {"id": "comp_genetics", "name": "Genetics & reproduction", "category": "Biological mechanisms", "description": "Inheritance, breeding, reproduction, and their applications in animal science.", "strength": 2.7},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Laboratory or applied study design, data collection, and scientific reasoning.", "strength": 2.3},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2},
+      {"id": "comp_welfare", "name": "Animal welfare", "category": "Behavior & welfare", "description": "Physical and behavioral welfare within domestic-animal management systems.", "strength": 1.8}
+    ],
+    "sources": [
+      "https://umaine.edu/foodandagriculture/b-s-degree-in-animal-and-veterinary-sciences/",
+      "https://umaine.edu/wittercenter/",
+      "https://umaine.edu/foodandagriculture/undergraduate-programs/"
+    ]
+  }
+]

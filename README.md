@@ -40,7 +40,7 @@ These counts are descriptive of the current research snapshot, not a claim that 
 The public homepage links to three article-style reference sections:
 
 - **Field Guides** — 15 long-form guides loaded from editable JSON files in `site/content/areas/`.
-- **College Programs** — 10 researched undergraduate pathway guides drawn from the validated site export.
+- **College Programs** — 17 researched undergraduate pathway guides: the 10-path focused comparison from the validated site export plus 7 additional programs retained from the broader research.
 - **Job Examples** — dated, source-backed postings grouped under 37 broader roles. These records illustrate employer titles and requirements; they are not a live job board.
 
 The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference but are intentionally absent from the homepage and primary navigation.
@@ -49,7 +49,7 @@ The earlier research interface remains available in `site/legacy.html`, and the 
 
 The explanatory content for `areas.html` is intentionally separate from the generated career database. Each field has a human-editable file under `site/content/areas/`, such as `wildlife-rehabilitation.json`. Editing and committing one of those files updates the live page after GitHub Pages redeploys; `areas.js` does not need to be changed.
 
-See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. College Program and Job Example records, as well as career and college records displayed inside a field guide, currently come from the validated `site/data.js` export.
+See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and all Job Example records come from the validated `site/data.js` export. Seven broader College Program records are editable in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json); editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
 
 ## Directory structure
 

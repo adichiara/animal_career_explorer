@@ -3,6 +3,7 @@
   const D = window.EXPLORER_DATA || { programs: [] };
   const app = document.getElementById('articleApp');
   const code = new URLSearchParams(location.search).get('code');
+  let programs = [];
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -17,8 +18,21 @@
     return Math.round((value / 3) * 10);
   }
   function scoreBand(score) { return score <= 3 ? 'low' : score <= 6 ? 'medium' : 'high'; }
+  async function loadPrograms() {
+    const focused = (D.programs || []).map(program => ({ ...program, collection: program.collection || 'focused' }));
+    try {
+      const response = await fetch('content/programs/additional-programs.json');
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const additions = await response.json();
+      if (!Array.isArray(additions)) throw new Error('Expected an array of programs');
+      const codes = new Set(focused.map(program => program.code));
+      programs = [...focused, ...additions.filter(program => program && program.code && !codes.has(program.code))];
+    } catch (error) {
+      programs = focused;
+      console.error('Unable to load additional college programs:', error);
+    }
+  }
   function render(program) {
-    const programs = D.programs;
     const index = programs.indexOf(program);
     const previous = programs[(index - 1 + programs.length) % programs.length];
     const next = programs[(index + 1) % programs.length];
@@ -29,7 +43,7 @@
       <header class="article-hero text-hero">
         <div class="hero-copy"><div class="eyebrow">College program guide</div><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
         <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
-          <div><dt>School</dt><dd>${esc(program.school)}</dd></div><div><dt>Program type</dt><dd>${esc(program.type)}</dd></div><div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div><div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
+          <div><dt>School</dt><dd>${esc(program.school)}</dd></div><div><dt>Program type</dt><dd>${esc(program.type)}</dd></div><div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div><div><dt>Research set</dt><dd>${program.collection === 'additional' ? 'Additional researched option' : 'Focused comparison'}</dd></div><div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
         </dl></aside>
       </header>
       <div class="article-body">
@@ -62,10 +76,12 @@
     </article>`;
   }
   function fail(message) { app.innerHTML = `<div class="error-page"><h1>This college program could not be loaded</h1><p>${esc(message)}</p><p><a href="programs.html">Return to all college programs</a></p></div>`; }
-  const program = D.programs.find(item => item.code === code);
-  if (program) render(program); else fail(code ? `No program was found for ${code}.` : 'Choose a program from the college program index.');
   const menuButton = document.getElementById('menuButton');
   const nav = document.getElementById('primaryNav');
   menuButton.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); });
   nav.addEventListener('click', () => { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); });
+  loadPrograms().then(() => {
+    const program = programs.find(item => item.code === code);
+    if (program) render(program); else fail(code ? `No program was found for ${code}.` : 'Choose a program from the college program index.');
+  });
 })();

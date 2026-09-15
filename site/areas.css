@@ -193,6 +193,13 @@ p { margin: .75em 0 0; }
 .index-group { margin-top: 36px; }
 .index-group > h3 { padding: 0 2px 12px; color: var(--warm); font-size: .78rem; letter-spacing: .065em; text-transform: uppercase; }
 .index-group:first-of-type { margin-top: 0; }
+.program-collection { margin-top: 52px; }
+.program-collection:first-of-type { margin-top: 12px; }
+.collection-heading { max-width: 790px; padding: 0 0 22px; border-bottom: 1px solid var(--line); }
+.collection-heading h2 { margin-top: 6px; color: var(--navy); font-size: clamp(1.55rem, 6vw, 2.3rem); }
+.collection-heading > p:last-child { max-width: 720px; color: var(--muted); }
+.program-collection + .program-collection { padding-top: 48px; border-top: 2px solid var(--navy); }
+.load-warning { margin-top: 18px; padding: 10px 12px; border-left: 4px solid var(--warm); color: #6b432f; background: #fbf5f1; font-size: .86rem; }
 .program-guide-link .guide-count { color: var(--warm); }
 .job-guide-link .guide-count { display: grid; width: 29px; height: 29px; padding: 0; place-items: center; border-radius: 50%; color: #fff; background: var(--teal); }
 .index-meta { margin-top: 9px !important; color: #587180 !important; font-size: .73rem !important; font-weight: 720; letter-spacing: .015em; }

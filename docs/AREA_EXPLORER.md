@@ -9,7 +9,7 @@
 3. Read a continuous, article-style guide with clearly differentiated sections for scope, variation, questions, responsibilities, preparation, working conditions, careers, college study, terminology, and sources.
 4. Follow simple links to related field guides or the complete career and college research tools when useful.
 
-The article pages contain no nested card navigation, saved-state controls, reaction interface, or automatic scrolling. A short table of contents provides optional jump links without hiding any content. Each guide has one distinct photograph selected to show a characteristic kind of work, method, or setting without defining the entire field by a single species. The locally stored, optimized image links to its credited source page.
+The article pages contain no nested card navigation, saved-state controls, reaction interface, or automatic scrolling. A short table of contents provides optional jump links without hiding any content. Each guide has one distinct photograph selected to show a characteristic kind of work or method without defining the entire field by a single species or location. On portrait screens, the photograph is height-constrained as well as width-responsive so it cannot occupy most of the viewport. The locally stored, optimized image links to its credited source page.
 
 ## Sources and data
 

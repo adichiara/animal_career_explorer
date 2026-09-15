@@ -9,16 +9,16 @@
     },
     "animal-physiology": {
       "url": "../images/areas/animal-physiology.webp",
-      "alt": "A wildlife biologist collects measurements from a tranquilized polar bear on sea ice.",
-      "credit": "Karyn Rode / U.S. Fish & Wildlife Service",
-      "source": "https://commons.wikimedia.org/wiki/File:USFWS_Polar_Bear_Biologist_working_with_a_Bear.jpg",
+      "alt": "A scientist examines newly fertilized sturgeon eggs under a stereomicroscope to observe early development.",
+      "credit": "U.S. Geological Survey, Columbia Environmental Research Center",
+      "source": "https://www.usgs.gov/media/images/examining-newly-fertilized-pallid-sturgeon-eggs",
       "license": "Public domain"
     },
     "animal-behavior": {
       "url": "../images/areas/animal-behavior.webp",
-      "alt": "A handler works with a sea lion during a structured behavior demonstration.",
-      "credit": "Raymond Maddocks / U.S. Navy",
-      "source": "https://www.dvidshub.net/image/7846905/nere23-participants-experience-marine-mammal-program-courtesy-niwc-pacific",
+      "alt": "A handler uses a toy reward during a structured dog-training exercise.",
+      "credit": "Pfc. Ji Won Park / U.S. Army",
+      "source": "https://www.dvidshub.net/image/9551986/military-working-dog-engages-reward-training",
       "license": "Public domain"
     },
     "animal-cognition": {
@@ -44,9 +44,9 @@
     },
     "wildlife-ecology-management": {
       "url": "../images/areas/wildlife-ecology-management.webp",
-      "alt": "A refuge biologist augers through lake ice to measure winter oxygen conditions for a threatened fish population.",
-      "credit": "Cortez Rohr / U.S. Fish & Wildlife Service",
-      "source": "https://commons.wikimedia.org/wiki/File:Arctic_Grayling_Winter_Work_(52581133487).jpg",
+      "alt": "A wildlife professional teaches an intern to use radio-telemetry equipment for tracking animals.",
+      "credit": "Kevin Cody / U.S. Fish & Wildlife Service",
+      "source": "https://www.fws.gov/media/jakob-bengelink-teaching-service-intern-bethany-fackrell-use-radio-telemetry-equipment",
       "license": "Public domain"
     },
     "conservation-biology": {
@@ -100,10 +100,10 @@
     },
     "anthrozoology": {
       "url": "../images/areas/anthrozoology.webp",
-      "alt": "A participant holds a dove during an animal-assisted therapy demonstration.",
-      "credit": "New Brunswick / Nouveau-Brunswick",
-      "source": "https://commons.wikimedia.org/wiki/File:Demonstration_on_Pet_Therapy_D%C3%A9monstration_de_zooth%C3%A9rapie_(34062842804).jpg",
-      "license": "Public Domain Mark"
+      "alt": "A child reads beside a therapy dog while an adult volunteer follows along.",
+      "credit": "Nicole Leidholm / U.S. Air Force",
+      "source": "https://www.travis.af.mil/News/Article/150853/paws-for-reading-celebrates-two-years/",
+      "license": "Public domain"
     }
   }
 }

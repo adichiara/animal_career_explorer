@@ -49,7 +49,7 @@
   }
   function careerHtml(name) {
     const career = careerByName(name);
-    if (!career) return `<article class="career-entry"><h3>${esc(name)}</h3><p>This role appears in the field guide. Search the full career research tool for alternate or more specific titles.</p></article>`;
+    if (!career) return `<article class="career-entry"><h3>${esc(name)}</h3><p>This role appears in the field guide, but no separate job-example page is currently available for it.</p></article>`;
     const details = career.details || {};
     const rows = [
       ['Typical settings', details['Typical work settings']],
@@ -62,6 +62,7 @@
       <div class="fact-line">${[career.educationBand, career.directContact ? `${career.directContact} direct animal contact` : '', ...(career.workTags || [])].filter(Boolean).map(value => `<span>${esc(value)}</span>`).join('')}</div>
       ${rows.length ? `<dl>${rows.map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>` : ''}
       ${career.competencies && career.competencies.length ? `<div class="competencies"><p class="mini-label">Common competencies</p><ul>${career.competencies.map(item => `<li><strong>${esc(item.name)}</strong> — ${esc(item.description)}</li>`).join('')}</ul></div>` : ''}
+      ${(career.recentPostings || []).length || (career.observedTitles || []).length ? `<a class="inline-source" href="../job.html?role=${encodeURIComponent(career.slug)}">View dated job examples →</a>` : ''}
     </article>`;
   }
   function programHtml(areaProgram) {
@@ -88,7 +89,7 @@
     const index = areas.findIndex(item => item.id === area.id);
     const previous = areas[(index - 1 + areas.length) % areas.length];
     const next = areas[(index + 1) % areas.length];
-    document.title = `${area.title} | Animal Fields & Work Guides`;
+    document.title = `${area.title} | Animal Pathways`;
     document.querySelector('meta[name="description"]').setAttribute('content', area.short);
     app.innerHTML = `<article class="field-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../areas.html">All field guides</a><span aria-hidden="true">/</span><span>${esc(area.title)}</span></nav>
@@ -121,12 +122,12 @@
           <section id="careers" class="article-section">
             <div class="section-heading"><p class="section-number">04</p><h2>Careers connected to this field</h2></div>
             <p class="section-intro">Titles, settings, and qualifications vary by employer. These examples show several ways this field can become professional work.</p>
-            <div class="career-list">${area.careers.map(careerHtml).join('')}</div><a class="research-link" href="../index.html#careers">Search all 93 career profiles →</a>
+            <div class="career-list">${area.careers.map(careerHtml).join('')}</div><a class="research-link" href="../jobs.html">Browse all job examples →</a>
           </section>
           <section id="study" class="article-section">
             <div class="section-heading"><p class="section-number">05</p><h2>College study and preparation</h2></div>
             <p class="section-intro">A major is one part of preparation. Course selection, research, fieldwork, internships, volunteering, and technical skills can change what a program makes possible.</p>
-            <div class="program-list">${area.programs.map(programHtml).join('')}</div><a class="research-link" href="../index.html#programs">Compare all undergraduate pathways →</a>
+            <div class="program-list">${area.programs.map(programHtml).join('')}</div><a class="research-link" href="../programs.html">Browse all college program guides →</a>
           </section>
           <section id="terms" class="article-section">
             <div class="section-heading"><p class="section-number">06</p><h2>Key terms</h2></div>

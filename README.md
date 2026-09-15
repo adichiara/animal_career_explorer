@@ -1,6 +1,6 @@
 # Animal Career Data Project
 
-This project is the data-management and publishing layer behind the Animal & Science Path Explorer.
+This project is the data-management and publishing layer behind the Animal Pathways reference site.
 
 **Live site:** https://adichiara.github.io/animal_career_explorer/
 
@@ -35,17 +35,21 @@ These counts are descriptive of the current research snapshot, not a claim that 
 5. **Known gaps are explicit.** Missing title, posting or progression evidence becomes a review-queue item rather than being silently hidden.
 6. **The website consumes generated data.** `site/data.js` is rebuilt from SQLite; it should not be hand-edited.
 
-## Editing Area Explorer content
+## Published site structure
 
-The explanatory content used by `site/areas.html` is intentionally separate from the generated career database. Each field has its own editable file under `site/content/areas/`, and the page loads those JSON files at runtime.
+The public homepage links to three article-style reference sections:
 
-See [`site/content/areas/README.md`](site/content/areas/README.md) for examples and editing instructions. A normal wording change requires editing only the relevant area file and committing it; GitHub Pages redeploys automatically.
+- **Field Guides** — 15 long-form guides loaded from editable JSON files in `site/content/areas/`.
+- **College Programs** — 10 researched undergraduate pathway guides drawn from the validated site export.
+- **Job Examples** — dated, source-backed postings grouped under 37 broader roles. These records illustrate employer titles and requirements; they are not a live job board.
 
-## Editing Area Explorer content
+The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference but are intentionally absent from the homepage and primary navigation.
+
+## Editing Field Guide content
 
 The explanatory content for `areas.html` is intentionally separate from the generated career database. Each field has a human-editable file under `site/content/areas/`, such as `wildlife-rehabilitation.json`. Editing and committing one of those files updates the live page after GitHub Pages redeploys; `areas.js` does not need to be changed.
 
-See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. Career and college records displayed inside an area still come from the validated `site/data.js` export.
+See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. College Program and Job Example records, as well as career and college records displayed inside a field guide, currently come from the validated `site/data.js` export.
 
 ## Directory structure
 
@@ -76,9 +80,14 @@ Animal_Career_Data_Project/
 ├── docs/
 │   └── companion research documents
 └── site/
-    ├── index.html
-    ├── app.js
-    ├── styles.css
+    ├── index.html              # focused three-section homepage
+    ├── areas.html              # Field Guides index
+    ├── programs.html           # College Programs index
+    ├── program.html            # program article renderer
+    ├── jobs.html               # Job Examples index
+    ├── job.html                # job-example article renderer
+    ├── legacy.html             # retained full research interface
+    ├── discover.html           # retained preference explorer
     ├── data.js                 # GENERATED from SQLite
     └── content/areas/          # editable Area Explorer content
 ```

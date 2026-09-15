@@ -47,6 +47,10 @@
   function questionsHtml(area) {
     return area.questions.map(item => `<article class="question"><h3>${esc(item.question)}</h3><p>${esc(item.approach)}</p>${examplesHtml(item.examples)}${sourceLink(area, item.source)}</article>`).join('');
   }
+  function distinctionHtml(area) {
+    if (!area.distinction || !Array.isArray(area.distinction.items)) return '';
+    return `<aside class="field-distinction" aria-labelledby="distinctionTitle"><p class="mini-label">Closest neighboring field</p><h2 id="distinctionTitle">${esc(area.distinction.title)}</h2>${area.distinction.summary ? `<p>${esc(area.distinction.summary)}</p>` : ''}<div class="distinction-grid">${area.distinction.items.map(item => `<article><h3>${esc(item.label)}</h3><p>${esc(item.description)}</p></article>`).join('')}</div></aside>`;
+  }
   function careerHtml(name) {
     const career = careerByName(name);
     if (!career) return `<article class="career-entry"><h3>${esc(name)}</h3><p>This role appears in the field guide, but no separate job-example page is currently available for it.</p></article>`;
@@ -102,7 +106,7 @@
           <li><a href="#understanding">Understanding the field</a></li><li><a href="#questions-work">Questions and responsibilities</a></li><li><a href="#preparation">Knowledge and working environment</a></li><li><a href="#careers">Careers</a></li><li><a href="#study">College study</a></li><li><a href="#terms">Key terms</a></li><li><a href="#sources">Sources and related fields</a></li>
         </ol></aside>
         <div class="article-content">
-          <p class="big-picture">${esc(area.bigPicture)}</p>
+          <p class="big-picture">${esc(area.bigPicture)}</p>${distinctionHtml(area)}
           <section id="understanding" class="article-section">
             <div class="section-heading"><p class="section-number">01</p><h2>Understanding the field</h2></div>
             <h3 class="group-heading">What this area focuses on</h3><div class="prose-grid">${focusHtml(area)}</div>

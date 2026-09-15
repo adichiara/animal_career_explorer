@@ -1,8 +1,22 @@
 {
   "id": "wildlife-ecology-management",
   "title": "Wildlife Ecology & Management",
-  "short": "Free-ranging animal populations in particular: how many there are, where they go, and whether they persist. Sampling design and statistics carry most of the weight.",
-  "bigPicture": "Wildlife ecology and management is the professional field concerned with free-ranging animal populations and the habitats that support them. It combines ecological science with the practical and social work of managing game, nongame, endangered, and invasive species. The Wildlife Society, founded in the 1930s, anchors the profession and has run a wildlife biologist certification program since 1977; many degree programs are built so their coursework satisfies its requirements.",
+  "short": "The science and professional management of free-ranging wild animals: estimating populations, understanding movement and habitat, and deciding how agencies and organizations should act.",
+  "bigPicture": "Wildlife ecology and management applies ecological science to free-ranging animal populations and the habitats and human systems that shape them. It combines population estimation, movement and habitat analysis, field techniques, law, policy, and public decision-making. The work is organized around practical questions: whether a population is secure, what is causing change, which action is feasible, and how its results will be measured.",
+  "distinction": {
+    "title": "Wildlife Ecology & Management and Ecology",
+    "summary": "The fields share population biology, field sampling, statistics, and spatial analysis. Their center of attention and usual products are different.",
+    "items": [
+      {
+        "label": "Wildlife Ecology & Management",
+        "description": "Centers on free-ranging wild animals, their populations, and the habitats and people affecting them. Typical products include population estimates, species and habitat plans, harvest or protection recommendations, permits, and evaluated management actions."
+      },
+      {
+        "label": "Ecology",
+        "description": "Examines relationships across living systems. A project might center on microbes, plants, animals, species interactions, nutrient cycles, disturbance, or ecosystem function. Typical products include scientific explanations, models, monitoring results, and environmental assessments."
+      }
+    ]
+  },
   "terms": [
     {
       "term": "Mark-recapture",
@@ -39,8 +53,8 @@
   ],
   "focus": [
     {
-      "title": "Population assessment",
-      "description": "Estimating abundance, survival, reproduction, and trend using surveys, marking, and statistical estimation, since almost nothing about a wild population can be counted directly.",
+      "title": "Focal wildlife populations",
+      "description": "Estimating abundance, survival, reproduction, distribution, and trend for particular wild species using surveys, marking, and statistical estimation.",
       "source": "The Wildlife Society"
     },
     {
@@ -110,8 +124,8 @@
       "source": "UMaine: Wildlife, Fisheries, and Conservation Biology"
     },
     {
-      "label": "Employer type",
-      "description": "State and federal agencies, consulting firms, nonprofits, and universities all hire from this field, and the day-to-day work differs considerably between them."
+      "label": "From evidence to management",
+      "description": "Population estimates and habitat analyses feed into species plans, land-management actions, harvest or protection rules, environmental review, permits, and measures of whether an intervention worked."
     },
     {
       "label": "Certification levels",

@@ -1,8 +1,22 @@
 {
   "id": "ecology",
   "title": "Ecology",
-  "short": "How living things and their environments shape each other, across populations, communities, and whole ecosystems. Animals are one part of the system rather than the whole subject.",
-  "bigPicture": "Ecology is the scientific discipline concerned with the relationships between organisms and their past, present, and future environments. Those relationships run from the physiological responses of individuals through the structure and dynamics of populations, the interactions among species, the organization of communities, and the movement of energy and matter through ecosystems. It is the foundation underneath wildlife, conservation, and much of the quantitative work in this field, and its professional society has existed since 1915.",
+  "short": "The broad science of relationships among organisms and their environments—from individual responses and population change to communities, food webs, nutrients, and whole ecosystems.",
+  "bigPicture": "Ecology asks how living systems work. Its subject can be a bacterial population, a plant community, a predator–prey relationship, a watershed, or the movement of energy and nutrients through an ecosystem. Ecologists build explanations from observation, experiments, long-term monitoring, and models. Their findings support conservation and natural-resource decisions, but the field itself is broader than wildlife and broader than management.",
+  "distinction": {
+    "title": "Ecology and Wildlife Ecology & Management",
+    "summary": "The fields share population biology, field sampling, statistics, and spatial analysis. Their center of attention and usual products are different.",
+    "items": [
+      {
+        "label": "Ecology",
+        "description": "Examines relationships across living systems. A project might center on microbes, plants, animals, species interactions, nutrient cycles, disturbance, or ecosystem function. Typical products include scientific explanations, models, monitoring results, and environmental assessments."
+      },
+      {
+        "label": "Wildlife Ecology & Management",
+        "description": "Centers on free-ranging wild animals, their populations, and the habitats and people affecting them. Typical products include population estimates, species and habitat plans, harvest or protection recommendations, permits, and evaluated management actions."
+      }
+    ]
+  },
   "terms": [
     {
       "term": "Population",
@@ -31,8 +45,8 @@
   ],
   "focus": [
     {
-      "title": "Populations and communities",
-      "description": "How numbers change over time, what regulates them, and how species interact through competition, predation, and cooperation.",
+      "title": "Relationships across levels of life",
+      "description": "How individual organisms respond to conditions, how populations change, how species interact, and how those processes combine into communities and ecosystems.",
       "source": "Ecological Society of America"
     },
     {
@@ -92,8 +106,8 @@
   ],
   "variations": [
     {
-      "label": "Not an animal discipline",
-      "description": "Ecology covers plants, microbes, soils, and water as much as animals. If the interest is specifically in animals, ecology is the toolkit rather than the subject, and coursework will include a good deal that is not about animals at all.",
+      "label": "Scale and subject",
+      "description": "Ecological work moves among organisms, populations, communities, and ecosystems. Plants, animals, microbes, soils, water, climate, and disturbance can all be central parts of the same investigation.",
       "source": "Ecological Society of America"
     },
     {
@@ -168,7 +182,7 @@
     {
       "title": "Ecological Society of America",
       "type": "Professional society",
-      "url": "https://esa.org/about/"
+      "url": "https://esa.org/about/what-does-ecology-have-to-do-with-me/"
     },
     {
       "title": "Ecological Society of America (ESA): Certified Ecologist program",

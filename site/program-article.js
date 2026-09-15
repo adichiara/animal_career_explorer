@@ -12,6 +12,11 @@
   }
   function sourceUrl(value) { return /^https?:\/\//i.test(value) ? value : `https://${value}`; }
   function sourceLabel(value) { return value.replace(/^https?:\/\//i, '').replace(/\/$/, ''); }
+  function preparationScore(strength) {
+    const value = Math.max(0, Math.min(3, Number(strength) || 0));
+    return Math.round((value / 3) * 10);
+  }
+  function scoreBand(score) { return score <= 3 ? 'low' : score <= 6 ? 'medium' : 'high'; }
   function render(program) {
     const programs = D.programs;
     const index = programs.indexOf(program);
@@ -46,7 +51,7 @@
           </section>
           <section id="skills" class="article-section"><div class="section-heading"><p class="section-number">06</p><h2>Skills and possible outcomes</h2></div>
             <h3 class="group-heading first">What a student could build</h3><p class="resume-outcome">${esc(program.resume)}</p>
-            <h3 class="group-heading">Areas of preparation</h3><div class="competency-grid">${(program.competencies || []).map(item => `<article><span class="strength-mark strength-${Math.round(item.strength || 0)}">${Number(item.strength || 0).toFixed(1)}</span><div><h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><span>${esc(item.category)}</span></div></article>`).join('')}</div>
+            <h3 class="group-heading">Areas of preparation</h3><p class="section-intro score-intro">Scores summarize the relative strength of preparation documented in this program, not the overall quality of the program.</p><div class="score-legend" aria-label="Preparation score color scale"><span><i class="score-low"></i>0–3 lower</span><span><i class="score-medium"></i>4–6 moderate</span><span><i class="score-high"></i>7–10 stronger</span></div><div class="competency-grid">${(program.competencies || []).map(item => { const score = preparationScore(item.strength); return `<article><span class="strength-mark score-${scoreBand(score)}" aria-label="${score} out of 10">${score}</span><div><h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><span>${esc(item.category)}</span></div></article>`; }).join('')}</div>
           </section>
           <section id="sources" class="article-section"><div class="section-heading"><p class="section-number">07</p><h2>Official sources</h2></div><p class="section-intro">Use these institutional pages to confirm current curriculum, faculty, concentrations, and requirements.</p>
             <ul class="source-list">${(program.sources || []).map(source => `<li><a href="${esc(sourceUrl(source))}" target="_blank" rel="noopener">${esc(sourceLabel(source))}</a><span>Official program or university page</span></li>`).join('')}</ul>

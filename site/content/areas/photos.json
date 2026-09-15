@@ -2,32 +2,34 @@
   "photos": {
     "zoology": {
       "url": "../images/areas/zoology.webp",
-      "alt": "A zoologist examines labeled specimen vials in a natural history collection.",
-      "credit": "U.S. Department of Agriculture, National Agricultural Library",
-      "source": "https://www.nal.usda.gov/exhibits/speccoll/exhibits/show/parasitic-diseases-with-econom/u-s--national-animal-parasite-",
+      "alt": "A collage shows the diversity of animal life, including an octopus, mantis, earthworm, tiger, and jellyfish.",
+      "credit": "Composite via Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Animaldiversity.jpg",
       "license": "Public domain"
     },
     "animal-physiology": {
       "url": "../images/areas/animal-physiology.webp",
-      "alt": "A scientist examines newly fertilized sturgeon eggs under a stereomicroscope to observe early development.",
-      "credit": "U.S. Geological Survey, Columbia Environmental Research Center",
-      "source": "https://www.usgs.gov/media/images/examining-newly-fertilized-pallid-sturgeon-eggs",
-      "license": "Public domain"
+      "alt": "A labeled anatomical diagram identifies the major organs and body systems of a cat.",
+      "credit": "Cat anatomy diagram via Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Cat_anatomy_diagram.png",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     "animal-behavior": {
       "url": "../images/areas/animal-behavior.webp",
-      "alt": "A handler uses a toy reward during a structured dog-training exercise.",
-      "credit": "Pfc. Ji Won Park / U.S. Army",
-      "source": "https://www.dvidshub.net/image/9551986/military-working-dog-engages-reward-training",
-      "license": "Public domain"
+      "alt": "A group of wolves play together in the snow, showing social signaling and physical interaction.",
+      "credit": "Craig Dennis",
+      "source": "https://commons.wikimedia.org/wiki/File:Wolves_Playing_(23879309232).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
     },
     "animal-cognition": {
       "url": "../images/areas/animal-cognition.webp",
-      "alt": "A pig uses a purpose-built controller during a cognition experiment.",
-      "credit": "Croney and Boysen (2021)",
-      "source": "https://commons.wikimedia.org/wiki/File:Croney_2021_pig_using_controller.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      "alt": "A chimpanzee investigates an enrichment box designed to require manipulation and problem-solving.",
+      "credit": "Damien Neadle",
+      "source": "https://commons.wikimedia.org/wiki/File:Chimpanzee_using_enrichment_box.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     "animal-welfare": {
       "url": "../images/areas/animal-welfare.webp",
@@ -37,38 +39,40 @@
     },
     "ecology": {
       "url": "../images/areas/ecology.webp",
-      "alt": "An ecologist records plant and habitat data along a grassland survey transect.",
-      "credit": "Lauren Dennhardt / U.S. Fish & Wildlife Service",
-      "source": "https://www.fws.gov/media/sara-conducting-belt-transect-survey-grassland-monitoring-team-photo-credit-lauren",
-      "license": "Public domain"
+      "alt": "Several wildlife species share a waterhole within a dry landscape, illustrating interactions among animals, water, and habitat.",
+      "credit": "Pekondjelo Himufe",
+      "source": "https://commons.wikimedia.org/wiki/File:Animals_drinking_at_a_waterhole.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     "wildlife-ecology-management": {
       "url": "../images/areas/wildlife-ecology-management.webp",
-      "alt": "A wildlife professional teaches an intern to use radio-telemetry equipment for tracking animals.",
-      "credit": "Kevin Cody / U.S. Fish & Wildlife Service",
-      "source": "https://www.fws.gov/media/jakob-bengelink-teaching-service-intern-bethany-fackrell-use-radio-telemetry-equipment",
+      "alt": "A raptor biology student holds a burrowing owl during wildlife monitoring and banding work.",
+      "credit": "W. Chris Clyne",
+      "source": "https://commons.wikimedia.org/wiki/File:Solai_Le_Fay,_Boise_State_raptor_biology_master%27s_student,_holds_burrowing_owl_at_monitoring_and_banding_operations_at_Rees_Training_Center,_Oregon.jpg",
       "license": "Public domain"
     },
     "conservation-biology": {
       "url": "../images/areas/conservation-biology.webp",
-      "alt": "Conservation staff set up monitoring equipment during a habitat-restoration project.",
-      "credit": "Grand Teton National Park / National Park Service",
-      "source": "https://commons.wikimedia.org/wiki/File:Grouse_Habitat_Restoration_(54521272804).jpg",
+      "alt": "Two students examine a sampling net while surveying stream biodiversity.",
+      "credit": "U.S. Fish & Wildlife Service Southeast Region",
+      "source": "https://commons.wikimedia.org/wiki/File:A_student_pair_checks_their_net_for_macroinvertebrates_(25898715764).jpg",
       "license": "Public domain"
     },
     "veterinary-science": {
       "url": "../images/areas/veterinary-science.webp",
-      "alt": "An animal care technician listens to a dog's heart during a veterinary examination.",
-      "credit": "U.S. Army / DVIDS",
-      "source": "https://www.dvidshub.net/image/8500540/us-army-veterinary-treatment-facility-port-hueneme",
+      "alt": "A veterinary professional in scrubs examines a black kitten in a clinic.",
+      "credit": "Senior Airman Jared Duhon / U.S. Air Force",
+      "source": "https://commons.wikimedia.org/wiki/File:Veterinary_Clinic_130506-F-VJ706-001.jpg",
       "license": "Public domain"
     },
     "wildlife-health": {
       "url": "../images/areas/wildlife-health.webp",
-      "alt": "Wildlife scientists collect health data and fit a radio collar to a sedated grizzly bear.",
-      "credit": "U.S. Geological Survey",
-      "source": "https://www.usgs.gov/media/images/scientists-collect-biological-data-and-fit-a-radio-collar-a-grizzly",
-      "license": "Public domain"
+      "alt": "A One Health diagram overlaps human health, animal health, and environmental health.",
+      "credit": "Thddbfk",
+      "source": "https://commons.wikimedia.org/wiki/File:One-Health-Triad-en.png",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     "animal-science": {
       "url": "../images/areas/animal-science.webp",
@@ -100,10 +104,11 @@
     },
     "anthrozoology": {
       "url": "../images/areas/anthrozoology.webp",
-      "alt": "A child reads beside a therapy dog while an adult volunteer follows along.",
-      "credit": "Nicole Leidholm / U.S. Air Force",
-      "source": "https://www.travis.af.mil/News/Article/150853/paws-for-reading-celebrates-two-years/",
-      "license": "Public domain"
+      "alt": "A young person embraces a dog, showing a close human-animal relationship.",
+      "credit": "Basile Morin",
+      "source": "https://commons.wikimedia.org/wiki/File:Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   }
 }

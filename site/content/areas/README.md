@@ -23,7 +23,7 @@ Focus topics have a title and description shown together in the article:
 }
 ```
 
-To provide hand-written examples, add an `examples` list:
+To provide hand-written examples instead of the automatically connected question, responsibility, and skill, add an `examples` list:
 
 ```json
 {
@@ -39,7 +39,7 @@ To provide hand-written examples, add an `examples` list:
 }
 ```
 
-`source` can be the exact title or URL of any item in that area's `references` list. If it is omitted, the article simply shows no source beside that item; the complete reference list remains at the end.
+`source` can be the exact title or URL of any item in that area's `references` list. If it is omitted, the site selects a related reference from the list.
 
 ## Questions and approaches
 
@@ -83,8 +83,18 @@ The `terms` list supplies the area glossary:
 ## Other files
 
 - `index.json` controls which area files are loaded and their order.
+- `photos.json` assigns one photograph to each area and controls its local path, accessible description, credit, source link, and optional license label.
 - Each field has a small HTML shell in `site/areas/`. The shared `site/area-article.js` reads the area's `data-area` value and pulls the article content from the matching JSON file.
 - To add an area, create its JSON file, add the filename to the `areas` list in `index.json`, and copy an existing HTML shell with the new `data-area` identifier.
+
+## Replacing a photograph
+
+1. Crop and resize the new image to 1200 × 675 pixels.
+2. Export it as a metadata-stripped WebP file in `site/images/areas/`, using the area ID as its filename.
+3. Update that area's entry in `photos.json`, including an accurate description in `alt`, the creator or organization in `credit`, and the original `source` page.
+4. Add the license name and link when the source requires attribution, and update `site/images/areas/CREDITS.md`.
+
+The site serves these optimized local files rather than downloading the full-size originals from outside websites. Keep the photograph focused on a recognizable activity, method, or working environment, and avoid using a single animal portrait as the sole visual definition of a broad field.
 
 ## JSON rules
 

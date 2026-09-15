@@ -1,0 +1,109 @@
+{
+  "photos": {
+    "zoology": {
+      "url": "../images/areas/zoology.webp",
+      "alt": "A zoologist examines labeled specimen vials in a natural history collection.",
+      "credit": "U.S. Department of Agriculture, National Agricultural Library",
+      "source": "https://www.nal.usda.gov/exhibits/speccoll/exhibits/show/parasitic-diseases-with-econom/u-s--national-animal-parasite-",
+      "license": "Public domain"
+    },
+    "animal-physiology": {
+      "url": "../images/areas/animal-physiology.webp",
+      "alt": "A wildlife biologist collects measurements from a tranquilized polar bear on sea ice.",
+      "credit": "Karyn Rode / U.S. Fish & Wildlife Service",
+      "source": "https://commons.wikimedia.org/wiki/File:USFWS_Polar_Bear_Biologist_working_with_a_Bear.jpg",
+      "license": "Public domain"
+    },
+    "animal-behavior": {
+      "url": "../images/areas/animal-behavior.webp",
+      "alt": "A handler works with a sea lion during a structured behavior demonstration.",
+      "credit": "Raymond Maddocks / U.S. Navy",
+      "source": "https://www.dvidshub.net/image/7846905/nere23-participants-experience-marine-mammal-program-courtesy-niwc-pacific",
+      "license": "Public domain"
+    },
+    "animal-cognition": {
+      "url": "../images/areas/animal-cognition.webp",
+      "alt": "A pig uses a purpose-built controller during a cognition experiment.",
+      "credit": "Croney and Boysen (2021)",
+      "source": "https://commons.wikimedia.org/wiki/File:Croney_2021_pig_using_controller.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "animal-welfare": {
+      "url": "../images/areas/animal-welfare.webp",
+      "alt": "Zoo staff discuss and record behavioral observations beside a giraffe habitat.",
+      "credit": "Lincoln Park Zoo / Institute of Museum and Library Services",
+      "source": "https://www.imls.gov/blog/2016/11/mobilizing-animal-welfare-around-world"
+    },
+    "ecology": {
+      "url": "../images/areas/ecology.webp",
+      "alt": "An ecologist records plant and habitat data along a grassland survey transect.",
+      "credit": "Lauren Dennhardt / U.S. Fish & Wildlife Service",
+      "source": "https://www.fws.gov/media/sara-conducting-belt-transect-survey-grassland-monitoring-team-photo-credit-lauren",
+      "license": "Public domain"
+    },
+    "wildlife-ecology-management": {
+      "url": "../images/areas/wildlife-ecology-management.webp",
+      "alt": "A refuge biologist augers through lake ice to measure winter oxygen conditions for a threatened fish population.",
+      "credit": "Cortez Rohr / U.S. Fish & Wildlife Service",
+      "source": "https://commons.wikimedia.org/wiki/File:Arctic_Grayling_Winter_Work_(52581133487).jpg",
+      "license": "Public domain"
+    },
+    "conservation-biology": {
+      "url": "../images/areas/conservation-biology.webp",
+      "alt": "Conservation staff set up monitoring equipment during a habitat-restoration project.",
+      "credit": "Grand Teton National Park / National Park Service",
+      "source": "https://commons.wikimedia.org/wiki/File:Grouse_Habitat_Restoration_(54521272804).jpg",
+      "license": "Public domain"
+    },
+    "veterinary-science": {
+      "url": "../images/areas/veterinary-science.webp",
+      "alt": "An animal care technician listens to a dog's heart during a veterinary examination.",
+      "credit": "U.S. Army / DVIDS",
+      "source": "https://www.dvidshub.net/image/8500540/us-army-veterinary-treatment-facility-port-hueneme",
+      "license": "Public domain"
+    },
+    "wildlife-health": {
+      "url": "../images/areas/wildlife-health.webp",
+      "alt": "Wildlife scientists collect health data and fit a radio collar to a sedated grizzly bear.",
+      "credit": "U.S. Geological Survey",
+      "source": "https://www.usgs.gov/media/images/scientists-collect-biological-data-and-fit-a-radio-collar-a-grizzly",
+      "license": "Public domain"
+    },
+    "animal-science": {
+      "url": "../images/areas/animal-science.webp",
+      "alt": "An animal scientist records pig feeding behavior in a livestock research facility.",
+      "credit": "U.S. Department of Agriculture, Agricultural Research Service",
+      "source": "https://agresearchmag.ars.usda.gov/2013/jun/livestock/",
+      "license": "Public domain"
+    },
+    "zoo-aquarium-science": {
+      "url": "../images/areas/zoo-aquarium-science.webp",
+      "alt": "Aquarium researchers handle coral fragments in a controlled experimental reef laboratory.",
+      "credit": "NOAA AOML and University of Miami CIMAS",
+      "source": "https://www.climate.gov/news-features/feed/new-study-demonstrates-impacts-multiple-stressors-reef-building-corals"
+    },
+    "wildlife-rehabilitation": {
+      "url": "../images/areas/wildlife-rehabilitation.webp",
+      "alt": "Wildlife rehabilitation staff examine a bald eagle in a treatment room.",
+      "credit": "Virginia State Parks staff",
+      "source": "https://commons.wikimedia.org/wiki/File:Eagle_1903_with_vet_(15180184292).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    "environmental-education": {
+      "url": "../images/areas/environmental-education.webp",
+      "alt": "An environmental educator helps young visitors explore marine turtle science at an outreach exhibit.",
+      "credit": "NOAA Fisheries",
+      "source": "https://www.fisheries.noaa.gov/west-coast/science-data/marine-turtle-outreach",
+      "license": "Public domain"
+    },
+    "anthrozoology": {
+      "url": "../images/areas/anthrozoology.webp",
+      "alt": "A participant holds a dove during an animal-assisted therapy demonstration.",
+      "credit": "New Brunswick / Nouveau-Brunswick",
+      "source": "https://commons.wikimedia.org/wiki/File:Demonstration_on_Pet_Therapy_D%C3%A9monstration_de_zooth%C3%A9rapie_(34062842804).jpg",
+      "license": "Public Domain Mark"
+    }
+  }
+}

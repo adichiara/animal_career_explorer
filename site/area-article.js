@@ -4,27 +4,7 @@
   const app = document.getElementById('articleApp');
   const currentId = document.body.dataset.area;
   let areas = [];
-
-  const photos = {
-    field: {
-      url: 'https://www.fws.gov/sites/default/files/2023-03/GMT%20veg%20transect%20072810%20LD.jpg',
-      alt: 'A wildlife biologist records measurements along a grassland survey transect.',
-      credit: 'Lauren Dennhardt / U.S. Fish & Wildlife Service',
-      source: 'https://www.fws.gov/media/sara-conducting-belt-transect-survey-grassland-monitoring-team-photo-credit-lauren'
-    },
-    health: {
-      url: 'https://www.fws.gov/sites/default/files/images/2024-03-3/5847.jpg',
-      alt: 'Wildlife researchers conduct a veterinary examination of a Florida panther in the field.',
-      credit: 'U.S. Fish & Wildlife Service',
-      source: 'https://www.fws.gov/media/florida-panther-research'
-    },
-    people: {
-      url: 'https://media.fisheries.noaa.gov/dam-migration/mteapstaff_birchaquarium-swfsc-mmtd-noaa.jpg',
-      alt: 'A marine educator speaks with visitors at an aquarium outreach exhibit.',
-      credit: 'NOAA Fisheries',
-      source: 'https://www.fisheries.noaa.gov/west-coast/science-data/marine-turtle-outreach'
-    }
-  };
+  let photos = {};
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -37,11 +17,7 @@
   function areaById(id) { return areas.find(area => area.id === id); }
   function careerByName(name) { return D.careers.find(career => career.name.toLowerCase() === name.toLowerCase()); }
   function programByCode(code) { return D.programs.find(program => program.code === code); }
-  function photoFor(area) {
-    if (['zoology', 'ecology', 'wildlife-ecology-management', 'conservation-biology'].includes(area.id)) return photos.field;
-    if (['animal-physiology', 'veterinary-science', 'wildlife-health', 'wildlife-rehabilitation', 'animal-science'].includes(area.id)) return photos.health;
-    return photos.people;
-  }
+  function photoFor(area) { return photos[area.id]; }
   function sourceFor(area, reference) {
     if (!reference) return null;
     return area.references.find(item => item.title === reference || item.url === reference) || null;
@@ -108,6 +84,7 @@
 
   function render(area) {
     const photo = photoFor(area);
+    if (!photo) throw new Error(`No photograph is configured for ${area.id}.`);
     const index = areas.findIndex(item => item.id === area.id);
     const previous = areas[(index - 1 + areas.length) % areas.length];
     const next = areas[(index + 1) % areas.length];
@@ -117,7 +94,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../areas.html">All field guides</a><span aria-hidden="true">/</span><span>${esc(area.title)}</span></nav>
       <header class="article-hero">
         <div class="hero-copy"><div class="eyebrow">Field guide</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
-        <figure><img src="${esc(photo.url)}" alt="${esc(photo.alt)}"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a></figcaption></figure>
+        <figure><img src="${esc(photo.url)}" alt="${esc(photo.alt)}" width="1200" height="675" decoding="async" fetchpriority="high"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a>${photo.license ? ` · ${photo.licenseUrl ? `<a href="${esc(photo.licenseUrl)}" target="_blank" rel="noopener">${esc(photo.license)}</a>` : esc(photo.license)}` : ''}</figcaption></figure>
       </header>
       <div class="article-body">
         <aside class="article-toc" aria-labelledby="tocTitle"><p id="tocTitle" class="mini-label">In this guide</p><ol>
@@ -170,7 +147,11 @@
   async function initialize() {
     try {
       const root = '../content/areas/';
-      const manifest = await fetchJson(`${root}index.json`);
+      const [manifest, photoManifest] = await Promise.all([
+        fetchJson(`${root}index.json`),
+        fetchJson(`${root}photos.json`)
+      ]);
+      photos = photoManifest.photos || photoManifest;
       areas = await Promise.all(manifest.areas.map(file => fetchJson(`${root}${file}`)));
       const area = areaById(currentId);
       if (!area) throw new Error(`No area content found for ${currentId}.`);

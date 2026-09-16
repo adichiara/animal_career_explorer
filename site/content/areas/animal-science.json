@@ -176,12 +176,12 @@
     {
       "code": "UMA-AS",
       "school": "University of Massachusetts Amherst",
-      "title": "Animal Science, Management/Behavior track"
+      "title": "Animal Science B.S. (Animal Management concentration)"
     },
     {
       "code": "URI-AZ",
       "school": "University of Rhode Island",
-      "title": "Animal Science with Zoo & Aquarium Science certificate"
+      "title": "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate"
     },
     {
       "code": "UNE-AB",
@@ -191,7 +191,7 @@
     {
       "code": "UMA-BIO",
       "school": "University of Massachusetts Amherst",
-      "title": "Biology B.S., Behavior/Ecology track"
+      "title": "Biology B.S. (ecology and behavior electives)"
     }
   ],
   "programCodes": [

@@ -41,7 +41,7 @@
     app.innerHTML = `<article class="field-article program-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">All college programs</a><span aria-hidden="true">/</span><span>${esc(program.school)}</span></nav>
       <header class="article-hero text-hero">
-        <div class="hero-copy"><div class="eyebrow">College program guide</div><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
+        <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(program.school)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
         <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
           <div><dt>School</dt><dd>${esc(program.school)}</dd></div><div><dt>Program type</dt><dd>${esc(program.type)}</dd></div><div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div><div><dt>Research set</dt><dd>${program.collection === 'additional' ? 'Additional researched option' : 'Focused comparison'}</dd></div><div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
         </dl></aside>

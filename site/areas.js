@@ -20,9 +20,7 @@
     const matches = areas.filter(area => !q || searchableText(area).includes(q));
     app.innerHTML = `<div class="index-page">
       <header class="index-hero">
-        <div class="eyebrow">${areas.length} in-depth field guides</div>
-        <h1>Understand a field before choosing a path</h1>
-        <p>Each guide brings the field’s focus, questions, responsibilities, knowledge, working conditions, careers, college study, terminology, and sources together on one readable page.</p>
+        <h1>Field Guides</h1>
         <label class="guide-search" for="areaSearch"><span>Find a field or topic</span><input id="areaSearch" type="search" placeholder="Try behavior, rehabilitation, ecology…" value="${esc(query || '')}"></label>
       </header>
       <section class="guide-index" aria-labelledby="guideIndexTitle">

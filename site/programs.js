@@ -46,9 +46,7 @@
     ];
     app.innerHTML = `<div class="index-page">
       <header class="index-hero">
-        <div class="eyebrow">${programs.length} researched undergraduate pathways</div>
-        <h1>Look inside the program, not only at the major name</h1>
-        <p>The collection includes the original focused comparison and additional programs that offered meaningful combinations of behavior, animal care, wildlife, conservation, or research.</p>
+        <h1>College Programs</h1>
         <label class="guide-search" for="programSearch"><span>Find a school, program, or subject</span><input id="programSearch" type="search" placeholder="Try behavior, wildlife, fieldwork, GIS…" value="${esc(query || '')}"></label>
         ${loadWarning ? `<p class="load-warning" role="status">${esc(loadWarning)}</p>` : ''}
       </header>

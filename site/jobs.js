@@ -28,10 +28,7 @@
     const categories = [...new Set(matches.map(career => career.category))].sort();
     app.innerHTML = `<div class="index-page jobs-index-page">
       <header class="index-hero">
-        <div class="eyebrow">${careers.length} roles with observed job examples</div>
-        <h1>See how work appears in actual job titles</h1>
-        <p>These pages organize dated postings by the broader role they illustrate. They preserve employers’ titles, locations, qualifications, and compensation when those details were available.</p>
-        <div class="editorial-note"><strong>Historical examples, not open positions</strong><span>Job status changes quickly. Use these records to understand the work and the language employers use, then search current sources separately.</span></div>
+        <h1>Job Examples</h1>
         <label class="guide-search" for="jobSearch"><span>Find a role, employer, title, or location</span><input id="jobSearch" type="search" placeholder="Try rehabilitation, keeper, research, GIS…" value="${esc(query || '')}"></label>
       </header>
       <section class="guide-index" aria-labelledby="jobIndexTitle"><div class="section-heading"><p class="section-number">Job example index</p><h2 id="jobIndexTitle">Choose a role to examine</h2></div>

@@ -2,9 +2,9 @@
   "programs": [
     {
       "code": "ME-WE",
-      "title": "Wildlife Ecology → behavioral ecology emphasis",
+      "title": "Wildlife Ecology B.S.",
       "school": "University of Maine",
-      "overview": "Institutional profile. Maine’s public flagship offers a traditional residential university experience in Orono, with nearby Bangor and a strong outdoors/natural-resource culture. It is smaller than UMass and URI but still has the breadth, laboratories, faculty research, athletics, and academic infrastructure of a public research university. Academic environment. Current UMaine KPI reporting shows total Fall 2025 headcount of 10,644, 79% first-year retention, 47% four-year graduation, 59% six-year graduation, a roughly 15–16:1 student-to-faculty ratio, and high participation in research/internship experiences. The institutional completion figures are lower than UMass; they should be treated as a characteristic of the environment, not as a personal probability of completion. Research and experience ecosystem. For the target fields, UMaine’s distinctive strength is that wildlife, field ecology, organismal biology, and undergraduate research are not peripheral. The Wildlife Ecology program has unusually strong documented employment/graduate outcomes; Zoology provides the broader animal-science alternative.",
+      "overview": "Institutional profile. Maine’s public flagship offers a traditional residential university experience in Orono, with nearby Bangor and a strong outdoors/natural-resource culture. It is smaller than UMass and URI but still has the breadth, laboratories, faculty research, athletics, and academic infrastructure of a public research university. Academic environment. Current UMaine KPI reporting shows total Fall 2025 headcount of 10,644, 79% first-year retention, 47% four-year graduation, 59% six-year graduation, a roughly 15–16:1 student-to-faculty ratio, and high participation in research/internship experiences. The institutional completion figures are lower than UMass; they should be treated as a characteristic of the environment, not as a personal probability of completion. Research and experience ecosystem. The Department of Wildlife, Fisheries, and Conservation Biology is now housed in UMaine’s College of Earth, Life, and Health Sciences. For the target fields, UMaine’s distinctive strength is that wildlife, field ecology, organismal biology, and undergraduate research are not peripheral. The Wildlife Ecology program has unusually strong documented employment/graduate outcomes; Zoology provides the broader animal-science alternative.",
       "fundamental": "A professional wildlife-science education focused on animals as members of populations and ecosystems: how wildlife uses habitat, how populations change, how behavior affects conservation, and how those processes are measured in the field.",
       "scienceFoundation": [
         "General biology and vertebrate biology",
@@ -29,7 +29,7 @@
       "progression": [
         "Year 1: biology, introductory wildlife coursework, early exposure to the Wildlife Society and faculty research; pursue summer wildlife/rehab/zoo or field experience.",
         "Year 2: vertebrate biology, ecology, ecological statistics, scientific communication, and intensive field survey; begin research or substantial field work.",
-        "Year 3: build a behavior-oriented concentration using Animal Behavior and organismal/wildlife electives; add GIS and deeper faculty research.",
+        "Year 3: use Animal Behavior and organismal/wildlife electives to build a behavior-oriented focus; add GIS and deeper faculty research.",
         "Year 4: population dynamics, wildlife–habitat relationships, capstone/honors research using telemetry or behavior/movement questions, and a presentation or thesis."
       ],
       "resume": "B.S. Wildlife Ecology; ecological statistics; GIS; intensive field survey; vertebrate and wildlife biology; Animal Behavior/behavioral ecology electives; faculty research or field internship; capstone with telemetry/habitat-use analysis; scientific writing/presentation.",
@@ -41,14 +41,15 @@
       "tradeoffs": [
         "Captive-animal welfare, enrichment, learning, and training are not central to the curriculum and would need internships or outside experiences.",
         "The degree is more professionally wildlife-oriented than a broad zoology/biology degree.",
-        "An individualized concentration can shape coursework but does not appear as a named concentration on the transcript/diploma."
+        "Behavioral ecology can be emphasized through electives, research, and faculty mentorship, but it is not presented as an official named emphasis in the Wildlife Ecology B.S."
       ],
       "bestWhen": "Especially compelling when wildlife behavior, field ecology, rehabilitation/release, reintroduction, movement, habitat use, or agency/conservation work becomes the dominant interest.",
       "sources": [
         "umaine.edu/wle/undergraduate-program",
         "umaine.edu/wle/undergraduate-program/wildlife-ecology-curriculum",
         "umaine.edu/wle/undergraduate-program/concentrations",
-        "umaine.edu/wle/faculty-staff-directory/merz-margaret-maisie"
+        "umaine.edu/wle/faculty-staff-directory/merz-margaret-maisie",
+        "elh.umaine.edu/"
       ],
       "type": "Wildlife professional",
       "experienceTags": [
@@ -60,17 +61,18 @@
       ],
       "scale": "Public research university",
       "dims": [
-        2.0,
+        2,
         0.7,
         0.6,
-        3.0,
+        3,
         2.6,
         2.1,
-        3.0,
-        3.0,
+        3,
+        3,
         2.6,
         1.8
-      ]
+      ],
+      "lastVerified": "2026-09-16"
     },
     {
       "code": "ME-ZOO",
@@ -127,23 +129,23 @@
       "scale": "Public research university",
       "dims": [
         2.5,
-        1.0,
-        1.0,
+        1,
+        1,
         2.4,
         1.8,
-        3.0,
+        3,
         2.3,
         2.3,
-        3.0,
+        3,
         1.6
       ]
     },
     {
       "code": "UMA-BIO",
-      "title": "Biology B.S. → Behavior/Ecology",
+      "title": "Biology B.S. (ecology and behavior electives)",
       "school": "UMass Amherst",
       "overview": "Institutional profile. Massachusetts’ flagship is the largest and broadest institutional platform in the shortlist. Amherst is a genuine college town embedded in the Five College region, combining a major residential university with access to Amherst College, Smith, Mount Holyoke and Hampshire coursework. Academic environment. For Fall 2025, UMass reported more than 23,000 undergraduates, an average class size of 35, 77% of classes below 40 students, 18:1 student-faculty ratio, 92% first-year retention, 75.4% four-year graduation and 83.4% six-year graduation. The science pathways are conventionally demanding, especially Biology, but the completion environment is strong. Research and experience ecosystem. The major advantage is scale: many laboratories, departments, courses, funded summer programs, honors research and external internships. The corresponding risk is execution: animal-specific identity, faculty relationships and specialized experience need to be built intentionally.",
-      "fundamental": "A broad biological-science pathway that can connect genes, cells, physiology, nervous systems, evolution, ecology, and environment to animal behavior. The animal specialization must be constructed deliberately within a very large research university.",
+      "fundamental": "A broad Biology B.S. that can connect genes, cells, physiology, nervous systems, evolution, ecology, and environment to animal behavior. Ecology and behavior are an informal advising/elective pathway rather than an officially named concentration, so the animal specialization must be constructed deliberately.",
       "scienceFoundation": [
         "Introductory biology sequence",
         "General chemistry and organic chemistry",
@@ -185,7 +187,8 @@
         "catalog.umass.edu/undergradguide/2026-2027/Page26040.html",
         "www.umass.edu/biology/academics/undergraduate-program/courses-approved-major-electives",
         "www.umass.edu/biology/about/directory/jeffrey-podos",
-        "www.umass.edu/studentsuccess/five-college-interchange-registration"
+        "www.umass.edu/studentsuccess/five-college-interchange-registration",
+        "www.umass.edu/biology/ecology-and-evolutionary-biology-course-guide"
       ],
       "type": "Broad biological science",
       "experienceTags": [
@@ -197,22 +200,23 @@
       "dims": [
         2.6,
         1.4,
-        1.0,
+        1,
         2.2,
         1.4,
-        3.0,
+        3,
         2.2,
         2.5,
-        3.0,
+        3,
         1.8
-      ]
+      ],
+      "lastVerified": "2026-09-16"
     },
     {
       "code": "UMA-WEC",
-      "title": "Wildlife Ecology & Conservation",
+      "title": "Natural Resources Conservation B.S. (Wildlife Ecology & Conservation concentration)",
       "school": "UMass Amherst",
       "overview": "Institutional profile. Massachusetts’ flagship is the largest and broadest institutional platform in the shortlist. Amherst is a genuine college town embedded in the Five College region, combining a major residential university with access to Amherst College, Smith, Mount Holyoke and Hampshire coursework. Academic environment. For Fall 2025, UMass reported more than 23,000 undergraduates, an average class size of 35, 77% of classes below 40 students, 18:1 student-faculty ratio, 92% first-year retention, 75.4% four-year graduation and 83.4% six-year graduation. The science pathways are conventionally demanding, especially Biology, but the completion environment is strong. Research and experience ecosystem. The major advantage is scale: many laboratories, departments, courses, funded summer programs, honors research and external internships. The corresponding risk is execution: animal-specific identity, faculty relationships and specialized experience need to be built intentionally.",
-      "fundamental": "A professional wildlife and conservation track emphasizing field sampling, populations, habitats, quantitative ecology, GIS, management, and the interaction between wildlife and landscapes.",
+      "fundamental": "A Wildlife Ecology & Conservation concentration within the Natural Resources Conservation B.S., emphasizing field sampling, populations, habitats, quantitative ecology, GIS, management, and the interaction between wildlife and landscapes.",
       "scienceFoundation": [
         "Ecology and wildlife biology",
         "Quantitative ecology",
@@ -230,7 +234,7 @@
         "Conservation Genetics",
         "Landscape Ecology"
       ],
-      "experience": "More structured for field/wildlife work than UMass Biology. The concentration is designed for professional wildlife preparation and can be configured toward The Wildlife Society educational requirements.",
+      "experience": "More structured for field/wildlife work than UMass Biology. UMass states that the Wildlife Ecology & Conservation concentration provides the coursework required to qualify for Associate Wildlife Biologist certification from The Wildlife Society.",
       "research": "The Environmental Conservation department posts undergraduate research opportunities, including paid and credit-bearing work. The large university also provides access to broader research infrastructure.",
       "progression": [
         "Year 1: biology/ecology and natural-resource foundations; join wildlife/conservation organizations and identify field opportunities.",
@@ -265,21 +269,22 @@
         1.8,
         0.5,
         0.5,
-        3.0,
+        3,
         2.3,
         1.7,
-        3.0,
-        3.0,
+        3,
+        3,
         2.5,
         1.8
-      ]
+      ],
+      "lastVerified": "2026-09-16"
     },
     {
       "code": "UMA-AS",
-      "title": "Animal Science → Management/Behavior",
+      "title": "Animal Science B.S. (Animal Management concentration)",
       "school": "UMass Amherst",
       "overview": "Institutional profile. Massachusetts’ flagship is the largest and broadest institutional platform in the shortlist. Amherst is a genuine college town embedded in the Five College region, combining a major residential university with access to Amherst College, Smith, Mount Holyoke and Hampshire coursework. Academic environment. For Fall 2025, UMass reported more than 23,000 undergraduates, an average class size of 35, 77% of classes below 40 students, 18:1 student-faculty ratio, 92% first-year retention, 75.4% four-year graduation and 83.4% six-year graduation. The science pathways are conventionally demanding, especially Biology, but the completion environment is strong. Research and experience ecosystem. The major advantage is scale: many laboratories, departments, courses, funded summer programs, honors research and external internships. The corresponding risk is execution: animal-specific identity, faculty relationships and specialized experience need to be built intentionally.",
-      "fundamental": "A rigorous managed-animal science degree centered on anatomy, physiology, genetics, nutrition, reproduction, health, welfare, and animal management, with behavior and exotic/wildlife electives available around a domestic/agricultural core.",
+      "fundamental": "A rigorous Animal Science B.S. using the official Animal Management concentration, centered on anatomy, physiology, genetics, nutrition, reproduction, health, welfare, and animal management, with behavior and exotic/wildlife electives available around a domestic/agricultural core.",
       "scienceFoundation": [
         "General and organic chemistry",
         "Anatomy & physiology",
@@ -297,7 +302,7 @@
         "Exotic-animal courses",
         "Animal Behavior/Movement and selected wildlife electives"
       ],
-      "experience": "Strong hands-on animal-management infrastructure, but much of it is built around domestic livestock and equine systems. Behavior/welfare pathways are possible but require careful elective selection.",
+      "experience": "Strong hands-on animal-management infrastructure, but much of it is built around domestic livestock and equine systems. Animal Management is one of UMass Amherst’s three official Animal Science concentrations; behavior/welfare interests are built through electives, research, and experience rather than a named Behavior concentration.",
       "research": "Animal science research is scientifically substantial and can support graduate work in physiology, welfare, reproduction, behavior, or related fields. The broader UMass research ecosystem remains a strength.",
       "progression": [
         "Year 1: animal-science and biological/chemical foundations with early management exposure.",
@@ -330,15 +335,16 @@
       "dims": [
         2.1,
         2.4,
-        2.0,
-        1.0,
+        2,
+        1,
         0.7,
-        3.0,
-        1.0,
+        3,
+        1,
         1.7,
         2.5,
         1.5
-      ]
+      ],
+      "lastVerified": "2026-09-16"
     },
     {
       "code": "URI-W",
@@ -397,13 +403,13 @@
       ],
       "scale": "Public research university",
       "dims": [
-        2.0,
+        2,
         0.8,
-        1.0,
-        3.0,
+        1,
+        3,
         2.4,
-        2.0,
-        3.0,
+        2,
+        3,
         2.5,
         2.6,
         1.9
@@ -411,7 +417,7 @@
     },
     {
       "code": "URI-WZ",
-      "title": "Wildlife & Conservation Biology + Zoo & Aquarium Science certificate",
+      "title": "Wildlife & Conservation Biology B.S. + Zoo & Aquarium Science Certificate",
       "school": "University of Rhode Island",
       "overview": "Institutional profile. URI is a New England flagship with a classic residential campus in Kingston and access to South County, Narragansett, Newport and Providence. Its scale is large enough for broad university resources but smaller and more concentrated than UMass. Academic environment. URI’s recent institutional reporting places first-year retention in the mid-80% range and completion around the high-50s for four years and roughly 70% by six years. Many classes are relatively small for a public university. The academic environment is serious STEM with laboratories, field methods, experiential learning and undergraduate research. Research and experience ecosystem. URI has become the most interesting school for within-institution flexibility between wildlife/conservation and animals under human care. The Zoo & Aquarium Science certificate, Roger Williams Park Zoo course connection, formal wildlife experiential sequence and funded undergraduate research provide unusually visible pathways.",
       "fundamental": "A deliberately hybrid route: retain field wildlife, ecology, conservation, statistics, and organismal biology while adding zoo management, managed-animal behavior, welfare science, applied training, and an internship-linked practicum.",
@@ -431,7 +437,7 @@
         "Zoo/Aquarium practicum and internship",
         "Animal Behavior, mammalogy/ornithology and conservation biology"
       ],
-      "experience": "The broadest cross-over between wild and managed animals in the shortlist. The certificate is open to all URI undergraduates and includes a practicum tied to real zoo/aquarium internship experience. Zoo Animal Management is taught at Roger Williams Park Zoo.",
+      "experience": "The broadest cross-over between wild and managed animals in the shortlist. URI currently describes the 12-credit, five-course Zoo and Aquarium Science Certificate as open to all undergraduates; it includes zoo management at Roger Williams Park Zoo and an internship-linked practicum.",
       "research": "Combines URI wildlife research opportunities with zoo/aquarium behavior and welfare possibilities. Recent URI examples include penguin social behavior and conservation-breeding work with regional zoo/aquarium partners.",
       "progression": [
         "Year 1: wildlife/biology foundations and experiential planning; identify zoo/wildlife research interests.",
@@ -439,14 +445,14 @@
         "Year 3: Animal Behavior and wildlife field courses plus Zoo Animal Management/managed-animal behavior sequence where scheduling permits.",
         "Year 4: zoo welfare/applied behavior, practicum/internship, and thesis/co-op/research integrating wildlife or managed-animal questions."
       ],
-      "resume": "B.S. Wildlife & Conservation Biology + Zoo & Aquarium Science certificate; wildlife field methods; statistics; Animal Behavior; zoo management at Roger Williams Park Zoo; managed-animal behavior/welfare; applied training; zoo/aquarium internship; research/thesis or co-op potential.",
+      "resume": "B.S. Wildlife & Conservation Biology + Zoo & Aquarium Science Certificate; wildlife field methods; statistics; Animal Behavior; zoo management at Roger Williams Park Zoo; managed-animal behavior/welfare; applied training; zoo/aquarium internship; research/thesis or co-op potential.",
       "advantages": [
         "Unusually broad coverage of wildlife, conservation, zoo care, welfare, training, and research.",
         "Allows uncertainty between wildlife and zoo/managed-animal directions to persist longer without changing institutions.",
         "Roger Williams Park Zoo connection is concrete rather than merely a generic internship list."
       ],
       "tradeoffs": [
-        "Certificate integration is not completely frictionless: AVS 343 has an Anatomy & Physiology prerequisite or instructor-permission issue for non-Animal-Science majors.",
+        "Certificate sequencing still needs planning: AVS 343 requires AVS 331 or instructor permission, and AVS 398 requires AVS 327 or permission plus a concurrent or recent zoo/aquarium internship.",
         "Exact double-counting and four-year sequencing need confirmation with URI advising.",
         "Breadth may reduce depth relative to a more single-purpose program."
       ],
@@ -469,22 +475,23 @@
       "dims": [
         2.7,
         2.6,
-        3.0,
-        3.0,
+        3,
+        3,
         2.8,
         2.2,
-        3.0,
+        3,
         2.4,
         2.8,
-        2.0
-      ]
+        2
+      ],
+      "lastVerified": "2026-09-16"
     },
     {
       "code": "URI-AZ",
-      "title": "Animal Science + Zoo & Aquarium Science certificate",
+      "title": "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate",
       "school": "University of Rhode Island",
       "overview": "Institutional profile. URI is a New England flagship with a classic residential campus in Kingston and access to South County, Narragansett, Newport and Providence. Its scale is large enough for broad university resources but smaller and more concentrated than UMass. Academic environment. URI’s recent institutional reporting places first-year retention in the mid-80% range and completion around the high-50s for four years and roughly 70% by six years. Many classes are relatively small for a public university. The academic environment is serious STEM with laboratories, field methods, experiential learning and undergraduate research. Research and experience ecosystem. URI has become the most interesting school for within-institution flexibility between wildlife/conservation and animals under human care. The Zoo & Aquarium Science certificate, Roger Williams Park Zoo course connection, formal wildlife experiential sequence and funded undergraduate research provide unusually visible pathways.",
-      "fundamental": "A managed-animal science route built around physiology, health, behavior, nutrition, reproduction, care and management, then specialized toward evidence-based zoo/aquarium welfare, husbandry, training, and research.",
+      "fundamental": "A managed-animal route combining URI’s Animal and Veterinary Science B.S. Animal Science option with the Zoo and Aquarium Science Certificate, linking physiology, health, behavior, nutrition, reproduction, care, and management to evidence-based zoo/aquarium welfare, husbandry, training, and research.",
       "scienceFoundation": [
         "Animal anatomy & physiology",
         "Animal disease",
@@ -503,7 +510,7 @@
         "Marine mammal courses",
         "Zoo/aquarium internship practicum"
       ],
-      "experience": "The zoo certificate fits naturally because AVS 343 (Behavior of Managed Animals) is already part of the Animal Science route. The combination is highly structured for animals under human care and includes required internship/special-project experience.",
+      "experience": "URI currently describes the Zoo and Aquarium Science Certificate as open to all undergraduates. It is a 12-credit, five-course certificate that includes zoo management at Roger Williams Park Zoo and an internship-linked practicum; pairing it with the Animal Science option creates a particularly structured managed-animal route.",
       "research": "Faculty alignment includes Justin Richard, whose work spans animal behavior and reproductive physiology in zoos and the wild and who involves undergraduates in zoo/aquarium research. URI also provides institutional undergraduate-research funding.",
       "progression": [
         "Year 1: animal-science, biology and chemistry foundations.",
@@ -539,16 +546,17 @@
       "scale": "Public research university",
       "dims": [
         2.8,
-        3.0,
-        3.0,
+        3,
+        3,
         1.4,
         1.1,
         2.7,
         1.5,
         1.7,
         2.5,
-        2.0
-      ]
+        2
+      ],
+      "lastVerified": "2026-09-16"
     },
     {
       "code": "UNE-AB",
@@ -608,11 +616,11 @@
       ],
       "scale": "Smaller private university",
       "dims": [
-        3.0,
-        3.0,
+        3,
+        3,
         2.5,
-        2.0,
-        2.0,
+        2,
+        2,
         2.1,
         1.7,
         1.5,
@@ -622,10 +630,10 @@
     },
     {
       "code": "UNE-AN",
-      "title": "Animal Behavior B.S. + selected neuroscience",
+      "title": "Animal Behavior B.S. with Neuroscience minor",
       "school": "University of New England",
       "overview": "Institutional profile. UNE is the smallest and most specialized environment in the shortlist. The Animal Behavior program is based on the coastal Biddeford campus in southern Maine, with relatively small classes and close faculty contact. The location offers coastal access and proximity to the Portland/southern Maine region, while the campus itself is quieter than a large college town. Academic environment. UNE reports a roughly 12:1 student-teacher ratio and average class size around 18. Recent first-year retention has generally been in the upper 70% range; cohort four-year graduation has varied roughly from the mid-50s to mid-60s, with six-year rates in the low-60s to around 70%. The program is not academically light: it combines biology, chemistry, statistics, research methods, labs, reading/writing and behavioral research. Research and experience ecosystem. The major strength is low execution risk for an animal-behavior identity. Behavior, cognition, learning, communication, welfare/captive-management options, research and internships are central rather than something that must be assembled from several departments.",
-      "fundamental": "The Animal Behavior degree with added mechanistic depth in neural systems and cognition, without automatically committing to the full neuroscience minor.",
+      "fundamental": "The Animal Behavior B.S. paired with UNE’s separate Neuroscience minor, adding formal depth in neural systems and cognition while retaining animal behavior as the major.",
       "scienceFoundation": [
         "All Animal Behavior science foundations",
         "Introduction to Neurobiology with lab",
@@ -639,8 +647,8 @@
         "Behavioral research methods",
         "Welfare/captive management as in the Animal Behavior major"
       ],
-      "experience": "Animal experience and behavior research remain anchored in the Animal Behavior major. Neuroscience coursework adds scientific depth rather than replacing internships or animal-focused electives.",
-      "research": "Best suited to questions connecting behavior, cognition and nervous-system mechanisms. The full neuroscience minor is 22 credits and may create excessive overlap/opportunity cost, so selected courses are currently the preferred strategy.",
+      "experience": "Animal experience and behavior research remain anchored in the Animal Behavior major. The separate Neuroscience minor adds mechanistic scientific depth rather than replacing internships or animal-focused electives.",
+      "research": "Best suited to questions connecting behavior, cognition, and nervous-system mechanisms. The Neuroscience minor is a separate credential rather than an option within the Animal Behavior major; sequencing should be planned so it does not crowd out research, internships, or organismal electives.",
       "progression": [
         "Years 1–2: follow the Animal Behavior foundation and research sequence while completing prerequisites for neuroscience.",
         "Year 3: add neurobiology and/or behavioral-cognitive neuroscience alongside cognition, learning and behavior electives.",
@@ -653,13 +661,13 @@
       ],
       "tradeoffs": [
         "Does not materially expand B.S.-level career coverage; its value is intellectual and research-oriented.",
-        "A full 22-credit neuroscience minor may consume flexibility better used for research, internships or organismal electives."
+        "The additional minor uses elective capacity that might otherwise support research, internships, or organismal electives, so sequencing should be planned carefully."
       ],
       "bestWhen": "Especially compelling if interest shifts from “what does the animal do?” toward “how do brain and biological mechanisms produce the behavior?” while retaining applied animal-behavior interests.",
       "sources": [
-        "www.une.edu/catalog/2025-2026/undergraduate/animal-behavior",
-        "www.une.edu/catalog/2025-2026/undergraduate/neuroscience-minor",
-        "www.une.edu/catalog/2025-2026/undergraduate/neuroscience"
+        "www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior",
+        "www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-neuroscience",
+        "www.une.edu/catalog"
       ],
       "type": "Behavior + neuroscience",
       "experienceTags": [
@@ -670,17 +678,18 @@
       ],
       "scale": "Smaller private university",
       "dims": [
-        3.0,
+        3,
         2.6,
         2.2,
         1.7,
         1.6,
-        3.0,
+        3,
         1.5,
         1.6,
-        3.0,
+        3,
         1.6
-      ]
+      ],
+      "lastVerified": "2026-09-16"
     }
   ],
   "careers": [
@@ -720,10 +729,10 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         1.2,
         0.5,
-        2.0,
+        2,
         0.5,
         1.5,
         2.9,
@@ -783,12 +792,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.1
       ],
@@ -846,12 +855,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.6
       ],
@@ -909,12 +918,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
         2.5,
         0.5,
-        1.0,
+        1,
         2.9,
         1.6
       ],
@@ -972,12 +981,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         1.2,
         0.5,
         2.5,
         0.5,
-        1.0,
+        1,
         2.9,
         1.6
       ],
@@ -1035,7 +1044,7 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
         2.5,
@@ -1098,12 +1107,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.1
       ],
@@ -1161,10 +1170,10 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
         1.5,
         2.9,
@@ -1224,12 +1233,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.1
       ],
@@ -1287,12 +1296,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.1
       ],
@@ -1351,12 +1360,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.1
       ],
@@ -1415,12 +1424,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.1
       ],
@@ -1478,12 +1487,12 @@
       "dims": [
         3,
         2.9,
-        2.0,
+        2,
         0.7,
         0.5,
-        2.0,
+        2,
         0.5,
-        1.0,
+        1,
         2.9,
         1.6
       ],
@@ -2310,7 +2319,7 @@
         1.5,
         3,
         2.6,
-        2.0,
+        2,
         1.2
       ],
       "directContact": "Moderate",
@@ -2371,7 +2380,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2437,7 +2446,7 @@
         1.5,
         2.8,
         2.6,
-        2.0,
+        2,
         1.2
       ],
       "directContact": "High",
@@ -2497,7 +2506,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         2.8,
         2.6,
         2.5,
@@ -2560,7 +2569,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2624,7 +2633,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2688,7 +2697,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2753,7 +2762,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2817,7 +2826,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2881,7 +2890,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -2945,7 +2954,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -3009,7 +3018,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -3073,7 +3082,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -3138,7 +3147,7 @@
         1.1,
         3,
         2.6,
-        2.0,
+        2,
         3,
         2.6,
         2.5,
@@ -3197,7 +3206,7 @@
       },
       "notes": "“Zoologist” spans B.S.-level technical roles through graduate research",
       "dims": [
-        2.0,
+        2,
         0.5,
         0.9,
         2.5,
@@ -3262,7 +3271,7 @@
       },
       "notes": "Professional specialist roles commonly graduate-level",
       "dims": [
-        2.0,
+        2,
         0.5,
         0.9,
         2.5,
@@ -3327,7 +3336,7 @@
       },
       "notes": "Same",
       "dims": [
-        2.0,
+        2,
         0.5,
         0.9,
         2.5,
@@ -3392,7 +3401,7 @@
       },
       "notes": "UMaine Zoology especially natural organismal route",
       "dims": [
-        2.0,
+        2,
         0.5,
         0.9,
         2.5,
@@ -3651,7 +3660,7 @@
       },
       "notes": "Neuroscience + behavior integration; generally graduate-level",
       "dims": [
-        2.0,
+        2,
         0.5,
         0.9,
         2.5,
@@ -3716,7 +3725,7 @@
       },
       "notes": "Research career normally requires graduate degree",
       "dims": [
-        2.0,
+        2,
         0.5,
         0.9,
         2.5,
@@ -3781,7 +3790,7 @@
       },
       "notes": "Dedicated wildlife programs provide strongest GIS/spatial preparation",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -3843,7 +3852,7 @@
       },
       "notes": "Applied statistics/research role possible after B.S.",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -3971,7 +3980,7 @@
       },
       "notes": "Strong professional fallback for wildlife/ecology degrees",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4035,7 +4044,7 @@
       },
       "notes": "Agency/consulting route",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4099,7 +4108,7 @@
       },
       "notes": "State/federal natural-resource careers",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4163,7 +4172,7 @@
       },
       "notes": "Management/policy/ecology blend",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4227,7 +4236,7 @@
       },
       "notes": "NPS/refuge/park-resource type work",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4236,7 +4245,7 @@
         3,
         3,
         2.6,
-        2.0
+        2
       ],
       "directContact": "Low / variable",
       "educationBand": "B.S.-accessible / experience-driven",
@@ -4292,7 +4301,7 @@
       },
       "notes": "Scientific and programmatic nonprofit work",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4301,7 +4310,7 @@
         3,
         3,
         2.6,
-        2.0
+        2
       ],
       "directContact": "Low / variable",
       "educationBand": "B.S. + graduate study often useful",
@@ -4357,7 +4366,7 @@
       },
       "notes": "Field and habitat science emphasized",
       "dims": [
-        1.0,
+        1,
         0.3,
         0.7,
         2.2,
@@ -4422,7 +4431,7 @@
       "dims": [
         1.9,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         2.5,
@@ -4486,7 +4495,7 @@
       "dims": [
         1.9,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         2.5,
@@ -4550,7 +4559,7 @@
       "dims": [
         1.9,
         1.2,
-        1.0,
+        1,
         1.9,
         0.5,
         2.5,
@@ -4608,7 +4617,7 @@
       "dims": [
         1.9,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         3,
@@ -4667,7 +4676,7 @@
       "dims": [
         1.4,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         2.5,
@@ -4725,7 +4734,7 @@
       "dims": [
         1.9,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         3,
@@ -4784,7 +4793,7 @@
       "dims": [
         1.9,
         1.2,
-        1.0,
+        1,
         1.9,
         0.5,
         3,
@@ -4842,7 +4851,7 @@
       "dims": [
         1.4,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         2.5,
@@ -4905,7 +4914,7 @@
       "dims": [
         1.9,
         0.7,
-        1.0,
+        1,
         1.9,
         0.5,
         3,
@@ -4967,11 +4976,11 @@
       "notes": "URI Zoo certificate adds direct institutional relevance",
       "dims": [
         1.3,
-        1.0,
+        1,
         1.2,
         1.3,
         0.3,
-        1.0,
+        1,
         2.2,
         0.8,
         1.4,
@@ -5034,7 +5043,7 @@
         1.2,
         1.8,
         0.3,
-        1.0,
+        1,
         2.2,
         1.3,
         1.4,
@@ -5096,7 +5105,7 @@
         1.2,
         1.8,
         0.3,
-        1.0,
+        1,
         2.2,
         0.8,
         1.4,
@@ -5157,7 +5166,7 @@
         1.2,
         1.3,
         0.3,
-        1.0,
+        1,
         2.2,
         0.8,
         1.4,
@@ -5218,7 +5227,7 @@
         1.2,
         1.3,
         0.3,
-        1.0,
+        1,
         2.2,
         1.3,
         0.9,

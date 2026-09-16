@@ -2,11 +2,11 @@
   "id": "environmental-education",
   "title": "Environmental Education & Interpretation",
   "short": "Helping the public understand animals and the science about them, in zoos, museums, parks, classrooms, and media.",
-  "bigPicture": "This area covers the professional work of connecting people to the natural world. Interpretation is its own profession with a national association, a peer-reviewed journal, and certifications that agencies list as preferred or required qualifications. Environmental education is the broader umbrella, held by a long-established association with tens of thousands of members. For many people this is the first paid job in the animal field, and for some it becomes the whole career.",
+  "bigPicture": "This is the work of helping people understand animals and the science about them — on a trail, in front of a tank, in a classroom, or in writing. Good interpretation is built around one idea the audience takes away, tied to something they already care about, and it is judged on whether that happened, not on whether people enjoyed themselves. For many people it is the first paid job in this field; for some it becomes the career.",
   "terms": [
     {
       "term": "Interpretation",
-      "definition": "The profession of connecting audiences to natural and cultural resources through programs built on a theme rather than a list of facts."
+      "definition": "The profession of connecting audiences to natural and cultural resources through programs built on a theme, not a list of facts."
     },
     {
       "term": "Environmental education",
@@ -14,7 +14,7 @@
     },
     {
       "term": "Thematic programming",
-      "definition": "Building a program around one central message so audiences leave with a takeaway rather than assorted facts."
+      "definition": "Building a program around one central message so audiences leave with a takeaway instead of assorted facts."
     },
     {
       "term": "Docent",
@@ -36,7 +36,7 @@
   "focus": [
     {
       "title": "Interpretation",
-      "description": "Designing and delivering programs that connect visitors to natural and cultural resources, built on an established body of theory about how to make programs purposeful, relevant, and thematic rather than merely informative.",
+      "description": "Designing and delivering programs that connect visitors to natural and cultural resources, built on an established body of theory about how to make programs purposeful, relevant, and thematic instead of merely informative.",
       "source": "National Association for Interpretation (NAI): Certified Interpretive Guide program"
     },
     {
@@ -61,7 +61,7 @@
     },
     {
       "question": "How do we know whether the program worked?",
-      "approach": "Through evaluation designed in advance — pre- and post-questions, observation, follow-up — rather than relying on whether the audience seemed to enjoy it."
+      "approach": "Through evaluation designed in advance — pre- and post-questions, observation, follow-up — not on whether the audience seemed to enjoy it."
     },
     {
       "question": "How do we stay accurate while making it accessible?",
@@ -120,10 +120,11 @@
     "Nonprofits, schools, and community programs"
   ],
   "realities": [
+    "The National Association for Interpretation (NAI) certification is reachable before graduation, which makes this one of the few areas here where a meaningful credential is within reach now.",
     "Seasonal and part-time positions are common, particularly at the start.",
-    "Pay is generally lower than in research or agency biology roles.",
-    "The work is public-facing and performance-heavy, which suits some people and not others.",
-    "Scientific accuracy still matters; being engaging is not a substitute for being right."
+    "Pay is generally lower than in research or agency biology.",
+    "The work is public-facing and performance-heavy. That suits some people and not others.",
+    "Accuracy still matters. Being engaging is not a substitute for being right."
   ],
   "careers": [
     "Naturalist / interpretive educator",

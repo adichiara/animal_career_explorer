@@ -2,7 +2,22 @@
   "id": "animal-behavior",
   "title": "Animal Behavior / Ethology",
   "short": "What animals actually do in the world: how a behavior develops, what triggers it, and what purpose it serves.",
-  "bigPicture": "Animal behavior is the scientific study of what animals do and why, covering communication, movement, feeding, mating, social life, learning, and responses to the environment. It has a long-established research literature and its own credential structure for applied practitioners. The field is genuinely interdisciplinary: people enter it from biology, psychology, animal science, wildlife biology, and zoology, and the certification requirements for applied behaviorists recognize all of those routes.",
+  "bigPicture": "Animal behavior asks what animals do and why. Why a bird sings before dawn, why a wolf pack splits, why a dog that was fine last week now lunges at the mailbox. The work begins with watching closely enough to describe a behavior precisely, then testing explanations instead of settling for the plausible one. The same science supports research on wild populations and practical work with the animals people keep.",
+  "distinction": {
+    "title": "Animal Behavior and Animal Science",
+    "summary": "Both are animal-related degrees and they are routinely confused with each other — one program page answers the question directly, saying animal science and animal behavior are not the same. They differ in which animals they centre on, which questions they ask, and which departments house them.",
+    "source": "University of New England: Animal Behavior program",
+    "items": [
+      {
+        "label": "Animal Behavior / Ethology",
+        "description": "Centres on what animals do and why, across wild and domesticated species alike. Usually housed in biology, psychology, or behavioural science departments. Typical products include behavioural data and ethograms, training and enrichment plans, and published findings on what causes a behaviour and what it accomplishes."
+      },
+      {
+        "label": "Animal Science",
+        "description": "Centres on domesticated animals — livestock, horses, and companion species — and on how nutrition, genetics, reproduction, and management shape their health, growth, and productivity. Usually housed in agriculture or veterinary science departments. Typical products include feeding and breeding programmes, husbandry protocols, and health and production records."
+      }
+    ]
+  },
   "terms": [
     {
       "term": "Ethology",
@@ -58,7 +73,7 @@
   "questions": [
     {
       "question": "Why does this animal do this, and what triggers it?",
-      "approach": "By building an ethogram, recording behavior systematically against context, and then testing candidate triggers experimentally rather than inferring them from observation alone."
+      "approach": "By building an ethogram, recording behavior systematically against context, and then testing candidate triggers experimentally instead of inferring them from observation alone."
     },
     {
       "question": "How does this behavior develop, and how much of it is learned?",
@@ -122,10 +137,11 @@
     "Farms and managed-animal facilities"
   ],
   "realities": [
-    "Applied certification requires graduate coursework and documented professional experience, not just interest or hands-on hours.",
-    "Behavior work is observation-heavy and often slow; data collection can take far longer than analysis.",
-    "Many applied roles are self-employed or consulting rather than salaried positions.",
-    "The title 'animal behaviorist' is not legally protected, so credentials matter for credibility."
+    "There is no single required major. People arrive from biology, psychology, animal science, wildlife biology, and zoology, and the applied credential recognizes all of those routes.",
+    "Applied certification is another matter: it requires graduate coursework plus documented professional experience, not hours of hands-on time alone.",
+    "Observation is slow. Collecting the data usually takes far longer than analyzing it.",
+    "Many applied practitioners are self-employed or consulting, not salaried.",
+    "“Animal behaviorist” is not a protected title, which is exactly why credentials carry weight."
   ],
   "careers": [
     "Animal behaviorist / applied animal behavior scientist",
@@ -196,6 +212,11 @@
       "title": "International Society for Applied Ethology",
       "type": "Professional society",
       "url": "https://www.applied-ethology.org/Applied_Animal_Behaviour_Science.html"
+    },
+    {
+      "title": "University of New England: Animal Behavior program",
+      "type": "Undergraduate program statement",
+      "url": "https://www.une.edu/cas/schools/social-behavioral-sciences/programs/bs-animal-behavior"
     }
   ]
 }

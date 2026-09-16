@@ -2,7 +2,7 @@
   "id": "animal-welfare",
   "title": "Animal Welfare Science",
   "short": "How to measure what an animal's life is actually like, and use that evidence to improve it.",
-  "bigPicture": "Animal welfare science studies the physical and mental state of animals and develops evidence-based ways to improve it. It has established itself as a mature scientific discipline over recent decades, with dedicated journals running since the early 1990s and a professional society whose stated approach is to use science to find out what animals need and want and then get those findings implemented. It applies across farm, laboratory, companion, zoo, shelter, and wild settings.",
+  "bigPicture": "Animal welfare science asks how an animal's life is going and how anyone could tell. It replaces impression with measurement: behavior, body condition, stress physiology, health records, and what an animal will work to get. Those findings then meet budgets, staffing, and safety rules, which is why the field puts as much effort into getting evidence implemented as into producing it. It applies wherever animals are kept — farms, laboratories, homes, shelters, zoos — and increasingly to wild animals too.",
   "terms": [
     {
       "term": "Welfare",
@@ -36,7 +36,7 @@
   "focus": [
     {
       "title": "Measuring welfare",
-      "description": "Developing and validating indicators of welfare from behavior, physiology, health, and productivity, so that claims about how an animal is doing rest on evidence rather than impression.",
+      "description": "Developing and validating indicators of welfare from behavior, physiology, health, and productivity, so that claims about how an animal is doing rest on evidence, not impression.",
       "source": "Science for Animal Welfare (formerly the Universities Federation for Animal Welfare, UFAW)"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "label": "Role type",
-      "description": "Some positions are research; others are coordinator or specialist roles inside an institution, responsible for assessment and program design rather than publication."
+      "description": "Some positions are research; others are coordinator or specialist roles inside an institution, responsible for assessment and program design, not publication."
     }
   ],
   "settings": [
@@ -120,10 +120,11 @@
     "Farms, laboratories, and industry"
   ],
   "realities": [
-    "Welfare roles inside institutions often carry limited authority; influence usually comes through evidence and relationships rather than position.",
-    "Research positions generally require graduate study.",
+    "Coordinator and specialist roles exist inside institutions, and they are a route into this work that does not require a doctorate.",
+    "Research positions generally do require graduate study.",
+    "Those institutional roles often carry limited formal authority. Influence comes through evidence and relationships.",
     "The work regularly involves situations that cannot be fully fixed within existing resources.",
-    "Standards and terminology shift as the science advances, so currency matters."
+    "Standards and terminology move as the science advances, so what you learn will need updating."
   ],
   "careers": [
     "Animal welfare scientist",

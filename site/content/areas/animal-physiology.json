@@ -2,7 +2,7 @@
   "id": "animal-physiology",
   "title": "Animal Physiology / Comparative Physiology",
   "short": "How an individual animal's body works. Organs, hormones, metabolism, and the laboratory tools used to study them.",
-  "bigPicture": "Physiology asks how animal bodies function: how they move, breathe, regulate temperature, process food, respond to stress, and hold internal conditions steady. The comparative branch studies that diversity deliberately, choosing the species best suited to a question rather than defaulting to standard laboratory animals. Practitioners describe it as much as a viewpoint as a discipline, which is why you will meet it as a course called animal physiology and as a professional section called comparative and evolutionary physiology.",
+  "bigPicture": "Physiology asks how an animal's body works. How a hummingbird fuels a wingbeat, how a camel goes without water, how a hibernating ground squirrel drops its body temperature close to freezing and comes back. The comparative branch treats that variety as the point, picking whichever species makes a question answerable instead of defaulting to mice and rats. Most of the work is measurement — oxygen use, hormone levels, blood chemistry, temperature — under conditions the researcher controls.",
   "terms": [
     {
       "term": "Homeostasis",
@@ -22,7 +22,7 @@
     },
     {
       "term": "Krogh's principle",
-      "definition": "The research strategy of choosing whichever species is best suited to the question, rather than defaulting to a standard laboratory animal."
+      "definition": "The research strategy of choosing whichever species is best suited to the question instead of defaulting to a standard laboratory animal."
     },
     {
       "term": "Ecophysiology",
@@ -93,7 +93,7 @@
   "variations": [
     {
       "label": "Two names, one field",
-      "description": "Animal physiology is the phrase you will meet as a course and textbook title. Comparative physiology is what the professional community calls itself, with sections and societies in many countries. Practitioners do not entirely agree it is a discipline rather than an approach, and the term is used somewhat differently by different researchers.",
+      "description": "Animal physiology is the phrase you will meet as a course and textbook title. Comparative physiology is what the professional community calls itself, with sections and societies in many countries. Practitioners do not entirely agree it is a discipline at all, as opposed to an approach, and the term is used somewhat differently by different researchers.",
       "source": "American Physiological Society (APS): Lessons from Comparative and Evolutionary Physiology"
     },
     {
@@ -116,10 +116,11 @@
     "Industry and applied research organizations"
   ],
   "realities": [
-    "Much of the work is laboratory-based and instrument-heavy, with limited contact with animals in natural settings.",
-    "Research careers generally require graduate study; bachelor's-level roles are usually technician or research assistant positions.",
-    "Animal research is governed by institutional review and animal-use protocols.",
-    "The comparative label is not universally used the same way, so read course descriptions rather than titles."
+    "Most of this work happens indoors, with instruments, and not with animals in their own environment.",
+    "Research careers generally require graduate study; bachelor's-level roles are technician and research assistant positions.",
+    "The skills transfer well. Physiology training is a route into biomedical research, veterinary medicine, and the physiological side of ecology.",
+    "Animal research runs under institutional review and animal-use protocols, and learning that framework is part of the job.",
+    "Because “comparative” is used loosely, read course descriptions instead of course titles."
   ],
   "careers": [
     "Animal physiologist",

@@ -2,7 +2,7 @@
   "id": "animal-cognition",
   "title": "Animal Cognition / Comparative Psychology",
   "short": "What happens inside an animal before it acts. Perception, memory, learning, problem-solving, and decision-making.",
-  "bigPicture": "Animal cognition studies the mental processes behind behavior: how animals perceive their world, remember, learn, reason, and decide. Comparative psychology is the same territory approached from psychology, studying cognition and behavior across species from an evolutionary perspective. The two names belong to overlapping communities with their own journals and societies, and coursework in both is explicitly recognized in applied behavior credentialing.",
+  "bigPicture": "Animal cognition asks what is happening inside an animal before it acts — what it perceives, what it remembers, what it learns, and how it decides. Since you cannot ask the subject what it was thinking, everything depends on task design: a result only counts if the design rules out the simpler explanation. Comparative psychology is the same territory entered from psychology, and in practice the two labels are largely interchangeable.",
   "terms": [
     {
       "term": "Cognition",
@@ -116,10 +116,11 @@
     "Companion-animal research settings"
   ],
   "realities": [
-    "This is one of the most graduate-degree-dependent areas here; independent research positions effectively require a Ph.D.",
+    "This is the most graduate-degree-dependent area on the site. Independent research effectively requires a Ph.D.",
     "Academic positions are limited relative to the number of people trained for them.",
-    "Experiments are slow, and negative or ambiguous results are common.",
-    "The field takes interpretation seriously, and overclaiming is treated as a serious error."
+    "Undergraduate research is often available, because cognitive tasks need many hands to run.",
+    "Experiments are slow, and ambiguous or negative results are ordinary.",
+    "Overclaiming is treated as a serious error here. Learning to say what a result does not show is part of the training."
   ],
   "careers": [
     "Comparative cognition researcher",

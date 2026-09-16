@@ -2,6 +2,15 @@ from __future__ import annotations
 import json, sqlite3, statistics, csv
 from pathlib import Path
 
+REDUNDANT_DETAIL_KEYS = {
+    'Strong/direct paths',
+    'Credible with planning',
+    'Graduate-oriented foundations',
+    'Weakly aligned paths',
+    'Later-career pathway',
+}
+
+
 ROOT=Path(__file__).resolve().parents[1]
 DB=ROOT/'database'/'careers.sqlite'
 LEGACY=ROOT/'imports'/'legacy_site_data.json'
@@ -131,6 +140,11 @@ for r in rows('''SELECT c.*,f.name family_name,f.description family_description,
     for x in rows('''SELECT q.*,s.url source_url,s.title source_title,s.retrieved_date source_retrieved
                      FROM qualification_profiles q JOIN sources s ON q.source_id=s.source_id WHERE q.career_id=?''',(cid,)):
         quals.append(x)
+    # Display-layer leftovers that duplicate structured fields. The four path
+    # lists restate careers[].support as bare program codes; 'Later-career
+    # pathway' is another code list. support is the source of truth and
+    # job-article.js already renders it with full program titles and schools.
+    details = {k: v for k, v in details.items() if k not in REDUNDANT_DETAIL_KEYS}
     # maintain broad proxy salary only for legacy; current-market salary stays separate
     entry=base.get('entrySalary');mid=base.get('midSalary')
     aliases=[x['alias'] for x in rows('SELECT alias FROM career_aliases WHERE career_id=? ORDER BY alias_type,alias',(cid,))]
@@ -139,7 +153,8 @@ for r in rows('''SELECT c.*,f.name family_name,f.description family_description,
         'domain':{'id':r['domain_id'],'name':r['domain_name'],'description':r['domain_description']},
         'roleFamily':{'id':r['family_id'],'name':r['family_name'],'description':r['family_description']},
         'roleKind':r['role_kind'],'marketStatus':r['market_status'],'evidenceStatus':r['evidence_status'],'lastVerified':r['last_verified'],
-        'roleFocus':r['description'] or base.get('roleFocus',''),'details':details,'support':support,'notes':base.get('notes',''),
+        # career-level 'notes' held unsourced, school-coupled asides and rendered nowhere
+        'roleFocus':r['description'] or base.get('roleFocus',''),'details':details,'support':support,
         'dims':dims,'directContact':r['direct_animal_contact'] or base.get('directContact','Low / variable'),
         'educationBand':r['education_summary'] or base.get('educationBand',''),'careerStage':r['career_stage'],'workTags':tags,
         'entrySalary':entry,'midSalary':mid,'observedMarketSalary':salary_obs(cid),'aliases':aliases,

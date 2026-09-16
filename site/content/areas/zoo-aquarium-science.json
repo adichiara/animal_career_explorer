@@ -2,7 +2,7 @@
   "id": "zoo-aquarium-science",
   "title": "Zoo & Aquarium Science",
   "short": "Daily care, behavior, welfare, and population management of wild species living permanently in human care.",
-  "bigPicture": "Zoo and aquarium science covers the husbandry, welfare, behavior, health, and population management of wild species held in professional facilities. It is a real program name as well as a working field, offered as a degree concentration and as technical curricula, usually built around partnerships with accredited institutions. Accreditation matters here more than in most areas: fewer than ten percent of the roughly 2,800 wildlife exhibitors licensed in the United States hold accreditation from the Association of Zoos & Aquariums (AZA), so where someone works says a great deal about the standards they work to.",
+  "bigPicture": "Zoo and aquarium science is the daily work of keeping wild animals healthy in human care. Feeding, cleaning, health checks, enrichment, training animals to take part in their own medical procedures, and records detailed enough that the next keeper knows what changed overnight. Behind that sits population management run across institutions — which animals breed, which move where — so that a species held in many places is managed as one population, not dozens.",
   "terms": [
     {
       "term": "Accreditation",
@@ -14,7 +14,7 @@
     },
     {
       "term": "Behavioral husbandry",
-      "definition": "Using behavior and training knowledge as part of routine daily care rather than as a separate activity."
+      "definition": "Using behavior and training knowledge as part of routine daily care, not a separate activity."
     },
     {
       "term": "Cooperative care",
@@ -50,12 +50,12 @@
     },
     {
       "title": "Population and collection management",
-      "description": "Cooperative breeding programs, studbooks, transfers, and collection planning coordinated across institutions rather than run facility by facility.",
+      "description": "Cooperative breeding programs, studbooks, transfers, and collection planning coordinated across institutions, not facility by facility.",
       "source": "Michigan State: Zoo and Aquarium Science"
     },
     {
       "title": "Conservation, research, and education",
-      "description": "Field conservation support, in-house research, and public education programs, which accredited institutions treat as part of their mandate rather than an extra.",
+      "description": "Field conservation support, in-house research, and public education programs, which accredited institutions treat as part of their mandate, not an extra.",
       "source": "Association of Zoos & Aquariums: about"
     }
   ],
@@ -70,11 +70,11 @@
     },
     {
       "question": "Is this enrichment actually working?",
-      "approach": "By recording behavior before, during, and after, and checking whether the target behavior changed rather than whether the animal appeared to engage."
+      "approach": "By recording behavior before, during, and after, and checking whether the target behavior changed, not whether the animal looked engaged."
     },
     {
       "question": "How do we train an animal to take part in its own care?",
-      "approach": "Through positive reinforcement training built in small approximations, so procedures like blood draws happen voluntarily rather than under restraint."
+      "approach": "Through positive reinforcement training built in small approximations, so procedures like blood draws happen voluntarily instead of under restraint."
     },
     {
       "question": "How should this population be managed across institutions over time?",
@@ -82,7 +82,7 @@
     },
     {
       "question": "What should visitors take away, and does the program achieve it?",
-      "approach": "By setting explicit learning or behavior-change goals and evaluating with surveys and observation, rather than assuming exposure produces understanding."
+      "approach": "By setting explicit learning or behavior-change goals and evaluating with surveys and observation, instead of assuming exposure produces understanding."
     }
   ],
   "responsibilities": [
@@ -101,7 +101,7 @@
   "variations": [
     {
       "label": "Accreditation matters",
-      "description": "AZA is the independent accrediting body, and its process involves a detailed application and a multi-day on-site inspection by expert teams. Fewer than ten percent of U.S. Department of Agriculture (USDA)-licensed wildlife exhibitors are accredited. For someone choosing internships or a first job, accreditation is one of the clearest available signals of professional standards.",
+      "description": "The Association of Zoos & Aquariums (AZA) is the independent accrediting body, and its process involves a detailed application and a multi-day on-site inspection by expert teams. Fewer than ten percent of U.S. Department of Agriculture (USDA)-licensed wildlife exhibitors are accredited. For someone choosing internships or a first job, accreditation is one of the clearest available signals of professional standards.",
       "source": "Association of Zoos & Aquariums: about"
     },
     {
@@ -125,10 +125,11 @@
     "Related conservation and research programs"
   ],
   "realities": [
-    "The work is physical, scheduled around animals rather than people, and includes weekends, holidays, and bad weather.",
-    "Entry is competitive and usually runs through internships and volunteer work; starting pay is low relative to the education required.",
-    "Much of the day is cleaning, food preparation, and record-keeping rather than direct animal interaction.",
-    "Advancement is limited by the number of positions at any one institution and often requires relocating."
+    "Accreditation is a checkable signal, and it is one of the few quality filters available to someone choosing where to intern.",
+    "Entry is competitive and usually runs through internships and volunteering; starting pay is low relative to the education required.",
+    "The work is physical, scheduled around the animals, not the staff, and includes weekends, holidays, and weather.",
+    "Much of the day is cleaning, food preparation, and record-keeping.",
+    "Advancement is limited by how many positions any one institution has, and often means relocating."
   ],
   "careers": [
     "Zookeeper / animal-care specialist",

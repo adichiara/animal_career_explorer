@@ -2,7 +2,7 @@
   "id": "zoology",
   "title": "Zoology",
   "short": "How animal species differ, how they are related, and how bodies are built across the animal kingdom. Comparison and classification are the core methods.",
-  "bigPicture": "Zoology is the broad scientific study of animals: their structure, function, development, evolution, classification, and natural history. It is one of the oldest names in the animal sciences and still appears on degrees, but the professional world around it has reorganized. The field's original flagship society was founded in 1902 as the American Society of Zoologists and renamed itself in 1996 to reflect an integrative, cross-scale approach to organismal biology. Zoology today is best understood as a foundation that other areas are built on rather than a single job description.",
+  "bigPicture": "Zoology asks what animals are and how they work. Its subject can be the skeleton of a bat's wing, the life cycle of a parasite, the relationship between two beetle families, or how a whale finds food. Zoologists compare across species to separate general principles from the quirks of any one animal, and most specialize eventually — mammals, birds, reptiles, fishes, insects. The name is older than much of what it now contains, and it appears on degrees more often than on job listings.",
   "terms": [
     {
       "term": "Systematics",
@@ -22,7 +22,7 @@
     },
     {
       "term": "Organismal biology",
-      "definition": "Biology studied at the level of the whole animal rather than cells, molecules, or ecosystems."
+      "definition": "Biology studied at the level of the whole animal, not cells, molecules, or ecosystems."
     },
     {
       "term": "Natural history",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Taxon specialization",
-      "description": "Many zoologists work within one group: mammalogy, ornithology, herpetology, ichthyology, entomology. Specialization usually develops in graduate school rather than as an undergraduate.",
+      "description": "Many zoologists work within one group: mammalogy, ornithology, herpetology, ichthyology, entomology. Specialization usually develops in graduate school, not as an undergraduate.",
       "source": "Society for Integrative and Comparative Biology"
     }
   ],
@@ -62,7 +62,7 @@
     },
     {
       "question": "How does this species actually live in the wild?",
-      "approach": "By sustained field observation and natural history work: following individuals, recording diet and habitat use, and building a picture over seasons rather than days."
+      "approach": "By sustained field observation and natural history work: following individuals, recording diet and habitat use, and building a picture over seasons, not days."
     },
     {
       "question": "Is this population actually a distinct species?",
@@ -116,10 +116,11 @@
     "Field stations and research sites"
   ],
   "realities": [
-    "Independent research positions usually require graduate study; a bachelor's degree more often leads to technician, collections, or education roles.",
-    "Job postings rarely use the word zoology, so searching by that term alone will understate what is available.",
-    "Taxon specialization is real but usually develops later, not at application time.",
-    "Field and collections work can involve travel, seasonal contracts, and physical conditions."
+    "Job listings rarely use the word zoology. Searching by that term alone will badly understate what is out there.",
+    "Independent research positions generally require graduate study. A bachelor's more often opens technician, collections, or education work.",
+    "Museum and collections roles are a real bachelor's-level entry point, and natural history knowledge is valued precisely because fewer programs still teach it well.",
+    "Field and collections work can mean travel, seasonal contracts, and physical conditions.",
+    "Taxon specialization usually arrives in graduate school, so there is no need to have picked one at seventeen."
   ],
   "careers": [
     "Zoologist",

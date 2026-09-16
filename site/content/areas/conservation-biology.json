@@ -2,7 +2,7 @@
   "id": "conservation-biology",
   "title": "Conservation Biology",
   "short": "Deciding and carrying out what should be done about species and habitats, including the laws, funding, and human conflicts that shape those decisions.",
-  "bigPicture": "Conservation biology applies biological science to the problem of preserving biodiversity. It emerged as a named discipline around 1980 and has had its own society and flagship journal since 1987. The field reaches well beyond biology into law, economics, anthropology, and policy, and it has always been openly normative: it exists because its practitioners think biodiversity loss is a problem worth acting on. Distinguishing the science from the advocacy is treated as a core professional skill rather than an awkward footnote.",
+  "bigPicture": "Conservation biology asks what is being lost, why, and what can be done about it with the money and time available. It is biology plus everything that determines whether biology gets acted on: land ownership, law, funding cycles, and the people who live alongside the species in question. The field has never claimed to be neutral — it exists because its practitioners think biodiversity loss is worth preventing. Keeping that commitment separate from the evidence is treated as a professional skill.",
   "terms": [
     {
       "term": "Biodiversity",
@@ -70,11 +70,11 @@
     },
     {
       "question": "Which intervention gives the most benefit for the resources available?",
-      "approach": "By costing options and comparing expected gains explicitly, since the binding constraint is almost always money and staff rather than knowledge."
+      "approach": "By costing options and comparing expected gains explicitly, since the binding constraint is almost always money and staff, not knowledge."
     },
     {
       "question": "Did the reintroduction work?",
-      "approach": "By monitoring released animals for survival, reproduction, and establishment over years, with success defined as a self-sustaining population rather than survival to release."
+      "approach": "By monitoring released animals for survival, reproduction, and establishment over years, with success defined as a self-sustaining population, not survival to release."
     },
     {
       "question": "Who decides, who is affected, and how does that shape what is possible?",
@@ -120,9 +120,9 @@
     "Zoos, aquariums, and botanical institutions"
   ],
   "realities": [
-    "Much of the work is funding-dependent, and programs can end when grants do.",
-    "Outcomes are slow and often partial, which practitioners describe as the hardest part of the job.",
-    "Social and political skills matter as much as biological ones in most positions.",
+    "Social and political skill counts as much as biological skill in most positions, so strengths outside the lab are genuinely an asset here.",
+    "Much of the work is grant-funded, and programs end when the funding does.",
+    "Outcomes are slow and usually partial. Practitioners describe this as the hardest part of the job.",
     "Field-based entry roles are often seasonal and geographically demanding."
   ],
   "careers": [

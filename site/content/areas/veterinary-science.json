@@ -2,7 +2,7 @@
   "id": "veterinary-science",
   "title": "Veterinary & Animal Health Sciences",
   "short": "Diagnosing and treating disease and injury in individual animals, and the clinical training that requires.",
-  "bigPicture": "Veterinary medicine covers the diagnosis, treatment, and prevention of disease and injury in animals. The Doctor of Veterinary Medicine (DVM) is a professional doctorate with its own admissions pipeline, and it anchors the area, but it is far from the only path: veterinary technicians, nutritionists, pathologists, laboratory staff, and practice managers all work in animal health without one. Board-certified specialties continue to be added, including shelter medicine, which reached full recognition in 2023.",
+  "bigPicture": "Veterinary medicine asks what is wrong with this animal and what can be done about it. The patient cannot describe the problem, the person paying has a limit, and the answer often has to be reached from a physical exam and a handful of tests. The Doctor of Veterinary Medicine (DVM) anchors the field, but a great deal of animal health work is done by technicians, nutritionists, pathologists, and laboratory staff who do not hold one.",
   "terms": [
     {
       "term": "Doctor of Veterinary Medicine (DVM)",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Preventive and population health",
-      "description": "Vaccination, parasite control, nutrition, and biosecurity, and managing health at the level of a herd, colony, or facility rather than one animal.",
+      "description": "Vaccination, parasite control, nutrition, and biosecurity, and managing health at the level of a herd, colony, or facility, not one animal.",
       "source": "Merck Veterinary Manual: shelter medicine"
     },
     {
@@ -62,14 +62,14 @@
     },
     {
       "question": "What treatment is appropriate given the animal, the owner, and the resources?",
-      "approach": "By weighing likely outcome, cost, and the animal's welfare, and presenting realistic options rather than only the ideal one."
+      "approach": "By weighing likely outcome, cost, and the animal's welfare, and presenting realistic options instead of only the ideal one."
     },
     {
       "question": "Is this a problem in one animal or across the population?",
       "approach": "By reviewing records across the herd, colony, or facility for pattern, and sampling more broadly when one case suggests a shared cause."
     },
     {
-      "question": "How do we prevent this rather than treating it one animal at a time?",
+      "question": "How do we prevent this instead of treating it one animal at a time?",
       "approach": "Through vaccination, parasite control, nutrition, and biosecurity protocols, then auditing whether the protocol is actually being followed."
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "label": "Wildlife and zoo practice",
-      "description": "Zoo, wildlife, and exotic practice are small, competitive specialties usually entered through internship and residency rather than directly."
+      "description": "Zoo, wildlife, and exotic practice are small, competitive specialties usually entered through internship and residency, not directly."
     },
     {
       "label": "Pre-vet is not a major",
@@ -120,10 +120,10 @@
     "Laboratories, industry, and government agencies"
   ],
   "realities": [
-    "Veterinary school admission is highly competitive and the degree is expensive relative to typical starting salaries.",
-    "Pre-veterinary preparation is not a guarantee of admission and is not itself a credential.",
-    "Clinical work carries real emotional weight, including euthanasia and cases limited by cost.",
-    "Many rewarding animal-health careers do not require a DVM at all."
+    "Many rewarding animal-health careers require no DVM at all — technician, nutrition, pathology, laboratory, and practice management among them.",
+    "Veterinary school admission is highly competitive, and the degree is expensive relative to typical starting salaries.",
+    "Pre-veterinary preparation is a set of prerequisite courses. It is not a credential and it guarantees nothing.",
+    "Clinical work carries real emotional weight, including euthanasia and cases limited by what an owner can pay."
   ],
   "careers": [
     "Zoo animal nutritionist / nutrition coordinator",

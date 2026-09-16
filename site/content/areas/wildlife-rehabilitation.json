@@ -2,7 +2,7 @@
   "id": "wildlife-rehabilitation",
   "title": "Wildlife Rehabilitation",
   "short": "Temporary treatment of injured, sick, or orphaned wild animals, with release as the goal. Permit-bound and focused on the individual animal.",
-  "bigPicture": "Wildlife rehabilitation is the professional care of sick, injured, and orphaned wild animals with the aim of returning them to the wild. It is defined as much by law as by science: holding native wildlife requires a state permit, and migratory birds and certain species carry additional federal requirements. Two national organizations support the profession and jointly publish its standards, and there is a certification structure, but certification and licensure are separate things.",
+  "bigPicture": "Wildlife rehabilitation is the care of sick, injured, and orphaned wild animals with the aim of putting them back. Every decision runs against that goal: an animal that recovers physically but loses its wariness of people usually cannot be released. The field is bounded by law as much as by biology — holding native wildlife requires a state permit, and migratory birds and certain other species carry federal requirements on top.",
   "terms": [
     {
       "term": "Rehabilitation",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Species-appropriate care",
-      "description": "Housing, diets, and handling that differ substantially by species and life stage, guided by published standards rather than improvisation.",
+      "description": "Housing, diets, and handling that differ substantially by species and life stage, guided by published standards, not improvisation.",
       "source": "International Wildlife Rehabilitation Council (IWRC): how to become a wildlife rehabilitator"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "title": "Release and outcome",
-      "description": "Conditioning, timing, site selection, and post-release considerations, with release as the measure of success rather than survival in care."
+      "description": "Conditioning, timing, site selection, and post-release considerations, with release as the measure of success, not survival in care."
     }
   ],
   "questions": [
@@ -60,7 +60,7 @@
     },
     {
       "question": "What does this species need at this life stage?",
-      "approach": "By working from published rehabilitation standards and species care protocols rather than improvising, especially for diet and housing of young animals."
+      "approach": "By working from published rehabilitation standards and species care protocols instead of improvising, especially for diet and housing of young animals."
     },
     {
       "question": "Is this animal orphaned, or should it be left alone?",
@@ -72,7 +72,7 @@
     },
     {
       "question": "Is release realistic, and if not, what is the right decision?",
-      "approach": "By assessing residual disability against what the animal needs to survive, and choosing between placement and euthanasia rather than indefinite holding."
+      "approach": "By assessing residual disability against what the animal needs to survive, and choosing between placement and euthanasia instead of indefinite holding."
     },
     {
       "question": "Where and when should this animal be released?",
@@ -119,10 +119,11 @@
     "Veterinary practices treating wildlife"
   ],
   "realities": [
-    "Paid positions are limited; much of the field runs on volunteers and seasonal staff at nonprofit centers.",
-    "The legal framework is strict and varies by state, and unpermitted care of native wildlife is illegal.",
-    "Mortality is a routine part of the work, and euthanasia decisions are frequent.",
-    "Intake volume is highly seasonal, with spring and summer far busier than the rest of the year."
+    "The credentials are reachable without a degree, and volunteering at a permitted center is an entry point available while still in high school.",
+    "Paid positions, though, are limited. Much of the field runs on volunteers and seasonal staff.",
+    "The legal framework is strict and varies by state. Unpermitted care of native wildlife is illegal.",
+    "Mortality is routine, and euthanasia decisions are frequent.",
+    "Intake is highly seasonal — spring and summer are far busier than the rest of the year."
   ],
   "careers": [
     "Wildlife rehabilitator",

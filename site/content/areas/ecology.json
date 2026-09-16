@@ -5,7 +5,7 @@
   "bigPicture": "Ecology asks how living systems work. Its subject can be a bacterial population, a plant community, a predator–prey relationship, a watershed, or the movement of energy and nutrients through an ecosystem. Ecologists build explanations from observation, experiments, long-term monitoring, and models. Their findings support conservation and natural-resource decisions, but the field itself is broader than wildlife and broader than management.",
   "distinction": {
     "title": "Ecology and Wildlife Ecology & Management",
-    "summary": "The fields share population biology, field sampling, statistics, and spatial analysis. Their center of attention and usual products are different.",
+    "summary": "The fields share population biology, field sampling, statistics, and spatial analysis. What they centre on, and what they produce, are different.",
     "items": [
       {
         "label": "Ecology",
@@ -76,7 +76,7 @@
     },
     {
       "question": "How does energy or matter move through this system?",
-      "approach": "By measuring inputs, outputs, and standing stocks, using isotopes and flux measurements to trace pathways rather than assuming them."
+      "approach": "By measuring inputs, outputs, and standing stocks, using isotopes and flux measurements to trace pathways instead of assuming them."
     },
     {
       "question": "How will this system respond to disturbance or environmental change?",
@@ -131,10 +131,10 @@
     "Conservation nonprofits and land trusts"
   ],
   "realities": [
-    "Early field positions are commonly seasonal, short-term, and modestly paid, and stacking several is a normal entry pattern.",
-    "Statistical and data skills now matter as much as field skills for advancement.",
-    "A good deal of applied ecology work is report writing and regulatory compliance.",
-    "Coursework will cover plants, soils, and systems, not only animals."
+    "Statistical and data skills increasingly separate competitive candidates from the rest — and they are buildable as an undergraduate, deliberately.",
+    "Early field positions are commonly seasonal and modestly paid. Stacking several is a normal way in.",
+    "Expect coursework on plants, soils, and water. Animals are one part of the subject.",
+    "A good deal of applied ecology is report writing and regulatory compliance."
   ],
   "careers": [
     "Field ecologist",

@@ -1,8 +1,8 @@
 {
   "id": "wildlife-health",
   "title": "Wildlife Health / One Health",
-  "short": "Health at the population scale, where wildlife, domestic animals, and people meet. Surveillance and investigation rather than treating patients.",
-  "bigPicture": "Wildlife health concerns the condition of free-ranging animal populations: infectious and parasitic disease, but also toxic, nutritional, developmental, and physiological factors, and the pressures of habitat loss, trade, land use, and climate. The Wildlife Disease Association and its journal have anchored the field since the 1960s. There is an active argument inside the field that defining health as the absence of disease is decades out of date, and that One Health framing has narrowed attention toward wildlife as a source of human infections rather than as populations with health of their own.",
+  "short": "Health at the population scale, where wildlife, domestic animals, and people meet. Surveillance and investigation, not treating patients.",
+  "bigPicture": "Wildlife health asks why free-ranging populations are getting sick, dying, or failing to thrive. Sometimes the answer is a pathogen. Often it is a contaminant, a nutritional shortfall, a habitat change, or several of those at once. The work happens at the scale of populations, not patients: sampling, necropsy, laboratory diagnosis, and surveillance designed to catch a problem before it shows up as a die-off.",
   "terms": [
     {
       "term": "Epidemiology",
@@ -10,7 +10,7 @@
     },
     {
       "term": "Surveillance",
-      "definition": "Ongoing systematic collection of health data from a population so problems are detected early rather than after a visible die-off."
+      "definition": "Ongoing systematic collection of health data from a population so problems are detected early, before a visible die-off."
     },
     {
       "term": "Zoonosis",
@@ -58,7 +58,7 @@
   "questions": [
     {
       "question": "What is causing mortality or decline in this population?",
-      "approach": "By collecting carcasses, running necropsy and laboratory diagnostics, and comparing affected and unaffected animals rather than assuming the first pathogen found is the cause."
+      "approach": "By collecting carcasses, running necropsy and laboratory diagnostics, and comparing affected and unaffected animals instead of assuming the first pathogen found is the cause."
     },
     {
       "question": "Is this pathogen moving between wildlife, livestock, and people?",
@@ -66,7 +66,7 @@
     },
     {
       "question": "How do we detect a problem early enough to act?",
-      "approach": "By running ongoing surveillance — hunter-harvested samples, sentinel sites, mortality reporting — rather than waiting for a visible die-off."
+      "approach": "By running ongoing surveillance — hunter-harvested samples, sentinel sites, mortality reporting — not waiting for a visible die-off."
     },
     {
       "question": "How far and how fast will this spread?",
@@ -77,7 +77,7 @@
       "approach": "By assessing body condition, stress physiology, reproduction, and contaminant load together, in line with the field's argument that health means more than not being infected."
     },
     {
-      "question": "Is a contaminant or nutritional factor involved rather than a pathogen?",
+      "question": "Is a contaminant or nutritional factor involved instead of a pathogen?",
       "approach": "Through toxicology and tissue analysis alongside pathology, since non-infectious causes are easy to miss when the search starts with pathogens."
     }
   ],
@@ -121,10 +121,11 @@
     "International and public health organizations"
   ],
   "realities": [
-    "Graduate or veterinary training is effectively required for most positions.",
-    "The work involves necropsy, biosafety protocols, and sometimes large mortality events.",
-    "Funding and attention rise sharply during outbreaks and fall away between them.",
-    "Results are often used in policy decisions, which brings scrutiny and time pressure."
+    "Entry routes are unusually varied: veterinary medicine, epidemiology, ecology, and laboratory diagnostics all lead here.",
+    "Most positions still require graduate or veterinary training.",
+    "The work involves necropsy, biosafety protocols, and occasionally large mortality events.",
+    "Funding and attention spike during outbreaks and recede between them.",
+    "Findings feed policy decisions, which brings scrutiny and deadlines."
   ],
   "careers": [
     "Wildlife disease / ecophysiology specialist",

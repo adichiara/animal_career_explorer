@@ -160,25 +160,25 @@ REFS = {
 # ======================================== program code -> full program name
 PROGRAMS = {
  "ME-WE": ("University of Maine",
-   "Wildlife Ecology, behavioral ecology emphasis"),
+   "Wildlife Ecology B.S."),
  "ME-ZOO": ("University of Maine",
    "Zoology B.S. with Ecology concentration"),
  "UMA-AS": ("University of Massachusetts Amherst",
-   "Animal Science, Management/Behavior track"),
+   "Animal Science B.S. (Animal Management concentration)"),
  "UMA-BIO": ("University of Massachusetts Amherst",
-   "Biology B.S., Behavior/Ecology track"),
+   "Biology B.S. (ecology and behavior electives)"),
  "UMA-WEC": ("University of Massachusetts Amherst",
-   "Wildlife Ecology & Conservation"),
+   "Natural Resources Conservation B.S. (Wildlife Ecology & Conservation concentration)"),
  "UNE-AB": ("University of New England",
    "Animal Behavior B.S."),
  "UNE-AN": ("University of New England",
-   "Animal Behavior B.S. with selected neuroscience"),
+   "Animal Behavior B.S. with Neuroscience minor"),
  "URI-AZ": ("University of Rhode Island",
-   "Animal Science with Zoo & Aquarium Science certificate"),
+   "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate"),
  "URI-W": ("University of Rhode Island",
    "Wildlife & Conservation Biology"),
  "URI-WZ": ("University of Rhode Island",
-   "Wildlife & Conservation Biology with Zoo & Aquarium Science certificate"),
+   "Wildlife & Conservation Biology B.S. + Zoo & Aquarium Science Certificate"),
 }
 
 # ===== acronyms the build LINTS for. it never rewrites prose; if an acronym

@@ -61,18 +61,17 @@
       ],
       "scale": "Public research university",
       "dims": [
-        2,
+        2.0,
         0.7,
         0.6,
-        3,
+        3.0,
         2.6,
         2.1,
-        3,
-        3,
+        3.0,
+        3.0,
         2.6,
         1.8
-      ],
-      "lastVerified": "2026-09-16"
+      ]
     },
     {
       "code": "ME-ZOO",
@@ -129,14 +128,14 @@
       "scale": "Public research university",
       "dims": [
         2.5,
-        1,
-        1,
+        1.0,
+        1.0,
         2.4,
         1.8,
-        3,
+        3.0,
         2.3,
         2.3,
-        3,
+        3.0,
         1.6
       ]
     },
@@ -200,16 +199,15 @@
       "dims": [
         2.6,
         1.4,
-        1,
+        1.0,
         2.2,
         1.4,
-        3,
+        3.0,
         2.2,
         2.5,
-        3,
+        3.0,
         1.8
-      ],
-      "lastVerified": "2026-09-16"
+      ]
     },
     {
       "code": "UMA-WEC",
@@ -269,15 +267,14 @@
         1.8,
         0.5,
         0.5,
-        3,
+        3.0,
         2.3,
         1.7,
-        3,
-        3,
+        3.0,
+        3.0,
         2.5,
         1.8
-      ],
-      "lastVerified": "2026-09-16"
+      ]
     },
     {
       "code": "UMA-AS",
@@ -335,16 +332,15 @@
       "dims": [
         2.1,
         2.4,
-        2,
-        1,
+        2.0,
+        1.0,
         0.7,
-        3,
-        1,
+        3.0,
+        1.0,
         1.7,
         2.5,
         1.5
-      ],
-      "lastVerified": "2026-09-16"
+      ]
     },
     {
       "code": "URI-W",
@@ -403,13 +399,13 @@
       ],
       "scale": "Public research university",
       "dims": [
-        2,
+        2.0,
         0.8,
-        1,
-        3,
+        1.0,
+        3.0,
         2.4,
-        2,
-        3,
+        2.0,
+        3.0,
         2.5,
         2.6,
         1.9
@@ -475,16 +471,15 @@
       "dims": [
         2.7,
         2.6,
-        3,
-        3,
+        3.0,
+        3.0,
         2.8,
         2.2,
-        3,
+        3.0,
         2.4,
         2.8,
-        2
-      ],
-      "lastVerified": "2026-09-16"
+        2.0
+      ]
     },
     {
       "code": "URI-AZ",
@@ -518,7 +513,7 @@
         "Year 3: managed-animal behavior, zoo management at Roger Williams Park Zoo, exotic/marine/behavior electives, internship preparation.",
         "Year 4: zoo welfare, advanced applied animal behavior/training, zoo/aquarium practicum, research/special project."
       ],
-      "resume": "B.S. Animal Science + Zoo & Aquarium Science certificate; anatomy/physiology, disease, nutrition, reproduction, managed-animal behavior, zoo management, welfare assessment, science-based training, internship/practicum, and research/special project.",
+      "resume": "B.S. Animal and Veterinary Science (Animal Science option) + Zoo and Aquarium Science Certificate; anatomy/physiology, disease, nutrition, reproduction, managed-animal behavior, zoo management, welfare assessment, science-based training, internship/practicum, and research/special project.",
       "advantages": [
         "Perhaps the most direct managed-animal/zoo welfare and behavioral-husbandry preparation in the four-school set.",
         "Combines serious physiology/health science with behavior, welfare and training rather than treating care as purely vocational.",
@@ -546,17 +541,16 @@
       "scale": "Public research university",
       "dims": [
         2.8,
-        3,
-        3,
+        3.0,
+        3.0,
         1.4,
         1.1,
         2.7,
         1.5,
         1.7,
         2.5,
-        2
-      ],
-      "lastVerified": "2026-09-16"
+        2.0
+      ]
     },
     {
       "code": "UNE-AB",
@@ -616,11 +610,11 @@
       ],
       "scale": "Smaller private university",
       "dims": [
-        3,
-        3,
+        3.0,
+        3.0,
         2.5,
-        2,
-        2,
+        2.0,
+        2.0,
         2.1,
         1.7,
         1.5,
@@ -678,18 +672,17 @@
       ],
       "scale": "Smaller private university",
       "dims": [
-        3,
+        3.0,
         2.6,
         2.2,
         1.7,
         1.6,
-        3,
+        3.0,
         1.5,
         1.6,
-        3,
+        3.0,
         1.6
-      ],
-      "lastVerified": "2026-09-16"
+      ]
     }
   ],
   "careers": [
@@ -729,10 +722,10 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         1.2,
         0.5,
-        2,
+        2.0,
         0.5,
         1.5,
         2.9,
@@ -792,12 +785,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.1
       ],
@@ -855,12 +848,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.6
       ],
@@ -918,12 +911,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
         2.5,
         0.5,
-        1,
+        1.0,
         2.9,
         1.6
       ],
@@ -981,12 +974,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         1.2,
         0.5,
         2.5,
         0.5,
-        1,
+        1.0,
         2.9,
         1.6
       ],
@@ -1044,7 +1037,7 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
         2.5,
@@ -1107,12 +1100,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.1
       ],
@@ -1170,10 +1163,10 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
         1.5,
         2.9,
@@ -1233,12 +1226,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.1
       ],
@@ -1296,12 +1289,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.1
       ],
@@ -1360,12 +1353,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.1
       ],
@@ -1424,12 +1417,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.1
       ],
@@ -1487,12 +1480,12 @@
       "dims": [
         3,
         2.9,
-        2,
+        2.0,
         0.7,
         0.5,
-        2,
+        2.0,
         0.5,
-        1,
+        1.0,
         2.9,
         1.6
       ],
@@ -2319,7 +2312,7 @@
         1.5,
         3,
         2.6,
-        2,
+        2.0,
         1.2
       ],
       "directContact": "Moderate",
@@ -2380,7 +2373,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2446,7 +2439,7 @@
         1.5,
         2.8,
         2.6,
-        2,
+        2.0,
         1.2
       ],
       "directContact": "High",
@@ -2506,7 +2499,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         2.8,
         2.6,
         2.5,
@@ -2569,7 +2562,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2633,7 +2626,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2697,7 +2690,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2762,7 +2755,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2826,7 +2819,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2890,7 +2883,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -2954,7 +2947,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -3018,7 +3011,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -3082,7 +3075,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -3147,7 +3140,7 @@
         1.1,
         3,
         2.6,
-        2,
+        2.0,
         3,
         2.6,
         2.5,
@@ -3206,7 +3199,7 @@
       },
       "notes": "“Zoologist” spans B.S.-level technical roles through graduate research",
       "dims": [
-        2,
+        2.0,
         0.5,
         0.9,
         2.5,
@@ -3271,7 +3264,7 @@
       },
       "notes": "Professional specialist roles commonly graduate-level",
       "dims": [
-        2,
+        2.0,
         0.5,
         0.9,
         2.5,
@@ -3336,7 +3329,7 @@
       },
       "notes": "Same",
       "dims": [
-        2,
+        2.0,
         0.5,
         0.9,
         2.5,
@@ -3401,7 +3394,7 @@
       },
       "notes": "UMaine Zoology especially natural organismal route",
       "dims": [
-        2,
+        2.0,
         0.5,
         0.9,
         2.5,
@@ -3660,7 +3653,7 @@
       },
       "notes": "Neuroscience + behavior integration; generally graduate-level",
       "dims": [
-        2,
+        2.0,
         0.5,
         0.9,
         2.5,
@@ -3725,7 +3718,7 @@
       },
       "notes": "Research career normally requires graduate degree",
       "dims": [
-        2,
+        2.0,
         0.5,
         0.9,
         2.5,
@@ -3790,7 +3783,7 @@
       },
       "notes": "Dedicated wildlife programs provide strongest GIS/spatial preparation",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -3852,7 +3845,7 @@
       },
       "notes": "Applied statistics/research role possible after B.S.",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -3980,7 +3973,7 @@
       },
       "notes": "Strong professional fallback for wildlife/ecology degrees",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4044,7 +4037,7 @@
       },
       "notes": "Agency/consulting route",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4108,7 +4101,7 @@
       },
       "notes": "State/federal natural-resource careers",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4172,7 +4165,7 @@
       },
       "notes": "Management/policy/ecology blend",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4236,7 +4229,7 @@
       },
       "notes": "NPS/refuge/park-resource type work",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4245,7 +4238,7 @@
         3,
         3,
         2.6,
-        2
+        2.0
       ],
       "directContact": "Low / variable",
       "educationBand": "B.S.-accessible / experience-driven",
@@ -4301,7 +4294,7 @@
       },
       "notes": "Scientific and programmatic nonprofit work",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4310,7 +4303,7 @@
         3,
         3,
         2.6,
-        2
+        2.0
       ],
       "directContact": "Low / variable",
       "educationBand": "B.S. + graduate study often useful",
@@ -4366,7 +4359,7 @@
       },
       "notes": "Field and habitat science emphasized",
       "dims": [
-        1,
+        1.0,
         0.3,
         0.7,
         2.2,
@@ -4431,7 +4424,7 @@
       "dims": [
         1.9,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         2.5,
@@ -4495,7 +4488,7 @@
       "dims": [
         1.9,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         2.5,
@@ -4559,7 +4552,7 @@
       "dims": [
         1.9,
         1.2,
-        1,
+        1.0,
         1.9,
         0.5,
         2.5,
@@ -4617,7 +4610,7 @@
       "dims": [
         1.9,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         3,
@@ -4676,7 +4669,7 @@
       "dims": [
         1.4,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         2.5,
@@ -4734,7 +4727,7 @@
       "dims": [
         1.9,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         3,
@@ -4793,7 +4786,7 @@
       "dims": [
         1.9,
         1.2,
-        1,
+        1.0,
         1.9,
         0.5,
         3,
@@ -4851,7 +4844,7 @@
       "dims": [
         1.4,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         2.5,
@@ -4914,7 +4907,7 @@
       "dims": [
         1.9,
         0.7,
-        1,
+        1.0,
         1.9,
         0.5,
         3,
@@ -4976,11 +4969,11 @@
       "notes": "URI Zoo certificate adds direct institutional relevance",
       "dims": [
         1.3,
-        1,
+        1.0,
         1.2,
         1.3,
         0.3,
-        1,
+        1.0,
         2.2,
         0.8,
         1.4,
@@ -5043,7 +5036,7 @@
         1.2,
         1.8,
         0.3,
-        1,
+        1.0,
         2.2,
         1.3,
         1.4,
@@ -5105,7 +5098,7 @@
         1.2,
         1.8,
         0.3,
-        1,
+        1.0,
         2.2,
         0.8,
         1.4,
@@ -5166,7 +5159,7 @@
         1.2,
         1.3,
         0.3,
-        1,
+        1.0,
         2.2,
         0.8,
         1.4,
@@ -5227,7 +5220,7 @@
         1.2,
         1.3,
         0.3,
-        1,
+        1.0,
         2.2,
         1.3,
         0.9,

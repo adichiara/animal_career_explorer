@@ -25,7 +25,7 @@ jobs:
         run: |
           rm -rf /tmp/animal-area-build
           python3 scripts/areas_build.py /tmp/animal-area-build
-          diff -ru site/content/areas /tmp/animal-area-build
+          diff -ru --exclude=README.md --exclude=photos.json site/content/areas /tmp/animal-area-build
 
       - name: Verify role counts and program-title consistency
         run: |

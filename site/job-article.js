@@ -37,7 +37,7 @@
   }
   function detailRows(career) {
     const d = career.details || {};
-    return [['Typical work settings', d['Typical work settings']], ['Titles used in searches', d['Searchable job titles']], ['Alternate terms', d['Alternate names / terms']], ['Education and progression', d['Typical education / progression']], ['Job outlook context', d['Job outlook']], ['Salary context', d['Salary context']]].filter(([, value]) => value);
+    return [['Typical work settings', d['Typical work settings']], ['Titles used in searches', d['Searchable job titles']], ['Alternate terms', d['Alternate names / terms']], ['Education and progression', d['Typical education / progression']]].filter(([, value]) => value);
   }
   function programLinks(career) {
     const supportOrder = { S: 0, C: 1, G: 2 };
@@ -58,7 +58,7 @@
     const items = examples(career);
     const index = careers.indexOf(career); const previous = careers[(index - 1 + careers.length) % careers.length]; const next = careers[(index + 1) % careers.length];
     const details = detailRows(career); const sources = sourceItems(career, items);
-    document.title = `${career.name} | Job Examples`;
+    document.title = `${career.name} | Animal Education Pathways`;
     document.querySelector('meta[name="description"]').setAttribute('content', career.roleFocus);
     app.innerHTML = `<article class="field-article job-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="jobs.html">All job examples</a><span aria-hidden="true">/</span><span>${esc(career.name)}</span></nav>
@@ -78,7 +78,7 @@
             ${(career.credentials || []).length ? `<h3 class="group-heading first">Credentials or permits</h3><div class="prose-blocks">${career.credentials.map(item => `<article><h3>${esc(item.name)}</h3><p>${esc(item.description)}</p>${item.notes ? `<p>${esc(item.notes)}</p>` : ''}${item.source_url ? `<a class="inline-source" href="${esc(item.source_url)}" target="_blank" rel="noopener">Credential source →</a>` : ''}</article>`).join('')}</div>` : '<p class="section-intro">No role-specific credential or permit was recorded in this research set.</p>'}
             ${(career.evidence || []).length ? `<h3 class="group-heading">Verified findings</h3><ul class="narrative-list">${career.evidence.map(item => `<li><h3>${esc(String(item.claim_type || 'Evidence').replace(/_/g, ' '))}</h3><p>${esc(item.claim_value)}</p>${item.source && item.source.url ? `<a class="inline-source" href="${esc(item.source.url)}" target="_blank" rel="noopener">${esc(item.source.title)} →</a>` : ''}</li>`).join('')}</ul>` : ''}
           </section>
-          <section id="college" class="article-section"><div class="section-heading"><p class="section-number">05</p><h2>College program connections</h2></div><p class="section-intro">These links describe how the researched programs support preparation for the broader role. They are not admissions recommendations.</p><div class="program-connection-list">${programLinks(career) || '<p>No program connection is recorded for this role.</p>'}</div></section>
+          <section id="college" class="article-section"><div class="section-heading"><p class="section-number">05</p><h2>College program connections</h2></div><div class="program-connection-list">${programLinks(career) || '<p>No program connection is recorded for this role.</p>'}</div></section>
           <section id="sources" class="article-section"><div class="section-heading"><p class="section-number">06</p><h2>Sources and dates</h2></div><ul class="source-list">${sources.map(source => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.title || source.organization || source.url)}</a><span>${esc(source.organization || '')}${source.retrieved_date ? ` · Retrieved ${esc(prettyDate(source.retrieved_date))}` : ''}</span></li>`).join('')}</ul><p class="source-date">Role research last verified: ${esc(prettyDate(career.lastVerified))}</p></section>
         </div>
       </div>

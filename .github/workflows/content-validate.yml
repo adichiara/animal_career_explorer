@@ -30,6 +30,17 @@ jobs:
           assert len(data["careers"]) == 93, len(data["careers"])
           assert len(data["programs"]) == 10, len(data["programs"])
 
+          area_index = json.loads(Path("site/content/areas/index.json").read_text())
+          areas = [json.loads(Path("site/content/areas", name).read_text()) for name in area_index["areas"]]
+          assert len(areas) == 18, len(areas)
+          expected_primary = {
+              "animal-biology", "zoology", "wildlife-ecology-management", "animal-behavior",
+              "animal-welfare", "animal-science", "zoo-aquarium-science", "veterinary-technology",
+          }
+          assert {a["id"] for a in areas if a.get("guideTier") == "primary"} == expected_primary
+          marine = next(a for a in areas if a["id"] == "marine-biology")
+          assert marine.get("guideTier") == "related"
+
           additions = json.loads(Path("site/content/programs/additional-programs.json").read_text())
           library = json.loads(Path("site/content/programs/school-library.json").read_text())
           all_codes = {p["code"] for p in data["programs"]} | {p["code"] for p in additions}

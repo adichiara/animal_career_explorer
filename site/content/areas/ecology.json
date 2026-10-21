@@ -3,8 +3,10 @@
   "title": "Ecology",
   "short": "The broad science of relationships among organisms and their environments—from individual responses and population change to communities, food webs, nutrients, and whole ecosystems.",
   "bigPicture": "Ecology asks how living systems work. Its subject can be a bacterial population, a plant community, a predator–prey relationship, a watershed, or the movement of energy and nutrients through an ecosystem. Ecologists build explanations from observation, experiments, long-term monitoring, and models. Their findings support conservation and natural-resource decisions, but the field itself is broader than wildlife and broader than management.",
+  "guideTier": "related",
+  "starterResources": [],
   "distinction": {
-    "title": "Ecology and Wildlife Ecology & Management",
+    "title": "Ecology and Wildlife Biology",
     "summary": "The fields share population biology, field sampling, statistics, and spatial analysis. What they centre on, and what they produce, are different.",
     "items": [
       {
@@ -12,7 +14,7 @@
         "description": "Examines relationships across living systems. A project might center on microbes, plants, animals, species interactions, nutrient cycles, disturbance, or ecosystem function. Typical products include scientific explanations, models, monitoring results, and environmental assessments."
       },
       {
-        "label": "Wildlife Ecology & Management",
+        "label": "Wildlife Biology",
         "description": "Centers on free-ranging wild animals, their populations, and the habitats and people affecting them. Typical products include population estimates, species and habitat plans, harvest or protection recommendations, permits, and evaluated management actions."
       }
     ]
@@ -174,7 +176,7 @@
     "URI-W"
   ],
   "related": [
-    "wildlife-biology",
+    "wildlife-ecology-management",
     "conservation-biology",
     "zoology"
   ],

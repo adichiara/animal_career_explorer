@@ -1,131 +1,147 @@
 {
   "id": "animal-biology",
   "title": "Animal Biology",
-  "short": "How animals function, from genes and tissues through organs, physiology, development, and the whole organism.",
-  "bigPicture": "Animal biology studies the biological workings of animals across levels of organization. A project might ask how hormones alter reproduction, how a diving mammal manages oxygen, how development produces a body structure, or how genetic differences affect physiology. Universities use the title differently, so the curriculum matters more than the degree name. Strong programs connect cellular and molecular mechanisms to anatomy, physiology, development, behavior, and whole-animal biology.",
+  "short": "How animals function as living organisms, from cells and tissues through physiology, development, reproduction, and whole-body integration.",
+  "bigPicture": "Animal biology is a broad way of studying animals as living systems. It can follow a question from genes and cells into tissues, organs, physiology, development, reproduction, behavior, and the whole animal. Programs using this name vary widely, so the curriculum matters more than the label. The field overlaps heavily with zoology; animal biology tends to foreground biological mechanisms and function, while zoology more often foregrounds animal diversity, comparison, and evolutionary relationships.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "SICB — Career Information",
+      "description": "A broad map of animal biology specialties, including physiology, endocrinology, neurobiology, morphology, evolution, behavior, and comparative biology.",
+      "url": "https://sicb.org/resources/career-information/"
+    }
+  ],
+  "distinction": {
+    "title": "Animal Biology and Zoology",
+    "summary": "There is no universal boundary between these names. Many universities could place the same course or research lab under either one.",
+    "items": [
+      {
+        "label": "Animal Biology",
+        "description": "Usually emphasizes how animals function: physiology, anatomy, development, reproduction, genetics, and integrated whole-animal biology. Some programs also include behavior and ecology."
+      },
+      {
+        "label": "Zoology",
+        "description": "Usually organizes the curriculum around animals as a diverse group of organisms, with stronger emphasis on comparative anatomy, evolution, systematics, natural history, and animal diversity while still including physiology, behavior, and ecology."
+      }
+    ]
+  },
   "terms": [
     {
+      "term": "Organismal biology",
+      "definition": "Biology studied at the level of the whole animal and the integration of its body systems."
+    },
+    {
       "term": "Physiology",
-      "definition": "The study of how organs and body systems function and are regulated."
+      "definition": "The study of how living systems function, from cells and tissues through organs and whole-body processes."
     },
     {
       "term": "Endocrinology",
-      "definition": "The study of hormones and the systems that produce and respond to them."
-    },
-    {
-      "term": "Comparative anatomy",
-      "definition": "Comparing structures across species to understand function, evolution, and biological constraint."
+      "definition": "The study of hormones and how they regulate growth, reproduction, metabolism, stress, and behavior."
     },
     {
       "term": "Developmental biology",
-      "definition": "How an animal grows and changes from embryo through adulthood."
+      "definition": "The study of how an animal grows and changes from embryo through adulthood."
     },
     {
-      "term": "Genotype and phenotype",
-      "definition": "Genotype is an organism's genetic makeup; phenotype is the observable result of genes interacting with development and environment."
+      "term": "Comparative biology",
+      "definition": "Using differences and similarities among species to understand biological function, adaptation, and evolution."
     },
     {
-      "term": "Organismal biology",
-      "definition": "Biology studied at the level of the whole animal, integrating multiple body systems and environmental demands."
+      "term": "Homeostasis",
+      "definition": "The regulation of internal conditions such as temperature, water balance, and blood chemistry despite external change."
     }
   ],
   "focus": [
     {
-      "title": "Physiology and body systems",
-      "description": "How circulation, respiration, digestion, reproduction, neural function, immunity, and other systems operate and coordinate.",
-      "source": "SICB: Career Information"
+      "title": "Physiology and whole-animal function",
+      "description": "Understanding how organ systems work together to support movement, metabolism, thermoregulation, digestion, reproduction, and survival.",
+      "source": "SICB — Career Information"
     },
     {
-      "title": "Genes, development, and biological variation",
-      "description": "How inherited differences and developmental processes shape anatomy, physiology, disease susceptibility, and other animal traits."
+      "title": "Development and reproduction",
+      "description": "Studying how animals grow, mature, reproduce, and regulate those processes through genes, hormones, nutrition, and environmental conditions."
     },
     {
-      "title": "Comparative and integrative biology",
-      "description": "Using differences among species to test biological ideas and connect mechanisms at the cell or tissue level to the functioning of the whole animal.",
-      "source": "Society for Integrative and Comparative Biology"
+      "title": "Genes, cells, and tissues in animal context",
+      "description": "Connecting molecular and cellular processes to visible traits, health, development, and performance in the whole animal."
     },
     {
-      "title": "Laboratory and whole-animal methods",
-      "description": "Depending on the question, work may involve microscopy, assays, imaging, dissection, physiological measurement, behavioral observation, or controlled whole-animal experiments."
+      "title": "Comparative and integrative questions",
+      "description": "Comparing species or biological levels to discover which mechanisms are general and which are adaptations to a particular way of life.",
+      "source": "SICB — Career Information"
     }
   ],
   "questions": [
     {
-      "question": "How does an animal maintain stable internal conditions when its environment changes?",
-      "approach": "By measuring temperature, oxygen use, hormones, hydration, blood chemistry, or other variables while environmental conditions are controlled or observed."
-    },
-    {
-      "question": "Why do two species solve the same biological problem differently?",
-      "approach": "Through comparative studies of anatomy, physiology, genetics, and development across species."
+      "question": "How does this animal maintain body temperature, water balance, or energy supply?",
+      "approach": "Measure physiological variables under defined conditions and connect changes in cells, tissues, and organs to whole-animal performance."
     },
     {
       "question": "How do hormones affect reproduction, growth, stress, or behavior?",
-      "approach": "By measuring endocrine signals and relating them experimentally or observationally to changes in tissues, physiology, and behavior."
+      "approach": "Combine hormone measurements, experimental manipulation, and behavioral or physiological outcomes while controlling alternative explanations."
     },
     {
-      "question": "How does a genetic difference change an animal's body or function?",
-      "approach": "By linking genetic variation to molecular pathways, anatomy, physiology, or measurable traits."
+      "question": "Why do related species solve the same biological problem differently?",
+      "approach": "Compare anatomy, physiology, genetics, and environmental context across species while accounting for evolutionary relationships."
     },
     {
-      "question": "How do body systems work together during demanding activities?",
-      "approach": "By combining measurements across systems during exercise, migration, diving, temperature stress, or other biological challenges."
+      "question": "How does development change what an animal can do?",
+      "approach": "Track structural, physiological, and behavioral change across life stages and test which mechanisms drive the transition."
     },
     {
-      "question": "How does development produce the adult form?",
-      "approach": "By following tissues, gene activity, and structural change through embryos, juveniles, and later life stages."
+      "question": "How does a biological mechanism matter outside the laboratory?",
+      "approach": "Connect controlled measurements to health, behavior, environmental tolerance, reproduction, or survival in realistic conditions."
     }
   ],
   "responsibilities": [
-    "Design and carry out laboratory or whole-animal studies.",
-    "Collect physiological, anatomical, genetic, developmental, or behavioral measurements.",
-    "Analyze quantitative data and connect measurements across biological levels.",
-    "Document methods, maintain research records, and communicate findings."
+    "Design or assist with laboratory and whole-animal studies.",
+    "Measure anatomy, physiology, hormones, metabolism, genetics, development, or behavior.",
+    "Analyze biological data and connect findings across levels from cells to the whole animal.",
+    "Maintain careful animal-care, research, and laboratory records where live-animal work is involved."
   ],
   "knowledgeSkills": [
-    "Anatomy and physiology",
-    "Genetics, cell biology, and development",
-    "Laboratory measurement and experimental design",
-    "Statistics and data analysis",
-    "Comparative and evolutionary thinking"
+    "Animal anatomy and physiology",
+    "Cell biology, genetics, and development",
+    "Endocrinology, reproduction, and metabolism",
+    "Statistics, experimental design, and scientific writing",
+    "Animal handling or laboratory methods when required by the research"
   ],
   "variations": [
     {
       "label": "Degree names vary",
-      "description": "Animal Biology, Integrative Biology, Organismal Biology, Zoology, and Biological Sciences can contain very similar undergraduate pathways. Read the required courses and faculty research before judging a program by its title."
+      "description": "Animal Biology, Zoology, Organismal Biology, Integrative Biology, and general Biology programs can contain very similar coursework. Read the required courses and faculty research instead of treating the major title as decisive."
     },
     {
-      "label": "Scale of study",
-      "description": "Some researchers work mainly with cells, tissues, and molecular assays; others measure whole animals. Many projects deliberately connect both levels."
+      "label": "Laboratory to whole animal",
+      "description": "Some researchers work mainly with cells, tissues, or instruments; others measure intact animals in laboratories, field stations, farms, zoos, or wildlife settings."
     },
     {
-      "label": "Animal contact",
-      "description": "A degree about animals does not guarantee daily animal handling. Some of the most animal-focused research is still primarily laboratory, specimen, imaging, or data work."
+      "label": "Species breadth",
+      "description": "The field can involve model organisms, companion animals, livestock, wildlife, zoo species, fish, insects, or many taxa in comparative studies."
     },
     {
-      "label": "Applied directions",
-      "description": "The same foundation can lead toward behavior, welfare, wildlife health, veterinary technology, biomedical research, or graduate work in physiology and organismal biology."
+      "label": "Where it leads",
+      "description": "Animal biology can support later specialization in behavior, welfare, physiology, veterinary and animal health work, zoology, wildlife biology, or biomedical research."
     }
   ],
   "settings": [
-    "Universities and research institutes",
-    "Animal physiology, biomedical, and comparative-biology laboratories",
-    "Zoos, aquariums, and animal-health research programs",
-    "Government, conservation, and biotechnology organizations"
+    "University biology and physiology laboratories",
+    "Field stations and organismal research facilities",
+    "Zoos, aquariums, animal-care, and veterinary research settings",
+    "Government, biomedical, biotechnology, and conservation research organizations"
   ],
   "realities": [
-    "The title Animal Biology is not standardized across universities; two programs with the same name can be built very differently.",
-    "Independent research careers usually require graduate study, while bachelor's-level work more often begins in technician, laboratory, animal-care, or field-support roles.",
-    "Chemistry, statistics, and laboratory methods matter even when the motivating interest is whole animals.",
-    "Animal contact can range from frequent to almost none depending on the research question and method.",
-    "A broad undergraduate foundation can be useful when behavior, welfare, physiology, and animal health all remain plausible directions."
+    "The title Animal Biology does not guarantee an animal-heavy curriculum; some programs become molecular quickly, while others remain strongly organismal.",
+    "Research careers commonly require graduate study, but bachelor's-level research-assistant and technician roles can provide direct experience.",
+    "Hands-on animal contact varies enormously by laboratory and program.",
+    "For college comparison, upper-level course availability and faculty research are more informative than the major name."
   ],
   "careers": [
-    "Animal physiologist",
-    "Comparative biologist",
-    "Research technician — animal biology / physiology",
-    "Animal behavior researcher",
-    "Wildlife health researcher",
-    "M.S. / Ph.D. in organismal, integrative, or animal biology"
+    "Animal physiologist / comparative physiologist",
+    "Animal behavior research assistant / technician",
+    "University / laboratory research assistant",
+    "Zoologist",
+    "Animal welfare scientist / welfare research specialist"
   ],
   "programs": [
     {
@@ -137,39 +153,28 @@
       "code": "UMA-BIO",
       "school": "University of Massachusetts Amherst",
       "title": "Biology B.S. (ecology and behavior electives)"
-    },
-    {
-      "code": "UNH-ZOO",
-      "school": "University of New Hampshire",
-      "title": "Zoology B.S."
     }
   ],
   "programCodes": [
     "ME-ZOO",
-    "UMA-BIO",
-    "UNH-ZOO"
+    "UMA-BIO"
   ],
   "related": [
     "zoology",
+    "animal-physiology",
     "animal-behavior",
-    "animal-welfare",
-    "veterinary-technology"
+    "animal-welfare"
   ],
   "references": [
     {
-      "title": "Society for Integrative and Comparative Biology",
-      "type": "Professional society",
-      "url": "https://sicb.org/"
-    },
-    {
-      "title": "SICB: Career Information",
-      "type": "Career and field resource",
+      "title": "SICB — Career Information",
+      "type": "Professional society career overview",
       "url": "https://sicb.org/resources/career-information/"
     },
     {
-      "title": "Integrative and Comparative Biology (formerly American Zoologist)",
-      "type": "Field journal",
-      "url": "https://academic.oup.com/icb/"
+      "title": "SICB — Divisions",
+      "type": "Professional society field map",
+      "url": "https://sicb.org/divisions/"
     }
   ]
 }

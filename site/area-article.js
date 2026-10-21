@@ -5,7 +5,7 @@
   const currentId = document.body.dataset.area;
   let areas = [];
   let photos = {};
-  let programs = [];
+  let programs = (D.programs || []).slice();
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -91,7 +91,6 @@
       ${program.experience ? `<h4>Experience structure</h4><p>${esc(program.experience)}</p>` : ''}
       ${lists.map(([label, values]) => `<h4>${esc(label)}</h4><ul>${values.map(value => `<li>${esc(value)}</li>`).join('')}</ul>`).join('')}
       ${program.bestWhen ? `<div class="best-when"><strong>Especially relevant when</strong><p>${esc(program.bestWhen)}</p></div>` : ''}
-      <a class="research-link" href="../program.html?code=${encodeURIComponent(program.code)}">Read full program guide →</a>
     </article>`;
   }
 
@@ -106,7 +105,7 @@
     app.innerHTML = `<article class="field-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../areas.html">All field guides</a><span aria-hidden="true">/</span><span>${esc(area.title)}</span></nav>
       <header class="article-hero">
-        <div class="hero-copy"><div class="eyebrow">Field guide</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
+        <div class="hero-copy"><div class="eyebrow">${area.guideTier === 'primary' ? 'Core exploration field' : 'Related field / specialization'}</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
         <figure><img src="${esc(photo.url)}" alt="${esc(photo.alt)}" width="1200" height="675" decoding="async" fetchpriority="high"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a>${photo.license ? ` · ${photo.licenseUrl ? `<a href="${esc(photo.licenseUrl)}" target="_blank" rel="noopener">${esc(photo.license)}</a>` : esc(photo.license)}` : ''}</figcaption></figure>
       </header>
       <div class="article-body">
@@ -138,7 +137,7 @@
           </section>
           <section id="study" class="article-section">
             <div class="section-heading"><p class="section-number">05</p><h2>College study and preparation</h2></div>
-            <p class="section-intro">A major is one part of preparation. Course selection, research, fieldwork, internships, volunteering, and technical skills can change what a program makes possible.</p>
+            <p class="section-intro">${area.guideTier === 'primary' ? 'This field is part of the current college-fit focus. A major is only one part of preparation; courses, research, internships, and direct experience determine how well a program supports it.' : 'This guide is included for context and completeness. Its college examples are informative, but this field does not independently drive school recommendations.'}</p>
             <div class="program-list">${area.programs.map(programHtml).join('')}</div><a class="research-link" href="../programs.html">Browse all college program guides →</a>
           </section>
           <section id="terms" class="article-section">
@@ -147,7 +146,8 @@
           </section>
           <section id="sources" class="article-section">
             <div class="section-heading"><p class="section-number">07</p><h2>Sources and related fields</h2></div>
-            <h3 class="group-heading first">References and further reading</h3><ul class="source-list">${area.references.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a><span>${esc(item.type)}</span></li>`).join('')}</ul>
+            ${Array.isArray(area.starterResources) && area.starterResources.length ? `<h3 class="group-heading first">Good starting points</h3><ul class="source-list">${area.starterResources.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a><span>${esc(item.description || '')}</span></li>`).join('')}</ul>` : ''}
+            <h3 class="group-heading ${Array.isArray(area.starterResources) && area.starterResources.length ? '' : 'first'}">References and further reading</h3><ul class="source-list">${area.references.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a><span>${esc(item.type)}</span></li>`).join('')}</ul>
             <h3 class="group-heading">Related field guides</h3><div class="related-links">${area.related.map(id => areaById(id)).filter(Boolean).map(item => `<a href="${esc(item.id)}.html">${esc(item.title)} <span aria-hidden="true">→</span></a>`).join('')}</div>
           </section>
         </div>
@@ -163,16 +163,12 @@
       const [manifest, photoManifest, additions] = await Promise.all([
         fetchJson(`${root}index.json`),
         fetchJson(`${root}photos.json`),
-        fetchJson('../content/programs/additional-programs.json').catch(error => {
-          console.error('Unable to load additional program details:', error);
-          return [];
-        })
+        fetchJson('../content/programs/additional-programs.json').catch(() => [])
       ]);
       photos = photoManifest.photos || photoManifest;
+      const codes = new Set(programs.map(program => program.code));
+      programs = [...programs, ...(Array.isArray(additions) ? additions.filter(program => program && program.code && !codes.has(program.code)) : [])];
       areas = await Promise.all(manifest.areas.map(file => fetchJson(`${root}${file}`)));
-      const focused = D.programs || [];
-      const known = new Set(focused.map(program => program.code));
-      programs = [...focused, ...(Array.isArray(additions) ? additions.filter(program => program && program.code && !known.has(program.code)) : [])];
       const area = areaById(currentId);
       if (!area) throw new Error(`No area content found for ${currentId}.`);
       render(area);

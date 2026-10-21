@@ -3,6 +3,14 @@
   "title": "Animal Welfare Science",
   "short": "How to measure what an animal's life is actually like, and use that evidence to improve it.",
   "bigPicture": "Animal welfare science asks how an animal's life is going and how anyone could tell. It replaces impression with measurement: behavior, body condition, stress physiology, health records, and what an animal will work to get. Those findings then meet budgets, staffing, and safety rules, which is why the field puts as much effort into getting evidence implemented as into producing it. It applies wherever animals are kept — farms, laboratories, homes, shelters, zoos — and increasingly to wild animals too.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "Lincoln Park Zoo — Animal Welfare Science Program",
+      "description": "A concrete look at welfare science using behavioral monitoring, habitat use, hormones, sensors, enrichment, and evidence-based changes to care.",
+      "url": "https://www.lpzoo.org/conservation-science/science-centers/animal-welfare-science-program/"
+    }
+  ],
   "terms": [
     {
       "term": "Welfare",
@@ -137,30 +145,30 @@
   ],
   "programs": [
     {
+      "code": "UMA-AS",
+      "school": "University of Massachusetts Amherst",
+      "title": "Animal Science B.S. (Animal Management concentration)"
+    },
+    {
       "code": "URI-AZ",
       "school": "University of Rhode Island",
       "title": "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate"
     },
     {
-      "code": "CAN-ABEC",
-      "school": "Canisius University",
-      "title": "Animal Behavior, Ecology, and Conservation B.S. + Zoo Biology minor"
-    },
-    {
-      "code": "UMASS-VT",
-      "school": "University of Massachusetts Amherst",
-      "title": "Veterinary Technology B.S."
+      "code": "UNE-AB",
+      "school": "University of New England",
+      "title": "Animal Behavior B.S."
     }
   ],
   "programCodes": [
+    "UMA-AS",
     "URI-AZ",
-    "CAN-ABEC",
-    "UMASS-VT"
+    "UNE-AB"
   ],
   "related": [
     "animal-behavior",
     "zoo-aquarium-science",
-    "veterinary-technology",
+    "veterinary-science",
     "animal-science"
   ],
   "references": [

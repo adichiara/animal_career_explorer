@@ -39,8 +39,8 @@ These counts are descriptive of the current research snapshot, not a claim that 
 
 The public homepage links to three article-style reference sections:
 
-- **Field Guides** — 15 long-form guides loaded from editable JSON files in `site/content/areas/`.
-- **School & Program Library** — a browseable current exploration set of 15 program pathways across 10 schools. The library is assembled from the 10 generated program records plus hand-edited researched programs, then filtered by `site/content/programs/school-library.json`. It is not a ranking.
+- **Field Guides** — 17 long-form guides loaded from editable JSON files in `site/content/areas/`, grouped into eight recommendation-driving areas and nine related fields/specializations.
+- **College Programs** — 18 researched undergraduate pathway guides: the 10-path original comparison from the validated site export plus 8 additional programs retained from the broader research.
 - **Job Examples** — dated, source-backed postings grouped under 37 broader roles. These records illustrate employer titles and requirements; they are not a live job board.
 
 The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference but are intentionally absent from the homepage and primary navigation.
@@ -49,7 +49,7 @@ The earlier research interface remains available in `site/legacy.html`, and the 
 
 The explanatory content for `areas.html` is intentionally separate from the generated career database. Each field has a human-editable file under `site/content/areas/`, such as `wildlife-rehabilitation.json`. Editing and committing one of those files updates the live page after GitHub Pages redeploys; `areas.js` does not need to be changed.
 
-See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and all Job Example records come from the validated `site/data.js` export. Hand-edited program records are stored in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json). The current browseable set, interest tags, and school-fit rationale are controlled by [`site/content/programs/school-library.json`](site/content/programs/school-library.json). Editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
+See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and all Job Example records come from the validated `site/data.js` export. Seven broader College Program records are editable in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json); editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
 
 ## Directory structure
 
@@ -82,7 +82,7 @@ Animal_Career_Data_Project/
 └── site/
     ├── index.html              # focused three-section homepage
     ├── areas.html              # Field Guides index
-    ├── programs.html           # School & Program Library index
+    ├── programs.html           # College Programs index
     ├── program.html            # program article renderer
     ├── jobs.html               # Job Examples index
     ├── job.html                # job-example article renderer
@@ -148,7 +148,7 @@ python scripts/build_artifacts.py
 
 ## GitHub Actions
 
-The repository includes `.github/workflows/aza-scrape.yml` and `.github/workflows/content-validate.yml`. The content-validation workflow rebuilds field guides, checks generated-content drift, preserves the 93-career/10-generated-program invariants, validates the current school library, checks program-code leakage, and runs JavaScript syntax checks on the public guide interfaces. Changes to the scraper or workflow trigger a two-listing smoke test. A manual run can be started from **Actions → AZA jobs scrape and build → Run workflow**, where a test limit can be supplied; `0` requests the complete board.
+The repository includes `.github/workflows/aza-scrape.yml`. Changes to the scraper or workflow trigger a two-listing smoke test. A manual run can be started from **Actions → AZA jobs scrape and build → Run workflow**, where a test limit can be supplied; `0` requests the complete board.
 
 The workflow installs Chromium, runs the scrape and conservative role-matching stage, validates and rebuilds the project, then uploads a 30-day artifact containing the updated database, review CSV, market export, reports, website package, and master project package. Scrape failures make the workflow fail visibly, while the later diagnostic and artifact-upload steps still run.
 

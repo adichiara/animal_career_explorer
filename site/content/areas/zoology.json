@@ -3,6 +3,14 @@
   "title": "Zoology",
   "short": "How animal species differ, how they are related, and how bodies are built across the animal kingdom. Comparison and classification are the core methods.",
   "bigPicture": "Zoology asks what animals are and how they work. Its subject can be the skeleton of a bat's wing, the life cycle of a parasite, the relationship between two beetle families, or how a whale finds food. Zoologists compare across species to separate general principles from the quirks of any one animal, and most specialize eventually — mammals, birds, reptiles, fishes, insects. The name is older than much of what it now contains, and it appears on degrees more often than on job listings.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "SICB — Career Information",
+      "description": "Explore zoology and comparative-biology specialties and see how modern animal research spans organismal, physiological, evolutionary, and behavioral questions.",
+      "url": "https://sicb.org/resources/career-information/"
+    }
+  ],
   "terms": [
     {
       "term": "Systematics",
@@ -141,23 +149,17 @@
       "code": "UMA-BIO",
       "school": "University of Massachusetts Amherst",
       "title": "Biology B.S. (ecology and behavior electives)"
-    },
-    {
-      "code": "UNH-ZOO",
-      "school": "University of New Hampshire",
-      "title": "Zoology B.S."
     }
   ],
   "programCodes": [
     "ME-ZOO",
-    "UMA-BIO",
-    "UNH-ZOO"
+    "UMA-BIO"
   ],
   "related": [
-    "animal-biology",
+    "animal-physiology",
     "ecology",
     "animal-behavior",
-    "wildlife-biology"
+    "wildlife-ecology-management"
   ],
   "references": [
     {

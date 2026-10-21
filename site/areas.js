@@ -2,16 +2,6 @@
   'use strict';
   const app = document.getElementById('app');
   let areas = [];
-  const schoolFocusIds = new Set([
-    'animal-biology',
-    'zoology',
-    'wildlife-biology',
-    'animal-behavior',
-    'animal-welfare',
-    'animal-science',
-    'zoo-aquarium-science',
-    'veterinary-technology'
-  ]);
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -25,39 +15,25 @@
     const itemText = item => typeof item === 'string' ? item : Object.values(item || {}).flat().join(' ');
     return [area.title, area.short, area.bigPicture, ...area.focus.map(itemText), ...area.questions.map(itemText), ...area.knowledgeSkills.map(itemText), ...area.careers].join(' ').toLowerCase();
   }
-  function guideList(items) {
-    if (!items.length) return '';
-    return `<div class="guide-list">${items.map(area => `<a class="guide-link" href="areas/${esc(area.id)}.html">
-      <span class="guide-count">${String(areas.indexOf(area) + 1).padStart(2, '0')}</span>
-      <span class="guide-copy"><strong>${esc(area.title)}</strong><span>${esc(area.short)}</span></span>
-      <span class="guide-arrow" aria-hidden="true">Read guide&nbsp;→</span>
-    </a>`).join('')}</div>`;
-  }
-  function fieldGroup(items, eyebrow, title, description) {
-    if (!items.length) return '';
-    return `<section class="program-collection">
-      <div class="collection-heading"><p class="eyebrow">${esc(eyebrow)}</p><h2>${esc(title)}</h2><p>${esc(description)}</p></div>
-      ${guideList(items)}
-    </section>`;
-  }
   function render(query) {
     const q = String(query || '').trim().toLowerCase();
     const matches = areas.filter(area => !q || searchableText(area).includes(q));
-    const focus = matches.filter(area => schoolFocusIds.has(area.id));
-    const related = matches.filter(area => !schoolFocusIds.has(area.id));
+    const core = matches.filter(area => area.guideTier === 'primary');
+    const related = matches.filter(area => area.guideTier !== 'primary');
+    const group = (title, description, items, start) => !items.length ? '' : `<section class="index-group"><h3>${esc(title)}</h3><p class="section-intro">${esc(description)}</p><div class="guide-list">${items.map((area, offset) => `<a class="guide-link" href="areas/${esc(area.id)}.html">
+          <span class="guide-count">${String(start + offset + 1).padStart(2, '0')}</span>
+          <span class="guide-copy"><strong>${esc(area.title)}</strong><span>${esc(area.short)}</span><span class="index-meta">${area.guideTier === 'primary' ? 'Drives college-fit comparisons' : 'Included for context and completeness'}</span></span>
+          <span class="guide-arrow" aria-hidden="true">Read guide&nbsp;→</span>
+        </a>`).join('')}</div></section>`;
     app.innerHTML = `<div class="index-page">
       <header class="index-hero">
-        <p class="eyebrow">Learn the landscape before choosing a program</p>
         <h1>Field Guides</h1>
-        <p>Animal careers overlap. Start with the fields that best match the current exploration goals, then use the additional guides to understand neighboring specialties and possible later directions.</p>
-        <label class="guide-search" for="areaSearch"><span>Find a field or topic</span><input id="areaSearch" type="search" placeholder="Try behavior, welfare, vet tech…" value="${esc(query || '')}"></label>
+        <p class="section-intro">The first eight areas are the current college-exploration focus. Related fields remain available for context, but they do not independently drive school recommendations. Marine biology is treated as an environment that can cut across several fields, not as an emphasized recommendation category.</p>
+        <label class="guide-search" for="areaSearch"><span>Find a field or topic</span><input id="areaSearch" type="search" placeholder="Try behavior, welfare, wildlife, physiology…" value="${esc(query || '')}"></label>
       </header>
       <section class="guide-index" aria-labelledby="guideIndexTitle">
         <div class="section-heading"><p class="section-number">Field guide index</p><h2 id="guideIndexTitle">Choose an area to read</h2></div>
-        ${matches.length ? [
-          fieldGroup(focus, 'Current school-fit focus · 8 fields', 'Primary exploration fields', 'These fields drive the current college-program library and school-fit decisions. They are not ranked against one another.'),
-          fieldGroup(related, 'Related fields · context, not ranking signals', 'Additional fields for context', 'These guides remain useful for understanding the wider animal-career landscape, but they do not independently drive current school recommendations.')
-        ].join('') : '<p class="empty">No field guides match that search.</p>'}
+        ${matches.length ? group('Core exploration areas', 'These eight fields are the basis for college-fit comparisons and future school recommendations.', core, 0) + group('Related fields and specializations', 'Useful for understanding the wider landscape. These areas can matter within a program, but they do not create a school recommendation by themselves.', related, core.length) : '<p class="empty">No field guides match that search.</p>'}
       </section>
     </div>`;
     const search = document.getElementById('areaSearch');

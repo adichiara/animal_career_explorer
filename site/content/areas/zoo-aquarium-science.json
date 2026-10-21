@@ -1,8 +1,16 @@
 {
   "id": "zoo-aquarium-science",
-  "title": "Zoo & Aquarium Science",
+  "title": "Zoo & Aquarium Science / Managed Animal Care",
   "short": "Daily care, behavior, welfare, and population management of wild species living permanently in human care.",
   "bigPicture": "Zoo and aquarium science is the daily work of keeping wild animals healthy in human care. Feeding, cleaning, health checks, enrichment, training animals to take part in their own medical procedures, and records detailed enough that the next keeper knows what changed overnight. Behind that sits population management run across institutions — which animals breed, which move where — so that a species held in many places is managed as one population, not dozens.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "Association of Zoos & Aquariums — Careers in Zoos and Aquariums",
+      "description": "An overview of the many professional roles in zoos and aquariums, beyond the single label of zookeeper.",
+      "url": "https://www.aza.org/careers_in_zoos_and_aquariums?locale=en"
+    }
+  ],
   "terms": [
     {
       "term": "Accreditation",
@@ -150,25 +158,25 @@
       "title": "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate"
     },
     {
-      "code": "CAN-ABEC",
-      "school": "Canisius University",
-      "title": "Animal Behavior, Ecology, and Conservation B.S. + Zoo Biology minor"
+      "code": "URI-WZ",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology B.S. + Zoo & Aquarium Science Certificate"
     },
     {
-      "code": "DELVAL-ZOO",
-      "school": "Delaware Valley University",
-      "title": "Zoo Science B.S."
+      "code": "UMA-AS",
+      "school": "University of Massachusetts Amherst",
+      "title": "Animal Science B.S. (Animal Management concentration)"
     }
   ],
   "programCodes": [
     "URI-AZ",
-    "CAN-ABEC",
-    "DELVAL-ZOO"
+    "URI-WZ",
+    "UMA-AS"
   ],
   "related": [
     "animal-welfare",
     "animal-behavior",
-    "marine-biology",
+    "environmental-education",
     "conservation-biology"
   ],
   "references": [

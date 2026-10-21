@@ -3,6 +3,8 @@
   "title": "Human–Animal Interaction / Anthrozoology",
   "short": "How people and animals affect each other, including assistance animals, working animals, and everyday companionship.",
   "bigPicture": "Anthrozoology studies the relationship between people and animals as a subject in its own right. What a service dog actually changes for its handler. Whether an animal-assisted program works, and how anyone would know. What the arrangement costs the animal. Why two people can look at the same species and feel completely differently about it. It draws on psychology, anthropology, sociology, veterinary medicine, and ethology, and it is small — most researchers hold a post in one of those departments.",
+  "guideTier": "related",
+  "starterResources": [],
   "terms": [
     {
       "term": "Anthrozoology",
@@ -158,7 +160,7 @@
   "related": [
     "animal-behavior",
     "animal-welfare",
-    "zoo-aquarium-science",
+    "environmental-education",
     "animal-cognition"
   ],
   "references": [

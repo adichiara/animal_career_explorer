@@ -2,18 +2,20 @@
   "areas": [
     "animal-biology.json",
     "zoology.json",
-    "wildlife-biology.json",
-    "marine-biology.json",
+    "wildlife-ecology-management.json",
     "animal-behavior.json",
     "animal-welfare.json",
     "animal-science.json",
     "zoo-aquarium-science.json",
     "veterinary-technology.json",
+    "animal-physiology.json",
     "animal-cognition.json",
     "ecology.json",
     "conservation-biology.json",
+    "veterinary-science.json",
     "wildlife-health.json",
     "wildlife-rehabilitation.json",
+    "environmental-education.json",
     "anthrozoology.json"
   ]
 }

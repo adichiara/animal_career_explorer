@@ -5,6 +5,7 @@
   const currentId = document.body.dataset.area;
   let areas = [];
   let photos = {};
+  let programs = [];
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -16,7 +17,7 @@
   }
   function areaById(id) { return areas.find(area => area.id === id); }
   function careerByName(name) { return D.careers.find(career => career.name.toLowerCase() === name.toLowerCase()); }
-  function programByCode(code) { return D.programs.find(program => program.code === code); }
+  function programByCode(code) { return programs.find(program => program.code === code); }
   function photoFor(area) { return photos[area.id]; }
   function sourceFor(area, reference) {
     if (!reference) return null;
@@ -90,6 +91,7 @@
       ${program.experience ? `<h4>Experience structure</h4><p>${esc(program.experience)}</p>` : ''}
       ${lists.map(([label, values]) => `<h4>${esc(label)}</h4><ul>${values.map(value => `<li>${esc(value)}</li>`).join('')}</ul>`).join('')}
       ${program.bestWhen ? `<div class="best-when"><strong>Especially relevant when</strong><p>${esc(program.bestWhen)}</p></div>` : ''}
+      <a class="research-link" href="../program.html?code=${encodeURIComponent(program.code)}">Read full program guide →</a>
     </article>`;
   }
 
@@ -158,12 +160,19 @@
   async function initialize() {
     try {
       const root = '../content/areas/';
-      const [manifest, photoManifest] = await Promise.all([
+      const [manifest, photoManifest, additions] = await Promise.all([
         fetchJson(`${root}index.json`),
-        fetchJson(`${root}photos.json`)
+        fetchJson(`${root}photos.json`),
+        fetchJson('../content/programs/additional-programs.json').catch(error => {
+          console.error('Unable to load additional program details:', error);
+          return [];
+        })
       ]);
       photos = photoManifest.photos || photoManifest;
       areas = await Promise.all(manifest.areas.map(file => fetchJson(`${root}${file}`)));
+      const focused = D.programs || [];
+      const known = new Set(focused.map(program => program.code));
+      programs = [...focused, ...(Array.isArray(additions) ? additions.filter(program => program && program.code && !known.has(program.code)) : [])];
       const area = areaById(currentId);
       if (!area) throw new Error(`No area content found for ${currentId}.`);
       render(area);

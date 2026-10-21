@@ -97,7 +97,7 @@
       </header>
       <div class="article-body">
         <aside class="article-toc" aria-labelledby="tocTitle"><p id="tocTitle" class="mini-label">In this guide</p><ol>
-          <li><a href="#overview">Program overview</a></li><li><a href="#academics">Academic foundation</a></li><li><a href="#experience">Experience and research</a></li><li><a href="#progression">Four-year progression</a></li><li><a href="#fit">Strengths and tradeoffs</a></li><li><a href="#skills">Skills and preparation</a></li><li><a href="#sources">Official sources</a></li>
+          <li><a href="#overview">Program overview</a></li><li><a href="#academics">Academic foundation</a></li><li><a href="#experience">Experience and research</a></li><li><a href="#progression">Program progression</a></li><li><a href="#fit">Strengths and tradeoffs</a></li><li><a href="#skills">Skills and preparation</a></li><li><a href="#sources">Official sources</a></li>
         </ol></aside>
         <div class="article-content">
           <section id="overview" class="article-section first-section"><div class="section-heading"><p class="section-number">01</p><h2>Program overview</h2></div><p class="big-picture program-overview">${esc(program.overview)}</p>${tags}</section>
@@ -107,7 +107,7 @@
           <section id="experience" class="article-section"><div class="section-heading"><p class="section-number">03</p><h2>Experience and research</h2></div>
             <div class="prose-blocks"><article><h3>Hands-on experience</h3><p>${esc(program.experience)}</p></article><article><h3>Research environment</h3><p>${esc(program.research)}</p></article></div>
           </section>
-          <section id="progression" class="article-section"><div class="section-heading"><p class="section-number">04</p><h2>One way to build through four years</h2></div>${list(program.progression, 'reality-list')}</section>
+          <section id="progression" class="article-section"><div class="section-heading"><p class="section-number">04</p><h2>One way to progress through the program</h2></div>${list(program.progression, 'reality-list')}</section>
           <section id="fit" class="article-section"><div class="section-heading"><p class="section-number">05</p><h2>Strengths and tradeoffs</h2></div>
             <div class="article-columns"><div><h3 class="group-heading first">Distinctive advantages</h3>${list(program.advantages)}</div><div><h3 class="group-heading first">Important tradeoffs</h3>${list(program.tradeoffs)}</div></div>
             ${program.bestWhen ? `<div class="best-when"><strong>Program emphasis</strong><p>${esc(program.bestWhen)}</p></div>` : ''}
@@ -130,7 +130,7 @@
   menuButton.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); });
   nav.addEventListener('click', () => { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); });
   loadPrograms().then(() => {
-    const program = programs.find(item => item.code === code);
-    if (program) render(program); else fail(code ? `No program was found for ${code}.` : 'Choose a program from the school and program library.');
+    const program = libraryPrograms.find(item => item.code === code);
+    if (program) render(program); else fail(code ? 'That program is not in the School & Program Library.' : 'Choose a program from the school and program library.');
   });
 })();

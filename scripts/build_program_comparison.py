@@ -43,16 +43,16 @@ DEGREE = {
     'DELHI-VT': 'A.A.S. → B.S.',
 }
 
-def presentation(field):
+def theme_for(field):
     if field.startswith('veterinary-'):
-        return 'veterinary', 'heart-paw'
+        return 'veterinary'
     if field in ('animal-behavior', 'animal-cognition', 'anthrozoology'):
-        return 'behavior', 'paw'
+        return 'behavior'
     if field in ('animal-welfare', 'animal-science', 'zoo-aquarium-science'):
-        return 'care', 'heart-paw'
+        return 'care'
     if field.startswith(('wildlife-', 'conservation-', 'ecology', 'marine-', 'environmental-')):
-        return 'wildlife', 'bird'
-    return 'biology', 'feather'
+        return 'wildlife'
+    return 'biology'
 
 # Concrete comparison summaries and primary sources are kept separately from
 # program requirements. Review these whenever the linked curriculum changes.
@@ -81,8 +81,7 @@ def build():
         field_chips = ''.join(
             f'<a class="cmp-chip cmp-chip-field" href="areas/{escape(fid)}.html">{escape(fields[fid]["title"])}</a>'
             for fid in p['primaryFields'])
-        theme, symbol = presentation(p['primaryFields'][0])
-        icon = f'<svg class="field-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="images/field-icons.svg#{symbol}"></use></svg>'
+        theme = theme_for(p['primaryFields'][0])
         note = notes[code]
         for key in ('focus', 'experience', 'study', 'consider', 'sources', 'reviewedOn'):
             assert note.get(key), (code, key)
@@ -90,7 +89,7 @@ def build():
         considerations = ''.join(f'<li>{escape(item)}</li>' for item in note['consider'])
         sources = ' · '.join(f'<a href="{escape(url, quote=True)}">Official source{f" {index}" if len(note["sources"]) > 1 else ""}</a>' for index, url in enumerate(note['sources'], 1))
         rows.append(f'''<tr id="{code}" role="row" class="theme-{theme}">
-          <th scope="row" role="rowheader" data-label="School and pathway">{icon}<small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a><span class="cmp-degree">{escape(DEGREE[code])}</span></th>
+          <th scope="row" role="rowheader" data-label="School and pathway"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a><span class="cmp-degree">{escape(DEGREE[code])}</span></th>
           <td role="cell" data-label="Program focus"><p>{escape(note['focus'])}</p><div class="cmp-chips">{field_chips}</div></td>
           <td role="cell" data-label="Animal experience"><p>{escape(note['experience'])}</p><a class="cmp-more" href="program.html?code={code}#experience">Experience details →</a></td>
           <td role="cell" data-label="Study examples"><ul class="cmp-list">{studies}</ul></td>

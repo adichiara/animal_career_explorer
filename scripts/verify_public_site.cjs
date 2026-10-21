@@ -28,7 +28,6 @@ for(const path of ['index.html','areas.html','programs.html','compare.html']){
 // Decorative assets must load, searches must still work, and small empty states must fit.
 for(const [file, searchId] of [['areas.html','areaSearch'],['programs.html','programSearch']]){
  await page.goto(base+file);await page.waitForSelector('.guide-link');
- await page.waitForFunction(()=>[...document.querySelectorAll('.field-icon')].every(el=>el.getBBox().width>0));
  if(!await page.locator('.search-results-note img').evaluate(el=>el.complete&&el.naturalWidth>0))throw Error('Search fox did not load');
  await page.setViewportSize({width:320,height:844});
  await page.locator('#'+searchId).fill('zzzz-no-match');await page.waitForSelector('.friendly-empty');

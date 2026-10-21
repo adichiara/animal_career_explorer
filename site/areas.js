@@ -25,7 +25,7 @@
       </header>
       <section class="guide-index" aria-label="Field guides">
         ${ANIMAL_DETAILS.results(matches.length, 'field guide')}<div class="guide-list">${matches.length ? matches.map((area) => `<a class="guide-link theme-${ANIMAL_DETAILS.theme(area.id)}" href="areas/${esc(area.id)}.html">
-          <span class="guide-copy"><span class="guide-title">${ANIMAL_DETAILS.icon(area.id)}<strong>${esc(area.title)}</strong></span><span>${esc(area.short)}</span></span>
+          <span class="guide-copy"><strong>${esc(area.title)}</strong><span>${esc(area.short)}</span></span>
           <span class="guide-arrow" aria-hidden="true">Read guide&nbsp;→</span>
         </a>`).join('') : ANIMAL_DETAILS.empty('Try a broader term, such as behavior, wildlife, or animal care.')}</div>
       </section>

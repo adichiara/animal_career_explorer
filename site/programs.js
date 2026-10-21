@@ -82,7 +82,7 @@
       : '';
     return `<a class="guide-link program-guide-link theme-${ANIMAL_DETAILS.theme((program.primaryFields || [])[0] || '')}" href="program.html?code=${encodeURIComponent(program.code)}">
       <span class="guide-copy">
-        <span class="guide-title">${ANIMAL_DETAILS.icon((program.primaryFields || [])[0] || '')}<strong>${esc(program.title)}</strong></span>
+        <strong>${esc(program.title)}</strong>
         <span>${esc(program.fundamental || '')}</span>
         ${tags}
         <span class="index-meta">${esc(program.type)} · ${esc(program.scale)}</span>

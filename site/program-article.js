@@ -94,7 +94,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(schoolName)}</span></nav>
       <header class="article-hero program-photo-hero">
         <div class="program-hero-copy-wrap">
-          <div class="hero-copy"><div class="eyebrow field-eyebrow">${ANIMAL_DETAILS.icon((program.primaryFields || [])[0] || '')}College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
+          <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
           <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
             <div><dt>School</dt><dd>${esc(schoolName)}</dd></div>
             <div><dt>Program type</dt><dd>${esc(program.type)}</dd></div>

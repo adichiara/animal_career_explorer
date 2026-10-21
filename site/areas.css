@@ -512,15 +512,8 @@ main:focus { outline: none; }
 .theme-veterinary { --theme-color: var(--violet); }
 .theme-care { --theme-color: var(--teal); }
 .theme-biology, .theme-wildlife, .theme-behavior, .theme-veterinary, .theme-care { --theme-wash: color-mix(in srgb, var(--theme-color) 8%, var(--paper)); }
-.field-icon { display: inline-block; width: 28px; height: 28px; flex: 0 0 28px; color: var(--theme-color, var(--teal)); vertical-align: middle; }
-.guide-copy .guide-title { display: flex; align-items: flex-start; gap: 10px; margin-top: 0; }
-.guide-title strong { min-width: 0; }
-.guide-title .field-icon { margin-top: 1px; }
-.field-eyebrow { display: flex; align-items: center; gap: 10px; }
-.hero-copy .field-icon { color: #8edfd2; }
 .program-guide-link { padding-left: 13px; border-left: 3px solid var(--theme-color, var(--line)); background: color-mix(in srgb, var(--theme-color, var(--blue)) 3%, var(--paper)); }
 .comparison-table tbody tr[class*="theme-"] > th { border-left: 4px solid var(--theme-color); background: var(--theme-wash); }
-.comparison-table tbody th > .field-icon { display: block; margin-bottom: 10px; }
 .search-results-note { display: flex; align-items: center; gap: 12px; margin: -10px 0 20px; color: var(--muted); font-size: .86rem; }
 .search-results-note img { flex: 0 0 56px; }
 .search-results-note p { margin: 0; }
@@ -549,6 +542,6 @@ main:focus { outline: none; }
   .friendly-empty img { width: 56px; height: 48px; flex-basis: 56px; }
 }
 @media print {
-  .footer-paws, .search-results-note img, .field-icon { display: none !important; }
+  .footer-paws, .search-results-note img { display: none !important; }
   .comparison-table tbody tr[class*="theme-"] > th { border-left: 1px solid var(--line); background: none; }
 }

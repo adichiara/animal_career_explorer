@@ -60,7 +60,7 @@ Shared vocabulary connecting careers to college preparation. Examples include be
 Competencies important to a career.
 
 ### `program_competencies`
-Strength of preparation in each competency for the ten undergraduate paths.
+Strength of preparation in each competency for the ten database-generated undergraduate paths. The public school/program library can also include hand-researched program records from `site/content/programs/additional-programs.json`; `site/content/programs/school-library.json` controls which pathways are in the current browseable exploration set.
 
 ### `career_program_support`
 The existing S/C/G/N analytical summary is retained as a high-level comparison, but competency links provide the more explainable layer underneath it.

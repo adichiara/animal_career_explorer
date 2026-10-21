@@ -49,6 +49,17 @@ jobs:
           assert not missing, f"Library codes missing detail records: {missing}"
           assert len(library_codes) == len(set(library_codes)), "Duplicate school-library program codes"
 
+          photo_manifest = json.loads(Path("site/content/programs/photos.json").read_text())
+          photos = photo_manifest.get("photos", {})
+          missing_photos = [code for code in library_codes if code not in photos]
+          assert not missing_photos, f"Library programs missing photos: {missing_photos}"
+          for code in library_codes:
+              photo = photos[code]
+              for key in ("url", "alt", "credit", "source"):
+                  assert photo.get(key), (code, key)
+              assert photo["url"].startswith("https://"), (code, photo["url"])
+              assert photo["source"].startswith("https://"), (code, photo["source"])
+
           expected_fields = {
               "animal-biology", "zoology", "wildlife-biology", "animal-behavior",
               "animal-welfare", "animal-science", "zoo-aquarium-science",

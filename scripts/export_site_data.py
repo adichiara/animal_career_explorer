@@ -8,6 +8,10 @@ REDUNDANT_DETAIL_KEYS = {
     'Graduate-oriented foundations',
     'Weakly aligned paths',
     'Later-career pathway',
+    'O*NET / BLS proxy',
+    'Job outlook',
+    'Salary context',
+    'Proxy fit',
 }
 
 
@@ -145,8 +149,8 @@ for r in rows('''SELECT c.*,f.name family_name,f.description family_description,
     # pathway' is another code list. support is the source of truth and
     # job-article.js already renders it with full program titles and schools.
     details = {k: v for k, v in details.items() if k not in REDUNDANT_DETAIL_KEYS}
-    # maintain broad proxy salary only for legacy; current-market salary stays separate
-    entry=base.get('entrySalary');mid=base.get('midSalary')
+    # Broad proxy salary fields remain in the research sources/database but are not
+    # published to the browser. Posting-specific compensation stays on observed jobs.
     aliases=[x['alias'] for x in rows('SELECT alias FROM career_aliases WHERE career_id=? ORDER BY alias_type,alias',(cid,))]
     careers.append({
         'id':cid,'name':r['name'],'slug':r['slug'],'category':base.get('category',category_by_domain.get(r['domain_id'],r['domain_name'])),
@@ -157,7 +161,7 @@ for r in rows('''SELECT c.*,f.name family_name,f.description family_description,
         'roleFocus':r['description'] or base.get('roleFocus',''),'details':details,'support':support,
         'dims':dims,'directContact':r['direct_animal_contact'] or base.get('directContact','Low / variable'),
         'educationBand':r['education_summary'] or base.get('educationBand',''),'careerStage':r['career_stage'],'workTags':tags,
-        'entrySalary':entry,'midSalary':mid,'observedMarketSalary':salary_obs(cid),'aliases':aliases,
+        'aliases':aliases,
         'competencies':comps,'observedTitles':observed,'recentPostings':posts,'evidence':evid,'credentials':creds,'qualificationProfiles':quals,
     })
 

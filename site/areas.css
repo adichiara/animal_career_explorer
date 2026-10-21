@@ -435,12 +435,11 @@ main:focus { outline: none; }
 .comparison-table th small { display: block; margin-bottom: 6px; color: var(--muted); font-weight: 600; font-size: .78rem; }
 .comparison-table tbody th a { font-weight: 700; }
 @media screen and (min-width: 1100px) {
-  .comparison-table thead th:nth-child(1) { width: 24%; }
-  .comparison-table thead th:nth-child(2) { width: 10%; }
-  .comparison-table thead th:nth-child(3) { width: 23%; }
+  .comparison-table thead th:nth-child(1) { width: 23%; }
+  .comparison-table thead th:nth-child(2) { width: 19%; }
+  .comparison-table thead th:nth-child(3) { width: 22%; }
   .comparison-table thead th:nth-child(4) { width: 17%; }
-  .comparison-table thead th:nth-child(5) { width: 18%; }
-  .comparison-table thead th:nth-child(6) { width: 8%; }
+  .comparison-table thead th:nth-child(5) { width: 19%; }
 }
 .comparison-table tr:target th, .comparison-table tr:target td { background: var(--soft); }
 
@@ -451,11 +450,13 @@ main:focus { outline: none; }
 .cmp-chip-field:hover { background: var(--soft); }
 .cmp-none { color: var(--muted); font-size: .8rem; font-style: italic; }
 
-/* Required animal contact: three states, distinguished by text and shape, never colour alone. */
-.cmp-state { display: inline-block; padding: 3px 10px 3px 8px; border-left: 4px solid currentColor; border-radius: 3px; font-size: .79rem; font-weight: 750; line-height: 1.45; }
-.cmp-state-built-in { color: #06685f; background: color-mix(in srgb, var(--teal) 11%, transparent); }
-.cmp-state-choice { color: #914019; background: color-mix(in srgb, var(--warm) 11%, transparent); }
-.cmp-state-unstated { color: var(--muted); background: color-mix(in srgb, var(--muted) 9%, transparent); font-weight: 600; }
+/* Specific experience, coursework and decision points within the same card layout. */
+.comparison-table td > p:first-child { margin-top: 0; }
+.comparison-table td > p + .cmp-chips { margin-top: 12px; }
+.cmp-degree { display: block; margin-top: 9px; color: var(--muted); font-size: .78rem; font-weight: 650; }
+.cmp-list { margin: 0; padding-left: 18px; }
+.cmp-list li + li { margin-top: 9px; }
+.cmp-sources { font-size: .76rem; line-height: 1.5; }
 .cmp-more { display: inline-block; margin-top: 6px; font-size: .76rem; font-weight: 650; white-space: nowrap; }
 
 /* Phones and small tablets: stop scrolling sideways, stack each row as a card.
@@ -478,8 +479,6 @@ main:focus { outline: none; }
 @media (prefers-color-scheme: dark) {
   :root { color-scheme: dark; --ink: #e0e9ee; --muted: #b4c6d1; --line: #405462; --paper: #101b24; --wash: #182833; --surface: #182833; --soft: #223946; --warm-wash: #32281f; --navy: #b0d9ed; --hero: #163b59; --blue: #82cde9; --teal: #80d6c5; --warm: #f0b38d; --focus: #ffcb70; }
   .brand-mark { background: linear-gradient(145deg, #163b59, #087d72); }
-  .cmp-state-built-in { color: var(--teal); }
-  .cmp-state-choice { color: var(--warm); }
   .guide-search input { border-color: var(--line); }
   .field-distinction { background: var(--warm-wash); }
   .field-distinction h2, .field-distinction h3, .field-distinction p, .distinction-grid p, .load-warning, .editorial-note strong { color: var(--ink); }
@@ -502,6 +501,6 @@ main:focus { outline: none; }
   .comparison-table thead th { position: static; }
   .comparison-table caption { padding: 0 0 6px; }
   .cmp-more { display: none; }
-  .cmp-chip, .cmp-state { border: 1px solid var(--line); background: none; }
+  .cmp-chip { border: 1px solid var(--line); background: none; }
   .article-toc { position: static; max-height: none; }
 }

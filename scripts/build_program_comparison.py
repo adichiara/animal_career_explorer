@@ -1,9 +1,9 @@
 """Build a script-independent comparison from the current program library.
 
-Design rule: every cell must be scannable down its column. Anything that needs a
-paragraph lives on the program page, which each row links to. Nothing here may
-assert more than the source record establishes -- in particular, the absence of
-a documented requirement is reported as "Not established", never as "No".
+Each program compares concrete experience, study and planning decisions.
+Requirements must be distinguished from elective opportunities. Detailed source
+URLs and review dates are retained in comparison-notes.json; dates are not
+rendered in the comparison cards.
 """
 import json
 from html import escape
@@ -43,43 +43,8 @@ DEGREE = {
     'DELHI-VT': 'A.A.S. → B.S.',
 }
 
-# Three states only, so the column can be read vertically. These restate the
-# experience summaries previously held in this file; the full prose now lives on
-# each program page. "Not established" means the record does not establish a
-# required animal-contact component -- it does not mean the program lacks one.
-BUILT_IN = 'built-in'
-CHOICE = 'choice'
-UNSTATED = 'unstated'
-
-CONTACT_LABEL = {
-    BUILT_IN: 'Built into the program',
-    CHOICE: 'Depends on choices',
-    UNSTATED: 'Not established in the record',
-}
-
-CONTACT = {
-    'ME-WE': UNSTATED,
-    'ME-ZOO': CHOICE,
-    'UMA-BGR-VT': BUILT_IN,
-    'UMA-BIO': CHOICE,
-    'UMA-WEC': UNSTATED,
-    'UMA-VT': BUILT_IN,
-    'UNE-AB': CHOICE,
-    'UNH-ZOO': UNSTATED,
-    'URI-AZ': CHOICE,
-    'URI-W': UNSTATED,
-    'URI-WZ': CHOICE,
-    'CAN-ABEC': UNSTATED,
-    'DELVAL-ZOO': BUILT_IN,
-    'CANTON-VT': BUILT_IN,
-    'DELHI-VT': BUILT_IN,
-}
-
-# Competency records vary in how many entries they carry (5 to 12), so listing
-# individual skill names made record completeness look like program strength.
-# Rolling up to categories compresses that to 2-5 comparable chips per row.
-STRONG = 2.4
-
+# Concrete comparison summaries and primary sources are kept separately from
+# program requirements. Review these whenever the linked curriculum changes.
 def build():
     text = (SITE / 'data.js').read_text()
     data = json.loads(text.split('=', 1)[1].strip().removesuffix(';'))
@@ -93,8 +58,9 @@ def build():
                    'University of Rhode Island', 'University of New Hampshire'}
     programs.sort(key=lambda p: (p['school'] not in new_england, school_name(p), p['title']))
 
+    notes = read('content/programs/comparison-notes.json')
     codes = {p['code'] for p in programs}
-    for name, table in (('CONTACT', CONTACT), ('DEGREE', DEGREE)):
+    for name, table in (('comparison notes', notes), ('DEGREE', DEGREE)):
         missing, extra = codes - set(table), set(table) - codes
         assert not missing and not extra, f'{name} is out of step with the library: missing {missing}, extra {extra}'
 
@@ -104,17 +70,18 @@ def build():
         field_chips = ''.join(
             f'<a class="cmp-chip cmp-chip-field" href="areas/{escape(fid)}.html">{escape(fields[fid]["title"])}</a>'
             for fid in p['primaryFields'])
-        categories = sorted({c['category'] for c in p.get('competencies', []) if float(c['strength']) >= STRONG})
-        emphasis = ''.join(f'<span class="cmp-chip">{escape(c)}</span>' for c in categories) \
-            or '<span class="cmp-none">Not documented</span>'
-        state = CONTACT[code]
+        note = notes[code]
+        for key in ('focus', 'experience', 'study', 'consider', 'sources', 'reviewedOn'):
+            assert note.get(key), (code, key)
+        studies = ''.join(f'<li>{escape(item)}</li>' for item in note['study'])
+        considerations = ''.join(f'<li>{escape(item)}</li>' for item in note['consider'])
+        sources = ' · '.join(f'<a href="{escape(url, quote=True)}">Official source{f" {index}" if len(note["sources"]) > 1 else ""}</a>' for index, url in enumerate(note['sources'], 1))
         rows.append(f'''<tr id="{code}" role="row">
-          <th scope="row" role="rowheader" data-label="School and pathway"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a></th>
-          <td role="cell" data-label="Degree">{escape(DEGREE[code])}</td>
-          <td role="cell" data-label="Fields"><div class="cmp-chips">{field_chips}</div></td>
-          <td role="cell" data-label="Required animal contact"><span class="cmp-state cmp-state-{state}">{escape(CONTACT_LABEL[state])}</span> <a class="cmp-more" href="program.html?code={code}#experience">Details&nbsp;→</a></td>
-          <td role="cell" data-label="Documented emphasis"><div class="cmp-chips">{emphasis}</div></td>
-          <td role="cell" data-label="Verified">{escape(p.get('lastVerified') or 'Not recorded')}</td>
+          <th scope="row" role="rowheader" data-label="School and pathway"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a><span class="cmp-degree">{escape(DEGREE[code])}</span></th>
+          <td role="cell" data-label="Program focus"><p>{escape(note['focus'])}</p><div class="cmp-chips">{field_chips}</div></td>
+          <td role="cell" data-label="Animal experience"><p>{escape(note['experience'])}</p><a class="cmp-more" href="program.html?code={code}#experience">Experience details →</a></td>
+          <td role="cell" data-label="Study examples"><ul class="cmp-list">{studies}</ul></td>
+          <td role="cell" data-label="Planning considerations"><ul class="cmp-list">{considerations}</ul><p class="cmp-sources">{sources}</p><a class="cmp-more" href="program.html?code={code}">Full program guide →</a></td>
         </tr>''')
 
     template = (SITE / 'programs.html').read_text()
@@ -123,19 +90,19 @@ def build():
     template = template.replace('<title>School &amp; Program Library | Animal Education Pathways</title>',
                                 '<title>Compare Programs | Animal Education Pathways</title>')
     template = template.replace('Browse researched undergraduate animal-related programs by school, field, and program emphasis.',
-                                'Compare animal-related college programs side by side: degree shape, connected fields, required animal contact, and documented emphasis.')
+                                'Compare animal-related college programs side by side: program focus, actual animal experience, coursework, and planning considerations.')
 
     content = f'''<main id="main" tabindex="-1" class="comparison-page">
       <header class="index-hero"><p class="eyebrow">School &amp; Program Library</p><h1>Compare Programs</h1><p>All {len(programs)} pathways side by side, New England first, then other schools. Open any program for its full rationale, tradeoffs, and sources.</p><p><a href="programs.html">Browse the program guides →</a></p></header>
       <details class="comparison-key" id="comparisonHelp">
         <summary>How to read this table</summary>
-        <p><strong>Required animal contact</strong> has three values. <em>Built into the program</em> means the record documents required hands-on animal work. <em>Depends on choices</em> means it is available but set by electives, internships, or placements. <em>Not established in the record</em> means the official sources reviewed do not establish a required animal-contact component — it does not mean the program has none. Field research, observation, clinical practice, and direct animal care are different kinds of experience; check the program page for which applies.</p>
-        <p><strong>Documented emphasis</strong> groups the stronger preparation areas described in each program guide. These summarize the existing curriculum review. They are not standardized ratings, guarantees, or rankings, and the number of areas shown partly reflects how much detail each record carries. Electives, concentrations, minors, and certificates determine much of what a student actually studies.</p>
-        <p>Sources and verification notes for each program are on its own page.</p>
+        <p><strong>Animal experience</strong> names the actual fieldwork, clinical practice, research or internship structure. Observation, animal handling and day-to-day husbandry provide different kinds of preparation.</p>
+        <p><strong>Study examples</strong> show specific courses or subject areas. Requirements and electives are identified where established; these are examples, not a complete curriculum.</p>
+        <p><strong>Planning considerations</strong> highlight differences that can affect the choice: species studied, campus moves, elective planning, and how a minor, certificate or associate-to-bachelor sequence fits together. Sources are linked in each card.</p>
       </details>
       <div class="comparison-scroll" role="region" aria-labelledby="comparisonCaption" aria-describedby="comparisonHelp">
         <table class="comparison-table" role="table"><caption id="comparisonCaption">Program pathways and documented preparation</caption>
-          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">School and pathway</th><th scope="col" role="columnheader">Degree</th><th scope="col" role="columnheader">Fields</th><th scope="col" role="columnheader">Required animal contact</th><th scope="col" role="columnheader">Documented emphasis</th><th scope="col" role="columnheader">Verified</th></tr></thead>
+          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">School and pathway</th><th scope="col" role="columnheader">Program focus</th><th scope="col" role="columnheader">Animal experience</th><th scope="col" role="columnheader">Study examples</th><th scope="col" role="columnheader">Planning considerations</th></tr></thead>
           <tbody role="rowgroup">{''.join(rows)}</tbody>
         </table>
       </div>

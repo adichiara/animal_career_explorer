@@ -41,11 +41,11 @@ The public homepage links to the field and program guides plus a static comparis
 
 - **Field Guides** — 18 long-form guides loaded from editable JSON files in `site/content/areas/`.
 - **School & Program Library** — 15 researched program pathways across 10 schools, assembled from generated and hand-researched records and selected by `site/content/programs/school-library.json`.
-- **Compare Programs** — a static, source-linked table of all 15 current pathways, with animal experience, connected fields, preparation and questions to check.
+- **Compare Programs** — a static, source-linked table of all 15 current pathways, with program focus, concrete animal experience, study examples and planning considerations.
 
 The job-example pages and retired `legacy.html` and `discover.html` interfaces have been removed. Career and posting data remain intact in the database and exports; field guides still show career descriptions and preparation.
 
-Rebuild the static comparison after editing program data or library membership with `python3 scripts/build_program_comparison.py`. The build reuses current library records and requires a reviewed animal-experience summary for every listed pathway. It does not infer required animal contact from tags.
+Rebuild the static comparison after editing program data or library membership with `python3 scripts/build_program_comparison.py`. The build reuses current library records and requires reviewed comparison notes for every listed pathway in `site/content/programs/comparison-notes.json`. These name specific experience and coursework, with linked primary sources; review dates are not displayed in the cards.
 
 ## Editing Field Guide content
 

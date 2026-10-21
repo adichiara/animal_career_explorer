@@ -417,26 +417,56 @@ main:focus { outline: none; }
   .primary-nav { position: absolute; display: none; inset: 69px 10px auto; flex-direction: column; margin: 0; padding: 9px; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 16px 38px rgba(20, 34, 47, .12); }
   .primary-nav.open { display: flex; }
 }
-/* Static comparison: native table, row/column headers, keyboard-scrollable on phones. */
-.comparison-page { width: min(100% - 30px, 1480px); margin: auto; padding: 36px 0 64px; }
+/* Static comparison: native table on wide screens, stacked cards on phones.
+   Every cell is short enough to scan down its column; prose lives on the
+   program pages that each row links to. */
+.comparison-page { width: min(100% - 30px, 1320px); margin: auto; padding: 36px 0 64px; }
 .comparison-page .index-hero { max-width: 900px; }
-.comparison-key { max-width: 900px; margin-bottom: 24px; color: var(--muted); }
+.comparison-key { max-width: 900px; margin-bottom: 24px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; color: var(--muted); background: var(--surface); font-size: .9rem; }
+.comparison-key summary { color: var(--navy); font-weight: 750; cursor: pointer; }
+.comparison-key p { margin-top: 12px; }
 .comparison-scroll { overflow-x: auto; border: 1px solid var(--line); }
-.comparison-table { width: 100%; min-width: 1250px; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: .88rem; line-height: 1.5; }
+.comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: .88rem; line-height: 1.5; }
 .comparison-table caption { padding: 16px; color: var(--navy); font-weight: 800; text-align: left; background: var(--surface); }
-.comparison-table th, .comparison-table td { padding: 16px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); overflow-wrap: anywhere; }
-.comparison-table thead th { color: var(--navy); background: var(--soft); font-size: .8rem; }
-.comparison-table th:first-child { width: 235px; }
-.comparison-table th:nth-child(2) { width: 180px; }
-.comparison-table th:nth-child(3) { width: 250px; }
-.comparison-table tbody th { position: sticky; left: 0; z-index: 1; background: var(--paper); box-shadow: 2px 0 0 var(--line); }
+.comparison-table th, .comparison-table td { padding: 14px 16px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); overflow-wrap: break-word; }
+.comparison-table thead th { position: sticky; top: 0; z-index: 3; color: var(--navy); background: var(--soft); font-size: .78rem; letter-spacing: .02em; }
+.comparison-table tbody th { background: var(--paper); }
 .comparison-table tbody tr:nth-child(even) th, .comparison-table tbody tr:nth-child(even) td { background: var(--surface); }
-.comparison-table th small { display: block; margin-bottom: 8px; color: var(--muted); font-weight: 600; }
-.comparison-table ul { margin: 0; padding-left: 18px; }
-.comparison-table li + li { margin-top: 6px; }
-.comparison-table td p:first-child { margin-top: 0; }
-.comparison-table td small { display: block; margin-top: 10px; color: var(--muted); }
+.comparison-table th small { display: block; margin-bottom: 6px; color: var(--muted); font-weight: 600; font-size: .78rem; }
+.comparison-table tbody th a { font-weight: 700; }
 .comparison-table tr:target th, .comparison-table tr:target td { background: var(--soft); }
+
+/* Chips: connected fields and documented emphasis. */
+.cmp-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.cmp-chip { display: inline-block; padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: var(--paper); font-size: .76rem; font-weight: 650; line-height: 1.45; text-decoration: none; }
+.cmp-chip-field { color: var(--blue); border-color: color-mix(in srgb, var(--blue) 35%, var(--line)); }
+.cmp-chip-field:hover { background: var(--soft); }
+.cmp-none { color: var(--muted); font-size: .8rem; font-style: italic; }
+
+/* Required animal contact: three states, distinguished by text and shape, never colour alone. */
+.cmp-state { display: inline-block; padding: 3px 10px 3px 8px; border-left: 4px solid currentColor; border-radius: 3px; font-size: .79rem; font-weight: 750; line-height: 1.45; }
+.cmp-state-built-in { color: var(--teal); background: color-mix(in srgb, var(--teal) 11%, transparent); }
+.cmp-state-choice { color: var(--warm); background: color-mix(in srgb, var(--warm) 11%, transparent); }
+.cmp-state-unstated { color: var(--muted); background: color-mix(in srgb, var(--muted) 9%, transparent); font-weight: 600; }
+.cmp-more { display: inline-block; margin-top: 6px; font-size: .76rem; font-weight: 650; white-space: nowrap; }
+
+/* Phones and small tablets: stop scrolling sideways, stack each row as a card.
+   The table stays a real table for assistive technology; only the painting changes. */
+@media (max-width: 899px) {
+  .comparison-page { width: min(100% - 24px, 1320px); }
+  .comparison-scroll { overflow: visible; border: 0; }
+  .comparison-table { display: block; font-size: .95rem; }
+  .comparison-table caption { padding: 0 0 14px; background: none; }
+  .comparison-table thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .comparison-table tbody, .comparison-table tr, .comparison-table th, .comparison-table td { display: block; width: auto; }
+  .comparison-table tr { margin-bottom: 16px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .comparison-table th, .comparison-table td { padding: 12px 14px; border-right: 0; }
+  .comparison-table tbody th, .comparison-table tbody tr:nth-child(even) th { background: var(--soft); }
+  .comparison-table tbody tr:nth-child(even) td { background: var(--paper); }
+  .comparison-table td:last-child { border-bottom: 0; }
+  .comparison-table td::before { display: block; margin-bottom: 5px; color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; content: attr(data-label); }
+  .comparison-table tr:target { outline: 2px solid var(--blue); outline-offset: 2px; }
+}
 @media (prefers-color-scheme: dark) {
   :root { color-scheme: dark; --ink: #e0e9ee; --muted: #b4c6d1; --line: #405462; --paper: #101b24; --wash: #182833; --surface: #182833; --soft: #223946; --warm-wash: #32281f; --navy: #b0d9ed; --hero: #163b59; --blue: #82cde9; --teal: #80d6c5; --warm: #f0b38d; --focus: #ffcb70; }
   .brand-mark { background: linear-gradient(145deg, #163b59, #087d72); }
@@ -451,12 +481,17 @@ main:focus { outline: none; }
 @media print {
   .site-header, .site-footer, .skip-link { display: none; }
   .comparison-scroll { overflow: visible; border: 0; }
-  .comparison-table { min-width: 0; font-size: 8pt; table-layout: auto; }
-  .comparison-table th, .comparison-table td { padding: 6px; }
-  .comparison-table tbody th { position: static; box-shadow: none; }
-  .comparison-table thead { display: table-header-group; }
-  .comparison-table tr { break-inside: avoid; }
+  /* Always print as a real table, even when the page box is narrow enough
+     to have triggered the card reflow on screen. */
+  .comparison-table { display: table; font-size: 8pt; table-layout: auto; }
+  .comparison-table tbody { display: table-row-group; }
+  .comparison-table tr { display: table-row; margin: 0; border: 0; break-inside: avoid; }
+  .comparison-table th, .comparison-table td { display: table-cell; padding: 6px; border-right: 1px solid var(--line); }
+  .comparison-table td::before { display: none; }
+  .comparison-table thead { position: static; display: table-header-group; width: auto; height: auto; clip-path: none; }
+  .comparison-table thead th { position: static; }
+  .comparison-table caption { padding: 0 0 6px; }
+  .cmp-more { display: none; }
+  .cmp-chip, .cmp-state { border: 1px solid var(--line); background: none; }
   .article-toc { position: static; max-height: none; }
 }
-
-@media (max-width: 699px) { .comparison-table th:first-child { width: 170px; } }

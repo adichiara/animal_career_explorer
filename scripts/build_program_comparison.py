@@ -1,4 +1,10 @@
-"""Build a script-independent comparison from the current program library."""
+"""Build a script-independent comparison from the current program library.
+
+Design rule: every cell must be scannable down its column. Anything that needs a
+paragraph lives on the program page, which each row links to. Nothing here may
+assert more than the source record establishes -- in particular, the absence of
+a documented requirement is reported as "Not established", never as "No".
+"""
 import json
 from html import escape
 from pathlib import Path
@@ -18,25 +24,61 @@ def school_name(program):
         'UMass Amherst': 'University of Massachusetts Amherst',
     }.get(program['school'], program['school'])
 
-# Summaries of the experience descriptions in the source records, not new claims.
-# Absence of a documented requirement must never become a "No" or a "Yes".
-EXPERIENCE = {
-    'ME-ZOO': 'Choice-dependent. Field courses, research and internships are options; direct animal contact depends on choices outside the core.',
-    'ME-WE': 'Structured wildlife fieldwork: field ecology, an intensive field survey and a telemetry-based capstone. Required hands-on animal care is not established.',
-    'UMA-BIO': 'Choice-dependent. Animal experience must be assembled through research, internships or placements; it is not automatic.',
-    'UMA-WEC': 'Structured wildlife preparation. The record establishes field-oriented coursework, but not a required animal-handling or care placement.',
-    'UMA-VT': 'Built-in clinical practice: advanced clinical coursework, community clinic practica and senior internships after the move to Newton.',
-    'UNE-AB': 'Observation, methods, research and internship work are built around the major. Sustained hands-on husbandry needs deliberate planning.',
-    'URI-AZ': 'The combined pathway includes zoo-based management coursework and an internship-linked certificate practicum. Confirm the placement’s direct animal duties.',
-    'URI-W': 'Research apprenticeship or internship pathways and advanced experiential options. Required direct animal handling is not established.',
-    'URI-WZ': 'The added certificate includes zoo-based management coursework and an internship-linked practicum. Confirm direct animal duties and combined scheduling.',
-    'CAN-ABEC': 'Credit-bearing internships and zoo/aquarium internship options. A required direct animal-care placement is not established in the record.',
-    'UNH-ZOO': 'Field and laboratory research opportunities. Required husbandry or animal-care experience is not established.',
-    'DELVAL-ZOO': 'Animal work starts in the first year. Required Experience360 experience includes internships; confirm each placement’s animal-care duties.',
-    'UMA-BGR-VT': 'Hands-on clinical and laboratory training in Bangor is documented. Confirm required animal-contact hours and the A.S./B.S. sequence.',
-    'CANTON-VT': 'The A.A.S. foundation includes hands-on labs, kennel-duty rotations and two clinical preceptorships; the B.S. builds on it.',
-    'DELHI-VT': 'Live-animal labs begin in the first semester of the A.A.S.; clinical teaching and professional experience support the B.S. continuation.',
+# Credential shape, short enough to scan. Derived from the program title only.
+DEGREE = {
+    'ME-WE': 'B.S.',
+    'ME-ZOO': 'B.S.',
+    'UMA-BGR-VT': 'A.S. or B.S.',
+    'UMA-BIO': 'B.S.',
+    'UMA-WEC': 'B.S. (concentration)',
+    'UMA-VT': 'B.S.',
+    'UNE-AB': 'B.S.',
+    'UNH-ZOO': 'B.S.',
+    'URI-AZ': 'B.S. + certificate',
+    'URI-W': 'B.S.',
+    'URI-WZ': 'B.S. + certificate',
+    'CAN-ABEC': 'B.S. + minor',
+    'DELVAL-ZOO': 'B.S.',
+    'CANTON-VT': 'B.S. (on A.A.S. core)',
+    'DELHI-VT': 'A.A.S. → B.S.',
 }
+
+# Three states only, so the column can be read vertically. These restate the
+# experience summaries previously held in this file; the full prose now lives on
+# each program page. "Not established" means the record does not establish a
+# required animal-contact component -- it does not mean the program lacks one.
+BUILT_IN = 'built-in'
+CHOICE = 'choice'
+UNSTATED = 'unstated'
+
+CONTACT_LABEL = {
+    BUILT_IN: 'Built into the program',
+    CHOICE: 'Depends on choices',
+    UNSTATED: 'Not established in the record',
+}
+
+CONTACT = {
+    'ME-WE': UNSTATED,
+    'ME-ZOO': CHOICE,
+    'UMA-BGR-VT': BUILT_IN,
+    'UMA-BIO': CHOICE,
+    'UMA-WEC': UNSTATED,
+    'UMA-VT': BUILT_IN,
+    'UNE-AB': CHOICE,
+    'UNH-ZOO': UNSTATED,
+    'URI-AZ': CHOICE,
+    'URI-W': UNSTATED,
+    'URI-WZ': CHOICE,
+    'CAN-ABEC': UNSTATED,
+    'DELVAL-ZOO': BUILT_IN,
+    'CANTON-VT': BUILT_IN,
+    'DELHI-VT': BUILT_IN,
+}
+
+# Competency records vary in how many entries they carry (5 to 12), so listing
+# individual skill names made record completeness look like program strength.
+# Rolling up to categories compresses that to 2-5 comparable chips per row.
+STRONG = 2.4
 
 def build():
     text = (SITE / 'data.js').read_text()
@@ -46,44 +88,62 @@ def build():
     manifest = read('content/areas/index.json')
     fields = {a['id']: a for a in [read('content/areas/' + name) for name in manifest['areas']]}
     programs = [{**details[item['code']], **item} for item in library['programs']]
-    new_england = {'University of Maine', 'University of Maine at Augusta', 'UMass Amherst', 'University of Massachusetts Amherst', 'University of New England', 'University of Rhode Island', 'University of New Hampshire'}
+    new_england = {'University of Maine', 'University of Maine at Augusta', 'UMass Amherst',
+                   'University of Massachusetts Amherst', 'University of New England',
+                   'University of Rhode Island', 'University of New Hampshire'}
     programs.sort(key=lambda p: (p['school'] not in new_england, school_name(p), p['title']))
-    assert {p['code'] for p in programs} == set(EXPERIENCE), 'Update experience summaries when library membership changes'
+
+    codes = {p['code'] for p in programs}
+    for name, table in (('CONTACT', CONTACT), ('DEGREE', DEGREE)):
+        missing, extra = codes - set(table), set(table) - codes
+        assert not missing and not extra, f'{name} is out of step with the library: missing {missing}, extra {extra}'
+
     rows = []
     for p in programs:
         code = p['code']
-        field_links = ''.join(f'<li><a href="areas/{escape(fid)}.html">{escape(fields[fid]["title"])}</a></li>' for fid in p['primaryFields'])
-        strengths = [c['name'] for c in p.get('competencies', []) if float(c['strength']) >= 2.4]
-        skills = '<ul>' + ''.join(f'<li>{escape(name)}</li>' for name in strengths) + '</ul>' if strengths else 'Not documented.'
-        sources = []
-        for i, url in enumerate(p.get('sources', []), 1):
-            if not url.startswith(('http://', 'https://')):
-                url = 'https://' + url
-            sources.append(f'<a href="{escape(url, quote=True)}">Official source {i}</a>')
+        field_chips = ''.join(
+            f'<a class="cmp-chip cmp-chip-field" href="areas/{escape(fid)}.html">{escape(fields[fid]["title"])}</a>'
+            for fid in p['primaryFields'])
+        categories = sorted({c['category'] for c in p.get('competencies', []) if float(c['strength']) >= STRONG})
+        emphasis = ''.join(f'<span class="cmp-chip">{escape(c)}</span>' for c in categories) \
+            or '<span class="cmp-none">Not documented</span>'
+        state = CONTACT[code]
         rows.append(f'''<tr id="{code}">
-          <th scope="row"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a></th>
-          <td><ul>{field_links}</ul></td>
-          <td><p>{escape(EXPERIENCE[code])}</p><a href="program.html?code={code}#experience">Read experience details →</a></td>
-          <td>{skills}</td>
-          <td><p>{escape(p['lookFirst'])}</p></td>
-          <td>{'<br>'.join(sources)}<small>Record verified: {escape(p.get('lastVerified') or 'Date not recorded')}</small></td>
+          <th scope="row" data-label="School and pathway"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a></th>
+          <td data-label="Degree">{escape(DEGREE[code])}</td>
+          <td data-label="Fields"><div class="cmp-chips">{field_chips}</div></td>
+          <td data-label="Required animal contact"><span class="cmp-state cmp-state-{state}">{escape(CONTACT_LABEL[state])}</span> <a class="cmp-more" href="program.html?code={code}#experience">Details&nbsp;→</a></td>
+          <td data-label="Documented emphasis"><div class="cmp-chips">{emphasis}</div></td>
+          <td data-label="Verified">{escape(p.get('lastVerified') or 'Not recorded')}</td>
         </tr>''')
+
     template = (SITE / 'programs.html').read_text()
-    template = template.replace('<a class="active" href="programs.html">', '<a href="programs.html">').replace('<a href="compare.html">Compare Programs</a>', '<a class="active" aria-current="page" href="compare.html">Compare Programs</a>')
-    template = template.replace('<title>School &amp; Program Library | Animal Education Pathways</title>', '<title>Compare Programs | Animal Education Pathways</title>')
-    template = template.replace('Browse researched undergraduate animal-related programs by school, field, and program emphasis.', 'Compare animal-related college programs, animal experience, documented skills, and questions to check.')
+    template = template.replace('<a class="active" href="programs.html">', '<a href="programs.html">') \
+        .replace('<a href="compare.html">Compare Programs</a>', '<a class="active" aria-current="page" href="compare.html">Compare Programs</a>')
+    template = template.replace('<title>School &amp; Program Library | Animal Education Pathways</title>',
+                                '<title>Compare Programs | Animal Education Pathways</title>')
+    template = template.replace('Browse researched undergraduate animal-related programs by school, field, and program emphasis.',
+                                'Compare animal-related college programs side by side: degree shape, connected fields, required animal contact, and documented emphasis.')
+
     content = f'''<main id="main" tabindex="-1" class="comparison-page">
-      <header class="index-hero"><p class="eyebrow">School &amp; Program Library</p><h1>Compare Programs</h1><p>Compare all {len(programs)} pathways, grouped by New England first and then other schools, alphabetically within each region.</p><p><a href="programs.html">Browse the program guides →</a></p></header>
-      <div class="comparison-key" id="comparisonHelp"><p><strong>Animal experience varies.</strong> Field research, observation, clinical practice and direct animal care are different kinds of experience. A hands-on tag alone does not establish a requirement. Where the record does not establish required animal contact, the table says so.</p><p><strong>Skills listed</strong> are the stronger preparation areas described in each program guide. They summarize the existing curriculum review; they are not standardized ratings, guarantees, or rankings. Electives, concentrations, minors and certificates can determine what a student actually studies.</p><p>On a narrow screen, scroll the table horizontally. Open a program for its full rationale and tradeoffs, or a field for career context.</p></div>
+      <header class="index-hero"><p class="eyebrow">School &amp; Program Library</p><h1>Compare Programs</h1><p>All {len(programs)} pathways side by side, New England first, then other schools. Open any program for its full rationale, tradeoffs, and sources.</p><p><a href="programs.html">Browse the program guides →</a></p></header>
+      <details class="comparison-key" id="comparisonHelp">
+        <summary>How to read this table</summary>
+        <p><strong>Required animal contact</strong> has three values. <em>Built into the program</em> means the record documents required hands-on animal work. <em>Depends on choices</em> means it is available but set by electives, internships, or placements. <em>Not established in the record</em> means the official sources reviewed do not establish a required animal-contact component — it does not mean the program has none. Field research, observation, clinical practice, and direct animal care are different kinds of experience; check the program page for which applies.</p>
+        <p><strong>Documented emphasis</strong> groups the stronger preparation areas described in each program guide. These summarize the existing curriculum review. They are not standardized ratings, guarantees, or rankings, and the number of areas shown partly reflects how much detail each record carries. Electives, concentrations, minors, and certificates determine much of what a student actually studies.</p>
+        <p>Sources and verification notes for each program are on its own page.</p>
+      </details>
       <div class="comparison-scroll" role="region" aria-labelledby="comparisonCaption" aria-describedby="comparisonHelp" tabindex="0">
         <table class="comparison-table"><caption id="comparisonCaption">Program pathways and documented preparation</caption>
-          <thead><tr><th scope="col">School and pathway</th><th scope="col">Connected fields</th><th scope="col">Animal work in the program</th><th scope="col">Skills emphasized in the guide</th><th scope="col">What to check first</th><th scope="col">Sources and record date</th></tr></thead>
+          <thead><tr><th scope="col">School and pathway</th><th scope="col">Degree</th><th scope="col">Fields</th><th scope="col">Required animal contact</th><th scope="col">Documented emphasis</th><th scope="col">Verified</th></tr></thead>
           <tbody>{''.join(rows)}</tbody>
         </table>
       </div>
     </main>'''
+
     template = template.replace('<main id="app" tabindex="-1"></main>', content).replace('href="#app"', 'href="#main"')
-    template = template.replace('<script src="data.js"></script><script src="programs.js"></script>', '<script src="navigation.js"></script>')
+    template = template.replace('<script src="data.js"></script><script src="programs.js"></script>',
+                                '<script src="navigation.js"></script>')
     (SITE / 'compare.html').write_text(template)
     print(f'Wrote comparison for {len(programs)} programs')
 

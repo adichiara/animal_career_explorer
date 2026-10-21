@@ -1,0 +1,261 @@
+{
+  "ME-WE": {
+    "focus": "Free-ranging wildlife, populations, habitats and professional field methods.",
+    "experience": "Required Field Ecology and Scientific Communication, vertebrate biology lab, and a May-term Wildlife Field Survey provide a defined fieldwork sequence.",
+    "study": [
+      "Wildlife Field Survey (required)",
+      "Wildlife Population Dynamics and Conservation with lab (required)",
+      "Applied GIS (required)"
+    ],
+    "consider": [
+      "Habitat, plant identification, statistics and policy occupy substantial curriculum space.",
+      "For zoo husbandry or training goals, plan a separate managed-animal placement."
+    ],
+    "sources": [
+      "https://umaine.edu/wle/undergraduate-program/wildlife-ecology-curriculum/"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "ME-ZOO": {
+    "focus": "Broad animal biology, from cells and physiology to diversity and ecology.",
+    "experience": "Hands-on laboratory and field courses are part of the degree. Faculty laboratory or field research can also be taken for credit or pursued through paid opportunities.",
+    "study": [
+      "Animal function and physiology",
+      "Evolution and animal diversity",
+      "Laboratory and field research"
+    ],
+    "consider": [
+      "Upper-level electives shape the specialty; Ecology is an optional concentration.",
+      "Compare available research projects with the sustained husbandry experience needed for animal-care goals."
+    ],
+    "sources": [
+      "https://sbe.umaine.edu/undergraduate/zoology/"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "UMA-BIO": {
+    "focus": "A flexible biology foundation that can be shaped toward behavior and organismal science.",
+    "experience": "The elective requirements include two laboratory or field courses. The ecology course guide includes Animal Behavior with lab, organismal labs and field biology; research and placements add further experience.",
+    "study": [
+      "Animal Behavior with lab (elective)",
+      "Animal Communication (elective)",
+      "Mammalogy or Ornithology with lab (electives)"
+    ],
+    "consider": [
+      "Ecology and behavior are elective directions, not an official named track.",
+      "Choose animal-focused courses and faculty projects deliberately; the major also includes plant and molecular biology."
+    ],
+    "sources": [
+      "https://www.umass.edu/biology/ecology-and-evolutionary-biology-course-guide"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "UMA-WEC": {
+    "focus": "Wildlife conservation combining animal populations, habitat management and spatial analysis.",
+    "experience": "Hands-on field skills are part of the concentration. The curriculum includes Wildlife Sampling and Identification, habitat management and GIS; summer jobs and internships extend the field experience.",
+    "study": [
+      "Wildlife Sampling and Identification (required)",
+      "Wildlife Population Dynamics (required)",
+      "Introduction to GIS (required)"
+    ],
+    "consider": [
+      "This is a concentration within Natural Resources Conservation.",
+      "Plan upper-level choices against Wildlife Society certification coursework; habitat, plants and policy are substantial components."
+    ],
+    "sources": [
+      "https://www.umass.edu/environmental-conservation/academics/undergraduate-programs/natural-resources-conservation/major/wildlife-ecology-conservation-concentration"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "UMA-VT": {
+    "focus": "Veterinary nursing and technical care, including clinical and research-animal settings.",
+    "experience": "Laboratory and animal-science work in Amherst leads into advanced clinical coursework, community clinic practica and senior internships in the Newton portion of the program.",
+    "study": [
+      "Small- and large-animal nursing",
+      "Anesthesia, surgery support and diagnostic imaging",
+      "Laboratory-animal medicine and management"
+    ],
+    "consider": [
+      "Students spend two years in Amherst, then two at the Charles River Campus in Newton.",
+      "The curriculum covers companion, large and laboratory animals; zoo/exotic experience needs targeted electives or placements."
+    ],
+    "sources": [
+      "https://www.umass.edu/veterinary-animal-sciences/veterinary-technology-major",
+      "https://www.umass.edu/charles-river/veterinary-technology"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "UNE-AB": {
+    "focus": "Animal behavior through biology, psychology, learning and cognition.",
+    "experience": "A required Animal Behavior Internship/Research course and Animal Learning and Behavior lab provide structured experience. Placement examples include wildlife centers, service-dog organizations and aquariums.",
+    "study": [
+      "Comparative Animal Behavior (required)",
+      "Animal Cognition (required)",
+      "Animal Learning and Behavior with lab (required)"
+    ],
+    "consider": [
+      "Compare the day-to-day duties of an internship with the methods used in a faculty research project.",
+      "For field-wildlife goals, plan additional GIS, habitat and population-methods coursework."
+    ],
+    "sources": [
+      "https://catalog.une.edu/programs/animal-behavior-bs/",
+      "https://www.une.edu/cas/schools/psychology-brain-sciences/programs/bs-animal-behavior"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "URI-AZ": {
+    "focus": "Managed-animal science with a zoo/aquarium certificate adding behavior, training and welfare.",
+    "experience": "The certificate requires Zoo Animal Management at Roger Williams Park Zoo and an internship-linked practicum. Practicum enrollment requires a concurrent or recently completed zoo/aquarium internship.",
+    "study": [
+      "Zoo Animal Management (certificate requirement)",
+      "Advanced Methods in Applied Animal Behavior (certificate requirement)",
+      "Zoo and Aquarium Animal Welfare (certificate requirement)"
+    ],
+    "consider": [
+      "The Animal Science option retains domestic and livestock content.",
+      "Plan certificate prerequisites and the internship; the zoo-based course has additional costs."
+    ],
+    "sources": [
+      "https://web.uri.edu/favs/academics/zoo-and-aquarium-science-certificate/"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "URI-W": {
+    "focus": "Wildlife biology and conservation centered on free-ranging animals and their habitats.",
+    "experience": "Wildlife Field Techniques is required. Research, internships and other experiential courses can contribute toward concentration and supporting-elective requirements.",
+    "study": [
+      "Wildlife Field Techniques (required)",
+      "Field Botany and Taxonomy (required)",
+      "Mammalogy, Herpetology or Animal Behavior (concentration choices)"
+    ],
+    "consider": [
+      "Botany, habitat and natural-resource coursework are part of the route.",
+      "For managed-animal care, compare this major with the version that adds the zoo/aquarium certificate."
+    ],
+    "sources": [
+      "https://web.uri.edu/nrs/academics/wildlife-and-conservation-biology/curriculum/"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "URI-WZ": {
+    "focus": "Wildlife field science paired with zoo/aquarium management, behavior and welfare.",
+    "experience": "The wildlife major includes required field techniques. The certificate adds zoo-based management coursework and a practicum tied to a concurrent or recently completed zoo/aquarium internship.",
+    "study": [
+      "Wildlife Field Techniques (major requirement)",
+      "Zoo Animal Management (certificate requirement)",
+      "Zoo and Aquarium Animal Welfare (certificate requirement)"
+    ],
+    "consider": [
+      "Map certificate prerequisites, internship timing and course overlap with an advisor.",
+      "The wildlife core still includes plants, habitats and conservation; the zoo-based course adds costs."
+    ],
+    "sources": [
+      "https://web.uri.edu/nrs/academics/wildlife-and-conservation-biology/curriculum/",
+      "https://web.uri.edu/favs/academics/zoo-and-aquarium-science-certificate/"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "CAN-ABEC": {
+    "focus": "Behavior and conservation with a Zoo Biology minor for captive-animal management.",
+    "experience": "Credit-bearing animal internships are available. The Zoo Biology minor offers zoo/aquarium internships, husbandry and enrichment among its elective choices; the minor alone does not require every one of them.",
+    "study": [
+      "Zoo Animal Management (minor requirement)",
+      "Zoo Animal Husbandry or Animal Enrichment (minor electives)",
+      "Animal Learning and lab (minor elective)"
+    ],
+    "consider": [
+      "The minor is 18 credits: one required management course plus 15 elective credits.",
+      "Choose husbandry, welfare and internship electives deliberately and plan their course rotation."
+    ],
+    "sources": [
+      "https://catalog.canisius.edu/undergraduate/division-arts-education-sciences/school-natural-environmental-animal-sciences/animal-behavior-ecology-conservation/zoo-biology-minor/index.html"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "UNH-ZOO": {
+    "focus": "Broad zoology with room to specialize in physiology, behavior, ecology or aquatic systems.",
+    "experience": "A senior capstone is required: an approved experience plus BIOL 780. The experience can be a thesis, mentored research, internship or designated capstone course.",
+    "study": [
+      "Animal physiology and comparative biology",
+      "Behavior and neurobiology electives",
+      "Field or laboratory research; senior capstone"
+    ],
+    "consider": [
+      "Choose the capstone route to match the kind of animal work wanted.",
+      "Husbandry, zoo management and clinical nursing are not the organizing core; add relevant placements for those goals."
+    ],
+    "sources": [
+      "https://www.unh.edu/program/bachelor-science/zoology"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "DELVAL-ZOO": {
+    "focus": "Zoo science spanning husbandry, behavior, training, health and facility management.",
+    "experience": "Animal work begins in the first year. The Experience360 program includes internships in animal care and public education.",
+    "study": [
+      "Husbandry and handling techniques",
+      "Animal behavior, training and nutrition",
+      "Exhibit design and captive-population management"
+    ],
+    "consider": [
+      "A focused zoo-science curriculum leaves less generality than broad biology or zoology.",
+      "Compare the species and responsibilities available through animal-care internships."
+    ],
+    "sources": [
+      "https://delval.edu/programs/undergraduate-majors/zoo-science-bs"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "UMA-BGR-VT": {
+    "focus": "Veterinary technical skills and patient care through associate or bachelor study in Bangor.",
+    "experience": "Onsite teaching facilities support hands-on technical skills and laboratory practice. The curriculum prepares students for clinical animal-care work.",
+    "study": [
+      "Clinical patient care and animal handling",
+      "Veterinary laboratory procedures",
+      "Animal welfare and professional practice"
+    ],
+    "consider": [
+      "Compare the associate and bachelor sequences and their credentialing milestones.",
+      "The program serves veterinary care broadly; seek specific placements for zoo or wildlife interests."
+    ],
+    "sources": [
+      "https://www.uma.edu/academics/programs/veterinary-technology/"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "CANTON-VT": {
+    "focus": "Veterinary technology with companion, farm and laboratory animals.",
+    "experience": "The B.S. includes the veterinary-technology associate curriculum, hands-on animal work and two clinical preceptorships. The first mandatory preceptorship is 120 hours.",
+    "study": [
+      "Fundamental Veterinary Nursing",
+      "Animal Anatomy and Physiology",
+      "Research Animal Techniques and clinical pathology"
+    ],
+    "consider": [
+      "Evaluate comfort with farm and laboratory animals as well as companion species.",
+      "Advanced bachelor coursework builds on the associate core; zoo medicine is a possible setting rather than a dedicated specialization."
+    ],
+    "sources": [
+      "https://canton.edu/sci_health/vet/description.html"
+    ],
+    "reviewedOn": "2026-10-21"
+  },
+  "DELHI-VT": {
+    "focus": "An associate-to-bachelor veterinary-technology route with live-animal clinical training.",
+    "experience": "Live-animal labs begin in the first semester of the associate program. Teaching facilities include clinical and surgical suites, diagnostic imaging, laboratory-animal facilities and a large-animal farm.",
+    "study": [
+      "Anesthesia, surgery and diagnostic-imaging support",
+      "Companion, farm and laboratory-animal care",
+      "Advanced clinical, laboratory-animal or public-health electives in the B.S."
+    ],
+    "consider": [
+      "Entry to the B.S. follows an accredited veterinary-technology associate degree and separate admission requirements.",
+      "The animal mix is broader than zoo/exotics; compare placement options for that specialty."
+    ],
+    "sources": [
+      "https://www.delhi.edu/academics/majors-programs/associates/veterinary-science/",
+      "https://www.delhi.edu/academics/majors-programs/bachelors/veterinary-technology/index.php"
+    ],
+    "reviewedOn": "2026-10-21"
+  }
+}

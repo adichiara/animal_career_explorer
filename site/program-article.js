@@ -4,6 +4,7 @@
   const app = document.getElementById('articleApp');
   const code = new URLSearchParams(location.search).get('code');
   let programs = [];
+  const CURRENT_FOCUS = window.PROGRAM_FOCUS_AREAS || {};
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -43,7 +44,7 @@
       <header class="article-hero text-hero">
         <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(program.school)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
         <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
-          <div><dt>School</dt><dd>${esc(program.school)}</dd></div><div><dt>Program type</dt><dd>${esc(program.type)}</dd></div><div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div><div><dt>Research set</dt><dd>${program.collection === 'additional' ? 'Additional researched option' : 'Focused comparison'}</dd></div><div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
+          <div><dt>School</dt><dd>${esc(program.school)}</dd></div><div><dt>Program type</dt><dd>${esc(program.type)}</dd></div><div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div><div><dt>Source set</dt><dd>${program.collection === 'additional' ? 'Additional researched option' : 'Original researched set'}</dd></div><div><dt>Current-focus relevance</dt><dd>${CURRENT_FOCUS[program.code] ? esc(CURRENT_FOCUS[program.code].join(' · ')) : 'Related context only'}</dd></div><div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
         </dl></aside>
       </header>
       <div class="article-body">

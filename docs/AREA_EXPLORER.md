@@ -17,13 +17,13 @@ The homepage and primary navigation expose only the three reference sections. Th
 
 - Area content is loaded at runtime from the editable JSON files in `site/content/areas/`.
 - Area definitions and distinctions draw from the project's *Core Animal-Related Fields* source.
-- College Program guides merge the 10 focused records in `site/data.js` with the 7 hand-editable broader options in `site/content/programs/additional-programs.json`.
+- College Program guides merge the 10 focused records in `site/data.js` with the 8 hand-editable broader options in `site/content/programs/additional-programs.json`.
 - Job Example guides use `site/data.js`.
 - Job examples are dated observations, not current vacancy claims or a measure of the whole labor market.
 - External links come primarily from the source notes in *Animal Behavior, Wildlife, Animal Care & Conservation — Undergraduate Pathways and Career Exploration Guide*.
 - The linked sources include professional organizations, O*NET/BLS occupation pages, qualification and permit guidance, field job boards, and official university programs.
 - Photo assignments, accessible descriptions, credits, source links, and license labels are stored in `site/content/areas/photos.json`.
-- The 15 photographs are stored locally as cropped 1200 × 675 WebP files in `site/images/areas/`. Full credits are recorded in `site/images/areas/CREDITS.md`.
+- The field-guide photographs are stored locally as cropped 1200 × 675 WebP files in `site/images/areas/`. Full credits are recorded in `site/images/areas/CREDITS.md`.
 
 ## Current interface files
 
@@ -49,3 +49,7 @@ The homepage and primary navigation expose only the three reference sections. Th
 - `site/images/areas/`
 
 The new reference pages do not store user state. The retained `legacy.html` and `discover.html` files keep their original code and browser-storage behavior for backward reference.
+
+## Current recommendation focus
+
+College-fit comparisons are anchored to eight areas: Animal Biology, Zoology, Wildlife Biology, Animal Behavior, Animal Welfare Science, Animal Science where the curriculum has a meaningful non-agricultural/managed-animal emphasis, Zoo & Aquarium Science / Managed Animal Care, and Veterinary Technology. Other guides remain available for context and completeness but do not independently drive school recommendations. Marine biology is treated as an environment/taxon context that can cut across several fields, not as an emphasized recommendation category.

@@ -1,8 +1,16 @@
 {
   "id": "animal-science",
   "title": "Animal Science",
-  "short": "The biology, care, management, and use of domesticated animals, traditionally with an agricultural emphasis.",
+  "short": "Domesticated-animal biology and management, with this guide emphasizing companion, managed-animal, behavior, welfare, and health pathways while keeping the field's agricultural roots visible.",
   "bigPicture": "Animal science asks how domesticated animals grow, reproduce, stay healthy, and are cared for, and how management changes those outcomes. It grew out of agriculture and livestock remain at its center, but what a given program actually covers varies more than the shared title suggests. Concentrations may emphasize production, companion animals, equine science, behavior, welfare, nutrition, biotechnology, or pre-veterinary preparation.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "American Society of Animal Science — What Is Animal Science?",
+      "description": "A useful introduction to the discipline and its traditional scope. Compare it with each college curriculum because programs vary greatly in agricultural versus companion, welfare, behavior, and managed-animal emphasis.",
+      "url": "https://www.asas.org/services/student-resources/what-is-animal-science"
+    }
+  ],
   "senses": {
     "title": "Three things called “animal science”",
     "summary": "The same phrase is used for an occupation, a degree, and a general idea. They point in different directions, so it is worth knowing which one a page, a person, or a program means.",

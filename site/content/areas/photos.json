@@ -109,6 +109,21 @@
       "source": "https://commons.wikimedia.org/wiki/File:Service_dog_being_hugged.jpg",
       "license": "CC BY-SA 4.0 source",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "animal-biology": {
+      "url": "../images/areas/animal-physiology.webp",
+      "alt": "A labeled anatomical diagram identifies major organs and body systems, illustrating the whole-animal focus of animal biology.",
+      "credit": "Cat anatomy diagram via Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Cat_anatomy_diagram.png",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "veterinary-technology": {
+      "url": "../images/areas/veterinary-science-v2.webp",
+      "alt": "Two veterinary professionals examine a cat during hands-on clinical care.",
+      "credit": "Government of Indonesia; AI-assisted extension",
+      "source": "https://commons.wikimedia.org/wiki/File:Two_Indonesia_medical_veterinarians_examining_a_cat.jpg",
+      "license": "Public-domain source"
     }
   }
 }

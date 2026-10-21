@@ -3,6 +3,14 @@
   "title": "Animal Welfare Science",
   "short": "How to measure what an animal's life is actually like, and use that evidence to improve it.",
   "bigPicture": "Animal welfare science asks how an animal's life is going and how anyone could tell. It replaces impression with measurement: behavior, body condition, stress physiology, health records, and what an animal will work to get. Those findings then meet budgets, staffing, and safety rules, which is why the field puts as much effort into getting evidence implemented as into producing it. It applies wherever animals are kept — farms, laboratories, homes, shelters, zoos — and increasingly to wild animals too.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "Lincoln Park Zoo — Animal Welfare Science Program",
+      "description": "A concrete look at welfare science using behavioral monitoring, habitat use, hormones, sensors, enrichment, and evidence-based changes to care.",
+      "url": "https://www.lpzoo.org/conservation-science/science-centers/animal-welfare-science-program/"
+    }
+  ],
   "terms": [
     {
       "term": "Welfare",

@@ -3,6 +3,8 @@
   "title": "Wildlife Rehabilitation",
   "short": "Temporary treatment of injured, sick, or orphaned wild animals, with release as the goal. Permit-bound and focused on the individual animal.",
   "bigPicture": "Wildlife rehabilitation is the care of sick, injured, and orphaned wild animals with the aim of putting them back. Every decision runs against that goal: an animal that recovers physically but loses its wariness of people usually cannot be released. The field is bounded by law as much as by biology — holding native wildlife requires a state permit, and migratory birds and certain other species carry federal requirements on top.",
+  "guideTier": "related",
+  "starterResources": [],
   "terms": [
     {
       "term": "Rehabilitation",

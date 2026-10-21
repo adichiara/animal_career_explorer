@@ -1,14 +1,22 @@
 {
   "id": "wildlife-ecology-management",
-  "title": "Wildlife Ecology & Management",
+  "title": "Wildlife Biology",
   "short": "The science and professional management of free-ranging wild animals: estimating populations, understanding movement and habitat, and deciding how agencies and organizations should act.",
   "bigPicture": "Wildlife ecology and management applies ecological science to free-ranging animal populations and the habitats and human systems that shape them. It combines population estimation, movement and habitat analysis, field techniques, law, policy, and public decision-making. The work is organized around practical questions: whether a population is secure, what is causing change, which action is feasible, and how its results will be measured.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "The Wildlife Society — Professional Development",
+      "description": "Student and early-career resources from the professional society that certifies wildlife biologists.",
+      "url": "https://wildlife.org/professional-development/"
+    }
+  ],
   "distinction": {
-    "title": "Wildlife Ecology & Management and Ecology",
+    "title": "Wildlife Biology and Ecology",
     "summary": "The fields share population biology, field sampling, statistics, and spatial analysis. What they centre on, and what they produce, are different.",
     "items": [
       {
-        "label": "Wildlife Ecology & Management",
+        "label": "Wildlife Biology",
         "description": "Centers on free-ranging wild animals, their populations, and the habitats and people affecting them. Typical products include population estimates, species and habitat plans, harvest or protection recommendations, permits, and evaluated management actions."
       },
       {

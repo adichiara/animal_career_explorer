@@ -43,71 +43,16 @@
       "A small private-university setting differs substantially in scale, cost structure, and course breadth from the public research universities in the focused list."
     ],
     "bestWhen": "Especially relevant for a student who wants animal behavior to remain central while also exploring welfare, conservation, rehabilitation, training, and the human responsibilities that accompany animal work.",
-    "experienceTags": [
-      "research",
-      "internship",
-      "zoo",
-      "wildlife rehabilitation",
-      "animal welfare",
-      "training"
-    ],
+    "experienceTags": ["research", "internship", "zoo", "wildlife rehabilitation", "animal welfare", "training"],
     "competencies": [
-      {
-        "id": "comp_behavior_obs",
-        "name": "Behavioral observation",
-        "category": "Behavior & welfare",
-        "description": "Systematic observation, ethograms, behavior coding, and interpretation.",
-        "strength": 3
-      },
-      {
-        "id": "comp_research",
-        "name": "Research design",
-        "category": "Methods",
-        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
-        "strength": 2.8
-      },
-      {
-        "id": "comp_welfare",
-        "name": "Welfare assessment",
-        "category": "Behavior & welfare",
-        "description": "Assessing physical and behavioral welfare and quality of life.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_conservation",
-        "name": "Conservation biology",
-        "category": "Applied conservation",
-        "description": "Species and population conservation, recovery, and biodiversity protection.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_ecology",
-        "name": "Ecology",
-        "category": "Wildlife science",
-        "description": "Organism–environment relationships, communities, habitats, and ecological processes.",
-        "strength": 2.4
-      },
-      {
-        "id": "comp_stats",
-        "name": "Statistics & data analysis",
-        "category": "Methods",
-        "description": "Quantitative analysis and evidence-based interpretation.",
-        "strength": 2.4
-      },
-      {
-        "id": "comp_writing",
-        "name": "Scientific writing & communication",
-        "category": "Professional",
-        "description": "Research papers, presentations, and communication for scientific and public audiences.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_learning",
-        "name": "Learning & training",
-        "category": "Behavior & welfare",
-        "description": "Learning theory, conditioning, reinforcement, and humane training.",
-        "strength": 2.1
-      }
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 3},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.8},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.7},
+      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.5},
+      {"id": "comp_ecology", "name": "Ecology", "category": "Wildlife science", "description": "Organism–environment relationships, communities, habitats, and ecological processes.", "strength": 2.4},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.4},
+      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Research papers, presentations, and communication for scientific and public audiences.", "strength": 2.5},
+      {"id": "comp_learning", "name": "Learning & training", "category": "Behavior & welfare", "description": "Learning theory, conditioning, reinforcement, and humane training.", "strength": 2.1}
     ],
     "sources": [
       "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation",
@@ -160,71 +105,16 @@
       "A zoo-focused degree may be less flexible than broad biology for a student who later moves entirely away from animal or conservation work."
     ],
     "bestWhen": "Especially relevant when zoo or conservation work is appealing but the strongest intellectual interest is in why animals behave as they do, including learning and cognition.",
-    "experienceTags": [
-      "zoo",
-      "research",
-      "internship",
-      "animal cognition",
-      "animal behavior",
-      "conservation"
-    ],
+    "experienceTags": ["zoo", "research", "internship", "animal cognition", "animal behavior", "conservation"],
     "competencies": [
-      {
-        "id": "comp_behavior_obs",
-        "name": "Behavioral observation",
-        "category": "Behavior & welfare",
-        "description": "Systematic observation, ethograms, behavior coding, and interpretation.",
-        "strength": 3
-      },
-      {
-        "id": "comp_cognition",
-        "name": "Animal cognition",
-        "category": "Behavior & welfare",
-        "description": "Learning, memory, perception, problem-solving, and comparative cognition.",
-        "strength": 3
-      },
-      {
-        "id": "comp_research",
-        "name": "Research design",
-        "category": "Methods",
-        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
-        "strength": 2.8
-      },
-      {
-        "id": "comp_husbandry",
-        "name": "Animal husbandry",
-        "category": "Applied animal care",
-        "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.",
-        "strength": 2.3
-      },
-      {
-        "id": "comp_conservation",
-        "name": "Conservation biology",
-        "category": "Applied conservation",
-        "description": "Species and population conservation, recovery, and biodiversity protection.",
-        "strength": 2.4
-      },
-      {
-        "id": "comp_ecology",
-        "name": "Ecology",
-        "category": "Wildlife science",
-        "description": "Organism–environment relationships and ecological influences on behavior.",
-        "strength": 2.2
-      },
-      {
-        "id": "comp_stats",
-        "name": "Statistics & data analysis",
-        "category": "Methods",
-        "description": "Quantitative analysis and evidence-based interpretation.",
-        "strength": 2.3
-      },
-      {
-        "id": "comp_writing",
-        "name": "Scientific writing & communication",
-        "category": "Professional",
-        "description": "Reports, papers, presentations, and professional communication.",
-        "strength": 2.5
-      }
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 3},
+      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, memory, perception, problem-solving, and comparative cognition.", "strength": 3},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.8},
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 2.3},
+      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.4},
+      {"id": "comp_ecology", "name": "Ecology", "category": "Wildlife science", "description": "Organism–environment relationships and ecological influences on behavior.", "strength": 2.2},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.3},
+      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Reports, papers, presentations, and professional communication.", "strength": 2.5}
     ],
     "sources": [
       "https://catalog.drake.edu/undergraduate/arts-sciences/areas-study/environmental-science-sustainability/zoo-conservation-science-bs/",
@@ -276,72 +166,16 @@
       "Hands-on access does not make zoo employment automatic; internships, references, and a strong record remain important in a competitive field."
     ],
     "bestWhen": "Especially relevant for a student who wants repeated, structured contact with zoo and rehabilitation settings while still building a biological-science and research foundation.",
-    "experienceTags": [
-      "zoo",
-      "wildlife rehabilitation",
-      "animal care",
-      "animal welfare",
-      "training",
-      "research",
-      "internship"
-    ],
+    "experienceTags": ["zoo", "wildlife rehabilitation", "animal care", "animal welfare", "training", "research", "internship"],
     "competencies": [
-      {
-        "id": "comp_husbandry",
-        "name": "Animal husbandry",
-        "category": "Applied animal care",
-        "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.",
-        "strength": 3
-      },
-      {
-        "id": "comp_welfare",
-        "name": "Welfare assessment",
-        "category": "Behavior & welfare",
-        "description": "Assessing physical and behavioral welfare and quality of life.",
-        "strength": 2.8
-      },
-      {
-        "id": "comp_learning",
-        "name": "Learning & training",
-        "category": "Behavior & welfare",
-        "description": "Learning theory, reinforcement, enrichment, and humane training.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_rehab",
-        "name": "Wildlife rehabilitation",
-        "category": "Applied animal care",
-        "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.",
-        "strength": 2.8
-      },
-      {
-        "id": "comp_behavior_obs",
-        "name": "Behavioral observation",
-        "category": "Behavior & welfare",
-        "description": "Systematic observation, ethograms, behavior coding, and interpretation.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_research",
-        "name": "Research design",
-        "category": "Methods",
-        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
-        "strength": 2.6
-      },
-      {
-        "id": "comp_conservation",
-        "name": "Conservation biology",
-        "category": "Applied conservation",
-        "description": "Species and population conservation, recovery, and biodiversity protection.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_physiology",
-        "name": "Animal physiology",
-        "category": "Biological mechanisms",
-        "description": "Organ systems, reproduction, nutrition, and functional biology.",
-        "strength": 2.4
-      }
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 3},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.8},
+      {"id": "comp_learning", "name": "Learning & training", "category": "Behavior & welfare", "description": "Learning theory, reinforcement, enrichment, and humane training.", "strength": 2.7},
+      {"id": "comp_rehab", "name": "Wildlife rehabilitation", "category": "Applied animal care", "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.", "strength": 2.8},
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 2.5},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.6},
+      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.5},
+      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, reproduction, nutrition, and functional biology.", "strength": 2.4}
     ],
     "sources": [
       "https://www.otterbein.edu/programs/ba-bs-zoo-conservation-science/",
@@ -392,71 +226,16 @@
       "Students pursuing direct animal-care employment need to build substantial hands-on hours alongside the academic program."
     ],
     "bestWhen": "Especially relevant for a student drawn to animal behavior as a scientific question and considering research or graduate study in cognition, learning, neuroethology, behavioral ecology, or comparative biology.",
-    "experienceTags": [
-      "research",
-      "animal behavior",
-      "animal cognition",
-      "laboratory",
-      "fieldwork",
-      "graduate preparation"
-    ],
+    "experienceTags": ["research", "animal behavior", "animal cognition", "laboratory", "fieldwork", "graduate preparation"],
     "competencies": [
-      {
-        "id": "comp_behavior_obs",
-        "name": "Behavioral observation",
-        "category": "Behavior & welfare",
-        "description": "Systematic observation, behavior coding, experimentation, and interpretation.",
-        "strength": 3
-      },
-      {
-        "id": "comp_research",
-        "name": "Research design",
-        "category": "Methods",
-        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
-        "strength": 3
-      },
-      {
-        "id": "comp_cognition",
-        "name": "Animal cognition",
-        "category": "Behavior & welfare",
-        "description": "Learning, memory, perception, problem-solving, and comparative cognition.",
-        "strength": 2.8
-      },
-      {
-        "id": "comp_neuro",
-        "name": "Neuroscience & neuroethology",
-        "category": "Biological mechanisms",
-        "description": "Neural and physiological mechanisms of behavior.",
-        "strength": 2.6
-      },
-      {
-        "id": "comp_stats",
-        "name": "Statistics & data analysis",
-        "category": "Methods",
-        "description": "Statistical analysis, quantitative reasoning, and interpretation.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_ecology",
-        "name": "Behavioral ecology",
-        "category": "Wildlife science",
-        "description": "How ecological and evolutionary conditions shape behavior.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_writing",
-        "name": "Scientific writing & communication",
-        "category": "Professional",
-        "description": "Journal-style papers, literature reviews, formal presentations, and discussion leadership.",
-        "strength": 3
-      },
-      {
-        "id": "comp_physiology",
-        "name": "Animal physiology",
-        "category": "Biological mechanisms",
-        "description": "Organ systems, endocrine processes, and functional biology relevant to behavior.",
-        "strength": 2.3
-      }
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, behavior coding, experimentation, and interpretation.", "strength": 3},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 3},
+      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, memory, perception, problem-solving, and comparative cognition.", "strength": 2.8},
+      {"id": "comp_neuro", "name": "Neuroscience & neuroethology", "category": "Biological mechanisms", "description": "Neural and physiological mechanisms of behavior.", "strength": 2.6},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Statistical analysis, quantitative reasoning, and interpretation.", "strength": 2.7},
+      {"id": "comp_ecology", "name": "Behavioral ecology", "category": "Wildlife science", "description": "How ecological and evolutionary conditions shape behavior.", "strength": 2.5},
+      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Journal-style papers, literature reviews, formal presentations, and discussion leadership.", "strength": 3},
+      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, endocrine processes, and functional biology relevant to behavior.", "strength": 2.3}
     ],
     "sources": [
       "https://coursecatalog.bucknell.edu/collegeofartsandsciencescurricula/areasofstudy/animalbehavioranbe/",
@@ -507,72 +286,16 @@
       "The breadth is valuable for exploration but requires deliberate choices to create a clear specialty and technical portfolio."
     ],
     "bestWhen": "Especially relevant when the student is interested not only in animal behavior, but also in welfare, ethics, animal-serving organizations, communication, and the many ways people and animals affect one another.",
-    "experienceTags": [
-      "research",
-      "internship",
-      "practicum",
-      "animal cognition",
-      "animal welfare",
-      "anthrozoology",
-      "zoo"
-    ],
+    "experienceTags": ["research", "internship", "practicum", "animal cognition", "animal welfare", "anthrozoology", "zoo"],
     "competencies": [
-      {
-        "id": "comp_human_animal",
-        "name": "Human–animal relationships",
-        "category": "Interdisciplinary",
-        "description": "Scientific, cultural, ethical, and social analysis of relationships between humans and other animals.",
-        "strength": 3
-      },
-      {
-        "id": "comp_behavior_obs",
-        "name": "Behavioral observation",
-        "category": "Behavior & welfare",
-        "description": "Systematic observation, behavior coding, and interpretation.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_cognition",
-        "name": "Animal cognition",
-        "category": "Behavior & welfare",
-        "description": "Learning, communication, problem-solving, and comparative cognition.",
-        "strength": 2.6
-      },
-      {
-        "id": "comp_welfare",
-        "name": "Welfare assessment",
-        "category": "Behavior & welfare",
-        "description": "Understanding and evaluating physical and behavioral welfare.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_research",
-        "name": "Research design",
-        "category": "Methods",
-        "description": "Quantitative, qualitative, and interdisciplinary study design and reasoning.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_stats",
-        "name": "Statistics & data analysis",
-        "category": "Methods",
-        "description": "Quantitative analysis and evidence-based interpretation.",
-        "strength": 2.3
-      },
-      {
-        "id": "comp_writing",
-        "name": "Writing & communication",
-        "category": "Professional",
-        "description": "Critical writing, research communication, reflection, and communication with varied audiences.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_public",
-        "name": "Public education & advocacy",
-        "category": "Professional",
-        "description": "Education, interpretation, outreach, and communication about animals and their interests.",
-        "strength": 2.4
-      }
+      {"id": "comp_human_animal", "name": "Human–animal relationships", "category": "Interdisciplinary", "description": "Scientific, cultural, ethical, and social analysis of relationships between humans and other animals.", "strength": 3},
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, behavior coding, and interpretation.", "strength": 2.7},
+      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, communication, problem-solving, and comparative cognition.", "strength": 2.6},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Understanding and evaluating physical and behavioral welfare.", "strength": 2.5},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Quantitative, qualitative, and interdisciplinary study design and reasoning.", "strength": 2.5},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.3},
+      {"id": "comp_writing", "name": "Writing & communication", "category": "Professional", "description": "Critical writing, research communication, reflection, and communication with varied audiences.", "strength": 2.7},
+      {"id": "comp_public", "name": "Public education & advocacy", "category": "Professional", "description": "Education, interpretation, outreach, and communication about animals and their interests.", "strength": 2.4}
     ],
     "sources": [
       "https://www.eckerd.edu/animal-studies/",
@@ -624,71 +347,16 @@
       "The current Unity model includes several distinct in-person and online pathways, so applicants should verify the exact degree length, delivery format, campus, and experiential commitments."
     ],
     "bestWhen": "Especially relevant when the student wants to understand the practical realities of caring for wild animals and is comfortable choosing a more specialized applied degree.",
-    "experienceTags": [
-      "wildlife rehabilitation",
-      "animal care",
-      "animal health",
-      "husbandry",
-      "in-person",
-      "applied learning"
-    ],
+    "experienceTags": ["wildlife rehabilitation", "animal care", "animal health", "husbandry", "in-person", "applied learning"],
     "competencies": [
-      {
-        "id": "comp_rehab",
-        "name": "Wildlife rehabilitation",
-        "category": "Applied animal care",
-        "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.",
-        "strength": 3
-      },
-      {
-        "id": "comp_husbandry",
-        "name": "Animal husbandry",
-        "category": "Applied animal care",
-        "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.",
-        "strength": 3
-      },
-      {
-        "id": "comp_health",
-        "name": "Animal health observation",
-        "category": "Animal health",
-        "description": "Recognizing health concerns, monitoring change, and communicating observations within a care team.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_behavior_obs",
-        "name": "Behavioral observation",
-        "category": "Behavior & welfare",
-        "description": "Observing behavior to guide care, welfare, habituation prevention, and release planning.",
-        "strength": 2.6
-      },
-      {
-        "id": "comp_welfare",
-        "name": "Welfare assessment",
-        "category": "Behavior & welfare",
-        "description": "Assessing physical and behavioral welfare and quality of life.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_nutrition",
-        "name": "Animal nutrition",
-        "category": "Applied animal care",
-        "description": "Species- and life-stage-appropriate nutrition and feeding management.",
-        "strength": 2.5
-      },
-      {
-        "id": "comp_habitat",
-        "name": "Habitat & enclosure design",
-        "category": "Applied conservation",
-        "description": "Designing environments that support safety, natural behavior, recovery, and release preparation.",
-        "strength": 2.6
-      },
-      {
-        "id": "comp_ecology",
-        "name": "Wildlife ecology",
-        "category": "Wildlife science",
-        "description": "Ecological context for species needs, natural behavior, habitat, and release.",
-        "strength": 2.1
-      }
+      {"id": "comp_rehab", "name": "Wildlife rehabilitation", "category": "Applied animal care", "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.", "strength": 3},
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 3},
+      {"id": "comp_health", "name": "Animal health observation", "category": "Animal health", "description": "Recognizing health concerns, monitoring change, and communicating observations within a care team.", "strength": 2.7},
+      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Observing behavior to guide care, welfare, habituation prevention, and release planning.", "strength": 2.6},
+      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.5},
+      {"id": "comp_nutrition", "name": "Animal nutrition", "category": "Applied animal care", "description": "Species- and life-stage-appropriate nutrition and feeding management.", "strength": 2.5},
+      {"id": "comp_habitat", "name": "Habitat & enclosure design", "category": "Applied conservation", "description": "Designing environments that support safety, natural behavior, recovery, and release preparation.", "strength": 2.6},
+      {"id": "comp_ecology", "name": "Wildlife ecology", "category": "Wildlife science", "description": "Ecological context for species needs, natural behavior, habitat, and release.", "strength": 2.1}
     ],
     "sources": [
       "https://unity.edu/programs/wildlife-care-and-rehabilitation/",
@@ -739,72 +407,16 @@
       "Behavior, cognition, enrichment, and wildlife rehabilitation would need to be developed through electives and external experience."
     ],
     "bestWhen": "Especially relevant when animal health, veterinary preparation, physiology, nutrition, or hands-on domestic-animal management is more important than wildlife ecology or comparative behavior.",
-    "experienceTags": [
-      "animal care",
-      "animal health",
-      "pre-veterinary",
-      "equine",
-      "dairy",
-      "research",
-      "laboratory"
-    ],
+    "experienceTags": ["animal care", "animal health", "pre-veterinary", "equine", "dairy", "research", "laboratory"],
     "competencies": [
-      {
-        "id": "comp_physiology",
-        "name": "Animal physiology",
-        "category": "Biological mechanisms",
-        "description": "Organ systems, reproduction, endocrine processes, and functional biology.",
-        "strength": 3
-      },
-      {
-        "id": "comp_nutrition",
-        "name": "Animal nutrition",
-        "category": "Applied animal care",
-        "description": "Diet, nutrition science, feeding management, and effects on health and production.",
-        "strength": 3
-      },
-      {
-        "id": "comp_health",
-        "name": "Animal health & disease",
-        "category": "Animal health",
-        "description": "Health assessment, disease processes, microbiology, prevention, and veterinary context.",
-        "strength": 3
-      },
-      {
-        "id": "comp_husbandry",
-        "name": "Animal husbandry",
-        "category": "Applied animal care",
-        "description": "Handling, feeding, sanitation, records, and daily management of domestic animals.",
-        "strength": 3
-      },
-      {
-        "id": "comp_genetics",
-        "name": "Genetics & reproduction",
-        "category": "Biological mechanisms",
-        "description": "Inheritance, breeding, reproduction, and their applications in animal science.",
-        "strength": 2.7
-      },
-      {
-        "id": "comp_research",
-        "name": "Research design",
-        "category": "Methods",
-        "description": "Laboratory or applied study design, data collection, and scientific reasoning.",
-        "strength": 2.3
-      },
-      {
-        "id": "comp_stats",
-        "name": "Statistics & data analysis",
-        "category": "Methods",
-        "description": "Quantitative analysis and evidence-based interpretation.",
-        "strength": 2
-      },
-      {
-        "id": "comp_welfare",
-        "name": "Animal welfare",
-        "category": "Behavior & welfare",
-        "description": "Physical and behavioral welfare within domestic-animal management systems.",
-        "strength": 1.8
-      }
+      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, reproduction, endocrine processes, and functional biology.", "strength": 3},
+      {"id": "comp_nutrition", "name": "Animal nutrition", "category": "Applied animal care", "description": "Diet, nutrition science, feeding management, and effects on health and production.", "strength": 3},
+      {"id": "comp_health", "name": "Animal health & disease", "category": "Animal health", "description": "Health assessment, disease processes, microbiology, prevention, and veterinary context.", "strength": 3},
+      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Handling, feeding, sanitation, records, and daily management of domestic animals.", "strength": 3},
+      {"id": "comp_genetics", "name": "Genetics & reproduction", "category": "Biological mechanisms", "description": "Inheritance, breeding, reproduction, and their applications in animal science.", "strength": 2.7},
+      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Laboratory or applied study design, data collection, and scientific reasoning.", "strength": 2.3},
+      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2},
+      {"id": "comp_welfare", "name": "Animal welfare", "category": "Behavior & welfare", "description": "Physical and behavioral welfare within domestic-animal management systems.", "strength": 1.8}
     ],
     "sources": [
       "https://umaine.edu/foodandagriculture/b-s-degree-in-animal-and-veterinary-sciences/",

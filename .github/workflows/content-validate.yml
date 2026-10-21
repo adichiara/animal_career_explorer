@@ -1,0 +1,89 @@
+name: Content validation
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/areas_build.py'
+      - 'site/**'
+      - '.github/workflows/content-validate.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild field-guide content and require a clean diff
+        run: |
+          python3 scripts/areas_build.py site/content/areas
+          git diff --exit-code -- site/content/areas
+
+      - name: Validate data counts and current school library
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          text = Path("site/data.js").read_text()
+          data = json.loads(text.split("=", 1)[1].strip().removesuffix(";"))
+          assert len(data["careers"]) == 93, len(data["careers"])
+          assert len(data["programs"]) == 10, len(data["programs"])
+
+          area_index = json.loads(Path("site/content/areas/index.json").read_text())
+          areas = [json.loads(Path("site/content/areas", name).read_text()) for name in area_index["areas"]]
+          assert len(areas) == 18, len(areas)
+          expected_primary = {
+              "animal-biology", "zoology", "wildlife-ecology-management", "animal-behavior",
+              "animal-welfare", "animal-science", "zoo-aquarium-science", "veterinary-technology",
+          }
+          assert {a["id"] for a in areas if a.get("guideTier") == "primary"} == expected_primary
+          marine = next(a for a in areas if a["id"] == "marine-biology")
+          assert marine.get("guideTier") == "related"
+
+          additions = json.loads(Path("site/content/programs/additional-programs.json").read_text())
+          library = json.loads(Path("site/content/programs/school-library.json").read_text())
+          all_codes = {p["code"] for p in data["programs"]} | {p["code"] for p in additions}
+          library_codes = [p["code"] for p in library["programs"]]
+          missing = [code for code in library_codes if code not in all_codes]
+          assert not missing, f"Library codes missing detail records: {missing}"
+          assert len(library_codes) == len(set(library_codes)), "Duplicate school-library program codes"
+
+          expected_fields = {
+              "animal-biology", "zoology", "wildlife-biology", "animal-behavior",
+              "animal-welfare", "animal-science", "zoo-aquarium-science",
+              "veterinary-technology",
+          }
+          assert set(library["schoolFitFields"]) == expected_fields
+          for item in library["programs"]:
+              assert item["primaryFields"], item["code"]
+              assert set(item["primaryFields"]) <= expected_fields, item
+          PY
+
+      - name: Check program codes do not leak into prose
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, re, sys
+          text = pathlib.Path("site/data.js").read_text()
+          obj = json.loads(text.split("=", 1)[1].strip().removesuffix(";"))
+          additions = json.loads(pathlib.Path("site/content/programs/additional-programs.json").read_text())
+          codes = [p["code"] for p in obj["programs"]] + [p["code"] for p in additions]
+          bad = []
+          for p in pathlib.Path("site/content/areas").glob("*.json"):
+              if p.name in ("index.json", "photos.json"):
+                  continue
+              s = p.read_text()
+              for c in codes:
+                  if re.search(r'(?<!["\\w-])' + re.escape(c) + r'(?!["\\w-])', s):
+                      bad.append((p.name, c))
+          if bad:
+              print("Program codes found in prose:", bad)
+              sys.exit(1)
+          PY
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check site/areas.js
+          node --check site/area-article.js
+          node --check site/programs.js
+          node --check site/program-article.js

@@ -1,0 +1,164 @@
+{
+  "id": "marine-biology",
+  "title": "Marine Biology",
+  "short": "The biology of organisms and biological processes in oceans, coasts, estuaries, and other marine environments.",
+  "bigPicture": "Marine biology is defined mainly by the environment and organisms being studied, not by one single method. A marine biologist might investigate whale communication, fish physiology, coral disease, plankton food webs, or how coastal development changes an estuary. The field therefore overlaps with behavior, physiology, ecology, genetics, conservation, and zoology. It remains useful context, but marine specialization does not drive the current school recommendations.",
+  "guideTier": "related",
+  "starterResources": [
+    {
+      "title": "NOAA National Marine Sanctuaries — Student Resources",
+      "description": "A government starting point for students exploring marine science, ocean careers, internships, and sanctuary research.",
+      "url": "https://sanctuaries.noaa.gov/education/students/welcome.html"
+    }
+  ],
+  "terms": [
+    {
+      "term": "Marine ecology",
+      "definition": "The study of interactions among marine organisms and their physical environment."
+    },
+    {
+      "term": "Biological oceanography",
+      "definition": "The study of biological processes in the ocean, often at large spatial scales and closely connected to ocean chemistry and physics."
+    },
+    {
+      "term": "Estuary",
+      "definition": "A coastal system where freshwater and seawater mix, creating highly variable conditions and productive habitats."
+    },
+    {
+      "term": "Pelagic",
+      "definition": "Open-water habitats away from the seafloor or shoreline."
+    },
+    {
+      "term": "Benthic",
+      "definition": "Habitats on or closely associated with the seafloor."
+    },
+    {
+      "term": "Osmoregulation",
+      "definition": "How organisms maintain the right balance of water and salts in their bodies."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Marine animals and organismal biology",
+      "description": "How fishes, marine mammals, invertebrates, reptiles, seabirds, and other organisms function, reproduce, develop, and survive in marine conditions.",
+      "source": "NOAA National Marine Sanctuaries: Student Resources"
+    },
+    {
+      "title": "Behavior and movement",
+      "description": "Migration, communication, social behavior, foraging, navigation, and responses to changing ocean conditions."
+    },
+    {
+      "title": "Marine ecology and food webs",
+      "description": "How species interact with predators, prey, competitors, habitats, and physical processes from reefs and estuaries to the open ocean."
+    },
+    {
+      "title": "Physiological adaptation",
+      "description": "How animals manage salinity, pressure, oxygen, temperature, diving, and other demands that differ sharply from terrestrial environments."
+    }
+  ],
+  "questions": [
+    {
+      "question": "How do marine animals navigate, communicate, or migrate?",
+      "approach": "Through tagging, acoustic recording, visual surveys, behavioral observation, and environmental data."
+    },
+    {
+      "question": "How does changing temperature or ocean chemistry affect an animal?",
+      "approach": "With controlled physiology experiments, field monitoring, or long-term datasets linking biological responses to environmental conditions."
+    },
+    {
+      "question": "Why is a fish, coral, or invertebrate population changing?",
+      "approach": "By combining surveys, life-history data, food-web information, disease observations, fishing pressure, and habitat conditions."
+    },
+    {
+      "question": "How are estuarine and coastal animals affected by freshwater input and development?",
+      "approach": "By sampling organisms and environmental conditions across salinity, nutrient, pollution, and habitat gradients."
+    },
+    {
+      "question": "What can animal movement reveal about habitat needs?",
+      "approach": "By pairing telemetry or photo-identification with oceanographic and habitat data."
+    },
+    {
+      "question": "How do marine species cope with extreme physical conditions?",
+      "approach": "By measuring respiration, metabolism, osmoregulation, temperature tolerance, or diving physiology."
+    }
+  ],
+  "responsibilities": [
+    "Conduct field, vessel, laboratory, aquarium, or remote-monitoring studies.",
+    "Identify organisms and collect biological and environmental measurements.",
+    "Analyze movement, behavior, physiology, population, or ecological data.",
+    "Maintain careful field records, permits, samples, and research documentation."
+  ],
+  "knowledgeSkills": [
+    "Animal biology and marine ecology",
+    "Field and laboratory sampling",
+    "Statistics and data analysis",
+    "Species identification and natural history",
+    "Oceanographic context relevant to the biological question"
+  ],
+  "variations": [
+    {
+      "label": "The environment defines the field",
+      "description": "Marine biology can be behavior, physiology, genetics, ecology, or conservation carried out with marine organisms or systems."
+    },
+    {
+      "label": "Not all work is underwater",
+      "description": "Many marine biologists spend more time in laboratories, on boats, at computers, or analyzing samples than diving."
+    },
+    {
+      "label": "Coastal boundaries are porous",
+      "description": "Estuaries and species that move between fresh and salt water are normal parts of marine research, so a strict saltwater-only boundary is misleading.",
+      "source": "NOAA Ocean Service: Estuaries"
+    },
+    {
+      "label": "Job titles are often more specific",
+      "description": "Positions may be advertised as fisheries biologist, marine mammal researcher, aquarist, ecologist, research technician, or a taxon specialty instead of simply marine biologist."
+    }
+  ],
+  "settings": [
+    "Universities and marine laboratories",
+    "Aquariums and marine research centers",
+    "Government fisheries and ocean agencies",
+    "Coastal field stations, research vessels, and conservation organizations"
+  ],
+  "realities": [
+    "Marine biology is broad enough that the day-to-day work depends more on the specialty than on the word marine.",
+    "Field seasons, boat work, weather, and remote locations can shape some jobs, while others are primarily laboratory or analytical.",
+    "Quantitative skills and scientific writing matter across nearly every marine specialty.",
+    "Independent research positions commonly require graduate education.",
+    "A marine label is not automatically a better fit for someone interested in animals; the actual coursework in behavior, physiology, zoology, and hands-on work matters more."
+  ],
+  "careers": [
+    "Marine biologist",
+    "Marine mammal scientist",
+    "Fisheries biologist",
+    "Aquarist / aquarium research technician",
+    "Marine animal behavior researcher",
+    "M.S. / Ph.D. in marine biology"
+  ],
+  "programs": [],
+  "programCodes": [],
+  "related": [
+    "zoology",
+    "animal-biology",
+    "animal-behavior",
+    "ecology",
+    "zoo-aquarium-science"
+  ],
+  "references": [
+    {
+      "title": "NOAA National Marine Sanctuaries: Student Resources",
+      "type": "Government student and career resource",
+      "url": "https://sanctuaries.noaa.gov/education/students/welcome.html"
+    },
+    {
+      "title": "NOAA Ocean Service: Estuaries",
+      "type": "Government science resource",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_estuaries/"
+    },
+    {
+      "title": "Society for Integrative and Comparative Biology",
+      "type": "Professional society",
+      "url": "https://sicb.org/"
+    }
+  ]
+}

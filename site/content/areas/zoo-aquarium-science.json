@@ -150,25 +150,25 @@
       "title": "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate"
     },
     {
-      "code": "URI-WZ",
-      "school": "University of Rhode Island",
-      "title": "Wildlife & Conservation Biology B.S. + Zoo & Aquarium Science Certificate"
+      "code": "CAN-ABEC",
+      "school": "Canisius University",
+      "title": "Animal Behavior, Ecology, and Conservation B.S. + Zoo Biology minor"
     },
     {
-      "code": "UMA-AS",
-      "school": "University of Massachusetts Amherst",
-      "title": "Animal Science B.S. (Animal Management concentration)"
+      "code": "DELVAL-ZOO",
+      "school": "Delaware Valley University",
+      "title": "Zoo Science B.S."
     }
   ],
   "programCodes": [
     "URI-AZ",
-    "URI-WZ",
-    "UMA-AS"
+    "CAN-ABEC",
+    "DELVAL-ZOO"
   ],
   "related": [
     "animal-welfare",
     "animal-behavior",
-    "environmental-education",
+    "marine-biology",
     "conservation-biology"
   ],
   "references": [

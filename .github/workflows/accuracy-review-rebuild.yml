@@ -1,0 +1,80 @@
+name: Temporary accuracy-review rebuild
+
+on:
+  push:
+    branches: [accuracy-review-fixes-2026-10-21]
+    paths:
+      - ".github/workflows/accuracy-review-rebuild.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: accuracy-review-fixes-2026-10-21
+          fetch-depth: 0
+
+      - name: Rebuild canonical database and published content
+        run: |
+          rm -f site/content/areas/wildlife-ecology-management.json
+          python3 scripts/areas_build.py site/content/areas
+          python3 scripts/build_database.py
+          python3 scripts/validate_database.py
+          python3 scripts/export_site_data.py
+
+      - name: Verify reviewed corrections
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          text=Path("site/data.js").read_text()
+          data=json.loads(text.split("=",1)[1].strip().removesuffix(";"))
+          programs={p["code"]:p for p in data["programs"]}
+          assert programs["ME-ZOO"]["title"] == "Zoology B.S."
+          assert programs["UMA-BIO"]["school"] == "University of Massachusetts Amherst"
+          assert "75.4%" not in programs["UMA-BIO"]["overview"]
+          assert "10,644" not in programs["ME-WE"]["overview"]
+          assert "most interesting school" not in programs["URI-W"]["overview"].lower()
+          for career in data["careers"]:
+              assert "entrySalary" not in career
+              assert "midSalary" not in career
+              assert "observedMarketSalary" not in career
+              for key in ("O*NET / BLS proxy","Job outlook","Salary context","Proxy fit"):
+                  assert key not in career.get("details", {})
+
+          idx=json.loads(Path("site/content/areas/index.json").read_text())
+          assert "wildlife-biology.json" in idx["areas"]
+          assert "wildlife-ecology-management.json" not in idx["areas"]
+          areas=[json.loads(Path("site/content/areas",name).read_text()) for name in idx["areas"]]
+          ids={a["id"] for a in areas}
+          assert "wildlife-biology" in ids
+          assert "wildlife-ecology-management" not in ids
+          for a in areas:
+              assert "UMA-AS" not in a.get("programCodes", [])
+              assert "UNE-AN" not in a.get("programCodes", [])
+          animal=next(a for a in areas if a["id"]=="animal-science")
+          assert "18,120" not in json.dumps(animal)
+          ecology=next(a for a in areas if a["id"]=="ecology")
+          assert "Certified Ecologist" not in json.dumps(ecology)
+          print("review corrections verified")
+          PY
+
+      - name: Inspect generated diff
+        run: |
+          git diff --stat
+          git diff --check
+          git diff -- site/content/areas/index.json site/content/areas/ecology.json site/content/areas/animal-science.json site/data.js | head -n 500
+
+      - name: Commit rebuilt outputs and remove temporary workflow
+        run: |
+          rm .github/workflows/accuracy-review-rebuild.yml
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Rebuild data after accuracy review corrections"
+          git push origin HEAD:accuracy-review-fixes-2026-10-21

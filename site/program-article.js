@@ -26,7 +26,7 @@
   function preparationSummary(program) {
     const competencies = (program.competencies || []).filter(item => item && item.name && item.description);
     const strong = competencies.filter(item => Number(item.strength) >= 2.4);
-    const lessDepth = competencies.filter(item => Number(item.strength) < 2.25);
+    const lessDepth = competencies.filter(item => Number(item.strength) < 2.4);
 
     const itemList = items => items.length
       ? `<ul class="narrative-list compact">${items.map(item => `<li><p><strong>${esc(item.name)}:</strong> ${esc(item.description)}</p></li>`).join('')}</ul>`
@@ -37,7 +37,7 @@
       : '<div><h3 class="group-heading first">Skills students should build strongly</h3><p>No specific preparation strengths are documented for this program.</p></div>';
 
     const gapHtml = lessDepth.length
-      ? `<div><h3 class="group-heading first">Skills that may need additional coursework or experience</h3>${itemList(lessDepth)}</div>`
+      ? `<div><h3 class="group-heading first">Important field skills that may need additional coursework or experience</h3>${itemList(lessDepth)}</div>`
       : '<div><h3 class="group-heading first">Skills that may need additional coursework or experience</h3><p>No clear gap is identified among the undergraduate skills documented for this program.</p></div>';
 
     return `<div class="article-columns preparation-summary">${strongHtml}${gapHtml}</div>`;

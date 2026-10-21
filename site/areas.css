@@ -310,7 +310,7 @@ p { margin: .75em 0 0; }
 .score-legend .score-high { background: #2f7d55; }
 .field-distinction { margin: 30px 0 0; padding: 20px; border-top: 4px solid var(--warm); background: #fbf6f1; }
 .field-distinction > h2 { margin-top: 5px; color: var(--navy); font-size: 1.38rem; }
-.field-distinction > p:not(.mini-label) { color: #4b5d67; }
+.field-distinction > p:not(.mini-label) { color: var(--muted); }
 .distinction-grid { display: grid; gap: 0; margin-top: 17px; border-top: 1px solid #ddcfc5; }
 .distinction-grid article { padding: 16px 0; border-bottom: 1px solid #ddcfc5; }
 .distinction-grid h3 { color: #87431f; }

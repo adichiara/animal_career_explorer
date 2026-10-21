@@ -101,7 +101,7 @@
       </header>
       <div class="article-body">
         <aside class="article-toc" aria-labelledby="tocTitle"><p id="tocTitle" class="mini-label">In this guide</p><ol>
-          <li><a href="#overview">Program overview</a></li><li><a href="#academics">Academic foundation</a></li><li><a href="#experience">Experience and research</a></li><li><a href="#progression">Four-year progression</a></li><li><a href="#fit">Strengths and tradeoffs</a></li><li><a href="#skills">Skills and outcomes</a></li><li><a href="#sources">Official sources</a></li>
+          <li><a href="#overview">Program overview</a></li><li><a href="#academics">Academic foundation</a></li><li><a href="#experience">Experience and research</a></li><li><a href="#progression">Four-year progression</a></li><li><a href="#fit">Strengths and tradeoffs</a></li><li><a href="#skills">Skills and preparation</a></li><li><a href="#sources">Official sources</a></li>
         </ol></aside>
         <div class="article-content">
           <section id="overview" class="article-section first-section"><div class="section-heading"><p class="section-number">01</p><h2>Program overview</h2></div><p class="big-picture program-overview">${esc(program.overview)}</p>${tags}</section>

@@ -37,19 +37,21 @@ These counts are descriptive of the current research snapshot, not a claim that 
 
 ## Published site structure
 
-The public homepage links to three article-style reference sections:
+The public homepage links to the field and program guides plus a static comparison page:
 
 - **Field Guides** — 18 long-form guides loaded from editable JSON files in `site/content/areas/`.
 - **School & Program Library** — 15 researched program pathways across 10 schools, assembled from generated and hand-researched records and selected by `site/content/programs/school-library.json`.
-- **Job Examples** — source-backed observations grouped under career roles. Roles without observed examples are shown separately instead of linking to empty pages.
+- **Compare Programs** — a static, source-linked table of all 15 current pathways, with animal experience, connected fields, preparation and questions to check.
 
-The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference, intentionally absent from the homepage and primary navigation, and marked `noindex,nofollow`.
+The job-example pages and retired `legacy.html` and `discover.html` interfaces have been removed. Career and posting data remain intact in the database and exports; field guides still show career descriptions and preparation.
+
+Rebuild the static comparison after editing program data or library membership with `python3 scripts/build_program_comparison.py`. The build reuses current library records and requires a reviewed animal-experience summary for every listed pathway. It does not infer required animal contact from tags.
 
 ## Editing Field Guide content
 
 The explanatory content for `areas.html` is intentionally separate from the generated career database. Each field has a human-editable file under `site/content/areas/`, such as `wildlife-rehabilitation.json`. Editing and committing one of those files updates the live page after GitHub Pages redeploys; `areas.js` does not need to be changed.
 
-See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and all Job Example records come from the validated `site/data.js` export. Hand-edited program records are stored in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json). The public program set and browsing tags are controlled by [`site/content/programs/school-library.json`](site/content/programs/school-library.json). Editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
+See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and retained career data come from the validated `site/data.js` export. Hand-edited program records are stored in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json). The public program set and browsing tags are controlled by [`site/content/programs/school-library.json`](site/content/programs/school-library.json). Editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
 
 ## Directory structure
 
@@ -80,14 +82,11 @@ Animal_Career_Data_Project/
 ├── docs/
 │   └── companion research documents
 └── site/
-    ├── index.html              # focused three-section homepage
+    ├── index.html              # field, program and comparison homepage
     ├── areas.html              # Field Guides index
     ├── programs.html           # School & Program Library index
     ├── program.html            # program article renderer
-    ├── jobs.html               # Job Examples index
-    ├── job.html                # job-example article renderer
-    ├── legacy.html             # retained full research interface
-    ├── discover.html           # retained preference explorer
+    ├── compare.html            # generated static program comparison
     ├── data.js                 # GENERATED from SQLite
     └── content/areas/          # editable Area Explorer content
 ```

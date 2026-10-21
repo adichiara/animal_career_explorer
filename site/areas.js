@@ -24,8 +24,7 @@
         <label class="guide-search" for="areaSearch"><span>Find a field or topic</span><input id="areaSearch" type="search" placeholder="Try behavior, welfare, wildlife, physiology…" value="${esc(query || '')}"></label>
       </header>
       <section class="guide-index" aria-label="Field guides">
-        <div class="guide-list">${matches.length ? matches.map((area, index) => `<a class="guide-link" href="areas/${esc(area.id)}.html">
-          <span class="guide-count">${String(index + 1).padStart(2, '0')}</span>
+        <div class="guide-list">${matches.length ? matches.map((area) => `<a class="guide-link" href="areas/${esc(area.id)}.html">
           <span class="guide-copy"><strong>${esc(area.title)}</strong><span>${esc(area.short)}</span></span>
           <span class="guide-arrow" aria-hidden="true">Read guide&nbsp;→</span>
         </a>`).join('') : '<p class="empty">No field guides match that search.</p>'}</div>

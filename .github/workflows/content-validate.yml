@@ -4,6 +4,9 @@ on:
   pull_request:
     paths:
       - 'scripts/areas_build.py'
+      - 'scripts/build_program_comparison.py'
+      - 'scripts/validate_public_site.py'
+      - 'scripts/verify_public_site.cjs'
       - 'site/**'
       - '.github/workflows/content-validate.yml'
   workflow_dispatch:
@@ -112,12 +115,22 @@ jobs:
               sys.exit(1)
           PY
 
+      - name: Validate public navigation and rebuild static comparison
+        run: |
+          python3 scripts/build_program_comparison.py
+          git diff --exit-code -- site/compare.html
+          python3 scripts/validate_public_site.py
+
       - name: Check JavaScript syntax
         run: |
           node --check site/areas.js
           node --check site/area-article.js
           node --check site/programs.js
           node --check site/program-article.js
-          node --check site/jobs.js
-          node --check site/job-article.js
           node --check site/discover.js
+
+      - name: Browser navigation and accessibility checks
+        run: |
+          npm install --prefix "$RUNNER_TEMP/public-site-check" playwright @axe-core/playwright
+          node "$RUNNER_TEMP/public-site-check/node_modules/playwright/cli.js" install --with-deps chromium
+          NODE_PATH="$RUNNER_TEMP/public-site-check/node_modules" node scripts/verify_public_site.cjs

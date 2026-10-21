@@ -107,10 +107,7 @@ title was missing; it now falls back to the school name.
   cleared, and often doing real work. Each wants reading in context, not a sweep.
 - **`short` lines** still mix three grammatical shapes across 14 to 24 words. They
   render together on the index page, where the inconsistency shows.
-- **`legacy.html` and `discover.html`** are live, crawlable, and unlinked. They carry
-  old branding, render program codes prominently, and hardcode "the ten college
-  paths" when there are now seventeen. After the export patch, the code lists they
-  render will be empty. Worth retiring.
+- **Retired interfaces and job-example pages** were removed on 2026-10-21. Career data and field-guide career content remain.
 - **Salary data.** The largest outstanding item: 93 roles carrying about 13 recycled
   SOC wage bands, several mapped to occupations that do not describe them. The BLS
   research is done; the rebuild is not.

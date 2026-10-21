@@ -81,7 +81,6 @@
       ? `<span class="program-tags">${program.tags.map(tag => esc(tag)).join(' · ')}</span>`
       : '';
     return `<a class="guide-link program-guide-link" href="program.html?code=${encodeURIComponent(program.code)}">
-      <span class="guide-count" aria-hidden="true">•</span>
       <span class="guide-copy">
         <strong>${esc(program.title)}</strong>
         <span>${esc(program.fundamental || '')}</span>
@@ -111,7 +110,7 @@
 
     app.innerHTML = `<div class="index-page">
       <header class="index-hero">
-        <h1>School &amp; Program Library</h1>
+        <h1>School &amp; Program Library</h1><p><a class="research-link" href="compare.html">Compare all programs side by side →</a></p>
         <label class="guide-search" for="programSearch"><span>Find a school, program, or interest</span><input id="programSearch" type="search" placeholder="Try behavior, welfare, vet tech, zoo…" value="${esc(query || '')}"></label>
         ${loadWarning ? `<p class="load-warning" role="status">${esc(loadWarning)}</p>` : ''}
       </header>

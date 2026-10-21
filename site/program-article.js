@@ -6,6 +6,7 @@
   let programs = [];
   let libraryPrograms = [];
   let programPhotos = {};
+  let fields = [];
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -52,6 +53,12 @@
     if (!Array.isArray(additions)) additions = [];
     if (!library || !Array.isArray(library.programs)) library = { programs: [] };
     programPhotos = photoManifest && photoManifest.photos ? photoManifest.photos : {};
+    try {
+      const manifest = await fetchJson('content/areas/index.json');
+      fields = await Promise.all(manifest.areas.map(file => fetchJson(`content/areas/${file}`)));
+    } catch (error) {
+      console.error('Unable to load field guides:', error);
+    }
 
     const detailMap = new Map();
     [...focused, ...additions].forEach(program => {
@@ -77,6 +84,8 @@
     const tags = (program.tags || []).length
       ? `<div class="program-tag-list" aria-label="Program topics">${program.tags.map(tag => `<span>${esc(tag)}</span>`).join('')}</div>`
       : '';
+    const relatedFields = (program.primaryFields || []).map(id => fields.find(field => field.id === id)).filter(Boolean);
+    const connections = relatedFields.length ? `<h3 class="group-heading">Explore the connected fields and careers</h3><div class="related-links">${relatedFields.map(field => `<a href="areas/${esc(field.id)}.html">${esc(field.title)} <span aria-hidden="true">→</span></a>`).join('')}</div><p>Each field guide explains the work, preparation, and related careers.</p>` : '<p>Browse the <a href="areas.html">field guides</a> for career and study context.</p>';
     const photo = programPhotos[program.code];
     const photoHtml = photo ? `<figure><img src="${esc(photo.url)}" alt="${esc(photo.alt || '')}" width="1200" height="675" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit || schoolName)}</a></figcaption></figure>` : '';
     document.title = `${program.title} | Animal Education Pathways`;
@@ -100,7 +109,7 @@
           <li><a href="#overview">Program overview</a></li><li><a href="#academics">Academic foundation</a></li><li><a href="#experience">Experience and research</a></li><li><a href="#progression">Program progression</a></li><li><a href="#fit">Strengths and tradeoffs</a></li><li><a href="#skills">Skills and preparation</a></li><li><a href="#sources">Official sources</a></li>
         </ol></aside>
         <div class="article-content">
-          <section id="overview" class="article-section first-section"><div class="section-heading"><p class="section-number">01</p><h2>Program overview</h2></div><p class="big-picture program-overview">${esc(program.overview)}</p>${tags}</section>
+          <section id="overview" class="article-section first-section"><div class="section-heading"><p class="section-number">01</p><h2>Program overview</h2></div><p class="big-picture program-overview">${esc(program.overview)}</p>${tags}${connections}<p><a class="research-link" href="compare.html#${encodeURIComponent(program.code)}">Compare this program with the library →</a></p></section>
           <section id="academics" class="article-section"><div class="section-heading"><p class="section-number">02</p><h2>Academic foundation</h2></div>
             <div class="article-columns"><div><h3 class="group-heading first">Science foundation</h3>${list(program.scienceFoundation)}</div><div><h3 class="group-heading first">Animal-related content</h3>${list(program.animalContent)}</div></div>
           </section>
@@ -131,6 +140,9 @@
   nav.addEventListener('click', () => { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); });
   loadPrograms().then(() => {
     const program = libraryPrograms.find(item => item.code === code);
-    if (program) render(program); else fail(code ? 'That program is not in the School & Program Library.' : 'Choose a program from the school and program library.');
+    if (program) {
+      render(program);
+      if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    } else fail(code ? 'That program is not in the School & Program Library.' : 'Choose a program from the school and program library.');
   });
 })();

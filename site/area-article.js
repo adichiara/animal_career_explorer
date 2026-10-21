@@ -69,7 +69,7 @@
   }
   function careerHtml(name) {
     const career = careerByName(name);
-    if (!career) return `<details class="career-entry collapsible-entry"><summary><span class="entry-summary-main"><strong>${esc(name)}</strong></span><span class="entry-summary-action">Details</span></summary><div class="entry-detail"><p>This role appears in the field guide, but no separate job-example page is currently available for it.</p></div></details>`;
+    if (!career) return `<details class="career-entry collapsible-entry"><summary><span class="entry-summary-main"><strong>${esc(name)}</strong></span><span class="entry-summary-action">Details</span></summary><div class="entry-detail"><p>Detailed preparation information has not yet been recorded for this role.</p></div></details>`;
     const details = career.details || {};
     const rows = [
       ['Typical settings', details['Typical work settings']],
@@ -83,7 +83,6 @@
       <div class="fact-line">${[career.educationBand, career.directContact ? `${career.directContact} direct animal contact` : '', ...(career.workTags || [])].filter(Boolean).map(value => `<span>${esc(value)}</span>`).join('')}</div>
       ${rows.length ? `<dl>${rows.map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>` : ''}
       ${career.competencies && career.competencies.length ? `<div class="competencies"><p class="mini-label">Common competencies</p><ul>${career.competencies.map(item => `<li><strong>${esc(item.name)}</strong> — ${esc(item.description)}</li>`).join('')}</ul></div>` : ''}
-      ${(career.recentPostings || []).length || (career.observedTitles || []).length ? `<a class="inline-source" href="../job.html?role=${encodeURIComponent(career.slug)}">View job examples →</a>` : ''}
       </div>
     </details>`;
   }
@@ -148,7 +147,7 @@
           <section id="careers" class="article-section">
             <div class="section-heading"><p class="section-number">04</p><h2>Careers connected to this field</h2></div>
             <p class="section-intro">Titles, settings, and qualifications vary by employer. These examples show several ways this field can become professional work.</p>
-            <div class="career-list">${area.careers.map(careerHtml).join('')}</div><a class="research-link" href="../jobs.html">Browse all job examples →</a>
+            <div class="career-list">${area.careers.map(careerHtml).join('')}</div>
           </section>
           <section id="study" class="article-section">
             <div class="section-heading"><p class="section-number">05</p><h2>College study and preparation</h2></div>

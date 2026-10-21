@@ -3,6 +3,8 @@
   "title": "Wildlife Health / One Health",
   "short": "Health at the population scale, where wildlife, domestic animals, and people meet. Surveillance and investigation, not treating patients.",
   "bigPicture": "Wildlife health asks why free-ranging populations are getting sick, dying, or failing to thrive. Sometimes the answer is a pathogen. Often it is a contaminant, a nutritional shortfall, a habitat change, or several of those at once. The work happens at the scale of populations, not patients: sampling, necropsy, laboratory diagnosis, and surveillance designed to catch a problem before it shows up as a die-off.",
+  "guideTier": "related",
+  "starterResources": [],
   "terms": [
     {
       "term": "Epidemiology",

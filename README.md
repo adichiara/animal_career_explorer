@@ -39,8 +39,8 @@ These counts are descriptive of the current research snapshot, not a claim that 
 
 The public homepage links to three article-style reference sections:
 
-- **Field Guides** — 15 long-form guides loaded from editable JSON files in `site/content/areas/`.
-- **College Programs** — 17 researched undergraduate pathway guides: the 10-path focused comparison from the validated site export plus 7 additional programs retained from the broader research.
+- **Field Guides** — 17 long-form guides loaded from editable JSON files in `site/content/areas/`, grouped into eight recommendation-driving areas and nine related fields/specializations.
+- **College Programs** — 18 researched undergraduate pathway guides: the 10-path original comparison from the validated site export plus 8 additional programs retained from the broader research.
 - **Job Examples** — dated, source-backed postings grouped under 37 broader roles. These records illustrate employer titles and requirements; they are not a live job board.
 
 The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference but are intentionally absent from the homepage and primary navigation.

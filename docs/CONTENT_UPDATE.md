@@ -6,7 +6,7 @@ code-reference sweep, consolidated.
 ## What to install
 
 ```
-content/areas/     15 field guides + index.json   -> site/content/areas/
+content/areas/     17 field guides + index.json   -> site/content/areas/
 areas_build.py     the generator                  -> scripts/ (or repo root)
 patches/           two diffs                      -> apply with git apply
 ```

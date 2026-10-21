@@ -1,8 +1,10 @@
 {
   "id": "veterinary-science",
-  "title": "Veterinary & Animal Health Sciences",
+  "title": "Veterinary Medicine & Animal Health",
   "short": "Diagnosing and treating disease and injury in individual animals, and the clinical training that requires.",
   "bigPicture": "Veterinary medicine asks what is wrong with this animal and what can be done about it. The patient cannot describe the problem, the person paying has a limit, and the answer often has to be reached from a physical exam and a handful of tests. The Doctor of Veterinary Medicine (DVM) anchors the field, but a great deal of animal health work is done by technicians, nutritionists, pathologists, and laboratory staff who do not hold one.",
+  "guideTier": "related",
+  "starterResources": [],
   "terms": [
     {
       "term": "Doctor of Veterinary Medicine (DVM)",

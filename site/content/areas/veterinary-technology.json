@@ -1,0 +1,193 @@
+{
+  "id": "veterinary-technology",
+  "title": "Veterinary Technology",
+  "short": "Hands-on clinical nursing, diagnostics, anesthesia, surgery support, patient monitoring, and animal care as part of the veterinary medical team.",
+  "bigPicture": "Veterinary technology is its own credentialed animal-health profession. Veterinary technicians and technologists provide much of the hands-on clinical nursing and technical work that allows a veterinary team to diagnose, treat, anesthetize, monitor, and care for animal patients. The role is not a shorter version of becoming a veterinarian: technicians work within a defined scope, develop their own clinical expertise, and can specialize in areas such as anesthesia, emergency care, behavior, rehabilitation, or zoological medicine.",
+  "guideTier": "primary",
+  "starterResources": [
+    {
+      "title": "AVMA — Veterinary Technicians",
+      "description": "Introduces veterinary technology as its own credentialed profession and outlines clinical duties and specialty options.",
+      "url": "https://ebusiness.avma.org/files/productdownloads/mcm-clientbroch-veterinary-tech-2024.pdf"
+    },
+    {
+      "title": "UMass Amherst — Veterinary Technology Major",
+      "description": "A current example of an AVMA-accredited four-year veterinary technology pathway with clinical nursing, diagnostics, anesthesia, surgery, and internships.",
+      "url": "https://www.umass.edu/veterinary-animal-sciences/veterinary-technology-major"
+    }
+  ],
+  "distinction": {
+    "title": "Veterinary Technology and Veterinary Medicine",
+    "summary": "Both work on the same clinical team, but the education, legal scope, and day-to-day responsibilities are different.",
+    "items": [
+      {
+        "label": "Veterinary Technology",
+        "description": "Focuses on nursing care, patient monitoring, anesthesia, laboratory procedures, imaging, surgical assistance, husbandry, client communication, and technical execution. Graduates of accredited programs are prepared for credentialing as veterinary technicians or technologists."
+      },
+      {
+        "label": "Veterinary Medicine",
+        "description": "Veterinarians diagnose disease, prescribe treatment, perform surgery within their professional scope, and carry legal responsibility for medical decisions. Becoming a veterinarian requires a Doctor of Veterinary Medicine or equivalent professional degree."
+      }
+    ]
+  },
+  "terms": [
+    {
+      "term": "Veterinary technician / technologist",
+      "definition": "A credentialed veterinary professional trained in clinical nursing and technical procedures. Titles and legal definitions vary by jurisdiction and degree level."
+    },
+    {
+      "term": "VTNE",
+      "definition": "The Veterinary Technician National Examination, used as part of credentialing in the United States and Canada."
+    },
+    {
+      "term": "CVTEA",
+      "definition": "The American Veterinary Medical Association committee that accredits veterinary technology education programs."
+    },
+    {
+      "term": "Anesthesia monitoring",
+      "definition": "Preparing and monitoring a patient before, during, and after anesthesia, including vital signs, equipment, records, and recovery."
+    },
+    {
+      "term": "Diagnostic imaging",
+      "definition": "Producing clinical images such as radiographs using positioning, safety, and technical procedures within the veterinary team."
+    },
+    {
+      "term": "Veterinary Technician Specialist",
+      "definition": "An advanced specialty credential earned after professional experience, specialized training, documentation, and examination in a recognized area."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Clinical nursing and patient monitoring",
+      "description": "Assessing patients, carrying out nursing plans, administering permitted treatments, monitoring change, maintaining records, and communicating observations to the veterinarian.",
+      "source": "AVMA — Veterinary Technicians"
+    },
+    {
+      "title": "Anesthesia and surgical support",
+      "description": "Preparing patients and equipment, monitoring anesthesia, assisting during procedures, maintaining sterile technique, and supporting recovery.",
+      "source": "AVMA — Veterinary Technicians"
+    },
+    {
+      "title": "Diagnostics and laboratory work",
+      "description": "Collecting and handling samples, running laboratory procedures, assisting with imaging, and producing reliable technical information for clinical decisions.",
+      "source": "UMass Amherst — Veterinary Technology Major"
+    },
+    {
+      "title": "Handling, behavior, and welfare",
+      "description": "Using safe, low-stress handling, recognizing behavioral and welfare changes, and adapting care to species, temperament, pain, fear, and medical condition."
+    },
+    {
+      "title": "Specialized settings",
+      "description": "Technicians can work in general practice, emergency and specialty hospitals, biomedical research, shelters, zoos, aquariums, exotics, and other animal-health settings.",
+      "source": "UMass Amherst — BS in Veterinary Technology"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What does this patient need during the next hour of care?",
+      "approach": "Combine the treatment plan with direct observation, vital signs, pain and behavior cues, fluid and medication schedules, and clear escalation when something changes."
+    },
+    {
+      "question": "Is this animal safe for anesthesia and how is it responding?",
+      "approach": "Prepare equipment, establish baseline measures, monitor vital signs continuously, document changes, and communicate promptly with the veterinarian."
+    },
+    {
+      "question": "Can this sample or image answer the clinical question reliably?",
+      "approach": "Use correct collection, labeling, positioning, quality-control, and handling procedures so technical error does not become a diagnostic error."
+    },
+    {
+      "question": "How can a procedure be completed with less fear and safer handling?",
+      "approach": "Read behavior, use appropriate restraint and cooperative-care techniques, prepare the environment, and adjust the plan to the individual animal."
+    },
+    {
+      "question": "Which work setting fits the kind of animals and medicine I want?",
+      "approach": "Compare species, pace, shift patterns, technical responsibilities, credential requirements, and opportunities for specialty training before choosing a pathway."
+    }
+  ],
+  "responsibilities": [
+    "Provide nursing care and monitor animal patients.",
+    "Assist with anesthesia, surgery, imaging, laboratory diagnostics, dentistry, and other clinical procedures within legal scope.",
+    "Handle and position animals safely while monitoring stress, pain, and behavior.",
+    "Maintain medical records, equipment, medications, samples, and infection-control procedures.",
+    "Communicate observations and instructions with veterinarians, clients, researchers, and animal-care teams."
+  ],
+  "knowledgeSkills": [
+    "Animal anatomy, physiology, pharmacology, and disease processes",
+    "Clinical nursing, anesthesia, and patient monitoring",
+    "Laboratory diagnostics and imaging",
+    "Animal handling, behavior, welfare, and husbandry",
+    "Medical records, teamwork, client communication, and professional ethics"
+  ],
+  "variations": [
+    {
+      "label": "Degree level",
+      "description": "Accredited programs may award associate or bachelor's degrees. A bachelor's program can add broader science, research, management, or specialty preparation, but credential rules depend on the jurisdiction."
+    },
+    {
+      "label": "Practice setting",
+      "description": "General practice, emergency and critical care, specialty hospitals, research, shelter medicine, zoo and wildlife medicine, and exotics can feel like very different careers even though the core profession is the same."
+    },
+    {
+      "label": "Species",
+      "description": "Some technicians work mainly with dogs and cats; others build experience with horses, farm animals, laboratory species, birds, reptiles, fish, wildlife, or zoo animals."
+    },
+    {
+      "label": "Specialization",
+      "description": "Experienced technicians can pursue advanced specialty credentials in areas including behavior, anesthesia and analgesia, emergency and critical care, rehabilitation, surgery, nutrition, and zoological medicine.",
+      "source": "AVMA — Veterinary Technicians"
+    }
+  ],
+  "settings": [
+    "Companion-animal veterinary hospitals and clinics",
+    "Emergency, specialty, and referral hospitals",
+    "Zoos, aquariums, exotic-animal, wildlife, and shelter medicine settings",
+    "Biomedical research, diagnostic laboratories, and research-animal facilities"
+  ],
+  "realities": [
+    "This is a hands-on medical career with cleaning, restraint, bodily fluids, detailed records, and physical work as well as the more visible clinical procedures.",
+    "Schedules can include early mornings, nights, weekends, emergencies, and emotionally difficult cases depending on the setting.",
+    "Technicians do not independently practice veterinary medicine; legal scope and credential titles vary by state or jurisdiction.",
+    "Zoo, wildlife, and exotic positions are a smaller and more competitive slice of the profession, so broad clinical competence and targeted experience matter.",
+    "An accredited program and successful credentialing are central considerations when comparing college pathways."
+  ],
+  "careers": [
+    "Veterinary technician / technologist",
+    "Zoo / wildlife veterinary technician",
+    "Emergency and critical care veterinary technician",
+    "Laboratory animal veterinary technician",
+    "Veterinary technician specialist"
+  ],
+  "programs": [
+    {
+      "code": "UMA-VT",
+      "school": "University of Massachusetts Amherst",
+      "title": "Veterinary Technology B.S."
+    }
+  ],
+  "programCodes": [
+    "UMA-VT"
+  ],
+  "related": [
+    "veterinary-science",
+    "animal-physiology",
+    "animal-welfare",
+    "zoo-aquarium-science"
+  ],
+  "references": [
+    {
+      "title": "AVMA — Veterinary Technicians",
+      "type": "Professional overview",
+      "url": "https://ebusiness.avma.org/files/productdownloads/mcm-clientbroch-veterinary-tech-2024.pdf"
+    },
+    {
+      "title": "UMass Amherst — Veterinary Technology Major",
+      "type": "Accredited undergraduate program",
+      "url": "https://www.umass.edu/veterinary-animal-sciences/veterinary-technology-major"
+    },
+    {
+      "title": "UMass Amherst — BS in Veterinary Technology",
+      "type": "Program outcomes and settings",
+      "url": "https://www.umass.edu/charles-river/academics/veterinary-technology"
+    }
+  ]
+}

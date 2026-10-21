@@ -3,6 +3,8 @@
   "title": "Animal Physiology / Comparative Physiology",
   "short": "How an individual animal's body works. Organs, hormones, metabolism, and the laboratory tools used to study them.",
   "bigPicture": "Physiology asks how an animal's body works. How a hummingbird fuels a wingbeat, how a camel goes without water, how a hibernating ground squirrel drops its body temperature close to freezing and comes back. The comparative branch treats that variety as the point, picking whichever species makes a question answerable instead of defaulting to mice and rats. Most of the work is measurement — oxygen use, hormone levels, blood chemistry, temperature — under conditions the researcher controls.",
+  "guideTier": "related",
+  "starterResources": [],
   "terms": [
     {
       "term": "Homeostasis",

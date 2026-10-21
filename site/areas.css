@@ -453,8 +453,8 @@ main:focus { outline: none; }
 
 /* Required animal contact: three states, distinguished by text and shape, never colour alone. */
 .cmp-state { display: inline-block; padding: 3px 10px 3px 8px; border-left: 4px solid currentColor; border-radius: 3px; font-size: .79rem; font-weight: 750; line-height: 1.45; }
-.cmp-state-built-in { color: var(--teal); background: color-mix(in srgb, var(--teal) 11%, transparent); }
-.cmp-state-choice { color: var(--warm); background: color-mix(in srgb, var(--warm) 11%, transparent); }
+.cmp-state-built-in { color: #06685f; background: color-mix(in srgb, var(--teal) 11%, transparent); }
+.cmp-state-choice { color: #914019; background: color-mix(in srgb, var(--warm) 11%, transparent); }
 .cmp-state-unstated { color: var(--muted); background: color-mix(in srgb, var(--muted) 9%, transparent); font-weight: 600; }
 .cmp-more { display: inline-block; margin-top: 6px; font-size: .76rem; font-weight: 650; white-space: nowrap; }
 
@@ -478,6 +478,8 @@ main:focus { outline: none; }
 @media (prefers-color-scheme: dark) {
   :root { color-scheme: dark; --ink: #e0e9ee; --muted: #b4c6d1; --line: #405462; --paper: #101b24; --wash: #182833; --surface: #182833; --soft: #223946; --warm-wash: #32281f; --navy: #b0d9ed; --hero: #163b59; --blue: #82cde9; --teal: #80d6c5; --warm: #f0b38d; --focus: #ffcb70; }
   .brand-mark { background: linear-gradient(145deg, #163b59, #087d72); }
+  .cmp-state-built-in { color: var(--teal); }
+  .cmp-state-choice { color: var(--warm); }
   .guide-search input { border-color: var(--line); }
   .field-distinction { background: var(--warm-wash); }
   .field-distinction h2, .field-distinction h3, .field-distinction p, .distinction-grid p, .load-warning, .editorial-note strong { color: var(--ink); }

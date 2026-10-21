@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs><linearGradient id="tile" x2="1" y2="1"><stop stop-color="#163b59"/><stop offset="1" stop-color="#087d72"/></linearGradient></defs>
+  <path fill="url(#tile)" d="M20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H7c-4 0-7-3-7-7V20C0 9 9 0 20 0Z"/>
+  <g fill="#fff">
+    <ellipse cx="16" cy="29" rx="5.5" ry="8" transform="rotate(-25 16 29)"/>
+    <ellipse cx="26" cy="19" rx="5.8" ry="8.2" transform="rotate(-10 26 19)"/>
+    <ellipse cx="39" cy="19" rx="5.8" ry="8.2" transform="rotate(10 39 19)"/>
+    <ellipse cx="49" cy="29" rx="5.5" ry="8" transform="rotate(25 49 29)"/>
+    <path d="M32.5 31c-6 0-8 6-12 10-3 3-5 7-3 10 3 5 9 0 15 0s12 5 15 0c2-3 0-7-3-10-4-4-6-10-12-10Z"/>
+  </g>
+</svg>

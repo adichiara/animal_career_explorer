@@ -45,7 +45,7 @@ p { margin: .75em 0 0; }
   background: var(--paper);
 }
 .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); text-decoration: none; }
-.brand-mark { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 12px 12px 12px 4px; color: #fff; background: linear-gradient(145deg, var(--navy), var(--teal)); font-weight: 800; }
+.brand-mark { display: block; width: 38px; height: 38px; flex: 0 0 38px; }
 .brand strong, .brand small { display: block; line-height: 1.05; }
 .brand strong { font-size: .94rem; }
 .brand small { margin-top: 4px; color: var(--muted); font-size: .72rem; }
@@ -478,7 +478,6 @@ main:focus { outline: none; }
 }
 @media (prefers-color-scheme: dark) {
   :root { color-scheme: dark; --ink: #e0e9ee; --muted: #b4c6d1; --line: #405462; --paper: #101b24; --wash: #182833; --surface: #182833; --soft: #223946; --warm-wash: #32281f; --navy: #b0d9ed; --hero: #163b59; --blue: #82cde9; --teal: #80d6c5; --warm: #f0b38d; --focus: #ffcb70; }
-  .brand-mark { background: linear-gradient(145deg, #163b59, #087d72); }
   .guide-search input { border-color: var(--line); }
   .field-distinction { background: var(--warm-wash); }
   .field-distinction h2, .field-distinction h3, .field-distinction p, .distinction-grid p, .load-warning, .editorial-note strong { color: var(--ink); }

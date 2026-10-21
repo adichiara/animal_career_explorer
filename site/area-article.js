@@ -10,6 +10,15 @@
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
   }
+  function displaySchool(program) {
+    const school = String(program && program.school || '');
+    if (school === 'UMass Amherst' || school === 'University of Massachusetts Amherst') return 'University of Massachusetts Amherst';
+    if (school === 'University of Maine') return 'University of Maine (Orono)';
+    if (school === 'University of Maine at Augusta') return 'University of Maine at Augusta (Bangor Campus)';
+    if (school === 'SUNY Canton') return 'SUNY Canton (Canton Campus)';
+    if (school === 'SUNY Delhi') return 'SUNY Delhi (Delhi Campus)';
+    return school;
+  }
   async function fetchJson(path) {
     const response = await fetch(path, { cache: 'no-store' });
     if (!response.ok) throw new Error(`${path} returned ${response.status}`);
@@ -60,7 +69,7 @@
   }
   function careerHtml(name) {
     const career = careerByName(name);
-    if (!career) return `<article class="career-entry"><h3>${esc(name)}</h3><p>This role appears in the field guide, but no separate job-example page is currently available for it.</p></article>`;
+    if (!career) return `<details class="career-entry collapsible-entry"><summary><span class="entry-summary-main"><strong>${esc(name)}</strong></span><span class="entry-summary-action">Details</span></summary><div class="entry-detail"><p>This role appears in the field guide, but no separate job-example page is currently available for it.</p></div></details>`;
     const details = career.details || {};
     const rows = [
       ['Typical settings', details['Typical work settings']],
@@ -68,31 +77,36 @@
       ['Education and progression', details['Typical education / progression']],
       ['Titles to search', details['Searchable job titles']]
     ].filter(row => row[1]);
-    return `<article class="career-entry">
-      <h3>${esc(career.name)}</h3><p>${esc(career.roleFocus)}</p>
+    return `<details class="career-entry collapsible-entry">
+      <summary><span class="entry-summary-main"><strong>${esc(career.name)}</strong></span><span class="entry-summary-action">Details</span></summary>
+      <div class="entry-detail"><p>${esc(career.roleFocus)}</p>
       <div class="fact-line">${[career.educationBand, career.directContact ? `${career.directContact} direct animal contact` : '', ...(career.workTags || [])].filter(Boolean).map(value => `<span>${esc(value)}</span>`).join('')}</div>
       ${rows.length ? `<dl>${rows.map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>` : ''}
       ${career.competencies && career.competencies.length ? `<div class="competencies"><p class="mini-label">Common competencies</p><ul>${career.competencies.map(item => `<li><strong>${esc(item.name)}</strong> — ${esc(item.description)}</li>`).join('')}</ul></div>` : ''}
       ${(career.recentPostings || []).length || (career.observedTitles || []).length ? `<a class="inline-source" href="../job.html?role=${encodeURIComponent(career.slug)}">View dated job examples →</a>` : ''}
-    </article>`;
+      </div>
+    </details>`;
   }
   function programHtml(areaProgram) {
     const detailed = programByCode(areaProgram.code) || {};
     const program = Object.assign({}, detailed, areaProgram);
+    const schoolName = displaySchool(program);
     const lists = [
       ['Science foundation', program.scienceFoundation],
       ['Animal-focused content', program.animalContent],
       ['Advantages', program.advantages],
       ['Important tradeoffs', program.tradeoffs]
     ].filter(([, values]) => Array.isArray(values) && values.length);
-    return `<article class="program-entry">
-      <p class="program-school">${esc(program.school || '')}</p><h3>${esc(program.title || program.school || '')}</h3>
+    return `<details class="program-entry collapsible-entry">
+      <summary><span class="entry-summary-main"><span class="entry-summary-school">${esc(schoolName)}</span><strong>${esc(program.title || schoolName)}</strong></span><span class="entry-summary-action">Details</span></summary>
+      <div class="entry-detail">
       ${program.fundamental ? `<p>${esc(program.fundamental)}</p>` : ''}
       ${program.experience ? `<h4>Experience structure</h4><p>${esc(program.experience)}</p>` : ''}
       ${lists.map(([label, values]) => `<h4>${esc(label)}</h4><ul>${values.map(value => `<li>${esc(value)}</li>`).join('')}</ul>`).join('')}
       ${program.bestWhen ? `<div class="best-when"><strong>Especially relevant when</strong><p>${esc(program.bestWhen)}</p></div>` : ''}
       ${program.code ? `<a class="research-link" href="../program.html?code=${encodeURIComponent(program.code)}">Read full program guide →</a>` : ''}
-    </article>`;
+      </div>
+    </details>`;
   }
 
   function render(area) {

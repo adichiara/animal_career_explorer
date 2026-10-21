@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: field-focus-refresh-2026-10-21
+          fetch-depth: 0
 
       - name: Rebuild field guides and compare generated output
         run: |

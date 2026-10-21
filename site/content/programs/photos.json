@@ -1,0 +1,94 @@
+{
+  "photos": {
+    "ME-ZOO": {
+      "url": "https://sbe.umaine.edu/wp-content/uploads/sites/92/2019/09/undergraduatezoology2-682x1024.jpg",
+      "alt": "University of Maine zoology students working outside.",
+      "credit": "University of Maine",
+      "source": "https://sbe.umaine.edu/undergraduate/zoology/"
+    },
+    "ME-WE": {
+      "url": "https://umaine.edu/wle/wp-content/uploads/sites/300/2020/06/Logan-Sauer-2-300x300.jpg",
+      "alt": "University of Maine wildlife ecology student holding a bear cub during field work.",
+      "credit": "University of Maine",
+      "source": "https://umaine.edu/wle/undergraduate-program/"
+    },
+    "UMA-BIO": {
+      "url": "https://www.umass.edu/biology/sites/default/files/styles/thumbnail_350x225/public/2025-10/IMG_6816.jpeg?h=71976bb4&itok=Ze6_JBcf",
+      "alt": "Microbial art from a UMass Amherst Biology summer research intensive.",
+      "credit": "UMass Amherst Department of Biology",
+      "source": "https://www.umass.edu/biology/academics/undergraduate-program"
+    },
+    "UMA-WEC": {
+      "url": "https://www.umass.edu/environmental-conservation/sites/default/files/styles/desktop_x1_1200px/public/2024-04/WFCON_2.jpg?itok=mYrmSJ1W",
+      "alt": "Wildlife shown on the UMass Amherst Wildlife Ecology and Conservation program page.",
+      "credit": "UMass Amherst",
+      "source": "https://www.umass.edu/environmental-conservation/academics/undergraduate-programs/natural-resources-conservation/major/wildlife-ecology-conservation-concentration"
+    },
+    "UMA-VT": {
+      "url": "https://www.umass.edu/charles-river/sites/g/files/ijdqth256/files/styles/4_3_l/public/2022-06/veterinary-science-program-boston-16x9.jpg?h=c74750f6&itok=Yq8R91r8",
+      "alt": "Students in the UMass Amherst Veterinary Technology program.",
+      "credit": "UMass Amherst",
+      "source": "https://www.umass.edu/charles-river/academics/veterinary-technology"
+    },
+    "UNE-AB": {
+      "url": "https://www.une.edu/sites/default/files/styles/block_image_large/public/2025-12/student-boblink-reseearch.webp?itok=z5_7LcaE",
+      "alt": "University of New England student conducting animal-behavior field research.",
+      "credit": "University of New England",
+      "source": "https://www.une.edu/cas/schools/psychology-brain-sciences/programs/bs-animal-behavior"
+    },
+    "URI-AZ": {
+      "url": "https://www.uri.edu/wp-content/uploads/home/2016/04/peckham2016NC.jpg",
+      "alt": "University of Rhode Island animal science student holding a piglet at Peckham Farm.",
+      "credit": "University of Rhode Island",
+      "source": "https://www.uri.edu/features/not-your-average-classroom/"
+    },
+    "URI-W": {
+      "url": "https://www.uri.edu/wp-content/uploads/home/2021/03/Bird_take-offCELS-NL-137.jpg",
+      "alt": "University of Rhode Island wildlife and conservation biology student releasing a songbird during field ornithology.",
+      "credit": "Nora Lewis / University of Rhode Island",
+      "source": "https://www.uri.edu/features/flight-school/"
+    },
+    "URI-WZ": {
+      "url": "https://www.uri.edu/wp-content/uploads/home/2021/06/jessica-weidemann-03.jpg",
+      "alt": "University of Rhode Island animal science student training a chicken in an animal behavior course.",
+      "credit": "Michael Salerno / University of Rhode Island",
+      "source": "https://www.uri.edu/features/study-animal-behavior/"
+    },
+    "CAN-ABEC": {
+      "url": "https://www.canisius.edu/sites/default/files/styles/14_10_scale_and_crop_medium/public/images/ABEC.ZOO_.GROUP_.jpg?h=5dc9785f&itok=fi5_GOlb",
+      "alt": "Canisius University Animal Behavior, Ecology and Conservation students visiting zoos and aquariums.",
+      "credit": "Canisius University",
+      "source": "https://www.canisius.edu/news/canisius-university-students-gain-hands-experience-zoo-management-animal-behavior-programs"
+    },
+    "UNH-ZOO": {
+      "url": "https://www.unh.edu/sites/default/files/styles/square_650x650/public/media/2025-08/Zoology%20%5BB.S.%5D.jpg?h=b37253ae&itok=3bqdhZQ_",
+      "alt": "University of New Hampshire zoology student holding a songbird.",
+      "credit": "University of New Hampshire",
+      "source": "https://www.unh.edu/program/bachelor-science/zoology"
+    },
+    "DELVAL-ZOO": {
+      "url": "https://delval.edu/sites/default/files/styles/image_group_large/public/2020-06/Zoology_CollageLG_1.jpg?itok=tUH3DU1f",
+      "alt": "Delaware Valley University zoo science student working with a bald eagle at Elmwood Park Zoo.",
+      "credit": "Delaware Valley University",
+      "source": "https://delval.edu/programs/undergraduate-majors/zoo-science-bs"
+    },
+    "UMA-BGR-VT": {
+      "url": "https://www.uma.edu/wp-content/uploads/2019/12/DSC00418.jpg",
+      "alt": "University of Maine at Augusta veterinary technology student with a dog.",
+      "credit": "University of Maine at Augusta",
+      "source": "https://www.uma.edu/news/uma-hosts-information-session-for-veterinarian-technology-program/"
+    },
+    "CANTON-VT": {
+      "url": "https://canton.edu/media/hero/vtech-hero.webp",
+      "alt": "SUNY Canton veterinary technology students examining a spinal X-ray in the lab.",
+      "credit": "SUNY Canton",
+      "source": "https://canton.edu/sci_health/vet/"
+    },
+    "DELHI-VT": {
+      "url": "https://www.delhi.edu/academics/majors-programs/associates/veterinary-science/images/gallery_1.jpg",
+      "alt": "SUNY Delhi veterinary science technology students working in a clinical lab.",
+      "credit": "SUNY Delhi",
+      "source": "https://www.delhi.edu/academics/majors-programs/associates/veterinary-science/"
+    }
+  }
+}

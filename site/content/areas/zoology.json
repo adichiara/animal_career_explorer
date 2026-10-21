@@ -141,17 +141,23 @@
       "code": "UMA-BIO",
       "school": "University of Massachusetts Amherst",
       "title": "Biology B.S. (ecology and behavior electives)"
+    },
+    {
+      "code": "UNH-ZOO",
+      "school": "University of New Hampshire",
+      "title": "Zoology B.S."
     }
   ],
   "programCodes": [
     "ME-ZOO",
-    "UMA-BIO"
+    "UMA-BIO",
+    "UNH-ZOO"
   ],
   "related": [
-    "animal-physiology",
+    "animal-biology",
     "ecology",
     "animal-behavior",
-    "wildlife-ecology-management"
+    "wildlife-biology"
   ],
   "references": [
     {

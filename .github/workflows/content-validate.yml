@@ -87,3 +87,6 @@ jobs:
           node --check site/area-article.js
           node --check site/programs.js
           node --check site/program-article.js
+          node --check site/jobs.js
+          node --check site/job-article.js
+          node --check site/discover.js

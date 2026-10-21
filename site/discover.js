@@ -303,7 +303,7 @@
           </button>
         </div>
 
-        ${shortlistedCareers().length ? `<div class="button-row"><button class="btn soft" type="button" data-go="shortlist">Continue with my ${shortlistedCareers().length}-role shortlist</button></div>` : ''}
+        ${shortlistedCareers().length ? `<div class="button-row"><button class="btn soft" type="button" data-go="shortlist">Continue with my ${shortlistedCareers().length} saved roles</button></div>` : ''}
       </section>`;
   }
 
@@ -428,7 +428,7 @@
 
         <div class="button-row">
           <button class="btn" type="button" data-go="worlds">Change career worlds</button>
-          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">See my shortlist (${shortlistedCareers().length})</button>` : ''}
+          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">See saved roles (${shortlistedCareers().length})</button>` : ''}
         </div>
       </section>`;
     updateRoleResults();
@@ -444,7 +444,7 @@
     const pool = rolePool().filter(career => matchesSearch(career, searchText));
     const visible = searchText ? pool : pool.slice(0, roleLimit);
     container.innerHTML = `
-      <div class="results-bar"><span>Showing ${visible.length} of ${pool.length} role${pool.length === 1 ? '' : 's'}</span><span>${shortlistedCareers().length} on your shortlist</span></div>
+      <div class="results-bar"><span>Showing ${visible.length} of ${pool.length} role${pool.length === 1 ? '' : 's'}</span><span>${shortlistedCareers().length} saved</span></div>
       <div class="role-grid">
         ${visible.length ? visible.map(roleCard).join('') : '<div class="empty-state">No roles match that search. Try a broader activity or job word.</div>'}
       </div>
@@ -550,7 +550,7 @@
           </article>
 
           <aside class="card role-facts">
-            <div class="facts-label">One example—not a recommendation</div>
+            <div class="facts-label">One example</div>
             <div class="fact"><small>Typical settings</small><strong>${esc(details['Typical work settings'] || career.category)}</strong></div>
             <div class="fact"><small>Animal contact</small><strong>${esc(career.directContact || 'Varies by employer')}</strong></div>
             <div class="fact"><small>School reality</small><strong>${esc(career.educationBand || details['Typical education / progression'] || 'Preparation varies')}</strong></div>
@@ -575,7 +575,7 @@
         <div class="button-row">
           <button class="btn" type="button" data-go="roles">Back to roles</button>
           <button class="btn primary" type="button" data-next-role>Next role</button>
-          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">Compare shortlist (${shortlistedCareers().length})</button>` : ''}
+          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">Compare saved roles (${shortlistedCareers().length})</button>` : ''}
         </div>
       </section>`;
   }
@@ -623,7 +623,7 @@
 
     root.innerHTML = `
       <section class="screen">
-        <div class="eyebrow">Your emerging shortlist</div>
+        <div class="eyebrow">Your saved roles</div>
         <h1>Compare selected roles and college preparation.</h1>
         <p class="lead">Shared content areas are calculated from the career profiles. Program connections use the project’s curriculum-support mappings.</p>
 
@@ -646,7 +646,7 @@
           </div>
 
           <section id="programConnections" class="program-section">
-            <div class="section-heading"><div><h2>Programs with the strongest mapped support</h2><p>Top three among the ten researched programs for the current shortlist.</p></div></div>
+            <div class="section-heading"><div><h2>Programs with the strongest mapped support</h2><p>Programs connected to the saved roles.</p></div></div>
             <div class="program-grid">
               ${programs.map(match => `
                 <article class="card program-card">
@@ -660,12 +660,12 @@
                   <div class="button-row"><a class="btn small-btn" href="index.html#programs">Compare in full explorer</a></div>
                 </article>`).join('')}
             </div>
-            <div class="context-note"><strong>How connections are calculated:</strong> each career is mapped to programs as strong preparation, complementary preparation, general background, or not a direct fit. The cards above have the highest average support across the current shortlist.</div>
+            
           </section>
         ` : `
           <div class="empty-state" style="margin-top:28px">
-            <h2>No roles are on your shortlist yet</h2>
-            <p>Explore a few roles and choose “Interesting,” “Maybe,” or “Need to learn more.”</p>
+            <h2>No roles are saved yet</h2>
+            <p>Explore a few roles and save the ones you want to compare.</p>
             <button class="btn primary" type="button" data-go="worlds">Choose a career world</button>
           </div>`}
 

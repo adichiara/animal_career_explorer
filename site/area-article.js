@@ -115,12 +115,12 @@
     const index = areas.findIndex(item => item.id === area.id);
     const previous = areas[(index - 1 + areas.length) % areas.length];
     const next = areas[(index + 1) % areas.length];
-    document.title = `${area.title} | Animal Pathways`;
+    document.title = `${area.title} | Animal Education Pathways`;
     document.querySelector('meta[name="description"]').setAttribute('content', area.short);
     app.innerHTML = `<article class="field-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../areas.html">All field guides</a><span aria-hidden="true">/</span><span>${esc(area.title)}</span></nav>
       <header class="article-hero">
-        <div class="hero-copy"><div class="eyebrow">${area.guideTier === 'primary' ? 'Core exploration field' : 'Related field / specialization'}</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
+        <div class="hero-copy"><div class="eyebrow">Field guide</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
         <figure><img src="${esc(photo.url)}" alt="${esc(photo.alt)}" width="1200" height="675" decoding="async" fetchpriority="high"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a>${photo.license ? ` · ${photo.licenseUrl ? `<a href="${esc(photo.licenseUrl)}" target="_blank" rel="noopener">${esc(photo.license)}</a>` : esc(photo.license)}` : ''}</figcaption></figure>
       </header>
       <div class="article-body">
@@ -152,7 +152,7 @@
           </section>
           <section id="study" class="article-section">
             <div class="section-heading"><p class="section-number">05</p><h2>College study and preparation</h2></div>
-            <p class="section-intro">${area.guideTier === 'primary' ? 'This field is part of the current college-fit focus. A major is only one part of preparation; courses, research, internships, and direct experience determine how well a program supports it.' : 'This guide is included for context and completeness. Its college examples are informative, but this field does not independently drive school recommendations.'}</p>
+            <p class="section-intro">Programs below show undergraduate routes connected to this field. Expand a program to see its academic foundation, animal-related content, experience structure, strengths, and tradeoffs.</p>
             <div class="program-list">${area.programs.map(programHtml).join('')}</div><a class="research-link" href="../programs.html">Browse all college program guides →</a>
           </section>
           <section id="terms" class="article-section">
@@ -184,6 +184,7 @@
       const codes = new Set(programs.map(program => program.code));
       programs = [...programs, ...(Array.isArray(additions) ? additions.filter(program => program && program.code && !codes.has(program.code)) : [])];
       areas = await Promise.all(manifest.areas.map(file => fetchJson(`${root}${file}`)));
+      areas.sort((a, b) => a.title.localeCompare(b.title));
       const area = areaById(currentId);
       if (!area) throw new Error(`No area content found for ${currentId}.`);
       render(area);

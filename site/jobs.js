@@ -4,7 +4,7 @@
   const app = document.getElementById('app');
   const careerRoles = D.careers.filter(career => career.roleKind === 'career');
   const specialties = D.careers.filter(career => career.roleKind === 'scientific_specialty');
-  const supplementalRoles = D.careers.filter(career => career.roleKind === 'later_career' || career.roleKind === 'professional_assignment');
+  const supplementalRoles = D.careers.filter(career => career.roleKind === 'professional_assignment');
 
   const specialtyParent = {
     'animal-communication-researcher': 'animal-behavior-research-assistant-technician',
@@ -70,39 +70,39 @@
     if (!related.length) return '';
     return `<div class="job-specialties"><span class="job-specialties-label">Related scientific specialties</span><div class="job-specialty-links">${related.map(specialty => {
       const count = examples(specialty).length;
-      return `<a class="job-specialty-link" href="job.html?role=${encodeURIComponent(specialty.slug)}"><strong>${esc(specialty.name)}</strong><span>${esc(roleKindLabel(specialty))}${count ? ` · ${count} observed ${count === 1 ? 'example' : 'examples'}` : ''}</span></a>`;
+      if (!count) return `<span class="job-specialty-link unavailable"><strong>${esc(specialty.name)}</strong><span>No examples available</span></span>`;
+      return `<a class="job-specialty-link" href="job.html?role=${encodeURIComponent(specialty.slug)}"><strong>${esc(specialty.name)}</strong><span>${count} observed ${count === 1 ? 'example' : 'examples'}</span></a>`;
     }).join('')}</div></div>`;
   }
   function roleEntry(career, showKind) {
     const items = examples(career);
-    const sample = items.slice(0, 2).map(item => item.title).join(' · ') || 'No observed job example in this research snapshot.';
     const related = specialtiesByParent.get(career.slug) || [];
     const kind = showKind ? ` · ${esc(roleKindLabel(career))}` : '';
-    return `<div class="job-index-entry${related.length ? ' has-specialties' : ''}">
-      <a class="guide-link job-guide-link" href="job.html?role=${encodeURIComponent(career.slug)}"><span class="guide-count">${items.length}</span><span class="guide-copy"><strong>${esc(career.name)}</strong><span>${esc(sample)}</span><span class="index-meta">${items.length} observed ${items.length === 1 ? 'example' : 'examples'} · ${esc(career.roleFamily && career.roleFamily.name || career.category)}${kind}</span></span><span class="guide-arrow" aria-hidden="true">View examples&nbsp;→</span></a>
-      ${specialtyLinks(career)}
-    </div>`;
+    const roleFamily = esc(career.roleFamily && career.roleFamily.name || career.category);
+    const body = items.length
+      ? `<a class="guide-link job-guide-link" href="job.html?role=${encodeURIComponent(career.slug)}"><span class="guide-count">${items.length}</span><span class="guide-copy"><strong>${esc(career.name)}</strong><span>${esc(items.slice(0, 2).map(item => item.title).join(' · '))}</span><span class="index-meta">${items.length} observed ${items.length === 1 ? 'example' : 'examples'} · ${roleFamily}${kind}</span></span><span class="guide-arrow" aria-hidden="true">View examples&nbsp;→</span></a>`
+      : `<div class="guide-link job-guide-link unavailable"><span class="guide-count unavailable-count">—</span><span class="guide-copy"><strong>${esc(career.name)}</strong><span>No examples available</span><span class="index-meta">${roleFamily}${kind}</span></span><span class="guide-arrow disabled" aria-hidden="true">No examples available</span></div>`;
+    return `<div class="job-index-entry${related.length ? ' has-specialties' : ''}">${body}${specialtyLinks(career)}</div>`;
   }
   function render(query) {
     const q = String(query || '').trim().toLowerCase();
-    const careerMatches = careerRoles.filter(career => !q || searchableText(career).includes(q));
-    const supplementalMatches = supplementalRoles.filter(career => !q || ownSearchableText(career).includes(q));
-    const categories = [...new Set(careerMatches.map(career => career.category))].sort();
+    const careerMatches = careerRoles
+      .filter(career => !q || searchableText(career).includes(q))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const supplementalMatches = supplementalRoles
+      .filter(career => !q || ownSearchableText(career).includes(q))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const categories = [...new Set(careerMatches.map(career => career.category))].sort((a, b) => a.localeCompare(b));
 
     const careerMarkup = careerMatches.length
-      ? categories.map(category => `<section class="index-group"><h3>${esc(category)}</h3><div class="guide-list">${careerMatches.filter(career => career.category === category).map(career => roleEntry(career, false)).join('')}</div></section>`).join('')
+      ? categories.map(category => {
+          const items = careerMatches.filter(career => career.category === category);
+          return `<details class="index-group job-role-group"${q ? ' open' : ''}><summary><span>${esc(category)}</span><small>${items.length} ${items.length === 1 ? 'role' : 'roles'}</small></summary><div class="guide-list">${items.map(career => roleEntry(career, false)).join('')}</div></details>`;
+        }).join('')
       : '<p class="empty">No career roles match that search.</p>';
 
-    const supplementalKinds = ['later_career', 'professional_assignment'];
-    const supplementalMarkup = supplementalMatches.length
-      ? `<section class="job-supplemental" aria-labelledby="supplementalTitle"><div class="collection-heading"><p class="section-number">Beyond entry roles</p><h2 id="supplementalTitle">Later-career roles and professional assignments</h2><p>These are kept separate from the primary career-role index so they are not mistaken for typical entry points.</p></div>
-          ${supplementalKinds.map(kind => {
-            const items = supplementalMatches.filter(career => career.roleKind === kind);
-            if (!items.length) return '';
-            const heading = kind === 'later_career' ? 'Later-career roles' : 'Professional assignments';
-            return `<section class="index-group"><h3>${heading}</h3><div class="guide-list">${items.map(career => roleEntry(career, true)).join('')}</div></section>`;
-          }).join('')}
-        </section>`
+    const assignmentMarkup = supplementalMatches.length
+      ? `<details class="job-supplemental job-role-group"${q ? ' open' : ''}><summary><span>Professional assignments</span><small>${supplementalMatches.length} ${supplementalMatches.length === 1 ? 'role' : 'roles'}</small></summary><div class="guide-list">${supplementalMatches.map(career => roleEntry(career, true)).join('')}</div></details>`
       : '';
 
     app.innerHTML = `<div class="index-page jobs-index-page">
@@ -110,10 +110,10 @@
         <h1>Job Examples</h1>
         <label class="guide-search" for="jobSearch"><span>Find a role, specialty, employer, title, or location</span><input id="jobSearch" type="search" placeholder="Try rehabilitation, keeper, cognition, GIS…" value="${esc(query || '')}"></label>
       </header>
-      <section class="guide-index" aria-labelledby="jobIndexTitle"><div class="section-heading"><p class="section-number">Career role index</p><h2 id="jobIndexTitle">Career roles</h2></div>
+      <section class="guide-index" aria-label="Career roles">
         ${careerMarkup}
       </section>
-      ${supplementalMarkup}
+      ${assignmentMarkup}
     </div>`;
     const search = document.getElementById('jobSearch');
     search.addEventListener('input', event => render(event.target.value));

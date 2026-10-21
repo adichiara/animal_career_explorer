@@ -80,9 +80,9 @@
     const tags = (program.tags || []).length
       ? `<span class="program-tags">${program.tags.map(tag => esc(tag)).join(' · ')}</span>`
       : '';
-    return `<a class="guide-link program-guide-link" href="program.html?code=${encodeURIComponent(program.code)}">
+    return `<a class="guide-link program-guide-link theme-${ANIMAL_DETAILS.theme((program.primaryFields || [])[0] || '')}" href="program.html?code=${encodeURIComponent(program.code)}">
       <span class="guide-copy">
-        <strong>${esc(program.title)}</strong>
+        <span class="guide-title">${ANIMAL_DETAILS.icon((program.primaryFields || [])[0] || '')}<strong>${esc(program.title)}</strong></span>
         <span>${esc(program.fundamental || '')}</span>
         ${tags}
         <span class="index-meta">${esc(program.type)} · ${esc(program.scale)}</span>
@@ -115,7 +115,7 @@
         ${loadWarning ? `<p class="load-warning" role="status">${esc(loadWarning)}</p>` : ''}
       </header>
       <section class="guide-index" aria-label="School and program library">
-        ${matches.length ? renderRegion('New England', newEngland) + renderRegion('Outside New England', outside) : '<p class="empty">No college programs match that search.</p>'}
+        ${ANIMAL_DETAILS.results(matches.length, 'program')}${matches.length ? renderRegion('New England', newEngland) + renderRegion('Outside New England', outside) : ANIMAL_DETAILS.empty('Try a school name or an interest, such as behavior, wildlife, or vet tech.')}
       </section>
     </div>`;
     const search = document.getElementById('programSearch');

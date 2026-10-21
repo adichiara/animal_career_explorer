@@ -119,7 +119,7 @@
     app.innerHTML = `<article class="field-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../areas.html">All field guides</a><span aria-hidden="true">/</span><span>${esc(area.title)}</span></nav>
       <header class="article-hero">
-        <div class="hero-copy"><div class="eyebrow">Field guide</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
+        <div class="hero-copy"><div class="eyebrow field-eyebrow">${ANIMAL_DETAILS.icon(area.id, '../')}Field guide</div><h1>${esc(area.title)}</h1><p class="standfirst">${esc(area.short)}</p></div>
         <figure><img src="${esc(photo.url)}" alt="${esc(photo.alt)}" width="1200" height="675" decoding="async" fetchpriority="high"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a>${photo.license ? ` · ${photo.licenseUrl ? `<a href="${esc(photo.licenseUrl)}" target="_blank" rel="noopener">${esc(photo.license)}</a>` : esc(photo.license)}` : ''}</figcaption></figure>
       </header>
       <div class="article-body">

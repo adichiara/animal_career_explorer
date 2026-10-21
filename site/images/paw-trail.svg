@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 36" width="120" height="36">
+ <defs><g id="print" fill="#72b9a2"><ellipse cx="3" cy="7" rx="2" ry="3"/><ellipse cx="8" cy="3" rx="2" ry="3"/><ellipse cx="13" cy="3" rx="2" ry="3"/><ellipse cx="18" cy="7" rx="2" ry="3"/><path d="M10.5 9C7 9 5 13 3 16c-1 4 4 2 7.5 2s8.5 2 7.5-2c-2-3-4-7-7.5-7Z"/></g></defs>
+ <use href="#print" transform="translate(2 12) rotate(-18 10 10)" opacity=".55"/>
+ <use href="#print" transform="translate(32 2) rotate(14 10 10)" opacity=".7"/>
+ <use href="#print" transform="translate(62 12) rotate(-18 10 10)" opacity=".85"/>
+ <use href="#print" transform="translate(92 2) rotate(14 10 10)"/>
+</svg>

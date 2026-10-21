@@ -1,3 +1,5 @@
+> Historical implementation notes. The retired `discover.html` entry point was deleted on 2026-10-21; this document describes the former interface.
+
 # Progressive career explorer
 
 ## Purpose

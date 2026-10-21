@@ -1114,15 +1114,14 @@ area(
 area(
  id="wildlife-ecology-management",
  title="Wildlife Biology",
- short="The science and professional management of free-ranging wild animals: estimating "
-        "populations, understanding movement and habitat, and deciding how agencies and "
-        "organizations should act.",
- bigPicture="Wildlife ecology and management applies ecological science to free-ranging "
-             "animal populations and the habitats and human systems that shape them. It "
-             "combines population estimation, movement and habitat analysis, field "
-             "techniques, law, policy, and public decision-making. The work is organized "
-             "around practical questions: whether a population is secure, what is causing "
-             "change, which action is feasible, and how its results will be measured.",
+ short="The study of free-ranging wild animals: their populations, life histories, "
+        "movement, habitat use, survival, and interactions with people and ecosystems.",
+ bigPicture="Wildlife biology studies free-ranging animals and the biological and "
+             "ecological processes that shape their populations. It combines population "
+             "estimation, movement and habitat analysis, field techniques, statistics, and "
+             "increasingly genetics and disease data. Much of the work informs management "
+             "decisions, but the scientific core is understanding how wild animals live, "
+             "move, reproduce, survive, and respond to environmental change.",
  distinction=dict(
    title="Wildlife Biology and Ecology",
    summary="The fields share population biology, field sampling, statistics, and spatial "

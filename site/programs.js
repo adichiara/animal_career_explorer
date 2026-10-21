@@ -81,7 +81,7 @@
       ? `<span class="program-tags">${program.tags.map(tag => esc(tag)).join(' · ')}</span>`
       : '';
     return `<a class="guide-link program-guide-link" href="program.html?code=${encodeURIComponent(program.code)}">
-      <span class="guide-count">${String(programs.indexOf(program) + 1).padStart(2, '0')}</span>
+      <span class="guide-count" aria-hidden="true">•</span>
       <span class="guide-copy">
         <strong>${esc(program.title)}</strong>
         <span>${esc(program.fundamental || '')}</span>

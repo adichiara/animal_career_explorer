@@ -1,0 +1,51 @@
+name: Temporary field-focus verification
+
+on:
+  push:
+    branches: [field-focus-refresh-2026-10-21]
+    paths:
+      - ".github/workflows/verify-field-focus.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: field-focus-refresh-2026-10-21
+
+      - name: Rebuild field guides and compare generated output
+        run: |
+          rm -rf /tmp/animal-area-build
+          python3 scripts/areas_build.py /tmp/animal-area-build
+          diff -ru --exclude=README.md --exclude=photos.json site/content/areas /tmp/animal-area-build
+
+      - name: Validate taxonomy and program focus
+        run: |
+          python3 - <<'PY'
+          import json
+          idx=json.load(open('site/content/areas/index.json'))
+          areas=[json.load(open('site/content/areas/'+f)) for f in idx['areas']]
+          assert len(areas)==17
+          expected=['animal-biology','zoology','wildlife-ecology-management','animal-behavior','animal-welfare','animal-science','zoo-aquarium-science','veterinary-technology']
+          assert [a['id'] for a in areas if a.get('guideTier')=='primary']==expected
+          assert next(a for a in areas if a['id']=='wildlife-ecology-management')['title']=='Wildlife Biology'
+          assert next(a for a in areas if a['id']=='veterinary-technology')['title']=='Veterinary Technology'
+          assert all(a['title']!='Marine Biology' for a in areas)
+          additions=json.load(open('site/content/programs/additional-programs.json'))
+          assert len(additions)==8
+          assert sum(p['code']=='UMA-VT' for p in additions)==1
+          print('17 guides; 8 core; UMA-VT present; marine not a guide')
+          PY
+
+      - name: Check JavaScript syntax and whitespace
+        run: |
+          node --check site/areas.js
+          node --check site/area-article.js
+          node --check site/program-focus.js
+          node --check site/programs.js
+          node --check site/program-article.js
+          git diff --check main...HEAD

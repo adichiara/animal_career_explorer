@@ -108,13 +108,13 @@ def build():
         emphasis = ''.join(f'<span class="cmp-chip">{escape(c)}</span>' for c in categories) \
             or '<span class="cmp-none">Not documented</span>'
         state = CONTACT[code]
-        rows.append(f'''<tr id="{code}">
-          <th scope="row" data-label="School and pathway"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a></th>
-          <td data-label="Degree">{escape(DEGREE[code])}</td>
-          <td data-label="Fields"><div class="cmp-chips">{field_chips}</div></td>
-          <td data-label="Required animal contact"><span class="cmp-state cmp-state-{state}">{escape(CONTACT_LABEL[state])}</span> <a class="cmp-more" href="program.html?code={code}#experience">Details&nbsp;→</a></td>
-          <td data-label="Documented emphasis"><div class="cmp-chips">{emphasis}</div></td>
-          <td data-label="Verified">{escape(p.get('lastVerified') or 'Not recorded')}</td>
+        rows.append(f'''<tr id="{code}" role="row">
+          <th scope="row" role="rowheader" data-label="School and pathway"><small>{escape(school_name(p))}</small><a href="program.html?code={code}">{escape(p['title'])}</a></th>
+          <td role="cell" data-label="Degree">{escape(DEGREE[code])}</td>
+          <td role="cell" data-label="Fields"><div class="cmp-chips">{field_chips}</div></td>
+          <td role="cell" data-label="Required animal contact"><span class="cmp-state cmp-state-{state}">{escape(CONTACT_LABEL[state])}</span> <a class="cmp-more" href="program.html?code={code}#experience">Details&nbsp;→</a></td>
+          <td role="cell" data-label="Documented emphasis"><div class="cmp-chips">{emphasis}</div></td>
+          <td role="cell" data-label="Verified">{escape(p.get('lastVerified') or 'Not recorded')}</td>
         </tr>''')
 
     template = (SITE / 'programs.html').read_text()
@@ -133,10 +133,10 @@ def build():
         <p><strong>Documented emphasis</strong> groups the stronger preparation areas described in each program guide. These summarize the existing curriculum review. They are not standardized ratings, guarantees, or rankings, and the number of areas shown partly reflects how much detail each record carries. Electives, concentrations, minors, and certificates determine much of what a student actually studies.</p>
         <p>Sources and verification notes for each program are on its own page.</p>
       </details>
-      <div class="comparison-scroll" role="region" aria-labelledby="comparisonCaption" aria-describedby="comparisonHelp" tabindex="0">
-        <table class="comparison-table"><caption id="comparisonCaption">Program pathways and documented preparation</caption>
-          <thead><tr><th scope="col">School and pathway</th><th scope="col">Degree</th><th scope="col">Fields</th><th scope="col">Required animal contact</th><th scope="col">Documented emphasis</th><th scope="col">Verified</th></tr></thead>
-          <tbody>{''.join(rows)}</tbody>
+      <div class="comparison-scroll" role="region" aria-labelledby="comparisonCaption" aria-describedby="comparisonHelp">
+        <table class="comparison-table" role="table"><caption id="comparisonCaption">Program pathways and documented preparation</caption>
+          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">School and pathway</th><th scope="col" role="columnheader">Degree</th><th scope="col" role="columnheader">Fields</th><th scope="col" role="columnheader">Required animal contact</th><th scope="col" role="columnheader">Documented emphasis</th><th scope="col" role="columnheader">Verified</th></tr></thead>
+          <tbody role="rowgroup">{''.join(rows)}</tbody>
         </table>
       </div>
     </main>'''

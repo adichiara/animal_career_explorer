@@ -1738,7 +1738,7 @@ area(
              "of agriculture and livestock remain at its center, but what a given program "
              "actually covers varies more than the shared title suggests. Concentrations "
              "may emphasize production, companion animals, equine science, behavior, "
-             "welfare, nutrition, biotechnology, or pre-veterinary preparation.",
+             "welfare, nutrition, biotechnology, or pre-veterinary preparation. For the current school exploration, the relevant slice is companion and managed-animal biology, behavior, welfare, physiology, and health rather than production agriculture.",
  senses=dict(
    title="Three things called “animal science”",
    summary="The same phrase is used for an occupation, a degree, and a general idea. They "
@@ -2722,8 +2722,8 @@ area(
             "whale communication, fish physiology, coral disease, plankton food webs, or "
             "how coastal development changes an estuary. The field therefore overlaps "
             "with behavior, physiology, ecology, genetics, conservation, and zoology. "
-            "It is included here as one possible animal-focused direction, without giving "
-            "marine specialization extra weight in college exploration.",
+            "It remains useful context, but marine specialization does not drive the "
+            "current school recommendations.",
  terms=[
   ("Marine ecology", "The study of interactions among marine organisms and their physical environment."),
   ("Biological oceanography", "The study of biological processes in the ocean, often at large spatial scales and closely connected to ocean chemistry and physics."),
@@ -2887,8 +2887,8 @@ area(
 )
 
 # Replace the four superseded guides, update cross-links, and put the current
-# exploration fields first. Marine Biology is included but intentionally has no
-# special weighting or featured-school rule.
+# exploration fields first. Marine Biology remains a context guide and does not
+# independently drive school inclusion.
 _SUPERSEDED = {
     "animal-physiology": "animal-biology",
     "wildlife-ecology-management": "wildlife-biology",

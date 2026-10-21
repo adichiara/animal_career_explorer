@@ -2,13 +2,13 @@
   {
     "code": "CAN-ABEC",
     "collection": "additional",
-    "title": "Animal Behavior, Ecology, and Conservation B.S.",
+    "title": "Animal Behavior, Ecology, and Conservation B.S. + Zoo Biology minor",
     "school": "Canisius University",
-    "type": "Animal behavior and conservation",
+    "type": "Animal behavior, welfare, and zoo biology",
     "scale": "Small private university · Buffalo, New York",
-    "lastVerified": "2026-09-15",
-    "overview": "Canisius combines behavioral biology, ecology, conservation, animal welfare, and ethical questions about human relationships with animals. The program is unusually explicit about connecting scientific study to the welfare of animals and the conservation of wildlife. Students can pursue faculty research and internships across zoos and aquariums, shelters and rescues, wildlife rehabilitation centers, wildlife refuges, and training settings.",
-    "fundamental": "An animal-behavior degree that joins biological science and research methods with ecology, conservation, welfare, and the ethical dimensions of work involving animals.",
+    "lastVerified": "2026-10-21",
+    "overview": "Canisius combines rigorous animal-behavior science with conservation, welfare, and ethical questions about human relationships with animals. ABEC majors may add the 18-credit Zoo Biology minor, whose curriculum includes Zoo Animal Management plus options such as Zoo Animal Husbandry, Animal Welfare, Animal Enrichment, Observational Research Methods, and zoo/aquarium internships.",
+    "fundamental": "A behavior-centered B.S. that can be paired with a structured Zoo Biology minor for added husbandry, welfare, enrichment, and managed-animal preparation.",
     "scienceFoundation": [
       "Biological principles, organismal biology, ecology, and evolution",
       "Animal behavior theory and behavioral research methods",
@@ -17,13 +17,13 @@
       "Conservation science and the relationships between animals and environments"
     ],
     "animalContent": [
-      "Behavior across captive wildlife, companion animals, and wild populations",
-      "Animal welfare, training, husbandry, and humane education",
+      "Animal behavior, learning, cognition, and observational research methods",
+      "Animal welfare, enrichment, and applied behavior",
+      "Zoo Animal Management plus Zoo Biology minor options in husbandry and exhibitry",
       "Wildlife conservation and human effects on animals",
-      "Human–animal relationships and ethical decision-making",
-      "Observation, study design, data collection, and interpretation"
+      "Zoo/aquarium, animal-behavior, conservation, and other internship pathways"
     ],
-    "experience": "The program sponsors credit-bearing internships in a wide range of animal settings, including zoos, aquariums, shelters, rescues, wildlife rehabilitation centers, refuges, and dog-training organizations. A limited paid-internship fund can help with some unpaid placements and related expenses.",
+    "experience": "ABEC offers credit-bearing internships in animal-related settings. The Zoo Biology minor specifically includes zoo/aquarium internship options, and its coursework can add Zoo Animal Management, husbandry, welfare, enrichment, exhibitry, and observational methods to the behavior-centered major.",
     "research": "Students may join faculty research teams studying captive wildlife, companion animals, conservation, and the human–animal bond. The university describes opportunities to use quantitative and qualitative methods and to develop work into presentations or peer-reviewed publications.",
     "progression": [
       "Year 1: build biology and liberal-arts foundations while sampling animal behavior, ecology, conservation, and welfare questions.",
@@ -33,32 +33,88 @@
     ],
     "resume": "B.S. in Animal Behavior, Ecology, and Conservation; behavioral observation and research methods; ecology and conservation; welfare and ethics; faculty research; presentation or publication potential; animal-focused internship experience.",
     "advantages": [
-      "Behavior, welfare, conservation, and ethics are integrated rather than separated into unrelated electives.",
-      "Internship settings span wild, captive, companion-animal, rehabilitation, and training work.",
-      "Faculty-team research can give undergraduates substantial experience with study design, data, and scientific communication."
+      "Animal behavior and welfare are central rather than incidental electives.",
+      "The Zoo Biology minor creates a clearly defined managed-animal pathway without requiring a separate zoo-science major.",
+      "Internship and research options let students test behavior, zoo, welfare, conservation, and other animal settings before narrowing further."
     ],
     "tradeoffs": [
-      "The program's breadth means students still need to choose whether to emphasize laboratory research, field ecology, managed-animal work, or human–animal studies.",
-      "Students aiming at veterinary school or a highly laboratory-intensive biological specialty should map the needed chemistry, physics, and prerequisite sequence early.",
-      "A small private-university setting differs substantially in scale, cost structure, and course breadth from the public research universities in the focused list."
+      "Zoo Biology is an 18-credit minor, not a standalone major, so students need to plan its courses around the ABEC requirements.",
+      "Many ABEC and Zoo Biology electives are not offered every semester; the university advises students to plan the minor with an advisor.",
+      "Students wanting veterinary-technology credentialing or a clinical nursing curriculum need a different professional program."
     ],
     "bestWhen": "Especially relevant for a student who wants animal behavior to remain central while also exploring welfare, conservation, rehabilitation, training, and the human responsibilities that accompany animal work.",
-    "experienceTags": ["research", "internship", "zoo", "wildlife rehabilitation", "animal welfare", "training"],
+    "experienceTags": [
+      "research",
+      "internship",
+      "zoo",
+      "wildlife rehabilitation",
+      "animal welfare",
+      "training"
+    ],
     "competencies": [
-      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 3},
-      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.8},
-      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.7},
-      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.5},
-      {"id": "comp_ecology", "name": "Ecology", "category": "Wildlife science", "description": "Organism–environment relationships, communities, habitats, and ecological processes.", "strength": 2.4},
-      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.4},
-      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Research papers, presentations, and communication for scientific and public audiences.", "strength": 2.5},
-      {"id": "comp_learning", "name": "Learning & training", "category": "Behavior & welfare", "description": "Learning theory, conditioning, reinforcement, and humane training.", "strength": 2.1}
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Systematic observation, ethograms, behavior coding, and interpretation.",
+        "strength": 3
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
+        "strength": 2.8
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Welfare assessment",
+        "category": "Behavior & welfare",
+        "description": "Assessing physical and behavioral welfare and quality of life.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_conservation",
+        "name": "Conservation biology",
+        "category": "Applied conservation",
+        "description": "Species and population conservation, recovery, and biodiversity protection.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_ecology",
+        "name": "Ecology",
+        "category": "Wildlife science",
+        "description": "Organism–environment relationships, communities, habitats, and ecological processes.",
+        "strength": 2.4
+      },
+      {
+        "id": "comp_stats",
+        "name": "Statistics & data analysis",
+        "category": "Methods",
+        "description": "Quantitative analysis and evidence-based interpretation.",
+        "strength": 2.4
+      },
+      {
+        "id": "comp_writing",
+        "name": "Scientific writing & communication",
+        "category": "Professional",
+        "description": "Research papers, presentations, and communication for scientific and public audiences.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_learning",
+        "name": "Learning & training",
+        "category": "Behavior & welfare",
+        "description": "Learning theory, conditioning, reinforcement, and humane training.",
+        "strength": 2.1
+      }
     ],
     "sources": [
       "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation",
       "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation/abec-research-opportunities",
       "https://www.canisius.edu/academics/programs/undergraduate/animal-behavior-ecology-conservation/abec-internships",
-      "https://catalog.canisius.edu/undergraduate/college-arts-sciences/animal-behavior-ecology-conservation/animal-behavior-ecology-conservation-bs/"
+      "https://catalog.canisius.edu/undergraduate/college-arts-sciences/animal-behavior-ecology-conservation/animal-behavior-ecology-conservation-bs/",
+      "https://catalog.canisius.edu/undergraduate/division-arts-education-sciences/school-natural-environmental-animal-sciences/animal-behavior-ecology-conservation/zoo-biology-minor/index.html"
     ]
   },
   {
@@ -105,16 +161,71 @@
       "A zoo-focused degree may be less flexible than broad biology for a student who later moves entirely away from animal or conservation work."
     ],
     "bestWhen": "Especially relevant when zoo or conservation work is appealing but the strongest intellectual interest is in why animals behave as they do, including learning and cognition.",
-    "experienceTags": ["zoo", "research", "internship", "animal cognition", "animal behavior", "conservation"],
+    "experienceTags": [
+      "zoo",
+      "research",
+      "internship",
+      "animal cognition",
+      "animal behavior",
+      "conservation"
+    ],
     "competencies": [
-      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 3},
-      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, memory, perception, problem-solving, and comparative cognition.", "strength": 3},
-      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.8},
-      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 2.3},
-      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.4},
-      {"id": "comp_ecology", "name": "Ecology", "category": "Wildlife science", "description": "Organism–environment relationships and ecological influences on behavior.", "strength": 2.2},
-      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.3},
-      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Reports, papers, presentations, and professional communication.", "strength": 2.5}
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Systematic observation, ethograms, behavior coding, and interpretation.",
+        "strength": 3
+      },
+      {
+        "id": "comp_cognition",
+        "name": "Animal cognition",
+        "category": "Behavior & welfare",
+        "description": "Learning, memory, perception, problem-solving, and comparative cognition.",
+        "strength": 3
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
+        "strength": 2.8
+      },
+      {
+        "id": "comp_husbandry",
+        "name": "Animal husbandry",
+        "category": "Applied animal care",
+        "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_conservation",
+        "name": "Conservation biology",
+        "category": "Applied conservation",
+        "description": "Species and population conservation, recovery, and biodiversity protection.",
+        "strength": 2.4
+      },
+      {
+        "id": "comp_ecology",
+        "name": "Ecology",
+        "category": "Wildlife science",
+        "description": "Organism–environment relationships and ecological influences on behavior.",
+        "strength": 2.2
+      },
+      {
+        "id": "comp_stats",
+        "name": "Statistics & data analysis",
+        "category": "Methods",
+        "description": "Quantitative analysis and evidence-based interpretation.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_writing",
+        "name": "Scientific writing & communication",
+        "category": "Professional",
+        "description": "Reports, papers, presentations, and professional communication.",
+        "strength": 2.5
+      }
     ],
     "sources": [
       "https://catalog.drake.edu/undergraduate/arts-sciences/areas-study/environmental-science-sustainability/zoo-conservation-science-bs/",
@@ -166,16 +277,72 @@
       "Hands-on access does not make zoo employment automatic; internships, references, and a strong record remain important in a competitive field."
     ],
     "bestWhen": "Especially relevant for a student who wants repeated, structured contact with zoo and rehabilitation settings while still building a biological-science and research foundation.",
-    "experienceTags": ["zoo", "wildlife rehabilitation", "animal care", "animal welfare", "training", "research", "internship"],
+    "experienceTags": [
+      "zoo",
+      "wildlife rehabilitation",
+      "animal care",
+      "animal welfare",
+      "training",
+      "research",
+      "internship"
+    ],
     "competencies": [
-      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 3},
-      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.8},
-      {"id": "comp_learning", "name": "Learning & training", "category": "Behavior & welfare", "description": "Learning theory, reinforcement, enrichment, and humane training.", "strength": 2.7},
-      {"id": "comp_rehab", "name": "Wildlife rehabilitation", "category": "Applied animal care", "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.", "strength": 2.8},
-      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, ethograms, behavior coding, and interpretation.", "strength": 2.5},
-      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 2.6},
-      {"id": "comp_conservation", "name": "Conservation biology", "category": "Applied conservation", "description": "Species and population conservation, recovery, and biodiversity protection.", "strength": 2.5},
-      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, reproduction, nutrition, and functional biology.", "strength": 2.4}
+      {
+        "id": "comp_husbandry",
+        "name": "Animal husbandry",
+        "category": "Applied animal care",
+        "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.",
+        "strength": 3
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Welfare assessment",
+        "category": "Behavior & welfare",
+        "description": "Assessing physical and behavioral welfare and quality of life.",
+        "strength": 2.8
+      },
+      {
+        "id": "comp_learning",
+        "name": "Learning & training",
+        "category": "Behavior & welfare",
+        "description": "Learning theory, reinforcement, enrichment, and humane training.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_rehab",
+        "name": "Wildlife rehabilitation",
+        "category": "Applied animal care",
+        "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.",
+        "strength": 2.8
+      },
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Systematic observation, ethograms, behavior coding, and interpretation.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
+        "strength": 2.6
+      },
+      {
+        "id": "comp_conservation",
+        "name": "Conservation biology",
+        "category": "Applied conservation",
+        "description": "Species and population conservation, recovery, and biodiversity protection.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_physiology",
+        "name": "Animal physiology",
+        "category": "Biological mechanisms",
+        "description": "Organ systems, reproduction, nutrition, and functional biology.",
+        "strength": 2.4
+      }
     ],
     "sources": [
       "https://www.otterbein.edu/programs/ba-bs-zoo-conservation-science/",
@@ -226,16 +393,71 @@
       "Students pursuing direct animal-care employment need to build substantial hands-on hours alongside the academic program."
     ],
     "bestWhen": "Especially relevant for a student drawn to animal behavior as a scientific question and considering research or graduate study in cognition, learning, neuroethology, behavioral ecology, or comparative biology.",
-    "experienceTags": ["research", "animal behavior", "animal cognition", "laboratory", "fieldwork", "graduate preparation"],
+    "experienceTags": [
+      "research",
+      "animal behavior",
+      "animal cognition",
+      "laboratory",
+      "fieldwork",
+      "graduate preparation"
+    ],
     "competencies": [
-      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, behavior coding, experimentation, and interpretation.", "strength": 3},
-      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Hypothesis development, study design, data collection, and scientific reasoning.", "strength": 3},
-      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, memory, perception, problem-solving, and comparative cognition.", "strength": 2.8},
-      {"id": "comp_neuro", "name": "Neuroscience & neuroethology", "category": "Biological mechanisms", "description": "Neural and physiological mechanisms of behavior.", "strength": 2.6},
-      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Statistical analysis, quantitative reasoning, and interpretation.", "strength": 2.7},
-      {"id": "comp_ecology", "name": "Behavioral ecology", "category": "Wildlife science", "description": "How ecological and evolutionary conditions shape behavior.", "strength": 2.5},
-      {"id": "comp_writing", "name": "Scientific writing & communication", "category": "Professional", "description": "Journal-style papers, literature reviews, formal presentations, and discussion leadership.", "strength": 3},
-      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, endocrine processes, and functional biology relevant to behavior.", "strength": 2.3}
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Systematic observation, behavior coding, experimentation, and interpretation.",
+        "strength": 3
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Hypothesis development, study design, data collection, and scientific reasoning.",
+        "strength": 3
+      },
+      {
+        "id": "comp_cognition",
+        "name": "Animal cognition",
+        "category": "Behavior & welfare",
+        "description": "Learning, memory, perception, problem-solving, and comparative cognition.",
+        "strength": 2.8
+      },
+      {
+        "id": "comp_neuro",
+        "name": "Neuroscience & neuroethology",
+        "category": "Biological mechanisms",
+        "description": "Neural and physiological mechanisms of behavior.",
+        "strength": 2.6
+      },
+      {
+        "id": "comp_stats",
+        "name": "Statistics & data analysis",
+        "category": "Methods",
+        "description": "Statistical analysis, quantitative reasoning, and interpretation.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_ecology",
+        "name": "Behavioral ecology",
+        "category": "Wildlife science",
+        "description": "How ecological and evolutionary conditions shape behavior.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_writing",
+        "name": "Scientific writing & communication",
+        "category": "Professional",
+        "description": "Journal-style papers, literature reviews, formal presentations, and discussion leadership.",
+        "strength": 3
+      },
+      {
+        "id": "comp_physiology",
+        "name": "Animal physiology",
+        "category": "Biological mechanisms",
+        "description": "Organ systems, endocrine processes, and functional biology relevant to behavior.",
+        "strength": 2.3
+      }
     ],
     "sources": [
       "https://coursecatalog.bucknell.edu/collegeofartsandsciencescurricula/areasofstudy/animalbehavioranbe/",
@@ -286,16 +508,72 @@
       "The breadth is valuable for exploration but requires deliberate choices to create a clear specialty and technical portfolio."
     ],
     "bestWhen": "Especially relevant when the student is interested not only in animal behavior, but also in welfare, ethics, animal-serving organizations, communication, and the many ways people and animals affect one another.",
-    "experienceTags": ["research", "internship", "practicum", "animal cognition", "animal welfare", "anthrozoology", "zoo"],
+    "experienceTags": [
+      "research",
+      "internship",
+      "practicum",
+      "animal cognition",
+      "animal welfare",
+      "anthrozoology",
+      "zoo"
+    ],
     "competencies": [
-      {"id": "comp_human_animal", "name": "Human–animal relationships", "category": "Interdisciplinary", "description": "Scientific, cultural, ethical, and social analysis of relationships between humans and other animals.", "strength": 3},
-      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Systematic observation, behavior coding, and interpretation.", "strength": 2.7},
-      {"id": "comp_cognition", "name": "Animal cognition", "category": "Behavior & welfare", "description": "Learning, communication, problem-solving, and comparative cognition.", "strength": 2.6},
-      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Understanding and evaluating physical and behavioral welfare.", "strength": 2.5},
-      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Quantitative, qualitative, and interdisciplinary study design and reasoning.", "strength": 2.5},
-      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2.3},
-      {"id": "comp_writing", "name": "Writing & communication", "category": "Professional", "description": "Critical writing, research communication, reflection, and communication with varied audiences.", "strength": 2.7},
-      {"id": "comp_public", "name": "Public education & advocacy", "category": "Professional", "description": "Education, interpretation, outreach, and communication about animals and their interests.", "strength": 2.4}
+      {
+        "id": "comp_human_animal",
+        "name": "Human–animal relationships",
+        "category": "Interdisciplinary",
+        "description": "Scientific, cultural, ethical, and social analysis of relationships between humans and other animals.",
+        "strength": 3
+      },
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Systematic observation, behavior coding, and interpretation.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_cognition",
+        "name": "Animal cognition",
+        "category": "Behavior & welfare",
+        "description": "Learning, communication, problem-solving, and comparative cognition.",
+        "strength": 2.6
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Welfare assessment",
+        "category": "Behavior & welfare",
+        "description": "Understanding and evaluating physical and behavioral welfare.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Quantitative, qualitative, and interdisciplinary study design and reasoning.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_stats",
+        "name": "Statistics & data analysis",
+        "category": "Methods",
+        "description": "Quantitative analysis and evidence-based interpretation.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_writing",
+        "name": "Writing & communication",
+        "category": "Professional",
+        "description": "Critical writing, research communication, reflection, and communication with varied audiences.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_public",
+        "name": "Public education & advocacy",
+        "category": "Professional",
+        "description": "Education, interpretation, outreach, and communication about animals and their interests.",
+        "strength": 2.4
+      }
     ],
     "sources": [
       "https://www.eckerd.edu/animal-studies/",
@@ -347,16 +625,71 @@
       "The current Unity model includes several distinct in-person and online pathways, so applicants should verify the exact degree length, delivery format, campus, and experiential commitments."
     ],
     "bestWhen": "Especially relevant when the student wants to understand the practical realities of caring for wild animals and is comfortable choosing a more specialized applied degree.",
-    "experienceTags": ["wildlife rehabilitation", "animal care", "animal health", "husbandry", "in-person", "applied learning"],
+    "experienceTags": [
+      "wildlife rehabilitation",
+      "animal care",
+      "animal health",
+      "husbandry",
+      "in-person",
+      "applied learning"
+    ],
     "competencies": [
-      {"id": "comp_rehab", "name": "Wildlife rehabilitation", "category": "Applied animal care", "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.", "strength": 3},
-      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.", "strength": 3},
-      {"id": "comp_health", "name": "Animal health observation", "category": "Animal health", "description": "Recognizing health concerns, monitoring change, and communicating observations within a care team.", "strength": 2.7},
-      {"id": "comp_behavior_obs", "name": "Behavioral observation", "category": "Behavior & welfare", "description": "Observing behavior to guide care, welfare, habituation prevention, and release planning.", "strength": 2.6},
-      {"id": "comp_welfare", "name": "Welfare assessment", "category": "Behavior & welfare", "description": "Assessing physical and behavioral welfare and quality of life.", "strength": 2.5},
-      {"id": "comp_nutrition", "name": "Animal nutrition", "category": "Applied animal care", "description": "Species- and life-stage-appropriate nutrition and feeding management.", "strength": 2.5},
-      {"id": "comp_habitat", "name": "Habitat & enclosure design", "category": "Applied conservation", "description": "Designing environments that support safety, natural behavior, recovery, and release preparation.", "strength": 2.6},
-      {"id": "comp_ecology", "name": "Wildlife ecology", "category": "Wildlife science", "description": "Ecological context for species needs, natural behavior, habitat, and release.", "strength": 2.1}
+      {
+        "id": "comp_rehab",
+        "name": "Wildlife rehabilitation",
+        "category": "Applied animal care",
+        "description": "Care, stabilization, rehabilitation planning, release preparation, and associated records.",
+        "strength": 3
+      },
+      {
+        "id": "comp_husbandry",
+        "name": "Animal husbandry",
+        "category": "Applied animal care",
+        "description": "Feeding, sanitation, handling, recordkeeping, enclosure care, and daily management.",
+        "strength": 3
+      },
+      {
+        "id": "comp_health",
+        "name": "Animal health observation",
+        "category": "Animal health",
+        "description": "Recognizing health concerns, monitoring change, and communicating observations within a care team.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Observing behavior to guide care, welfare, habituation prevention, and release planning.",
+        "strength": 2.6
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Welfare assessment",
+        "category": "Behavior & welfare",
+        "description": "Assessing physical and behavioral welfare and quality of life.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_nutrition",
+        "name": "Animal nutrition",
+        "category": "Applied animal care",
+        "description": "Species- and life-stage-appropriate nutrition and feeding management.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_habitat",
+        "name": "Habitat & enclosure design",
+        "category": "Applied conservation",
+        "description": "Designing environments that support safety, natural behavior, recovery, and release preparation.",
+        "strength": 2.6
+      },
+      {
+        "id": "comp_ecology",
+        "name": "Wildlife ecology",
+        "category": "Wildlife science",
+        "description": "Ecological context for species needs, natural behavior, habitat, and release.",
+        "strength": 2.1
+      }
     ],
     "sources": [
       "https://unity.edu/programs/wildlife-care-and-rehabilitation/",
@@ -407,16 +740,72 @@
       "Behavior, cognition, enrichment, and wildlife rehabilitation would need to be developed through electives and external experience."
     ],
     "bestWhen": "Especially relevant when animal health, veterinary preparation, physiology, nutrition, or hands-on domestic-animal management is more important than wildlife ecology or comparative behavior.",
-    "experienceTags": ["animal care", "animal health", "pre-veterinary", "equine", "dairy", "research", "laboratory"],
+    "experienceTags": [
+      "animal care",
+      "animal health",
+      "pre-veterinary",
+      "equine",
+      "dairy",
+      "research",
+      "laboratory"
+    ],
     "competencies": [
-      {"id": "comp_physiology", "name": "Animal physiology", "category": "Biological mechanisms", "description": "Organ systems, reproduction, endocrine processes, and functional biology.", "strength": 3},
-      {"id": "comp_nutrition", "name": "Animal nutrition", "category": "Applied animal care", "description": "Diet, nutrition science, feeding management, and effects on health and production.", "strength": 3},
-      {"id": "comp_health", "name": "Animal health & disease", "category": "Animal health", "description": "Health assessment, disease processes, microbiology, prevention, and veterinary context.", "strength": 3},
-      {"id": "comp_husbandry", "name": "Animal husbandry", "category": "Applied animal care", "description": "Handling, feeding, sanitation, records, and daily management of domestic animals.", "strength": 3},
-      {"id": "comp_genetics", "name": "Genetics & reproduction", "category": "Biological mechanisms", "description": "Inheritance, breeding, reproduction, and their applications in animal science.", "strength": 2.7},
-      {"id": "comp_research", "name": "Research design", "category": "Methods", "description": "Laboratory or applied study design, data collection, and scientific reasoning.", "strength": 2.3},
-      {"id": "comp_stats", "name": "Statistics & data analysis", "category": "Methods", "description": "Quantitative analysis and evidence-based interpretation.", "strength": 2},
-      {"id": "comp_welfare", "name": "Animal welfare", "category": "Behavior & welfare", "description": "Physical and behavioral welfare within domestic-animal management systems.", "strength": 1.8}
+      {
+        "id": "comp_physiology",
+        "name": "Animal physiology",
+        "category": "Biological mechanisms",
+        "description": "Organ systems, reproduction, endocrine processes, and functional biology.",
+        "strength": 3
+      },
+      {
+        "id": "comp_nutrition",
+        "name": "Animal nutrition",
+        "category": "Applied animal care",
+        "description": "Diet, nutrition science, feeding management, and effects on health and production.",
+        "strength": 3
+      },
+      {
+        "id": "comp_health",
+        "name": "Animal health & disease",
+        "category": "Animal health",
+        "description": "Health assessment, disease processes, microbiology, prevention, and veterinary context.",
+        "strength": 3
+      },
+      {
+        "id": "comp_husbandry",
+        "name": "Animal husbandry",
+        "category": "Applied animal care",
+        "description": "Handling, feeding, sanitation, records, and daily management of domestic animals.",
+        "strength": 3
+      },
+      {
+        "id": "comp_genetics",
+        "name": "Genetics & reproduction",
+        "category": "Biological mechanisms",
+        "description": "Inheritance, breeding, reproduction, and their applications in animal science.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Laboratory or applied study design, data collection, and scientific reasoning.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_stats",
+        "name": "Statistics & data analysis",
+        "category": "Methods",
+        "description": "Quantitative analysis and evidence-based interpretation.",
+        "strength": 2
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Animal welfare",
+        "category": "Behavior & welfare",
+        "description": "Physical and behavioral welfare within domestic-animal management systems.",
+        "strength": 1.8
+      }
     ],
     "sources": [
       "https://umaine.edu/foodandagriculture/b-s-degree-in-animal-and-veterinary-sciences/",
@@ -426,116 +815,591 @@
   },
   {
     "code": "UMA-VT",
-    "collection": "additional",
+    "collection": "current",
     "title": "Veterinary Technology B.S.",
     "school": "University of Massachusetts Amherst",
-    "type": "Veterinary technology and clinical animal health",
-    "scale": "Public research university · Amherst and Charles River Campus, Newton, Massachusetts",
+    "type": "Veterinary technology",
+    "scale": "Large public research university · Amherst and Newton, Massachusetts",
     "lastVerified": "2026-10-21",
-    "overview": "UMass Amherst offers a four-year Bachelor of Science in Veterinary Technology accredited by the American Veterinary Medical Association. Students spend the first two years in Amherst building science and clinical-nursing foundations, then move to the Charles River Campus in Newton for the final two years of specialized clinical work. The program prepares graduates for the Veterinary Technician National Examination and careers as veterinary technologists in veterinary medicine or biomedical research.",
-    "fundamental": "A professional bachelor's pathway for students who want hands-on clinical animal care, diagnostics, anesthesia, surgery support, nursing, and technical responsibility as a veterinary technologist.",
+    "overview": "UMass Amherst offers a four-year B.S. in Veterinary Technology. Students spend the first two years in Amherst and the final two years at the Charles River Campus in Newton for advanced clinical work. The program is accredited by the American Veterinary Medical Association and prepares graduates for the Veterinary Technician National Examination. The published curriculum includes clinical nursing, animal welfare, anatomy and physiology, microbiology, pathology, pharmacology, diagnostic imaging, anesthesia and surgery, laboratory-animal medicine, and senior internships.",
+    "fundamental": "A four-year, accredited veterinary-technology pathway combining animal science and welfare foundations with progressively advanced clinical nursing and technical training.",
     "scienceFoundation": [
-      "Biology and general chemistry",
-      "Vertebrate anatomy and physiology",
-      "Veterinary microbiology and clinical laboratory methods",
-      "Pharmacology, parasitology, pathology, and immunology",
-      "Statistics, medical mathematics, and evidence-based clinical reasoning"
+      "Biology, chemistry, statistics, anatomy, and physiology",
+      "Veterinary microbiology, pathology, pharmacology, and parasitology",
+      "Animal welfare and clinical animal behavior or exotic-animal medicine options",
+      "Laboratory methods, diagnostic imaging, and evidence-based clinical decision-making",
+      "Clinical nursing, anesthesia, surgery, emergency care, and patient monitoring"
     ],
     "animalContent": [
-      "Veterinary clinical nursing and patient monitoring",
-      "Large-animal and small-animal clinical skills",
-      "Radiography and diagnostic imaging",
-      "Anesthesia, surgery, dentistry, and post-operative care",
-      "Animal behavior, husbandry, nutrition, preventive care, and public health",
-      "Research-animal management and biomedical-research settings"
+      "Small- and large-animal clinical nursing",
+      "Animal welfare and behavior in clinical care",
+      "Diagnostic imaging, clinical laboratory techniques, anesthesia, and surgery",
+      "Laboratory-animal medicine and management",
+      "Elective exposure to exotic-animal medicine, shelter medicine, emergency care, and conservation/veterinary topics"
     ],
-    "experience": "The first two years combine laboratories, classrooms, and farm/animal experience in Amherst. The final two years move to the dedicated Veterinary Technology facility at the Charles River Campus in Newton for advanced clinical training. UMass states that senior students participate in internships at veterinary clinics and research-animal facilities.",
-    "research": "The bachelor's curriculum explicitly prepares students for work in biomedical research as well as clinical veterinary medicine. Research-animal management is part of the upper-level curriculum, and the broader UMass research environment can support students who want to connect clinical technique with laboratory or translational work.",
+    "experience": "The first two years include laboratory and animal-science work in Amherst. The final two years move to the dedicated Charles River veterinary-technology facilities in Newton for advanced clinical coursework, community veterinary clinic practica, and senior internships at veterinary clinics or research-animal facilities.",
+    "research": "The degree explicitly prepares graduates for veterinary medicine and biomedical-research settings. Senior internships can occur in research-animal facilities, and the curriculum includes laboratory-animal medicine; students interested in research should compare available placements and faculty projects when planning the upper-division years.",
     "progression": [
-      "Year 1: begin biology, chemistry, introductory veterinary technology, and clinical nursing.",
-      "Year 2: deepen anatomy and physiology, microbiology, large-animal nursing, laboratory skills, and statistics while completing the Amherst phase.",
-      "Year 3: move to the Charles River Campus for advanced clinical nursing, pharmacology, imaging, anesthesia, surgery, pathology, parasitology, and specialty-oriented coursework.",
-      "Year 4: complete advanced clinical work, internships in veterinary or research-animal settings, and preparation for the Veterinary Technician National Examination."
+      "Years 1–2 in Amherst: biology and chemistry foundations, introductory and large-animal clinical nursing, anatomy and physiology, animal welfare, microbiology, pathology, and behavior/exotics options.",
+      "Year 3 in Newton: advanced clinical nursing, pharmacology, clinical laboratory techniques, diagnostic imaging, parasitology, anesthesia, surgery, and community-clinic practice.",
+      "Year 4: laboratory-animal medicine, veterinary-medicine problem solving, internships in clinical or research settings, senior seminar, and examination preparation.",
+      "Across all four years: build a documented clinical skill set while testing whether companion-animal, emergency, research, exotic, zoo, or another technical setting is the best fit."
     ],
-    "resume": "B.S. in Veterinary Technology from an AVMA-accredited program; clinical nursing, anesthesia and surgery support, diagnostic imaging, laboratory methods, anatomy and physiology, pharmacology, microbiology, animal behavior and husbandry, internship experience, and eligibility to pursue veterinary-technician credentialing after the VTNE.",
+    "resume": "B.S. in Veterinary Technology; accredited professional preparation; clinical nursing; anesthesia and surgery; imaging; laboratory methods; animal welfare; patient monitoring; internships; eligibility for the national veterinary-technician examination.",
     "advantages": [
-      "One of the clearest direct pathways in the current comparison for hands-on animal health work without making the DVM the default goal.",
-      "Combines a full bachelor's science foundation with extensive clinical and technical preparation.",
-      "UMass lists career settings that include companion-animal hospitals, farm and equine practice, biotechnology, diagnostic laboratories, zoos, aquariums, exotics, and specialty practice.",
-      "The first two years overlap enough with UMass Animal Science and Pre-Veterinary study that early redirection is possible with planning."
+      "A direct professional degree rather than a general pre-veterinary pathway.",
+      "The curriculum explicitly includes animal welfare and offers behavior/exotic-animal options alongside clinical training.",
+      "The Amherst-to-Newton structure places advanced years near Boston-area clinical and research settings."
     ],
     "tradeoffs": [
-      "Students relocate from Amherst to Newton for the final two years, so the four-year experience is split across two campuses.",
-      "This pathway prepares for the veterinary-technician/technologist profession, not independent veterinary practice; students whose goal becomes a DVM should follow the veterinary-school prerequisite route instead.",
-      "Zoo, aquarium, wildlife, and exotic positions are specialized and competitive; the degree provides the clinical foundation but does not guarantee those settings."
+      "The required move from Amherst to Newton after sophomore year is a major structural consideration.",
+      "The core curriculum serves veterinary technology broadly; zoo and exotic work would still require deliberate electives, internships, or later specialization.",
+      "The program includes large-animal and laboratory-animal material in addition to companion-animal care."
     ],
-    "bestWhen": "Especially relevant when the student wants substantial direct animal contact and medical skill, likes physiology and health, and is drawn to clinical nursing, diagnostics, anesthesia, surgery support, or eventual zoo/exotic veterinary-technology work.",
+    "bestWhen": "Especially relevant when hands-on animal health care, physiology, technical skill, and patient contact are appealing, but becoming a veterinarian is not assumed to be the goal.",
     "experienceTags": [
       "veterinary technology",
       "animal care",
-      "animal health",
-      "clinical nursing",
+      "clinical",
+      "animal welfare",
       "laboratory",
-      "anesthesia",
-      "surgery",
-      "research",
-      "zoo/exotics"
+      "internship",
+      "exotics"
     ],
     "competencies": [
       {
-        "id": "comp_clinical_nursing",
-        "name": "Veterinary clinical nursing",
+        "id": "comp_health",
+        "name": "Animal health & disease",
         "category": "Animal health",
-        "description": "Hands-on patient care, monitoring, treatment support, records, and communication within the veterinary team.",
+        "description": "Health assessment, disease processes, pathology, microbiology, and clinical care.",
         "strength": 3
       },
       {
-        "id": "comp_anesthesia",
-        "name": "Anesthesia & surgical support",
-        "category": "Animal health",
-        "description": "Patient preparation, anesthetic monitoring, sterile technique, surgical assistance, and recovery care.",
+        "id": "comp_husbandry",
+        "name": "Animal handling & nursing",
+        "category": "Applied animal care",
+        "description": "Restraint, patient nursing, husbandry, treatment support, and monitoring.",
         "strength": 3
       },
       {
-        "id": "comp_diagnostics",
-        "name": "Diagnostics & imaging",
-        "category": "Animal health",
-        "description": "Laboratory procedures, sample handling, radiography, imaging support, and quality control.",
-        "strength": 3
+        "id": "comp_welfare",
+        "name": "Animal welfare",
+        "category": "Behavior & welfare",
+        "description": "Welfare science and its application to clinical care and handling.",
+        "strength": 2.7
       },
       {
         "id": "comp_physiology",
         "name": "Animal physiology",
         "category": "Biological mechanisms",
-        "description": "Anatomy, organ systems, disease processes, pharmacology, and functional biology.",
-        "strength": 2.8
-      },
-      {
-        "id": "comp_husbandry",
-        "name": "Animal handling & husbandry",
-        "category": "Applied animal care",
-        "description": "Safe handling, nursing husbandry, preventive care, nutrition, sanitation, and species-appropriate management.",
+        "description": "Anatomy, organ systems, pharmacology, and physiologic monitoring.",
         "strength": 2.8
       },
       {
         "id": "comp_behavior_obs",
         "name": "Behavioral observation",
         "category": "Behavior & welfare",
-        "description": "Recognizing stress, pain, behavioral change, and handling needs during clinical care.",
-        "strength": 2.4
+        "description": "Reading behavior in handling, stress, clinical assessment, and optional clinical-behavior study.",
+        "strength": 2.1
       },
       {
         "id": "comp_research",
-        "name": "Biomedical research support",
+        "name": "Research / laboratory animal preparation",
         "category": "Methods",
-        "description": "Research-animal management, laboratory procedures, records, and technical work in biomedical settings.",
+        "description": "Laboratory methods, research-animal medicine, and internship options.",
+        "strength": 2.2
+      }
+    ],
+    "sources": [
+      "https://www.umass.edu/natural-sciences/academics/bs-vet-tech",
+      "https://www.umass.edu/veterinary-animal-sciences/veterinary-technology-major",
+      "https://www.umass.edu/charles-river/veterinary-technology"
+    ]
+  },
+  {
+    "code": "UNH-ZOO",
+    "collection": "current",
+    "title": "Zoology B.S.",
+    "school": "University of New Hampshire",
+    "type": "Zoology and animal biology",
+    "scale": "Public research university · Durham, New Hampshire",
+    "lastVerified": "2026-10-21",
+    "overview": "UNH's Zoology B.S. provides in-depth training in animal biology and ecological systems, with laboratory and field experience in physiology, genetics, evolution, and related areas. After a common biology core, students can use upper-level work to concentrate in areas such as behavior, physiology, cell and developmental biology, ecology, evolution, fisheries, neurobiology, or marine and freshwater biology.",
+    "fundamental": "A broad, research-oriented zoology degree that keeps animal biology central while leaving room to move toward behavior, physiology, conservation, or other organismal specialties.",
+    "scienceFoundation": [
+      "Biology, chemistry, physics, mathematics, and quantitative science",
+      "Evolution, genetics, ecology, and organismal biology",
+      "Physiology, neurobiology, cell biology, and developmental biology options",
+      "Laboratory and field research methods",
+      "Scientific writing, analysis, and independent research"
+    ],
+    "animalContent": [
+      "Animal biology from molecular mechanisms through whole organisms and populations",
+      "Behavior and neurobiology options",
+      "Physiology and comparative organismal biology",
+      "Fisheries, freshwater, estuarine, and marine animal systems among available specialties",
+      "Field- or laboratory-based undergraduate research"
+    ],
+    "experience": "UNH emphasizes hands-on learning and direct undergraduate participation in research. Zoology students can pursue field or laboratory projects and have access to biological research facilities across terrestrial, freshwater, estuarine, marine, physiology, aquaculture, and behavioral areas.",
+    "research": "Research is a defining strength of the degree. The program encourages undergraduates to conduct field- or laboratory-based research and use advanced electives and faculty mentorship to determine later specialization.",
+    "progression": [
+      "Year 1: biology and chemistry foundations plus an introduction to zoology as a discipline.",
+      "Year 2: complete core biological and physical-science requirements and begin identifying an animal-biology specialty.",
+      "Year 3: choose advanced work in areas such as behavior, physiology, evolution, ecology, development, neurobiology, or fisheries and seek a faculty research experience.",
+      "Year 4: deepen the chosen specialty through upper-level electives, independent research, and preparation for employment or graduate study."
+    ],
+    "resume": "B.S. in Zoology; broad animal biology; physiology/genetics/evolution foundation; field and laboratory research; advanced animal-focused electives; potential independent research.",
+    "advantages": [
+      "The degree title and curriculum keep animals central while remaining scientifically broad.",
+      "Behavior, physiology, neurobiology, ecology, and other specialties can be explored without changing majors.",
+      "Undergraduate research is explicitly encouraged in both laboratory and field settings."
+    ],
+    "tradeoffs": [
+      "This is not a professional animal-care or veterinary-technology program.",
+      "Direct husbandry, zoo-management, and welfare training are not the organizing core of the major and would need to be added through electives or external experience.",
+      "The flexibility of the upper-level curriculum makes careful course selection important."
+    ],
+    "bestWhen": "Especially relevant when animal biology is the intellectual center and behavior or physiology are strong interests, but the student wants to keep several scientific directions open.",
+    "experienceTags": [
+      "animal biology",
+      "zoology",
+      "research",
+      "fieldwork",
+      "laboratory",
+      "behavior",
+      "physiology"
+    ],
+    "competencies": [
+      {
+        "id": "comp_physiology",
+        "name": "Animal physiology",
+        "category": "Biological mechanisms",
+        "description": "Organismal and comparative physiology through advanced zoology electives.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_behavior_obs",
+        "name": "Animal behavior",
+        "category": "Behavior & welfare",
+        "description": "Behavior and neurobiology can be developed as upper-level specialties.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_research",
+        "name": "Research design",
+        "category": "Methods",
+        "description": "Field- and laboratory-based undergraduate research and independent study.",
+        "strength": 2.8
+      },
+      {
+        "id": "comp_ecology",
+        "name": "Ecology",
+        "category": "Wildlife science",
+        "description": "Ecological systems and population-level biology within the zoology curriculum.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_stats",
+        "name": "Quantitative analysis",
+        "category": "Methods",
+        "description": "Scientific measurement and analysis supporting laboratory and field research.",
+        "strength": 2.2
+      },
+      {
+        "id": "comp_writing",
+        "name": "Scientific communication",
+        "category": "Professional",
+        "description": "Research writing, interpretation, and presentation.",
         "strength": 2.3
       }
     ],
     "sources": [
-      "https://www.umass.edu/veterinary-animal-sciences/veterinary-technology-major",
-      "https://www.umass.edu/natural-sciences/academics/bs-vet-tech",
-      "https://www.umass.edu/charles-river/academics/veterinary-technology"
+      "https://www.unh.edu/program/bachelor-science/zoology",
+      "https://catalog.unh.edu/undergraduate/life-sciences-agriculture/programs-study/zoology/"
+    ]
+  },
+  {
+    "code": "DELVAL-ZOO",
+    "collection": "current",
+    "title": "Zoo Science B.S.",
+    "school": "Delaware Valley University",
+    "type": "Zoo science and managed animal care",
+    "scale": "Small private university · Doylestown, Pennsylvania",
+    "lastVerified": "2026-10-21",
+    "overview": "Delaware Valley University's Zoo Science B.S. is an unusually direct undergraduate route into zoo and aquarium work. The university states that students work with animals beginning in the first year and study zoo and aquarium management, captive-wildlife conservation, husbandry, handling, nutrition, disease, behavior, training, exhibit design, and small-population management. Required Experience360 work adds internships and other real-world learning.",
+    "fundamental": "A specialized, hands-on zoo-science degree that integrates husbandry, behavior, health, conservation, and professional zoo/aquarium practice.",
+    "scienceFoundation": [
+      "General biology and organismal science",
+      "Ecology, animal behavior, and captive-wildlife conservation",
+      "Wildlife nutrition, health, and disease",
+      "Animal management and small-population principles",
+      "Applied observation, recordkeeping, and professional practice"
+    ],
+    "animalContent": [
+      "Zoo animal husbandry and handling",
+      "Animal training and enrichment",
+      "Zoo and aquarium management",
+      "Wildlife nutrition, health, disease, mammalogy, ornithology, and herpetology",
+      "Exhibit design, record systems, and captive-population management"
+    ],
+    "experience": "DelVal says Zoo Science students begin working with animals in the first year. The required Experience360 program includes real-world experience and internships, including animal-care and public-education settings, with access to regional zoo, aquarium, natural-science, and wildlife organizations.",
+    "research": "Experience360 includes opportunities for student research in addition to internships. Students interested in research-intensive graduate study should compare the exact faculty projects, statistics sequence, and independent-research options available during their enrollment.",
+    "progression": [
+      "Year 1: begin biological science and early animal contact while learning the foundations of zoo science.",
+      "Year 2: add behavior, husbandry, handling, nutrition, ecology, and animal-health coursework.",
+      "Year 3: deepen zoo and aquarium management, training/enrichment, recordkeeping, and taxon-focused study while building Experience360 placements.",
+      "Year 4: complete advanced professional work and substantial internships, using the experience to clarify keeper, behavior, welfare, management, education, or graduate-school goals."
+    ],
+    "resume": "B.S. in Zoo Science; direct animal work; husbandry; behavior and training; enrichment; wildlife nutrition and health; zoo/aquarium management; internships through Experience360.",
+    "advantages": [
+      "The degree directly teaches zoo science rather than requiring students to assemble it from unrelated electives.",
+      "Hands-on animal work begins early and continues through required experiential learning.",
+      "Behavior, training, enrichment, husbandry, health, and zoo management appear together in one curriculum."
+    ],
+    "tradeoffs": [
+      "A specialized zoo-science degree is less broad than a general biology or zoology degree if interests later move away from managed animals.",
+      "The wider university has strong agricultural programs, so students should distinguish the Zoo Science curriculum from other animal/agriculture offerings.",
+      "Zoo and aquarium careers remain experience-intensive and competitive even with a directly relevant degree."
+    ],
+    "bestWhen": "Especially relevant when zoo/exotic animal care, husbandry, behavior, enrichment, and hands-on experience are already among the strongest interests.",
+    "experienceTags": [
+      "zoo",
+      "hands-on animals",
+      "husbandry",
+      "behavior",
+      "training",
+      "enrichment",
+      "internship"
+    ],
+    "competencies": [
+      {
+        "id": "comp_husbandry",
+        "name": "Animal husbandry",
+        "category": "Applied animal care",
+        "description": "Daily care, handling, nutrition, records, and managed-animal practice.",
+        "strength": 3
+      },
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Animal behavior applied to care, training, enrichment, and management.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_learning",
+        "name": "Learning & training",
+        "category": "Behavior & welfare",
+        "description": "Training and enrichment in managed-animal settings.",
+        "strength": 2.7
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Welfare-related preparation",
+        "category": "Behavior & welfare",
+        "description": "Behavior, enrichment, health, and husbandry foundations relevant to welfare.",
+        "strength": 2.4
+      },
+      {
+        "id": "comp_health",
+        "name": "Wildlife health & disease",
+        "category": "Animal health",
+        "description": "Nutrition, health, disease, and managed-population care.",
+        "strength": 2.4
+      },
+      {
+        "id": "comp_conservation",
+        "name": "Captive-wildlife conservation",
+        "category": "Applied conservation",
+        "description": "Conservation and small-population management within zoo settings.",
+        "strength": 2.3
+      }
+    ],
+    "sources": [
+      "https://delval.edu/programs/undergraduate-majors/zoo-science-bs"
+    ]
+  },
+  {
+    "code": "UMA-BGR-VT",
+    "collection": "current",
+    "title": "Veterinary Technology A.S. / B.S. — Bangor",
+    "school": "University of Maine at Augusta",
+    "type": "Veterinary technology",
+    "scale": "Public university · Bangor, Maine",
+    "lastVerified": "2026-10-21",
+    "overview": "The University of Maine at Augusta offers both associate and bachelor's degrees in Veterinary Technology at its Bangor campus. UMA describes the program as fully accredited and emphasizes extensive theory, hands-on technical skills, laboratory experience, animal care, and welfare. The associate degree prepares graduates for licensed veterinary-technician work; the bachelor's degree adds depth for areas such as management and research.",
+    "fundamental": "A Bangor-based veterinary-technology pathway with both associate and bachelor's options and a strong emphasis on practical technical skill and laboratory training.",
+    "scienceFoundation": [
+      "Anatomy, physiology, and animal-health foundations",
+      "Clinical laboratory methods and technical procedures",
+      "Veterinary nursing and patient-care principles",
+      "Animal-care, welfare, and professional practice",
+      "Additional upper-level preparation in the bachelor's pathway"
+    ],
+    "animalContent": [
+      "Hands-on veterinary technical skills",
+      "Clinical patient care and animal handling",
+      "Laboratory procedures and veterinary support",
+      "Animal welfare and professional standards",
+      "Bachelor's-level extension for management, research, or continued study"
+    ],
+    "experience": "UMA emphasizes hands-on technical skills and laboratory experience in onsite Bangor facilities, allowing students to practice procedures in a consistent instructional environment.",
+    "research": "The bachelor's degree is presented as adding a competitive edge for students interested in veterinary-business management, research, or further education. Prospective students should ask about current faculty projects, external placements, and species-specific opportunities.",
+    "progression": [
+      "Early study: build anatomy, physiology, animal-care, and foundational veterinary-technology skills.",
+      "Associate-level progression: develop the technical competencies needed for entry into licensed veterinary-technician practice.",
+      "Bachelor's-level progression: add upper-level coursework and broader preparation for management, research, or specialized roles.",
+      "Throughout: document hands-on competencies and use clinical experiences to identify preferred species and work settings."
+    ],
+    "resume": "A.S. and/or B.S. in Veterinary Technology; hands-on technical training; laboratory experience; animal care and welfare; professional preparation for veterinary-technician practice.",
+    "advantages": [
+      "Both associate and bachelor's pathways are available within the same Bangor program.",
+      "The program explicitly emphasizes hands-on technical training and laboratory experience.",
+      "The bachelor's option allows continued study without leaving the veterinary-technology pathway."
+    ],
+    "tradeoffs": [
+      "Students should compare the exact associate-versus-bachelor sequence and credentialing milestones before choosing the four-year route.",
+      "The public program information emphasizes veterinary technology broadly rather than a dedicated zoo/exotic specialization.",
+      "Students interested in zoo or wildlife medicine would still need to seek species-relevant placements and experiences."
+    ],
+    "bestWhen": "Especially relevant when veterinary technology is a serious possibility and a Maine-based, hands-on program with both two- and four-year options is attractive.",
+    "experienceTags": [
+      "veterinary technology",
+      "hands-on animals",
+      "laboratory",
+      "animal welfare",
+      "clinical"
+    ],
+    "competencies": [
+      {
+        "id": "comp_health",
+        "name": "Animal health & disease",
+        "category": "Animal health",
+        "description": "Veterinary nursing and health-care foundations.",
+        "strength": 3
+      },
+      {
+        "id": "comp_husbandry",
+        "name": "Animal handling & care",
+        "category": "Applied animal care",
+        "description": "Hands-on technical and patient-care skill development.",
+        "strength": 3
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Animal welfare",
+        "category": "Behavior & welfare",
+        "description": "Humane care and welfare within veterinary practice.",
+        "strength": 2.4
+      },
+      {
+        "id": "comp_physiology",
+        "name": "Anatomy & physiology",
+        "category": "Biological mechanisms",
+        "description": "Biological foundation for technical and clinical care.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_research",
+        "name": "Research preparation",
+        "category": "Methods",
+        "description": "Bachelor's-level pathway can support research-oriented veterinary-technology work.",
+        "strength": 1.8
+      }
+    ],
+    "sources": [
+      "https://www.uma.edu/academics/programs/veterinary-technology/",
+      "https://www.uma.edu/academics/programs/veterinary-technology/overview/",
+      "https://www.uma.edu/academics/programs/veterinary-technology/details/"
+    ]
+  },
+  {
+    "code": "CANTON-VT",
+    "collection": "current",
+    "title": "Veterinary Technology B.S.",
+    "school": "SUNY Canton",
+    "type": "Veterinary technology",
+    "scale": "Public technology college · Canton, New York",
+    "lastVerified": "2026-10-21",
+    "overview": "SUNY Canton's Veterinary Technology B.S. builds on and complements its Veterinary Science Technology A.A.S. curriculum. The associate program has been accredited by the American Veterinary Medical Association since 1978, and the B.S. includes the specific coursework required in that associate curriculum plus upper-division science and applied electives. Students work with companion animals, farm animals, and common laboratory animals and can become eligible for the national veterinary-technician examination after meeting the A.A.S. requirements.",
+    "fundamental": "A four-year veterinary-technology route built on an established accredited associate curriculum, adding advanced technical and upper-division study.",
+    "scienceFoundation": [
+      "Associate-level veterinary science technology core",
+      "Anatomy, physiology, clinical laboratory, and animal-health science",
+      "Advanced technical training above entry-level technician requirements",
+      "Upper-division science and applied electives",
+      "Professional and supervisory preparation"
+    ],
+    "animalContent": [
+      "Companion-animal veterinary technology",
+      "Equine and food/fiber animal experience",
+      "Common laboratory-animal species",
+      "Clinical preceptorships and kennel-care responsibilities within the associate curriculum",
+      "Potential career preparation for zoo/wildlife medicine among broader veterinary settings"
+    ],
+    "experience": "The accredited A.A.S. curriculum combines small laboratory sections, extensive hands-on work, kennel-duty rotations, and two clinical preceptorships. The B.S. builds on that foundation with advanced technical and upper-division coursework.",
+    "research": "The program lists biomedical research, diagnostic laboratories, educational institutions, and zoo/wildlife medicine among potential employment settings. Students interested in research should examine current electives and project opportunities in the bachelor's years.",
+    "progression": [
+      "Years 1–2: complete the veterinary science technology core, hands-on laboratories, animal-care duties, and preceptorship experiences.",
+      "Credentialing milestone: once A.A.S. requirements are met, students can become eligible for the national veterinary-technician examination.",
+      "Years 3–4: add advanced technical training, upper-division sciences, and applied electives within the B.S.",
+      "Use later coursework and placements to test clinical, research, laboratory-animal, zoo/wildlife, supervisory, or other technical directions."
+    ],
+    "resume": "Veterinary Technology B.S. built on an accredited Veterinary Science Technology A.A.S.; companion, farm, and laboratory-animal experience; preceptorships; advanced technical study.",
+    "advantages": [
+      "The B.S. is integrated with a long-established accredited associate veterinary-technology curriculum.",
+      "Students gain experience with several animal types rather than only companion animals.",
+      "The four-year route allows advanced technical and supervisory preparation while preserving the technician credential pathway."
+    ],
+    "tradeoffs": [
+      "The program includes farm and laboratory animals as well as companion species; students seeking only zoo/exotic work should evaluate that species mix carefully.",
+      "The A.A.S. is the specifically documented accredited program; the B.S. builds on and includes that curriculum rather than being described here as a separately accredited program.",
+      "Zoo/wildlife medicine is a possible work setting, not a dedicated undergraduate specialization."
+    ],
+    "bestWhen": "Especially relevant when a four-year veterinary-technology degree is appealing and broad hands-on exposure across companion, farm, and laboratory animals is acceptable.",
+    "experienceTags": [
+      "veterinary technology",
+      "hands-on animals",
+      "clinical",
+      "preceptorship",
+      "laboratory animals"
+    ],
+    "competencies": [
+      {
+        "id": "comp_health",
+        "name": "Animal health & disease",
+        "category": "Animal health",
+        "description": "Veterinary technical and clinical preparation.",
+        "strength": 3
+      },
+      {
+        "id": "comp_husbandry",
+        "name": "Animal handling & care",
+        "category": "Applied animal care",
+        "description": "Hands-on work across companion, farm, and laboratory species.",
+        "strength": 3
+      },
+      {
+        "id": "comp_physiology",
+        "name": "Anatomy & physiology",
+        "category": "Biological mechanisms",
+        "description": "Core biological foundation for veterinary technology.",
+        "strength": 2.5
+      },
+      {
+        "id": "comp_research",
+        "name": "Biomedical / laboratory setting preparation",
+        "category": "Methods",
+        "description": "Laboratory-animal and research-sector relevance within the program.",
+        "strength": 2
+      },
+      {
+        "id": "comp_welfare",
+        "name": "Welfare-related care",
+        "category": "Behavior & welfare",
+        "description": "Humane patient care and husbandry within clinical training.",
+        "strength": 1.8
+      }
+    ],
+    "sources": [
+      "https://canton.edu/sci_health/vet/",
+      "https://canton.edu/sci_health/vet/description.html",
+      "https://canton.edu/sci_health/vet_tech/"
+    ]
+  },
+  {
+    "code": "DELHI-VT",
+    "collection": "current",
+    "title": "Veterinary Science Technology A.A.S. → Veterinary Technology B.S.",
+    "school": "SUNY Delhi",
+    "type": "Veterinary technology",
+    "scale": "Public technology college · Delhi, New York",
+    "lastVerified": "2026-10-21",
+    "overview": "SUNY Delhi offers a two-stage veterinary-technology path: the accredited Veterinary Science Technology A.A.S., followed by a Veterinary Technology B.S. for qualified students who have completed an accredited associate degree and are license-eligible or credentialed. The A.A.S. emphasizes live-animal work from the first semester, anatomy and physiology, anesthesia, surgical and dental assistance, medical care, laboratory work, and experience with companion, farm, and laboratory animals. The B.S. adds advanced veterinary technology, science, management, and focus options in advanced clinical techniques, laboratory-animal science, or public health.",
+    "fundamental": "An intensive hands-on associate veterinary-technology foundation followed by an optional bachelor's continuation for advanced clinical, laboratory-animal, public-health, or supervisory preparation.",
+    "scienceFoundation": [
+      "Animal anatomy and physiology",
+      "Clinical laboratory, anesthesia, dental, surgical, and medical-care techniques",
+      "Veterinary nursing and technical practice",
+      "Advanced science and management in the bachelor's continuation",
+      "Optional advanced focus in clinical techniques, laboratory-animal science, or public health"
+    ],
+    "animalContent": [
+      "Live-animal laboratories beginning in the first semester",
+      "Companion, farm, and laboratory-animal experience",
+      "Anesthesia, medical care, surgery and dentistry support, and diagnostic imaging",
+      "Animal behavior exposure within the veterinary science curriculum",
+      "Advanced clinical or laboratory-animal options at the bachelor's level"
+    ],
+    "experience": "SUNY Delhi emphasizes immediate and repeated live-animal laboratory work. Facilities include surgical and diagnostic-imaging suites, a clinical teaching space, laboratory-animal facilities, and a large-animal teaching farm. The associate program also supports preceptorship and internship-style professional experience.",
+    "research": "The bachelor's curriculum offers a laboratory-animal science focus, and the wider veterinary-science program prepares students for clinical hospitals and research facilities. Students interested in research should compare the available laboratory-animal electives and external placements.",
+    "progression": [
+      "Years 1–2: complete the accredited A.A.S. with live-animal labs, anatomy and physiology, anesthesia, medical care, imaging, and technical skill development.",
+      "Credentialing milestone: A.A.S. graduates are eligible for the national veterinary-technician examination and licensure process.",
+      "Years 3–4: qualified students may continue into the B.S. for advanced veterinary technology, science, management, and a selected emphasis.",
+      "Use the advanced clinical, laboratory-animal, or public-health options to shape the final years toward the preferred work setting."
+    ],
+    "resume": "Accredited Veterinary Science Technology A.A.S. with optional Veterinary Technology B.S. continuation; extensive live-animal work; anesthesia; surgery support; diagnostic imaging; clinical and laboratory-animal preparation.",
+    "advantages": [
+      "Live-animal experience begins in the first semester and continues throughout the associate program.",
+      "The A.A.S. has full American Veterinary Medical Association accreditation, with a clear credentialing route before bachelor's completion.",
+      "The B.S. adds advanced focus choices rather than simply repeating entry-level technician training."
+    ],
+    "tradeoffs": [
+      "Admission to the B.S. requires an accredited veterinary-technology associate degree plus academic and license-eligibility requirements; it is not simply four undifferentiated years from freshman entry.",
+      "The program's animal mix includes farm and laboratory animals, so students should be comfortable with a broad veterinary curriculum.",
+      "Zoo/exotic medicine is not the organizing emphasis of the degree and would need to be pursued through placements or later specialization."
+    ],
+    "bestWhen": "Especially relevant when very early hands-on veterinary training is appealing and the student likes the option to earn the technician credential after an associate degree before continuing into advanced bachelor's work.",
+    "experienceTags": [
+      "veterinary technology",
+      "hands-on animals",
+      "clinical",
+      "laboratory animals",
+      "large animals",
+      "advanced clinical"
+    ],
+    "competencies": [
+      {
+        "id": "comp_health",
+        "name": "Animal health & disease",
+        "category": "Animal health",
+        "description": "Clinical veterinary technology, medical care, and patient support.",
+        "strength": 3
+      },
+      {
+        "id": "comp_husbandry",
+        "name": "Animal handling & care",
+        "category": "Applied animal care",
+        "description": "Extensive live-animal work across multiple species.",
+        "strength": 3
+      },
+      {
+        "id": "comp_physiology",
+        "name": "Anatomy & physiology",
+        "category": "Biological mechanisms",
+        "description": "Strong biological foundation for clinical practice.",
+        "strength": 2.6
+      },
+      {
+        "id": "comp_research",
+        "name": "Laboratory-animal preparation",
+        "category": "Methods",
+        "description": "Dedicated laboratory-animal facilities and a bachelor's focus option.",
+        "strength": 2.3
+      },
+      {
+        "id": "comp_behavior_obs",
+        "name": "Behavioral observation",
+        "category": "Behavior & welfare",
+        "description": "Behavior coursework and applied observation within clinical animal care.",
+        "strength": 1.8
+      }
+    ],
+    "sources": [
+      "https://www.delhi.edu/academics/majors-programs/associates/veterinary-science/",
+      "https://www.delhi.edu/academics/majors-programs/bachelors/veterinary-technology/index.php",
+      "https://www.delhi.edu/about/institutional-effectiveness/accreditation/"
     ]
   }
 ]

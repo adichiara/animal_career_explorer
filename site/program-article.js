@@ -5,6 +5,7 @@
   const code = new URLSearchParams(location.search).get('code');
   let programs = [];
   let libraryPrograms = [];
+  let programPhotos = {};
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -26,21 +27,8 @@
   function preparationSummary(program) {
     const competencies = (program.competencies || []).filter(item => item && item.name && item.description);
     const strong = competencies.filter(item => Number(item.strength) >= 2.4);
-    const lessDepth = competencies.filter(item => Number(item.strength) < 2.4);
-
-    const itemList = items => items.length
-      ? `<ul class="narrative-list compact">${items.map(item => `<li><p><strong>${esc(item.name)}:</strong> ${esc(item.description)}</p></li>`).join('')}</ul>`
-      : '';
-
-    const strongHtml = strong.length
-      ? `<div><h3 class="group-heading first">Skills students should build strongly</h3>${itemList(strong)}</div>`
-      : '<div><h3 class="group-heading first">Skills students should build strongly</h3><p>No specific preparation strengths are documented for this program.</p></div>';
-
-    const gapHtml = lessDepth.length
-      ? `<div><h3 class="group-heading first">Important field skills that may need additional coursework or experience</h3>${itemList(lessDepth)}</div>`
-      : '<div><h3 class="group-heading first">Skills that may need additional coursework or experience</h3><p>No clear gap is identified among the undergraduate skills documented for this program.</p></div>';
-
-    return `<div class="article-columns preparation-summary">${strongHtml}${gapHtml}</div>`;
+    if (!strong.length) return '<p>No specific undergraduate preparation strengths are documented for this program.</p>';
+    return `<div class="preparation-summary"><h3 class="group-heading first">Skills students should build strongly</h3><ul class="narrative-list compact">${strong.map(item => `<li><p><strong>${esc(item.name)}:</strong> ${esc(item.description)}</p></li>`).join('')}</ul></div>`;
   }
   async function fetchJson(path) {
     const response = await fetch(path, { cache: 'no-store' });
@@ -51,16 +39,19 @@
     const focused = (D.programs || []).map(program => ({ ...program, collection: program.collection || 'focused' }));
     let additions = [];
     let library = { programs: [] };
+    let photoManifest = { photos: {} };
     try {
-      [additions, library] = await Promise.all([
+      [additions, library, photoManifest] = await Promise.all([
         fetchJson('content/programs/additional-programs.json'),
-        fetchJson('content/programs/school-library.json')
+        fetchJson('content/programs/school-library.json'),
+        fetchJson('content/programs/photos.json')
       ]);
     } catch (error) {
       console.error('Unable to load one or more college-program support files:', error);
     }
     if (!Array.isArray(additions)) additions = [];
     if (!library || !Array.isArray(library.programs)) library = { programs: [] };
+    programPhotos = photoManifest && photoManifest.photos ? photoManifest.photos : {};
 
     const detailMap = new Map();
     [...focused, ...additions].forEach(program => {
@@ -86,18 +77,23 @@
     const tags = (program.tags || []).length
       ? `<div class="program-tag-list" aria-label="Program topics">${program.tags.map(tag => `<span>${esc(tag)}</span>`).join('')}</div>`
       : '';
+    const photo = programPhotos[program.code];
+    const photoHtml = photo ? `<figure><img src="${esc(photo.url)}" alt="${esc(photo.alt || '')}" width="1200" height="675" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit || schoolName)}</a></figcaption></figure>` : '';
     document.title = `${program.title} | Animal Education Pathways`;
     document.querySelector('meta[name="description"]').setAttribute('content', program.fundamental || program.overview);
     app.innerHTML = `<article class="field-article program-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(schoolName)}</span></nav>
-      <header class="article-hero text-hero">
-        <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
-        <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
-          <div><dt>School</dt><dd>${esc(schoolName)}</dd></div>
-          <div><dt>Program type</dt><dd>${esc(program.type)}</dd></div>
-          <div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div>
-          <div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
-        </dl></aside>
+      <header class="article-hero program-photo-hero">
+        <div class="program-hero-copy-wrap">
+          <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
+          <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
+            <div><dt>School</dt><dd>${esc(schoolName)}</dd></div>
+            <div><dt>Program type</dt><dd>${esc(program.type)}</dd></div>
+            <div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div>
+            <div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
+          </dl></aside>
+        </div>
+        ${photoHtml}
       </header>
       <div class="article-body">
         <aside class="article-toc" aria-labelledby="tocTitle"><p id="tocTitle" class="mini-label">In this guide</p><ol>

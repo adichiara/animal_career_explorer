@@ -368,6 +368,10 @@ UMA_VT_PROGRAM = {
 
 
 def replace_once(text, old, new, label):
+    # Python preserves the backslashes used below to make JS template literals readable.
+    # Strip only those two presentation escapes before matching/writing JavaScript.
+    old = old.replace("\\`", "`").replace("\\$", "$")
+    new = new.replace("\\`", "`").replace("\\$", "$")
     count = text.count(old)
     if count != 1:
         raise RuntimeError(f"{label}: expected 1 match, got {count}")

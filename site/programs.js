@@ -23,7 +23,7 @@
       programs = [...focused, ...additions.filter(program => program && program.code && !codes.has(program.code))];
     } catch (error) {
       programs = focused;
-      loadWarning = 'The additional-program file could not be loaded. The focused comparison is still available.';
+      loadWarning = 'The additional-program file could not be loaded. The original program set is still available.';
       console.error('Unable to load additional college programs:', error);
     }
   }

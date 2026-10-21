@@ -18,10 +18,22 @@
     if (school === 'SUNY Delhi') return 'SUNY Delhi (Delhi Campus)';
     return school;
   }
+  const newEnglandSchools = new Set([
+    'University of Maine',
+    'University of Maine at Augusta',
+    'UMass Amherst',
+    'University of Massachusetts Amherst',
+    'University of New England',
+    'University of Rhode Island',
+    'University of New Hampshire',
+    'Unity Environmental University'
+  ]);
+  function regionFor(program) {
+    return newEnglandSchools.has(String(program && program.school || '')) ? 'New England' : 'Outside New England';
+  }
   function searchableText(program) {
     return [
       displaySchool(program), program.school, program.title, program.type, program.scale, program.fundamental,
-      program.whyExplore, program.lookFirst,
       ...(program.tags || []), ...(program.scienceFoundation || []),
       ...(program.animalContent || []), ...(program.experienceTags || [])
     ].join(' ').toLowerCase();
@@ -72,7 +84,7 @@
       <span class="guide-count">${String(programs.indexOf(program) + 1).padStart(2, '0')}</span>
       <span class="guide-copy">
         <strong>${esc(program.title)}</strong>
-        <span>${esc(program.whyExplore || program.fundamental)}</span>
+        <span>${esc(program.fundamental || '')}</span>
         ${tags}
         <span class="index-meta">${esc(program.type)} · ${esc(program.scale)}</span>
       </span>
@@ -81,23 +93,30 @@
   }
   function render(query) {
     const q = String(query || '').trim().toLowerCase();
-    const matches = programs.filter(program => !q || searchableText(program).includes(q));
-    const schools = [...new Set(matches.map(displaySchool))];
+    const matches = programs
+      .filter(program => !q || searchableText(program).includes(q))
+      .sort((a, b) => displaySchool(a).localeCompare(displaySchool(b)) || a.title.localeCompare(b.title));
+
+    const renderRegion = (title, items) => {
+      if (!items.length) return '';
+      const schools = [...new Set(items.map(displaySchool))].sort((a, b) => a.localeCompare(b));
+      return `<section class="program-region"><div class="section-heading"><h2>${esc(title)}</h2></div>${schools.map(school => `<section class="index-group">
+        <h3>${esc(school)}</h3>
+        <div class="guide-list">${items.filter(program => displaySchool(program) === school).map(renderProgram).join('')}</div>
+      </section>`).join('')}</section>`;
+    };
+
+    const newEngland = matches.filter(program => regionFor(program) === 'New England');
+    const outside = matches.filter(program => regionFor(program) === 'Outside New England');
+
     app.innerHTML = `<div class="index-page">
       <header class="index-hero">
-        <p class="eyebrow">Browse, don't rank</p>
         <h1>School &amp; Program Library</h1>
-        <p>These are programs worth examining because they connect directly to the current animal-focused fields. A school can appear through more than one pathway, and no single field or program is treated as the winner.</p>
         <label class="guide-search" for="programSearch"><span>Find a school, program, or interest</span><input id="programSearch" type="search" placeholder="Try behavior, welfare, vet tech, zoo…" value="${esc(query || '')}"></label>
         ${loadWarning ? `<p class="load-warning" role="status">${esc(loadWarning)}</p>` : ''}
       </header>
-      <section class="guide-index" aria-labelledby="programIndexTitle">
-        <div class="section-heading"><p class="section-number">Current exploration set</p><h2 id="programIndexTitle">Choose a school or pathway to examine</h2></div>
-        ${matches.length ? `<div class="collection-heading library-note"><p class="eyebrow">How inclusion works</p><p>Programs enter this library through evidence of strength in the current school-fit fields: animal biology, zoology, wildlife biology, animal behavior, animal welfare science, non-agricultural animal science, zoo/aquarium science or managed animal care, and veterinary technology. Other field guides remain useful context but do not qualify a school by themselves.</p></div>` : ''}
-        ${matches.length ? schools.map((school, schoolIndex) => `<section class="index-group">
-          <h3>${esc(school)}</h3>
-          <div class="guide-list">${matches.filter(program => displaySchool(program) === school).map(renderProgram).join('')}</div>
-        </section>`).join('') : '<p class="empty">No college programs match that search.</p>'}
+      <section class="guide-index" aria-label="School and program library">
+        ${matches.length ? renderRegion('New England', newEngland) + renderRegion('Outside New England', outside) : '<p class="empty">No college programs match that search.</p>'}
       </section>
     </div>`;
     const search = document.getElementById('programSearch');
@@ -107,6 +126,7 @@
       search.setSelectionRange(search.value.length, search.value.length);
     }
   }
+
   const menuButton = document.getElementById('menuButton');
   const nav = document.getElementById('primaryNav');
   menuButton.addEventListener('click', () => {

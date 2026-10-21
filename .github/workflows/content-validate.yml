@@ -40,6 +40,11 @@ jobs:
           assert {a["id"] for a in areas if a.get("guideTier") == "primary"} == expected_primary
           marine = next(a for a in areas if a["id"] == "marine-biology")
           assert marine.get("guideTier") == "related"
+          assert "wildlife-biology" in {a["id"] for a in areas}
+          assert "wildlife-ecology-management" not in {a["id"] for a in areas}
+          for area in areas:
+              assert "UMA-AS" not in area.get("programCodes", []), area["id"]
+              assert "UNE-AN" not in area.get("programCodes", []), area["id"]
 
           additions = json.loads(Path("site/content/programs/additional-programs.json").read_text())
           library = json.loads(Path("site/content/programs/school-library.json").read_text())
@@ -48,6 +53,11 @@ jobs:
           missing = [code for code in library_codes if code not in all_codes]
           assert not missing, f"Library codes missing detail records: {missing}"
           assert len(library_codes) == len(set(library_codes)), "Duplicate school-library program codes"
+          additional_codes = {p["code"] for p in additions}
+          assert additional_codes <= set(library_codes), "Public additional-program records must be library-visible"
+          generated = {p["code"]: p for p in data["programs"]}
+          assert generated["ME-ZOO"]["title"] == "Zoology B.S."
+          assert generated["UMA-BIO"]["school"] == "University of Massachusetts Amherst"
 
           photo_manifest = json.loads(Path("site/content/programs/photos.json").read_text())
           photos = photo_manifest.get("photos", {})

@@ -48,4 +48,5 @@ jobs:
           node --check site/program-focus.js
           node --check site/programs.js
           node --check site/program-article.js
-          git diff --check main...HEAD
+          git fetch origin main:refs/remotes/origin/main
+          git diff --check origin/main...HEAD

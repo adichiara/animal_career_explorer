@@ -161,17 +161,11 @@
       "code": "URI-WZ",
       "school": "University of Rhode Island",
       "title": "Wildlife & Conservation Biology B.S. + Zoo & Aquarium Science Certificate"
-    },
-    {
-      "code": "UMA-AS",
-      "school": "University of Massachusetts Amherst",
-      "title": "Animal Science B.S. (Animal Management concentration)"
     }
   ],
   "programCodes": [
     "URI-AZ",
-    "URI-WZ",
-    "UMA-AS"
+    "URI-WZ"
   ],
   "related": [
     "animal-welfare",

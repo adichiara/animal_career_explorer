@@ -138,19 +138,13 @@
       "title": "Biology B.S. (ecology and behavior electives)"
     },
     {
-      "code": "UNE-AN",
-      "school": "University of New England",
-      "title": "Animal Behavior B.S. with Neuroscience minor"
-    },
-    {
       "code": "ME-ZOO",
       "school": "University of Maine",
-      "title": "Zoology B.S. with Ecology concentration"
+      "title": "Zoology B.S."
     }
   ],
   "programCodes": [
     "UMA-BIO",
-    "UNE-AN",
     "ME-ZOO"
   ],
   "related": [

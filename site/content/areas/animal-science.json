@@ -17,7 +17,7 @@
     "items": [
       {
         "label": "The occupation",
-        "description": "Federal labor statistics count about 3,100 animal scientists in the United States, with a median wage near $68,930. The work is mostly graduate-level research on the nutrition, genetics, reproduction, and management of domesticated animals, carried out at universities and in the feed, genetics, and pharmaceutical industries. For comparison, the same data counts roughly 18,120 zoologists and wildlife biologists.",
+        "description": "Federal labor statistics count about 3,100 animal scientists in the United States, with a median wage near $68,940. The work is mostly graduate-level research on the nutrition, genetics, reproduction, and management of domesticated animals, carried out at universities and in the feed, genetics, and pharmaceutical industries.",
         "source": "BLS OEWS: Animal Scientists (19-1011)"
       },
       {
@@ -182,11 +182,6 @@
   ],
   "programs": [
     {
-      "code": "UMA-AS",
-      "school": "University of Massachusetts Amherst",
-      "title": "Animal Science B.S. (Animal Management concentration)"
-    },
-    {
       "code": "URI-AZ",
       "school": "University of Rhode Island",
       "title": "Animal and Veterinary Science B.S. (Animal Science option) + Zoo and Aquarium Science Certificate"
@@ -203,7 +198,6 @@
     }
   ],
   "programCodes": [
-    "UMA-AS",
     "URI-AZ",
     "UNE-AB",
     "UMA-BIO"

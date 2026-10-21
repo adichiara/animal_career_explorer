@@ -1,0 +1,197 @@
+{
+  "id": "veterinary-technology",
+  "title": "Veterinary Technology",
+  "short": "Hands-on clinical animal care: nursing, anesthesia, diagnostics, imaging, surgery support, monitoring, and technical work within the veterinary team.",
+  "bigPicture": "Veterinary technology is a distinct professional pathway within animal health care. Credentialed veterinary technicians and technologists carry out much of the hands-on nursing and technical work that makes veterinary medicine possible: monitoring patients, collecting and running diagnostic samples, taking radiographs, administering and monitoring anesthesia under veterinary direction, assisting in surgery, maintaining records, and educating clients. The educational route is different from becoming a veterinarian, and four-year programs can add advanced clinical, research, management, or specialty preparation.",
+  "distinction": {
+    "title": "Veterinary Technology and Veterinary Medicine",
+    "summary": "They work on the same clinical team but have different education, legal scope, and responsibilities.",
+    "items": [
+      {
+        "label": "Veterinary Technology",
+        "description": "Focuses on technical and nursing care: patient monitoring, anesthesia, laboratory work, imaging, surgical assistance, treatment support, records, and client education. Credentialing rules vary by state."
+      },
+      {
+        "label": "Veterinary Medicine",
+        "description": "Veterinarians complete a professional veterinary doctorate and hold responsibility for diagnosis, prescribing, treatment plans, surgery, and other acts reserved by law to veterinarians."
+      }
+    ]
+  },
+  "terms": [
+    {
+      "term": "Veterinary technician / technologist",
+      "definition": "A trained animal-health professional who provides clinical and technical care as part of a veterinary team. Titles and credentialing rules vary by jurisdiction and degree level."
+    },
+    {
+      "term": "Veterinary Technician National Examination",
+      "definition": "The national examination used in the credentialing process for veterinary technicians in the United States and Canada."
+    },
+    {
+      "term": "Committee on Veterinary Technician Education and Activities",
+      "definition": "The American Veterinary Medical Association body that accredits veterinary technology education programs."
+    },
+    {
+      "term": "Clinical pathology",
+      "definition": "Laboratory evaluation of blood, urine, cells, and other samples to support diagnosis and patient monitoring."
+    },
+    {
+      "term": "Anesthesia monitoring",
+      "definition": "Continuous assessment of an anesthetized patient's vital signs and anesthetic depth, with documentation and response under veterinary direction."
+    },
+    {
+      "term": "Diagnostic imaging",
+      "definition": "Producing radiographs and other images safely and correctly so a veterinarian can interpret them."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Clinical nursing and patient care",
+      "description": "Assessment, restraint, medication support, fluid therapy, wound care, nutrition, recovery, and ongoing monitoring across species and clinical settings.",
+      "source": "National Association of Veterinary Technicians in America: FAQs"
+    },
+    {
+      "title": "Anesthesia and surgical support",
+      "description": "Preparing patients and equipment, assisting during procedures, monitoring anesthesia and recovery, maintaining sterility, and recognizing changes that require action.",
+      "source": "American Veterinary Medical Association: Veterinary Technicians"
+    },
+    {
+      "title": "Diagnostics and imaging",
+      "description": "Collecting samples, running laboratory procedures, producing diagnostic images, maintaining quality control, and communicating results within the veterinary team."
+    },
+    {
+      "title": "Specialty, research, zoo, and wildlife settings",
+      "description": "Technicians can build experience beyond general practice in emergency and critical care, anesthesia, dentistry, laboratory-animal medicine, shelters, research, zoos, and wildlife medicine."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Is this patient's condition changing, and what needs attention now?",
+      "approach": "By repeated physical assessment, vital-sign monitoring, pain scoring, fluid balance, behavior, and clear communication with the veterinarian."
+    },
+    {
+      "question": "How can anesthesia be delivered and monitored safely?",
+      "approach": "By preparing equipment and drugs, establishing baseline values, continuously monitoring physiologic variables, documenting trends, and responding within protocol and veterinary direction."
+    },
+    {
+      "question": "Is this laboratory result reliable?",
+      "approach": "By correct sample collection and handling, quality-control procedures, instrument checks, microscopy, and recognition of results that require confirmation."
+    },
+    {
+      "question": "How can a frightened or painful animal be handled with less stress?",
+      "approach": "By combining behavior observation, species-appropriate handling, environmental control, analgesia plans, and cooperative-care techniques."
+    },
+    {
+      "question": "What does this patient need during recovery?",
+      "approach": "By monitoring airway, temperature, pain, mentation, mobility, hydration, nutrition, and procedural sites until the patient is stable."
+    },
+    {
+      "question": "Which advanced setting fits a technician's interests?",
+      "approach": "By gaining supervised clinical experience and comparing specialty practice, emergency care, research, zoo and wildlife medicine, shelter medicine, and other technical roles."
+    }
+  ],
+  "responsibilities": [
+    "Provide nursing care and monitor hospitalized or procedural patients.",
+    "Perform laboratory, imaging, anesthesia, dental, and treatment-support procedures within legal scope.",
+    "Prepare and maintain clinical equipment, medications, records, and infection-control systems.",
+    "Communicate observations, patient changes, discharge information, and client education clearly."
+  ],
+  "knowledgeSkills": [
+    "Anatomy, physiology, pharmacology, and disease processes",
+    "Clinical nursing, anesthesia, and patient monitoring",
+    "Laboratory methods and diagnostic imaging",
+    "Animal handling, behavior, welfare, and low-stress care",
+    "Medical records, communication, ethics, and teamwork"
+  ],
+  "variations": [
+    {
+      "label": "Associate and bachelor's pathways",
+      "description": "Many entry-level programs are associate degrees; some universities offer four-year bachelor's degrees or bachelor's completion programs that add advanced science, clinical, management, research, or specialty preparation."
+    },
+    {
+      "label": "Accreditation and credentialing",
+      "description": "An accredited veterinary technology program is the key educational starting point. Examination and state licensing or credentialing requirements then vary by jurisdiction.",
+      "source": "AVMA CVTEA: Accredited Veterinary Technology Programs"
+    },
+    {
+      "label": "Species and setting",
+      "description": "Technicians may work mainly with companion animals, horses, livestock, laboratory animals, shelter populations, zoo animals, wildlife, or mixed caseloads."
+    },
+    {
+      "label": "Specialization after entry",
+      "description": "Experienced credentialed technicians can pursue advanced specialty pathways in areas such as anesthesia and analgesia, emergency and critical care, dentistry, internal medicine, behavior, zoological medicine, and laboratory animal medicine."
+    }
+  ],
+  "settings": [
+    "General veterinary hospitals and clinics",
+    "Emergency and specialty hospitals",
+    "Zoos, aquariums, wildlife centers, and shelters",
+    "Biomedical research, laboratory-animal, diagnostic, and public-health settings"
+  ],
+  "realities": [
+    "This is a hands-on health-care career with substantial patient contact, technical procedures, cleaning, lifting, restraint, and time on your feet.",
+    "Emergency cases, euthanasia, seriously ill animals, and distressed owners can make the work emotionally demanding.",
+    "Legal scope and credential titles vary by state, so students should verify the requirements where they expect to work.",
+    "The veterinary technician role is distinct from the veterinarian role; choosing veterinary technology does not require treating it as a stepping stone to veterinary school.",
+    "A program's species exposure matters. A strong general veterinary technology degree can still require deliberate internships or electives to build zoo, exotic, or wildlife experience."
+  ],
+  "careers": [
+    "Credentialed veterinary technician",
+    "Zoo / wildlife veterinary technician",
+    "Emergency & critical care veterinary technician",
+    "Anesthesia / analgesia veterinary technician",
+    "Research / laboratory-animal veterinary technician",
+    "Veterinary technician specialist"
+  ],
+  "programs": [
+    {
+      "code": "UMASS-VT",
+      "school": "University of Massachusetts Amherst",
+      "title": "Veterinary Technology B.S."
+    },
+    {
+      "code": "UMA-BGR-VT",
+      "school": "University of Maine at Augusta",
+      "title": "Veterinary Technology A.S. / B.S. — Bangor"
+    },
+    {
+      "code": "CANTON-VT",
+      "school": "SUNY Canton",
+      "title": "Veterinary Technology B.S."
+    },
+    {
+      "code": "DELHI-VT",
+      "school": "SUNY Delhi",
+      "title": "Veterinary Science Technology A.A.S. → Veterinary Technology B.S."
+    }
+  ],
+  "programCodes": [
+    "UMASS-VT",
+    "UMA-BGR-VT",
+    "CANTON-VT",
+    "DELHI-VT"
+  ],
+  "related": [
+    "animal-biology",
+    "animal-welfare",
+    "animal-science",
+    "zoo-aquarium-science",
+    "wildlife-health"
+  ],
+  "references": [
+    {
+      "title": "National Association of Veterinary Technicians in America: FAQs",
+      "type": "Professional association",
+      "url": "https://navta.net/faqs/"
+    },
+    {
+      "title": "American Veterinary Medical Association: Veterinary Technicians",
+      "type": "Professional and career resource",
+      "url": "https://www.avma.org/resources-tools/careers/veterinary-technicians"
+    },
+    {
+      "title": "AVMA CVTEA: Accredited Veterinary Technology Programs",
+      "type": "Accreditation resource",
+      "url": "https://www.avma.org/education/center-for-veterinary-accreditation/accredited-veterinary-technology-programs"
+    }
+  ]
+}

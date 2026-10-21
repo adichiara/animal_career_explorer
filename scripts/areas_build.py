@@ -155,6 +155,27 @@ REFS = {
  "anthrozoos": ("Anthrozoos",
    "Field journal",
    "https://isaz.net/journal/journal.html"),
+ "sicb_career_info": ("SICB: Career Information",
+   "Career and field resource",
+   "https://sicb.org/resources/career-information/"),
+ "wildlife_early_career": ("The Wildlife Society: Early Career Development",
+   "Career and professional resource",
+   "https://wildlife.org/early-career-development/"),
+ "noaa_marine_students": ("NOAA National Marine Sanctuaries: Student Resources",
+   "Government student and career resource",
+   "https://sanctuaries.noaa.gov/education/students/welcome.html"),
+ "noaa_estuaries": ("NOAA Ocean Service: Estuaries",
+   "Government science resource",
+   "https://oceanservice.noaa.gov/education/tutorial_estuaries/"),
+ "navta_faq": ("National Association of Veterinary Technicians in America: FAQs",
+   "Professional association",
+   "https://navta.net/faqs/"),
+ "avma_vet_tech": ("American Veterinary Medical Association: Veterinary Technicians",
+   "Professional and career resource",
+   "https://www.avma.org/resources-tools/careers/veterinary-technicians"),
+ "avma_cvtea": ("AVMA CVTEA: Accredited Veterinary Technology Programs",
+   "Accreditation resource",
+   "https://www.avma.org/education/center-for-veterinary-accreditation/accredited-veterinary-technology-programs"),
 }
 
 # ======================================== program code -> full program name
@@ -179,6 +200,21 @@ PROGRAMS = {
    "Wildlife & Conservation Biology"),
  "URI-WZ": ("University of Rhode Island",
    "Wildlife & Conservation Biology B.S. + Zoo & Aquarium Science Certificate"),
+ "UNH-ZOO": ("University of New Hampshire",
+   "Zoology B.S."),
+ "CAN-ABEC": ("Canisius University",
+   "Animal Behavior, Ecology, and Conservation B.S. + Zoo Biology minor"),
+ "DELVAL-ZOO": ("Delaware Valley University",
+   "Zoo Science B.S."),
+ "UMASS-VT": ("University of Massachusetts Amherst",
+   "Veterinary Technology B.S."),
+ "UMA-BGR-VT": ("University of Maine at Augusta",
+   "Veterinary Technology A.S. / B.S. — Bangor"),
+ "CANTON-VT": ("SUNY Canton",
+   "Veterinary Technology B.S."),
+ "DELHI-VT": ("SUNY Delhi",
+   "Veterinary Science Technology A.A.S. → Veterinary Technology B.S."),
+
 }
 
 # ===== acronyms the build LINTS for. it never rewrites prose; if an acronym
@@ -2481,6 +2517,416 @@ area(
  related=["animal-behavior", "animal-welfare", "environmental-education", "animal-cognition"],
  references=["international_society_anthrozoology", "anthrozoos"],
 )
+
+
+# ================================================================= revised focus
+# These four guides replace older categories that no longer match the current
+# exploration goals. The older area() calls remain above as historical source
+# material, but are filtered out before the build writes content.
+
+area(
+ id="animal-biology",
+ title="Animal Biology",
+ short="How animals function, from genes and tissues through organs, physiology, "
+       "development, and the whole organism.",
+ bigPicture="Animal biology studies the biological workings of animals across levels of "
+            "organization. A project might ask how hormones alter reproduction, how a "
+            "diving mammal manages oxygen, how development produces a body structure, "
+            "or how genetic differences affect physiology. Universities use the title "
+            "differently, so the curriculum matters more than the degree name. Strong "
+            "programs connect cellular and molecular mechanisms to anatomy, physiology, "
+            "development, behavior, and whole-animal biology.",
+ terms=[
+  ("Physiology", "The study of how organs and body systems function and are regulated."),
+  ("Endocrinology", "The study of hormones and the systems that produce and respond to them."),
+  ("Comparative anatomy", "Comparing structures across species to understand function, evolution, and biological constraint."),
+  ("Developmental biology", "How an animal grows and changes from embryo through adulthood."),
+  ("Genotype and phenotype", "Genotype is an organism's genetic makeup; phenotype is the observable result of genes interacting with development and environment."),
+  ("Organismal biology", "Biology studied at the level of the whole animal, integrating multiple body systems and environmental demands."),
+ ],
+ focus=[
+  dict(title="Physiology and body systems",
+       description="How circulation, respiration, digestion, reproduction, neural function, immunity, and other systems operate and coordinate.",
+       source=REF["sicb_career_info"]),
+  dict(title="Genes, development, and biological variation",
+       description="How inherited differences and developmental processes shape anatomy, physiology, disease susceptibility, and other animal traits."),
+  dict(title="Comparative and integrative biology",
+       description="Using differences among species to test biological ideas and connect mechanisms at the cell or tissue level to the functioning of the whole animal.",
+       source=REF["society_integrative_comparative"]),
+  dict(title="Laboratory and whole-animal methods",
+       description="Depending on the question, work may involve microscopy, assays, imaging, dissection, physiological measurement, behavioral observation, or controlled whole-animal experiments."),
+ ],
+ questions=[
+  ("How does an animal maintain stable internal conditions when its environment changes?",
+   "By measuring temperature, oxygen use, hormones, hydration, blood chemistry, or other variables while environmental conditions are controlled or observed."),
+  ("Why do two species solve the same biological problem differently?",
+   "Through comparative studies of anatomy, physiology, genetics, and development across species."),
+  ("How do hormones affect reproduction, growth, stress, or behavior?",
+   "By measuring endocrine signals and relating them experimentally or observationally to changes in tissues, physiology, and behavior."),
+  ("How does a genetic difference change an animal's body or function?",
+   "By linking genetic variation to molecular pathways, anatomy, physiology, or measurable traits."),
+  ("How do body systems work together during demanding activities?",
+   "By combining measurements across systems during exercise, migration, diving, temperature stress, or other biological challenges."),
+  ("How does development produce the adult form?",
+   "By following tissues, gene activity, and structural change through embryos, juveniles, and later life stages."),
+ ],
+ responsibilities=[
+  "Design and carry out laboratory or whole-animal studies.",
+  "Collect physiological, anatomical, genetic, developmental, or behavioral measurements.",
+  "Analyze quantitative data and connect measurements across biological levels.",
+  "Document methods, maintain research records, and communicate findings.",
+ ],
+ knowledgeSkills=[
+  "Anatomy and physiology",
+  "Genetics, cell biology, and development",
+  "Laboratory measurement and experimental design",
+  "Statistics and data analysis",
+  "Comparative and evolutionary thinking",
+ ],
+ variations=[
+  dict(label="Degree names vary",
+       description="Animal Biology, Integrative Biology, Organismal Biology, Zoology, and Biological Sciences can contain very similar undergraduate pathways. Read the required courses and faculty research before judging a program by its title."),
+  dict(label="Scale of study",
+       description="Some researchers work mainly with cells, tissues, and molecular assays; others measure whole animals. Many projects deliberately connect both levels."),
+  dict(label="Animal contact",
+       description="A degree about animals does not guarantee daily animal handling. Some of the most animal-focused research is still primarily laboratory, specimen, imaging, or data work."),
+  dict(label="Applied directions",
+       description="The same foundation can lead toward behavior, welfare, wildlife health, veterinary technology, biomedical research, or graduate work in physiology and organismal biology."),
+ ],
+ settings=[
+  "Universities and research institutes",
+  "Animal physiology, biomedical, and comparative-biology laboratories",
+  "Zoos, aquariums, and animal-health research programs",
+  "Government, conservation, and biotechnology organizations",
+ ],
+ realities=[
+  "The title Animal Biology is not standardized across universities; two programs with the same name can be built very differently.",
+  "Independent research careers usually require graduate study, while bachelor's-level work more often begins in technician, laboratory, animal-care, or field-support roles.",
+  "Chemistry, statistics, and laboratory methods matter even when the motivating interest is whole animals.",
+  "Animal contact can range from frequent to almost none depending on the research question and method.",
+  "A broad undergraduate foundation can be useful when behavior, welfare, physiology, and animal health all remain plausible directions.",
+ ],
+ careers=[
+  "Animal physiologist",
+  "Comparative biologist",
+  "Research technician — animal biology / physiology",
+  "Animal behavior researcher",
+  "Wildlife health researcher",
+  "M.S. / Ph.D. in organismal, integrative, or animal biology",
+ ],
+ programCodes=["ME-ZOO", "UMA-BIO", "UNH-ZOO"],
+ related=["zoology", "animal-behavior", "animal-welfare", "veterinary-technology"],
+ references=["society_integrative_comparative", "sicb_career_info", "integrative_comparative_biology"],
+)
+
+area(
+ id="wildlife-biology",
+ title="Wildlife Biology",
+ short="The study of free-ranging wild animals, their populations, movement, life "
+       "histories, habitats, and interactions with people and ecosystems.",
+ bigPicture="Wildlife biology studies animals living in the wild and the processes that "
+            "determine whether their populations persist. Researchers estimate abundance "
+            "and survival, track movement, study reproduction and habitat use, investigate "
+            "disease and human-wildlife conflict, and ask why populations change. "
+            "Fieldwork is common, but modern wildlife biology also depends heavily on "
+            "statistics, geographic information systems, genetics, remote cameras, "
+            "acoustic sensors, and population models.",
+ distinction=dict(
+   title="Wildlife Biology and Wildlife Conservation",
+   summary="The same project can contain both. Wildlife biology supplies evidence about animals and populations; conservation adds the applied decision about how that evidence should be used.",
+   items=[
+    dict(label="Wildlife Biology", description="Centers on understanding free-ranging animals: abundance, survival, reproduction, movement, habitat use, disease, and population dynamics."),
+    dict(label="Wildlife Conservation", description="Uses biological and ecological evidence to protect, recover, or manage species, populations, habitats, and biodiversity."),
+   ]
+ ),
+ terms=[
+  ("Population", "A group of individuals of the same species living in a defined area and potentially interacting or breeding."),
+  ("Home range", "The area an animal routinely uses for feeding, shelter, mating, and other normal activities."),
+  ("Mark–recapture", "Marking a sample of animals and using later encounters with marked individuals to estimate population size or survival."),
+  ("Telemetry", "Tracking animals with radio, satellite, GPS, or other transmitters to study movement and habitat use."),
+  ("Occupancy", "The probability that a species uses a site, estimated while accounting for the fact that animals can be present but undetected."),
+  ("Demography", "The study of population processes such as birth, death, immigration, emigration, and age structure."),
+ ],
+ focus=[
+  dict(title="Population size, survival, and reproduction",
+       description="Estimating how many animals are present, which age groups survive, how successfully they reproduce, and whether a population is growing, stable, or declining.",
+       source=REF["wildlife_early_career"]),
+  dict(title="Movement and habitat use",
+       description="Tracking where animals go, what habitats they select, when they migrate, and which landscape features help or hinder movement."),
+  dict(title="Life history and species biology",
+       description="Understanding diet, breeding, social organization, seasonal cycles, mortality, and other features that determine how a wild species lives."),
+  dict(title="Human-wildlife interactions and health",
+       description="Studying conflict, roads, hunting, disease, development, climate, and other human or environmental pressures that change animal populations."),
+ ],
+ questions=[
+  ("Is this population growing, stable, or declining?", "By combining repeated surveys, mark–recapture, demographic data, and population models while accounting for imperfect detection."),
+  ("Where do animals move during different seasons?", "With telemetry, GPS tags, banding, camera traps, acoustic monitoring, or repeated field observations."),
+  ("Which habitats are most important for survival or reproduction?", "By comparing animal locations and demographic outcomes with vegetation, land cover, food, predators, disturbance, and other habitat variables."),
+  ("Why is mortality increasing?", "By integrating health evidence, predator data, weather, disease surveillance, human activity, and movement histories."),
+  ("How is human activity changing behavior or population dynamics?", "By comparing animals across gradients of development, recreation, roads, hunting pressure, noise, or other disturbances."),
+  ("What information is strong enough to support a management decision?", "By quantifying uncertainty, testing alternative explanations, and separating observed patterns from assumptions about cause."),
+ ],
+ responsibilities=[
+  "Conduct wildlife surveys, captures, tagging, tracking, or other field sampling.",
+  "Manage and analyze population, movement, habitat, and monitoring data.",
+  "Prepare reports, maps, models, and recommendations for agencies or conservation organizations.",
+  "Follow animal-care, permitting, biosafety, and field-safety requirements.",
+ ],
+ knowledgeSkills=[
+  "Wildlife ecology and population biology",
+  "Field identification, sampling, and animal-handling methods",
+  "Statistics, population models, and data management",
+  "Geographic information systems and spatial analysis",
+  "Scientific writing, permitting, and collaborative fieldwork",
+ ],
+ variations=[
+  dict(label="Field and analytical balance", description="Some positions spend substantial time capturing or observing animals; others are dominated by modeling, mapping, database work, or reporting."),
+  dict(label="Species focus", description="Wildlife biologists may specialize in birds, mammals, reptiles and amphibians, fishes, invertebrates, or a particular threatened species."),
+  dict(label="Agency and research roles", description="Agency work often adds regulations, permits, stakeholder communication, and management decisions to the science. Academic research usually gives more weight to theory and publication."),
+  dict(label="Biology and conservation overlap", description="Many professionals do both. The distinction is most useful for understanding whether the immediate goal is learning how a population works or deciding what action to take."),
+ ],
+ settings=[
+  "State and federal wildlife agencies",
+  "Universities and field research stations",
+  "Conservation organizations and land trusts",
+  "Environmental consulting and natural-resource programs",
+ ],
+ realities=[
+  "Fieldwork can be physically demanding, seasonal, weather-dependent, and scheduled around the animals rather than normal office hours.",
+  "Entry-level wildlife work often includes temporary or seasonal technician positions before permanent roles.",
+  "Statistics, data management, and spatial tools are increasingly central even for people attracted to the field because they like outdoor work.",
+  "Some jobs involve frequent animal handling; many involve observation, remote monitoring, habitat measurements, or data instead.",
+  "Graduate study is common for research leadership and specialized population-science roles.",
+ ],
+ careers=[
+  "Wildlife biologist",
+  "Wildlife research technician",
+  "Mammalogist",
+  "Ornithologist",
+  "Herpetologist",
+  "Wildlife disease ecologist",
+  "M.S. / Ph.D. in wildlife biology",
+ ],
+ programCodes=["ME-WE", "URI-W", "UMA-WEC"],
+ related=["zoology", "animal-behavior", "ecology", "conservation-biology"],
+ references=["wildlife_society", "wildlife_early_career"],
+)
+
+area(
+ id="marine-biology",
+ title="Marine Biology",
+ short="The biology of organisms and biological processes in oceans, coasts, "
+       "estuaries, and other marine environments.",
+ bigPicture="Marine biology is defined mainly by the environment and organisms being "
+            "studied, not by one single method. A marine biologist might investigate "
+            "whale communication, fish physiology, coral disease, plankton food webs, or "
+            "how coastal development changes an estuary. The field therefore overlaps "
+            "with behavior, physiology, ecology, genetics, conservation, and zoology. "
+            "It is included here as one possible animal-focused direction, without giving "
+            "marine specialization extra weight in college exploration.",
+ terms=[
+  ("Marine ecology", "The study of interactions among marine organisms and their physical environment."),
+  ("Biological oceanography", "The study of biological processes in the ocean, often at large spatial scales and closely connected to ocean chemistry and physics."),
+  ("Estuary", "A coastal system where freshwater and seawater mix, creating highly variable conditions and productive habitats."),
+  ("Pelagic", "Open-water habitats away from the seafloor or shoreline."),
+  ("Benthic", "Habitats on or closely associated with the seafloor."),
+  ("Osmoregulation", "How organisms maintain the right balance of water and salts in their bodies."),
+ ],
+ focus=[
+  dict(title="Marine animals and organismal biology",
+       description="How fishes, marine mammals, invertebrates, reptiles, seabirds, and other organisms function, reproduce, develop, and survive in marine conditions.",
+       source=REF["noaa_marine_students"]),
+  dict(title="Behavior and movement", description="Migration, communication, social behavior, foraging, navigation, and responses to changing ocean conditions."),
+  dict(title="Marine ecology and food webs", description="How species interact with predators, prey, competitors, habitats, and physical processes from reefs and estuaries to the open ocean."),
+  dict(title="Physiological adaptation", description="How animals manage salinity, pressure, oxygen, temperature, diving, and other demands that differ sharply from terrestrial environments."),
+ ],
+ questions=[
+  ("How do marine animals navigate, communicate, or migrate?", "Through tagging, acoustic recording, visual surveys, behavioral observation, and environmental data."),
+  ("How does changing temperature or ocean chemistry affect an animal?", "With controlled physiology experiments, field monitoring, or long-term datasets linking biological responses to environmental conditions."),
+  ("Why is a fish, coral, or invertebrate population changing?", "By combining surveys, life-history data, food-web information, disease observations, fishing pressure, and habitat conditions."),
+  ("How are estuarine and coastal animals affected by freshwater input and development?", "By sampling organisms and environmental conditions across salinity, nutrient, pollution, and habitat gradients."),
+  ("What can animal movement reveal about habitat needs?", "By pairing telemetry or photo-identification with oceanographic and habitat data."),
+  ("How do marine species cope with extreme physical conditions?", "By measuring respiration, metabolism, osmoregulation, temperature tolerance, or diving physiology."),
+ ],
+ responsibilities=[
+  "Conduct field, vessel, laboratory, aquarium, or remote-monitoring studies.",
+  "Identify organisms and collect biological and environmental measurements.",
+  "Analyze movement, behavior, physiology, population, or ecological data.",
+  "Maintain careful field records, permits, samples, and research documentation.",
+ ],
+ knowledgeSkills=[
+  "Animal biology and marine ecology",
+  "Field and laboratory sampling",
+  "Statistics and data analysis",
+  "Species identification and natural history",
+  "Oceanographic context relevant to the biological question",
+ ],
+ variations=[
+  dict(label="The environment defines the field", description="Marine biology can be behavior, physiology, genetics, ecology, or conservation carried out with marine organisms or systems."),
+  dict(label="Not all work is underwater", description="Many marine biologists spend more time in laboratories, on boats, at computers, or analyzing samples than diving."),
+  dict(label="Coastal boundaries are porous", description="Estuaries and species that move between fresh and salt water are normal parts of marine research, so a strict saltwater-only boundary is misleading.", source=REF["noaa_estuaries"]),
+  dict(label="Job titles are often more specific", description="Positions may be advertised as fisheries biologist, marine mammal researcher, aquarist, ecologist, research technician, or a taxon specialty instead of simply marine biologist."),
+ ],
+ settings=[
+  "Universities and marine laboratories",
+  "Aquariums and marine research centers",
+  "Government fisheries and ocean agencies",
+  "Coastal field stations, research vessels, and conservation organizations",
+ ],
+ realities=[
+  "Marine biology is broad enough that the day-to-day work depends more on the specialty than on the word marine.",
+  "Field seasons, boat work, weather, and remote locations can shape some jobs, while others are primarily laboratory or analytical.",
+  "Quantitative skills and scientific writing matter across nearly every marine specialty.",
+  "Independent research positions commonly require graduate education.",
+  "A marine label is not automatically a better fit for someone interested in animals; the actual coursework in behavior, physiology, zoology, and hands-on work matters more.",
+ ],
+ careers=[
+  "Marine biologist",
+  "Marine mammal scientist",
+  "Fisheries biologist",
+  "Aquarist / aquarium research technician",
+  "Marine animal behavior researcher",
+  "M.S. / Ph.D. in marine biology",
+ ],
+ programCodes=[],
+ related=["zoology", "animal-biology", "animal-behavior", "ecology", "zoo-aquarium-science"],
+ references=["noaa_marine_students", "noaa_estuaries", "society_integrative_comparative"],
+)
+
+area(
+ id="veterinary-technology",
+ title="Veterinary Technology",
+ short="Hands-on clinical animal care: nursing, anesthesia, diagnostics, imaging, "
+       "surgery support, monitoring, and technical work within the veterinary team.",
+ bigPicture="Veterinary technology is a distinct professional pathway within animal "
+            "health care. Credentialed veterinary technicians and technologists carry "
+            "out much of the hands-on nursing and technical work that makes veterinary "
+            "medicine possible: monitoring patients, collecting and running diagnostic "
+            "samples, taking radiographs, administering and monitoring anesthesia under "
+            "veterinary direction, assisting in surgery, maintaining records, and "
+            "educating clients. The educational route is different from becoming a "
+            "veterinarian, and four-year programs can add advanced clinical, research, "
+            "management, or specialty preparation.",
+ distinction=dict(
+   title="Veterinary Technology and Veterinary Medicine",
+   summary="They work on the same clinical team but have different education, legal scope, and responsibilities.",
+   items=[
+    dict(label="Veterinary Technology", description="Focuses on technical and nursing care: patient monitoring, anesthesia, laboratory work, imaging, surgical assistance, treatment support, records, and client education. Credentialing rules vary by state."),
+    dict(label="Veterinary Medicine", description="Veterinarians complete a professional veterinary doctorate and hold responsibility for diagnosis, prescribing, treatment plans, surgery, and other acts reserved by law to veterinarians."),
+   ]
+ ),
+ terms=[
+  ("Veterinary technician / technologist", "A trained animal-health professional who provides clinical and technical care as part of a veterinary team. Titles and credentialing rules vary by jurisdiction and degree level."),
+  ("Veterinary Technician National Examination", "The national examination used in the credentialing process for veterinary technicians in the United States and Canada."),
+  ("Committee on Veterinary Technician Education and Activities", "The American Veterinary Medical Association body that accredits veterinary technology education programs."),
+  ("Clinical pathology", "Laboratory evaluation of blood, urine, cells, and other samples to support diagnosis and patient monitoring."),
+  ("Anesthesia monitoring", "Continuous assessment of an anesthetized patient's vital signs and anesthetic depth, with documentation and response under veterinary direction."),
+  ("Diagnostic imaging", "Producing radiographs and other images safely and correctly so a veterinarian can interpret them."),
+ ],
+ focus=[
+  dict(title="Clinical nursing and patient care",
+       description="Assessment, restraint, medication support, fluid therapy, wound care, nutrition, recovery, and ongoing monitoring across species and clinical settings.",
+       source=REF["navta_faq"]),
+  dict(title="Anesthesia and surgical support",
+       description="Preparing patients and equipment, assisting during procedures, monitoring anesthesia and recovery, maintaining sterility, and recognizing changes that require action.",
+       source=REF["avma_vet_tech"]),
+  dict(title="Diagnostics and imaging", description="Collecting samples, running laboratory procedures, producing diagnostic images, maintaining quality control, and communicating results within the veterinary team."),
+  dict(title="Specialty, research, zoo, and wildlife settings", description="Technicians can build experience beyond general practice in emergency and critical care, anesthesia, dentistry, laboratory-animal medicine, shelters, research, zoos, and wildlife medicine."),
+ ],
+ questions=[
+  ("Is this patient's condition changing, and what needs attention now?", "By repeated physical assessment, vital-sign monitoring, pain scoring, fluid balance, behavior, and clear communication with the veterinarian."),
+  ("How can anesthesia be delivered and monitored safely?", "By preparing equipment and drugs, establishing baseline values, continuously monitoring physiologic variables, documenting trends, and responding within protocol and veterinary direction."),
+  ("Is this laboratory result reliable?", "By correct sample collection and handling, quality-control procedures, instrument checks, microscopy, and recognition of results that require confirmation."),
+  ("How can a frightened or painful animal be handled with less stress?", "By combining behavior observation, species-appropriate handling, environmental control, analgesia plans, and cooperative-care techniques."),
+  ("What does this patient need during recovery?", "By monitoring airway, temperature, pain, mentation, mobility, hydration, nutrition, and procedural sites until the patient is stable."),
+  ("Which advanced setting fits a technician's interests?", "By gaining supervised clinical experience and comparing specialty practice, emergency care, research, zoo and wildlife medicine, shelter medicine, and other technical roles."),
+ ],
+ responsibilities=[
+  "Provide nursing care and monitor hospitalized or procedural patients.",
+  "Perform laboratory, imaging, anesthesia, dental, and treatment-support procedures within legal scope.",
+  "Prepare and maintain clinical equipment, medications, records, and infection-control systems.",
+  "Communicate observations, patient changes, discharge information, and client education clearly.",
+ ],
+ knowledgeSkills=[
+  "Anatomy, physiology, pharmacology, and disease processes",
+  "Clinical nursing, anesthesia, and patient monitoring",
+  "Laboratory methods and diagnostic imaging",
+  "Animal handling, behavior, welfare, and low-stress care",
+  "Medical records, communication, ethics, and teamwork",
+ ],
+ variations=[
+  dict(label="Associate and bachelor's pathways", description="Many entry-level programs are associate degrees; some universities offer four-year bachelor's degrees or bachelor's completion programs that add advanced science, clinical, management, research, or specialty preparation."),
+  dict(label="Accreditation and credentialing", description="An accredited veterinary technology program is the key educational starting point. Examination and state licensing or credentialing requirements then vary by jurisdiction.", source=REF["avma_cvtea"]),
+  dict(label="Species and setting", description="Technicians may work mainly with companion animals, horses, livestock, laboratory animals, shelter populations, zoo animals, wildlife, or mixed caseloads."),
+  dict(label="Specialization after entry", description="Experienced credentialed technicians can pursue advanced specialty pathways in areas such as anesthesia and analgesia, emergency and critical care, dentistry, internal medicine, behavior, zoological medicine, and laboratory animal medicine."),
+ ],
+ settings=[
+  "General veterinary hospitals and clinics",
+  "Emergency and specialty hospitals",
+  "Zoos, aquariums, wildlife centers, and shelters",
+  "Biomedical research, laboratory-animal, diagnostic, and public-health settings",
+ ],
+ realities=[
+  "This is a hands-on health-care career with substantial patient contact, technical procedures, cleaning, lifting, restraint, and time on your feet.",
+  "Emergency cases, euthanasia, seriously ill animals, and distressed owners can make the work emotionally demanding.",
+  "Legal scope and credential titles vary by state, so students should verify the requirements where they expect to work.",
+  "The veterinary technician role is distinct from the veterinarian role; choosing veterinary technology does not require treating it as a stepping stone to veterinary school.",
+  "A program's species exposure matters. A strong general veterinary technology degree can still require deliberate internships or electives to build zoo, exotic, or wildlife experience.",
+ ],
+ careers=[
+  "Credentialed veterinary technician",
+  "Zoo / wildlife veterinary technician",
+  "Emergency & critical care veterinary technician",
+  "Anesthesia / analgesia veterinary technician",
+  "Research / laboratory-animal veterinary technician",
+  "Veterinary technician specialist",
+ ],
+ programCodes=["UMASS-VT", "UMA-BGR-VT", "CANTON-VT", "DELHI-VT"],
+ related=["animal-biology", "animal-welfare", "animal-science", "zoo-aquarium-science", "wildlife-health"],
+ references=["navta_faq", "avma_vet_tech", "avma_cvtea"],
+)
+
+# Replace the four superseded guides, update cross-links, and put the current
+# exploration fields first. Marine Biology is included but intentionally has no
+# special weighting or featured-school rule.
+_SUPERSEDED = {
+    "animal-physiology": "animal-biology",
+    "wildlife-ecology-management": "wildlife-biology",
+    "veterinary-science": "veterinary-technology",
+    "environmental-education": "marine-biology",
+}
+AREAS = [a for a in AREAS if a["id"] not in _SUPERSEDED]
+
+for a in AREAS:
+    a["related"] = [_SUPERSEDED.get(r, r) for r in a["related"]]
+    if a["id"] == "anthrozoology":
+        a["related"] = ["zoo-aquarium-science" if r == "marine-biology" else r
+                        for r in a["related"]]
+
+def _set_programs(area_id, codes):
+    for a in AREAS:
+        if a["id"] == area_id:
+            a["programCodes"] = codes
+            a["programs"] = [{"code": c, "school": PROGRAMS[c][0], "title": PROGRAMS[c][1]}
+                             for c in codes]
+            return
+
+_set_programs("zoology", ["ME-ZOO", "UMA-BIO", "UNH-ZOO"])
+_set_programs("animal-behavior", ["UNE-AB", "CAN-ABEC", "UNH-ZOO"])
+_set_programs("animal-welfare", ["URI-AZ", "CAN-ABEC", "UMASS-VT"])
+_set_programs("animal-science", ["URI-AZ"])
+_set_programs("zoo-aquarium-science", ["URI-AZ", "CAN-ABEC", "DELVAL-ZOO"])
+
+_AREA_ORDER = [
+    "animal-biology", "zoology", "wildlife-biology", "marine-biology",
+    "animal-behavior", "animal-welfare", "animal-science",
+    "zoo-aquarium-science", "veterinary-technology",
+    "animal-cognition", "ecology", "conservation-biology",
+    "wildlife-health", "wildlife-rehabilitation", "anthrozoology",
+]
+_order = {area_id: i for i, area_id in enumerate(_AREA_ORDER)}
+AREAS.sort(key=lambda a: _order[a["id"]])
+
 
 # ================================================================ build steps
 KEY_ORDER = ["id", "title", "short", "bigPicture", "senses", "distinction", "terms",

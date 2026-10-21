@@ -4,7 +4,7 @@ The public site is a content-first reference for students who are still learning
 
 ## Experience
 
-1. Choose **Field Guides**, **College Programs**, or **Job Examples** from the homepage.
+1. Choose **Field Guides**, **School & Program Library**, or **Job Examples** from the homepage.
 2. Browse a searchable index within that section.
 3. Open one continuous, article-style guide with clearly differentiated sections and source links.
 4. Move among articles with simple previous, index, and next links.
@@ -17,7 +17,9 @@ The homepage and primary navigation expose only the three reference sections. Th
 
 - Area content is loaded at runtime from the editable JSON files in `site/content/areas/`.
 - Area definitions and distinctions draw from the project's *Core Animal-Related Fields* source.
-- College Program guides merge the 10 focused records in `site/data.js` with the 7 hand-editable broader options in `site/content/programs/additional-programs.json`.
+- Program detail records merge the 10 generated records in `site/data.js` with hand-editable researched records in `site/content/programs/additional-programs.json`.
+- `site/content/programs/school-library.json` selects the current browseable program set and stores its interest tags plus concise "why explore" / "look first" notes.
+- School-library inclusion is driven by eight current school-fit fields: Animal Biology, Zoology, Wildlife Biology, Animal Behavior, Animal Welfare Science, non-agricultural Animal Science, Zoo & Aquarium Science / Managed Animal Care, and Veterinary Technology. Marine Biology and the other related guides remain available for context but do not independently qualify a school.
 - Job Example guides use `site/data.js`.
 - Job examples are dated observations, not current vacancy claims or a measure of the whole labor market.
 - External links come primarily from the source notes in *Animal Behavior, Wildlife, Animal Care & Conservation — Undergraduate Pathways and Career Exploration Guide*.
@@ -44,6 +46,7 @@ The homepage and primary navigation expose only the three reference sections. Th
 - `site/navigation.js`
 - `site/content/areas/index.json`
 - `site/content/areas/<area-id>.json`
+- `site/content/programs/school-library.json`
 - `site/content/areas/README.md`
 - `site/content/areas/photos.json`
 - `site/images/areas/`

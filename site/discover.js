@@ -200,7 +200,7 @@
     areas: { label: 'Understand the work areas', number: '2 of 5', width: '40%' },
     roles: { label: 'View related roles', number: '3 of 5', width: '60%' },
     role: { label: 'Examine a role', number: '4 of 5', width: '80%' },
-    saved roles: { label: 'Compare roles and programs', number: '5 of 5', width: '100%' }
+    shortlist: { label: 'Compare roles and programs', number: '5 of 5', width: '100%' }
   };
 
   let state = loadState();
@@ -246,7 +246,7 @@
   function careerById(id) { return D.careers.find(career => career.id === id); }
 
   function updateHeader() {
-    const count = saved rolesedCareers().length;
+    const count = shortlistedCareers().length;
     document.getElementById('navShortlistCount').textContent = count;
     document.querySelectorAll('.discovery-nav-link').forEach(link => {
       const target = link.dataset.screenLink;
@@ -271,7 +271,7 @@
     if (screen === 'areas') renderAreas();
     if (screen === 'roles') renderRoles();
     if (screen === 'role') renderRole();
-    if (screen === 'saved roles') renderShortlist(options);
+    if (screen === 'shortlist') renderShortlist(options);
     document.getElementById('discoveryNav').classList.remove('open');
     document.getElementById('mobileMenuButton').setAttribute('aria-expanded', 'false');
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -303,7 +303,7 @@
           </button>
         </div>
 
-        ${saved rolesedCareers().length ? `<div class="button-row"><button class="btn soft" type="button" data-go="saved roles">Continue with my ${saved rolesedCareers().length}-role saved roles</button></div>` : ''}
+        ${shortlistedCareers().length ? `<div class="button-row"><button class="btn soft" type="button" data-go="shortlist">Continue with my ${shortlistedCareers().length} saved roles</button></div>` : ''}
       </section>`;
   }
 
@@ -428,7 +428,7 @@
 
         <div class="button-row">
           <button class="btn" type="button" data-go="worlds">Change career worlds</button>
-          ${saved rolesedCareers().length ? `<button class="btn soft" type="button" data-go="saved roles">See my saved roles (${saved rolesedCareers().length})</button>` : ''}
+          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">See saved roles (${shortlistedCareers().length})</button>` : ''}
         </div>
       </section>`;
     updateRoleResults();
@@ -444,7 +444,7 @@
     const pool = rolePool().filter(career => matchesSearch(career, searchText));
     const visible = searchText ? pool : pool.slice(0, roleLimit);
     container.innerHTML = `
-      <div class="results-bar"><span>Showing ${visible.length} of ${pool.length} role${pool.length === 1 ? '' : 's'}</span><span>${saved rolesedCareers().length} on your saved roles</span></div>
+      <div class="results-bar"><span>Showing ${visible.length} of ${pool.length} role${pool.length === 1 ? '' : 's'}</span><span>${shortlistedCareers().length} saved</span></div>
       <div class="role-grid">
         ${visible.length ? visible.map(roleCard).join('') : '<div class="empty-state">No roles match that search. Try a broader activity or job word.</div>'}
       </div>
@@ -575,17 +575,17 @@
         <div class="button-row">
           <button class="btn" type="button" data-go="roles">Back to roles</button>
           <button class="btn primary" type="button" data-next-role>Next role</button>
-          ${saved rolesedCareers().length ? `<button class="btn soft" type="button" data-go="saved roles">Compare saved roles (${saved rolesedCareers().length})</button>` : ''}
+          ${shortlistedCareers().length ? `<button class="btn soft" type="button" data-go="shortlist">Compare saved roles (${shortlistedCareers().length})</button>` : ''}
         </div>
       </section>`;
   }
 
-  function saved rolesedCareers() {
+  function shortlistedCareers() {
     const included = new Set(['Interesting', 'Maybe', 'Need to learn more']);
     return D.careers.filter(career => included.has(state.reactions[career.id]));
   }
 
-  function saved rolesPatterns(careers) {
+  function shortlistPatterns(careers) {
     if (!careers.length) return [];
     return D.dimLabels.map((label, index) => ({
       label,
@@ -617,27 +617,27 @@
   }
 
   function renderShortlist(options = {}) {
-    const careers = saved rolesedCareers();
-    const patterns = saved rolesPatterns(careers);
+    const careers = shortlistedCareers();
+    const patterns = shortlistPatterns(careers);
     const programs = programMatches(careers);
 
     root.innerHTML = `
       <section class="screen">
-        <div class="eyebrow">Your emerging saved roles</div>
+        <div class="eyebrow">Your saved roles</div>
         <h1>Compare selected roles and college preparation.</h1>
         <p class="lead">Shared content areas are calculated from the career profiles. Program connections use the project’s curriculum-support mappings.</p>
 
         ${careers.length ? `
-          <div class="saved roles-layout">
-            <div class="card saved roles-card">
+          <div class="shortlist-layout">
+            <div class="card shortlist-card">
               <h2>${careers.length} selected role${careers.length === 1 ? '' : 's'}</h2>
               ${careers.map(career => `
-                <div class="saved roles-row">
+                <div class="shortlist-row">
                   <div><strong>${esc(career.name)}</strong><p>${esc(career.roleFocus || '')}</p><span class="pill ${state.reactions[career.id] === 'Interesting' ? 'green' : 'blue'}">${esc(state.reactions[career.id])}</span></div>
-                  <div class="saved roles-actions"><button class="btn small-btn" type="button" data-role="${esc(career.id)}">Open</button><button class="btn small-btn text" type="button" data-remove="${esc(career.id)}">Remove</button></div>
+                  <div class="shortlist-actions"><button class="btn small-btn" type="button" data-role="${esc(career.id)}">Open</button><button class="btn small-btn text" type="button" data-remove="${esc(career.id)}">Remove</button></div>
                 </div>`).join('')}
             </div>
-            <aside class="card saved roles-card pattern-card">
+            <aside class="card shortlist-card pattern-card">
               <div class="eyebrow" style="color:#bfe8da">Shared career content</div>
               <h2>Strongest areas across these roles</h2>
               <div class="pill-row" style="margin-top:16px">${patterns.map(item => `<span class="pill">${esc(item.label)}</span>`).join('') || '<span class="pill">Not enough profile overlap yet</span>'}</div>
@@ -665,7 +665,7 @@
         ` : `
           <div class="empty-state" style="margin-top:28px">
             <h2>No roles are saved yet</h2>
-            <p>Explore a few roles and choose “Interesting,” “Maybe,” or “Need to learn more.”</p>
+            <p>Explore a few roles and save the ones you want to compare.</p>
             <button class="btn primary" type="button" data-go="worlds">Choose a career world</button>
           </div>`}
 

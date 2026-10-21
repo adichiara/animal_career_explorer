@@ -1731,8 +1731,9 @@ area(
 area(
  id="animal-science",
  title="Animal Science",
- short="The biology, care, management, and use of domesticated animals, traditionally "
-        "with an agricultural emphasis.",
+ short="The biology, care, and management of domesticated animals. For current school "
+       "exploration, the emphasis here is companion, zoo/exotic, behavior, welfare, and "
+       "other non-agricultural pathways.",
  bigPicture="Animal science asks how domesticated animals grow, reproduce, stay healthy, "
              "and are cared for, and how management changes those outcomes. It grew out "
              "of agriculture and livestock remain at its center, but what a given program "

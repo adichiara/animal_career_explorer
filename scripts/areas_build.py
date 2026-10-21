@@ -1092,9 +1092,9 @@ area(
        source=REF["ecological_society_america"]),
   dict(label="There is a credential",
        description="the Ecological Society of America (ESA) runs a professional "
-                   "certification program with a graded designations from Ecologist in Training through Senior Ecologist, "
-                   "assessed on education and experience and backed by a code of ethics. "
-                   "It is well known in consulting and agency work.",
+                   "certification program with graded designations from Ecologist in "
+                   "Training through Senior Ecologist. Certification is assessed on "
+                   "education and experience and backed by a code of ethics.",
        source=REF["ecological_society_america2"]),
   dict(label="Basic versus applied",
        description="Research ecology and applied ecology in consulting, restoration, or "

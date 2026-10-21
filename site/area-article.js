@@ -91,6 +91,7 @@
       ${program.experience ? `<h4>Experience structure</h4><p>${esc(program.experience)}</p>` : ''}
       ${lists.map(([label, values]) => `<h4>${esc(label)}</h4><ul>${values.map(value => `<li>${esc(value)}</li>`).join('')}</ul>`).join('')}
       ${program.bestWhen ? `<div class="best-when"><strong>Especially relevant when</strong><p>${esc(program.bestWhen)}</p></div>` : ''}
+      ${program.code ? `<a class="research-link" href="../program.html?code=${encodeURIComponent(program.code)}">Read full program guide →</a>` : ''}
     </article>`;
   }
 

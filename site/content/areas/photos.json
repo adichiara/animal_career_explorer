@@ -124,6 +124,13 @@
       "credit": "Government of Indonesia; AI-assisted extension",
       "source": "https://commons.wikimedia.org/wiki/File:Two_Indonesia_medical_veterinarians_examining_a_cat.jpg",
       "license": "Public-domain source"
+    },
+    "marine-biology": {
+      "url": "../images/areas/environmental-education.webp",
+      "alt": "A marine turtle science outreach exhibit highlights the biology and conservation of marine animals.",
+      "credit": "NOAA Fisheries",
+      "source": "https://www.fisheries.noaa.gov/west-coast/science-data/marine-turtle-outreach",
+      "license": "Public domain"
     }
   }
 }

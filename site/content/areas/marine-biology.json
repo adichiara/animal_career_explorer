@@ -3,6 +3,14 @@
   "title": "Marine Biology",
   "short": "The biology of organisms and biological processes in oceans, coasts, estuaries, and other marine environments.",
   "bigPicture": "Marine biology is defined mainly by the environment and organisms being studied, not by one single method. A marine biologist might investigate whale communication, fish physiology, coral disease, plankton food webs, or how coastal development changes an estuary. The field therefore overlaps with behavior, physiology, ecology, genetics, conservation, and zoology. It remains useful context, but marine specialization does not drive the current school recommendations.",
+  "guideTier": "related",
+  "starterResources": [
+    {
+      "title": "NOAA National Marine Sanctuaries — Student Resources",
+      "description": "A government starting point for students exploring marine science, ocean careers, internships, and sanctuary research.",
+      "url": "https://sanctuaries.noaa.gov/education/students/welcome.html"
+    }
+  ],
   "terms": [
     {
       "term": "Marine ecology",

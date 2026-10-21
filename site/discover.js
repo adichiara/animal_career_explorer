@@ -550,7 +550,7 @@
           </article>
 
           <aside class="card role-facts">
-            <div class="facts-label">One example—not a recommendation</div>
+            <div class="facts-label">One example</div>
             <div class="fact"><small>Typical settings</small><strong>${esc(details['Typical work settings'] || career.category)}</strong></div>
             <div class="fact"><small>Animal contact</small><strong>${esc(career.directContact || 'Varies by employer')}</strong></div>
             <div class="fact"><small>School reality</small><strong>${esc(career.educationBand || details['Typical education / progression'] || 'Preparation varies')}</strong></div>

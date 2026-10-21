@@ -9,9 +9,18 @@
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
   }
+  function displaySchool(program) {
+    const school = String(program && program.school || '');
+    if (school === 'UMass Amherst' || school === 'University of Massachusetts Amherst') return 'University of Massachusetts Amherst';
+    if (school === 'University of Maine') return 'University of Maine (Orono)';
+    if (school === 'University of Maine at Augusta') return 'University of Maine at Augusta (Bangor Campus)';
+    if (school === 'SUNY Canton') return 'SUNY Canton (Canton Campus)';
+    if (school === 'SUNY Delhi') return 'SUNY Delhi (Delhi Campus)';
+    return school;
+  }
   function searchableText(program) {
     return [
-      program.school, program.title, program.type, program.scale, program.fundamental,
+      displaySchool(program), program.school, program.title, program.type, program.scale, program.fundamental,
       program.whyExplore, program.lookFirst,
       ...(program.tags || []), ...(program.scienceFoundation || []),
       ...(program.animalContent || []), ...(program.experienceTags || [])
@@ -73,7 +82,7 @@
   function render(query) {
     const q = String(query || '').trim().toLowerCase();
     const matches = programs.filter(program => !q || searchableText(program).includes(q));
-    const schools = [...new Set(matches.map(program => program.school))];
+    const schools = [...new Set(matches.map(displaySchool))];
     app.innerHTML = `<div class="index-page">
       <header class="index-hero">
         <p class="eyebrow">Browse, don't rank</p>
@@ -87,7 +96,7 @@
         ${matches.length ? `<div class="collection-heading library-note"><p class="eyebrow">How inclusion works</p><p>Programs enter this library through evidence of strength in the current school-fit fields: animal biology, zoology, wildlife biology, animal behavior, animal welfare science, non-agricultural animal science, zoo/aquarium science or managed animal care, and veterinary technology. Other field guides remain useful context but do not qualify a school by themselves.</p></div>` : ''}
         ${matches.length ? schools.map((school, schoolIndex) => `<section class="index-group">
           <h3>${esc(school)}</h3>
-          <div class="guide-list">${matches.filter(program => program.school === school).map(renderProgram).join('')}</div>
+          <div class="guide-list">${matches.filter(program => displaySchool(program) === school).map(renderProgram).join('')}</div>
         </section>`).join('') : '<p class="empty">No college programs match that search.</p>'}
       </section>
     </div>`;

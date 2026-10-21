@@ -9,16 +9,27 @@
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
   }
+  function displaySchool(program) {
+    const school = String(program && program.school || '');
+    if (school === 'UMass Amherst' || school === 'University of Massachusetts Amherst') return 'University of Massachusetts Amherst';
+    if (school === 'University of Maine') return 'University of Maine (Orono)';
+    if (school === 'University of Maine at Augusta') return 'University of Maine at Augusta (Bangor Campus)';
+    if (school === 'SUNY Canton') return 'SUNY Canton (Canton Campus)';
+    if (school === 'SUNY Delhi') return 'SUNY Delhi (Delhi Campus)';
+    return school;
+  }
   function list(items, className) {
     return `<ul class="${className || 'narrative-list'}">${(items || []).map(item => `<li><p>${esc(item)}</p></li>`).join('')}</ul>`;
   }
   function sourceUrl(value) { return /^https?:\/\//i.test(value) ? value : `https://${value}`; }
   function sourceLabel(value) { return value.replace(/^https?:\/\//i, '').replace(/\/$/, ''); }
-  function preparationScore(strength) {
+  function preparationBand(strength) {
     const value = Math.max(0, Math.min(3, Number(strength) || 0));
-    return Math.round((value / 3) * 10);
+    const score = Math.round((value / 3) * 10);
+    if (score <= 3) return { label: 'Low', className: 'low' };
+    if (score <= 6) return { label: 'Moderate', className: 'medium' };
+    return { label: 'Strong', className: 'high' };
   }
-  function scoreBand(score) { return score <= 3 ? 'low' : score <= 6 ? 'medium' : 'high'; }
   async function fetchJson(path) {
     const response = await fetch(path, { cache: 'no-store' });
     if (!response.ok) throw new Error(`${path} returned ${response.status}`);
@@ -54,6 +65,7 @@
     }).filter(Boolean);
   }
   function render(program) {
+    const schoolName = displaySchool(program);
     const currentIndex = libraryPrograms.findIndex(item => item.code === program.code);
     const navSet = currentIndex >= 0 ? libraryPrograms : programs;
     const index = navSet.findIndex(item => item.code === program.code);
@@ -74,11 +86,11 @@
     document.title = `${program.title} | School & Program Library`;
     document.querySelector('meta[name="description"]').setAttribute('content', program.fundamental || program.overview);
     app.innerHTML = `<article class="field-article program-article">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(program.school)}</span></nav>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(schoolName)}</span></nav>
       <header class="article-hero text-hero">
-        <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(program.school)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
+        <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
         <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
-          <div><dt>School</dt><dd>${esc(program.school)}</dd></div>
+          <div><dt>School</dt><dd>${esc(schoolName)}</dd></div>
           <div><dt>Program type</dt><dd>${esc(program.type)}</dd></div>
           <div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div>
           <div><dt>Library status</dt><dd>${program.libraryCurrent ? 'Current exploration set' : 'Related researched option'}</dd></div>
@@ -104,7 +116,7 @@
           </section>
           <section id="skills" class="article-section"><div class="section-heading"><p class="section-number">06</p><h2>Skills and possible outcomes</h2></div>
             <h3 class="group-heading first">What a student could build</h3><p class="resume-outcome">${esc(program.resume)}</p>
-            <h3 class="group-heading">Areas of preparation</h3><p class="section-intro score-intro">These scores summarize the relative strength of preparation documented within this program. They are not a ranking of schools.</p><div class="score-legend" aria-label="Preparation score color scale"><span><i class="score-low"></i>0–3 lower</span><span><i class="score-medium"></i>4–6 moderate</span><span><i class="score-high"></i>7–10 stronger</span></div><div class="competency-grid">${(program.competencies || []).map(item => { const score = preparationScore(item.strength); return `<article><span class="strength-mark score-${scoreBand(score)}" aria-label="${score} out of 10">${score}</span><div><h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><span>${esc(item.category)}</span></div></article>`; }).join('')}</div>
+            <h3 class="group-heading">Areas of preparation</h3><p class="section-intro score-intro">These labels summarize the relative strength of preparation documented within this program. They are not a ranking of schools.</p><div class="score-legend" aria-label="Preparation strength scale"><span><i class="score-low"></i>Low</span><span><i class="score-medium"></i>Moderate</span><span><i class="score-high"></i>Strong</span></div><div class="competency-grid">${(program.competencies || []).map(item => { const band = preparationBand(item.strength); return `<article><span class="strength-mark score-${band.className}" aria-label="${band.label} preparation">${band.label}</span><div><h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><span>${esc(item.category)}</span></div></article>`; }).join('')}</div>
           </section>
           <section id="sources" class="article-section"><div class="section-heading"><p class="section-number">07</p><h2>Official sources</h2></div><p class="section-intro">Use these institutional pages to confirm current curriculum, faculty, concentrations, accreditation where relevant, and requirements.</p>
             <ul class="source-list">${(program.sources || []).map(source => `<li><a href="${esc(sourceUrl(source))}" target="_blank" rel="noopener">${esc(sourceLabel(source))}</a><span>Official program or university page</span></li>`).join('')}</ul>

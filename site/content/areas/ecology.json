@@ -64,7 +64,7 @@
     {
       "title": "Applied and environmental ecology",
       "description": "Using ecological science in restoration, land management, environmental assessment, and policy, which is where a large share of the jobs are.",
-      "source": "Ecological Society of America (ESA): Certified Ecologist program"
+      "source": "Ecological Society of America (ESA): Professional Certification"
     }
   ],
   "questions": [
@@ -114,8 +114,8 @@
     },
     {
       "label": "There is a credential",
-      "description": "the Ecological Society of America (ESA) runs a professional certification program with a Certified Ecologist designation, assessed on education and experience and backed by a code of ethics. It is well known in consulting and agency work.",
-      "source": "Ecological Society of America (ESA): Certified Ecologist program"
+      "description": "the Ecological Society of America (ESA) runs a professional certification program with graded designations from Ecologist in Training through Senior Ecologist. Certification is assessed on education and experience and backed by a code of ethics.",
+      "source": "Ecological Society of America (ESA): Professional Certification"
     },
     {
       "label": "Basic versus applied",
@@ -151,7 +151,7 @@
     {
       "code": "ME-ZOO",
       "school": "University of Maine",
-      "title": "Zoology B.S. with Ecology concentration"
+      "title": "Zoology B.S."
     },
     {
       "code": "ME-WE",
@@ -176,7 +176,7 @@
     "URI-W"
   ],
   "related": [
-    "wildlife-ecology-management",
+    "wildlife-biology",
     "conservation-biology",
     "zoology"
   ],
@@ -187,7 +187,7 @@
       "url": "https://esa.org/about/what-does-ecology-have-to-do-with-me/"
     },
     {
-      "title": "Ecological Society of America (ESA): Certified Ecologist program",
+      "title": "Ecological Society of America (ESA): Professional Certification",
       "type": "Credential",
       "url": "https://esa.org/career-development/certification-from-esa/"
     }

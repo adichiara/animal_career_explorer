@@ -1,6 +1,6 @@
 # Animal Career Data Project
 
-This project is the data-management and publishing layer behind the Animal Pathways reference site.
+This project is the data-management and publishing layer behind the Animal Education Pathways reference site.
 
 **Live site:** https://adichiara.github.io/animal_career_explorer/
 
@@ -31,7 +31,7 @@ These counts are descriptive of the current research snapshot, not a claim that 
 1. **Canonical role is not the same thing as employer title.** A stable role such as `Wildlife Biologist` can map to many observed employer titles.
 2. **Observed titles require evidence.** Search aliases are stored separately from titles actually seen in job postings, staff directories, or professional sources.
 3. **Job postings are observations, not definitions.** They support claims about current titles, duties, qualifications, experience and pay, but a role does not cease to exist when no posting is open.
-4. **Broad occupation benchmarks stay separate from niche-market evidence.** O*NET/BLS proxies are retained where useful, while job-posting salary observations are stored independently.
+4. **Broad occupation benchmarks stay separate from niche-market evidence.** O*NET/BLS proxy research is retained in the backend but excluded from the browser export; posting-specific observations are stored independently.
 5. **Known gaps are explicit.** Missing title, posting or progression evidence becomes a review-queue item rather than being silently hidden.
 6. **The website consumes generated data.** `site/data.js` is rebuilt from SQLite; it should not be hand-edited.
 
@@ -39,17 +39,17 @@ These counts are descriptive of the current research snapshot, not a claim that 
 
 The public homepage links to three article-style reference sections:
 
-- **Field Guides** — 18 long-form guides loaded from editable JSON files in `site/content/areas/`, grouped into eight school-fit focus areas and ten related context guides.
-- **School & Program Library** — a browseable current exploration set of 15 program pathways across 10 schools. The library is assembled from the 10 generated program records plus hand-edited researched programs, then filtered by `site/content/programs/school-library.json`. It is not a ranking.
-- **Job Examples** — dated, source-backed postings grouped under 37 broader roles. These records illustrate employer titles and requirements; they are not a live job board.
+- **Field Guides** — 18 long-form guides loaded from editable JSON files in `site/content/areas/`.
+- **School & Program Library** — 15 researched program pathways across 10 schools, assembled from generated and hand-researched records and selected by `site/content/programs/school-library.json`.
+- **Job Examples** — source-backed observations grouped under career roles. Roles without observed examples are shown separately instead of linking to empty pages.
 
-The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference but are intentionally absent from the homepage and primary navigation.
+The earlier research interface remains available in `site/legacy.html`, and the earlier preference explorer remains in `site/discover.html`. Both are retained for backward reference, intentionally absent from the homepage and primary navigation, and marked `noindex,nofollow`.
 
 ## Editing Field Guide content
 
 The explanatory content for `areas.html` is intentionally separate from the generated career database. Each field has a human-editable file under `site/content/areas/`, such as `wildlife-rehabilitation.json`. Editing and committing one of those files updates the live page after GitHub Pages redeploys; `areas.js` does not need to be changed.
 
-See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and all Job Example records come from the validated `site/data.js` export. Hand-edited program records are stored in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json). The current browseable set, interest tags, and school-fit rationale are controlled by [`site/content/programs/school-library.json`](site/content/programs/school-library.json). Editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
+See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and all Job Example records come from the validated `site/data.js` export. Hand-edited program records are stored in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json). The public program set and browsing tags are controlled by [`site/content/programs/school-library.json`](site/content/programs/school-library.json). Editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
 
 ## Directory structure
 

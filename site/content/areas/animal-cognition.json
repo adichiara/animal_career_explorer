@@ -139,11 +139,6 @@
       "title": "Animal Behavior B.S."
     },
     {
-      "code": "UNE-AN",
-      "school": "University of New England",
-      "title": "Animal Behavior B.S. with Neuroscience minor"
-    },
-    {
       "code": "UMA-BIO",
       "school": "University of Massachusetts Amherst",
       "title": "Biology B.S. (ecology and behavior electives)"
@@ -151,7 +146,6 @@
   ],
   "programCodes": [
     "UNE-AB",
-    "UNE-AN",
     "UMA-BIO"
   ],
   "related": [

@@ -34,12 +34,17 @@ jobs:
           areas = [json.loads(Path("site/content/areas", name).read_text()) for name in area_index["areas"]]
           assert len(areas) == 18, len(areas)
           expected_primary = {
-              "animal-biology", "zoology", "wildlife-ecology-management", "animal-behavior",
+              "animal-biology", "zoology", "wildlife-biology", "animal-behavior",
               "animal-welfare", "animal-science", "zoo-aquarium-science", "veterinary-technology",
           }
           assert {a["id"] for a in areas if a.get("guideTier") == "primary"} == expected_primary
           marine = next(a for a in areas if a["id"] == "marine-biology")
           assert marine.get("guideTier") == "related"
+          assert "wildlife-biology" in {a["id"] for a in areas}
+          assert "wildlife-ecology-management" not in {a["id"] for a in areas}
+          for area in areas:
+              assert "UMA-AS" not in area.get("programCodes", []), area["id"]
+              assert "UNE-AN" not in area.get("programCodes", []), area["id"]
 
           additions = json.loads(Path("site/content/programs/additional-programs.json").read_text())
           library = json.loads(Path("site/content/programs/school-library.json").read_text())
@@ -48,6 +53,11 @@ jobs:
           missing = [code for code in library_codes if code not in all_codes]
           assert not missing, f"Library codes missing detail records: {missing}"
           assert len(library_codes) == len(set(library_codes)), "Duplicate school-library program codes"
+          additional_codes = {p["code"] for p in additions}
+          assert additional_codes <= set(library_codes), "Public additional-program records must be library-visible"
+          generated = {p["code"]: p for p in data["programs"]}
+          assert generated["ME-ZOO"]["title"] == "Zoology B.S."
+          assert generated["UMA-BIO"]["school"] == "University of Massachusetts Amherst"
 
           photo_manifest = json.loads(Path("site/content/programs/photos.json").read_text())
           photos = photo_manifest.get("photos", {})
@@ -69,6 +79,16 @@ jobs:
           for item in library["programs"]:
               assert item["primaryFields"], item["code"]
               assert set(item["primaryFields"]) <= expected_fields, item
+
+          uma_bio = next(item for item in library["programs"] if item["code"] == "UMA-BIO")
+          assert uma_bio["primaryFields"] == ["animal-biology"], uma_bio["primaryFields"]
+
+          # Proxy salary/outlook fields stay in backend research sources, not browser data.
+          for career in data["careers"]:
+              for key in ("entrySalary", "midSalary", "observedMarketSalary"):
+                  assert key not in career, (career["name"], key)
+              for key in ("O*NET / BLS proxy", "Job outlook", "Salary context", "Proxy fit"):
+                  assert key not in career.get("details", {}), (career["name"], key)
           PY
 
       - name: Check program codes do not leak into prose

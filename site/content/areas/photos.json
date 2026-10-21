@@ -45,13 +45,6 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
-    "wildlife-ecology-management": {
-      "url": "../images/areas/wildlife-ecology-management.webp",
-      "alt": "A raptor biology student holds a burrowing owl during wildlife monitoring and banding work.",
-      "credit": "W. Chris Clyne",
-      "source": "https://commons.wikimedia.org/wiki/File:Solai_Le_Fay,_Boise_State_raptor_biology_master%27s_student,_holds_burrowing_owl_at_monitoring_and_banding_operations_at_Rees_Training_Center,_Oregon.jpg",
-      "license": "Public domain"
-    },
     "conservation-biology": {
       "url": "../images/areas/conservation-biology.webp",
       "alt": "Two students examine a sampling net while surveying stream biodiversity.",
@@ -127,9 +120,16 @@
     },
     "marine-biology": {
       "url": "../images/areas/environmental-education.webp",
-      "alt": "A marine turtle science outreach exhibit highlights the biology and conservation of marine animals.",
+      "alt": "An environmental educator helps young visitors explore marine turtle science at an outreach exhibit.",
       "credit": "NOAA Fisheries",
       "source": "https://www.fisheries.noaa.gov/west-coast/science-data/marine-turtle-outreach",
+      "license": "Public domain"
+    },
+    "wildlife-biology": {
+      "url": "../images/areas/wildlife-ecology-management.webp",
+      "alt": "A raptor biology student holds a burrowing owl during wildlife monitoring and banding work.",
+      "credit": "W. Chris Clyne",
+      "source": "https://commons.wikimedia.org/wiki/File:Solai_Le_Fay,_Boise_State_raptor_biology_master%27s_student,_holds_burrowing_owl_at_monitoring_and_banding_operations_at_Rees_Training_Center,_Oregon.jpg",
       "license": "Public domain"
     }
   }

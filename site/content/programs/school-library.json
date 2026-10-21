@@ -49,12 +49,10 @@
     {
       "code": "UMA-BIO",
       "primaryFields": [
-        "animal-biology",
-        "animal-behavior"
+        "animal-biology"
       ],
       "tags": [
-        "Animal biology",
-        "Behavior"
+        "Animal biology"
       ],
       "whyExplore": "A flexible biological-science route that can be shaped toward organismal biology and behavior without committing to an agricultural animal-science curriculum.",
       "lookFirst": "Actual availability of animal physiology, behavior, zoology, and organismal electives; faculty research that uses animals; hands-on experience outside the major."

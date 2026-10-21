@@ -1,4 +1,4 @@
-# Animal Pathways — content update
+# Animal Education Pathways — content update
 
 Generated 2026-09-15. The prose rewrite, the disambiguation work, and the
 code-reference sweep, consolidated.
@@ -35,7 +35,7 @@ behavior having no single required major, welfare coordinator roles not requirin
 doctorate.
 
 **New: `senses` block on Animal Science.** Three different things go by that name —
-the occupation (about 3,100 people nationally, median near $68,930, mostly
+the occupation (about 3,100 people nationally, median near $68,940, mostly
 graduate-level livestock research), the degree (contents set by the concentration),
 and the everyday phrase (science about animals generally). The third says plainly
 that if that is the sense the reader means, this guide is one option among many

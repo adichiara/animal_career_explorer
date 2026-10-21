@@ -92,14 +92,25 @@
     const supplementalMatches = supplementalRoles
       .filter(career => !q || ownSearchableText(career).includes(q))
       .sort((a, b) => a.name.localeCompare(b.name));
-    const categories = [...new Set(careerMatches.map(career => career.category))].sort((a, b) => a.localeCompare(b));
 
-    const careerMarkup = careerMatches.length
-      ? categories.map(category => {
-          const items = careerMatches.filter(career => career.category === category);
-          return `<details class="index-group job-role-group"${q ? ' open' : ''}><summary><span>${esc(category)}</span><small>${items.length} ${items.length === 1 ? 'role' : 'roles'}</small></summary><div class="guide-list">${items.map(career => roleEntry(career, false)).join('')}</div></details>`;
-        }).join('')
-      : '<p class="empty">No career roles match that search.</p>';
+    const availableRoles = careerMatches.filter(career => examples(career).length);
+    const unavailableRoles = careerMatches.filter(career => !examples(career).length);
+
+    const categoryMarkup = items => {
+      const categories = [...new Set(items.map(career => career.category))].sort((a, b) => a.localeCompare(b));
+      return categories.map(category => {
+        const roles = items.filter(career => career.category === category);
+        return `<details class="index-group job-role-group"${q ? ' open' : ''}><summary><span>${esc(category)}</span><small>${roles.length} ${roles.length === 1 ? 'role' : 'roles'}</small></summary><div class="guide-list">${roles.map(career => roleEntry(career, false)).join('')}</div></details>`;
+      }).join('');
+    };
+
+    const availableMarkup = availableRoles.length
+      ? categoryMarkup(availableRoles)
+      : '<p class="empty">No roles with observed examples match that search.</p>';
+
+    const unavailableMarkup = unavailableRoles.length
+      ? `<details class="job-supplemental job-role-group unavailable-role-group"${q ? ' open' : ''}><summary><span>Roles without observed examples</span><small>${unavailableRoles.length} roles</small></summary><div class="guide-list">${unavailableRoles.map(career => roleEntry(career, false)).join('')}</div></details>`
+      : '';
 
     const assignmentMarkup = supplementalMatches.length
       ? `<details class="job-supplemental job-role-group"${q ? ' open' : ''}><summary><span>Professional assignments</span><small>${supplementalMatches.length} ${supplementalMatches.length === 1 ? 'role' : 'roles'}</small></summary><div class="guide-list">${supplementalMatches.map(career => roleEntry(career, true)).join('')}</div></details>`
@@ -110,9 +121,11 @@
         <h1>Job Examples</h1>
         <label class="guide-search" for="jobSearch"><span>Find a role, specialty, employer, title, or location</span><input id="jobSearch" type="search" placeholder="Try rehabilitation, keeper, cognition, GIS…" value="${esc(query || '')}"></label>
       </header>
-      <section class="guide-index" aria-label="Career roles">
-        ${careerMarkup}
+      <section class="guide-index" aria-label="Roles with observed examples">
+        <div class="section-heading"><h2>Roles with observed examples</h2></div>
+        ${availableMarkup}
       </section>
+      ${unavailableMarkup}
       ${assignmentMarkup}
     </div>`;
     const search = document.getElementById('jobSearch');

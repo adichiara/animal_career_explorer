@@ -142,11 +142,6 @@
       "title": "Animal Behavior B.S."
     },
     {
-      "code": "UMA-AS",
-      "school": "University of Massachusetts Amherst",
-      "title": "Animal Science B.S. (Animal Management concentration)"
-    },
-    {
       "code": "UMA-BIO",
       "school": "University of Massachusetts Amherst",
       "title": "Biology B.S. (ecology and behavior electives)"
@@ -154,7 +149,6 @@
   ],
   "programCodes": [
     "UNE-AB",
-    "UMA-AS",
     "UMA-BIO"
   ],
   "related": [

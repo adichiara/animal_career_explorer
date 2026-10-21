@@ -1,0 +1,241 @@
+{
+  "updated": "2026-10-21",
+  "description": "Current browseable school/program set. Inclusion must be supported by at least one current school-fit field. Related fields—including marine biology, ecology, conservation biology, cognition, wildlife health, rehabilitation, and anthrozoology—may add context but do not independently qualify a program for this library.",
+  "schoolFitFields": [
+    "animal-biology",
+    "zoology",
+    "wildlife-biology",
+    "animal-behavior",
+    "animal-welfare",
+    "animal-science",
+    "zoo-aquarium-science",
+    "veterinary-technology"
+  ],
+  "tags": [
+    "Hands-on animals",
+    "Zoo/exotics",
+    "Behavior",
+    "Welfare",
+    "Animal biology",
+    "Vet tech",
+    "Conservation"
+  ],
+  "programs": [
+    {
+      "code": "ME-ZOO",
+      "primaryFields": [
+        "zoology",
+        "animal-biology"
+      ],
+      "tags": [
+        "Animal biology",
+        "Behavior"
+      ],
+      "whyExplore": "A broad animal-centered science degree that keeps zoology and organismal biology visible while leaving room for behavior and other specialties.",
+      "lookFirst": "Advanced zoology, physiology, behavior, and organismal electives; undergraduate research; how much ecology to include versus animal-focused science."
+    },
+    {
+      "code": "ME-WE",
+      "primaryFields": [
+        "wildlife-biology"
+      ],
+      "tags": [
+        "Animal biology",
+        "Conservation"
+      ],
+      "whyExplore": "A direct wildlife-biology route for understanding free-ranging animals, populations, field methods, and wildlife science.",
+      "lookFirst": "Wildlife field methods, vertebrate-focused courses, population biology, animal handling or tracking opportunities, and the balance of animals versus habitat/GIS work."
+    },
+    {
+      "code": "UMA-BIO",
+      "primaryFields": [
+        "animal-biology",
+        "animal-behavior"
+      ],
+      "tags": [
+        "Animal biology",
+        "Behavior"
+      ],
+      "whyExplore": "A flexible biological-science route that can be shaped toward organismal biology and behavior without committing to an agricultural animal-science curriculum.",
+      "lookFirst": "Actual availability of animal physiology, behavior, zoology, and organismal electives; faculty research that uses animals; hands-on experience outside the major."
+    },
+    {
+      "code": "UMA-WEC",
+      "primaryFields": [
+        "wildlife-biology"
+      ],
+      "tags": [
+        "Animal biology",
+        "Conservation"
+      ],
+      "whyExplore": "A wildlife-focused concentration inside a large research university, useful when free-ranging wildlife remains a serious direction.",
+      "lookFirst": "How much of the concentration is animal/population biology versus habitat, policy, and spatial analysis; field research and wildlife-specific faculty projects."
+    },
+    {
+      "code": "UMASS-VT",
+      "primaryFields": [
+        "veterinary-technology",
+        "animal-welfare",
+        "animal-biology"
+      ],
+      "tags": [
+        "Vet tech",
+        "Hands-on animals",
+        "Welfare",
+        "Animal biology",
+        "Zoo/exotics"
+      ],
+      "whyExplore": "A four-year accredited veterinary-technology route combining clinical nursing, physiology, welfare, and advanced technical training, with exotics/behavior options.",
+      "lookFirst": "The required Amherst-to-Newton move after year two; clinical sequence; animal-welfare and exotics/behavior electives; senior internship settings."
+    },
+    {
+      "code": "UNE-AB",
+      "primaryFields": [
+        "animal-behavior",
+        "animal-biology"
+      ],
+      "tags": [
+        "Behavior",
+        "Welfare",
+        "Animal biology"
+      ],
+      "whyExplore": "A dedicated animal-behavior degree where biology and psychology are integrated rather than behavior being only a small elective cluster.",
+      "lookFirst": "Behavior faculty and research, welfare-related coursework, internships, and how to add sustained hands-on husbandry or managed-animal experience if desired."
+    },
+    {
+      "code": "URI-AZ",
+      "primaryFields": [
+        "animal-science",
+        "zoo-aquarium-science",
+        "animal-welfare",
+        "animal-behavior"
+      ],
+      "tags": [
+        "Hands-on animals",
+        "Zoo/exotics",
+        "Behavior",
+        "Welfare",
+        "Animal biology"
+      ],
+      "whyExplore": "The Animal Science option becomes much more relevant when paired with URI's Zoo and Aquarium Science certificate, adding zoo management and welfare to a managed-animal foundation.",
+      "lookFirst": "How much livestock/agricultural coursework is required; certificate scheduling; Zoo Animal Management and Zoo/Aquarium Animal Welfare; zoo-based and internship experience."
+    },
+    {
+      "code": "URI-W",
+      "primaryFields": [
+        "wildlife-biology"
+      ],
+      "tags": [
+        "Animal biology",
+        "Conservation"
+      ],
+      "whyExplore": "A direct wildlife-biology pathway for field and population work when free-ranging animals are more appealing than managed-animal care.",
+      "lookFirst": "Wildlife courses and field experiences, animal versus habitat emphasis, quantitative requirements, and whether zoo/managed-animal interests would need the separate certificate."
+    },
+    {
+      "code": "URI-WZ",
+      "primaryFields": [
+        "wildlife-biology",
+        "zoo-aquarium-science",
+        "animal-welfare"
+      ],
+      "tags": [
+        "Zoo/exotics",
+        "Hands-on animals",
+        "Welfare",
+        "Animal biology",
+        "Conservation"
+      ],
+      "whyExplore": "A useful hybrid for keeping wildlife biology while adding structured zoo/aquarium management and welfare coursework.",
+      "lookFirst": "Whether the combined major/certificate schedule is realistic; zoo-course prerequisites; direct animal experience; how the field-wildlife and managed-animal pieces fit together."
+    },
+    {
+      "code": "CAN-ABEC",
+      "primaryFields": [
+        "animal-behavior",
+        "animal-welfare",
+        "zoo-aquarium-science"
+      ],
+      "tags": [
+        "Behavior",
+        "Welfare",
+        "Zoo/exotics",
+        "Hands-on animals",
+        "Conservation"
+      ],
+      "whyExplore": "Animal behavior and welfare are central, and the Zoo Biology minor adds a defined husbandry, enrichment, management, and zoo/aquarium internship pathway.",
+      "lookFirst": "Zoo Biology minor course rotation; Zoo Animal Management, husbandry, welfare, enrichment, observational methods, and internship sequencing."
+    },
+    {
+      "code": "UNH-ZOO",
+      "primaryFields": [
+        "zoology",
+        "animal-biology",
+        "animal-behavior"
+      ],
+      "tags": [
+        "Animal biology",
+        "Behavior",
+        "Conservation"
+      ],
+      "whyExplore": "A rigorous Zoology B.S. with strong animal biology, behavior/physiology options, and undergraduate field or laboratory research.",
+      "lookFirst": "Behavior and physiology electives, faculty research, independent-study opportunities, and how much direct husbandry/animal-care experience would need to come from outside the curriculum."
+    },
+    {
+      "code": "DELVAL-ZOO",
+      "primaryFields": [
+        "zoo-aquarium-science",
+        "animal-behavior",
+        "animal-welfare",
+        "animal-biology"
+      ],
+      "tags": [
+        "Zoo/exotics",
+        "Hands-on animals",
+        "Behavior",
+        "Welfare",
+        "Animal biology"
+      ],
+      "whyExplore": "One of the most direct zoo-science undergraduate routes, with first-year animal work and a curriculum spanning husbandry, behavior, training, nutrition, health, exhibits, and zoo management.",
+      "lookFirst": "Required animal work and Experience360 internships; behavior/training/enrichment courses; zoo-management sequence; how specialized the degree feels compared with broader zoology."
+    },
+    {
+      "code": "UMA-BGR-VT",
+      "primaryFields": [
+        "veterinary-technology",
+        "animal-welfare"
+      ],
+      "tags": [
+        "Vet tech",
+        "Hands-on animals",
+        "Welfare"
+      ],
+      "whyExplore": "A Maine-based veterinary-technology program offering both associate and bachelor's degrees with extensive hands-on technical and laboratory training.",
+      "lookFirst": "Associate-versus-bachelor sequence, credentialing milestones, current clinical facilities, and opportunities to gain exotic/zoo/wildlife experience."
+    },
+    {
+      "code": "CANTON-VT",
+      "primaryFields": [
+        "veterinary-technology"
+      ],
+      "tags": [
+        "Vet tech",
+        "Hands-on animals"
+      ],
+      "whyExplore": "A four-year veterinary-technology route that builds on SUNY Canton's long-established accredited associate curriculum and includes work with companion, farm, and laboratory animals.",
+      "lookFirst": "How A.A.S. requirements fit inside the B.S.; preceptorships; species mix; advanced bachelor's coursework; options relevant to zoo/wildlife or research settings."
+    },
+    {
+      "code": "DELHI-VT",
+      "primaryFields": [
+        "veterinary-technology"
+      ],
+      "tags": [
+        "Vet tech",
+        "Hands-on animals"
+      ],
+      "whyExplore": "An unusually hands-on veterinary-technology path with live-animal labs from the first semester, an accredited A.A.S., and a B.S. continuation for advanced clinical, laboratory-animal, or public-health study.",
+      "lookFirst": "The A.A.S.-to-B.S. admission structure; live-animal labs; clinical facilities; advanced focus choices; how much zoo/exotic exposure would require external experience."
+    }
+  ]
+}

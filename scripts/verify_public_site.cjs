@@ -4,7 +4,7 @@ const http=require('http');
 const path=require('path');
 const {default:AxeBuilder}=require('@axe-core/playwright');
 const site=path.resolve(__dirname,'../site');
-const types={'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css','.webp':'image/webp'};
+const types={'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css','.webp':'image/webp','.svg':'image/svg+xml'};
 const server=http.createServer((req,res)=>{
  const file=path.resolve(site,'.'+new URL(req.url,'http://localhost').pathname);
  if(!file.startsWith(site+path.sep)){res.writeHead(403).end();return;}
@@ -25,6 +25,22 @@ for(const path of ['index.html','areas.html','programs.html','compare.html']){
  await page.keyboard.press('Enter');if(await page.locator(':focus').evaluate(el=>el.tagName)!=='MAIN')throw Error('Skip target '+path);
  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Page overflow '+path);
 }
+// Decorative assets must load, searches must still work, and small empty states must fit.
+for(const [file, searchId] of [['areas.html','areaSearch'],['programs.html','programSearch']]){
+ await page.goto(base+file);await page.waitForSelector('.guide-link');
+ await page.waitForFunction(()=>[...document.querySelectorAll('.field-icon')].every(el=>el.getBBox().width>0));
+ if(!await page.locator('.search-results-note img').evaluate(el=>el.complete&&el.naturalWidth>0))throw Error('Search fox did not load');
+ await page.setViewportSize({width:320,height:844});
+ await page.locator('#'+searchId).fill('zzzz-no-match');await page.waitForSelector('.friendly-empty');
+ if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Empty state overflows');
+ await page.locator('#'+searchId).fill('behavior');await page.waitForSelector('.guide-link');
+ if(await page.locator('.friendly-empty').count())throw Error('Search results did not recover');
+}
+await page.setViewportSize({width:1440,height:1000});
+await page.emulateMedia({reducedMotion:'reduce'});await page.goto(base+'areas.html');await page.waitForSelector('.guide-link');
+await page.locator('.guide-link').first().hover();
+if(await page.locator('.guide-arrow').first().evaluate(el=>getComputedStyle(el).transitionDuration)!=='0s')throw Error('Reduced motion preference ignored');
+await page.emulateMedia({reducedMotion:'no-preference'});
 const lib=JSON.parse(fs.readFileSync('site/content/programs/school-library.json'));
 for(const p of lib.programs){
  await page.goto(base+'program.html?code='+p.code);await page.waitForSelector('.program-article');

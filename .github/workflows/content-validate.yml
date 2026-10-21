@@ -123,6 +123,7 @@ jobs:
 
       - name: Check JavaScript syntax
         run: |
+          node --check site/animal-details.js
           node --check site/areas.js
           node --check site/area-article.js
           node --check site/programs.js

@@ -1,0 +1,81 @@
+name: Temporary field-focus migration
+
+on:
+  push:
+    branches: [field-focus-refresh-2026-10-21]
+    paths:
+      - "scripts/refocus_fields.py"
+      - ".github/workflows/refocus-fields.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  migrate-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: field-focus-refresh-2026-10-21
+          fetch-depth: 0
+
+      - name: Apply field and program refocus
+        run: |
+          python3 scripts/refocus_fields.py
+          python3 scripts/areas_build.py site/content/areas
+
+      - name: Inspect diff
+        run: |
+          git diff --stat
+          git diff -- site/content/areas/index.json site/areas.js site/programs.js site/program-article.js site/content/programs/additional-programs.json
+          git diff --check
+
+      - name: Validate focus model
+        run: |
+          python3 - <<'PY'
+          import json
+          idx=json.load(open('site/content/areas/index.json'))
+          assert len(idx['areas']) == 17, len(idx['areas'])
+          areas=[json.load(open('site/content/areas/'+f)) for f in idx['areas']]
+          primary=[a['id'] for a in areas if a.get('guideTier') == 'primary']
+          expected=['animal-biology','zoology','wildlife-ecology-management','animal-behavior','animal-welfare','animal-science','zoo-aquarium-science','veterinary-technology']
+          assert primary == expected, primary
+          assert next(a for a in areas if a['id']=='wildlife-ecology-management')['title']=='Wildlife Biology'
+          assert next(a for a in areas if a['id']=='veterinary-technology')['title']=='Veterinary Technology'
+          assert not any(a['title']=='Marine Biology' and a.get('guideTier')=='primary' for a in areas)
+          additions=json.load(open('site/content/programs/additional-programs.json'))
+          assert len(additions)==8, len(additions)
+          vt=next(p for p in additions if p['code']=='UMA-VT')
+          assert vt['title']=='Veterinary Technology B.S.'
+          focus=open('site/program-focus.js', encoding='utf-8').read()
+          for code in ['ME-WE','ME-ZOO','UMA-BIO','UNE-AB','URI-AZ','URI-W','URI-WZ','CAN-ABEC','DRAKE-ZCS','OTT-ZCS','BUCK-ANBE','ECK-AS','UMA-VT']:
+              assert f'"{code}"' in focus
+          for code in ['UMA-AS','UMA-WEC','UNITY-WCR','ME-AVS']:
+              assert f'"{code}"' not in focus
+          print('field guides:', len(areas))
+          print('primary guides:', len(primary))
+          print('additional programs:', len(additions))
+          PY
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check site/areas.js
+          node --check site/area-article.js
+          node --check site/program-focus.js
+          node --check site/programs.js
+          node --check site/program-article.js
+
+      - name: Verify generator is stable
+        run: |
+          rm -rf /tmp/animal-area-build
+          python3 scripts/areas_build.py /tmp/animal-area-build
+          diff -ru --exclude=README.md --exclude=photos.json site/content/areas /tmp/animal-area-build
+
+      - name: Commit migrated content and remove temporary machinery
+        run: |
+          rm scripts/refocus_fields.py .github/workflows/refocus-fields.yml
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refocus fields and add veterinary technology"
+          git push origin HEAD:field-focus-refresh-2026-10-21

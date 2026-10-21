@@ -1,0 +1,184 @@
+{
+  "id": "wildlife-biology",
+  "title": "Wildlife Biology",
+  "short": "The study of free-ranging wild animals, their populations, movement, life histories, habitats, and interactions with people and ecosystems.",
+  "bigPicture": "Wildlife biology studies animals living in the wild and the processes that determine whether their populations persist. Researchers estimate abundance and survival, track movement, study reproduction and habitat use, investigate disease and human-wildlife conflict, and ask why populations change. Fieldwork is common, but modern wildlife biology also depends heavily on statistics, geographic information systems, genetics, remote cameras, acoustic sensors, and population models.",
+  "distinction": {
+    "title": "Wildlife Biology and Wildlife Conservation",
+    "summary": "The same project can contain both. Wildlife biology supplies evidence about animals and populations; conservation adds the applied decision about how that evidence should be used.",
+    "items": [
+      {
+        "label": "Wildlife Biology",
+        "description": "Centers on understanding free-ranging animals: abundance, survival, reproduction, movement, habitat use, disease, and population dynamics."
+      },
+      {
+        "label": "Wildlife Conservation",
+        "description": "Uses biological and ecological evidence to protect, recover, or manage species, populations, habitats, and biodiversity."
+      }
+    ]
+  },
+  "terms": [
+    {
+      "term": "Population",
+      "definition": "A group of individuals of the same species living in a defined area and potentially interacting or breeding."
+    },
+    {
+      "term": "Home range",
+      "definition": "The area an animal routinely uses for feeding, shelter, mating, and other normal activities."
+    },
+    {
+      "term": "Mark–recapture",
+      "definition": "Marking a sample of animals and using later encounters with marked individuals to estimate population size or survival."
+    },
+    {
+      "term": "Telemetry",
+      "definition": "Tracking animals with radio, satellite, GPS, or other transmitters to study movement and habitat use."
+    },
+    {
+      "term": "Occupancy",
+      "definition": "The probability that a species uses a site, estimated while accounting for the fact that animals can be present but undetected."
+    },
+    {
+      "term": "Demography",
+      "definition": "The study of population processes such as birth, death, immigration, emigration, and age structure."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Population size, survival, and reproduction",
+      "description": "Estimating how many animals are present, which age groups survive, how successfully they reproduce, and whether a population is growing, stable, or declining.",
+      "source": "The Wildlife Society: Early Career Development"
+    },
+    {
+      "title": "Movement and habitat use",
+      "description": "Tracking where animals go, what habitats they select, when they migrate, and which landscape features help or hinder movement."
+    },
+    {
+      "title": "Life history and species biology",
+      "description": "Understanding diet, breeding, social organization, seasonal cycles, mortality, and other features that determine how a wild species lives."
+    },
+    {
+      "title": "Human-wildlife interactions and health",
+      "description": "Studying conflict, roads, hunting, disease, development, climate, and other human or environmental pressures that change animal populations."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Is this population growing, stable, or declining?",
+      "approach": "By combining repeated surveys, mark–recapture, demographic data, and population models while accounting for imperfect detection."
+    },
+    {
+      "question": "Where do animals move during different seasons?",
+      "approach": "With telemetry, GPS tags, banding, camera traps, acoustic monitoring, or repeated field observations."
+    },
+    {
+      "question": "Which habitats are most important for survival or reproduction?",
+      "approach": "By comparing animal locations and demographic outcomes with vegetation, land cover, food, predators, disturbance, and other habitat variables."
+    },
+    {
+      "question": "Why is mortality increasing?",
+      "approach": "By integrating health evidence, predator data, weather, disease surveillance, human activity, and movement histories."
+    },
+    {
+      "question": "How is human activity changing behavior or population dynamics?",
+      "approach": "By comparing animals across gradients of development, recreation, roads, hunting pressure, noise, or other disturbances."
+    },
+    {
+      "question": "What information is strong enough to support a management decision?",
+      "approach": "By quantifying uncertainty, testing alternative explanations, and separating observed patterns from assumptions about cause."
+    }
+  ],
+  "responsibilities": [
+    "Conduct wildlife surveys, captures, tagging, tracking, or other field sampling.",
+    "Manage and analyze population, movement, habitat, and monitoring data.",
+    "Prepare reports, maps, models, and recommendations for agencies or conservation organizations.",
+    "Follow animal-care, permitting, biosafety, and field-safety requirements."
+  ],
+  "knowledgeSkills": [
+    "Wildlife ecology and population biology",
+    "Field identification, sampling, and animal-handling methods",
+    "Statistics, population models, and data management",
+    "Geographic information systems and spatial analysis",
+    "Scientific writing, permitting, and collaborative fieldwork"
+  ],
+  "variations": [
+    {
+      "label": "Field and analytical balance",
+      "description": "Some positions spend substantial time capturing or observing animals; others are dominated by modeling, mapping, database work, or reporting."
+    },
+    {
+      "label": "Species focus",
+      "description": "Wildlife biologists may specialize in birds, mammals, reptiles and amphibians, fishes, invertebrates, or a particular threatened species."
+    },
+    {
+      "label": "Agency and research roles",
+      "description": "Agency work often adds regulations, permits, stakeholder communication, and management decisions to the science. Academic research usually gives more weight to theory and publication."
+    },
+    {
+      "label": "Biology and conservation overlap",
+      "description": "Many professionals do both. The distinction is most useful for understanding whether the immediate goal is learning how a population works or deciding what action to take."
+    }
+  ],
+  "settings": [
+    "State and federal wildlife agencies",
+    "Universities and field research stations",
+    "Conservation organizations and land trusts",
+    "Environmental consulting and natural-resource programs"
+  ],
+  "realities": [
+    "Fieldwork can be physically demanding, seasonal, weather-dependent, and scheduled around the animals rather than normal office hours.",
+    "Entry-level wildlife work often includes temporary or seasonal technician positions before permanent roles.",
+    "Statistics, data management, and spatial tools are increasingly central even for people attracted to the field because they like outdoor work.",
+    "Some jobs involve frequent animal handling; many involve observation, remote monitoring, habitat measurements, or data instead.",
+    "Graduate study is common for research leadership and specialized population-science roles."
+  ],
+  "careers": [
+    "Wildlife biologist",
+    "Wildlife research technician",
+    "Mammalogist",
+    "Ornithologist",
+    "Herpetologist",
+    "Wildlife disease ecologist",
+    "M.S. / Ph.D. in wildlife biology"
+  ],
+  "programs": [
+    {
+      "code": "ME-WE",
+      "school": "University of Maine",
+      "title": "Wildlife Ecology B.S."
+    },
+    {
+      "code": "URI-W",
+      "school": "University of Rhode Island",
+      "title": "Wildlife & Conservation Biology"
+    },
+    {
+      "code": "UMA-WEC",
+      "school": "University of Massachusetts Amherst",
+      "title": "Natural Resources Conservation B.S. (Wildlife Ecology & Conservation concentration)"
+    }
+  ],
+  "programCodes": [
+    "ME-WE",
+    "URI-W",
+    "UMA-WEC"
+  ],
+  "related": [
+    "zoology",
+    "animal-behavior",
+    "ecology",
+    "conservation-biology"
+  ],
+  "references": [
+    {
+      "title": "The Wildlife Society",
+      "type": "Professional society",
+      "url": "https://wildlife.org/"
+    },
+    {
+      "title": "The Wildlife Society: Early Career Development",
+      "type": "Career and professional resource",
+      "url": "https://wildlife.org/early-career-development/"
+    }
+  ]
+}

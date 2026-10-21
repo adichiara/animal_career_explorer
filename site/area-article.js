@@ -83,7 +83,7 @@
       <div class="fact-line">${[career.educationBand, career.directContact ? `${career.directContact} direct animal contact` : '', ...(career.workTags || [])].filter(Boolean).map(value => `<span>${esc(value)}</span>`).join('')}</div>
       ${rows.length ? `<dl>${rows.map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl>` : ''}
       ${career.competencies && career.competencies.length ? `<div class="competencies"><p class="mini-label">Common competencies</p><ul>${career.competencies.map(item => `<li><strong>${esc(item.name)}</strong> — ${esc(item.description)}</li>`).join('')}</ul></div>` : ''}
-      ${(career.recentPostings || []).length || (career.observedTitles || []).length ? `<a class="inline-source" href="../job.html?role=${encodeURIComponent(career.slug)}">View dated job examples →</a>` : ''}
+      ${(career.recentPostings || []).length || (career.observedTitles || []).length ? `<a class="inline-source" href="../job.html?role=${encodeURIComponent(career.slug)}">View job examples →</a>` : ''}
       </div>
     </details>`;
   }

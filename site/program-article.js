@@ -78,7 +78,7 @@
       ? `<div class="program-tag-list" aria-label="Program topics">${program.tags.map(tag => `<span>${esc(tag)}</span>`).join('')}</div>`
       : '';
     const photo = programPhotos[program.code];
-    const photoHtml = photo ? `<figure><img src="${esc(photo.url)}" alt="${esc(photo.alt || '')}" width="1200" height="675" decoding="async" fetchpriority="high"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit || schoolName)}</a></figcaption></figure>` : '';
+    const photoHtml = photo ? `<figure><img src="${esc(photo.url)}" alt="${esc(photo.alt || '')}" width="1200" height="675" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit || schoolName)}</a></figcaption></figure>` : '';
     document.title = `${program.title} | Animal Education Pathways`;
     document.querySelector('meta[name="description"]').setAttribute('content', program.fundamental || program.overview);
     app.innerHTML = `<article class="field-article program-article">

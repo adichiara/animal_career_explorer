@@ -1,0 +1,175 @@
+{
+  "id": "animal-biology",
+  "title": "Animal Biology",
+  "short": "How animals function, from genes and tissues through organs, physiology, development, and the whole organism.",
+  "bigPicture": "Animal biology studies the biological workings of animals across levels of organization. A project might ask how hormones alter reproduction, how a diving mammal manages oxygen, how development produces a body structure, or how genetic differences affect physiology. Universities use the title differently, so the curriculum matters more than the degree name. Strong programs connect cellular and molecular mechanisms to anatomy, physiology, development, behavior, and whole-animal biology.",
+  "terms": [
+    {
+      "term": "Physiology",
+      "definition": "The study of how organs and body systems function and are regulated."
+    },
+    {
+      "term": "Endocrinology",
+      "definition": "The study of hormones and the systems that produce and respond to them."
+    },
+    {
+      "term": "Comparative anatomy",
+      "definition": "Comparing structures across species to understand function, evolution, and biological constraint."
+    },
+    {
+      "term": "Developmental biology",
+      "definition": "How an animal grows and changes from embryo through adulthood."
+    },
+    {
+      "term": "Genotype and phenotype",
+      "definition": "Genotype is an organism's genetic makeup; phenotype is the observable result of genes interacting with development and environment."
+    },
+    {
+      "term": "Organismal biology",
+      "definition": "Biology studied at the level of the whole animal, integrating multiple body systems and environmental demands."
+    }
+  ],
+  "focus": [
+    {
+      "title": "Physiology and body systems",
+      "description": "How circulation, respiration, digestion, reproduction, neural function, immunity, and other systems operate and coordinate.",
+      "source": "SICB: Career Information"
+    },
+    {
+      "title": "Genes, development, and biological variation",
+      "description": "How inherited differences and developmental processes shape anatomy, physiology, disease susceptibility, and other animal traits."
+    },
+    {
+      "title": "Comparative and integrative biology",
+      "description": "Using differences among species to test biological ideas and connect mechanisms at the cell or tissue level to the functioning of the whole animal.",
+      "source": "Society for Integrative and Comparative Biology"
+    },
+    {
+      "title": "Laboratory and whole-animal methods",
+      "description": "Depending on the question, work may involve microscopy, assays, imaging, dissection, physiological measurement, behavioral observation, or controlled whole-animal experiments."
+    }
+  ],
+  "questions": [
+    {
+      "question": "How does an animal maintain stable internal conditions when its environment changes?",
+      "approach": "By measuring temperature, oxygen use, hormones, hydration, blood chemistry, or other variables while environmental conditions are controlled or observed."
+    },
+    {
+      "question": "Why do two species solve the same biological problem differently?",
+      "approach": "Through comparative studies of anatomy, physiology, genetics, and development across species."
+    },
+    {
+      "question": "How do hormones affect reproduction, growth, stress, or behavior?",
+      "approach": "By measuring endocrine signals and relating them experimentally or observationally to changes in tissues, physiology, and behavior."
+    },
+    {
+      "question": "How does a genetic difference change an animal's body or function?",
+      "approach": "By linking genetic variation to molecular pathways, anatomy, physiology, or measurable traits."
+    },
+    {
+      "question": "How do body systems work together during demanding activities?",
+      "approach": "By combining measurements across systems during exercise, migration, diving, temperature stress, or other biological challenges."
+    },
+    {
+      "question": "How does development produce the adult form?",
+      "approach": "By following tissues, gene activity, and structural change through embryos, juveniles, and later life stages."
+    }
+  ],
+  "responsibilities": [
+    "Design and carry out laboratory or whole-animal studies.",
+    "Collect physiological, anatomical, genetic, developmental, or behavioral measurements.",
+    "Analyze quantitative data and connect measurements across biological levels.",
+    "Document methods, maintain research records, and communicate findings."
+  ],
+  "knowledgeSkills": [
+    "Anatomy and physiology",
+    "Genetics, cell biology, and development",
+    "Laboratory measurement and experimental design",
+    "Statistics and data analysis",
+    "Comparative and evolutionary thinking"
+  ],
+  "variations": [
+    {
+      "label": "Degree names vary",
+      "description": "Animal Biology, Integrative Biology, Organismal Biology, Zoology, and Biological Sciences can contain very similar undergraduate pathways. Read the required courses and faculty research before judging a program by its title."
+    },
+    {
+      "label": "Scale of study",
+      "description": "Some researchers work mainly with cells, tissues, and molecular assays; others measure whole animals. Many projects deliberately connect both levels."
+    },
+    {
+      "label": "Animal contact",
+      "description": "A degree about animals does not guarantee daily animal handling. Some of the most animal-focused research is still primarily laboratory, specimen, imaging, or data work."
+    },
+    {
+      "label": "Applied directions",
+      "description": "The same foundation can lead toward behavior, welfare, wildlife health, veterinary technology, biomedical research, or graduate work in physiology and organismal biology."
+    }
+  ],
+  "settings": [
+    "Universities and research institutes",
+    "Animal physiology, biomedical, and comparative-biology laboratories",
+    "Zoos, aquariums, and animal-health research programs",
+    "Government, conservation, and biotechnology organizations"
+  ],
+  "realities": [
+    "The title Animal Biology is not standardized across universities; two programs with the same name can be built very differently.",
+    "Independent research careers usually require graduate study, while bachelor's-level work more often begins in technician, laboratory, animal-care, or field-support roles.",
+    "Chemistry, statistics, and laboratory methods matter even when the motivating interest is whole animals.",
+    "Animal contact can range from frequent to almost none depending on the research question and method.",
+    "A broad undergraduate foundation can be useful when behavior, welfare, physiology, and animal health all remain plausible directions."
+  ],
+  "careers": [
+    "Animal physiologist",
+    "Comparative biologist",
+    "Research technician — animal biology / physiology",
+    "Animal behavior researcher",
+    "Wildlife health researcher",
+    "M.S. / Ph.D. in organismal, integrative, or animal biology"
+  ],
+  "programs": [
+    {
+      "code": "ME-ZOO",
+      "school": "University of Maine",
+      "title": "Zoology B.S. with Ecology concentration"
+    },
+    {
+      "code": "UMA-BIO",
+      "school": "University of Massachusetts Amherst",
+      "title": "Biology B.S. (ecology and behavior electives)"
+    },
+    {
+      "code": "UNH-ZOO",
+      "school": "University of New Hampshire",
+      "title": "Zoology B.S."
+    }
+  ],
+  "programCodes": [
+    "ME-ZOO",
+    "UMA-BIO",
+    "UNH-ZOO"
+  ],
+  "related": [
+    "zoology",
+    "animal-behavior",
+    "animal-welfare",
+    "veterinary-technology"
+  ],
+  "references": [
+    {
+      "title": "Society for Integrative and Comparative Biology",
+      "type": "Professional society",
+      "url": "https://sicb.org/"
+    },
+    {
+      "title": "SICB: Career Information",
+      "type": "Career and field resource",
+      "url": "https://sicb.org/resources/career-information/"
+    },
+    {
+      "title": "Integrative and Comparative Biology (formerly American Zoologist)",
+      "type": "Field journal",
+      "url": "https://academic.oup.com/icb/"
+    }
+  ]
+}

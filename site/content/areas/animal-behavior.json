@@ -160,26 +160,20 @@
       "title": "Animal Behavior B.S."
     },
     {
-      "code": "UNE-AN",
-      "school": "University of New England",
-      "title": "Animal Behavior B.S. with Neuroscience minor"
+      "code": "CAN-ABEC",
+      "school": "Canisius University",
+      "title": "Animal Behavior, Ecology, and Conservation B.S. + Zoo Biology minor"
     },
     {
-      "code": "UMA-BIO",
-      "school": "University of Massachusetts Amherst",
-      "title": "Biology B.S. (ecology and behavior electives)"
-    },
-    {
-      "code": "ME-WE",
-      "school": "University of Maine",
-      "title": "Wildlife Ecology B.S."
+      "code": "UNH-ZOO",
+      "school": "University of New Hampshire",
+      "title": "Zoology B.S."
     }
   ],
   "programCodes": [
     "UNE-AB",
-    "UNE-AN",
-    "UMA-BIO",
-    "ME-WE"
+    "CAN-ABEC",
+    "UNH-ZOO"
   ],
   "related": [
     "animal-cognition",

@@ -64,6 +64,8 @@ topics = {'type', 'size', 'campus', 'housing', 'studentLife', 'recreation'}
 for code, school_id in schools['programSchools'].items():
     school = schools['schools'][school_id]
     assert set(school['facts']) == topics, school_id
+    # Retain the single-photo field for browsers with the previous script cached.
+    assert school['photo'] == school['photos'][0], school_id
     facts = {**school['facts'], **schools['programOverrides'].get(code, {}).get('facts', {})}
     for topic, fact in facts.items():
         assert fact['text'] and fact['sources'], (code, topic)
@@ -84,3 +86,8 @@ for code, school_id in schools['programSchools'].items():
             assert photo['originalUrl'].startswith('https://'), code
 
 print(f'Public navigation and landmarks pass; comparison covers {len(comparison.rows)} programs.')
+
+# A changed program renderer must have a new browser-cache identity.
+import hashlib
+version = hashlib.sha256((SITE / "program-article.js").read_bytes()).hexdigest()[:12]
+assert f'src="program-article.js?v={version}"' in (SITE / "program.html").read_text()

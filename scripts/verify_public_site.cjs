@@ -57,7 +57,7 @@ for(const p of lib.programs){
  for(const width of [320,390,768]){
   await page.setViewportSize({width,height:844});
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)){
-   const overflow=await page.locator('article *').evaluateAll(es=>es.filter(el=>el.getBoundingClientRect().right>innerWidth+1).map(el=>({tag:el.tagName,classes:el.className,width:el.getBoundingClientRect().width,text:el.textContent.slice(0,60)})).slice(0,15));
+   const overflow=await page.locator('body *').evaluateAll(es=>es.filter(el=>el.getBoundingClientRect().right>innerWidth+1||el.scrollWidth>el.clientWidth+1).map(el=>({tag:el.tagName,classes:el.className,width:el.getBoundingClientRect().width,right:el.getBoundingClientRect().right,scroll:el.scrollWidth,client:el.clientWidth,text:el.textContent.slice(0,60)})).slice(0,25));
    throw Error('Program overflow '+p.code+' at '+width+': '+JSON.stringify(overflow));
   }
  }

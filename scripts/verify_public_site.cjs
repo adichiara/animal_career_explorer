@@ -45,6 +45,23 @@ for(const p of lib.programs){
  await page.goto(base+'program.html?code='+p.code);await page.waitForSelector('.program-article');
  const links=await page.locator('#overview .related-links a').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
  if(links.length!==p.primaryFields.length)throw Error('Missing field links '+p.code);
+ const sectionIds=await page.locator('.article-content > section').evaluateAll(es=>es.map(e=>e.id));
+ if(sectionIds.slice(0,3).join(',')!=='overview,school,academics')throw Error('School section order '+p.code);
+ if(await page.locator('#school .school-facts > div').count()!==6)throw Error('School topics missing '+p.code);
+ if(await page.locator('#school .school-photo img').count()!==1)throw Error('School photo missing '+p.code);
+ const numbers=await page.locator('.article-content > section .section-number').allTextContents();
+ if(numbers.join(',')!=='01,02,03,04,05,06,07,08')throw Error('Section numbering '+p.code);
+ for(const href of await page.locator('#school sup a').evaluateAll(es=>es.map(e=>e.getAttribute('href')))){
+  if(await page.locator(href).count()!==1)throw Error('School citation target '+p.code+' '+href);
+ }
+ for(const width of [320,390,768]){
+  await page.setViewportSize({width,height:844});
+  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)){
+   const overflow=await page.locator('body *').evaluateAll(es=>es.filter(el=>el.getBoundingClientRect().right>innerWidth+1||el.scrollWidth>el.clientWidth+1).map(el=>({tag:el.tagName,classes:el.className,width:el.getBoundingClientRect().width,right:el.getBoundingClientRect().right,scroll:el.scrollWidth,client:el.clientWidth,text:el.textContent.slice(0,60)})).slice(0,25));
+   throw Error('Program overflow '+p.code+' at '+width+': '+JSON.stringify(overflow));
+  }
+ }
+ await page.setViewportSize({width:1440,height:1000});
 }
 const fields=JSON.parse(fs.readFileSync('site/content/areas/index.json'));
 for(const name of fields.areas){

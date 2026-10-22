@@ -89,6 +89,15 @@ for(const size of [{width:900,height:1500},{width:1500,height:900},{width:600,he
   }
   const image=await heroImg.boundingBox(),credit=await page.locator('.program-photo-hero figcaption').boundingBox();
   if(credit.y<image.y+image.height-1)throw Error('Credit overlays image at '+width);
+  const figure=await page.locator('.program-photo-hero figure').boundingBox();
+  const intro=await page.locator('.program-hero-intro').boundingBox();
+  const copy=await page.locator('.program-photo-hero .hero-copy').boundingBox();
+  const facts=await page.locator('.program-photo-hero .hero-facts').boundingBox();
+  if(figure.height>image.height+credit.height+20)throw Error('Oversized empty photo panel at '+width);
+  if(image.width>320.5||image.height>360.5)throw Error('Supporting photo too large at '+width);
+  if(facts.y<intro.y+intro.height-1||facts.width<intro.width)throw Error('Facts are not below the full introduction at '+width);
+  if(width<900&&figure.y<copy.y+copy.height-1)throw Error('Mobile photo does not stack after the introduction at '+width);
+  if(width>=900&&figure.x<copy.x+copy.width-1)throw Error('Desktop photo does not sit beside the introduction at '+width);
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Photo layout overflows at '+width);
  }
 }

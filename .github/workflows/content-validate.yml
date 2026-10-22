@@ -70,7 +70,10 @@ jobs:
               photo = photos[code]
               for key in ("url", "alt", "credit", "source"):
                   assert photo.get(key), (code, key)
-              assert photo["url"].startswith("https://"), (code, photo["url"])
+              if not photo["url"].startswith("https://"):
+                  assert photo["url"].startswith("images/programs/"), (code, photo["url"])
+                  assert Path("site", photo["url"]).is_file(), code
+                  assert photo["originalUrl"].startswith("https://"), code
               assert photo["source"].startswith("https://"), (code, photo["source"])
 
           expected_fields = {

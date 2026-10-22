@@ -1,16 +1,18 @@
 {
   "photos": {
     "ME-ZOO": {
-      "url": "https://sbe.umaine.edu/wp-content/uploads/sites/92/2019/09/undergraduatezoology2-682x1024.jpg",
+      "url": "images/programs/me-zoo.webp",
       "alt": "University of Maine zoology students working outside.",
       "credit": "University of Maine",
-      "source": "https://sbe.umaine.edu/undergraduate/zoology/"
+      "source": "https://sbe.umaine.edu/undergraduate/zoology/",
+      "originalUrl": "https://sbe.umaine.edu/wp-content/uploads/sites/92/2019/09/undergraduatezoology2-682x1024.jpg"
     },
     "ME-WE": {
-      "url": "https://umaine.edu/wle/wp-content/uploads/sites/300/2020/06/Logan-Sauer-2-300x300.jpg",
+      "url": "images/programs/me-we.webp",
       "alt": "University of Maine wildlife ecology student holding a bear cub during field work.",
       "credit": "University of Maine",
-      "source": "https://umaine.edu/wle/undergraduate-program/"
+      "source": "https://umaine.edu/wle/undergraduate-program/",
+      "originalUrl": "https://umaine.edu/wle/wp-content/uploads/sites/300/2020/06/Logan-Sauer-2-300x300.jpg"
     },
     "UMA-BIO": {
       "url": "https://www.umass.edu/biology/sites/default/files/styles/thumbnail_350x225/public/2025-10/IMG_6816.jpeg?h=71976bb4&itok=Ze6_JBcf",

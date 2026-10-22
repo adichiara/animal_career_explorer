@@ -53,10 +53,10 @@ for(const p of lib.programs){
  const campuses=schoolProfiles.programOverrides[p.code]?.campuses||school.campuses;
  for(const campus of campuses)if(!(await page.locator('.school-overview-campus').textContent()).includes(campus))throw Error('Campus label missing '+p.code);
  if(await page.locator('#school .school-photo img').count()!==campuses.length)throw Error('School photo missing '+p.code);
- for(const img of await page.locator('#school .school-photo img[src^="images/"]').all()){
+ for(const img of await page.locator('.program-photo-hero img[src^="images/"], #school .school-photo img[src^="images/"]').all()){
   await img.scrollIntoViewIfNeeded();
   await img.evaluate(el=>el.decode());
-  if(!(await img.evaluate(el=>el.naturalWidth>0)))throw Error('Campus photo failed to load '+p.code);
+  if(!(await img.evaluate(el=>el.naturalWidth>0)))throw Error('Program or campus photo failed to load '+p.code);
  }
  const numbers=await page.locator('.article-content > section .section-number').allTextContents();
  if(numbers.join(',')!=='01,02,03,04,05,06,07,08')throw Error('Section numbering '+p.code);

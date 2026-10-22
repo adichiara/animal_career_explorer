@@ -70,10 +70,17 @@ for code, school_id in schools['programSchools'].items():
         for key in fact['sources']:
             source = school['sources'][key]
             assert source['url'].startswith('https://') and source['retrievedOn'], (code, key)
-    for key in ['url', 'alt', 'credit', 'source', 'retrievedOn']:
-        assert school['photo'].get(key), (school_id, key)
-    photo_url = school['photo']['url']
-    if not photo_url.startswith('https://'):
-        assert photo_url.startswith('images/schools/') and (SITE / photo_url).is_file(), school_id
-        assert school['photo']['originalUrl'].startswith('https://'), school_id
+    override = schools['programOverrides'].get(code, {})
+    campuses = override.get('campuses', school['campuses'])
+    photos = override.get('photos', school['photos'])
+    assert campuses and len(photos) == len(campuses), code
+    for photo in photos:
+        for key in ['url', 'alt', 'caption', 'credit', 'source', 'retrievedOn']:
+            assert photo.get(key), (code, key)
+        assert photo['source'].startswith('https://'), code
+        photo_url = photo['url']
+        if not photo_url.startswith('https://'):
+            assert photo_url.startswith('images/schools/') and (SITE / photo_url).is_file(), code
+            assert photo['originalUrl'].startswith('https://'), code
+
 print(f'Public navigation and landmarks pass; comparison covers {len(comparison.rows)} programs.')

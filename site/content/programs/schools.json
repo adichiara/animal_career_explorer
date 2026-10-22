@@ -87,14 +87,20 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "images/schools/umaine.webp",
-        "alt": "Aerial view of the University of Maine campus in Orono in autumn.",
-        "credit": "University of Maine",
-        "source": "https://umaine.edu/admissions/visit/",
-        "retrievedOn": "2026-10-22",
-        "originalUrl": "https://umaine.edu/admissions/wp-content/uploads/sites/1025/2026/02/Campus-aerial-feature.jpg"
-      }
+      "campuses": [
+        "Orono, Maine"
+      ],
+      "photos": [
+        {
+          "url": "images/schools/umaine.webp",
+          "alt": "Aerial view of the University of Maine campus in Orono in autumn.",
+          "credit": "University of Maine",
+          "source": "https://umaine.edu/admissions/visit/",
+          "retrievedOn": "2026-10-22",
+          "originalUrl": "https://umaine.edu/admissions/wp-content/uploads/sites/1025/2026/02/Campus-aerial-feature.jpg",
+          "caption": "Orono, Maine campus"
+        }
+      ]
     },
     "umass-amherst": {
       "name": "University of Massachusetts Amherst",
@@ -192,13 +198,19 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.umass.edu/sites/default/files/styles/large/public/2020-08/umass_amherst_dubois_library_campus_center.jpg?itok=UWrkgQqU",
-        "alt": "W. E. B. Du Bois Library, the Campus Center, and campus pond at UMass Amherst.",
-        "credit": "University of Massachusetts Amherst",
-        "source": "https://www.umass.edu/gateway/umass-stories/whats-it-like-to-attend-umass",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Amherst, Massachusetts"
+      ],
+      "photos": [
+        {
+          "url": "https://www.umass.edu/sites/default/files/styles/large/public/2020-08/umass_amherst_dubois_library_campus_center.jpg?itok=UWrkgQqU",
+          "alt": "W. E. B. Du Bois Library, the Campus Center, and campus pond at UMass Amherst.",
+          "credit": "University of Massachusetts Amherst",
+          "source": "https://www.umass.edu/gateway/umass-stories/whats-it-like-to-attend-umass",
+          "retrievedOn": "2026-10-22",
+          "caption": "Amherst, Massachusetts campus"
+        }
+      ]
     },
     "une": {
       "name": "University of New England",
@@ -210,13 +222,14 @@
           ]
         },
         "size": {
-          "text": "2,139 undergraduate students by headcount in the fall 2025 university snapshot; graduate and professional students are reported separately.",
+          "text": "UNE reported 2,139 undergraduates university-wide in fall 2025; its undergraduate residential campus is Biddeford. This is not a separately reported Biddeford headcount.",
           "sources": [
-            "facts"
+            "facts",
+            "life"
           ]
         },
         "campus": {
-          "text": "Undergraduate campus life is based in Biddeford, Maine, beside the Saco River and Atlantic coast. UNE also has campuses in Portland, Maine, and Tangier, Morocco.",
+          "text": "The Animal Behavior program is based on the Biddeford campus in Maine, beside the Saco River and Atlantic coast. The waterfront campus includes academic buildings, residence halls, and the Danielle N. Ripich Commons.",
           "sources": [
             "life",
             "glance"
@@ -264,13 +277,20 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.une.edu/sites/default/files/styles/full_bleed_half/public/2023-01/student_life-bc-collage-commons_hanging.jpg.webp?h=bdadea04&itok=FCHOWYSy",
-        "alt": "UNE students playing pool and foosball in the Biddeford campus Commons.",
-        "credit": "University of New England",
-        "source": "https://www.une.edu/studentlife/biddeford",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Biddeford, Maine"
+      ],
+      "photos": [
+        {
+          "url": "images/schools/une.webp",
+          "alt": "Aerial view of UNE’s Biddeford campus beside the Saco River and Atlantic coast.",
+          "credit": "University of New England",
+          "source": "https://www.une.edu/",
+          "retrievedOn": "2026-10-22",
+          "caption": "Biddeford campus · aerial view from the UNE homepage",
+          "originalUrl": "https://www.une.edu/sites/default/files/styles/homepage_banner_mobile/public/2026-09/2026-Fall-Visit-Banner-Video-Still-Mobile.webp?itok=gylSxniP"
+        }
+      ]
     },
     "uri": {
       "name": "University of Rhode Island",
@@ -283,9 +303,10 @@
           ]
         },
         "size": {
-          "text": "More than 15,000 undergraduates in the university’s current admissions overview; graduate students are additional.",
+          "text": "Kingston is URI’s main undergraduate residential campus. URI’s admissions profile lists more than 15,000 undergraduates university-wide; it does not give a separate Kingston headcount.",
           "sources": [
-            "facts"
+            "facts",
+            "campus"
           ]
         },
         "campus": {
@@ -295,7 +316,7 @@
           ]
         },
         "housing": {
-          "text": "On-campus housing and dining are available, alongside off-campus living. University housing and dining pages describe the current residential and meal options.",
+          "text": "Kingston offers on-campus residence halls and campus dining, alongside off-campus living in the surrounding area.",
           "sources": [
             "housing",
             "dining"
@@ -351,13 +372,19 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.uri.edu/wp-content/uploads/home/2018/05/kingston-campus-500x327.jpg",
-        "alt": "Aerial view of the University of Rhode Island Kingston campus and quadrangle.",
-        "credit": "University of Rhode Island",
-        "source": "https://www.uri.edu/about/campuses/",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Kingston, Rhode Island"
+      ],
+      "photos": [
+        {
+          "url": "https://www.uri.edu/wp-content/uploads/home/2018/05/kingston-campus-500x327.jpg",
+          "alt": "Aerial view of the University of Rhode Island Kingston campus and quadrangle.",
+          "credit": "University of Rhode Island",
+          "source": "https://www.uri.edu/about/campuses/",
+          "retrievedOn": "2026-10-22",
+          "caption": "Kingston, Rhode Island campus"
+        }
+      ]
     },
     "canisius": {
       "name": "Canisius University",
@@ -422,13 +449,19 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.canisius.edu/sites/default/files/styles/16_9_scale_and_crop_medium/public/legacy/news/image/campus_fall_shot.jpg?h=fbf4b26c&itok=JmZDJyRj",
-        "alt": "Aerial view of Canisius University and surrounding Buffalo neighborhoods in autumn.",
-        "credit": "Canisius University",
-        "source": "https://www.canisius.edu/about",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Buffalo, New York"
+      ],
+      "photos": [
+        {
+          "url": "https://www.canisius.edu/sites/default/files/styles/16_9_scale_and_crop_medium/public/legacy/news/image/campus_fall_shot.jpg?h=fbf4b26c&itok=JmZDJyRj",
+          "alt": "Aerial view of Canisius University and surrounding Buffalo neighborhoods in autumn.",
+          "credit": "Canisius University",
+          "source": "https://www.canisius.edu/about",
+          "retrievedOn": "2026-10-22",
+          "caption": "Buffalo, New York campus"
+        }
+      ]
     },
     "unh": {
       "name": "University of New Hampshire",
@@ -440,9 +473,9 @@
           ]
         },
         "size": {
-          "text": "More than 11,250 undergraduates and 2,500 graduate students in the university’s current facts profile. These are university-wide figures.",
+          "text": "The Durham campus enrolled 10,352 degree-seeking undergraduates and 1,889 degree-seeking graduate students in the fall 2026 census. Non-degree and exchange students are reported separately.",
           "sources": [
-            "facts"
+            "census"
           ]
         },
         "campus": {
@@ -494,15 +527,26 @@
           "label": "Campus places · College Woods",
           "url": "https://admissions.unh.edu/blog/2025/06/what-you-might-not-see-your-university-new-hampshire-campus-tour",
           "retrievedOn": "2026-10-22"
+        },
+        "census": {
+          "label": "Fall 2026 enrollment census · Durham campus",
+          "url": "https://www.unh.edu/institutional-research/sites/default/files/media/2026-10/202610%20IR37100_CENSUS%20-%20Institutional%20Summary%20-%20Enrollment%20Census.pdf",
+          "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.unh.edu/sites/default/files/styles/portrait_480x672/public/media/2025-10/about_durham_800.jpg?h=00546c34&itok=F8zQ3BZO",
-        "alt": "Thompson Hall and the University of New Hampshire campus in Durham.",
-        "credit": "University of New Hampshire",
-        "source": "https://www.unh.edu/life-unh",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Durham, New Hampshire"
+      ],
+      "photos": [
+        {
+          "url": "https://www.unh.edu/sites/default/files/styles/portrait_480x672/public/media/2025-10/about_durham_800.jpg?h=00546c34&itok=F8zQ3BZO",
+          "alt": "Thompson Hall and the University of New Hampshire campus in Durham.",
+          "credit": "University of New Hampshire",
+          "source": "https://www.unh.edu/life-unh",
+          "retrievedOn": "2026-10-22",
+          "caption": "Durham, New Hampshire campus"
+        }
+      ]
     },
     "delval": {
       "name": "Delaware Valley University",
@@ -515,7 +559,7 @@
           ]
         },
         "size": {
-          "text": "1,768 undergraduates and 431 graduate students, for 2,199 total students in the fall 2024 institutional report.",
+          "text": "DelVal reported 1,768 undergraduates and 431 graduate students in fall 2024, for 2,199 university-wide. This institutional total is context for the Doylestown campus, not a separate on-campus attendance count.",
           "sources": [
             "facts"
           ]
@@ -579,16 +623,23 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://delval.edu/sites/default/files/styles/image_carousel_item/public/2020-06/student%20involvement.jpg?itok=5OmmMdgT",
-        "alt": "Delaware Valley University students working together in the South Residence Hall lobby.",
-        "credit": "Delaware Valley University",
-        "source": "https://delval.edu/life-at-delval",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Doylestown, Pennsylvania"
+      ],
+      "photos": [
+        {
+          "url": "images/schools/delval.webp",
+          "alt": "Academic buildings and landscaped gardens on Delaware Valley University’s Doylestown campus.",
+          "credit": "Delaware Valley University",
+          "source": "https://delval.edu/",
+          "retrievedOn": "2026-10-22",
+          "caption": "Doylestown, Pennsylvania campus",
+          "originalUrl": "https://delval.edu/sites/default/files/styles/image_group_large/public/2022-04/campus%20beauty_homepage%20green%20footer.jpg?itok=LSO2-_vf"
+        }
+      ]
     },
     "uma-bangor": {
-      "name": "University of Maine at Augusta · Bangor campus",
+      "name": "University of Maine at Augusta",
       "facts": {
         "type": {
           "text": "University of Maine System institution with campuses in Augusta and Bangor, regional locations, and online programs. The student body includes recent high-school graduates and returning adults.",
@@ -597,7 +648,7 @@
           ]
         },
         "size": {
-          "text": "4,336 students university-wide in fall 2025, including 1,262 Early College students. This includes online and other locations; it is not a Bangor-campus headcount.",
+          "text": "In UMA’s 2025–26 student profile, 7% of students took the majority of their credits at Bangor. The profile does not give a separate Bangor campus headcount.",
           "sources": [
             "facts"
           ]
@@ -635,7 +686,7 @@
           "retrievedOn": "2026-10-22"
         },
         "facts": {
-          "label": "Student facts · fall 2025",
+          "label": "Student facts · 2025–26 campus attendance",
           "url": "https://www.uma.edu/about/student-consumer-information/student-facts/",
           "retrievedOn": "2026-10-22"
         },
@@ -650,13 +701,20 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.uma.edu/locations/wp-content/uploads/sites/13/2024/11/UMABangorCampusPhotoshoot_Marketing_2024-24.jpg",
-        "alt": "A student beside the University of Maine at Augusta Bangor campus entrance sign.",
-        "credit": "University of Maine at Augusta",
-        "source": "https://www.uma.edu/locations/bangor/",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Bangor, Maine"
+      ],
+      "photos": [
+        {
+          "url": "images/schools/uma-bangor.webp",
+          "alt": "Eastport Hall and the surrounding grounds on UMA’s Bangor campus.",
+          "credit": "University of Maine at Augusta",
+          "source": "https://www.uma.edu/event/campus-cool-down/",
+          "retrievedOn": "2026-10-22",
+          "caption": "Bangor, Maine campus",
+          "originalUrl": "https://www.uma.edu/wp-content/uploads/2025/10/EastportHall_Exterior_Bangor_2025-16x9-1.jpg"
+        }
+      ]
     },
     "suny-canton": {
       "name": "SUNY Canton",
@@ -668,7 +726,7 @@
           ]
         },
         "size": {
-          "text": "2,833 undergraduate students in fall 2025. The institutional-research count excludes auditors, cross-registered students, and College in the High School students.",
+          "text": "SUNY Canton reported 2,833 undergraduates in fall 2025, including online students. This is the college-wide total, not a count of students physically attending the Canton campus.",
           "sources": [
             "facts"
           ]
@@ -722,13 +780,20 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.canton.edu/media/walking.jpg",
-        "alt": "SUNY Canton students walking through the campus plaza after class.",
-        "credit": "SUNY Canton",
-        "source": "https://www.canton.edu/about/college.html",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Canton, New York"
+      ],
+      "photos": [
+        {
+          "url": "images/schools/suny-canton.webp",
+          "alt": "Aerial view of SUNY Canton’s campus beside the Grasse River.",
+          "credit": "SUNY Canton",
+          "source": "https://www.canton.edu/",
+          "retrievedOn": "2026-10-22",
+          "caption": "Canton, New York campus",
+          "originalUrl": "https://www.canton.edu/media/fb-aerial.jpg"
+        }
+      ]
     },
     "suny-delhi": {
       "name": "SUNY Delhi",
@@ -740,9 +805,10 @@
           ]
         },
         "size": {
-          "text": "Approximately 3,300 students overall in the college’s fall 2026 enrollment announcement. This is the college-wide total.",
+          "text": "Approximately 3,300 students in fall 2026 across SUNY Delhi’s residential, commuter, and online programs. The college-wide total is not a separate headcount for the Delhi campus.",
           "sources": [
-            "facts"
+            "facts",
+            "about"
           ]
         },
         "campus": {
@@ -805,13 +871,19 @@
           "retrievedOn": "2026-10-22"
         }
       },
-      "photo": {
-        "url": "https://www.delhi.edu/images/fast_facts_drone.jpg",
-        "alt": "Aerial view of SUNY Delhi’s campus among the Catskill hills.",
-        "credit": "SUNY Delhi",
-        "source": "https://www.delhi.edu/about/fast-facts/index.php",
-        "retrievedOn": "2026-10-22"
-      }
+      "campuses": [
+        "Delhi, New York"
+      ],
+      "photos": [
+        {
+          "url": "https://www.delhi.edu/images/fast_facts_drone.jpg",
+          "alt": "Aerial view of SUNY Delhi’s campus among the Catskill hills.",
+          "credit": "SUNY Delhi",
+          "source": "https://www.delhi.edu/about/fast-facts/index.php",
+          "retrievedOn": "2026-10-22",
+          "caption": "Delhi, New York campus"
+        }
+      ]
     }
   },
   "programOverrides": {
@@ -847,8 +919,37 @@
             "crc",
             "crcCampus"
           ]
+        },
+        "size": {
+          "text": "UMass Amherst reported 24,019 undergraduates and 7,299 graduate students university-wide in fall 2025, including University Without Walls. These totals are not separate counts for Amherst and the Charles River Campus in Newton.",
+          "sources": [
+            "facts"
+          ]
         }
-      }
+      },
+      "campuses": [
+        "Amherst, Massachusetts",
+        "Charles River Campus · Newton, Massachusetts"
+      ],
+      "photos": [
+        {
+          "url": "https://www.umass.edu/sites/default/files/styles/large/public/2020-08/umass_amherst_dubois_library_campus_center.jpg?itok=UWrkgQqU",
+          "alt": "W. E. B. Du Bois Library, the Campus Center, and campus pond at UMass Amherst.",
+          "credit": "University of Massachusetts Amherst",
+          "source": "https://www.umass.edu/gateway/umass-stories/whats-it-like-to-attend-umass",
+          "retrievedOn": "2026-10-22",
+          "caption": "Amherst campus · years 1–2"
+        },
+        {
+          "url": "images/schools/umass-newton.webp",
+          "originalUrl": "https://www.umass.edu/charles-river/sites/g/files/ijdqth256/files/styles/4_3_l/public/2022-06/Mount_Ida_Campus_New%20Hall%20at%20Night-927x1200.jpg?h=9cb5d56f&itok=ybBHj9nE",
+          "source": "https://www.umass.edu/charles-river/student-experience",
+          "alt": "New Hall at dusk on UMass Amherst’s Charles River Campus in Newton.",
+          "credit": "University of Massachusetts Amherst",
+          "retrievedOn": "2026-10-22",
+          "caption": "Charles River Campus, Newton · years 3–4 · New Hall"
+        }
+      ]
     }
   }
 }

@@ -40,6 +40,7 @@ await page.emulateMedia({reducedMotion:'reduce'});await page.goto(base+'areas.ht
 await page.locator('.guide-link').first().hover();
 if(await page.locator('.guide-arrow').first().evaluate(el=>getComputedStyle(el).transitionDuration)!=='0s')throw Error('Reduced motion preference ignored');
 await page.emulateMedia({reducedMotion:'no-preference'});
+const schoolProfiles=JSON.parse(fs.readFileSync('site/content/programs/schools.json'));
 const lib=JSON.parse(fs.readFileSync('site/content/programs/school-library.json'));
 for(const p of lib.programs){
  await page.goto(base+'program.html?code='+p.code);await page.waitForSelector('.program-article');
@@ -48,7 +49,15 @@ for(const p of lib.programs){
  const sectionIds=await page.locator('.article-content > section').evaluateAll(es=>es.map(e=>e.id));
  if(sectionIds.slice(0,3).join(',')!=='overview,school,academics')throw Error('School section order '+p.code);
  if(await page.locator('#school .school-facts > div').count()!==6)throw Error('School topics missing '+p.code);
- if(await page.locator('#school .school-photo img').count()!==1)throw Error('School photo missing '+p.code);
+ const school=schoolProfiles.schools[schoolProfiles.programSchools[p.code]];
+ const campuses=schoolProfiles.programOverrides[p.code]?.campuses||school.campuses;
+ for(const campus of campuses)if(!(await page.locator('.school-overview-campus').textContent()).includes(campus))throw Error('Campus label missing '+p.code);
+ if(await page.locator('#school .school-photo img').count()!==campuses.length)throw Error('School photo missing '+p.code);
+ for(const img of await page.locator('#school .school-photo img[src^="images/"]').all()){
+  await img.scrollIntoViewIfNeeded();
+  await img.evaluate(el=>el.decode());
+  if(!(await img.evaluate(el=>el.naturalWidth>0)))throw Error('Campus photo failed to load '+p.code);
+ }
  const numbers=await page.locator('.article-content > section .section-number').allTextContents();
  if(numbers.join(',')!=='01,02,03,04,05,06,07,08')throw Error('Section numbering '+p.code);
  for(const href of await page.locator('#school sup a').evaluateAll(es=>es.map(e=>e.getAttribute('href')))){

@@ -142,8 +142,9 @@ p { margin: .75em 0 0; }
 
 /* School context on program pages: one reading column on narrow screens. */
 .school-overview-name { margin: -8px 0 20px; color: var(--navy); font-size: 1.15rem; font-weight: 750; }
+.school-overview-campus { margin: -12px 0 20px; color: var(--muted); font-size: .9rem; }
 .school-photo { margin: 0 0 24px; }
-.school-photo img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; max-height: 420px; object-fit: cover; border-radius: 8px; background: var(--wash); }
+.school-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: contain; border-radius: 8px; background: var(--wash); }
 .school-photo figcaption { margin-top: 7px; color: var(--muted); font-size: .75rem; overflow-wrap: anywhere; }
 .school-facts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 28px; margin: 0; }
 .school-facts > div { min-width: 0; padding: 18px 0; border-top: 1px solid var(--line); }

@@ -88,11 +88,12 @@
         }
       },
       "photo": {
-        "url": "https://umaine.edu/about/wp-content/uploads/sites/1028/2026/03/031026_IB_DSC09240.jpg",
-        "alt": "Two University of Maine students smiling together beneath a tree.",
+        "url": "images/schools/umaine.webp",
+        "alt": "Aerial view of the University of Maine campus in Orono in autumn.",
         "credit": "University of Maine",
-        "source": "https://umaine.edu/about/facts-and-figures/",
-        "retrievedOn": "2026-10-22"
+        "source": "https://umaine.edu/admissions/visit/",
+        "retrievedOn": "2026-10-22",
+        "originalUrl": "https://umaine.edu/admissions/wp-content/uploads/sites/1025/2026/02/Campus-aerial-feature.jpg"
       }
     },
     "umass-amherst": {

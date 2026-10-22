@@ -306,7 +306,7 @@ p { margin: .75em 0 0; }
 .program-photo-hero figure { background: #d4dde1; }
 .article-section.first-section { padding-top: 10px; }
 .program-overview { margin-top: 0; color: var(--muted); font-family: inherit; font-size: 1rem; line-height: 1.75; }
-.program-article .source-list a { overflow-wrap: anywhere; }
+.program-article { overflow-wrap: anywhere; }
 .prose-blocks { display: grid; border-top: 1px solid var(--line); }
 .prose-blocks article { padding: 22px 0; border-bottom: 1px solid var(--line); }
 .prose-blocks h3 { color: var(--navy); }

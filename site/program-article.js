@@ -29,7 +29,7 @@
     const competencies = (program.competencies || []).filter(item => item && item.name && item.description);
     const strong = competencies.filter(item => Number(item.strength) >= 2.4);
     if (!strong.length) return '<p>No specific undergraduate preparation strengths are documented for this program.</p>';
-    return `<div class="preparation-summary"><h3 class="group-heading first">Skills students should build strongly</h3><ul class="narrative-list compact">${strong.map(item => `<li><p><strong>${esc(item.name)}:</strong> ${esc(item.description)}</p></li>`).join('')}</ul></div>`;
+    return `<div class="preparation-summary"><h3 class="group-heading first">Skills developed</h3><ul class="narrative-list compact">${strong.map(item => `<li><p><strong>${esc(item.name)}:</strong> ${esc(item.description)}</p></li>`).join('')}</ul></div>`;
   }
   async function fetchJson(path) {
     const response = await fetch(path, { cache: 'no-store' });

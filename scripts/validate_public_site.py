@@ -91,3 +91,6 @@ print(f'Public navigation and landmarks pass; comparison covers {len(comparison.
 import hashlib
 version = hashlib.sha256((SITE / "program-article.js").read_bytes()).hexdigest()[:12]
 assert f'src="program-article.js?v={version}"' in (SITE / "program.html").read_text()
+
+style_version = hashlib.sha256((SITE / "areas.css").read_bytes()).hexdigest()[:12]
+assert f'href="areas.css?v={style_version}"' in (SITE / "program.html").read_text()

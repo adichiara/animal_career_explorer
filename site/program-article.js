@@ -80,17 +80,20 @@
   function schoolOverview(program) {
     const school = schoolProfiles.schools[schoolProfiles.programSchools[program.code]];
     if (!school) throw new Error(`Missing school overview for ${program.code}`);
-    const facts = { ...school.facts, ...schoolProfiles.programOverrides?.[program.code]?.facts };
+    const override = schoolProfiles.programOverrides?.[program.code] || {};
+    const facts = { ...school.facts, ...override.facts };
+    const campuses = override.campuses || school.campuses;
     const topics = [
       ['type', 'School type'], ['size', 'Student population'], ['campus', 'Location and campus'],
       ['housing', 'Housing and dining'], ['studentLife', 'Student life'], ['recreation', 'Athletics and recreation']
     ];
     const usedSources = [...new Set(topics.flatMap(([key]) => facts[key].sources))];
     const references = keys => keys.map(key => `<sup><a href="#school-source-${esc(key)}" aria-label="Source: ${esc(school.sources[key].label)}">[${usedSources.indexOf(key) + 1}]</a></sup>`).join(' ');
-    const photo = school.photo;
+    const photos = override.photos || school.photos;
     return `<section id="school" class="article-section school-overview"><div class="section-heading"><p class="section-number">02</p><h2>School overview</h2></div>
       <p class="school-overview-name">${esc(school.name)}</p>
-      <figure class="school-photo"><img src="${esc(photo.url)}" alt="${esc(photo.alt)}" loading="lazy" decoding="async" width="1200" height="750" referrerpolicy="no-referrer"><figcaption>Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a></figcaption></figure>
+      <p class="school-overview-campus">${campuses.map(esc).join(" · ")}</p>
+      ${photos.map(photo => `<figure class="school-photo"><img src="${esc(photo.url)}" alt="${esc(photo.alt)}" loading="lazy" decoding="async" width="1200" height="750" referrerpolicy="no-referrer"><figcaption>${esc(photo.caption)}. Photo: <a href="${esc(photo.source)}" target="_blank" rel="noopener">${esc(photo.credit)}</a></figcaption></figure>`).join('')}
       <dl class="school-facts">${topics.map(([key, label]) => `<div><dt>${label}</dt><dd>${esc(facts[key].text)} ${references(facts[key].sources)}</dd></div>`).join('')}</dl>
       <div class="school-sources"><h3>School information sources</h3><ol>${usedSources.map(key => `<li id="school-source-${esc(key)}"><a href="${esc(school.sources[key].url)}" target="_blank" rel="noopener">${esc(school.sources[key].label)}</a></li>`).join('')}</ol></div>
     </section>`;

@@ -24,6 +24,12 @@
   function list(items, className) {
     return `<ul class="${className || 'narrative-list'}">${(items || []).map(item => `<li><p>${esc(item)}</p></li>`).join('')}</ul>`;
   }
+  function programHeading(title) {
+    // Keep the complete researched name while giving degree details a second level.
+    const split = title.search(/\s+(?=\(|\+ |→ |— )/);
+    if (split < 0) return esc(title);
+    return `${esc(title.slice(0, split))} <span class="program-title-detail">${esc(title.slice(split).trim())}</span>`;
+  }
   function sourceUrl(value) { return /^https?:\/\//i.test(value) ? value : `https://${value}`; }
   function sourceLabel(value) { return value.replace(/^https?:\/\//i, '').replace(/\/$/, ''); }
   function preparationSummary(program) {
@@ -118,7 +124,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(schoolName)}</span></nav>
       <header class="article-hero program-photo-hero">
         <div class="program-hero-intro">
-          <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
+          <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${programHeading(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
           ${photoHtml}
         </div>
         <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>

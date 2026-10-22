@@ -72,6 +72,28 @@ for(const p of lib.programs){
  }
  await page.setViewportSize({width:1440,height:1000});
 }
+// Exercise actual intrinsic image sizes rather than relying on blocked external photos.
+let fixtureSize={width:900,height:1500};
+await context.route('**/test-program-photo.svg',route=>route.fulfill({contentType:'image/svg+xml',body:`<svg xmlns="http://www.w3.org/2000/svg" width="${fixtureSize.width}" height="${fixtureSize.height}"><rect width="100%" height="100%" fill="#76998f"/></svg>`}));
+await context.route('**/content/programs/photos.json',route=>route.fulfill({json:{photos:{'ME-ZOO':{url:base+'test-program-photo.svg',alt:'Program photo layout fixture',credit:'Test fixture',source:base}}}}));
+for(const size of [{width:900,height:1500},{width:1500,height:900},{width:600,height:600}]){
+ fixtureSize=size;
+ for(const width of [320,390,768,1080,1440]){
+  await page.setViewportSize({width,height:900});await page.goto(base+'program.html?code=ME-ZOO');await page.waitForSelector('.program-photo-hero img');
+  const heroImg=page.locator('.program-photo-hero img');await heroImg.evaluate(el=>el.decode());
+  const schoolImg=page.locator('#school .school-photo img');await schoolImg.scrollIntoViewIfNeeded();await schoolImg.evaluate(el=>el.decode());
+  for(const img of [heroImg,schoolImg]){
+   const box=await img.evaluate(el=>{const r=el.getBoundingClientRect();return {width:r.width,height:r.height,naturalWidth:el.naturalWidth,naturalHeight:el.naturalHeight,fit:getComputedStyle(el).objectFit};});
+   if(box.fit!=='contain'||Math.abs((box.width/box.height)/(box.naturalWidth/box.naturalHeight)-1)>.01)throw Error('Photo cropped or stretched at '+width+': '+JSON.stringify(box));
+   if(box.width>box.naturalWidth+1||box.height>box.naturalHeight+1)throw Error('Photo enlarged past intrinsic size at '+width);
+  }
+  const image=await heroImg.boundingBox(),credit=await page.locator('.program-photo-hero figcaption').boundingBox();
+  if(credit.y<image.y+image.height-1)throw Error('Credit overlays image at '+width);
+  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Photo layout overflows at '+width);
+ }
+}
+await context.unroute('**/test-program-photo.svg');await context.unroute('**/content/programs/photos.json');
+await page.setViewportSize({width:1440,height:1000});
 // Deployment/cache overlap: the current renderer must also accept the prior schema.
 const priorSchools=JSON.parse(JSON.stringify(schoolProfiles));
 for(const school of Object.values(priorSchools.schools)){delete school.photos;delete school.campuses;}

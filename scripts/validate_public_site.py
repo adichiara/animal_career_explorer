@@ -72,5 +72,8 @@ for code, school_id in schools['programSchools'].items():
             assert source['url'].startswith('https://') and source['retrievedOn'], (code, key)
     for key in ['url', 'alt', 'credit', 'source', 'retrievedOn']:
         assert school['photo'].get(key), (school_id, key)
-    assert school['photo']['url'].startswith('https://'), school_id
+    photo_url = school['photo']['url']
+    if not photo_url.startswith('https://'):
+        assert photo_url.startswith('images/schools/') and (SITE / photo_url).is_file(), school_id
+        assert school['photo']['originalUrl'].startswith('https://'), school_id
 print(f'Public navigation and landmarks pass; comparison covers {len(comparison.rows)} programs.')

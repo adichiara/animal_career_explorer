@@ -1056,7 +1056,7 @@ window.EXPLORER_DATA = {
       ],
       "resume": "B.S. Zoology with Ecology concentration; substantial chemistry/physics/math; animal behavior and organismal electives; ecology; faculty research; optional thesis; wildlife/zoo/rehab internship selected to shape the applied direction.",
       "advantages": [
-        "One of the broadest animal-centered scientific foundations in the shortlist.",
+        "A broad animal-centered scientific foundation.",
         "Excellent preparation for research-oriented graduate study while keeping wildlife, behavior, physiology, and organismal biology open.",
         "Strong option when “animals and science” is clear but wildlife management versus captive behavior is not yet settled."
       ],
@@ -1354,7 +1354,7 @@ window.EXPLORER_DATA = {
       ],
       "resume": "B.S. Biology; broad chemistry/physics/biology foundation; Animal Behavior/Communication and organismal electives; 2–3 years of faculty research; honors thesis or independent project; zoo/wildlife/behavior internship; poster or conference presentation.",
       "advantages": [
-        "Strongest overall institutional and scientific platform in the shortlist.",
+        "Access to a broad university research and course network.",
         "Excellent preparation for competitive funded graduate study and broad biological pivots.",
         "Large course and research ecosystem plus Five College access can create unusually customized combinations."
       ],
@@ -1629,7 +1629,7 @@ window.EXPLORER_DATA = {
       "title": "Animal Behavior B.S.",
       "school": "University of New England",
       "overview": "University of New England's Animal Behavior B.S. on the Biddeford campus integrates biology, psychology, research methods, and animal-behavior science. Behavior, cognition, learning, communication, and research are central to the degree rather than a small elective cluster. Internships and faculty research can add applied experience in animal behavior and related welfare settings.",
-      "fundamental": "The most behavior-centered degree in the shortlist: why animals behave as they do, how behavior is observed and measured, how animals learn and think, how communication works, and how behavioral science can improve welfare and conservation.",
+      "fundamental": "A degree centered on animal behavior: why animals behave as they do, how behavior is observed and measured, how animals learn and think, how communication works, and how behavioral science can improve welfare and conservation.",
       "scienceFoundation": [
         "Ecology/evolution biology with lab",
         "Cellular/molecular biology with lab",
@@ -2250,7 +2250,7 @@ window.EXPLORER_DATA = {
         "Zoo/Aquarium practicum and internship",
         "Animal Behavior, mammalogy/ornithology and conservation biology"
       ],
-      "experience": "The broadest cross-over between wild and managed animals in the shortlist. URI currently describes the 12-credit, five-course Zoo and Aquarium Science Certificate as open to all undergraduates; it includes zoo management at Roger Williams Park Zoo and an internship-linked practicum.",
+      "experience": "Connects the study of wild and managed animals. URI currently describes the 12-credit, five-course Zoo and Aquarium Science Certificate as open to all undergraduates; it includes zoo management at Roger Williams Park Zoo and an internship-linked practicum.",
       "research": "Combines URI wildlife research opportunities with zoo/aquarium behavior and welfare possibilities. Recent URI examples include penguin social behavior and conservation-breeding work with regional zoo/aquarium partners.",
       "progression": [
         "Year 1: wildlife/biology foundations and experiential planning; identify zoo/wildlife research interests.",

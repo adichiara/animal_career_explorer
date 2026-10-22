@@ -72,6 +72,14 @@ for(const p of lib.programs){
  }
  await page.setViewportSize({width:1440,height:1000});
 }
+// Deployment/cache overlap: the current renderer must also accept the prior schema.
+const priorSchools=JSON.parse(JSON.stringify(schoolProfiles));
+for(const school of Object.values(priorSchools.schools)){delete school.photos;delete school.campuses;}
+for(const override of Object.values(priorSchools.programOverrides)){delete override.photos;delete override.campuses;}
+await context.route('**/content/programs/schools.json',route=>route.fulfill({json:priorSchools}));
+await page.goto(base+'program.html?code=UMA-VT');await page.waitForSelector('#school');
+if(await page.locator('#school .school-photo img').count()!==1)throw Error('Prior school schema failed');
+await context.unroute('**/content/programs/schools.json');
 const fields=JSON.parse(fs.readFileSync('site/content/areas/index.json'));
 for(const name of fields.areas){
  await page.goto(base+'areas/'+name.replace('.json','.html'));await page.waitForSelector('#careers .career-list');

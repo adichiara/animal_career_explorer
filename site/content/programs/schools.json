@@ -100,7 +100,16 @@
           "originalUrl": "https://umaine.edu/admissions/wp-content/uploads/sites/1025/2026/02/Campus-aerial-feature.jpg",
           "caption": "Orono, Maine campus"
         }
-      ]
+      ],
+      "photo": {
+        "url": "images/schools/umaine.webp",
+        "alt": "Aerial view of the University of Maine campus in Orono in autumn.",
+        "credit": "University of Maine",
+        "source": "https://umaine.edu/admissions/visit/",
+        "retrievedOn": "2026-10-22",
+        "originalUrl": "https://umaine.edu/admissions/wp-content/uploads/sites/1025/2026/02/Campus-aerial-feature.jpg",
+        "caption": "Orono, Maine campus"
+      }
     },
     "umass-amherst": {
       "name": "University of Massachusetts Amherst",
@@ -210,7 +219,15 @@
           "retrievedOn": "2026-10-22",
           "caption": "Amherst, Massachusetts campus"
         }
-      ]
+      ],
+      "photo": {
+        "url": "https://www.umass.edu/sites/default/files/styles/large/public/2020-08/umass_amherst_dubois_library_campus_center.jpg?itok=UWrkgQqU",
+        "alt": "W. E. B. Du Bois Library, the Campus Center, and campus pond at UMass Amherst.",
+        "credit": "University of Massachusetts Amherst",
+        "source": "https://www.umass.edu/gateway/umass-stories/whats-it-like-to-attend-umass",
+        "retrievedOn": "2026-10-22",
+        "caption": "Amherst, Massachusetts campus"
+      }
     },
     "une": {
       "name": "University of New England",
@@ -290,7 +307,16 @@
           "caption": "Biddeford campus · aerial view from the UNE homepage",
           "originalUrl": "https://www.une.edu/sites/default/files/styles/homepage_banner_mobile/public/2026-09/2026-Fall-Visit-Banner-Video-Still-Mobile.webp?itok=gylSxniP"
         }
-      ]
+      ],
+      "photo": {
+        "url": "images/schools/une.webp",
+        "alt": "Aerial view of UNE’s Biddeford campus beside the Saco River and Atlantic coast.",
+        "credit": "University of New England",
+        "source": "https://www.une.edu/",
+        "retrievedOn": "2026-10-22",
+        "caption": "Biddeford campus · aerial view from the UNE homepage",
+        "originalUrl": "https://www.une.edu/sites/default/files/styles/homepage_banner_mobile/public/2026-09/2026-Fall-Visit-Banner-Video-Still-Mobile.webp?itok=gylSxniP"
+      }
     },
     "uri": {
       "name": "University of Rhode Island",
@@ -384,7 +410,15 @@
           "retrievedOn": "2026-10-22",
           "caption": "Kingston, Rhode Island campus"
         }
-      ]
+      ],
+      "photo": {
+        "url": "https://www.uri.edu/wp-content/uploads/home/2018/05/kingston-campus-500x327.jpg",
+        "alt": "Aerial view of the University of Rhode Island Kingston campus and quadrangle.",
+        "credit": "University of Rhode Island",
+        "source": "https://www.uri.edu/about/campuses/",
+        "retrievedOn": "2026-10-22",
+        "caption": "Kingston, Rhode Island campus"
+      }
     },
     "canisius": {
       "name": "Canisius University",
@@ -461,7 +495,15 @@
           "retrievedOn": "2026-10-22",
           "caption": "Buffalo, New York campus"
         }
-      ]
+      ],
+      "photo": {
+        "url": "https://www.canisius.edu/sites/default/files/styles/16_9_scale_and_crop_medium/public/legacy/news/image/campus_fall_shot.jpg?h=fbf4b26c&itok=JmZDJyRj",
+        "alt": "Aerial view of Canisius University and surrounding Buffalo neighborhoods in autumn.",
+        "credit": "Canisius University",
+        "source": "https://www.canisius.edu/about",
+        "retrievedOn": "2026-10-22",
+        "caption": "Buffalo, New York campus"
+      }
     },
     "unh": {
       "name": "University of New Hampshire",
@@ -546,7 +588,15 @@
           "retrievedOn": "2026-10-22",
           "caption": "Durham, New Hampshire campus"
         }
-      ]
+      ],
+      "photo": {
+        "url": "https://www.unh.edu/sites/default/files/styles/portrait_480x672/public/media/2025-10/about_durham_800.jpg?h=00546c34&itok=F8zQ3BZO",
+        "alt": "Thompson Hall and the University of New Hampshire campus in Durham.",
+        "credit": "University of New Hampshire",
+        "source": "https://www.unh.edu/life-unh",
+        "retrievedOn": "2026-10-22",
+        "caption": "Durham, New Hampshire campus"
+      }
     },
     "delval": {
       "name": "Delaware Valley University",
@@ -636,7 +686,16 @@
           "caption": "Doylestown, Pennsylvania campus",
           "originalUrl": "https://delval.edu/sites/default/files/styles/image_group_large/public/2022-04/campus%20beauty_homepage%20green%20footer.jpg?itok=LSO2-_vf"
         }
-      ]
+      ],
+      "photo": {
+        "url": "images/schools/delval.webp",
+        "alt": "Academic buildings and landscaped gardens on Delaware Valley University’s Doylestown campus.",
+        "credit": "Delaware Valley University",
+        "source": "https://delval.edu/",
+        "retrievedOn": "2026-10-22",
+        "caption": "Doylestown, Pennsylvania campus",
+        "originalUrl": "https://delval.edu/sites/default/files/styles/image_group_large/public/2022-04/campus%20beauty_homepage%20green%20footer.jpg?itok=LSO2-_vf"
+      }
     },
     "uma-bangor": {
       "name": "University of Maine at Augusta",
@@ -714,7 +773,16 @@
           "caption": "Bangor, Maine campus",
           "originalUrl": "https://www.uma.edu/wp-content/uploads/2025/10/EastportHall_Exterior_Bangor_2025-16x9-1.jpg"
         }
-      ]
+      ],
+      "photo": {
+        "url": "images/schools/uma-bangor.webp",
+        "alt": "Eastport Hall and the surrounding grounds on UMA’s Bangor campus.",
+        "credit": "University of Maine at Augusta",
+        "source": "https://www.uma.edu/event/campus-cool-down/",
+        "retrievedOn": "2026-10-22",
+        "caption": "Bangor, Maine campus",
+        "originalUrl": "https://www.uma.edu/wp-content/uploads/2025/10/EastportHall_Exterior_Bangor_2025-16x9-1.jpg"
+      }
     },
     "suny-canton": {
       "name": "SUNY Canton",
@@ -793,7 +861,16 @@
           "caption": "Canton, New York campus",
           "originalUrl": "https://www.canton.edu/media/fb-aerial.jpg"
         }
-      ]
+      ],
+      "photo": {
+        "url": "images/schools/suny-canton.webp",
+        "alt": "Aerial view of SUNY Canton’s campus beside the Grasse River.",
+        "credit": "SUNY Canton",
+        "source": "https://www.canton.edu/",
+        "retrievedOn": "2026-10-22",
+        "caption": "Canton, New York campus",
+        "originalUrl": "https://www.canton.edu/media/fb-aerial.jpg"
+      }
     },
     "suny-delhi": {
       "name": "SUNY Delhi",
@@ -883,7 +960,15 @@
           "retrievedOn": "2026-10-22",
           "caption": "Delhi, New York campus"
         }
-      ]
+      ],
+      "photo": {
+        "url": "https://www.delhi.edu/images/fast_facts_drone.jpg",
+        "alt": "Aerial view of SUNY Delhi’s campus among the Catskill hills.",
+        "credit": "SUNY Delhi",
+        "source": "https://www.delhi.edu/about/fast-facts/index.php",
+        "retrievedOn": "2026-10-22",
+        "caption": "Delhi, New York campus"
+      }
     }
   },
   "programOverrides": {

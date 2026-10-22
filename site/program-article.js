@@ -82,14 +82,14 @@
     if (!school) throw new Error(`Missing school overview for ${program.code}`);
     const override = schoolProfiles.programOverrides?.[program.code] || {};
     const facts = { ...school.facts, ...override.facts };
-    const campuses = override.campuses || school.campuses;
+    const campuses = override.campuses || school.campuses || [];
     const topics = [
       ['type', 'School type'], ['size', 'Student population'], ['campus', 'Location and campus'],
       ['housing', 'Housing and dining'], ['studentLife', 'Student life'], ['recreation', 'Athletics and recreation']
     ];
     const usedSources = [...new Set(topics.flatMap(([key]) => facts[key].sources))];
     const references = keys => keys.map(key => `<sup><a href="#school-source-${esc(key)}" aria-label="Source: ${esc(school.sources[key].label)}">[${usedSources.indexOf(key) + 1}]</a></sup>`).join(' ');
-    const photos = override.photos || school.photos;
+    const photos = override.photos || school.photos || (school.photo ? [school.photo] : []);
     return `<section id="school" class="article-section school-overview"><div class="section-heading"><p class="section-number">02</p><h2>School overview</h2></div>
       <p class="school-overview-name">${esc(school.name)}</p>
       <p class="school-overview-campus">${campuses.map(esc).join(" · ")}</p>

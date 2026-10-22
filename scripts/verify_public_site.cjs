@@ -56,7 +56,10 @@ for(const p of lib.programs){
  }
  for(const width of [320,390,768]){
   await page.setViewportSize({width,height:844});
-  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Program overflow '+p.code+' at '+width);
+  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)){
+   const overflow=await page.locator('article *').evaluateAll(es=>es.filter(el=>el.getBoundingClientRect().right>innerWidth+1).map(el=>({tag:el.tagName,classes:el.className,width:el.getBoundingClientRect().width,text:el.textContent.slice(0,60)})).slice(0,15));
+   throw Error('Program overflow '+p.code+' at '+width+': '+JSON.stringify(overflow));
+  }
  }
  await page.setViewportSize({width:1440,height:1000});
 }

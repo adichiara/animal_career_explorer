@@ -117,16 +117,16 @@
     app.innerHTML = `<article class="field-article program-article">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(schoolName)}</span></nav>
       <header class="article-hero program-photo-hero">
-        <div class="program-hero-copy-wrap">
+        <div class="program-hero-intro">
           <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${esc(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
-          <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
+          ${photoHtml}
+        </div>
+        <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
             <div><dt>School</dt><dd>${esc(schoolName)}</dd></div>
             <div><dt>Program type</dt><dd>${esc(program.type)}</dd></div>
             <div><dt>Setting</dt><dd>${esc(program.scale)}</dd></div>
             <div><dt>Research verified</dt><dd>${esc(program.lastVerified || 'See sources')}</dd></div>
           </dl></aside>
-        </div>
-        ${photoHtml}
       </header>
       <div class="article-body">
         <aside class="article-toc" aria-labelledby="tocTitle"><p id="tocTitle" class="mini-label">In this guide</p><ol>

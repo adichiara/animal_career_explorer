@@ -573,11 +573,41 @@ main:focus { outline: none; }
   display: grid;
   align-items: start;
   gap: 26px;
-  width: min(100% - 40px, 1180px);
+  width: min(100% - 40px, 1120px);
   margin-inline: auto;
-  padding-block: 32px;
+  padding-block: 30px;
 }
 .program-photo-hero .hero-copy { display: block; padding: 0; }
+.program-photo-hero .program-school-hero {
+  margin: 12px 0 10px;
+  color: #c7dde8;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 650;
+  line-height: 1.4;
+}
+.program-photo-hero .hero-copy h1 {
+  max-width: none;
+  margin-top: 0;
+  font-size: clamp(1.8rem, 3.2vw, 2.75rem);
+  line-height: 1.13;
+  text-wrap: balance;
+}
+.program-title-detail {
+  display: block;
+  margin-top: 9px;
+  color: #d9e7ef;
+  font-size: clamp(1rem, .5em, 1.375rem);
+  font-weight: 550;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.program-photo-hero .standfirst {
+  max-width: 68ch;
+  margin-top: 16px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
 .program-photo-hero figure {
   display: grid;
   justify-items: center;
@@ -597,7 +627,7 @@ main:focus { outline: none; }
 }
 .program-photo-hero img {
   width: auto;
-  max-width: min(100%, 320px);
+  max-width: min(100%, 280px);
   height: auto;
   max-height: 280px;
   object-fit: contain;
@@ -605,7 +635,7 @@ main:focus { outline: none; }
 }
 .program-photo-hero figcaption {
   position: static;
-  max-width: 320px;
+  max-width: 280px;
   margin: 0;
   padding: 0;
   color: #d9e7ef;
@@ -616,7 +646,7 @@ main:focus { outline: none; }
 .program-photo-hero .hero-facts {
   display: block;
   margin: 0;
-  padding: 20px max(20px, calc((100% - 1180px) / 2));
+  padding: 20px max(20px, calc((100% - 1120px) / 2));
 }
 .program-photo-hero .hero-facts dl {
   display: grid;
@@ -629,10 +659,11 @@ main:focus { outline: none; }
 }
 @media (min-width: 900px) {
   .program-hero-intro {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
-    gap: 40px;
-    padding-block: 42px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+    align-items: center;
+    gap: 48px;
+    padding-block: 32px;
   }
-  .program-photo-hero figure { justify-self: end; }
-  .program-photo-hero img { max-height: 360px; }
+  .program-photo-hero figure { justify-self: end; align-self: center; }
+  .program-photo-hero img { max-height: 280px; }
 }

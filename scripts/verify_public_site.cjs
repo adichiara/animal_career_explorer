@@ -46,6 +46,11 @@ for(const p of lib.programs){
  await page.goto(base+'program.html?code='+p.code);await page.waitForSelector('.program-article');
  const links=await page.locator('#overview .related-links a').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
  if(links.length!==p.primaryFields.length)throw Error('Missing field links '+p.code);
+ const introBox=await page.locator('.program-hero-intro').boundingBox();
+ if(introBox.height>460)throw Error('Desktop program masthead too tall '+p.code+': '+introBox.height);
+ const fullTitle=(await page.title()).replace(' | Animal Education Pathways','').replace(/\s+/g,' ').trim();
+ if((await page.locator('.program-photo-hero h1').textContent()).replace(/\s+/g,' ').trim()!==fullTitle)throw Error('Program heading lost part of the researched name '+p.code);
+ if(p.code==='UMA-WEC'&&!(await page.locator('.program-title-detail').textContent()).includes('concentration'))throw Error('Concentration hierarchy missing');
  const sectionIds=await page.locator('.article-content > section').evaluateAll(es=>es.map(e=>e.id));
  if(sectionIds.slice(0,3).join(',')!=='overview,school,academics')throw Error('School section order '+p.code);
  if(await page.locator('#school .school-facts > div').count()!==6)throw Error('School topics missing '+p.code);
@@ -94,7 +99,7 @@ for(const size of [{width:900,height:1500},{width:1500,height:900},{width:600,he
   const copy=await page.locator('.program-photo-hero .hero-copy').boundingBox();
   const facts=await page.locator('.program-photo-hero .hero-facts').boundingBox();
   if(figure.height>image.height+credit.height+20)throw Error('Oversized empty photo panel at '+width);
-  if(image.width>320.5||image.height>360.5)throw Error('Supporting photo too large at '+width);
+  if(image.width>280.5||image.height>280.5)throw Error('Supporting photo too large at '+width);
   if(facts.y<intro.y+intro.height-1||facts.width<intro.width)throw Error('Facts are not below the full introduction at '+width);
   if(width<900&&figure.y<copy.y+copy.height-1)throw Error('Mobile photo does not stack after the introduction at '+width);
   if(width>=900&&figure.x<copy.x+copy.width-1)throw Error('Desktop photo does not sit beside the introduction at '+width);

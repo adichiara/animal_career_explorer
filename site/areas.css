@@ -140,6 +140,26 @@ p { margin: .75em 0 0; }
 .reality-list > li::before { content: counter(reality); position: absolute; top: 17px; left: 0; display: grid; width: 26px; height: 26px; place-items: center; border-radius: 50%; color: #fff; background: var(--warm); font-size: .72rem; font-weight: 800; }
 .article-columns { display: grid; gap: 38px; }
 
+/* School context on program pages: one reading column on narrow screens. */
+.school-overview-name { margin: -8px 0 20px; color: var(--navy); font-size: 1.15rem; font-weight: 750; }
+.school-photo { margin: 0 0 24px; }
+.school-photo img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; max-height: 420px; object-fit: cover; border-radius: 8px; background: var(--wash); }
+.school-photo figcaption { margin-top: 7px; color: var(--muted); font-size: .75rem; overflow-wrap: anywhere; }
+.school-facts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 28px; margin: 0; }
+.school-facts > div { min-width: 0; padding: 18px 0; border-top: 1px solid var(--line); }
+.school-facts dt { color: var(--navy); font-weight: 750; }
+.school-facts dd { margin: 7px 0 0; color: var(--muted); overflow-wrap: anywhere; }
+.school-facts sup { white-space: nowrap; }
+.school-facts sup a { padding: 3px 2px; }
+.school-sources { margin-top: 16px; padding: 18px; border-radius: 8px; background: var(--surface); }
+.school-sources h3 { color: var(--navy); font-size: .9rem; }
+.school-sources ol { margin: 12px 0 0; padding-left: 22px; color: var(--muted); font-size: .8rem; }
+.school-sources li { padding: 3px 0; scroll-margin-top: 20px; overflow-wrap: anywhere; }
+.school-sources li:target { outline: 2px solid var(--focus); outline-offset: 2px; }
+@media (min-width: 700px) {
+  .school-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 .career-list, .program-list { border-top: 1px solid var(--line); }
 .career-entry, .program-entry { padding: 0; border-bottom: 1px solid var(--line); }
 .career-entry > h3, .program-entry > h3 { color: var(--navy); font-size: 1.3rem; }

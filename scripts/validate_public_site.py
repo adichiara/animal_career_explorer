@@ -58,4 +58,19 @@ assert sorted(comparison.rows) == sorted(item['code'] for item in library['progr
 assert len(comparison.rows) == len(set(comparison.rows))
 for field in {field for p in library['programs'] for field in p['primaryFields']}:
     assert (SITE / 'areas' / (field + '.html')).exists(), field
+schools = json.loads((SITE / 'content/programs/schools.json').read_text())
+assert set(schools['programSchools']) == {p['code'] for p in library['programs']}
+topics = {'type', 'size', 'campus', 'housing', 'studentLife', 'recreation'}
+for code, school_id in schools['programSchools'].items():
+    school = schools['schools'][school_id]
+    assert set(school['facts']) == topics, school_id
+    facts = {**school['facts'], **schools['programOverrides'].get(code, {}).get('facts', {})}
+    for topic, fact in facts.items():
+        assert fact['text'] and fact['sources'], (code, topic)
+        for key in fact['sources']:
+            source = school['sources'][key]
+            assert source['url'].startswith('https://') and source['retrievedOn'], (code, key)
+    for key in ['url', 'alt', 'credit', 'source', 'retrievedOn']:
+        assert school['photo'].get(key), (school_id, key)
+    assert school['photo']['url'].startswith('https://'), school_id
 print(f'Public navigation and landmarks pass; comparison covers {len(comparison.rows)} programs.')

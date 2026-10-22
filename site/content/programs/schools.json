@@ -1,0 +1,853 @@
+{
+  "programSchools": {
+    "ME-ZOO": "umaine",
+    "ME-WE": "umaine",
+    "UMA-BIO": "umass-amherst",
+    "UMA-WEC": "umass-amherst",
+    "UMA-VT": "umass-amherst",
+    "UNE-AB": "une",
+    "URI-AZ": "uri",
+    "URI-W": "uri",
+    "URI-WZ": "uri",
+    "CAN-ABEC": "canisius",
+    "UNH-ZOO": "unh",
+    "DELVAL-ZOO": "delval",
+    "UMA-BGR-VT": "uma-bangor",
+    "CANTON-VT": "suny-canton",
+    "DELHI-VT": "suny-delhi"
+  },
+  "schools": {
+    "umaine": {
+      "name": "University of Maine",
+      "facts": {
+        "type": {
+          "text": "Public land-grant research university; the flagship of the University of Maine System.",
+          "sources": [
+            "about",
+            "facts"
+          ]
+        },
+        "size": {
+          "text": "8,225 undergraduates and 10,644 students overall in fall 2025; the separately reported Machias regional campus is not included.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "The main campus is in Orono, Maine, near Bangor. Campus walking tours cover gardens, public art, the central mall, and the historic district.",
+          "sources": [
+            "visit",
+            "tours"
+          ]
+        },
+        "housing": {
+          "text": "On-campus residence halls include living-learning communities. Housing options include traditional rooms and suites; campus meal plans cover dining halls and other meal options.",
+          "sources": [
+            "facts",
+            "housing"
+          ]
+        },
+        "studentLife": {
+          "text": "More than 200 student clubs cover academic interests, service, media, arts, and leadership.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "recreation": {
+          "text": "The Black Bears compete in NCAA Division I. The New Balance Recreation Center offers aquatics, intramurals, wellness activities, and outdoor adventure programs.",
+          "sources": [
+            "facts"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About UMaine",
+          "url": "https://umaine.edu/about/",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Facts & Figures · fall 2025",
+          "url": "https://umaine.edu/about/facts-and-figures/",
+          "retrievedOn": "2026-10-22"
+        },
+        "visit": {
+          "label": "Visit campus",
+          "url": "https://umaine.edu/about/visit-us/",
+          "retrievedOn": "2026-10-22"
+        },
+        "tours": {
+          "label": "Self-guided campus walking tours",
+          "url": "https://umaine.edu/sights/",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "Housing and meal plans",
+          "url": "https://umaine.edu/housing/rates-policies/",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://umaine.edu/about/wp-content/uploads/sites/1028/2026/03/031026_IB_DSC09240.jpg",
+        "alt": "Two University of Maine students smiling together beneath a tree.",
+        "credit": "University of Maine",
+        "source": "https://umaine.edu/about/facts-and-figures/",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "umass-amherst": {
+      "name": "University of Massachusetts Amherst",
+      "facts": {
+        "type": {
+          "text": "Public land-grant research university and the flagship campus of the University of Massachusetts system.",
+          "sources": [
+            "about"
+          ]
+        },
+        "size": {
+          "text": "24,019 undergraduates and 7,299 graduate students in fall 2025, including University Without Walls students. These are university-wide figures.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "The Amherst campus covers approximately 1,450 acres in western Massachusetts’ Pioneer Valley, with academic buildings, residential areas, the campus pond, and the W. E. B. Du Bois Library.",
+          "sources": [
+            "about",
+            "campus"
+          ]
+        },
+        "housing": {
+          "text": "Students live in on-campus residential communities or off campus. Campus dining includes dining commons, cafés, and food options in the Campus Center.",
+          "sources": [
+            "housing",
+            "campus"
+          ]
+        },
+        "studentLife": {
+          "text": "More than 300 registered student organizations include arts, cultural groups, community service, Greek life, and club sports.",
+          "sources": [
+            "life"
+          ]
+        },
+        "recreation": {
+          "text": "Campus recreation includes a recreation center and intramural sports leagues. UMass also competes in NCAA Division I athletics.",
+          "sources": [
+            "life",
+            "campus",
+            "athletics"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About UMass Amherst",
+          "url": "https://www.umass.edu/gateway/why-umass/about",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "At a Glance · 2025–2026",
+          "url": "https://www.umass.edu/uair/media/805/download",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "Living and dining",
+          "url": "https://www.umass.edu/gateway/campus-life/living-and-dining",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Student Affairs and Campus Life",
+          "url": "https://www.umass.edu/student-life/",
+          "retrievedOn": "2026-10-22"
+        },
+        "campus": {
+          "label": "Daily life on the Amherst campus",
+          "url": "https://www.umass.edu/gateway/umass-stories/whats-it-like-to-attend-umass",
+          "retrievedOn": "2026-10-22"
+        },
+        "athletics": {
+          "label": "UMass athletics conference announcement",
+          "url": "https://www.umass.edu/news/article/university-massachusetts-accepts-invitation-join-mid-american-conference-full-member",
+          "retrievedOn": "2026-10-22"
+        },
+        "crc": {
+          "label": "Charles River campus student experience",
+          "url": "https://www.umass.edu/charles-river/student-experience",
+          "retrievedOn": "2026-10-22"
+        },
+        "crcLife": {
+          "label": "Student life at Charles River",
+          "url": "https://www.umass.edu/charles-river/student-experience/student-life-charles-river",
+          "retrievedOn": "2026-10-22"
+        },
+        "crcCampus": {
+          "label": "Charles River campus location and grounds",
+          "url": "https://www.umass.edu/charles-river/innovation-space",
+          "retrievedOn": "2026-10-22"
+        },
+        "vt": {
+          "label": "Veterinary Technology · campus sequence",
+          "url": "https://www.umass.edu/charles-river/academics/veterinary-technology",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.umass.edu/sites/default/files/styles/large/public/2020-08/umass_amherst_dubois_library_campus_center.jpg?itok=UWrkgQqU",
+        "alt": "W. E. B. Du Bois Library, the Campus Center, and campus pond at UMass Amherst.",
+        "credit": "University of Massachusetts Amherst",
+        "source": "https://www.umass.edu/gateway/umass-stories/whats-it-like-to-attend-umass",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "une": {
+      "name": "University of New England",
+      "facts": {
+        "type": {
+          "text": "Independent university with undergraduate, graduate, and professional programs in the sciences, arts, business, and health professions.",
+          "sources": [
+            "about"
+          ]
+        },
+        "size": {
+          "text": "2,139 undergraduate students by headcount in the fall 2025 university snapshot; graduate and professional students are reported separately.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "Undergraduate campus life is based in Biddeford, Maine, beside the Saco River and Atlantic coast. UNE also has campuses in Portland, Maine, and Tangier, Morocco.",
+          "sources": [
+            "life",
+            "glance"
+          ]
+        },
+        "housing": {
+          "text": "First-year residence halls and upperclass suite-style housing are available. The Danielle N. Ripich Commons combines dining, study space, and student services overlooking the Saco River.",
+          "sources": [
+            "life"
+          ]
+        },
+        "studentLife": {
+          "text": "More than 100 student clubs and organizations include academic and cultural groups, hobbies, and student government. Campus events also take place in the Commons and residence halls.",
+          "sources": [
+            "life"
+          ]
+        },
+        "recreation": {
+          "text": "Biddeford facilities include two fitness centers, an indoor pool, an ice rink, tennis and basketball courts, and outdoor equipment rentals; students can also join club and intramural sports.",
+          "sources": [
+            "life",
+            "glance"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About UNE",
+          "url": "https://www.une.edu/about",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Fall 2025 enrollment snapshot",
+          "url": "https://www.une.edu/sites/default/files/2025-11/1-1-2025-Fall-Snapshot-Report.pdf",
+          "retrievedOn": "2026-10-22"
+        },
+        "glance": {
+          "label": "UNE at a glance",
+          "url": "https://www.une.edu/about/glance",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Biddeford campus student life",
+          "url": "https://www.une.edu/studentlife/biddeford",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.une.edu/sites/default/files/styles/full_bleed_half/public/2023-01/student_life-bc-collage-commons_hanging.jpg.webp?h=bdadea04&itok=FCHOWYSy",
+        "alt": "UNE students playing pool and foosball in the Biddeford campus Commons.",
+        "credit": "University of New England",
+        "source": "https://www.une.edu/studentlife/biddeford",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "uri": {
+      "name": "University of Rhode Island",
+      "facts": {
+        "type": {
+          "text": "Public research university offering undergraduate, graduate, and professional study.",
+          "sources": [
+            "facts",
+            "about"
+          ]
+        },
+        "size": {
+          "text": "More than 15,000 undergraduates in the university’s current admissions overview; graduate students are additional.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "The 1,200-acre Kingston campus is in southern Rhode Island, about 30 miles south of Providence and near ocean beaches. Its historic core sits alongside newer academic buildings.",
+          "sources": [
+            "campus"
+          ]
+        },
+        "housing": {
+          "text": "On-campus housing and dining are available, alongside off-campus living. University housing and dining pages describe the current residential and meal options.",
+          "sources": [
+            "housing",
+            "dining"
+          ]
+        },
+        "studentLife": {
+          "text": "More than 120 student organizations include cycling, sailing, poetry, and meditation. Student media, Greek life, student senate, volunteering, and leadership programs are also available.",
+          "sources": [
+            "involvement"
+          ]
+        },
+        "recreation": {
+          "text": "Students can participate in recreational activities, intramural and club sports, or follow URI’s varsity athletics teams.",
+          "sources": [
+            "life"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About URI",
+          "url": "https://www.uri.edu/about/",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Undergraduate admission quick facts",
+          "url": "https://web.uri.edu/admission/quick-facts/",
+          "retrievedOn": "2026-10-22"
+        },
+        "campus": {
+          "label": "Campuses · Kingston",
+          "url": "https://www.uri.edu/about/campuses/",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "Housing",
+          "url": "https://www.uri.edu/campus-life/housing/",
+          "retrievedOn": "2026-10-22"
+        },
+        "dining": {
+          "label": "Dining",
+          "url": "https://www.uri.edu/campus-life/dining/",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Campus life",
+          "url": "https://www.uri.edu/campus-life/",
+          "retrievedOn": "2026-10-22"
+        },
+        "involvement": {
+          "label": "Student organizations and involvement",
+          "url": "https://www.uri.edu/campus-life/involvement/",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.uri.edu/wp-content/uploads/home/2018/05/kingston-campus-500x327.jpg",
+        "alt": "Aerial view of the University of Rhode Island Kingston campus and quadrangle.",
+        "credit": "University of Rhode Island",
+        "source": "https://www.uri.edu/about/campuses/",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "canisius": {
+      "name": "Canisius University",
+      "facts": {
+        "type": {
+          "text": "Jesuit university offering undergraduate, graduate, and professional programs. Its educational tradition includes service and engagement with the wider community.",
+          "sources": [
+            "about",
+            "mission"
+          ]
+        },
+        "size": {
+          "text": "2,492 students in the university’s published at-a-glance profile. The profile does not specify an enrollment year.",
+          "sources": [
+            "about"
+          ]
+        },
+        "campus": {
+          "text": "The 72-acre campus is in Buffalo, New York, within an urban setting.",
+          "sources": [
+            "about"
+          ]
+        },
+        "housing": {
+          "text": "Campus housing includes five residence halls and living-learning communities. Commuter services and campus dining are also provided.",
+          "sources": [
+            "life"
+          ]
+        },
+        "studentLife": {
+          "text": "Student organizations cover music, service, advocacy, gaming, and other interests; campus life also includes student government, leadership activities, Greek life, and campus ministry.",
+          "sources": [
+            "life"
+          ]
+        },
+        "recreation": {
+          "text": "The Golden Griffins compete in NCAA Division I. Students can also join club sports and intramural leagues or use campus fitness facilities.",
+          "sources": [
+            "athletics"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About Canisius · at a glance",
+          "url": "https://www.canisius.edu/about",
+          "retrievedOn": "2026-10-22"
+        },
+        "mission": {
+          "label": "The Canisius mission",
+          "url": "https://www.canisius.edu/about/canisius-mission",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Student life and housing",
+          "url": "https://www.canisius.edu/student-experience/student-life-housing",
+          "retrievedOn": "2026-10-22"
+        },
+        "athletics": {
+          "label": "Athletics, intramurals, and fitness",
+          "url": "https://www.canisius.edu/student-experience/athletics-canisius",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.canisius.edu/sites/default/files/styles/16_9_scale_and_crop_medium/public/legacy/news/image/campus_fall_shot.jpg?h=fbf4b26c&itok=JmZDJyRj",
+        "alt": "Aerial view of Canisius University and surrounding Buffalo neighborhoods in autumn.",
+        "credit": "Canisius University",
+        "source": "https://www.canisius.edu/about",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "unh": {
+      "name": "University of New Hampshire",
+      "facts": {
+        "type": {
+          "text": "Public research university with land-, sea-, and space-grant missions.",
+          "sources": [
+            "about"
+          ]
+        },
+        "size": {
+          "text": "More than 11,250 undergraduates and 2,500 graduate students in the university’s current facts profile. These are university-wide figures.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "Zoology is based at the main residential campus in Durham, New Hampshire. College Woods provides 250 acres of woods, fields, and streams for teaching, research, and recreation.",
+          "sources": [
+            "life",
+            "woods"
+          ]
+        },
+        "housing": {
+          "text": "Campus living includes residence halls and dining facilities. The Memorial Union Building is a gathering place for events and everyday student activities.",
+          "sources": [
+            "facts",
+            "life"
+          ]
+        },
+        "studentLife": {
+          "text": "More than 200 student-run clubs and organizations cover a range of interests. The Memorial Union Building hosts student activities and social spaces.",
+          "sources": [
+            "facts",
+            "life"
+          ]
+        },
+        "recreation": {
+          "text": "UNH has NCAA Division I athletics, club sports, and campus recreation. College Woods is also used for walking, running, and cross-country skiing.",
+          "sources": [
+            "life",
+            "woods"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About UNH",
+          "url": "https://www.unh.edu/about",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Facts & Figures",
+          "url": "https://www.unh.edu/about/facts-figures",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Life at UNH · Durham campus",
+          "url": "https://www.unh.edu/life-unh",
+          "retrievedOn": "2026-10-22"
+        },
+        "woods": {
+          "label": "Campus places · College Woods",
+          "url": "https://admissions.unh.edu/blog/2025/06/what-you-might-not-see-your-university-new-hampshire-campus-tour",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.unh.edu/sites/default/files/styles/portrait_480x672/public/media/2025-10/about_durham_800.jpg?h=00546c34&itok=F8zQ3BZO",
+        "alt": "Thompson Hall and the University of New Hampshire campus in Durham.",
+        "credit": "University of New Hampshire",
+        "source": "https://www.unh.edu/life-unh",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "delval": {
+      "name": "Delaware Valley University",
+      "facts": {
+        "type": {
+          "text": "Private university with undergraduate and graduate study; experiential education is part of its institution-wide curriculum.",
+          "sources": [
+            "type",
+            "about"
+          ]
+        },
+        "size": {
+          "text": "1,768 undergraduates and 431 graduate students, for 2,199 total students in the fall 2024 institutional report.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "Located in Doylestown, Pennsylvania, in Bucks County, about 30 miles north of Philadelphia. The surrounding area includes museums, historic buildings, parks, and trails.",
+          "sources": [
+            "location"
+          ]
+        },
+        "housing": {
+          "text": "Campus housing and dining serve residential students, with separate information and services for commuters. Residence options and the residency policy are described on the housing page.",
+          "sources": [
+            "housing"
+          ]
+        },
+        "studentLife": {
+          "text": "The fall 2024 report lists 71 student clubs and organizations. Music, arts, campus events, and student activities are part of campus life.",
+          "sources": [
+            "facts",
+            "life"
+          ]
+        },
+        "recreation": {
+          "text": "Students can participate in NCAA Division III athletics or intramural teams. Nearby parks offer hiking, biking, and other outdoor recreation.",
+          "sources": [
+            "life",
+            "location"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About DelVal",
+          "url": "https://delval.edu/about",
+          "retrievedOn": "2026-10-22"
+        },
+        "type": {
+          "label": "University overview",
+          "url": "https://delval.edu/news/delaware-valley-university-named-among-best-region-princeton-review-and-us-news-world-report",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "By the Numbers · fall 2024",
+          "url": "https://delval.edu/sites/default/files/2025-12/25%20By%20the%20Numbers.pdf",
+          "retrievedOn": "2026-10-22"
+        },
+        "location": {
+          "label": "About Doylestown",
+          "url": "https://delval.edu/about/about-doylestown",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "Housing and dining",
+          "url": "https://delval.edu/life-at-delval/housing-dining",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Life at DelVal",
+          "url": "https://delval.edu/life-at-delval",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://delval.edu/sites/default/files/styles/image_carousel_item/public/2020-06/student%20involvement.jpg?itok=5OmmMdgT",
+        "alt": "Delaware Valley University students working together in the South Residence Hall lobby.",
+        "credit": "Delaware Valley University",
+        "source": "https://delval.edu/life-at-delval",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "uma-bangor": {
+      "name": "University of Maine at Augusta · Bangor campus",
+      "facts": {
+        "type": {
+          "text": "University of Maine System institution with campuses in Augusta and Bangor, regional locations, and online programs. The student body includes recent high-school graduates and returning adults.",
+          "sources": [
+            "about"
+          ]
+        },
+        "size": {
+          "text": "4,336 students university-wide in fall 2025, including 1,262 Early College students. This includes online and other locations; it is not a Bangor-campus headcount.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "The Bangor campus is across from Bangor International Airport, with access from I-95. Facilities include specialized labs and clinics, study spaces, and the Nottage Library.",
+          "sources": [
+            "campus"
+          ]
+        },
+        "housing": {
+          "text": "Limited housing for eligible full-time Bangor students is arranged at a local Holiday Inn, with a campus shuttle. Meal plans are available; a housing application does not guarantee a space.",
+          "sources": [
+            "campus",
+            "housing"
+          ]
+        },
+        "studentLife": {
+          "text": "The Bangor Student Life office and Student Government Association organize activities, trips, and leadership opportunities. Student events include music, talks, and campus gatherings.",
+          "sources": [
+            "campus"
+          ]
+        },
+        "recreation": {
+          "text": "The Bangor Fitness Center has a gymnasium, weights, cardio equipment, and pickup basketball, pickleball, and floorball. Student access is free.",
+          "sources": [
+            "campus"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "UMA quick facts",
+          "url": "https://www.uma.edu/about/facts/",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Student facts · fall 2025",
+          "url": "https://www.uma.edu/about/student-consumer-information/student-facts/",
+          "retrievedOn": "2026-10-22"
+        },
+        "campus": {
+          "label": "Bangor campus",
+          "url": "https://www.uma.edu/locations/bangor/",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "UMA housing · Bangor arrangements",
+          "url": "https://www.uma.edu/student-life/housing/",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.uma.edu/locations/wp-content/uploads/sites/13/2024/11/UMABangorCampusPhotoshoot_Marketing_2024-24.jpg",
+        "alt": "A student beside the University of Maine at Augusta Bangor campus entrance sign.",
+        "credit": "University of Maine at Augusta",
+        "source": "https://www.uma.edu/locations/bangor/",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "suny-canton": {
+      "name": "SUNY Canton",
+      "facts": {
+        "type": {
+          "text": "Public college of technology in the State University of New York system, offering associate and bachelor’s degrees as well as certificates.",
+          "sources": [
+            "campus"
+          ]
+        },
+        "size": {
+          "text": "2,833 undergraduate students in fall 2025. The institutional-research count excludes auditors, cross-registered students, and College in the High School students.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "A 555-acre campus beside the Grasse River in Canton, northern New York. Footbridges connect campus with the village; walking, running, biking, and ski trails surround the grounds.",
+          "sources": [
+            "campus"
+          ]
+        },
+        "housing": {
+          "text": "On-campus options include traditional residence halls and apartment-style suites in Kennedy Hall. Residential students have campus meal plans.",
+          "sources": [
+            "campus",
+            "housing"
+          ]
+        },
+        "studentLife": {
+          "text": "Student organizations include academic clubs, service groups, cultural organizations, and outdoor activities. Campus events include performances, trips, festivals, and student-government activities.",
+          "sources": [
+            "life"
+          ]
+        },
+        "recreation": {
+          "text": "NCAA Division III athletics, intramurals, and esports are available. Recreation facilities include an ice rink, pool, fitness center, and field house.",
+          "sources": [
+            "campus",
+            "life"
+          ]
+        }
+      },
+      "sources": {
+        "campus": {
+          "label": "About the college and campus",
+          "url": "https://www.canton.edu/about/college.html",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Institutional research · fall 2025",
+          "url": "https://www.canton.edu/research/quickfacts.html",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "Residence terms and meal plans",
+          "url": "https://www.canton.edu/residence_life/terms.html",
+          "retrievedOn": "2026-10-22"
+        },
+        "life": {
+          "label": "Campus activities and recreation",
+          "url": "https://www.canton.edu/about/quick.html",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.canton.edu/media/walking.jpg",
+        "alt": "SUNY Canton students walking through the campus plaza after class.",
+        "credit": "SUNY Canton",
+        "source": "https://www.canton.edu/about/college.html",
+        "retrievedOn": "2026-10-22"
+      }
+    },
+    "suny-delhi": {
+      "name": "SUNY Delhi",
+      "facts": {
+        "type": {
+          "text": "Public technology college in the State University of New York system, offering associate, bachelor’s, and master’s degrees, plus certificates.",
+          "sources": [
+            "about"
+          ]
+        },
+        "size": {
+          "text": "Approximately 3,300 students overall in the college’s fall 2026 enrollment announcement. This is the college-wide total.",
+          "sources": [
+            "facts"
+          ]
+        },
+        "campus": {
+          "text": "Located in the village of Delhi in New York’s Catskill Mountains. The college serves residential, commuter, and online students.",
+          "sources": [
+            "about"
+          ]
+        },
+        "housing": {
+          "text": "Campus residence halls include traditional rooms and upper-division options; Riverview Townhouses provide another upper-division community. Campus dining services are available during the semester.",
+          "sources": [
+            "housing"
+          ]
+        },
+        "studentLife": {
+          "text": "Student clubs and organizations, community service, and student-government leadership provide activities outside classes.",
+          "sources": [
+            "about",
+            "leadership"
+          ]
+        },
+        "recreation": {
+          "text": "The Broncos compete in NCAA Division III. Students also have intramurals, fitness activities, and marked campus trails for walking, running, and cycling.",
+          "sources": [
+            "about",
+            "recreation",
+            "trails"
+          ]
+        }
+      },
+      "sources": {
+        "about": {
+          "label": "About SUNY Delhi",
+          "url": "https://www.delhi.edu/about/",
+          "retrievedOn": "2026-10-22"
+        },
+        "facts": {
+          "label": "Fall 2026 enrollment announcement",
+          "url": "https://newsroom.delhi.edu/press-release/suny-delhi-welcomes-nearly-1300-new-students-as-enrollment-continues-to-grow/",
+          "retrievedOn": "2026-10-22"
+        },
+        "housing": {
+          "label": "Campus living",
+          "url": "https://www.delhi.edu/campus-life/residence/on-campus/index.php",
+          "retrievedOn": "2026-10-22"
+        },
+        "leadership": {
+          "label": "Student leadership and organizations",
+          "url": "https://www.delhi.edu/campus-life/leadership-opportunities/",
+          "retrievedOn": "2026-10-22"
+        },
+        "recreation": {
+          "label": "Student life · intramurals and fitness",
+          "url": "https://www.delhi.edu/mydelhi-students/student-handbook/student-life/index.php",
+          "retrievedOn": "2026-10-22"
+        },
+        "trails": {
+          "label": "Health and wellness · Bronco Trails",
+          "url": "https://www.delhi.edu/campus-life/health-wellness/index.php",
+          "retrievedOn": "2026-10-22"
+        }
+      },
+      "photo": {
+        "url": "https://www.delhi.edu/images/fast_facts_drone.jpg",
+        "alt": "Aerial view of SUNY Delhi’s campus among the Catskill hills.",
+        "credit": "SUNY Delhi",
+        "source": "https://www.delhi.edu/about/fast-facts/index.php",
+        "retrievedOn": "2026-10-22"
+      }
+    }
+  },
+  "programOverrides": {
+    "UMA-VT": {
+      "facts": {
+        "campus": {
+          "text": "Veterinary Technology students spend years 1–2 in Amherst and years 3–4 at the Charles River Campus in Newton. Amherst has approximately 1,450 acres; the Newton campus has 66 acres in a suburban setting near Boston.",
+          "sources": [
+            "about",
+            "vt",
+            "crcCampus"
+          ]
+        },
+        "housing": {
+          "text": "Amherst offers on-campus residential communities and dining commons. At Charles River, students have residence halls, campus dining, free parking, and transportation to the MBTA Green Line.",
+          "sources": [
+            "housing",
+            "crc"
+          ]
+        },
+        "studentLife": {
+          "text": "Amherst has more than 300 registered student organizations. At Charles River, a separate Student Life office organizes student engagement and activities for residential and commuter students.",
+          "sources": [
+            "life",
+            "crcLife"
+          ]
+        },
+        "recreation": {
+          "text": "Amherst has a recreation center, intramural leagues, and NCAA Division I athletics. Charles River has a fitness center, outdoor recreation facilities, and nature trails.",
+          "sources": [
+            "life",
+            "athletics",
+            "crc",
+            "crcCampus"
+          ]
+        }
+      }
+    }
+  }
+}

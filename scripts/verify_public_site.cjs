@@ -89,20 +89,18 @@ for(const size of [{width:900,height:1500},{width:1500,height:900},{width:600,he
   const schoolImg=page.locator('#school .school-photo img');await schoolImg.scrollIntoViewIfNeeded();await schoolImg.evaluate(el=>el.decode());
   for(const img of [heroImg,schoolImg]){
    const box=await img.evaluate(el=>{const r=el.getBoundingClientRect();return {width:r.width,height:r.height,naturalWidth:el.naturalWidth,naturalHeight:el.naturalHeight,fit:getComputedStyle(el).objectFit};});
-   if(box.fit!=='contain'||Math.abs((box.width/box.height)/(box.naturalWidth/box.naturalHeight)-1)>.01)throw Error('Photo cropped or stretched at '+width+': '+JSON.stringify(box));
-   if(box.width>box.naturalWidth+1||box.height>box.naturalHeight+1)throw Error('Photo enlarged past intrinsic size at '+width);
+   if(box.fit!=='contain')throw Error('Photo cropped or stretched at '+width+': '+JSON.stringify(box));
+   if(img===schoolImg&&Math.abs((box.width/box.height)/(box.naturalWidth/box.naturalHeight)-1)>.01)throw Error('Campus photo aspect ratio changed at '+width);
   }
   const image=await heroImg.boundingBox(),credit=await page.locator('.program-photo-hero figcaption').boundingBox();
   if(credit.y<image.y+image.height-1)throw Error('Credit overlays image at '+width);
   const figure=await page.locator('.program-photo-hero figure').boundingBox();
-  const intro=await page.locator('.program-hero-intro').boundingBox();
-  const copy=await page.locator('.program-photo-hero .hero-copy').boundingBox();
+  const title=await page.locator('.program-hero-intro').boundingBox();
+  const description=await page.locator('.program-introduction .standfirst').boundingBox();
   const facts=await page.locator('.program-photo-hero .hero-facts').boundingBox();
-  if(figure.height>image.height+credit.height+20)throw Error('Oversized empty photo panel at '+width);
-  if(image.width>280.5||image.height>280.5)throw Error('Supporting photo too large at '+width);
-  if(facts.y<intro.y+intro.height-1||facts.width<intro.width)throw Error('Facts are not below the full introduction at '+width);
-  if(width<900&&figure.y<copy.y+copy.height-1)throw Error('Mobile photo does not stack after the introduction at '+width);
-  if(width>=900&&figure.x<copy.x+copy.width-1)throw Error('Desktop photo does not sit beside the introduction at '+width);
+  if(figure.y<title.y+title.height-1||description.y<figure.y+figure.height-1||facts.y<description.y+description.height-1)throw Error('Title, photo, description, facts order failed at '+width);
+  if(image.width>840.5||image.height>720.5)throw Error('Independent photo exceeds maximum size at '+width);
+  if(width>=1080&&size.width>size.height&&image.width<700)throw Error('Desktop photo still constrained to a thumbnail at '+width);
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Photo layout overflows at '+width);
  }
 }

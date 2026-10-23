@@ -124,8 +124,11 @@
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="programs.html">School &amp; Program Library</a><span aria-hidden="true">/</span><span>${esc(schoolName)}</span></nav>
       <header class="article-hero program-photo-hero">
         <div class="program-hero-intro">
-          <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${programHeading(program.title)}</h1><p class="standfirst">${esc(program.fundamental)}</p></div>
+          <div class="hero-copy"><div class="eyebrow">College program guide</div><p class="program-school-hero">${esc(schoolName)}</p><h1>${programHeading(program.title)}</h1></div>
+        </div>
+        <div class="program-introduction">
           ${photoHtml}
+          <p class="standfirst">${esc(program.fundamental)}</p>
         </div>
         <aside class="hero-facts" aria-label="Program facts"><p class="mini-label">Program at a glance</p><dl>
             <div><dt>School</dt><dd>${esc(schoolName)}</dd></div>

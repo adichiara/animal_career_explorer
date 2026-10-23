@@ -563,19 +563,17 @@ main:focus { outline: none; }
   .comparison-table tbody tr[class*="theme-"] > th { border-left: 1px solid var(--line); background: none; }
 }
 
-/* Program headers: an editorial introduction, a supporting photo, then facts. */
+/* Program pages read in one column: title, independent photo, description, facts. */
 .program-photo-hero {
   display: block;
   min-height: 0;
-  background: linear-gradient(135deg, #123a58 0%, #174e62 100%);
+  background: var(--surface);
 }
 .program-hero-intro {
-  display: grid;
-  align-items: start;
-  gap: 26px;
-  width: min(100% - 40px, 1120px);
-  margin-inline: auto;
-  padding-block: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 30px max(20px, calc((100% - 960px) / 2));
+  background: linear-gradient(135deg, #123a58 0%, #174e62 100%);
 }
 .program-photo-hero .hero-copy { display: block; padding: 0; }
 .program-photo-hero .program-school-hero {
@@ -601,9 +599,15 @@ main:focus { outline: none; }
   line-height: 1.4;
   letter-spacing: 0;
 }
+.program-introduction {
+  width: min(100% - 40px, 840px);
+  margin-inline: auto;
+  padding-block: 30px;
+}
 .program-photo-hero .standfirst {
-  max-width: 68ch;
-  margin-top: 16px;
+  max-width: 72ch;
+  margin: 26px auto 0;
+  color: var(--ink);
   font-family: inherit;
   font-size: 1.05rem;
   line-height: 1.6;
@@ -614,9 +618,9 @@ main:focus { outline: none; }
   justify-self: center;
   align-self: start;
   gap: 8px;
-  width: fit-content;
+  width: 100%;
   min-width: 0;
-  max-width: 100%;
+  max-width: 840px;
   height: auto;
   min-height: 0;
   max-height: none;
@@ -626,19 +630,19 @@ main:focus { outline: none; }
   background: transparent;
 }
 .program-photo-hero img {
-  width: auto;
-  max-width: min(100%, 280px);
+  width: 100%;
+  max-width: 840px;
   height: auto;
-  max-height: 280px;
+  max-height: 720px;
   object-fit: contain;
   border-radius: 6px;
 }
 .program-photo-hero figcaption {
   position: static;
-  max-width: 280px;
+  max-width: 100%;
   margin: 0;
   padding: 0;
-  color: #d9e7ef;
+  color: var(--muted);
   background: transparent;
   font-size: .7rem;
   text-align: center;
@@ -647,6 +651,8 @@ main:focus { outline: none; }
   display: block;
   margin: 0;
   padding: 20px max(20px, calc((100% - 1120px) / 2));
+  color: #fff;
+  background: #123a58;
 }
 .program-photo-hero .hero-facts dl {
   display: grid;
@@ -658,12 +664,6 @@ main:focus { outline: none; }
   .program-photo-hero .hero-facts dl { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (min-width: 900px) {
-  .program-hero-intro {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
-    align-items: center;
-    gap: 48px;
-    padding-block: 32px;
-  }
-  .program-photo-hero figure { justify-self: end; align-self: center; }
-  .program-photo-hero img { max-height: 280px; }
+  .program-hero-intro { padding-block: 36px; }
+  .program-introduction { padding-block: 36px; }
 }

@@ -53,6 +53,10 @@ The explanatory content for `areas.html` is intentionally separate from the gene
 
 See [`site/content/areas/README.md`](site/content/areas/README.md) for the field definitions, examples, JSON rules, and step-by-step editing instructions. The original focused College Program records and retained career data come from the validated `site/data.js` export. Hand-edited program records are stored in [`site/content/programs/additional-programs.json`](site/content/programs/additional-programs.json). The public program set and browsing tags are controlled by [`site/content/programs/school-library.json`](site/content/programs/school-library.json). Editing instructions are in [`site/content/programs/README.md`](site/content/programs/README.md).
 
+## School costs and financial aid
+
+See [School Financials and Financial Aid](docs/SCHOOL_FINANCIALS_AND_AID.md) for the current 10-school cost comparison, scholarship and regional-tuition rules, source links, fall 2028 planning assumptions, and the aid-verification tracker. Published costs, conditional estimates, and actual offers are kept separate. Household financial and student records belong in a private location.
+
 ## Directory structure
 
 ```
